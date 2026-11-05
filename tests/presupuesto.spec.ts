@@ -46,7 +46,8 @@ test.describe('experiencia de carga con red y CPU limitadas', () => {
         new PerformanceObserver(l => { for (const e of l.getEntries() as any[]) if (!e.hadRecentInput) m.cls += e.value; }).observe({ type: 'layout-shift', buffered: true });
       });
       await page.goto(ruta, { waitUntil: 'load', timeout: 60000 });
-      await page.waitForTimeout(800);
+      // El LCP puede cambiar después de `load` si el elemento mayor aparece tarde: hay que darle tiempo.
+      await page.waitForTimeout(4000);
       const m = await page.evaluate(() => (window as any).__m);
       expect(m.lcp, `LCP ${Math.round(m.lcp)} ms`).toBeLessThanOrEqual(LIMITE_LCP_MS);
       expect(m.cls, `CLS ${m.cls.toFixed(3)}`).toBeLessThanOrEqual(LIMITE_CLS);

@@ -20,18 +20,23 @@ if (raiz) {
     raiz.classList.add('sin-3d');
   } else {
     const cargar = async () => {
-      const { iniciarEscena } = await import('./escena');
-      const control = iniciarEscena({
-        raiz,
-        canvas: raiz.querySelector('canvas')!,
-        titulo: raiz.querySelector('[data-arbol-titulo]')!,
-        pie: raiz.querySelector('[data-arbol-pie]')!,
-        cola: 1,
-        quieto: pausadoAntes,
-        alPrimerCuadro: () => raiz.classList.add('is-3d')
-      });
-      if (!control) { raiz.classList.add('sin-3d'); return; }
-      addEventListener('movimiento', e => control.pausar((e as CustomEvent<boolean>).detail));
+      try {
+        const { iniciarEscena } = await import('./escena');
+        const control = iniciarEscena({
+          raiz,
+          canvas: raiz.querySelector('canvas')!,
+          titulo: raiz.querySelector('[data-arbol-titulo]')!,
+          pie: raiz.querySelector('[data-arbol-pie]')!,
+          cola: 1,
+          quieto: pausadoAntes,
+          alPrimerCuadro: () => raiz.classList.add('is-3d')
+        });
+        if (!control) { raiz.classList.add('sin-3d'); return; }
+        addEventListener('movimiento', e => control.pausar((e as CustomEvent<boolean>).detail));
+      } catch {
+        // Si la escena no llega, se muestra la imagen del árbol.
+        raiz.classList.add('sin-3d');
+      }
     };
     // Espera a que la página esté libre para no competir con el primer contenido.
     if ('requestIdleCallback' in window) requestIdleCallback(cargar, { timeout: 1800 });

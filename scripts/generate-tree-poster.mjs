@@ -1,4 +1,4 @@
-// Genera la imagen estática del árbol a partir de la escena real, para mostrar mientras carga y sin animación.
+// Genera la imagen estática del árbol a partir de la escena real, para mostrar cuando no hay animación.
 // Requiere el servidor en marcha: BASE=http://127.0.0.1:4321 node scripts/generate-tree-poster.mjs
 import { chromium } from '@playwright/test';
 import sharp from 'sharp';

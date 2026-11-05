@@ -77,7 +77,7 @@ Se eligió **Crecer**: el árbol se dibuja trazo a trazo, después brotan los j�
 
 | Comprobación | Resultado |
 |---|---|
-| Playwright, dos pasadas, escritorio y móvil | **386 superadas, 0 fallidas**. 14 omitidas por diseño: aplican solo a un perfil |
+| Playwright, dos pasadas, escritorio y móvil | **410 superadas, 0 fallidas**. 14 omitidas por diseño: aplican solo a un perfil |
 | TypeScript | 0 errores |
 | Identidad anterior | Sin referencias residuales |
 | Accesibilidad con axe (WCAG 2.2 A y AA), 9 páginas | 0 violaciones graves o críticas |
@@ -89,16 +89,21 @@ Se eligió **Crecer**: el árbol se dibuja trazo a trazo, después brotan los j�
 
 | Página | LCP | CLS | Peso total |
 |---|---:|---:|---:|
-| Portada, 390 px | 1,44 s | 0,065 | 778 KB |
-| Portada, 1440 px | 1,33 s | 0,012 | 778 KB |
-| Servicio, 390 px | 1,19 s | 0,008 | 203 KB |
-| Artículo, 390 px | 1,23 s | 0 | 179 KB |
+| Portada, 390 px | 1,37 s | 0,065 | 778 KB |
+| Portada, 1440 px | 1,36 s | 0,012 | 778 KB |
+| Servicio, 390 px | 1,24 s | 0,008 | 203 KB |
+| Artículo, 390 px | 1,28 s | 0 | 179 KB |
 
 **Fluidez con la RTX 4060, sin límite de cuadros:** de 626 a 2333 cuadros por segundo entre las tres escenas originales, medido antes de retirar las otras dos y sin repetir después. Hay mucho margen en este equipo, pero el dato no predice el comportamiento en un teléfono.
 
-### Imagen de reserva corregida
+### Defectos corregidos después de la primera revisión
 
-Al fijar *Crecer* apareció un defecto anterior: la imagen que se ve sin 3D, con movimiento reducido y durante la carga incluía el trozo de texto «rta.» del titular. Se regeneró sin texto y una prueba comprueba ahora que no vuelva a ocurrir.
+| Defecto | Causa | Corrección |
+|---|---|---|
+| La imagen de reserva incluía el trozo de texto «rta.» del titular | La captura se hacía antes de que el titular se ocultara | Imagen regenerada y prueba nueva |
+| Al entrar, el árbol se veía completo, desaparecía y volvía a crecer | La imagen de reserva se mostraba hasta el primer cuadro de la escena | Ahora solo se ve si no hay animación o si la escena no carga. Prueba nueva |
+| Espacio en blanco enorme entre *Áreas de práctica* y *Nuestro enfoque*. Las imágenes de `/sobre-evelyn`, `/blog` y los artículos tampoco aparecían | El recorte del revelado impedía detectar que la imagen había entrado en pantalla | El recorte pasa al hijo del elemento observado. Prueba nueva en las cuatro páginas |
+| La prueba de LCP medía demasiado pronto | Solo esperaba 800 ms después de la carga | Ahora espera 4 s. Con ella se detectó y corrigió un LCP móvil de 2,62 s: el párrafo del hero ya no se funde, solo sube |
 
 ## 6. Lo que no está verificado
 

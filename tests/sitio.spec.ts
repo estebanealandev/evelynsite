@@ -88,7 +88,7 @@ test.describe('metadatos', () => {
   });
 });
 
-const mostrarTodo = (page: any) => page.addStyleTag({ content: '.reveal,[data-mascara],.palabra>span{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}' });
+const mostrarTodo = (page: any) => page.addStyleTag({ content: '.reveal,[data-mascara]>*,.palabra>span{opacity:1!important;transform:none!important;clip-path:none!important;transition:none!important}' });
 
 test.describe('portada', () => {
   test('tiene siete capítulos y ninguna animación CSS infinita', async ({ page }) => {
@@ -227,6 +227,16 @@ test.describe('interacciones', () => {
     expect(await page.locator('.statement').evaluate(e => getComputedStyle(e.querySelector('.palabra > span')!).transform)).toBe('none');
     await ctx.close();
   });
+
+  for (const ruta of ['/', '/sobre-evelyn', '/blog', '/blog/cambios-codigo-procesal-familia']) {
+    test(`${ruta}: la imagen enmascarada se revela al llegar`, async ({ page }) => {
+      await page.goto(ruta);
+      const mascara = page.locator('[data-mascara]').first();
+      await mascara.scrollIntoViewIfNeeded();
+      await expect(mascara).toHaveClass(/is-in/);
+      await expect(mascara.locator('> *').first()).toHaveCSS('clip-path', /^(none|inset\(0px\))$/, { timeout: 3000 });
+    });
+  }
 
   test('el contenido por debajo del pliegue se revela al llegar', async ({ page }) => {
     await page.goto('/blog/cambios-codigo-procesal-familia');

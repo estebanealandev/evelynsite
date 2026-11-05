@@ -441,14 +441,16 @@ strong { font-weight: 600; }
 @keyframes mostrar-seguro { to { opacity: 1; transform: none; clip-path: inset(0); } }
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out); transition-delay: var(--retraso, 0s); }
 .js .reveal.is-in { opacity: 1; transform: none; }
-.js [data-mascara] { clip-path: inset(0 0 100% 0); transition: clip-path 1.2s var(--ease-out); }
-.js [data-mascara].is-in { clip-path: inset(0); }
+/* El recorte va en el hijo: un elemento recortado del todo no tiene área visible y IntersectionObserver nunca lo detectaría. */
+@keyframes revelar-mascara { from { clip-path: inset(0 0 100% 0); } to { clip-path: inset(0); } }
+.js [data-mascara]:not(.is-in) > * { clip-path: inset(0 0 100% 0); }
+.js [data-mascara].is-in > * { animation: revelar-mascara 1.2s var(--ease-out); }
 .palabra { display: inline-block; overflow: hidden; padding-block: 0.24em; margin-block: -0.24em; padding-inline: 0.06em; margin-inline: -0.06em; vertical-align: top; }
 .palabra > span { display: inline-block; }
 .js [data-partir] .palabra > span { transform: translateY(112%); transition: transform 1.05s var(--ease-out); transition-delay: calc(var(--i, 0) * 45ms); }
 .js [data-partir].is-in .palabra > span { transform: none; }
 /* Si el script de interacciones no llega, el contenido aparece igualmente a los 3 segundos. */
-.js:not(.mov-listo) .reveal, .js:not(.mov-listo) [data-mascara], .js:not(.mov-listo) [data-partir] { animation: mostrar-seguro 0.01s 3s forwards; }
+.js:not(.mov-listo) .reveal, .js:not(.mov-listo) [data-mascara] > *, .js:not(.mov-listo) [data-partir] { animation: mostrar-seguro 0.01s 3s forwards; }
 
 @view-transition { navigation: auto; }
 ::view-transition-old(root) { animation: 0.22s var(--ease) both salir; }
@@ -461,16 +463,19 @@ strong { font-weight: 600; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
-  .js .reveal, .js [data-mascara], .js [data-partir] .palabra > span { opacity: 1; transform: none; clip-path: none; }
+  .js .reveal, .js [data-partir] .palabra > span { opacity: 1; transform: none; }
+  .js [data-mascara]:not(.is-in) > * { clip-path: none; }
 }
 html[data-movimiento='pausado'] { scroll-behavior: auto; }
 html[data-movimiento='pausado'] *, html[data-movimiento='pausado'] *::before, html[data-movimiento='pausado'] *::after { animation-duration: 0.01ms !important; animation-delay: 0s !important; transition-duration: 0.01ms !important; transition-delay: 0s !important; }
 html[data-movimiento='pausado'] ::view-transition-group(*), html[data-movimiento='pausado'] ::view-transition-old(*), html[data-movimiento='pausado'] ::view-transition-new(*) { animation: none !important; }
-html[data-movimiento='pausado'] .reveal, html[data-movimiento='pausado'] [data-mascara], html[data-movimiento='pausado'] [data-partir] .palabra > span { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+html[data-movimiento='pausado'] .reveal, html[data-movimiento='pausado'] [data-partir] .palabra > span { opacity: 1 !important; transform: none !important; }
+html[data-movimiento='pausado'] [data-mascara] > * { clip-path: none !important; }
 
 @media print {
   .site-header, .site-footer, .cta, .burger, .toc, .progress, .salida { display: none; }
-  .reveal, [data-mascara], .palabra > span { opacity: 1 !important; transform: none !important; clip-path: none !important; }
+  .reveal, .palabra > span { opacity: 1 !important; transform: none !important; }
+  [data-mascara] > * { clip-path: none !important; }
   .page-hero { padding: 0; background: none; color: inherit; }
   .page-hero h1 { color: inherit; }
 }

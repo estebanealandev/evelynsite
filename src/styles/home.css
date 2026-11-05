@@ -12,12 +12,14 @@
 .h-hero__content a, .h-hero__content button { pointer-events: auto; }
 .h-hero__titulo { position: relative; }
 .h-hero__title { position: relative; font-size: var(--fs-display); line-height: 0.92; letter-spacing: -0.028em; }
-/* Imagen del árbol: se ve mientras carga la escena y cuando no hay animación. */
+/* Imagen del árbol: solo cuando no hay animación. Si la escena va a correr no se muestra, porque enseñaría el árbol completo antes de que crezca. */
 /* En pantallas muy anchas aprovecha el margen exterior: el titular ya alcanzó su tamaño máximo. */
 .h-hero__poster { position: absolute; right: min(0px, calc((1600px - 100vw) * 0.35)); bottom: 0; width: auto; height: min(60svh, 22vw); transition: opacity 1s var(--ease); }
-.h-hero.is-3d:not(.sin-3d) .h-hero__poster { opacity: 0; }
+.js .h-hero:not(.sin-3d) .h-hero__poster { opacity: 0; }
 .h-hero__foot { position: relative; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 22px 40px; margin-top: clamp(14px, 1.6vw, 24px); padding-top: clamp(16px, 1.6vw, 24px); border-top: 1px solid var(--line-on-dark); }
 .h-hero__foot p { flex: 1 1 340px; max-width: 60ch; margin: 0; font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.1rem); line-height: 1.55; }
+/* El párrafo se lee desde el primer cuadro y solo sube: en móvil es el elemento más grande y un fundido retrasaría el LCP. */
+.js .h-hero__foot p.reveal { opacity: 1; }
 .h-hero__foot .btn-row { margin: 0; }
 @media (max-width: 1279px) {
   .h-hero__poster { right: auto; left: 50%; bottom: 100%; height: min(34svh, 72vw); transform: translateX(-50%); }
@@ -33,6 +35,8 @@
 @media (prefers-reduced-motion: reduce) {
   .js .h-hero:not(.sin-3d) { height: auto; }
   .js .h-hero:not(.sin-3d) + .h-telon { margin-top: 0; }
+  /* Con movimiento reducido nunca hay escena: la imagen se ve desde el primer cuadro. */
+  .js .h-hero:not(.sin-3d) .h-hero__poster { opacity: 1; }
 }
 
 /* Propuesta */

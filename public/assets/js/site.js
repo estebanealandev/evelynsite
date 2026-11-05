@@ -57,7 +57,7 @@
 
   // Cabecera: transparente sobre el encabezado oscuro, sólida después; se oculta al bajar y vuelve al subir.
   const header = $('.site-header');
-  const finHero = $('.h-telon') || $('.page-hero')?.nextElementSibling || $('.lab')?.nextElementSibling;
+  const finHero = $('.h-telon') || $('.page-hero')?.nextElementSibling;
   let ultimoY = scrollY;
   const pintarHeader = () => {
     const y = scrollY;
@@ -135,7 +135,7 @@
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
     animados.forEach(el => io.observe(el));
     // El contenido inicial de la página nunca espera al scroll.
-    requestAnimationFrame(() => $$('.h-hero__content .reveal, .h-hero__content [data-partir], .page-hero .reveal, .page-hero [data-partir], .lab__content .reveal').forEach(el => el.classList.add('is-in')));
+    requestAnimationFrame(() => $$('.h-hero__content .reveal, .h-hero__content [data-partir], .page-hero .reveal, .page-hero [data-partir]').forEach(el => el.classList.add('is-in')));
   } else {
     animados.forEach(el => el.classList.add('is-in'));
   }

@@ -91,6 +91,35 @@ test('el titular conserva el contraste en pantalla grande', async ({ page, isMob
   expect(titulo).toBeGreaterThanOrEqual(3);
 });
 
+test('la imagen del árbol no se ve antes de la animación, aunque la escena tarde', async ({ page }) => {
+  // Registra en cada cuadro, desde el inicio de la carga, la opacidad de la imagen.
+  await page.addInitScript(() => {
+    (window as any).__opacidad = 0;
+    const medir = () => {
+      const img = document.querySelector('.h-hero__poster');
+      if (img) (window as any).__opacidad = Math.max((window as any).__opacidad, Number(getComputedStyle(img).opacity));
+      requestAnimationFrame(medir);
+    };
+    requestAnimationFrame(medir);
+  });
+  await page.route('**/escena*.js', async ruta => {
+    await new Promise(r => setTimeout(r, 1500));
+    await ruta.continue();
+  });
+  await page.goto('/');
+  await lista(page);
+  await page.waitForTimeout(500);
+  expect(await page.evaluate(() => (window as any).__opacidad)).toBe(0);
+  await expect(page.locator('.h-hero')).toHaveClass(/is-3d/);
+});
+
+test('si la escena no carga, se muestra la imagen del árbol', async ({ page }) => {
+  await page.route('**/escena*.js', ruta => ruta.abort());
+  await page.goto('/');
+  await expect(page.locator('.h-hero')).toHaveClass(/sin-3d/, { timeout: 10_000 });
+  await expect(page.locator('.h-hero__poster')).toHaveCSS('opacity', '1');
+});
+
 test('sin WebGL muestra el contenido completo y la imagen del árbol', async ({ page }) => {
   await page.addInitScript(() => {
     const original = HTMLCanvasElement.prototype.getContext;

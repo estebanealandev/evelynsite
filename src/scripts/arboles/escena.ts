@@ -154,7 +154,7 @@ export function iniciarEscena(o: Opciones): Control | null {
     arbol = crear(r, datos);
     dimensiones();
     if (pausado) dibujar(0);
-  });
+  }).catch(() => raiz.classList.add('sin-3d'));
 
   addEventListener('resize', () => { dimensiones(); if (pausado) dibujar(0); });
   addEventListener('pointermove', e => {
