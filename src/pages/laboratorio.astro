@@ -1,0 +1,42 @@
+---
+// Página interna de prototipos. No aparece en el sitemap, está sin indexar y se retirará al elegir un concepto.
+import Base from '../layouts/Base.astro';
+import '../styles/home.css';
+import '../styles/lab.css';
+---
+<Base headerOverlay noindex title="Laboratorio 3D" description="Página interna para comparar prototipos 3D.">
+  <section class="lab on-dark" data-lab>
+    <div class="lab__stage">
+      <canvas aria-hidden="true"></canvas>
+      <img class="lab__fallback" src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="600" height="600" />
+      <div class="wrap-wide lab__content">
+        <h1 class="lab__title">Protegemos lo que <em>más</em> importa.</h1>
+        <div class="lab__foot">
+          <p>Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
+          <div class="btn-row">
+            <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
+            <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter bg-ivory">
+    <div class="wrap-wide">
+      <h2 class="h-statement">La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
+    </div>
+  </section>
+
+  <div class="lab-nota" data-nota role="status"></div>
+  <div class="lab-panel" role="group" aria-label="Controles del laboratorio">
+    <button type="button" data-concepto="a" aria-pressed="true">A Monograma</button>
+    <button type="button" data-concepto="b" aria-pressed="false">B Luz</button>
+    <button type="button" data-concepto="c" aria-pressed="false">C Cordillera</button>
+    <button type="button" data-pausa aria-pressed="false">Pausar</button>
+    <span data-fps aria-hidden="true">– fps</span>
+  </div>
+  <script>
+    import '../scripts/lab/main.ts';
+  </script>
+</Base>

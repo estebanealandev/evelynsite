@@ -5,8 +5,9 @@
 | Fase | Estado |
 |---|---|
 | 0. Red de seguridad | Hecha |
-| 1. Limpieza y nueva base visual | Lista para revisión en la rama `rediseno/fase-1` |
-| 2 a 7 | Pendientes de aprobación |
+| 1. Limpieza y nueva base visual | Hecha en `rediseno/fase-1`. Pedido de ajuste: hero más audaz y adelantar el 3D |
+| 3. three.js | Adelantada a petición: tres prototipos en `/laboratorio`, rama `rediseno/fase-3-prototipos`, pendientes de elección |
+| 2 y 4 a 7 | Pendientes de aprobación |
 
 ## 1. Lo esencial
 
