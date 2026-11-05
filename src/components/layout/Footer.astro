@@ -1,60 +1,61 @@
 ---
-import { getCollection } from 'astro:content';
 import { site } from '../../config/site';
-const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const anio = new Date().getFullYear();
+const c = site.contact;
 ---
-<footer class="site-footer">
-  <div class="footer-main wrap-wide">
-    <img class="footer-logo" src="/assets/brand/evelyn-elizondo-footer.svg" alt="Evelyn Elizondo, Derecho de Familia" width="230" height="135" loading="lazy" />
-    <div class="footer-grid">
-      <nav aria-label="Navegación del pie">
-        <h2>Navegar</h2>
-        <ul class="footer-nav">
-          {servicios.map(s => <li><a href={`/servicios/${s.id}`}>{s.data.titulo}</a></li>)}
-          <li><a href="/sobre-evelyn">Sobre Evelyn</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h2 class="visually-hidden">Presentación</h2>
-        <p>Una etapa familiar difícil requiere información clara y un trato respetuoso. Este sitio reúne orientación general sobre el derecho de familia costarricense y ofrece un canal reservado para solicitar una consulta.</p>
-        {(site.contact.address || site.contact.phone || site.contact.email) && (
-          <div class="footer-contact">
-            {site.contact.address && <p>{site.contact.address}</p>}
-            {site.contact.phone && <p><a href={`tel:${site.contact.phone.replace(/[^+\d]/g, '')}`}>{site.contact.phone}</a></p>}
-            {site.contact.email && <p><a href={`mailto:${site.contact.email}`}>{site.contact.email}</a></p>}
-          </div>
-        )}
-      </div>
-      <div>
-        <h2>Manténgase al día</h2>
-        <p>Reciba contenidos informativos sobre derecho de familia en Costa Rica.</p>
-        <form class="footer-sub" action="/api/suscripcion" method="post" data-ajax novalidate>
-          <label class="visually-hidden" for="s-correo">Correo electrónico</label>
-          <input id="s-correo" name="correo" type="email" placeholder="Correo electrónico" autocomplete="email" required maxlength="200" data-msg="Indique un correo electrónico válido." />
-          <span class="field__error" data-error="correo"></span>
-          <div class="hp" aria-hidden="true">
-            <label for="s-sitio">No complete este campo</label>
-            <input id="s-sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
-            <input name="iniciado" type="hidden" value="" />
-          </div>
-          <label class="check" for="s-consentimiento">
-            <input id="s-consentimiento" name="consentimiento" type="checkbox" required data-msg="Marque la casilla de consentimiento." />
-            <span>Acepto recibir estos contenidos, según la <a href="/politica-de-privacidad">política de privacidad</a>.</span>
-          </label>
-          <span class="field__error" data-error="consentimiento"></span>
-          <div class="form__status" role="status" aria-live="polite"></div>
-          <button class="btn" type="submit">Suscribirme</button>
-        </form>
-      </div>
+<footer class="site-footer on-dark">
+  <div class="wrap-wide footer-main">
+    <div class="footer-brand">
+      <img class="footer-logo" src="/assets/brand/evelyn-elizondo-dark.svg" alt="Evelyn Elizondo, Derecho de Familia" width="230" height="46" loading="lazy" />
+      <p>Información clara y un canal reservado para solicitar una consulta sobre derecho de familia en Costa Rica.</p>
+      {(c.address || c.phone || c.email) && (
+        <div class="footer-contact">
+          {c.address && <p>{c.address}</p>}
+          {c.phone && <p><a href={`tel:${c.phone.replace(/[^+\d]/g, '')}`}>{c.phone}</a></p>}
+          {c.email && <p><a href={`mailto:${c.email}`}>{c.email}</a></p>}
+        </div>
+      )}
     </div>
-    <p class="footer-disclaimer">El contenido de este sitio tiene fines informativos y no sustituye la asesoría individualizada. El envío de un formulario no constituye, por sí solo, una relación profesional. El resultado de cada asunto depende de sus circunstancias jurídicas y probatorias.</p>
+    <nav aria-labelledby="pie-navegar">
+      <h2 id="pie-navegar">Navegar</h2>
+      <ul class="footer-nav">
+        <li><a href="/servicios">Áreas</a></li>
+        <li><a href="/sobre-evelyn">Sobre Evelyn</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+        <li><a href="/agendar-consulta">Agendar una consulta</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="pie-legal">
+      <h2 id="pie-legal">Legal</h2>
+      <ul class="footer-nav">
+        <li><a href="/aviso-juridico">Aviso jurídico</a></li>
+        <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
+      </ul>
+    </nav>
+    <div class="footer-news">
+      <h2>Contenidos informativos</h2>
+      <form class="footer-sub" action="/api/suscripcion" method="post" data-ajax novalidate>
+        <label class="visually-hidden" for="s-correo">Correo electrónico</label>
+        <input id="s-correo" name="correo" type="email" placeholder="Correo electrónico" autocomplete="email" required maxlength="200" data-msg="Indique un correo electrónico válido." />
+        <span class="field__error" data-error="correo"></span>
+        <div class="hp" aria-hidden="true">
+          <label for="s-sitio">No complete este campo</label>
+          <input id="s-sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
+          <input name="iniciado" type="hidden" value="" />
+        </div>
+        <label class="check" for="s-consentimiento">
+          <input id="s-consentimiento" name="consentimiento" type="checkbox" required data-msg="Marque la casilla de consentimiento." />
+          <span>Acepto recibir estos contenidos, según la <a href="/politica-de-privacidad">política de privacidad</a>.</span>
+        </label>
+        <span class="field__error" data-error="consentimiento"></span>
+        <div class="form__status" role="status" aria-live="polite"></div>
+        <button class="btn btn-outline" type="submit">Suscribirme</button>
+      </form>
+    </div>
   </div>
-  <div class="footer-bar">
-    <div class="wrap-wide">
-      <a href="/aviso-juridico">Aviso jurídico</a> | <a href="/politica-de-privacidad">Política de privacidad</a> | © {anio} Evelyn Elizondo | Derecho de Familia | Costa Rica
-    </div>
+  <div class="wrap-wide footer-bottom">
+    <p>El contenido de este sitio tiene fines informativos y no sustituye la asesoría individualizada. El envío de un formulario no constituye, por sí solo, una relación profesional. El resultado de cada asunto depende de sus circunstancias jurídicas y probatorias. Este sitio no atiende emergencias: si está en peligro, llame al 9-1-1.</p>
+    <p>© {anio} Evelyn Elizondo | Derecho de Familia | Costa Rica</p>
   </div>
 </footer>

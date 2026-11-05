@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import Cut from '../../components/ui/Cut.astro';
 import PostCard from '../../components/ui/PostCard.astro';
 import Cta from '../../components/sections/Cta.astro';
 import { slugify } from '../../lib/format';
@@ -28,11 +27,9 @@ const categorias = [...new Set(articulos.map(a => a.data.categoria))];
     </div>
   </section>
 
-  <Cut color="band" flip vertex={75} style="margin-top:28px" />
   <section class="bg-band" style="padding-bottom:clamp(44px,5vw,70px)">
-    <span class="blog-ghost" aria-hidden="true">Lecturas</span>
-    <div class="wrap" style="margin-top:clamp(-70px,-5vw,-20px);position:relative">
-      <h2 class="visually-hidden">Lecturas destacadas</h2>
+    <div class="wrap" style="position:relative">
+      <h2 style="padding-top:clamp(44px,5vw,70px);margin-bottom:28px">Lecturas destacadas</h2>
       <div class="post-grid post-grid--4" style="margin-top:0">{destacados.map(p => <PostCard post={p} />)}</div>
     </div>
   </section>
@@ -42,7 +39,7 @@ const categorias = [...new Set(articulos.map(a => a.data.categoria))];
     return (
       <section class:list={['section', dark ? 'bg-image-dark on-dark' : i === 2 ? 'bg-ivory' : 'bg-white']}>
         {dark && <img src="/assets/images/lino.webp" alt="" width="1600" height="1000" loading="lazy" decoding="async" />}
-        <div class="wrap reveal">
+        <div class="wrap">
           <h2 style="font-size:var(--fs-h3)">{g.t}</h2>
           <div class="post-grid post-grid--4" style="margin-top:20px">{g.posts.map(p => <PostCard post={p} />)}</div>
         </div>

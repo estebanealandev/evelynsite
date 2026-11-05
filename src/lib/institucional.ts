@@ -21,6 +21,3 @@ export const principios = [
   { titulo: 'La conciliación, cuando corresponde', texto: 'Los acuerdos pueden ser una buena vía, pero no siempre proceden: la ley prohíbe conciliar cuando existen relaciones desiguales de poder.', etiqueta: 'Método de trabajo' }
 ];
 
-export const marquesinaPrincipios = ['Confidencialidad', 'Trato respetuoso', 'Claridad', 'Interés superior de la persona menor de edad', 'Información comprensible', 'Comunicación responsable'];
-
-export const marquesinaNormas = ['Código de Familia', 'Código Procesal de Familia', 'Código de la Niñez y la Adolescencia', 'Ley contra la Violencia Doméstica', 'Ley de Protección de Datos Personales'];

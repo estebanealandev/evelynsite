@@ -88,6 +88,41 @@ test.describe('metadatos', () => {
   });
 });
 
+test.describe('portada', () => {
+  test('tiene siete capítulos y ningún contenido en movimiento automático', async ({ page }) => {
+    await page.goto('/');
+    expect(await page.locator('main > section').count()).toBe(7);
+    const animados = await page.evaluate(() => document.getAnimations().filter(a => a.effect?.getComputedTiming().iterations === Infinity).length);
+    expect(animados).toBe(0);
+  });
+
+  test('muestra las nueve áreas con su enlace', async ({ page }) => {
+    await page.goto('/');
+    const enlaces = await page.locator('.h-areas a').evaluateAll(as => as.map(a => a.getAttribute('href')));
+    expect(enlaces).toEqual(servicios.map(s => `/servicios/${s}`));
+  });
+
+  test('el monograma nunca cubre el titular en ningún tamaño de pantalla', async ({ page }) => {
+    await page.goto('/');
+    for (const [width, height] of [[320, 568], [360, 640], [390, 664], [430, 932], [768, 1024], [1024, 600], [1024, 768], [1280, 640], [1366, 768], [1920, 1080], [2560, 1440]]) {
+      await page.setViewportSize({ width, height });
+      const choque = await page.evaluate(() => {
+        const m = document.querySelector('.h-hero__mark')!.getBoundingClientRect();
+        const r = document.createRange();
+        r.selectNodeContents(document.querySelector('.h-hero__title')!);
+        return [...r.getClientRects()].some(t => !(t.right <= m.left || t.left >= m.right || t.bottom <= m.top || t.top >= m.bottom));
+      });
+      expect(choque, `${width}x${height}`).toBe(false);
+    }
+  });
+
+  test('el hero cabe en la primera pantalla', async ({ page }) => {
+    await page.goto('/');
+    const caja = await page.locator('.h-hero__foot .btn').first().boundingBox();
+    expect(caja!.y + caja!.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  });
+});
+
 test.describe('interacciones', () => {
   test('menú móvil abre, navega y cierra con Escape', async ({ page, isMobile }) => {
     test.skip(!isMobile, 'solo móvil');
@@ -108,7 +143,7 @@ test.describe('interacciones', () => {
   test('submenú de escritorio con teclado', async ({ page, isMobile }) => {
     test.skip(isMobile, 'solo escritorio');
     await page.goto('/');
-    const btn = page.getByRole('button', { name: 'Más áreas' });
+    const btn = page.getByRole('button', { name: 'Áreas' });
     await btn.focus();
     await page.keyboard.press('Enter');
     await expect(page.locator('#submenu-servicios')).toBeVisible();
@@ -117,7 +152,7 @@ test.describe('interacciones', () => {
   });
 
   test('carrusel avanza y actualiza flechas', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('/sobre-evelyn');
     const root = page.locator('[data-carousel]').first();
     await root.scrollIntoViewIfNeeded();
     const prev = root.locator('[data-prev]');
@@ -125,15 +160,6 @@ test.describe('interacciones', () => {
     await expect(prev).toBeDisabled();
     await next.click();
     await expect(prev).toBeEnabled();
-  });
-
-  test('diálogo abre y cierra', async ({ page }) => {
-    await page.goto('/');
-    await page.locator('[data-dialog]').first().click();
-    const d = page.locator('dialog');
-    await expect(d).toBeVisible();
-    await d.locator('[data-close]').click();
-    await expect(d).toBeHidden();
   });
 
   test('acordeón Leer más revela el detalle', async ({ page }) => {
@@ -148,8 +174,7 @@ test.describe('interacciones', () => {
     const ctx = await browser.newContext({ reducedMotion: 'reduce' });
     const page = await ctx.newPage();
     await page.goto('http://127.0.0.1:4325/');
-    expect(await page.locator('.marquee__track').first().evaluate(e => getComputedStyle(e).animationName)).toBe('none');
-    expect(await page.locator('.reveal').first().evaluate(e => getComputedStyle(e).opacity)).toBe('1');
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).scrollBehavior)).toBe('auto');
     await ctx.close();
   });
 });
@@ -236,9 +261,7 @@ test.describe('accesibilidad WCAG 2.2 AA', () => {
   for (const ruta of ['/', '/servicios/divorcios', '/servicios/proteccion-familiar', '/sobre-evelyn', '/blog', '/blog/cambios-codigo-procesal-familia', '/agendar-consulta', '/contacto', '/politica-de-privacidad']) {
     test(`${ruta} sin violaciones graves`, async ({ page }) => {
       await page.goto(ruta, { waitUntil: 'networkidle' });
-      await page.addStyleTag({ content: '.js .reveal{opacity:1!important;transform:none!important;transition:none!important}' });
-      // Las palabras gigantes son decoración pura (aria-hidden): WCAG las exime del requisito de contraste.
-      const r = await new AxeBuilder({ page }).exclude('.ghost').exclude('.approach-ghost').exclude('.blog-ghost').exclude('.corner-ghost').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+      const r = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
       const graves = r.violations.filter(v => ['serious', 'critical'].includes(v.impact ?? '')).map(v => `${v.id}: ${v.nodes.slice(0, 4).map(n => n.target.join(' ')).join(' | ')}`);
       expect(graves).toEqual([]);
     });

@@ -19,7 +19,7 @@
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') { toggle(false); burger.focus(); }
     });
-    matchMedia('(min-width: 1280px)').addEventListener('change', e => { if (e.matches) toggle(false); });
+    matchMedia('(min-width: 1024px)').addEventListener('change', e => { if (e.matches) toggle(false); });
   }
 
   // Submenú de servicios
@@ -55,27 +55,6 @@
     addEventListener('resize', sync);
     sync();
   });
-
-  // Diálogos
-  $$('[data-dialog]').forEach(btn => {
-    const d = document.getElementById(btn.dataset.dialog);
-    if (!d) return;
-    btn.addEventListener('click', () => d.showModal());
-    d.addEventListener('click', e => {
-      if (e.target === d || e.target.closest('[data-close]')) d.close();
-    });
-  });
-
-  // Revelado progresivo
-  const reveals = $$('.reveal');
-  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const io = new IntersectionObserver((entries, o) => {
-      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); o.unobserve(en.target); } });
-    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.05 });
-    reveals.forEach(el => io.observe(el));
-  } else {
-    reveals.forEach(el => el.classList.add('is-in'));
-  }
 
   // Formularios: mejora progresiva sobre el envío nativo
   $$('form[data-ajax]').forEach(form => {

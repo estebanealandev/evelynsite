@@ -125,6 +125,7 @@ const files = {
   'evelyn-elizondo-mono-white.svg': horizontal({ c1: C.white, c2: C.white, name: C.white, desc: C.white, title: T }),
   // Aplicaciones
   'evelyn-elizondo-navbar.svg': horizontal({ c1: C.navy, c2: C.gold, name: C.navy, desc: C.slate, title: 'Evelyn Elizondo', compact: true }),
+  'evelyn-elizondo-navbar-dark.svg': horizontal({ c1: C.ivory, c2: C.gold, name: C.ivory, desc: C.ivory, title: 'Evelyn Elizondo', compact: true }),
   'evelyn-elizondo-footer.svg': vertical({ c1: C.ivory, c2: C.gold, name: C.ivory, desc: C.ivory, title: T }),
   // Monograma
   'evelyn-elizondo-monogram.svg': svgWrap(100, 100, markGroup(0, 0, 100, C.navy, C.gold), 'Monograma EE'),
@@ -204,8 +205,7 @@ const copies = [
   ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-italic.woff2', 'cormorant-400i.woff2'],
   ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2', 'cormorant-500i.woff2'],
   ['@fontsource-variable/inter/files/inter-latin-wght-normal.woff2', 'inter.woff2'],
-  ['@fontsource-variable/inter/files/inter-latin-wght-italic.woff2', 'inter-i.woff2'],
-  ['@fontsource-variable/manrope/files/manrope-latin-wght-normal.woff2', 'manrope.woff2']
+  ['@fontsource-variable/inter/files/inter-latin-wght-italic.woff2', 'inter-i.woff2']
 ];
 for (const [src, dest] of copies) fs.copyFileSync(path.join('node_modules', src), path.join(F, dest));
 

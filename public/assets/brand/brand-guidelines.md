@@ -33,7 +33,7 @@ Para regenerarlos: `npm run brand`.
 |---|---|---|---|
 | `--color-primary` | Navy profundo | `#14283E` | Secciones institucionales, titulares |
 | `--color-secondary` | Azul pizarra | `#30465A` | Pie, marcas de lista |
-| `--color-accent` | Oro envejecido | `#B49A68` | Botones y acentos discretos |
+| `--color-accent` | Oro envejecido | `#B49A68` | Monograma y acentos discretos sobre fondos oscuros |
 | `--color-accent-text` | Oro para texto | `#7A6232` | Solo texto pequeño sobre fondos claros |
 | `--color-background` | Marfil | `#F6F3ED` | Fondos de sección |
 | `--color-surface` | Blanco | `#FFFFFF` | Áreas de lectura |
@@ -41,7 +41,7 @@ Para regenerarlos: `npm run brand`.
 | `--color-muted` | Gris pizarra | `#626971` | Texto secundario |
 | `--color-border` | Gris piedra | `#DFE1E0` | Bandas y bordes |
 
-El oro base no alcanza 4,5:1 sobre marfil, por lo que nunca debe usarse para texto pequeño sobre fondos claros. Sí puede usarse como fondo de botón con texto navy.
+El oro base no alcanza 4,5:1 sobre marfil, por lo que nunca debe usarse para texto pequeño sobre fondos claros. Los botones usan navy sobre fondos claros y marfil sobre fondos oscuros.
 
 Se añadieron dos ajustes a la paleta sugerida: `--color-accent-text` por accesibilidad y `--color-accent-soft` (`#E8DFCC`) para los rectángulos detrás de las imágenes.
 
@@ -52,8 +52,7 @@ Evite los dorados brillantes, los efectos metálicos y los degradados ostentosos
 Todas tienen licencia SIL OFL 1.1 y se sirven localmente.
 
 - **Titulares:** Cormorant Garamond (400, 500 e itálicas).
-- **Texto:** Inter.
-- **Botones y navegación:** Manrope.
+- **Texto, botones y navegación:** Inter.
 
 ## Reglas de uso
 

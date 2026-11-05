@@ -1,6 +1,12 @@
 # Plan de UX y diseño: nueva dirección del sitio
 
-**Fecha:** 5 de noviembre de 2026. **Estado:** pendiente de aprobación. Todavía no se ha cambiado nada del sitio.
+**Fecha:** 5 de noviembre de 2026.
+
+| Fase | Estado |
+|---|---|
+| 0. Red de seguridad | Hecha |
+| 1. Limpieza y nueva base visual | Lista para revisión en la rama `rediseno/fase-1` |
+| 2 a 7 | Pendientes de aprobación |
 
 ## 1. Lo esencial
 

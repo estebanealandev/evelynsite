@@ -105,6 +105,7 @@ Al cambiar una norma, actualice `legalVerifiedAt` en `src/config/site.ts`.
 | `npm run audit:identity` | Busca referencias residuales de la identidad anterior |
 | `npm run check` | Tipos de TypeScript |
 | `npm run test:visual` | Compara con las métricas de referencia. Requiere el servidor en marcha y `BASE=http://127.0.0.1:4321` |
+| `npm run capture -- <fase>` | Guarda capturas y métricas de una fase del rediseño. Requiere el servidor en marcha |
 
 ## Pendientes de publicación
 
@@ -121,6 +122,7 @@ La lista completa está en [docs/legal-compliance-audit.md](docs/legal-complianc
 - [Informe de reconstrucción](docs/reconstruction-report.md)
 - [Auditoría jurídica](docs/legal-compliance-audit.md)
 - [Auditoría de identidad](docs/branding-audit.md)
+- [Plan de UX y diseño](docs/plan-ux-diseno.md)
 - [Comparación estructural](docs/reference/structure-comparison.md)
 - [Guía de marca](public/assets/brand/brand-guidelines.md)
 

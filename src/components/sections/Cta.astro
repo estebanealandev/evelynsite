@@ -1,12 +1,10 @@
 ---
-import Cut from '../ui/Cut.astro';
 import { em } from '../../lib/format';
 const { titulo = 'Cada situación familiar merece una *orientación* clara y respetuosa.', imagen = 'umbral', texto = 'Agendar una consulta', href = '/agendar-consulta' } = Astro.props;
 ---
 <section class="cta on-dark">
-  <img src={`/assets/images/${imagen}-sm.webp`} alt="" width="700" height="438" loading="lazy" decoding="async" />
-  <Cut class="cta__cut" vertex={25} />
-  <div class="cta__inner reveal">
+  <img src={`/assets/images/${imagen}.webp`} alt="" width="1600" height="1000" loading="lazy" decoding="async" />
+  <div class="wrap-wide cta__inner">
     <h2 set:html={em(titulo)} />
     <a class="btn" href={href}>{texto}</a>
   </div>

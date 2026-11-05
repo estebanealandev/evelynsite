@@ -24,6 +24,8 @@ for (const w of ANCHOS) {
     await page.evaluate(async () => {
       for (let y = 0; y < document.documentElement.scrollHeight; y += 600) { scrollTo(0, y); await new Promise(r => setTimeout(r, 30)); }
       scrollTo(0, 0);
+      // Las imágenes diferidas deben estar decodificadas antes de capturar.
+      await Promise.all([...document.images].map(i => (i.loading = 'eager', i.decode().catch(() => {}))));
     });
     await page.waitForTimeout(250);
     const nombre = `${ruta === '/' ? 'portada' : ruta.slice(1).replace(/\//g, '_')}-${w}`;

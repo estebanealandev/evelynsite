@@ -16,6 +16,7 @@
     "art": "node scripts/generate-art.mjs",
     "test": "playwright test",
     "test:visual": "node scripts/compare-structure.mjs",
+    "capture": "node scripts/capture-phase.mjs",
     "audit:identity": "node scripts/audit-identity.mjs"
   },
   "dependencies": {
@@ -27,7 +28,6 @@
     "@astrojs/check": "latest",
     "@axe-core/playwright": "^4.14.0",
     "@fontsource-variable/inter": "^5.3.0",
-    "@fontsource-variable/manrope": "^5.3.0",
     "@fontsource/cormorant-garamond": "^5.3.0",
     "@playwright/test": "latest",
     "@types/node": "^26.6.6",

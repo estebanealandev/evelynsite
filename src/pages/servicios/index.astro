@@ -19,7 +19,7 @@ const crumbs = [{ label: 'Áreas' }];
     <div class="wrap">
       <div class="service-cards">
         {servicios.map(s => (
-          <a class="service-card reveal" href={`/servicios/${s.id}`}>
+          <a class="service-card" href={`/servicios/${s.id}`}>
             <img src={`/assets/images/${s.data.imagen}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" />
             <span class="service-card__title">{s.data.titulo}</span>
             <span class="service-card__more">Conocer más</span>

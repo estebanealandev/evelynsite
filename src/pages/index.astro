@@ -1,170 +1,147 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Cut from '../components/ui/Cut.astro';
-import Marquee from '../components/ui/Marquee.astro';
-import Principles from '../components/sections/Principles.astro';
-import Process from '../components/sections/Process.astro';
-import PostsSection from '../components/sections/PostsSection.astro';
 import Cta from '../components/sections/Cta.astro';
 import { site } from '../config/site';
-import { marquesinaNormas, marquesinaPrincipios, valores } from '../lib/institucional';
+import { proceso, valores } from '../lib/institucional';
+import '../styles/home.css';
 
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const articulos = await getCollection('articulos');
-const destacados = articulos.filter(a => a.data.destacado).slice(0, 3);
-const tarjetas = ['divorcios', 'pensiones-alimentarias', 'guarda-crianza'].map(id => servicios.find(s => s.id === id)!);
-const situaciones = [
-  'Una separación o un divorcio', 'Una pensión alimentaria', 'Decisiones sobre la crianza',
-  'El contacto con hijas e hijos', 'Bienes adquiridos en pareja', 'El fin de una convivencia',
-  'El reconocimiento de un hijo', 'Un acuerdo familiar', 'Una situación de violencia'
-];
+const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4);
+const num = (i: number) => String(i + 1).padStart(2, '0');
 ---
-<Base title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
-  <section class="hero-home">
-    <div class="hero-home__image"><img src="/assets/images/luz-ventana.webp" srcset="/assets/images/luz-ventana-sm.webp 700w, /assets/images/luz-ventana.webp 1600w" sizes="(max-width: 767px) 100vw, 82vw" alt="" width="1600" height="1000" fetchpriority="high" decoding="async" /></div>
-    <div class="hero-home__panel on-dark">
-      <h1>Protegemos lo que <em>más</em> importa.</h1>
-      <p>Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
-      <div class="btn-row">
-        <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
-        <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
-      </div>
+<Base headerOverlay title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
+  <section class="h-hero on-dark">
+    <div class="h-hero__visual" data-hero-visual>
+      <img class="h-hero__mark" src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="600" height="600" fetchpriority="high" />
     </div>
-  </section>
-
-  <section class="bg-band values" aria-label="Valores">
-    <div class="wrap values__grid">
-      {valores.map(v => <div class="values__item"><h2>{v.titulo}</h2><p>{v.texto}</p></div>)}
-    </div>
-  </section>
-  <Cut color="band" vertex={75} />
-
-  <section class="section">
-    <div class="wrap media-split">
-      <div class="offset reveal"><img src="/assets/images/portico-vertical-sm.webp" alt="Galería de arcos de piedra atravesada por la luz del sol" width="900" height="1200" loading="lazy" decoding="async" /></div>
-      <div class="reveal">
-        <h2>La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
-        <p>Una separación, una pensión o una decisión sobre la crianza de los hijos pueden sentirse abrumadoras. Conocer los derechos, las obligaciones y las opciones que contempla la legislación costarricense ayuda a decidir con mayor serenidad.</p>
-        <p>Recibir orientación especializada a tiempo permite aclarar plazos, ordenar la información y valorar cada camino posible.</p>
-        <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
-      </div>
-    </div>
-  </section>
-
-  <Marquee items={marquesinaPrincipios} label="Principios" />
-
-  <section class="banner on-dark">
-    <img src="/assets/images/columnata.webp" alt="" width="1600" height="1000" loading="lazy" decoding="async" />
-    <div class="wrap banner__inner">
-      <div class="reveal">
-        <p class="eyebrow">Una forma de trabajar</p>
-        <h2>Por qué importa el <em>cómo</em></h2>
-      </div>
-      <button class="banner__play" type="button" data-dialog="dialogo-enfoque" aria-label="Leer sobre la forma de trabajar">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v18M3 12h18"></path></svg>
-      </button>
-    </div>
-  </section>
-  <dialog class="modal" id="dialogo-enfoque" aria-labelledby="dialogo-enfoque-t">
-    <button class="modal__close" type="button" data-close aria-label="Cerrar">×</button>
-    <h2 id="dialogo-enfoque-t">Por qué importa el <em>cómo</em></h2>
-    <p style="margin-top:14px">En derecho de familia, la forma de abordar un asunto importa casi tanto como su resultado. Una conversación respetuosa puede reducir tensiones. Una explicación clara permite decidir con información. Un análisis cuidadoso de los hechos y de la norma vigente evita sorpresas.</p>
-    <p>Por eso, el trabajo se basa en escuchar, explicar con franqueza lo que la ley permite y lo que no, y plantear opciones realistas, sin prometer resultados.</p>
-    <a class="btn" href="/sobre-evelyn">Conocer más</a>
-  </dialog>
-
-  <section class="ghost-wrap" style="padding-top:0">
-    <span class="ghost" aria-hidden="true">Familia</span>
-    <div class="vline"></div>
-    <div class="wrap center reveal" style="padding-top:26px">
-      <p class="eyebrow">Áreas de práctica</p>
-      <h2>Información y orientación en derecho de <em>familia.</em></h2>
-      <div class="vline vline--tight"></div>
-      <p class="lede">Cada área tiene reglas propias en el ordenamiento costarricense. Estas páginas explican, de forma general, en qué consisten y qué conviene considerar:</p>
-    </div>
-    <div class="half-band" style="padding-bottom:1px">
-      <div class="service-cards" style="width:min(900px,calc(100% - 2*var(--gutter)));margin-inline:auto">
-        {tarjetas.map(s => (
-          <a class="service-card reveal" href={`/servicios/${s.id}`}>
-            <img src={`/assets/images/${s.data.imagen}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" />
-            <span class="service-card__title">{s.data.titulo}</span>
-            <span class="service-card__more">Conocer más</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section bg-ivory">
-    <div class="wrap center reveal">
-      <h2>Cuándo puede ser útil una orientación</h2>
-      <p class="lede" style="margin-top:12px">Las consultas de familia suelen surgir ante situaciones como estas:</p>
-      <ul class="checks checks--three" style="margin-top:28px">{situaciones.map(s => <li>{s}</li>)}</ul>
-      <div class="btn-row"><a class="btn btn-outline" href="/servicios">Ver todas las áreas</a></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap media-split media-split--text-wide">
-      <div class="approach-media reveal">
-        <img src="/assets/images/documentos-sm.webp" alt="Hojas de papel y una pluma sobre una mesa oscura" width="700" height="817" loading="lazy" decoding="async" />
-        <span class="approach-ghost" aria-hidden="true">EE</span>
-      </div>
-      <div class="reveal">
-        <h2 class="title-rule">Nuestro enfoque</h2>
-        <p style="margin-top:14px">Un asunto de familia no se reduce a un expediente. El buen consejo busca resolver los problemas, no agravarlos.</p>
-        <p><strong>Una orientación jurídica debería:</strong></p>
-        <ul class="checks">
-          <li>Partir de la legislación costarricense vigente.</li>
-          <li>Atender sus objetivos y explicar sus opciones.</li>
-          <li>Comunicar de forma clara y oportuna.</li>
-          <li>Priorizar el interés superior de los hijos.</li>
-        </ul>
-        <p>Cuando es posible y seguro, un buen acuerdo puede ahorrar desgaste. Cuando no lo es, conviene saber cómo funciona el proceso.</p>
-        <details class="more">
-          <summary>Leer más</summary>
-          <div><p>La conciliación no procede en todos los casos: el Código Procesal de Familia la prohíbe si se constatan relaciones desiguales de poder. Cuando hay violencia, las medidas de protección tienen su propio trámite y la seguridad es lo primero.</p></div>
-        </details>
+    <div class="wrap-wide h-hero__content">
+      <h1 class="h-hero__title">Protegemos lo que <em>más</em> importa.</h1>
+      <div class="g12 h-hero__foot">
+        <p>Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
         <div class="btn-row">
           <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
-          <a class="btn btn-outline" href="/sobre-evelyn">Sobre Evelyn</a>
+          <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
         </div>
       </div>
     </div>
   </section>
 
-  <Principles />
-
-  <section class="straddle" aria-hidden="true">
-    <div class="wrap"><img src="/assets/images/escalera-ancha.webp" alt="" width="1600" height="900" loading="lazy" decoding="async" /></div>
+  <section class="chapter bg-ivory">
+    <div class="wrap-wide">
+      <h2 class="h-statement">La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
+      <div class="g12 h-intro">
+        <div class="h-intro__text">
+          <p>Una separación, una pensión o una decisión sobre la crianza de los hijos pueden sentirse abrumadoras. Conocer los derechos, las obligaciones y las opciones que contempla la legislación costarricense ayuda a decidir con mayor serenidad.</p>
+          <p>Recibir orientación especializada a tiempo permite aclarar plazos, ordenar la información y valorar cada camino posible.</p>
+        </div>
+      </div>
+      <ol class="h-values">
+        {valores.map(v => (
+          <li>
+            <h3>{v.titulo}</h3>
+            <p>{v.texto}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
   </section>
-  <div class="vline" style="margin-top:-50px;position:relative;z-index:2"></div>
-  <section class="section" style="padding-top:26px"><Process /></section>
 
-  <Marquee items={marquesinaNormas} dark label="Normativa costarricense de referencia" />
+  <section class="chapter">
+    <div class="wrap-wide">
+      <div class="g12 h-head">
+        <div class="h-head__title">
+          <p class="eyebrow">Áreas de práctica</p>
+          <h2>Información y orientación en derecho de <em>familia.</em></h2>
+        </div>
+        <div class="h-head__aside">
+          <p>Cada área tiene reglas propias en el ordenamiento costarricense. Estas páginas explican, de forma general, en qué consisten y qué conviene considerar.</p>
+        </div>
+      </div>
+      <ol class="h-areas">
+        {servicios.map((s, i) => (
+          <li>
+            <a href={`/servicios/${s.id}`}>
+              <span class="h-areas__num" aria-hidden="true">{num(i)}</span>
+              <span class="h-areas__title">{s.data.titulo}</span>
+              <span class="h-areas__desc">{s.data.resumen}</span>
+              <svg class="h-areas__arrow" viewBox="0 0 28 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 6h27M22 1l5 5-5 5"></path></svg>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
 
-  <section class="section bg-band" style="overflow:hidden">
-    <span class="corner-ghost" aria-hidden="true">CR</span>
-    <div class="wrap map-grid" style="position:relative">
-      <div class="map-frame reveal"><img src="/assets/images/mapa-costa-rica.svg" alt="Silueta del territorio de Costa Rica" width="800" height="760" loading="lazy" /></div>
-      <div class="reveal">
-        <h2>Derecho de familia en Costa Rica</h2>
-        <p style="margin-top:10px">Toda la información de este sitio se refiere al ordenamiento jurídico costarricense. Estas son algunas de las instancias que suelen intervenir en los asuntos de familia:</p>
-        <ul class="checks checks--cols">
-          <li>Juzgados de Familia</li>
-          <li>Juzgados de Pensiones Alimentarias</li>
-          <li>Juzgados de Violencia Doméstica</li>
-          <li>Registro Civil</li>
-          <li>Registro Público</li>
-          <li>Patronato Nacional de la Infancia</li>
-          <li>Defensa Pública</li>
-          <li>Notarías públicas</li>
+  <section class="h-approach">
+    <img class="h-approach__img" src="/assets/images/portico.webp" srcset="/assets/images/portico-sm.webp 700w, /assets/images/portico.webp 1600w" sizes="100vw" alt="Galería de arcos de piedra atravesada por la luz del sol" width="1600" height="1000" loading="lazy" decoding="async" />
+    <div class="wrap-wide g12 h-approach__body">
+      <div class="h-approach__title">
+        <p class="eyebrow">Nuestro enfoque</p>
+        <h2>El buen consejo busca resolver, no <em>agravar.</em></h2>
+      </div>
+      <div class="h-approach__text">
+        <p>Un asunto de familia no se reduce a un expediente. Una orientación jurídica debería:</p>
+        <ul class="h-rows">
+          <li>Partir de la legislación costarricense vigente.</li>
+          <li>Atender sus objetivos y explicar sus opciones.</li>
+          <li>Comunicar de forma clara y oportuna.</li>
+          <li>Priorizar el interés superior de los hijos.</li>
+        </ul>
+        <p>Cuando es posible y seguro, un buen acuerdo puede ahorrar desgaste. La conciliación no procede en todos los casos: el Código Procesal de Familia la prohíbe si se constatan relaciones desiguales de poder.</p>
+        <a class="link-arrow" href="/sobre-evelyn">Sobre Evelyn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="chapter bg-ivory">
+    <div class="wrap-wide">
+      <div class="g12 h-head">
+        <div class="h-head__title">
+          <p class="eyebrow">El proceso</p>
+          <h2>Un acompañamiento <em>claro,</em> paso a paso.</h2>
+        </div>
+        <div class="h-head__aside">
+          <p>Cada etapa se explica con lenguaje comprensible, sin promesas sobre el resultado de un asunto.</p>
+        </div>
+      </div>
+      <ol class="steps h-steps">
+        {proceso.map(s => <li><h3>{s.titulo}</h3><p>{s.texto}</p></li>)}
+      </ol>
+    </div>
+  </section>
+
+  <section class="chapter">
+    <div class="wrap-wide">
+      <div class="h-lib-head">
+        <div>
+          <p class="eyebrow">Biblioteca</p>
+          <h2>Para leer con calma</h2>
+        </div>
+        <a class="link-arrow" href="/blog">Ver todos los artículos</a>
+      </div>
+      <div class="g12 h-lib">
+        <a class="h-lib__main" href={`/blog/${principal.id}`}>
+          <img src={`/assets/images/${principal.data.imagen}.webp`} srcset={`/assets/images/${principal.data.imagen}-sm.webp 700w, /assets/images/${principal.data.imagen}.webp 1400w`} sizes="(max-width: 767px) 100vw, 58vw" alt="" width="1400" height="1050" loading="lazy" decoding="async" />
+          <span class="h-lib__cat">{principal.data.categoria}</span>
+          <h3>{principal.data.titulo}</h3>
+          <p>{principal.data.resumen}</p>
+        </a>
+        <ul class="h-lib__list">
+          {otros.map(p => (
+            <li>
+              <a href={`/blog/${p.id}`}>
+                <span class="h-lib__cat">{p.data.categoria}</span>
+                <h3>{p.data.titulo}</h3>
+                <p>{p.data.resumen}</p>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>
   </section>
 
-  <PostsSection titulo="Blog de derecho de familia" entrada="Artículos informativos sobre la legislación costarricense, escritos con lenguaje claro." posts={destacados} />
   <Cta />
 </Base>

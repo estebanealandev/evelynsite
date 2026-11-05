@@ -1,12 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Cut from '../components/ui/Cut.astro';
-import Marquee from '../components/ui/Marquee.astro';
 import Principles from '../components/sections/Principles.astro';
 import PostsSection from '../components/sections/PostsSection.astro';
 import Cta from '../components/sections/Cta.astro';
-import { marquesinaPrincipios } from '../lib/institucional';
 
 const posts = (await getCollection('articulos')).filter(a => a.data.destacado).slice(3, 6);
 const compromisos = [
@@ -31,18 +28,17 @@ const etica = [
 
   <section class="section" style="padding-block:clamp(44px,5vw,64px)">
     <div class="wrap trio">
-      {compromisos.map(c => <div class="reveal"><h2>{c.t}</h2><p>{c.d}</p></div>)}
+      {compromisos.map(c => <div><h2>{c.t}</h2><p>{c.d}</p></div>)}
     </div>
   </section>
 
-  <Cut color="ivory" flip vertex={75} />
   <section class="section bg-ivory" style="padding-top:clamp(24px,3vw,48px)">
     <div class="wrap media-split">
-      <div class="monogram-panel reveal" role="img" aria-label="Monograma EE de Evelyn Elizondo">
+      <div class="monogram-panel" role="img" aria-label="Monograma EE de Evelyn Elizondo">
         <img src="/assets/images/luz-ventana-vertical-sm.webp" alt="" width="700" height="856" loading="lazy" decoding="async" />
         <img src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="200" height="200" />
       </div>
-      <div class="reveal">
+      <div>
         <h2>Los asuntos de familia exigen tanto <em>criterio</em> como sensibilidad.</h2>
         <p style="margin-top:12px">Cuando está en juego lo más personal, una persona necesita una orientación que:</p>
         <ul class="checks">
@@ -62,15 +58,12 @@ const etica = [
     </div>
   </section>
 
-  <Marquee items={marquesinaPrincipios} label="Principios" />
-
   <section class="section">
-    <div class="wrap center reveal">
+    <div class="wrap center">
       <p class="eyebrow">Forma de trabajar</p>
       <h2>Tres pilares de una atención responsable</h2>
-      <div class="vline vline--tight"></div>
     </div>
-    <div class="wrap reveal" style="max-width:820px">
+    <div class="wrap" style="max-width:820px">
       {etica.map(e => <div class="aspect"><h3>{e.t}</h3><p>{e.d}</p></div>)}
     </div>
   </section>

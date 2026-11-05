@@ -1,16 +1,14 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import Cut from '../../components/ui/Cut.astro';
 import Crumbs from '../../components/ui/Crumbs.astro';
 import Carousel from '../../components/ui/Carousel.astro';
-import Marquee from '../../components/ui/Marquee.astro';
 import Process from '../../components/sections/Process.astro';
 import PostsSection from '../../components/sections/PostsSection.astro';
 import Cta from '../../components/sections/Cta.astro';
 import { em } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
-import { principios, marquesinaNormas } from '../../lib/institucional';
+import { principios } from '../../lib/institucional';
 import { site } from '../../config/site';
 import { fechaLarga } from '../../lib/format';
 
@@ -48,11 +46,10 @@ const faq = {
   </section>
   {d.aviso && <div class="wrap" style="margin-bottom:28px"><p class="notice notice--urgent" role="note">{d.aviso}</p></div>}
   <Crumbs items={crumbs} />
-  <Cut color="ivory" flip vertex={25} />
   <section class="section bg-ivory" style="padding-top:clamp(24px,3vw,48px)">
     <div class="wrap media-split media-split--rev">
-      <div class="offset offset--rev offset--band reveal"><img src={`/assets/images/${imgIntro}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
-      <div class="reveal">
+      <div class="offset offset--rev offset--band"><img src={`/assets/images/${imgIntro}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
+      <div>
         <h2 set:html={em(d.intro.titulo)} />
         <p style="margin-top:12px">{d.intro.parrafo}</p>
         <ul class="checks">{d.intro.lista.map((l: string) => <li>{l}</li>)}</ul>
@@ -74,13 +71,12 @@ const faq = {
   </section>
 
   <section class="section">
-    <div class="wrap center reveal">
+    <div class="wrap center">
       <p class="eyebrow">Marco jurídico</p>
       <h2>{d.aspectos.titulo}</h2>
       <p class="lede" style="margin-top:12px">{d.aspectos.entrada}</p>
-      <div class="vline vline--tight"></div>
     </div>
-    <div class="wrap reveal" style="max-width:800px">
+    <div class="wrap" style="max-width:800px">
       {d.aspectos.items.map((a: { titulo: string; resumen: string; detalle: string }) => (
         <div class="aspect">
           <h3>{a.titulo}</h3>
@@ -93,15 +89,14 @@ const faq = {
   </section>
 
   <section class="bg-white" style="position:relative;padding-top:clamp(0px,4vw,60px)">
-    <div style="position:absolute;inset:clamp(70px,10vw,140px) 0 0;background:var(--color-border)"></div>
+    <div style="position:absolute;inset:clamp(70px,10vw,140px) 0 0;background:var(--color-background)"></div>
     <div class="wrap media-split media-split--support">
-      <img class="reveal" src={`/assets/images/${imgApoyo}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5.4;object-fit:cover" />
-      <div class="reveal media-split__offset">
+      <img src={`/assets/images/${imgApoyo}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5.4;object-fit:cover" />
+      <div class="media-split__offset">
         <h2>{d.situaciones.titulo}</h2>
         <ul class="checks checks--cols">{d.situaciones.items.map((s: string) => <li>{s}</li>)}</ul>
       </div>
     </div>
-    <div class="vline" style="position:relative"></div>
   </section>
 
   <section class="section" style="padding-top:26px">
@@ -110,11 +105,11 @@ const faq = {
 
   <section class="section bg-ivory">
     <div class="wrap media-split">
-      <div class="reveal">
+      <div>
         <h2 set:html={em(d.importante.titulo)} />
         <p style="margin-top:12px">{d.importante.entrada}</p>
       </div>
-      <div class="reveal">
+      <div>
         <h3>{d.importante.subtitulo}</h3>
         <ul class="checks">{d.importante.items.map((i: string) => <li>{i}</li>)}</ul>
         <p>{d.importante.cierre}</p>
@@ -127,7 +122,7 @@ const faq = {
   </article>
 
   <section class="section bg-ivory">
-    <div class="wrap center reveal">
+    <div class="wrap center">
       <h2>Preguntas frecuentes</h2>
       <div class="faq" style="text-align:left">
         {d.preguntas.map((q: { p: string; r: string }) => (
@@ -136,8 +131,6 @@ const faq = {
       </div>
     </div>
   </section>
-
-  <Marquee items={marquesinaNormas} dark label="Normativa costarricense de referencia" />
 
   <section class="section" style="padding-block:clamp(36px,4vw,56px)">
     <div class="wrap">

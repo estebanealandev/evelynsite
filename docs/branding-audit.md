@@ -43,7 +43,7 @@ Algunas superposiciones y un degradado de las tarjetas siguen con valores RGB di
 |---|---|---|---|
 | Titulares | Freight Big Pro | Cormorant Garamond | OFL |
 | Texto | Lato | Inter | OFL |
-| Interfaz | SS Pro | Manrope | OFL |
+| Interfaz | SS Pro | Inter (Manrope se retiró en la Fase 1 del rediseño) | OFL |
 
 Se alojan en `public/assets/fonts`. No hay solicitudes a Google Fonts ni a Adobe. Solo se incluye el subconjunto latino.
 

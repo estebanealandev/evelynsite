@@ -1,35 +1,33 @@
 ---
 import { getCollection } from 'astro:content';
-import { mainNav, secondaryNav, site } from '../../config/site';
+import { secondaryNav } from '../../config/site';
+const { overlay = false } = Astro.props;
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const cur = (href: string) => (path === href || path.startsWith(href + '/') ? 'page' : undefined);
-const directos = new Set(mainNav.map(n => n.href));
-const otros = servicios.filter(s => !directos.has(`/servicios/${s.id}`));
+const logo = overlay ? 'evelyn-elizondo-navbar-dark' : 'evelyn-elizondo-navbar';
 ---
-<header class="site-header">
-  <div class="wrap-wide">
-    <div class="header-top">{site.contact.phone ? <a href={`tel:${site.contact.phone.replace(/[^+\d]/g, '')}`}>{site.contact.phone}</a> : <span>Costa Rica</span>}</div>
-    <div class="header-main">
-      <a class="brand" href="/" aria-label="Evelyn Elizondo, página de inicio">
-        <img src="/assets/brand/evelyn-elizondo-navbar.svg" alt="Evelyn Elizondo" width="300" height="60" />
-      </a>
+<header class:list={['site-header', { 'site-header--overlay': overlay }]}>
+  <div class="wrap-wide header-main">
+    <a class="brand" href="/" aria-label="Evelyn Elizondo, página de inicio">
+      <img src={`/assets/brand/${logo}.svg`} alt="Evelyn Elizondo" width="240" height="48" />
+    </a>
+    <div class="header-actions">
       <nav class="site-nav" aria-label="Navegación principal">
         <ul>
-          {mainNav.map(n => <li><a class="nav-link" href={n.href} aria-current={cur(n.href)}>{n.label}</a></li>)}
           <li class="has-menu">
-            <button class="nav-link" type="button" aria-expanded="false" aria-controls="submenu-servicios">Más áreas
+            <button class="nav-link" type="button" aria-expanded="false" aria-controls="submenu-servicios">Áreas
               <svg class="nav-caret" viewBox="0 0 8 8" fill="none" stroke="currentColor" aria-hidden="true"><path d="M1 2.5l3 3 3-3"></path></svg>
             </button>
             <ul class="submenu" id="submenu-servicios">
-              {otros.map(s => <li><a href={`/servicios/${s.id}`} aria-current={cur(`/servicios/${s.id}`)}>{s.data.titulo}</a></li>)}
+              {servicios.map(s => <li><a href={`/servicios/${s.id}`} aria-current={cur(`/servicios/${s.id}`)}>{s.data.titulo}</a></li>)}
               <li><a href="/servicios" aria-current={path === '/servicios' ? 'page' : undefined}>Todas las áreas</a></li>
             </ul>
           </li>
           {secondaryNav.map(n => <li><a class="nav-link" href={n.href} aria-current={cur(n.href)}>{n.label}</a></li>)}
         </ul>
       </nav>
-      <a class="btn header-cta" href="/agendar-consulta">Agendar una consulta</a>
+      <a class="btn btn-outline header-cta" href="/agendar-consulta">Agendar una consulta</a>
       <button class="burger" type="button" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><i class="visually-hidden">Abrir menú</i></button>
     </div>
   </div>

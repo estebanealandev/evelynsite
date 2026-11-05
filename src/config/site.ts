@@ -28,11 +28,6 @@ export const site = {
   legalVerifiedAt: '2026-11-04'
 };
 
-export const mainNav = [
-  { label: 'Divorcios', href: '/servicios/divorcios' },
-  { label: 'Pensiones', href: '/servicios/pensiones-alimentarias' },
-  { label: 'Guarda y crianza', href: '/servicios/guarda-crianza' }
-];
 export const secondaryNav = [
   { label: 'Sobre Evelyn', href: '/sobre-evelyn' },
   { label: 'Blog', href: '/blog' },
