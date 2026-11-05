@@ -2,14 +2,12 @@
 .lab { position: relative; height: 260svh; background: var(--color-primary); }
 .lab__stage { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: flex-end; height: 100svh; min-height: 560px; padding-bottom: clamp(24px, 3vw, 44px); overflow: hidden; }
 .lab__stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
-/* Protege la lectura del párrafo; cada escena deja libre el espacio del titular. */
-.lab__stage::after { content: ''; position: absolute; inset: 66% 0 0; background: linear-gradient(to top, rgb(20 40 62 / 0.96) 55%, transparent); pointer-events: none; }
-.lab__fallback { position: absolute; top: 14%; right: var(--gutter); height: 46%; width: auto; display: none; }
+/* Bajo la línea del suelo no se dibuja nada: protege la lectura del párrafo y los botones. */
+.lab__stage::after { content: ''; position: absolute; inset: var(--pie, 80%) 0 0; background: rgb(20 40 62 / 0.96); pointer-events: none; }
 .lab--sin-webgl canvas { display: none; }
-.lab--sin-webgl .lab__fallback { display: block; }
 .lab__content { position: relative; z-index: 2; pointer-events: none; }
 .lab__content a, .lab__content button { pointer-events: auto; }
-.lab__title { font-size: clamp(3.3rem, min(13.2vw, 24svh), 15rem); line-height: 0.92; letter-spacing: -0.028em; }
+.lab__title { font-size: clamp(3.3rem, min(10.6vw, 20svh), 12.5rem); line-height: 0.92; letter-spacing: -0.028em; }
 .lab__foot { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 22px 40px; margin-top: clamp(20px, 2.4vw, 36px); padding-top: clamp(16px, 1.6vw, 24px); border-top: 1px solid var(--line-on-dark); }
 .lab__foot p { flex: 1 1 340px; max-width: 60ch; margin: 0; font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.1rem); line-height: 1.55; }
 .lab__foot .btn-row { margin: 0; }

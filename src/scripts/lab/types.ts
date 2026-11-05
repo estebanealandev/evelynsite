@@ -12,8 +12,10 @@ export type Estado = {
   zona: Zona;
 };
 
-// Espacio libre junto al titular, en fracciones del lienzo medidas desde arriba a la izquierda.
-export type Zona = { cx: number; cy: number; w: number; h: number; tituloTop: number; cabecera: number };
+// Medidas de la composición, en fracciones del lienzo desde arriba a la izquierda.
+// El árbol se apoya en `suelo`; las líneas del titular se indican como [izquierda, arriba, derecha, abajo].
+export type Linea = [number, number, number, number];
+export type Zona = { sueloX: number; sueloY: number; altura: number; linea1: Linea; linea2: Linea };
 
 export type Concepto = {
   resize(ancho: number, alto: number): void;

@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 test.describe.configure({ mode: 'serial' });
 test.setTimeout(120_000);
-const CONCEPTOS = ['d', 'a', 'b', 'c'];
+const CONCEPTOS = ['crece', 'particulas', 'sombra'];
 
 const lista = (page: Page, frames = 3) => page.waitForFunction(n => (window as any).__lab?.frames > n, frames, { timeout: 60_000 });
 
@@ -78,18 +78,18 @@ for (const c of CONCEPTOS) {
 }
 
 test('los conceptos se pueden cambiar con botones y teclado', async ({ page }) => {
-  await page.goto('/laboratorio#a');
+  await page.goto('/laboratorio#crece');
   await lista(page);
-  await page.getByRole('button', { name: 'B Luz' }).click();
-  await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('b');
-  await expect(page.getByRole('button', { name: 'B Luz' })).toHaveAttribute('aria-pressed', 'true');
-  await page.keyboard.press('4');
-  await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('c');
-  await expect(page).toHaveURL(/#c$/);
+  await page.getByRole('button', { name: '2 Partículas' }).click();
+  await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('particulas');
+  await expect(page.getByRole('button', { name: '2 Partículas' })).toHaveAttribute('aria-pressed', 'true');
+  await page.keyboard.press('3');
+  await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('sombra');
+  await expect(page).toHaveURL(/#sombra$/);
 });
 
 test('pausar detiene el dibujo', async ({ page }) => {
-  await page.goto('/laboratorio#c');
+  await page.goto('/laboratorio#crece');
   await lista(page);
   await page.locator('[data-pausa]').click();
   const a = await page.evaluate(() => (window as any).__lab.frames);
@@ -97,7 +97,7 @@ test('pausar detiene el dibujo', async ({ page }) => {
   expect(await page.evaluate(() => (window as any).__lab.frames)).toBe(a);
 });
 
-test('sin WebGL muestra el monograma estático y el contenido completo', async ({ page }) => {
+test('sin WebGL muestra el contenido completo sin lienzo', async ({ page }) => {
   await page.addInitScript(() => {
     const original = HTMLCanvasElement.prototype.getContext;
     HTMLCanvasElement.prototype.getContext = function (this: HTMLCanvasElement, tipo: string, ...r: any[]) {
@@ -105,7 +105,7 @@ test('sin WebGL muestra el monograma estático y el contenido completo', async (
     } as typeof original;
   });
   await page.goto('/laboratorio');
-  await expect(page.locator('.lab__fallback')).toBeVisible();
+  await expect(page.locator('.lab canvas')).toBeHidden();
   await expect(page.locator('h1')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Agendar una consulta' }).first()).toBeVisible();
 });
@@ -113,7 +113,7 @@ test('sin WebGL muestra el monograma estático y el contenido completo', async (
 test('con movimiento reducido no hay animación ni secuencia de scroll', async ({ browser, baseURL }) => {
   const ctx = await browser.newContext({ reducedMotion: 'reduce', baseURL });
   const page = await ctx.newPage();
-  await page.goto('/laboratorio#a');
+  await page.goto('/laboratorio#crece');
   await lista(page, 0);
   const a = await page.evaluate(() => (window as any).__lab.frames);
   await page.waitForTimeout(700);

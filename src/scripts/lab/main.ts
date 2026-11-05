@@ -3,10 +3,9 @@ import { WebGLRenderer } from 'three';
 import { clamp, type Concepto, type Crear, type Zona } from './types';
 
 const CONCEPTOS: Record<string, () => Promise<{ crear: Crear }>> = {
-  a: () => import('./concepto-a'),
-  b: () => import('./concepto-b'),
-  c: () => import('./concepto-c'),
-  d: () => import('./concepto-d')
+  crece: () => import('./arbol-crece'),
+  particulas: () => import('./arbol-particulas'),
+  sombra: () => import('./arbol-sombra')
 };
 
 const raiz = document.querySelector<HTMLElement>('[data-lab]')!;
@@ -25,7 +24,7 @@ try {
   renderer = new WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
 } catch {
   raiz.classList.add('lab--sin-webgl');
-  nota.textContent = 'Este dispositivo no admite WebGL: se muestra la versión estática.';
+  nota.textContent = 'Este dispositivo no admite WebGL: se muestra el contenido sin animación.';
 }
 
 if (renderer) {
@@ -40,13 +39,13 @@ if (renderer) {
   let pausado = reducido;
   let ultimo = performance.now();
   const delta = () => { const a = performance.now(), d = (a - ultimo) / 1000; ultimo = a; return d; };
-  let zona: Zona = { cx: 0.75, cy: 0.3, w: 0.3, h: 0.4, tituloTop: 0.45, cabecera: 0.12 };
+  let zona: Zona = { sueloX: 0.8, sueloY: 0.8, altura: 0.6, linea1: [0, 0, 0, 0], linea2: [0, 0, 0, 0] };
   let t = reducido ? 100 : 0;
   let progreso = reducido ? 1 : 0;
   let cx = 0, cy = 0, mx = 0, my = 0;
   let acumulado = 0, cuenta = 0;
 
-  // Busca el mayor espacio libre sobre el titular o a la derecha de su primera línea.
+  // Coloca el árbol sobre la línea del pie si hay espacio a la derecha del titular; si no, sobre el titular.
   const medirZona = () => {
     const c = canvas.getBoundingClientRect();
     const titulo = raiz.querySelector('.lab__title')!;
@@ -59,30 +58,29 @@ if (renderer) {
       else lineas.push({ top: q.top, bottom: q.bottom, right: q.right });
     });
     const margen = titulo.getBoundingClientRect();
+    const izq = margen.left - c.left, der = margen.right - c.left;
     const panel = document.querySelector('.lab-panel')!.getBoundingClientRect();
     const cabecera = document.querySelector<HTMLElement>('.site-header')!.offsetHeight;
-    const arriba = Math.max(cabecera, panel.bottom < innerHeight / 2 ? panel.bottom - c.top : 0) + 14;
-    const izq = margen.left - c.left;
-    // El monograma puede ocupar parte del margen derecho.
-    const der = margen.right - c.left + (c.width - (margen.right - c.left)) * 0.5;
-    const uno = lineas[0], dos = lineas[1];
-    const techo = uno.top - c.top;
-    const ASPECTO = 0.85;
-    const ajustar = (ancho: number, alto: number) => Math.max(0, Math.min(alto, ancho / ASPECTO));
-    const altoSobre = ajustar(der - izq, techo - arriba - 8);
-    const inicioLado = uno.right - c.left + 28;
-    const piso = (dos ? dos.top : uno.bottom) - c.top - 4;
-    const altoLado = ajustar(der - inicioLado, piso - arriba);
-    const h = Math.max(altoSobre, altoLado);
-    const w = h * ASPECTO;
-    const vertical = c.width < c.height;
-    let cx = der - w / 2;
-    let cy = arriba + h / 2;
-    if (altoSobre >= altoLado) {
-      cy = (arriba + techo - 8) / 2;
-      if (vertical) cx = (izq + der) / 2;
-    }
-    zona = { cx: cx / c.width, cy: cy / c.height, w: w / c.width, h: h / c.height, tituloTop: techo / c.height, cabecera: cabecera / c.height };
+    const arriba = Math.max(cabecera, panel.bottom < innerHeight / 2 ? panel.bottom - c.top : 0) + 10;
+    const finTexto = Math.max(...lineas.map(l => l.right)) - c.left;
+    const pie = raiz.querySelector('.lab__foot')!.getBoundingClientRect().top - c.top;
+    const techo = lineas[0].top - c.top;
+    canvas.parentElement!.style.setProperty('--pie', `${pie}px`);
+    const libre = der - finTexto;
+    const alLado = libre >= 240;
+    const sueloX = alLado ? finTexto + libre * 0.42 : (izq + der) * 0.5;
+    const sueloY = alLado ? pie : techo - 4;
+    const altura = Math.min((sueloY - arriba) * 0.96, c.height * (alLado ? 0.6 : 0.34), alLado ? (c.width - sueloX) * 1.5 : c.width * 0.72);
+    const frac = (a: number, b: number, d: number, e: number) => [a / c.width, b / c.height, d / c.width, e / c.height] as [number, number, number, number];
+    const uno = lineas[0], fin = lineas[lineas.length - 1];
+    const resto = lineas.slice(1);
+    zona = {
+      sueloX: sueloX / c.width,
+      sueloY: sueloY / c.height,
+      altura: altura / c.height,
+      linea1: frac(izq, techo, uno.right - c.left, uno.bottom - c.top),
+      linea2: resto.length ? frac(izq, resto[0].top - c.top, Math.max(...resto.map(l => l.right)) - c.left, fin.bottom - c.top) : frac(0, 0, 0, 0)
+    };
     Object.assign(estadoPublico, { zona });
   };
 
@@ -133,7 +131,7 @@ if (renderer) {
   };
 
   const elegir = async (id: string) => {
-    if (!CONCEPTOS[id]) id = 'd';
+    if (!CONCEPTOS[id]) id = 'crece';
     const este = ++turno;
     botones.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.concepto === id)));
     const { crear } = await CONCEPTOS[id]();
@@ -158,7 +156,7 @@ if (renderer) {
 
   botones.forEach(b => b.addEventListener('click', () => elegir(b.dataset.concepto!)));
   addEventListener('keydown', e => {
-    const id = { 1: 'd', 2: 'a', 3: 'b', 4: 'c' }[e.key];
+    const id = { 1: 'crece', 2: 'particulas', 3: 'sombra' }[e.key];
     if (id && !(e.target as HTMLElement).closest('input, textarea, select')) elegir(id);
   });
   pausa.addEventListener('click', () => {
@@ -174,10 +172,10 @@ if (renderer) {
   canvas.addEventListener('webglcontextlost', e => {
     e.preventDefault();
     raiz.classList.add('lab--sin-webgl');
-    nota.textContent = 'Se perdió el contexto 3D: se muestra la versión estática.';
+    nota.textContent = 'Se perdió el contexto 3D: se muestra el contenido sin animación.';
   });
 
   document.fonts?.ready.then(dimensiones);
-  elegir(location.hash.slice(1) || 'd');
+  elegir(location.hash.slice(1) || 'crece');
   bucle();
 }
