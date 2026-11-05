@@ -6,7 +6,7 @@
 |---|---|
 | 0. Red de seguridad | Hecha |
 | 1. Limpieza y nueva base visual | Hecha en `rediseno/fase-1`. Pedido de ajuste: hero más audaz y adelantar el 3D |
-| 3. three.js | Adelantada a petición: tres prototipos en `/laboratorio`, rama `rediseno/fase-3-prototipos`, pendientes de elección |
+| 3. three.js | Adelantada a petición. Elegida la mezcla de A y B: monograma con ventana proyectada, en `/laboratorio`, rama `rediseno/fase-3-prototipos`. Falta validarla en un móvil real e integrarla en la portada |
 | 2 y 4 a 7 | Pendientes de aprobación |
 
 ## 1. Lo esencial

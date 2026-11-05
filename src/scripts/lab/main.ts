@@ -5,7 +5,8 @@ import { clamp, type Concepto, type Crear, type Zona } from './types';
 const CONCEPTOS: Record<string, () => Promise<{ crear: Crear }>> = {
   a: () => import('./concepto-a'),
   b: () => import('./concepto-b'),
-  c: () => import('./concepto-c')
+  c: () => import('./concepto-c'),
+  d: () => import('./concepto-d')
 };
 
 const raiz = document.querySelector<HTMLElement>('[data-lab]')!;
@@ -39,7 +40,7 @@ if (renderer) {
   let pausado = reducido;
   let ultimo = performance.now();
   const delta = () => { const a = performance.now(), d = (a - ultimo) / 1000; ultimo = a; return d; };
-  let zona: Zona = { cx: 0.75, cy: 0.3, w: 0.3, h: 0.4, tituloTop: 0.45 };
+  let zona: Zona = { cx: 0.75, cy: 0.3, w: 0.3, h: 0.4, tituloTop: 0.45, cabecera: 0.12 };
   let t = reducido ? 100 : 0;
   let progreso = reducido ? 1 : 0;
   let cx = 0, cy = 0, mx = 0, my = 0;
@@ -81,7 +82,7 @@ if (renderer) {
       cy = (arriba + techo - 8) / 2;
       if (vertical) cx = (izq + der) / 2;
     }
-    zona = { cx: cx / c.width, cy: cy / c.height, w: w / c.width, h: h / c.height, tituloTop: techo / c.height };
+    zona = { cx: cx / c.width, cy: cy / c.height, w: w / c.width, h: h / c.height, tituloTop: techo / c.height, cabecera: cabecera / c.height };
     Object.assign(estadoPublico, { zona });
   };
 
@@ -132,7 +133,7 @@ if (renderer) {
   };
 
   const elegir = async (id: string) => {
-    if (!CONCEPTOS[id]) id = 'a';
+    if (!CONCEPTOS[id]) id = 'd';
     const este = ++turno;
     botones.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.concepto === id)));
     const { crear } = await CONCEPTOS[id]();
@@ -157,7 +158,7 @@ if (renderer) {
 
   botones.forEach(b => b.addEventListener('click', () => elegir(b.dataset.concepto!)));
   addEventListener('keydown', e => {
-    const id = { 1: 'a', 2: 'b', 3: 'c' }[e.key];
+    const id = { 1: 'd', 2: 'a', 3: 'b', 4: 'c' }[e.key];
     if (id && !(e.target as HTMLElement).closest('input, textarea, select')) elegir(id);
   });
   pausa.addEventListener('click', () => {
@@ -177,6 +178,6 @@ if (renderer) {
   });
 
   document.fonts?.ready.then(dimensiones);
-  elegir(location.hash.slice(1) || 'a');
+  elegir(location.hash.slice(1) || 'd');
   bucle();
 }

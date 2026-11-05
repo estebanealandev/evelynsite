@@ -30,9 +30,10 @@ import '../styles/lab.css';
 
   <div class="lab-nota" data-nota role="status"></div>
   <div class="lab-panel" role="group" aria-label="Controles del laboratorio">
-    <button type="button" data-concepto="a" aria-pressed="true">A Monograma</button>
-    <button type="button" data-concepto="b" aria-pressed="false">B Luz</button>
-    <button type="button" data-concepto="c" aria-pressed="false">C Cordillera</button>
+    <button type="button" data-concepto="d" aria-pressed="true" aria-label="A+B Mezcla">A+B<span class="lab-largo"> Mezcla</span></button>
+    <button type="button" data-concepto="a" aria-pressed="false" aria-label="A Monograma">A<span class="lab-largo"> Monograma</span></button>
+    <button type="button" data-concepto="b" aria-pressed="false" aria-label="B Luz">B<span class="lab-largo"> Luz</span></button>
+    <button type="button" data-concepto="c" aria-pressed="false" aria-label="C Cordillera">C<span class="lab-largo"> Cordillera</span></button>
     <button type="button" data-pausa aria-pressed="false">Pausar</button>
     <span data-fps aria-hidden="true">– fps</span>
   </div>

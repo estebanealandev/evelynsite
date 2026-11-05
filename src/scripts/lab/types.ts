@@ -13,7 +13,7 @@ export type Estado = {
 };
 
 // Espacio libre junto al titular, en fracciones del lienzo medidas desde arriba a la izquierda.
-export type Zona = { cx: number; cy: number; w: number; h: number; tituloTop: number };
+export type Zona = { cx: number; cy: number; w: number; h: number; tituloTop: number; cabecera: number };
 
 export type Concepto = {
   resize(ancho: number, alto: number): void;

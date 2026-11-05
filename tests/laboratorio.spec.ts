@@ -4,7 +4,7 @@ import sharp from 'sharp';
 
 test.describe.configure({ mode: 'serial' });
 test.setTimeout(120_000);
-const CONCEPTOS = ['a', 'b', 'c'];
+const CONCEPTOS = ['d', 'a', 'b', 'c'];
 
 const lista = (page: Page, frames = 3) => page.waitForFunction(n => (window as any).__lab?.frames > n, frames, { timeout: 60_000 });
 
@@ -45,7 +45,7 @@ async function contraste(page: Page, selector: string) {
 }
 
 for (const c of CONCEPTOS) {
-  test(`concepto ${c}: se dibuja sin errores y el titular conserva el contraste`, async ({ page }) => {
+  test(`concepto ${c}: se dibuja sin errores y el titular conserva el contraste`, async ({ page, isMobile }) => {
     const errores: string[] = [];
     page.on('console', m => { if (['error', 'warning'].includes(m.type()) && !/GPU stall|GL Driver Message/.test(m.text())) errores.push(m.text()); });
     page.on('pageerror', e => errores.push(e.message));
@@ -61,6 +61,12 @@ for (const c of CONCEPTOS) {
       expect(parrafo, `párrafo ${momento}`).toBeGreaterThanOrEqual(4.5);
     };
     await medir('inicio');
+    // La luz no debe pasar detrás del menú mientras está en pantalla.
+    if (!isMobile) {
+      const menu = await contraste(page, '.header-cta');
+      console.log(`[contraste] ${c} menú: ${menu.toFixed(2)}:1`);
+      expect(menu, 'menú').toBeGreaterThanOrEqual(4.5);
+    }
 
     await page.evaluate(() => scrollTo(0, document.querySelector<HTMLElement>('.lab')!.offsetHeight - innerHeight));
     await page.waitForTimeout(2600);
@@ -77,7 +83,7 @@ test('los conceptos se pueden cambiar con botones y teclado', async ({ page }) =
   await page.getByRole('button', { name: 'B Luz' }).click();
   await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('b');
   await expect(page.getByRole('button', { name: 'B Luz' })).toHaveAttribute('aria-pressed', 'true');
-  await page.keyboard.press('3');
+  await page.keyboard.press('4');
   await expect.poll(() => page.evaluate(() => (window as any).__lab.concepto)).toBe('c');
   await expect(page).toHaveURL(/#c$/);
 });
