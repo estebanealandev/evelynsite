@@ -1,0 +1,52 @@
+---
+import { consultaTipos } from '../../config/site';
+---
+<form class="form" action="/api/consulta" method="post" data-ajax novalidate>
+  <div class="form__row">
+    <div class="field">
+      <label for="c-nombre">Nombre completo</label>
+      <input id="c-nombre" name="nombre" type="text" autocomplete="name" required minlength="3" maxlength="120" data-msg="Indique su nombre completo." aria-describedby="e-nombre" />
+      <span class="field__error" id="e-nombre" data-error="nombre"></span>
+    </div>
+    <div class="field">
+      <label for="c-correo">Correo electrónico</label>
+      <input id="c-correo" name="correo" type="email" autocomplete="email" required maxlength="200" data-msg="Indique un correo electrónico válido." aria-describedby="e-correo" />
+      <span class="field__error" id="e-correo" data-error="correo"></span>
+    </div>
+  </div>
+  <div class="form__row">
+    <div class="field">
+      <label for="c-telefono">Teléfono (opcional)</label>
+      <input id="c-telefono" name="telefono" type="tel" autocomplete="tel" maxlength="25" pattern="[+()\d\s.\-]{8,20}" data-msg="Indique un teléfono válido o deje el campo vacío." aria-describedby="e-telefono" />
+      <span class="field__error" id="e-telefono" data-error="telefono"></span>
+    </div>
+    <div class="field">
+      <label for="c-tipo">Tipo de consulta</label>
+      <select id="c-tipo" name="tipo" required data-msg="Seleccione el tipo de consulta." aria-describedby="e-tipo">
+        <option value="">Seleccione una opción</option>
+        {consultaTipos.map(t => <option value={t}>{t}</option>)}
+      </select>
+      <span class="field__error" id="e-tipo" data-error="tipo"></span>
+    </div>
+  </div>
+  <div class="field">
+    <label for="c-mensaje">Mensaje</label>
+    <textarea id="c-mensaje" name="mensaje" required minlength="20" maxlength="3000" data-msg="Cuéntenos brevemente su consulta (mínimo 20 caracteres)." aria-describedby="h-mensaje e-mensaje"></textarea>
+    <span class="field__hint" id="h-mensaje">Describa el asunto de forma general. Por favor, no incluya datos de salud, datos de personas menores de edad, documentos ni detalles íntimos: esa información se conversa de forma reservada si corresponde.</span>
+    <span class="field__error" id="e-mensaje" data-error="mensaje"></span>
+  </div>
+  <div class="hp" aria-hidden="true">
+    <label for="c-sitio">No complete este campo</label>
+    <input id="c-sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
+    <input name="iniciado" type="hidden" value="" />
+  </div>
+  <div class="field">
+    <label class="check" for="c-consentimiento">
+      <input id="c-consentimiento" name="consentimiento" type="checkbox" required data-msg="Necesitamos su consentimiento para tratar estos datos." aria-describedby="e-consentimiento" />
+      <span>Autorizo el tratamiento de mis datos personales para atender esta solicitud, según la <a href="/politica-de-privacidad">política de privacidad</a>. Entiendo que enviar este formulario no crea, por sí solo, una relación profesional.</span>
+    </label>
+    <span class="field__error" id="e-consentimiento" data-error="consentimiento"></span>
+  </div>
+  <div class="form__status" role="status" aria-live="polite"></div>
+  <div><button class="btn" type="submit">Enviar solicitud</button></div>
+</form>

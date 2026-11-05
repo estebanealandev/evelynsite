@@ -1,0 +1,14 @@
+---
+import { proceso } from '../../lib/institucional';
+const { etiqueta = 'El proceso', titulo = 'Un acompañamiento *claro*, paso a paso.', entrada = 'Cada etapa se explica con lenguaje comprensible, sin promesas sobre el resultado de un asunto.', pasos = proceso, boton = true } = Astro.props;
+import { em } from '../../lib/format';
+---
+<div class="wrap center reveal">
+  <p class="eyebrow">{etiqueta}</p>
+  <h2 set:html={em(titulo)} />
+  <p class="lede" style="margin-top:12px">{entrada}</p>
+  <ol class="steps">
+    {pasos.map((s: { titulo: string; texto: string }) => <li><h3>{s.titulo}</h3><p>{s.texto}</p></li>)}
+  </ol>
+  {boton && <div class="btn-row" style="justify-content:center"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>}
+</div>

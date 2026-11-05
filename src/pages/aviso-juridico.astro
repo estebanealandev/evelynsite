@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../config/site';
+import { fechaLarga } from '../lib/format';
+import { fuentes } from '../lib/sources';
+---
+<Base title="Aviso jurídico" description="Condiciones de uso del sitio y alcance de la información publicada sobre derecho de familia en Costa Rica." crumbs={[{ label: 'Aviso jurídico' }]}>
+  <section class="section">
+    <div class="legal">
+      <h1>Aviso jurídico</h1>
+      <p style="margin-top:12px">Última actualización: {fechaLarga(site.legalVerifiedAt)}.</p>
+
+      <h2>Fines informativos</h2>
+      <p>El contenido de este sitio tiene fines informativos generales sobre el derecho de familia costarricense. No constituye asesoría jurídica ni sustituye la asesoría individualizada de una persona profesional en derecho.</p>
+
+      <h2>Sin relación profesional automática</h2>
+      <p>Visitar este sitio, suscribirse o enviar un formulario no crea, por sí solo, una relación profesional. Esta solo existe cuando se acuerda expresamente.</p>
+
+      <h2>Sin garantía de resultados</h2>
+      <p>El resultado de cada asunto depende de sus circunstancias jurídicas y probatorias. Nada de lo publicado debe entenderse como promesa o garantía de un resultado.</p>
+
+      <h2>Vigencia de la información</h2>
+      <p>Las normas pueden cambiar. Las referencias se contrastaron con el <a href="https://sinalevi.go.cr/" rel="noopener noreferrer" target="_blank">Sistema Costarricense de Información Jurídica</a> en la fecha indicada en cada página. Antes de tomar decisiones, verifique la normativa vigente aplicable a su caso.</p>
+
+      <h2>Áreas mencionadas</h2>
+      <p>La explicación de un área del derecho no implica que todo asunto de esa área pueda ser atendido. La disponibilidad se confirma después de revisar cada solicitud.</p>
+
+      <h2>Emergencias</h2>
+      <p>Este sitio no atiende emergencias. Si usted o alguien más está en peligro, llame al 9-1-1.</p>
+
+      <h2>Publicidad profesional</h2>
+      <p>Este sitio procura ajustarse al artículo 30 del <a href={fuentes.CDJ.url} rel="noopener noreferrer" target="_blank">Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho</a>, que exige una comunicación digna, moderada y que no induzca a error.</p>
+
+      <h2>Propiedad intelectual</h2>
+      <p>Los textos, la identidad gráfica y las imágenes de este sitio son originales. Las normas citadas son de dominio público.</p>
+
+      <h2>Enlaces externos</h2>
+      <p>Las fuentes normativas enlazan a sitios oficiales que este sitio no controla.</p>
+    </div>
+  </section>
+</Base>

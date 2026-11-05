@@ -1,0 +1,7 @@
+---
+// Corte diagonal asimétrico entre secciones. `vertex` es la posición del vértice en porcentaje.
+// Sin `flip`: triángulo que cuelga desde arriba. Con `flip`: banda con una muesca en V en su borde superior.
+const { color = 'band', vertex = 75, flip = false, class: cls = '' } = Astro.props;
+const shape = flip ? `M0 0L${vertex} 100L100 0V100H0Z` : `M0 0H100L${vertex} 100Z`;
+---
+<span class={`cut cut-${color} ${cls}`} aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none" focusable="false"><path d={shape}></path></svg></span>

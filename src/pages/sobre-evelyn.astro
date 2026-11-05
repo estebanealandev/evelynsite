@@ -1,0 +1,81 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Cut from '../components/ui/Cut.astro';
+import Marquee from '../components/ui/Marquee.astro';
+import Principles from '../components/sections/Principles.astro';
+import PostsSection from '../components/sections/PostsSection.astro';
+import Cta from '../components/sections/Cta.astro';
+import { marquesinaPrincipios } from '../lib/institucional';
+
+const posts = (await getCollection('articulos')).filter(a => a.data.destacado).slice(3, 6);
+const compromisos = [
+  { t: 'Trato humano', d: 'Escuchar con respeto y sin juicios' },
+  { t: 'Confidencialidad', d: 'Reserva en cada conversación' },
+  { t: 'Comunicación clara', d: 'Explicar opciones y riesgos con franqueza' }
+];
+const etica = [
+  { t: 'Ética profesional', d: 'El ejercicio de la profesión se rige por deberes jurídicos, morales y éticos, incluido el secreto profesional. La comunicación pública también debe ser digna, moderada y veraz.' },
+  { t: 'Atención personalizada', d: 'Ninguna familia es igual a otra. Cada consulta requiere comprender sus circunstancias antes de sugerir un camino.' },
+  { t: 'Compromiso con el derecho de familia', d: 'Las normas cambian. El Código Procesal de Familia, vigente desde octubre de 2024, es un buen ejemplo de la importancia de consultar la legislación actual.' }
+];
+---
+<Base title="Sobre Evelyn Elizondo" description="Conozca la forma de trabajar de Evelyn Elizondo en derecho de familia en Costa Rica: ética, atención personalizada, confidencialidad y comunicación clara." crumbs={[{ label: 'Sobre Evelyn' }]}>
+  <section class="hero-blue on-dark">
+    <img src="/assets/images/portico.webp" alt="" width="1600" height="1000" decoding="async" />
+    <div>
+      <h1>Asesoría legal con criterio, sensibilidad y compromiso.</h1>
+      <p>Evelyn Elizondo | Derecho de Familia | Costa Rica</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-block:clamp(44px,5vw,64px)">
+    <div class="wrap trio">
+      {compromisos.map(c => <div class="reveal"><h2>{c.t}</h2><p>{c.d}</p></div>)}
+    </div>
+  </section>
+
+  <Cut color="ivory" flip vertex={75} />
+  <section class="section bg-ivory" style="padding-top:clamp(24px,3vw,48px)">
+    <div class="wrap media-split">
+      <div class="monogram-panel reveal" role="img" aria-label="Monograma EE de Evelyn Elizondo">
+        <img src="/assets/images/luz-ventana-vertical-sm.webp" alt="" width="700" height="856" loading="lazy" decoding="async" />
+        <img src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="200" height="200" />
+      </div>
+      <div class="reveal">
+        <h2>Los asuntos de familia exigen tanto <em>criterio</em> como sensibilidad.</h2>
+        <p style="margin-top:12px">Cuando está en juego lo más personal, una persona necesita una orientación que:</p>
+        <ul class="checks">
+          <li>Escuche sus objetivos y preocupaciones sin juzgar</li>
+          <li>Explique la ley con palabras comprensibles</li>
+          <li>Tome en cuenta el interés superior de las personas menores de edad</li>
+          <li>Procure reducir tensiones en lugar de aumentarlas</li>
+          <li>Plantee opciones realistas, sin promesas de resultado</li>
+          <li>Proteja la información que se le confía</li>
+        </ul>
+        <details class="more">
+          <summary>Leer más</summary>
+          <div><p>Esta marca nace para ofrecer información y orientación en derecho de familia, con un trato cercano y responsable. Antes de una consulta, puede revisar las áreas y artículos de este sitio para familiarizarse con la terminología y las opciones que existen en Costa Rica.</p></div>
+        </details>
+        <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+      </div>
+    </div>
+  </section>
+
+  <Marquee items={marquesinaPrincipios} label="Principios" />
+
+  <section class="section">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Forma de trabajar</p>
+      <h2>Tres pilares de una atención responsable</h2>
+      <div class="vline vline--tight"></div>
+    </div>
+    <div class="wrap reveal" style="max-width:820px">
+      {etica.map(e => <div class="aspect"><h3>{e.t}</h3><p>{e.d}</p></div>)}
+    </div>
+  </section>
+
+  <Principles />
+  <PostsSection titulo="Lecturas recomendadas" posts={posts} />
+  <Cta imagen="columnata" />
+</Base>

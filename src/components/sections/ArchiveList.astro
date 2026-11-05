@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostCard from '../ui/PostCard.astro';
+import Crumbs from '../ui/Crumbs.astro';
+import Cta from './Cta.astro';
+const { titulo, entrada, posts, tipo, metaDescripcion } = Astro.props;
+const crumbs = [{ label: 'Blog', href: '/blog' }, { label: titulo }];
+---
+<Base title={`${titulo}: blog de derecho de familia`} description={metaDescripcion} crumbs={crumbs}>
+  <section class="hero-blue on-dark">
+    <img src="/assets/images/documentos-ancho.webp" alt="" width="1600" height="1000" decoding="async" />
+    <div>
+      <p class="eyebrow">{tipo}</p>
+      <h1>{titulo}</h1>
+      <p>{entrada}</p>
+    </div>
+  </section>
+  <Crumbs items={crumbs} />
+  <section class="section" style="padding-top:24px">
+    <div class="wrap">
+      <div class="post-grid post-grid--4" style="margin-top:0">{posts.map((p: any) => <PostCard post={p} />)}</div>
+      <div class="btn-row" style="justify-content:center"><a class="btn btn-outline" href="/blog">Ver todo el blog</a></div>
+    </div>
+  </section>
+  <Cta />
+</Base>

@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Cut from '../components/ui/Cut.astro';
+import Carousel from '../components/ui/Carousel.astro';
+import PostCard from '../components/ui/PostCard.astro';
+const posts = (await getCollection('articulos')).slice(0, 8);
+---
+<Base title="Página no encontrada" description="La página solicitada no existe." noindex>
+  <section class="section" style="padding-block:clamp(20px,3vw,40px) clamp(44px,5vw,70px)">
+    <div class="wrap media-split">
+      <div class="offset offset--band"><img src="/assets/images/umbral-vertical-sm.webp" alt="" width="700" height="933" decoding="async" /></div>
+      <div>
+        <h1>404: página no encontrada</h1>
+        <p style="margin-top:12px">La página que busca no existe o cambió de dirección.</p>
+        <p>¿Podemos ayudarle a encontrar lo que necesita?</p>
+        <div class="btn-row">
+          <a class="btn" href="/">Volver al inicio</a>
+          <a class="btn btn-outline" href="/contacto">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <Cut color="ivory" flip vertex={25} />
+  <section class="section bg-ivory" style="padding-top:clamp(20px,3vw,40px)">
+    <div class="wrap">
+      <h2 class="center" style="margin-bottom:30px">Recursos sobre derecho de familia</h2>
+      <Carousel label="Artículos recomendados">
+        {posts.map(p => <div class="carousel__slide carousel__slide--quarter"><PostCard post={p} /></div>)}
+      </Carousel>
+    </div>
+  </section>
+</Base>

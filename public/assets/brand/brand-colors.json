@@ -1,0 +1,39 @@
+{
+  "primary": {
+    "name": "Navy profundo",
+    "hex": "#14283e"
+  },
+  "secondary": {
+    "name": "Azul pizarra",
+    "hex": "#30465a"
+  },
+  "accent": {
+    "name": "Oro envejecido",
+    "hex": "#b49a68"
+  },
+  "accentText": {
+    "name": "Oro envejecido para texto sobre claro",
+    "hex": "#7a6232",
+    "note": "Ajuste de accesibilidad: el oro base no alcanza 4,5:1 sobre marfil."
+  },
+  "background": {
+    "name": "Marfil",
+    "hex": "#f6f3ed"
+  },
+  "surface": {
+    "name": "Blanco puro",
+    "hex": "#ffffff"
+  },
+  "text": {
+    "name": "Carbón",
+    "hex": "#24282d"
+  },
+  "muted": {
+    "name": "Gris pizarra",
+    "hex": "#626971"
+  },
+  "border": {
+    "name": "Gris piedra",
+    "hex": "#dfe1e0"
+  }
+}

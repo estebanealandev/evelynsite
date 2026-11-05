@@ -1,0 +1,7 @@
+---
+const { post } = Astro.props;
+---
+<a class="post-card" href={`/blog/${post.id}`}>
+  <div class="post-card__img"><img src={`/assets/images/${post.data.imagen}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
+  <h3>{post.data.titulo}</h3>
+</a>

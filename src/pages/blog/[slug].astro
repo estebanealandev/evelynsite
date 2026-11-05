@@ -1,0 +1,78 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostsSection from '../../components/sections/PostsSection.astro';
+import Crumbs from '../../components/ui/Crumbs.astro';
+import { fechaLarga, slugify } from '../../lib/format';
+import { fuentes } from '../../lib/sources';
+import { site } from '../../config/site';
+
+export async function getStaticPaths() {
+  const articulos = await getCollection('articulos');
+  return articulos.map((a, i) => ({
+    params: { slug: a.id },
+    props: { articulo: a, anterior: articulos[i - 1] ?? null, siguiente: articulos[i + 1] ?? null, todos: articulos }
+  }));
+}
+const { articulo, anterior, siguiente, todos } = Astro.props;
+const d = articulo.data;
+const { Content } = await render(articulo);
+const servicios = await getCollection('servicios');
+const vinculados = d.servicios.map((id: string) => servicios.find(s => s.id === id)).filter(Boolean);
+const relacionados = todos
+  .filter((a: any) => a.id !== articulo.id)
+  .sort((a: any, b: any) => Number(b.data.categoria === d.categoria) - Number(a.data.categoria === d.categoria))
+  .slice(0, 3);
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.titulo,
+  description: d.metaDescripcion,
+  datePublished: d.fecha,
+  dateModified: site.legalVerifiedAt,
+  inLanguage: 'es-CR',
+  image: new URL(`/assets/images/${d.imagen}.webp`, Astro.site).href,
+  mainEntityOfPage: url,
+  author: { '@type': 'Organization', name: site.name },
+  publisher: { '@type': 'Organization', name: site.name }
+};
+const crumbs = [{ label: 'Blog', href: '/blog' }, { label: d.categoria, href: `/blog/categoria/${slugify(d.categoria)}` }, { label: d.titulo }];
+---
+<Base title={d.metaTitulo} description={d.metaDescripcion} type="article" crumbs={crumbs} jsonLd={[schema]} image={`/assets/images/${d.imagen}.webp`}>
+  <Crumbs items={crumbs} />
+  <article>
+    <header class="post-head wrap">
+      <p class="post-meta"><a href={`/blog/categoria/${slugify(d.categoria)}`}>{d.categoria}</a> · {fechaLarga(d.fecha)}</p>
+      <h1>{d.titulo}</h1>
+    </header>
+    <figure class="post-hero" style="margin-block:0"><img src={`/assets/images/${d.imagen}.webp`} srcset={`/assets/images/${d.imagen}-sm.webp 700w, /assets/images/${d.imagen}.webp 1400w`} sizes="(max-width: 1040px) 100vw, 990px" alt={d.alt} width="1400" height="707" fetchpriority="high" decoding="async" /></figure>
+    <div class="prose"><Content /></div>
+
+    <div class="prose">
+      <div class="sources" style="padding-top:18px;border-top:1px solid var(--color-border)">
+        <h2>Fuentes normativas</h2>
+        <ul>
+          {d.fuentes.map((f: { ref: keyof typeof fuentes; detalle: string }) => (
+            <li><a href={fuentes[f.ref].url} rel="noopener noreferrer" target="_blank">{fuentes[f.ref].nombre}</a>: {f.detalle}.</li>
+          ))}
+        </ul>
+        <p style="margin-top:10px"><strong>Fecha de revisión de la normativa:</strong> {fechaLarga(site.legalVerifiedAt)}. Este artículo es informativo y no sustituye la asesoría individualizada.</p>
+      </div>
+    </div>
+
+    <div class="wrap center" style="margin-top:36px">
+      <p class="eyebrow">Áreas relacionadas</p>
+      <ul class="tag-list">{vinculados.map((s: any) => <li><a href={`/servicios/${s.id}`}>{s.data.titulo}</a></li>)}</ul>
+      <p class="eyebrow" style="margin-top:22px">Etiquetas</p>
+      <ul class="tag-list">{d.etiquetas.map((t: string) => <li><a href={`/blog/etiqueta/${slugify(t)}`}>{t}</a></li>)}</ul>
+      <div class="btn-row" style="justify-content:center"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+    </div>
+
+    <nav class="wrap post-nav" aria-label="Artículos anterior y siguiente" style="margin-top:40px;border-top:1px solid var(--color-border)">
+      <div>{anterior && <a href={`/blog/${anterior.id}`}><small>Anterior</small>{anterior.data.titulo}</a>}</div>
+      <div>{siguiente && <a href={`/blog/${siguiente.id}`}><small>Siguiente</small>{siguiente.data.titulo}</a>}</div>
+    </nav>
+  </article>
+  <PostsSection titulo="Artículos relacionados" posts={relacionados} />
+</Base>

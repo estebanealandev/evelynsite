@@ -1,0 +1,82 @@
+---
+import '../styles/global.css';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import { site } from '../config/site';
+
+const { title, description, image = '/assets/brand/og-default.jpg', type = 'website', noindex = false, jsonLd = [], crumbs = [] } = Astro.props;
+const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', Astro.site).href;
+const robots = noindex || !site.indexable ? 'noindex, nofollow' : 'index, follow';
+const ogImage = new URL(image, Astro.site).href;
+
+const org = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  '@id': new URL('/#organizacion', Astro.site).href,
+  name: site.name,
+  description: site.description,
+  url: new URL('/', Astro.site).href,
+  logo: new URL('/assets/brand/evelyn-elizondo-monogram.png', Astro.site).href,
+  areaServed: { '@type': 'Country', name: 'Costa Rica' },
+  knowsLanguage: 'es-CR',
+  ...(site.contact.phone ? { telephone: site.contact.phone } : {}),
+  ...(site.contact.email ? { email: site.contact.email } : {})
+};
+const breadcrumb = crumbs.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [{ label: 'Inicio', href: '/' }, ...crumbs].map((c: any, i: number) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: c.label,
+        item: new URL(c.href ?? Astro.url.pathname, Astro.site).href
+      }))
+    }
+  : null;
+const schemas = [org, breadcrumb, ...jsonLd].filter(Boolean);
+---
+<!doctype html>
+<html lang="es-CR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonical} />
+    <meta name="geo.region" content="CR" />
+    <meta name="theme-color" content="#14283e" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:locale" content="es_CR" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content="Evelyn Elizondo, Derecho de Familia, Costa Rica" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href="/assets/fonts/cormorant-400.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <script is:inline>document.documentElement.classList.add('js');</script>
+    {schemas.map(s => <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <Header />
+    <main id="contenido"><slot /></main>
+    <Footer />
+    <script is:inline src="/assets/js/site.js" defer></script>
+  </body>
+</html>

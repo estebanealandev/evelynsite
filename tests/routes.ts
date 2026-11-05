@@ -1,0 +1,2 @@
+export const servicios = ['divorcios', 'pensiones-alimentarias', 'guarda-crianza', 'interrelacion-familiar', 'bienes-gananciales', 'union-de-hecho', 'filiacion-paternidad', 'acuerdos-familiares', 'proteccion-familiar'];
+export const principales = ['/', '/servicios', '/sobre-evelyn', '/blog', '/contacto', '/agendar-consulta', '/politica-de-privacidad', '/aviso-juridico', ...servicios.map(s => `/servicios/${s}`)];

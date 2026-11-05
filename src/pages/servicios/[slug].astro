@@ -1,0 +1,162 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Cut from '../../components/ui/Cut.astro';
+import Crumbs from '../../components/ui/Crumbs.astro';
+import Carousel from '../../components/ui/Carousel.astro';
+import Marquee from '../../components/ui/Marquee.astro';
+import Process from '../../components/sections/Process.astro';
+import PostsSection from '../../components/sections/PostsSection.astro';
+import Cta from '../../components/sections/Cta.astro';
+import { em } from '../../lib/format';
+import { fuentes } from '../../lib/sources';
+import { principios, marquesinaNormas } from '../../lib/institucional';
+import { site } from '../../config/site';
+import { fechaLarga } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const servicios = await getCollection('servicios');
+  return servicios.map(s => ({ params: { slug: s.id }, props: { servicio: s } }));
+}
+const { servicio } = Astro.props;
+const d = servicio.data;
+const { Content } = await render(servicio);
+const todos = await getCollection('servicios');
+const relacionados = d.relacionados.map((id: string) => todos.find(s => s.id === id)).filter(Boolean);
+const articulos = (await getCollection('articulos')).filter(a => a.data.servicios.includes(servicio.id));
+const otros = (await getCollection('articulos')).filter(a => !a.data.servicios.includes(servicio.id));
+const lecturas = [...articulos, ...otros].slice(0, 3);
+const banco = ['anillos', 'equilibrio', 'documentos', 'lino-vertical', 'escalera', 'columnata-vertical', 'luz-ventana-vertical', 'umbral-vertical', 'portico-vertical'];
+const libres = banco.filter(n => n !== d.imagen);
+const imgIntro = libres[d.orden % libres.length];
+const imgApoyo = libres[(d.orden + 3) % libres.length];
+const crumbs = [{ label: 'Áreas', href: '/servicios' }, { label: d.titulo }];
+const faq = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: d.preguntas.map((q: { p: string; r: string }) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } }))
+};
+---
+<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} jsonLd={[faq]}>
+  <section class="hero-service">
+    <div class="hero-service__image"><img src={`/assets/images/${d.imagen}-sm.webp`} srcset={`/assets/images/${d.imagen}-sm.webp 700w, /assets/images/${d.imagen}.webp 900w`} sizes="(max-width: 767px) 100vw, 40vw" alt={d.alt} width="900" height="1200" fetchpriority="high" decoding="async" /></div>
+    <div class="hero-service__panel">
+      <h1 set:html={em(d.hero.titulo)} />
+      <p>{d.hero.entrada}</p>
+    </div>
+    <ul class="checks hero-service__points">{d.hero.puntos.map((p: string) => <li>{p}</li>)}</ul>
+  </section>
+  {d.aviso && <div class="wrap" style="margin-bottom:28px"><p class="notice notice--urgent" role="note">{d.aviso}</p></div>}
+  <Crumbs items={crumbs} />
+  <Cut color="ivory" flip vertex={25} />
+  <section class="section bg-ivory" style="padding-top:clamp(24px,3vw,48px)">
+    <div class="wrap media-split media-split--rev">
+      <div class="offset offset--rev offset--band reveal"><img src={`/assets/images/${imgIntro}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
+      <div class="reveal">
+        <h2 set:html={em(d.intro.titulo)} />
+        <p style="margin-top:12px">{d.intro.parrafo}</p>
+        <ul class="checks">{d.intro.lista.map((l: string) => <li>{l}</li>)}</ul>
+        <p>{d.intro.cierre}</p>
+        <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote-band on-dark" aria-label="Principios de atención">
+    <img src={`/assets/images/${d.imagenAncha}-sm.webp`} alt="" width="700" height="438" loading="lazy" decoding="async" />
+    <div class="wrap">
+      <Carousel label="Principios de atención">
+        {principios.slice(0, 5).map(p => (
+          <article class="carousel__slide"><h3>{p.titulo}</h3><p>{p.texto}</p></article>
+        ))}
+      </Carousel>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap center reveal">
+      <p class="eyebrow">Marco jurídico</p>
+      <h2>{d.aspectos.titulo}</h2>
+      <p class="lede" style="margin-top:12px">{d.aspectos.entrada}</p>
+      <div class="vline vline--tight"></div>
+    </div>
+    <div class="wrap reveal" style="max-width:800px">
+      {d.aspectos.items.map((a: { titulo: string; resumen: string; detalle: string }) => (
+        <div class="aspect">
+          <h3>{a.titulo}</h3>
+          <p>{a.resumen}</p>
+          <details class="more"><summary>Leer más</summary><div><p>{a.detalle}</p></div></details>
+        </div>
+      ))}
+      <div class="btn-row" style="justify-content:center"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+    </div>
+  </section>
+
+  <section class="bg-white" style="position:relative;padding-top:clamp(0px,4vw,60px)">
+    <div style="position:absolute;inset:clamp(70px,10vw,140px) 0 0;background:var(--color-border)"></div>
+    <div class="wrap media-split media-split--support">
+      <img class="reveal" src={`/assets/images/${imgApoyo}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" style="width:100%;aspect-ratio:4/5.4;object-fit:cover" />
+      <div class="reveal media-split__offset">
+        <h2>{d.situaciones.titulo}</h2>
+        <ul class="checks checks--cols">{d.situaciones.items.map((s: string) => <li>{s}</li>)}</ul>
+      </div>
+    </div>
+    <div class="vline" style="position:relative"></div>
+  </section>
+
+  <section class="section" style="padding-top:26px">
+    <Process etiqueta={d.procedimiento.etiqueta} titulo={d.procedimiento.titulo} entrada={d.procedimiento.entrada} pasos={d.procedimiento.pasos} />
+  </section>
+
+  <section class="section bg-ivory">
+    <div class="wrap media-split">
+      <div class="reveal">
+        <h2 set:html={em(d.importante.titulo)} />
+        <p style="margin-top:12px">{d.importante.entrada}</p>
+      </div>
+      <div class="reveal">
+        <h3>{d.importante.subtitulo}</h3>
+        <ul class="checks">{d.importante.items.map((i: string) => <li>{i}</li>)}</ul>
+        <p>{d.importante.cierre}</p>
+      </div>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="prose" style="margin-top:0"><Content /></div>
+  </article>
+
+  <section class="section bg-ivory">
+    <div class="wrap center reveal">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq" style="text-align:left">
+        {d.preguntas.map((q: { p: string; r: string }) => (
+          <details><summary>{q.p}</summary><div><p>{q.r}</p></div></details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Marquee items={marquesinaNormas} dark label="Normativa costarricense de referencia" />
+
+  <section class="section" style="padding-block:clamp(36px,4vw,56px)">
+    <div class="wrap">
+      <div class="sources">
+        <h2>Fuentes normativas</h2>
+        <ul>
+          {d.fuentes.map((f: { ref: keyof typeof fuentes; detalle: string }) => (
+            <li><a href={fuentes[f.ref].url} rel="noopener noreferrer" target="_blank">{fuentes[f.ref].nombre}</a>: {f.detalle}.</li>
+          ))}
+        </ul>
+        <p style="margin-top:10px">Normativa consultada el {fechaLarga(site.legalVerifiedAt)}. Esta información es general y no sustituye la asesoría individualizada. Su aplicación depende de los hechos y de la prueba de cada caso.</p>
+      </div>
+      <h2 class="center" style="margin-top:44px;font-size:var(--fs-h3)">Temas relacionados</h2>
+      <ul class="tag-list" style="margin-top:14px">
+        {relacionados.map((r: any) => <li><a href={`/servicios/${r.id}`}>{r.data.titulo}</a></li>)}
+      </ul>
+    </div>
+  </section>
+
+  <PostsSection titulo="Para seguir leyendo" posts={lecturas} bg="bg-white" />
+  <Cta imagen={d.imagenAncha} />
+</Base>

@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import ArchiveList from '../../../components/sections/ArchiveList.astro';
+import { slugify } from '../../../lib/format';
+export async function getStaticPaths() {
+  const articulos = await getCollection('articulos');
+  const cats = [...new Set(articulos.map(a => a.data.categoria))];
+  return cats.map(c => ({ params: { slug: slugify(c) }, props: { nombre: c, posts: articulos.filter(a => a.data.categoria === c) } }));
+}
+const { nombre, posts } = Astro.props;
+const n = posts.length;
+---
+<ArchiveList titulo={nombre} tipo="Categoría" entrada={`${n} ${n === 1 ? 'artículo' : 'artículos'} sobre la legislación costarricense`} posts={posts} metaDescripcion={`Artículos sobre ${nombre.toLowerCase()} en Costa Rica, con referencias a la legislación vigente.`} />

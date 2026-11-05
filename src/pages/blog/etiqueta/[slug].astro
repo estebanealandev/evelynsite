@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import ArchiveList from '../../../components/sections/ArchiveList.astro';
+import { slugify } from '../../../lib/format';
+export async function getStaticPaths() {
+  const articulos = await getCollection('articulos');
+  const tags = [...new Set(articulos.flatMap(a => a.data.etiquetas))];
+  return tags.map(t => ({ params: { slug: slugify(t) }, props: { nombre: t, posts: articulos.filter(a => a.data.etiquetas.includes(t)) } }));
+}
+const { nombre, posts } = Astro.props;
+const n = posts.length;
+---
+<ArchiveList titulo={nombre} tipo="Etiqueta" entrada={`${n} ${n === 1 ? 'artículo relacionado' : 'artículos relacionados'}`} posts={posts} metaDescripcion={`Artículos relacionados con ${nombre.toLowerCase()} en el derecho de familia costarricense.`} />

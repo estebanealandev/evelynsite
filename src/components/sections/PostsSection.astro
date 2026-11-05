@@ -1,0 +1,11 @@
+---
+import PostCard from '../ui/PostCard.astro';
+const { titulo, entrada, posts, bg = 'bg-white' } = Astro.props;
+---
+<section class={`section ${bg}`}>
+  <div class="wrap center reveal">
+    <h2>{titulo}</h2>
+    {entrada && <p class="lede" style="margin-top:12px">{entrada}</p>}
+    <div class="post-grid post-grid--3">{posts.map((p: any) => <PostCard post={p} />)}</div>
+  </div>
+</section>
