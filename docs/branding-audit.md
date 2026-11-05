@@ -47,6 +47,10 @@ Algunas superposiciones y un degradado de las tarjetas siguen con valores RGB di
 
 Se alojan en `public/assets/fonts`. No hay solicitudes a Google Fonts ni a Adobe. Solo se incluye el subconjunto latino.
 
+## Cambio de dirección visual
+
+En el rediseño, el monograma dejó de usarse como pieza 3D porque se veía tosco y demasiado grande. Sigue siendo el logotipo. La pieza visual de la portada es ahora un árbol generado por código, sin imágenes de terceros.
+
 ## Imágenes
 
 Todas son originales y generadas por `scripts/generate-art.mjs` con un renderizador 3D propio. **No aparece ninguna persona** ni se usan fotografías de terceros.

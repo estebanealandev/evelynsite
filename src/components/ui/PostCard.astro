@@ -1,7 +1,9 @@
 ---
-const { post } = Astro.props;
+const { post, filtro = false } = Astro.props;
+const d = post.data;
 ---
-<a class="post-card" href={`/blog/${post.id}`}>
-  <div class="post-card__img"><img src={`/assets/images/${post.data.imagen}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
-  <h3>{post.data.titulo}</h3>
+<a class="post-card" href={`/blog/${post.id}`} {...(filtro ? { 'data-cat': d.categoria, 'data-texto': `${d.titulo} ${d.resumen} ${d.etiquetas.join(' ')}`.toLowerCase() } : {})}>
+  <div class="post-card__img"><img src={`/assets/images/${d.imagen}-sm.webp`} alt="" width="700" height="700" loading="lazy" decoding="async" /></div>
+  <span class="post-card__cat">{d.categoria}</span>
+  <h3>{d.titulo}</h3>
 </a>

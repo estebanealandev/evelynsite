@@ -1,16 +1,36 @@
 // Interacciones del sitio. El contenido sigue disponible si este archivo no carga.
 (() => {
+  const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+  const raiz = document.documentElement;
+  raiz.classList.add('mov-listo');
+  const sinMovimiento = () => matchMedia('(prefers-reduced-motion: reduce)').matches || raiz.dataset.movimiento === 'pausado';
+
+  // Pausar animaciones: la preferencia queda solo en este navegador.
+  const botonesMov = $$('[data-movimiento-btn]');
+  const pintarMov = () => {
+    const p = raiz.dataset.movimiento === 'pausado';
+    botonesMov.forEach(b => { b.setAttribute('aria-pressed', String(p)); b.textContent = p ? 'Reanudar animaciones' : 'Pausar animaciones'; });
+  };
+  botonesMov.forEach(b => b.addEventListener('click', () => {
+    const pausar = raiz.dataset.movimiento !== 'pausado';
+    if (pausar) raiz.dataset.movimiento = 'pausado'; else delete raiz.dataset.movimiento;
+    try { if (pausar) localStorage.setItem('movimiento', 'pausado'); else localStorage.removeItem('movimiento'); } catch {}
+    pintarMov();
+    dispatchEvent(new CustomEvent('movimiento', { detail: pausar }));
+  }));
+  pintarMov();
 
   // Menú móvil a pantalla completa
-  const burger = document.querySelector('.burger');
-  const menu = document.getElementById('menu-movil');
+  const burger = $('.burger');
+  const menu = $('#menu-movil');
   if (burger && menu) {
     const toggle = open => {
       burger.setAttribute('aria-expanded', String(open));
       burger.querySelector('.visually-hidden').textContent = open ? 'Cerrar menú' : 'Abrir menú';
       menu.dataset.open = String(open);
       menu.inert = !open;
+      raiz.classList.toggle('menu-abierto', open);
       document.body.style.overflow = open ? 'hidden' : '';
     };
     menu.inert = true;
@@ -22,7 +42,7 @@
     matchMedia('(min-width: 1024px)').addEventListener('change', e => { if (e.matches) toggle(false); });
   }
 
-  // Submenú de servicios
+  // Submenú de áreas
   $$('.has-menu').forEach(item => {
     const btn = item.querySelector('button');
     const set = open => { item.dataset.open = String(open); btn.setAttribute('aria-expanded', String(open)); };
@@ -35,26 +55,260 @@
     item.addEventListener('focusout', e => { if (!item.contains(e.relatedTarget)) set(false); });
   });
 
-  // Carruseles
-  $$('[data-carousel]').forEach(root => {
-    const track = root.querySelector('.carousel__track');
-    const prev = root.querySelector('[data-prev]');
-    const next = root.querySelector('[data-next]');
-    if (!track || !prev || !next) return;
-    const step = () => {
-      const s = track.querySelector('.carousel__slide');
-      return s ? s.getBoundingClientRect().width + parseFloat(getComputedStyle(track).columnGap || 0) : track.clientWidth;
+  // Cabecera: transparente sobre el encabezado oscuro, sólida después; se oculta al bajar y vuelve al subir.
+  const header = $('.site-header');
+  const finHero = $('.h-telon') || $('.page-hero')?.nextElementSibling || $('.lab')?.nextElementSibling;
+  let ultimoY = scrollY;
+  const pintarHeader = () => {
+    const y = scrollY;
+    const solida = finHero ? finHero.getBoundingClientRect().top <= header.offsetHeight : y > 40;
+    header.classList.toggle('is-solid', solida);
+    const abierto = header.contains(document.activeElement) || $('.has-menu[data-open="true"]');
+    if (y < 200 || abierto || y < ultimoY - 4) header.classList.remove('is-oculta');
+    else if (y > ultimoY + 6) header.classList.add('is-oculta');
+    ultimoY = y;
+  };
+  header.addEventListener('focusin', () => header.classList.remove('is-oculta'));
+
+  // Efectos ligados al scroll, agrupados en un solo cuadro.
+  const paralajes = $$('[data-paralaje]');
+  const progreso = $('[data-progreso]');
+  const pasos = $('[data-pasos-scroll]');
+  let pendiente = false;
+  const alScroll = () => {
+    pendiente = false;
+    pintarHeader();
+    if (progreso) {
+      const total = document.documentElement.scrollHeight - innerHeight;
+      progreso.style.setProperty('--avance', String(total > 0 ? Math.min(1, scrollY / total) : 0));
+    }
+    if (pasos) {
+      const c = pasos.getBoundingClientRect();
+      const a = (innerHeight * 0.55 - c.top) / c.height;
+      pasos.style.setProperty('--avance', String(Math.max(0, Math.min(1, a))));
+    }
+    if (!sinMovimiento()) {
+      paralajes.forEach(img => {
+        const c = img.parentElement.getBoundingClientRect();
+        if (c.bottom < 0 || c.top > innerHeight) return;
+        const k = (c.top + c.height) / (innerHeight + c.height);
+        img.style.transform = `translateY(${(-(1 - k) * 15).toFixed(2)}%)`;
+      });
+    }
+  };
+  const pedir = () => { if (!pendiente) { pendiente = true; requestAnimationFrame(alScroll); } };
+  addEventListener('scroll', pedir, { passive: true });
+  addEventListener('resize', pedir);
+  alScroll();
+
+  // Titulares que entran palabra por palabra. El texto sigue siendo uno solo para los lectores de pantalla.
+  const partir = el => {
+    let i = 0;
+    const recorrer = nodo => {
+      [...nodo.childNodes].forEach(n => {
+        if (n.nodeType === 3) {
+          const f = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(t => {
+            if (!t) return;
+            if (/^\s+$/.test(t)) { f.append(' '); return; }
+            const w = document.createElement('span');
+            w.className = 'palabra';
+            const d = document.createElement('span');
+            d.style.setProperty('--i', i++);
+            d.textContent = t;
+            w.append(d);
+            f.append(w);
+          });
+          n.replaceWith(f);
+        } else if (n.nodeType === 1) recorrer(n);
+      });
     };
-    const sync = () => {
-      prev.disabled = track.scrollLeft <= 2;
-      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    recorrer(el);
+  };
+  $$('[data-partir]').forEach(partir);
+
+  // Revelado al entrar en pantalla
+  const animados = $$('.reveal, [data-mascara], [data-partir]');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries, o) => {
+      entries.forEach(en => { if (en.isIntersecting) { en.target.classList.add('is-in'); o.unobserve(en.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+    animados.forEach(el => io.observe(el));
+    // El contenido inicial de la página nunca espera al scroll.
+    requestAnimationFrame(() => $$('.h-hero__content .reveal, .h-hero__content [data-partir], .page-hero .reveal, .page-hero [data-partir], .lab__content .reveal').forEach(el => el.classList.add('is-in')));
+  } else {
+    animados.forEach(el => el.classList.add('is-in'));
+  }
+
+  // Proceso: resalta el paso que se está leyendo.
+  if (pasos && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => en.target.classList.toggle('is-activo', en.isIntersecting));
+    }, { rootMargin: '-35% 0px -35% 0px' });
+    $$('li', pasos).forEach(li => io.observe(li));
+  } else if (pasos) {
+    $$('li', pasos).forEach(li => li.classList.add('is-activo'));
+  }
+
+  // Áreas: una imagen acompaña al cursor. Solo con ratón y con movimiento activo.
+  const listas = $$('.areas[data-preview]');
+  if (listas.length && matchMedia('(hover: hover) and (pointer: fine) and (min-width: 1024px)').matches) {
+    let caja = null, tx = 0, ty = 0, x = 0, y = 0, animando = false, dentro = false;
+    const crear = () => {
+      caja = document.createElement('div');
+      caja.className = 'areas__preview';
+      caja.setAttribute('aria-hidden', 'true');
+      document.body.append(caja);
     };
-    prev.addEventListener('click', () => track.scrollBy({ left: -step() }));
-    next.addEventListener('click', () => track.scrollBy({ left: step() }));
-    track.addEventListener('scroll', sync, { passive: true });
-    addEventListener('resize', sync);
-    sync();
+    const mover = () => {
+      x += (tx - x) * 0.14; y += (ty - y) * 0.14;
+      caja.style.transform = `translate(${x.toFixed(1)}px, ${y.toFixed(1)}px)`;
+      if (dentro || Math.abs(tx - x) > 0.5) requestAnimationFrame(mover); else animando = false;
+    };
+    listas.forEach(lista => {
+      $$('a', lista).forEach(a => {
+        a.addEventListener('mouseenter', e => {
+          if (sinMovimiento()) return;
+          if (!caja) crear();
+          let img = $(`img[src="${a.dataset.img}"]`, caja);
+          if (!img) { img = new Image(); img.alt = ''; img.src = a.dataset.img; caja.append(img); }
+          $$('img', caja).forEach(i => i.classList.toggle('is-activa', i === img));
+          if (!dentro) { x = tx = e.clientX + 28; y = ty = e.clientY - 120; }
+          dentro = true;
+          caja.classList.add('is-visible');
+          if (!animando) { animando = true; requestAnimationFrame(mover); }
+        });
+      });
+      lista.addEventListener('mousemove', e => { tx = Math.min(e.clientX + 28, innerWidth - 320); ty = Math.max(e.clientY - 120, 80); });
+      lista.addEventListener('mouseleave', () => { dentro = false; caja?.classList.remove('is-visible'); });
+    });
+  }
+
+  // Índice de lectura: marca la sección visible y se pliega en móvil.
+  const toc = $('[data-toc]');
+  if (toc) {
+    if (matchMedia('(max-width: 1023px)').matches) toc.open = false;
+    const enlaces = $$('a', toc);
+    const objetivos = enlaces.map(a => document.getElementById(decodeURIComponent(a.hash.slice(1)))).filter(Boolean);
+    const marcar = id => enlaces.forEach(a => { if (decodeURIComponent(a.hash.slice(1)) === id) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    if ('IntersectionObserver' in window && objetivos.length) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(en => { if (en.isIntersecting) marcar(en.target.id); });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+      objetivos.forEach(o => io.observe(o));
+    }
+    enlaces.forEach(a => a.addEventListener('click', () => { if (matchMedia('(max-width: 1023px)').matches) toc.open = false; }));
+  }
+
+  // Salida rápida: reemplaza esta página en el historial y lleva a un sitio neutro.
+  const salida = $('[data-salida]');
+  if (salida) {
+    const salir = () => location.replace(salida.href);
+    salida.addEventListener('click', e => { e.preventDefault(); salir(); });
+    let ultimaEsc = 0;
+    addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      const ahora = Date.now();
+      if (ahora - ultimaEsc < 700) salir();
+      ultimaEsc = ahora;
+    });
+  }
+
+  // Orientador: una pregunta a la vez. Nada se guarda ni se envía.
+  $$('[data-guia]').forEach(guia => {
+    const datos = JSON.parse($('[data-guia-datos]', guia).textContent);
+    const panel = $('[data-guia-panel]', guia);
+    let camino = [];
+    const enfocar = () => { const t = $('[tabindex="-1"]', panel); if (t) t.focus({ preventScroll: true }); };
+    const preguntar = id => {
+      const q = datos.preguntas[id];
+      panel.replaceChildren();
+      const h = document.createElement('p');
+      h.className = 'guia__q'; h.tabIndex = -1; h.textContent = q.pregunta;
+      const ul = document.createElement('ul');
+      ul.className = 'guia__ops';
+      q.opciones.forEach(o => {
+        const li = document.createElement('li');
+        const b = document.createElement('button');
+        b.type = 'button'; b.className = 'guia__op'; b.textContent = o.texto;
+        b.addEventListener('click', () => {
+          camino.push(id);
+          if (o.siguiente) preguntar(o.siguiente); else resultado(o);
+          enfocar();
+        });
+        li.append(b); ul.append(li);
+      });
+      panel.append(h, ul);
+      if (camino.length) panel.append(atras());
+    };
+    const atras = () => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'guia__atras'; b.textContent = 'Volver';
+      b.addEventListener('click', () => { preguntar(camino.pop()); enfocar(); });
+      return b;
+    };
+    const resultado = o => {
+      const a = datos.areas[o.resultado];
+      panel.replaceChildren();
+      const c = document.createElement('div');
+      c.className = 'guia__res';
+      const e = document.createElement('p');
+      e.className = 'eyebrow'; e.textContent = 'Le puede servir';
+      const h = document.createElement('h3');
+      h.tabIndex = -1; h.textContent = a.titulo;
+      const p = document.createElement('p');
+      p.textContent = a.resumen;
+      c.append(e, h, p);
+      if (o.aviso) {
+        const av = document.createElement('p');
+        av.className = 'notice notice--urgent'; av.textContent = o.aviso;
+        c.append(av);
+      }
+      const r = document.createElement('div');
+      r.className = 'btn-row';
+      const l = document.createElement('a');
+      l.className = 'btn'; l.href = `/servicios/${o.resultado}`; l.textContent = 'Leer esta área';
+      const k = document.createElement('a');
+      k.className = 'btn btn-outline'; k.href = '/agendar-consulta'; k.textContent = 'Agendar una consulta';
+      r.append(l, k);
+      const n = document.createElement('p');
+      n.className = 'guia__nota'; n.textContent = 'Esta guía solo le dirige a información general. No analiza su caso ni sustituye una asesoría.';
+      c.append(r, n);
+      panel.append(c, atras());
+    };
+    preguntar(datos.inicio);
   });
+
+  // Blog: filtro por categoría y búsqueda en esta misma página.
+  const filtros = $('[data-filtros]');
+  if (filtros) {
+    const tarjetas = $$('.post-card[data-cat]', filtros);
+    const salidaTxt = $('[data-resultado]', filtros);
+    const buscador = $('[data-buscador]', filtros);
+    const input = $('input', buscador);
+    const botones = $$('[data-cat-btn]', filtros);
+    let cat = '';
+    buscador.hidden = false;
+    const aplicar = () => {
+      const q = input.value.trim().toLowerCase();
+      let n = 0;
+      tarjetas.forEach(t => {
+        const ok = (!cat || t.dataset.cat === cat) && (!q || t.dataset.texto.includes(q));
+        t.hidden = !ok;
+        if (ok) n++;
+      });
+      salidaTxt.textContent = cat || q ? (n ? `${n} ${n === 1 ? 'artículo' : 'artículos'}` : 'No hay artículos con esa búsqueda. Pruebe con otras palabras.') : '';
+      botones.forEach(b => b.setAttribute('aria-pressed', String(b.dataset.catBtn === cat)));
+    };
+    botones.forEach(b => {
+      b.hidden = false;
+      b.setAttribute('role', 'button');
+      b.addEventListener('click', e => { e.preventDefault(); cat = b.dataset.catBtn; aplicar(); });
+      b.addEventListener('keydown', e => { if (e.key === ' ') { e.preventDefault(); b.click(); } });
+    });
+    input.addEventListener('input', aplicar);
+    aplicar();
+  }
 
   // Formularios: mejora progresiva sobre el envío nativo
   $$('form[data-ajax]').forEach(form => {
@@ -63,27 +317,64 @@
     const status = form.querySelector('.form__status');
     const btn = form.querySelector('button[type="submit"]');
     const show = (kind, msg) => { status.dataset.kind = kind; status.textContent = msg; };
-    const clearErrors = () => {
-      $$('[aria-invalid]', form).forEach(i => i.removeAttribute('aria-invalid'));
-      $$('.field__error', form).forEach(e => { e.textContent = ''; });
+
+    // Paso a paso, si el formulario lo admite.
+    const pasosF = $$('[data-paso]', form);
+    let actual = 0;
+    const irA = (i, enfocar) => {
+      actual = i;
+      pasosF.forEach((f, k) => f.classList.toggle('is-activo', k === i));
+      const final = i === pasosF.length - 1;
+      $('[data-atras]', form).hidden = i === 0;
+      $('[data-siguiente]', form).hidden = final;
+      $('[data-enviar]', form).hidden = !final;
+      $('[data-pasos-texto]', form).textContent = `Paso ${i + 1} de ${pasosF.length}`;
+      $('.pasos__barra i', form).style.setProperty('--avance', `${((i + 1) / pasosF.length) * 100}%`);
+      if (enfocar) (pasosF[i].querySelector('input:not([type=hidden]):not([tabindex="-1"]), textarea') || pasosF[i]).focus();
+    };
+    const clearErrors = (ambito = form) => {
+      $$('[aria-invalid]', ambito).forEach(i => i.removeAttribute('aria-invalid'));
+      $$('.field__error', ambito).forEach(e => { e.textContent = ''; });
     };
     const showErrors = errors => {
       let first = null;
       Object.entries(errors || {}).forEach(([k, msg]) => {
-        const input = form.elements[k];
+        const c = form.elements[k];
+        const input = c && c.setAttribute ? c : c && c[0];
         const out = form.querySelector(`[data-error="${k}"]`);
         if (out) out.textContent = msg;
         if (input && input.setAttribute) { input.setAttribute('aria-invalid', 'true'); first = first || input; }
       });
-      if (first) first.focus();
+      if (first) {
+        const p = first.closest('[data-paso]');
+        if (p) irA(pasosF.indexOf(p));
+        first.focus();
+      }
     };
-    const local = () => {
+    const local = (ambito = form) => {
       const errors = {};
-      $$('input, select, textarea', form).forEach(i => {
+      $$('input, select, textarea', ambito).forEach(i => {
         if (i.name && !i.closest('.hp') && !i.checkValidity()) errors[i.name] = i.dataset.msg || 'Revise este campo.';
       });
       return errors;
     };
+    if (pasosF.length) {
+      form.classList.add('js-pasos');
+      irA(0);
+      $('[data-siguiente]', form).addEventListener('click', () => {
+        clearErrors(pasosF[actual]);
+        show('', '');
+        const e = local(pasosF[actual]);
+        if (Object.keys(e).length) { showErrors(e); return; }
+        irA(actual + 1, true);
+      });
+      $('[data-atras]', form).addEventListener('click', () => { show('', ''); irA(actual - 1, true); });
+      pasosF[0].addEventListener('change', e => { if (e.target.type === 'radio') clearErrors(pasosF[0]); });
+      form.addEventListener('keydown', e => {
+        if (e.key === 'Enter' && actual < pasosF.length - 1 && e.target.tagName !== 'TEXTAREA' && e.target.tagName !== 'BUTTON') { e.preventDefault(); $('[data-siguiente]', form).click(); }
+      });
+    }
+
     form.addEventListener('submit', async e => {
       e.preventDefault();
       clearErrors();
@@ -95,8 +386,12 @@
       try {
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
         const data = await res.json().catch(() => ({}));
-        if (res.ok && data.ok) { form.reset(); if (started) started.value = String(Date.now()); show('ok', data.mensaje); }
-        else { showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); }
+        if (res.ok && data.ok) {
+          form.reset();
+          if (started) started.value = String(Date.now());
+          if (pasosF.length) irA(0);
+          show('ok', data.mensaje);
+        } else { showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); }
       } catch {
         show('error', 'No hay conexión con el servidor. Su solicitud no se ha enviado; intente de nuevo.');
       } finally {

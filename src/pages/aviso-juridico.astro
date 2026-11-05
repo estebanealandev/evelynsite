@@ -1,14 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/ui/PageHero.astro';
 import { site } from '../config/site';
 import { fechaLarga } from '../lib/format';
 import { fuentes } from '../lib/sources';
 ---
 <Base title="Aviso jurídico" description="Condiciones de uso del sitio y alcance de la información publicada sobre derecho de familia en Costa Rica." crumbs={[{ label: 'Aviso jurídico' }]}>
+  <PageHero titulo="Aviso jurídico" crumbs={[{ label: 'Aviso jurídico' }]} />
   <section class="section">
-    <div class="legal">
-      <h1>Aviso jurídico</h1>
-      <p style="margin-top:12px">Última actualización: {fechaLarga(site.legalVerifiedAt)}.</p>
+    <div class="wrap"><div class="legal">
+      <p>Última actualización: {fechaLarga(site.legalVerifiedAt)}.</p>
 
       <h2>Fines informativos</h2>
       <p>El contenido de este sitio tiene fines informativos generales sobre el derecho de familia costarricense. No constituye asesoría jurídica ni sustituye la asesoría individualizada de una persona profesional en derecho.</p>
@@ -36,6 +37,6 @@ import { fuentes } from '../lib/sources';
 
       <h2>Enlaces externos</h2>
       <p>Las fuentes normativas enlazan a sitios oficiales que este sitio no controla.</p>
-    </div>
+    </div></div>
   </section>
 </Base>

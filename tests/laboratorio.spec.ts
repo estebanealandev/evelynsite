@@ -77,6 +77,21 @@ for (const c of CONCEPTOS) {
   });
 }
 
+for (const c of CONCEPTOS) {
+  test(`concepto ${c}: el titular conserva el contraste en pantalla grande`, async ({ page, isMobile }) => {
+    test.skip(isMobile, 'solo escritorio');
+    await page.setViewportSize({ width: 1920, height: 1080 });
+    await page.goto(`/laboratorio#${c}`);
+    await lista(page);
+    await page.waitForTimeout(6500);
+    await page.evaluate(() => scrollTo({ top: document.querySelector<HTMLElement>('.lab')!.offsetHeight - innerHeight, behavior: 'instant' }));
+    await page.waitForTimeout(2500);
+    const titulo = await contraste(page, '.lab__title');
+    console.log(`[contraste] ${c} 1920px final: titular ${titulo.toFixed(2)}:1`);
+    expect(titulo).toBeGreaterThanOrEqual(3);
+  });
+}
+
 test('los conceptos se pueden cambiar con botones y teclado', async ({ page }) => {
   await page.goto('/laboratorio#crece');
   await lista(page);
@@ -135,6 +150,6 @@ test('el laboratorio no se indexa y three.js no llega a otras páginas', async (
       return (o as any).call(this, t, ...r);
     } as typeof o;
   });
-  await page.goto('/', { waitUntil: 'networkidle' });
+  await page.goto('/servicios', { waitUntil: 'networkidle' });
   expect(await page.evaluate(() => (window as any).__gl === true), contextos.join()).toBe(false);
 });

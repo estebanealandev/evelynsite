@@ -5,9 +5,17 @@
 | Fase | Estado |
 |---|---|
 | 0. Red de seguridad | Hecha |
-| 1. Limpieza y nueva base visual | Hecha en `rediseno/fase-1`. Pedido de ajuste: hero más audaz y adelantar el 3D |
-| 3. three.js | Adelantada a petición. Elegida la mezcla de A y B: monograma con ventana proyectada, en `/laboratorio`, rama `rediseno/fase-3-prototipos`. Falta validarla en un móvil real e integrarla en la portada |
-| 2 y 4 a 7 | Pendientes de aprobación |
+| 1. Limpieza y base visual | Hecha |
+| 2. Sistema de movimiento | Hecha, con CSS y JavaScript nativos, sin GSAP ni Lenis |
+| 3. three.js | Hecha con un cambio de idea: el monograma se descartó y se reemplazó por el árbol familiar. Quedan tres versiones para elegir en `/laboratorio` |
+| 4. Portada completa | Hecha |
+| 5. Servicios y lectura | Hecha, incluidos orientador y salida rápida. Requiere revisión jurídica |
+| 6. Blog, formulario y navegación | Hecha |
+| 7. Pulido | Parcial: falta probar en Safari, Firefox, lector de pantalla y móvil real |
+
+Todo está en la rama `rediseno/completo`, pendiente de revisión. El resumen está en [revision-rediseno.md](revision-rediseno.md).
+
+**Nota:** las secciones siguientes conservan el plan original. Las decisiones que cambiaron se explican en el resumen.
 
 ## 1. Lo esencial
 

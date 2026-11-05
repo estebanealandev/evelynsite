@@ -17,6 +17,7 @@
     "test": "playwright test",
     "test:visual": "node scripts/compare-structure.mjs",
     "capture": "node scripts/capture-phase.mjs",
+    "poster": "node scripts/generate-tree-poster.mjs",
     "audit:identity": "node scripts/audit-identity.mjs"
   },
   "dependencies": {

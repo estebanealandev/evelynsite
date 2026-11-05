@@ -37,6 +37,18 @@ No se publicó ninguno de estos datos: colegiatura, títulos, universidad, años
 
 **La fotografía** debe ser auténtica y autorizada. Hoy la página muestra un monograma.
 
+### 1.5 Funciones añadidas en el rediseño
+
+| Función | Qué revisar |
+|---|---|
+| Orientador "¿Por dónde empiezo?" (`src/lib/orientador.ts`) | Que las preguntas y su destino no parezcan una calificación jurídica del caso. No guarda ni envía respuestas |
+| Salida rápida en las páginas de violencia | Conviene validarla con especialistas. Abre un sitio neutro y reemplaza la página en el historial, pero no borra todo el historial, y así se avisa |
+| Formulario por pasos | El contenido legal y el consentimiento no cambian; solo su presentación |
+| Respuesta primero en páginas de servicio | Se reordenó el mismo texto. Falta confirmar que el orden no altera el sentido |
+| Árbol con dos árboles jóvenes | Es una metáfora visual. Conviene confirmar que no sugiera un tipo único de familia |
+
+Los títulos nuevos "El buen consejo busca resolver, no agravar" y "Para leer con calma" no se han revisado. Las secciones de la página "Sobre Evelyn" se reorganizaron sin añadir datos personales.
+
 ## 2. Hallazgos que corrigen supuestos habituales
 
 | Tema | Hallazgo verificado | Fuente |

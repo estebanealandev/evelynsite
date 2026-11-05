@@ -1,58 +1,31 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/ui/PageHero.astro';
 import ConsultaForm from '../components/forms/ConsultaForm.astro';
-const opciones = [
-  { t: 'Cuente su consulta', s: 'Primer paso', img: 'documentos-ancho', d: 'Complete el formulario con una descripción general del asunto. No es necesario adjuntar documentos ni incluir detalles íntimos.' },
-  { t: 'Revisión de la solicitud', s: 'Qué sucede después', img: 'escalera-ancha', d: 'La solicitud se revisa para determinar si puede atenderse y cómo continuar. Enviarla no crea, por sí solo, una relación profesional.' },
-  { t: 'Conversación reservada', s: 'Si corresponde', img: 'lino', d: 'Se coordina una conversación para identificar los aspectos principales de su situación y aclarar el alcance y las condiciones de una posible asesoría.' }
+const pasos = [
+  { titulo: 'Cuente su consulta', texto: 'Complete el formulario con una descripción general del asunto. No es necesario adjuntar documentos ni incluir detalles íntimos.' },
+  { titulo: 'Revisión de la solicitud', texto: 'La solicitud se revisa para determinar si puede atenderse y cómo continuar. Enviarla no crea, por sí solo, una relación profesional.' },
+  { titulo: 'Conversación reservada', texto: 'Si corresponde, se coordina una conversación para identificar los aspectos principales de su situación y aclarar el alcance y las condiciones de una posible asesoría.' }
 ];
+const crumbs = [{ label: 'Agendar una consulta' }];
 ---
-<Base title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica mediante un formulario reservado. Revise qué esperar y cómo se tratan sus datos." crumbs={[{ label: 'Agendar una consulta' }]}>
-  <section class="section" style="padding-block:clamp(10px,2vw,20px) clamp(36px,4vw,60px)">
-    <div class="wrap media-split media-split--rev">
-      <div class="offset offset--rev offset--band"><img src="/assets/images/luz-ventana-sm.webp" alt="Luz de ventana sobre un muro claro" width="700" height="438" fetchpriority="high" decoding="async" /></div>
-      <div>
-        <h1>Agende una consulta confidencial</h1>
-        <p style="margin-top:12px">Cuéntenos brevemente su situación. La información sobre divorcios, pensiones alimentarias, guarda y crianza, interrelación familiar, bienes gananciales, unión de hecho y filiación está disponible en este sitio para ayudarle a preparar su consulta.</p>
+<Base title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica mediante un formulario reservado. Revise qué esperar y cómo se tratan sus datos." crumbs={crumbs}>
+  <PageHero titulo="Agende una consulta *confidencial*" lede="Cuéntenos brevemente su situación. Una consulta permite conocer su caso y las opciones que contempla la legislación costarricense." crumbs={crumbs} />
+
+  <section class="section" id="formulario">
+    <div class="wrap g12" style="row-gap:44px">
+      <aside style="grid-column:1/span 4" id="agendar-lado">
+        <h2 style="font-size:var(--fs-h3);margin-bottom:16px">Qué sucede después</h2>
+        <ol class="timeline">{pasos.map(s => <li><h3 style="font-size:1.35rem">{s.titulo}</h3><p style="font-size:.95rem">{s.texto}</p></li>)}</ol>
+        <p style="margin-top:22px;font-size:var(--fs-small)">¿Prefiere conocer más primero? Revise las <a href="/servicios">áreas</a> o el <a href="/blog">blog</a>.</p>
+      </aside>
+      <div style="grid-column:6/-1" id="agendar-form">
+        <p class="notice notice--urgent" role="note" style="margin-bottom:30px">Este formulario no atiende emergencias. Si usted o alguien más está en peligro, llame al 9-1-1.</p>
+        <ConsultaForm />
       </div>
     </div>
   </section>
-  <section class="section bg-ivory" style="padding-top:clamp(20px,3vw,40px)">
-    <div class="wrap center">
-      <h2>Dé el primer paso</h2>
-      <p class="lede" style="margin-top:12px">Una consulta permite conocer su situación y las opciones que contempla la legislación costarricense.</p>
-    </div>
-    <div class="wrap-wide option-cards" style="max-width:1100px">
-      {opciones.map(o => (
-        <article class="option-card">
-          <img src={`/assets/images/${o.img}-sm.webp`} alt="" width="700" height="438" loading="lazy" decoding="async" />
-          <h3>{o.t}</h3>
-          <p class="eyebrow" style="font-size:.72rem">{o.s}</p>
-          <p>{o.d}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-
-  <section class="section" id="formulario">
-    <div class="wrap" style="max-width:820px">
-      <h2 class="center">Formulario de consulta</h2>
-      <p class="center" style="margin:10px 0 28px">Todos los campos son obligatorios, salvo el teléfono.</p>
-      <p class="notice notice--urgent" style="margin-bottom:26px">Este formulario no atiende emergencias. Si usted o alguien más está en peligro, llame al 9-1-1.</p>
-      <ConsultaForm />
-    </div>
-  </section>
-
-  <section class="section bg-band" style="padding-block:clamp(50px,7vw,100px);overflow:hidden">
-    <div class="wrap center">
-      <h2>¿Prefiere conocer más primero?</h2>
-      <div class="btn-row"><a class="btn" href="/servicios">Conocer las áreas</a></div>
-    </div>
-  </section>
-  <section class="section bg-ivory" style="padding-block:clamp(40px,5vw,70px)">
-    <div class="wrap resource-strip">
-      <h2>¿Busca recursos útiles?</h2>
-      <a class="btn" href="/blog">Leer el blog</a>
-    </div>
-  </section>
 </Base>
+<style>
+  @media (max-width: 1023px) { #agendar-lado, #agendar-form { grid-column: 1 / -1 !important; } #agendar-lado { order: 2; } }
+</style>

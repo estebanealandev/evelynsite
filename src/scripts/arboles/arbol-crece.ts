@@ -1,9 +1,9 @@
 // Concepto 1: el árbol crece trazo a trazo. Después llegan los jóvenes, las hojas y la luz.
 import { BufferAttribute, BufferGeometry, Group, NoToneMapping, PerspectiveCamera, Points, Scene, ShaderMaterial, SRGBColorSpace } from 'three';
-import { actualizarComunes, CAMARA_FOV, CAMARA_Z, crearBosque, crearComunes, crearHalo, crearHojas, crearRamas, encuadre, GLSL_MASCARA } from './arbol';
+import { actualizarComunes, CAMARA_FOV, CAMARA_Z, crearComunes, crearHalo, crearHojas, crearRamas, encuadre, GLSL_MASCARA } from './arbol';
 import { suave, type Crear } from './types';
 
-export const crear: Crear = renderer => {
+export const crear: Crear = (renderer, bosque) => {
   renderer.toneMapping = NoToneMapping;
   renderer.outputColorSpace = SRGBColorSpace;
   renderer.setClearColor(0x14283e, 1);
@@ -12,7 +12,6 @@ export const crear: Crear = renderer => {
   camera.position.z = CAMARA_Z;
 
   const u = crearComunes();
-  const bosque = crearBosque(innerWidth < 768);
   const ramas = crearRamas(bosque, u);
   const hojas = crearHojas(bosque, u);
   const arbol = new Group();
@@ -82,7 +81,7 @@ export const crear: Crear = renderer => {
       halo.u.uCentro.value.set(zona.sueloX, zona.sueloY - zona.altura * 0.62);
       halo.u.uAsp.value = aspecto;
       halo.u.uRadio.value = zona.altura * 0.8;
-      halo.u.uLuz.value = (0.025 + 0.085 * progreso) * suave(t / 3);
+      halo.u.uLuz.value = location.search.includes('poster') ? 0 : (0.025 + 0.085 * progreso) * suave(t / 3);
       renderer.render(scene, camera);
     },
     dispose() {

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import PageHero from '../components/ui/PageHero.astro';
 import { site } from '../config/site';
 import { fechaLarga } from '../lib/format';
 import { fuentes } from '../lib/sources';
@@ -11,10 +12,10 @@ if (site.indexable && (!p.controller || !p.email || !p.providers || !p.retention
 }
 ---
 <Base title="Política de privacidad" description="Cómo se tratan los datos personales recopilados en este sitio, conforme a la Ley N.º 8968 de Costa Rica y su reglamento." crumbs={[{ label: 'Política de privacidad' }]}>
+  <PageHero titulo="Política de privacidad" crumbs={[{ label: 'Política de privacidad' }]} />
   <section class="section">
-    <div class="legal">
-      <h1>Política de privacidad</h1>
-      <p style="margin-top:12px">Última actualización: {fechaLarga(site.legalVerifiedAt)}. Esta política describe el funcionamiento real de este sitio y se basa en la <a href={fuentes.L8968.url} rel="noopener noreferrer" target="_blank">Ley N.º 8968</a> y su <a href={fuentes.R37554.url} rel="noopener noreferrer" target="_blank">Reglamento</a>.</p>
+    <div class="wrap"><div class="legal">
+      <p>Última actualización: {fechaLarga(site.legalVerifiedAt)}. Esta política describe el funcionamiento real de este sitio y se basa en la <a href={fuentes.L8968.url} rel="noopener noreferrer" target="_blank">Ley N.º 8968</a> y su <a href={fuentes.R37554.url} rel="noopener noreferrer" target="_blank">Reglamento</a>.</p>
 
       <h2>Responsable</h2>
       <p>Responsable de la base de datos: {p.controller ?? <span class="pending">{pendiente}</span>}{p.controllerId && ` (${p.controllerId})`}.</p>
@@ -40,7 +41,7 @@ if (site.indexable && (!p.controller || !p.email || !p.providers || !p.retention
 
       <h2>Destinatarios y proveedores</h2>
       <p>Las solicitudes se envían por correo electrónico a quien administra este sitio, a través del proveedor de correo configurado. Quienes consultan esos datos son las personas encargadas de atender la solicitud. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
-      <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies.</p>
+      <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies. Si elige pausar las animaciones, esa preferencia se guarda solo en su navegador.</p>
 
       <h2>Conservación</h2>
       <p>El sitio no guarda las solicitudes en una base de datos propia: se remiten por correo. El plazo de conservación de esos mensajes es: {p.retention ?? <span class="pending">{pendiente}</span>}</p>
@@ -53,6 +54,6 @@ if (site.indexable && (!p.controller || !p.email || !p.providers || !p.retention
 
       <h2>Transferencias</h2>
       <p>No se venden ni ceden datos a terceros. Almacenamiento fuera de Costa Rica por parte de proveedores: {p.transfers ?? <span class="pending">{pendiente}</span>}</p>
-    </div>
+    </div></div>
   </section>
 </Base>

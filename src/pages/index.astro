@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import AreasList from '../components/sections/AreasList.astro';
 import Cta from '../components/sections/Cta.astro';
 import { site } from '../config/site';
 import { proceso, valores } from '../lib/institucional';
@@ -9,81 +10,71 @@ import '../styles/home.css';
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const articulos = await getCollection('articulos');
 const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4);
-const num = (i: number) => String(i + 1).padStart(2, '0');
+const poster = site.heroConcepto === 'particulas' ? 'arbol-puntos' : 'arbol-lineas';
 ---
-<Base headerOverlay title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
-  <section class="h-hero on-dark">
-    <div class="h-hero__visual" data-hero-visual>
-      <img class="h-hero__mark" src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="600" height="600" fetchpriority="high" />
-    </div>
-    <div class="wrap-wide h-hero__content">
-      <h1 class="h-hero__title">Protegemos lo que <em>más</em> importa.</h1>
-      <div class="g12 h-hero__foot">
-        <p>Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
-        <div class="btn-row">
-          <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
-          <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
+<Base title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
+  <section class="h-hero on-dark" data-hero data-concepto={site.heroConcepto}>
+    <div class="h-hero__stage">
+      <canvas aria-hidden="true"></canvas>
+      <div class="wrap h-hero__content">
+        <div class="h-hero__titulo">
+          <img class="h-hero__poster" src={`/assets/images/${poster}.webp`} alt="" width="900" height="700" decoding="async" />
+          <h1 class="h-hero__title" data-arbol-titulo data-partir>Protegemos lo que <em>más</em> importa.</h1>
+        </div>
+        <div class="h-hero__foot" data-arbol-pie>
+          <p class="reveal" style="--retraso:.3s">Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
+          <div class="btn-row reveal" style="--retraso:.4s">
+            <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
+            <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="chapter bg-ivory">
-    <div class="wrap-wide">
-      <h2 class="h-statement">La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
+  <section class="chapter bg-ivory h-telon">
+    <div class="wrap">
+      <h2 class="statement" data-partir>La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
       <div class="g12 h-intro">
-        <div class="h-intro__text">
+        <div class="h-intro__text reveal">
           <p>Una separación, una pensión o una decisión sobre la crianza de los hijos pueden sentirse abrumadoras. Conocer los derechos, las obligaciones y las opciones que contempla la legislación costarricense ayuda a decidir con mayor serenidad.</p>
           <p>Recibir orientación especializada a tiempo permite aclarar plazos, ordenar la información y valorar cada camino posible.</p>
         </div>
       </div>
-      <ol class="h-values">
-        {valores.map(v => (
-          <li>
-            <h3>{v.titulo}</h3>
-            <p>{v.texto}</p>
-          </li>
-        ))}
-      </ol>
+      <ul class="values h-valores">
+        {valores.map((v, i) => <li class="reveal" style={`--retraso:${i * 0.1}s`}><h3>{v.titulo}</h3><p>{v.texto}</p></li>)}
+      </ul>
     </div>
   </section>
 
-  <section class="chapter">
-    <div class="wrap-wide">
-      <div class="g12 h-head">
-        <div class="h-head__title">
-          <p class="eyebrow">Áreas de práctica</p>
-          <h2>Información y orientación en derecho de <em>familia.</em></h2>
+  <section class="chapter bg-white" style="position:relative;z-index:2">
+    <div class="wrap">
+      <div class="g12 head">
+        <div class="head__title">
+          <p class="eyebrow reveal">Áreas de práctica</p>
+          <h2 data-partir>Información y orientación en derecho de <em>familia.</em></h2>
         </div>
-        <div class="h-head__aside">
+        <div class="head__aside reveal">
           <p>Cada área tiene reglas propias en el ordenamiento costarricense. Estas páginas explican, de forma general, en qué consisten y qué conviene considerar.</p>
+          <p style="margin-top:14px"><a class="link-arrow" href="/servicios#por-donde-empiezo">¿No sabe por dónde empezar?</a></p>
         </div>
       </div>
-      <ol class="h-areas">
-        {servicios.map((s, i) => (
-          <li>
-            <a href={`/servicios/${s.id}`}>
-              <span class="h-areas__num" aria-hidden="true">{num(i)}</span>
-              <span class="h-areas__title">{s.data.titulo}</span>
-              <span class="h-areas__desc">{s.data.resumen}</span>
-              <svg class="h-areas__arrow" viewBox="0 0 28 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 6h27M22 1l5 5-5 5"></path></svg>
-            </a>
-          </li>
-        ))}
-      </ol>
+      <AreasList servicios={servicios} />
     </div>
   </section>
 
   <section class="h-approach">
-    <img class="h-approach__img" src="/assets/images/portico.webp" srcset="/assets/images/portico-sm.webp 700w, /assets/images/portico.webp 1600w" sizes="100vw" alt="Galería de arcos de piedra atravesada por la luz del sol" width="1600" height="1000" loading="lazy" decoding="async" />
-    <div class="wrap-wide g12 h-approach__body">
+    <div class="h-approach__marco" data-mascara>
+      <img data-paralaje src="/assets/images/portico.webp" srcset="/assets/images/portico-sm.webp 700w, /assets/images/portico.webp 1600w" sizes="100vw" alt="Galería de arcos de piedra atravesada por la luz del sol" width="1600" height="1000" loading="lazy" decoding="async" />
+    </div>
+    <div class="wrap g12 h-approach__body">
       <div class="h-approach__title">
-        <p class="eyebrow">Nuestro enfoque</p>
-        <h2>El buen consejo busca resolver, no <em>agravar.</em></h2>
+        <p class="eyebrow reveal">Nuestro enfoque</p>
+        <h2 data-partir>El buen consejo busca resolver, no <em>agravar.</em></h2>
       </div>
-      <div class="h-approach__text">
+      <div class="h-approach__text reveal">
         <p>Un asunto de familia no se reduce a un expediente. Una orientación jurídica debería:</p>
-        <ul class="h-rows">
+        <ul class="rows">
           <li>Partir de la legislación costarricense vigente.</li>
           <li>Atender sus objetivos y explicar sus opciones.</li>
           <li>Comunicar de forma clara y oportuna.</li>
@@ -95,42 +86,38 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
     </div>
   </section>
 
-  <section class="chapter bg-ivory">
-    <div class="wrap-wide">
-      <div class="g12 h-head">
-        <div class="h-head__title">
-          <p class="eyebrow">El proceso</p>
-          <h2>Un acompañamiento <em>claro,</em> paso a paso.</h2>
-        </div>
-        <div class="h-head__aside">
-          <p>Cada etapa se explica con lenguaje comprensible, sin promesas sobre el resultado de un asunto.</p>
-        </div>
+  <section class="chapter bg-ivory h-proceso">
+    <div class="wrap g12 h-proceso__grid">
+      <div class="h-proceso__titulo">
+        <p class="eyebrow reveal">El proceso</p>
+        <h2 data-partir>Un acompañamiento <em>claro,</em> paso a paso.</h2>
+        <p class="reveal">Cada etapa se explica con lenguaje comprensible, sin promesas sobre el resultado de un asunto.</p>
       </div>
-      <ol class="steps h-steps">
+      <ol class="h-pasos" data-pasos-scroll>
         {proceso.map(s => <li><h3>{s.titulo}</h3><p>{s.texto}</p></li>)}
       </ol>
     </div>
   </section>
 
-  <section class="chapter">
-    <div class="wrap-wide">
+  <section class="chapter h-biblio">
+    <div class="wrap">
       <div class="h-lib-head">
         <div>
-          <p class="eyebrow">Biblioteca</p>
-          <h2>Para leer con calma</h2>
+          <p class="eyebrow reveal">Biblioteca</p>
+          <h2 data-partir>Para leer con calma</h2>
         </div>
-        <a class="link-arrow" href="/blog">Ver todos los artículos</a>
+        <a class="link-arrow reveal" href="/blog">Ver todos los artículos</a>
       </div>
       <div class="g12 h-lib">
-        <a class="h-lib__main" href={`/blog/${principal.id}`}>
-          <img src={`/assets/images/${principal.data.imagen}.webp`} srcset={`/assets/images/${principal.data.imagen}-sm.webp 700w, /assets/images/${principal.data.imagen}.webp 1400w`} sizes="(max-width: 767px) 100vw, 58vw" alt="" width="1400" height="1050" loading="lazy" decoding="async" />
+        <a class="h-lib__main reveal" href={`/blog/${principal.id}`}>
+          <div class="h-lib__foto"><img src={`/assets/images/${principal.data.imagen}.webp`} srcset={`/assets/images/${principal.data.imagen}-sm.webp 700w, /assets/images/${principal.data.imagen}.webp 1400w`} sizes="(max-width: 767px) 100vw, 58vw" alt="" width="1400" height="1050" loading="lazy" decoding="async" /></div>
           <span class="h-lib__cat">{principal.data.categoria}</span>
           <h3>{principal.data.titulo}</h3>
           <p>{principal.data.resumen}</p>
         </a>
         <ul class="h-lib__list">
-          {otros.map(p => (
-            <li>
+          {otros.map((p, i) => (
+            <li class="reveal" style={`--retraso:${i * 0.1}s`}>
               <a href={`/blog/${p.id}`}>
                 <span class="h-lib__cat">{p.data.categoria}</span>
                 <h3>{p.data.titulo}</h3>
@@ -144,4 +131,7 @@ const num = (i: number) => String(i + 1).padStart(2, '0');
   </section>
 
   <Cta />
+  <script>
+    import '../scripts/arboles/hero.ts';
+  </script>
 </Base>

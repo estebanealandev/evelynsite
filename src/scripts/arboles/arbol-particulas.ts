@@ -1,9 +1,9 @@
 // Concepto 2: puntos de luz dispersos que se reúnen hasta formar el árbol.
 import { BufferAttribute, BufferGeometry, NoToneMapping, PerspectiveCamera, Points, Scene, ShaderMaterial, SRGBColorSpace, Vector2, Vector3 } from 'three';
-import { actualizarComunes, CAMARA_FOV, CAMARA_Z, crearBosque, crearComunes, crearHalo, encuadre, GLSL_MASCARA, type Comunes } from './arbol';
+import { actualizarComunes, CAMARA_FOV, CAMARA_Z, crearComunes, crearHalo, encuadre, GLSL_MASCARA, type Comunes } from './arbol';
 import { suave, type Crear } from './types';
 
-export const crear: Crear = renderer => {
+export const crear: Crear = (renderer, bosque) => {
   renderer.toneMapping = NoToneMapping;
   renderer.outputColorSpace = SRGBColorSpace;
   renderer.setClearColor(0x14283e, 1);
@@ -12,7 +12,6 @@ export const crear: Crear = renderer => {
   camera.position.z = CAMARA_Z;
 
   const pequena = innerWidth < 768;
-  const bosque = crearBosque(pequena);
   const destinos: number[] = [], tamanos: number[] = [], tonos: number[] = [];
   let sem = 11;
   const r = () => (sem = (sem * 16807) % 2147483647) / 2147483647;
@@ -110,7 +109,7 @@ export const crear: Crear = renderer => {
       halo.u.uCentro.value.set(zona.sueloX, zona.sueloY - zona.altura * 0.62);
       halo.u.uAsp.value = aspecto;
       halo.u.uRadio.value = zona.altura * 0.8;
-      halo.u.uLuz.value = (0.02 + 0.075 * progreso) * suave(t / 3);
+      halo.u.uLuz.value = location.search.includes('poster') ? 0 : (0.02 + 0.075 * progreso) * suave(t / 3);
       renderer.render(scene, camera);
     },
     dispose() {

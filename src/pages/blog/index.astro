@@ -1,50 +1,50 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/ui/PageHero.astro';
 import PostCard from '../../components/ui/PostCard.astro';
 import Cta from '../../components/sections/Cta.astro';
 import { slugify } from '../../lib/format';
 
 const articulos = await getCollection('articulos');
-const destacados = articulos.filter(a => a.data.destacado).slice(0, 4);
-const grupos = [
-  { t: 'Divorcio y bienes', c: ['Divorcio', 'Bienes gananciales'] },
-  { t: 'Hijas e hijos', c: ['Guarda y crianza', 'Interrelación familiar', 'Filiación'] },
-  { t: 'Pensiones y unión de hecho', c: ['Pensiones alimentarias', 'Unión de hecho'] },
-  { t: 'Procesos y protección', c: ['Procesos de familia', 'Protección familiar'] }
-].map(g => ({ ...g, posts: articulos.filter(a => g.c.includes(a.data.categoria)).slice(0, 4) }));
-const categorias = [...new Set(articulos.map(a => a.data.categoria))];
+const principal = articulos.find(a => a.id === 'cambios-codigo-procesal-familia') ?? articulos[0];
+const resto = articulos.filter(a => a.id !== principal.id);
+const categorias = [...new Set(articulos.map(a => a.data.categoria))].sort();
+const crumbs = [{ label: 'Blog' }];
 ---
-<Base title="Blog de derecho de familia en Costa Rica" description="Artículos informativos sobre divorcio, pensiones alimentarias, guarda y crianza, gananciales, unión de hecho y procesos de familia en Costa Rica." crumbs={[{ label: 'Blog' }]}>
-  <section class="hero-blue on-dark">
-    <img src="/assets/images/documentos-ancho.webp" alt="" width="1600" height="1000" decoding="async" />
-    <div>
-      <h1>Biblioteca de derecho de familia</h1>
-      <p>Información clara sobre la legislación costarricense</p>
-      <ul class="hero-links">
-        {categorias.map(c => <li><a href={`/blog/categoria/${slugify(c)}`}>{c}</a></li>)}
-      </ul>
-    </div>
-  </section>
+<Base title="Blog de derecho de familia en Costa Rica" description="Artículos informativos sobre divorcio, pensiones alimentarias, guarda y crianza, gananciales, unión de hecho y procesos de familia en Costa Rica." crumbs={crumbs}>
+  <PageHero titulo="Biblioteca de derecho de *familia*" lede="Información clara sobre la legislación costarricense." crumbs={crumbs} />
 
-  <section class="bg-band" style="padding-bottom:clamp(44px,5vw,70px)">
-    <div class="wrap" style="position:relative">
-      <h2 style="padding-top:clamp(44px,5vw,70px);margin-bottom:28px">Lecturas destacadas</h2>
-      <div class="post-grid post-grid--4" style="margin-top:0">{destacados.map(p => <PostCard post={p} />)}</div>
-    </div>
-  </section>
-
-  {grupos.map((g, i) => {
-    const dark = i === 1;
-    return (
-      <section class:list={['section', dark ? 'bg-image-dark on-dark' : i === 2 ? 'bg-ivory' : 'bg-white']}>
-        {dark && <img src="/assets/images/lino.webp" alt="" width="1600" height="1000" loading="lazy" decoding="async" />}
-        <div class="wrap">
-          <h2 style="font-size:var(--fs-h3)">{g.t}</h2>
-          <div class="post-grid post-grid--4" style="margin-top:20px">{g.posts.map(p => <PostCard post={p} />)}</div>
+  <section class="section" style="padding-bottom:0">
+    <div class="wrap">
+      <a class="featured" href={`/blog/${principal.id}`}>
+        <div class="featured__img" data-mascara><img src={`/assets/images/${principal.data.imagen}.webp`} srcset={`/assets/images/${principal.data.imagen}-sm.webp 700w, /assets/images/${principal.data.imagen}.webp 1400w`} sizes="(max-width: 767px) 100vw, 58vw" alt="" width="1400" height="875" fetchpriority="high" decoding="async" /></div>
+        <div class="featured__text reveal">
+          <span class="post-card__cat" style="margin:0">Artículo destacado · {principal.data.categoria}</span>
+          <h2>{principal.data.titulo}</h2>
+          <p>{principal.data.resumen}</p>
         </div>
-      </section>
-    );
-  })}
+      </a>
+    </div>
+  </section>
+
+  <section class="section" data-filtros>
+    <div class="wrap">
+      <div class="filters">
+        <ul class="chips" aria-label="Filtrar por categoría">
+          <li><button class="chip" type="button" data-cat-btn="" aria-pressed="true" hidden>Todas</button></li>
+          {categorias.map(c => <li><a class="chip" href={`/blog/categoria/${slugify(c)}`} data-cat-btn={c}>{c}</a></li>)}
+        </ul>
+        <div class="search" hidden data-buscador>
+          <label class="visually-hidden" for="buscar">Buscar artículos</label>
+          <input id="buscar" type="search" placeholder="Buscar artículos" autocomplete="off" />
+        </div>
+      </div>
+      <p class="resultado" role="status" aria-live="polite" data-resultado></p>
+      <div class="post-grid post-grid--3" style="margin-top:20px">
+        {resto.map(p => <PostCard post={p} filtro />)}
+      </div>
+    </div>
+  </section>
   <Cta />
 </Base>

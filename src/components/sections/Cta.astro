@@ -4,8 +4,8 @@ const { titulo = 'Cada situación familiar merece una *orientación* clara y res
 ---
 <section class="cta on-dark">
   <img src={`/assets/images/${imagen}.webp`} alt="" width="1600" height="1000" loading="lazy" decoding="async" />
-  <div class="wrap-wide cta__inner">
-    <h2 set:html={em(titulo)} />
+  <div class="wrap cta__inner">
+    <h2 data-partir set:html={em(titulo)} />
     <a class="btn" href={href}>{texto}</a>
   </div>
 </section>

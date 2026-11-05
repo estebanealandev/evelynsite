@@ -1,33 +1,21 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import Crumbs from '../../components/ui/Crumbs.astro';
+import PageHero from '../../components/ui/PageHero.astro';
+import AreasList from '../../components/sections/AreasList.astro';
+import Orientador from '../../components/sections/Orientador.astro';
 import Cta from '../../components/sections/Cta.astro';
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const crumbs = [{ label: 'Áreas' }];
 ---
 <Base title="Áreas de derecho de familia en Costa Rica" description="Información sobre divorcios, pensiones alimentarias, guarda y crianza, interrelación familiar, gananciales, unión de hecho, filiación, acuerdos y protección familiar." crumbs={crumbs}>
-  <section class="hero-blue on-dark">
-    <img src="/assets/images/cordillera.webp" alt="" width="1920" height="900" decoding="async" />
-    <div>
-      <h1>Áreas de derecho de familia</h1>
-      <p>Información general según la legislación costarricense vigente</p>
-    </div>
-  </section>
-  <Crumbs items={crumbs} />
-  <section class="section" style="padding-top:24px">
+  <PageHero titulo="Áreas de derecho de *familia*" lede="Información general según la legislación costarricense vigente." crumbs={crumbs} />
+  <section class="section">
     <div class="wrap">
-      <div class="service-cards">
-        {servicios.map(s => (
-          <a class="service-card" href={`/servicios/${s.id}`}>
-            <img src={`/assets/images/${s.data.imagen}-sm.webp`} alt="" width="700" height="933" loading="lazy" decoding="async" />
-            <span class="service-card__title">{s.data.titulo}</span>
-            <span class="service-card__more">Conocer más</span>
-          </a>
-        ))}
-      </div>
+      <AreasList servicios={servicios} />
       <p class="notice" style="margin-top:44px">Estas páginas tienen fines informativos. Para confirmar si un asunto concreto puede atenderse, utilice el <a href="/agendar-consulta">formulario de consulta</a>.</p>
     </div>
   </section>
+  <Orientador servicios={servicios} />
   <Cta />
 </Base>

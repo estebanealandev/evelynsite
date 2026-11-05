@@ -1,6 +1,6 @@
 // Concepto 3: la sombra suave de un árbol sobre un muro. Solo se ve su resguardo, no el árbol.
 import { BufferAttribute, BufferGeometry, Group, LinearFilter, LinearMipmapLinearFilter, Mesh, NoToneMapping, OrthographicCamera, Scene, ShaderMaterial, SRGBColorSpace, Vector2, WebGLRenderTarget } from 'three';
-import { crearBosque, crearComunes, crearHojas, crearRamas, GLSL_MASCARA } from './arbol';
+import { crearComunes, crearHojas, crearRamas, GLSL_MASCARA } from './arbol';
 import { suave, type Crear } from './types';
 
 const frag = /* glsl */ `
@@ -37,7 +37,7 @@ void main(){
   gl_FragColor=vec4(col,1.);
 }`;
 
-export const crear: Crear = renderer => {
+export const crear: Crear = (renderer, bosque) => {
   renderer.toneMapping = NoToneMapping;
   renderer.outputColorSpace = SRGBColorSpace;
   const pequena = innerWidth < 768;
@@ -45,7 +45,6 @@ export const crear: Crear = renderer => {
   // El árbol se dibuja en blanco sobre negro y esa imagen se usa como sombra.
   const u = crearComunes();
   u.uPlano.value = 1;
-  const bosque = crearBosque(pequena);
   const ramas = crearRamas(bosque, u);
   const hojas = crearHojas(bosque, u);
   const arbol = new Group();

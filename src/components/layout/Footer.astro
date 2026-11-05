@@ -4,7 +4,7 @@ const anio = new Date().getFullYear();
 const c = site.contact;
 ---
 <footer class="site-footer on-dark">
-  <div class="wrap-wide footer-main">
+  <div class="wrap footer-main">
     <div class="footer-brand">
       <img class="footer-logo" src="/assets/brand/evelyn-elizondo-dark.svg" alt="Evelyn Elizondo, Derecho de Familia" width="230" height="46" loading="lazy" />
       <p>Información clara y un canal reservado para solicitar una consulta sobre derecho de familia en Costa Rica.</p>
@@ -54,8 +54,11 @@ const c = site.contact;
       </form>
     </div>
   </div>
-  <div class="wrap-wide footer-bottom">
+  <div class="wrap footer-bottom">
+    <div>
     <p>El contenido de este sitio tiene fines informativos y no sustituye la asesoría individualizada. El envío de un formulario no constituye, por sí solo, una relación profesional. El resultado de cada asunto depende de sus circunstancias jurídicas y probatorias. Este sitio no atiende emergencias: si está en peligro, llame al 9-1-1.</p>
     <p>© {anio} Evelyn Elizondo | Derecho de Familia | Costa Rica</p>
+    </div>
+    <button class="movimiento-btn" type="button" data-movimiento-btn aria-pressed="false">Pausar animaciones</button>
   </div>
 </footer>

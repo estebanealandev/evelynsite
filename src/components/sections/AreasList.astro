@@ -1,0 +1,16 @@
+---
+const { servicios } = Astro.props;
+const num = (i: number) => String(i + 1).padStart(2, '0');
+---
+<ol class="areas" data-preview>
+  {servicios.map((s: any, i: number) => (
+    <li>
+      <a href={`/servicios/${s.id}`} data-img={`/assets/images/${s.data.imagen}-sm.webp`}>
+        <span class="areas__num" aria-hidden="true">{num(i)}</span>
+        <span class="areas__title">{s.data.titulo}</span>
+        <span class="areas__desc">{s.data.resumen}</span>
+        <svg class="areas__arrow" viewBox="0 0 28 12" fill="none" stroke="currentColor" aria-hidden="true"><path d="M0 6h27M22 1l5 5-5 5"></path></svg>
+      </a>
+    </li>
+  ))}
+</ol>

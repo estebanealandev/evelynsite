@@ -1,0 +1,15 @@
+---
+import Crumbs from './Crumbs.astro';
+import { em } from '../../lib/format';
+const { titulo, lede, eyebrow, crumbs } = Astro.props;
+---
+<section class="page-hero on-dark">
+  <div class="wrap">
+    {crumbs && <Crumbs items={crumbs} />}
+    <slot name="antes" />
+    {eyebrow && <p class="eyebrow reveal">{eyebrow}</p>}
+    <h1 data-partir set:html={em(titulo)} />
+    {lede && <p class="page-hero__lede reveal" style="--retraso:.25s">{lede}</p>}
+    <slot />
+  </div>
+</section>

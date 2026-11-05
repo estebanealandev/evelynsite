@@ -24,9 +24,12 @@ test.describe('peso de JavaScript', () => {
         if (r.request().resourceType() === 'script') scripts.push(await r.body());
       });
       await page.goto(ruta, { waitUntil: 'networkidle' });
-      const kb = scripts.reduce((t, b) => t + gzipSync(b).length, 0) / 1024;
+      await page.waitForTimeout(ruta === '/' ? 2200 : 100);
+      // La escena de la portada es diferida y solo se admite allí.
+      const conEscena = scripts.filter(b => b.includes('WebGLRenderer'));
+      const kb = scripts.filter(b => !b.includes('WebGLRenderer')).reduce((t, b) => t + gzipSync(b).length, 0) / 1024;
       expect(kb, `${kb.toFixed(1)} KB`).toBeLessThanOrEqual(LIMITE_JS_GZIP_KB);
-      expect(scripts.some(b => b.includes('WebGLRenderer'))).toBe(false);
+      if (ruta !== '/') expect(conEscena.length).toBe(0);
     });
   }
 });
@@ -49,6 +52,14 @@ test.describe('experiencia de carga con red y CPU limitadas', () => {
       expect(m.cls, `CLS ${m.cls.toFixed(3)}`).toBeLessThanOrEqual(LIMITE_CLS);
     });
   }
+
+  test('el cálculo del árbol ocurre fuera del hilo principal', async ({ page }) => {
+    const workers: string[] = [];
+    page.on('worker', w => workers.push(w.url()));
+    await page.goto('/');
+    await page.waitForFunction(() => (window as any).__lab?.frames > 0, null, { timeout: 60000 });
+    expect(workers.length).toBeGreaterThan(0);
+  });
 
   test('la interacción responde a tiempo (INP)', async ({ page, isMobile }) => {
     await limitar(page);

@@ -1,5 +1,6 @@
 // Contrato común de los prototipos del laboratorio.
 import type { WebGLRenderer } from 'three';
+import type { Bosque } from './bosque';
 
 export type Estado = {
   dt: number;
@@ -25,7 +26,7 @@ export type Concepto = {
   dprMax?: number;
 };
 
-export type Crear = (renderer: WebGLRenderer) => Concepto;
+export type Crear = (renderer: WebGLRenderer, bosque: Bosque) => Concepto;
 
 export const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 export const suave = (v: number) => { const x = clamp(v); return x * x * (3 - 2 * x); };

@@ -4,7 +4,7 @@
 .lab__stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 /* Bajo la línea del suelo no se dibuja nada: protege la lectura del párrafo y los botones. */
 .lab__stage::after { content: ''; position: absolute; inset: var(--pie, 80%) 0 0; background: rgb(20 40 62 / 0.96); pointer-events: none; }
-.lab--sin-webgl canvas { display: none; }
+.lab.sin-3d canvas { display: none; }
 .lab__content { position: relative; z-index: 2; pointer-events: none; }
 .lab__content a, .lab__content button { pointer-events: auto; }
 .lab__title { font-size: clamp(3.3rem, min(10.6vw, 20svh), 12.5rem); line-height: 0.92; letter-spacing: -0.028em; }

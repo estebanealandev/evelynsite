@@ -1,63 +1,80 @@
-/* Portada. La composición parte de una retícula de 12 columnas. */
-.g12 { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--grid-gap); }
-.chapter { padding-block: var(--chapter); }
+/* Portada. */
 
-/* Capítulo 1: hero */
-.h-hero { display: flex; flex-direction: column; min-height: max(100svh, 640px); padding-block: clamp(84px, 7vw + 8px, 116px) clamp(32px, 4vw, 56px); overflow: hidden; background: var(--color-primary); }
-/* El visual ocupa solo el espacio libre: nunca puede cubrir el titular. */
-.h-hero__visual { position: relative; flex: 1 1 0; min-height: 0; width: var(--wrap-wide); margin: 0 auto clamp(16px, 3vh, 40px); }
-.h-hero__mark { position: absolute; top: 0; right: 0; width: auto; height: 100%; max-height: 460px; }
-.h-hero__content { position: relative; flex: none; }
-.h-hero__title { max-width: 9.6em; font-size: var(--fs-display); line-height: 0.98; letter-spacing: -0.022em; }
-.h-hero__foot { align-items: end; row-gap: 28px; margin-top: clamp(28px, 4vw, 56px); padding-top: clamp(20px, 2vw, 28px); border-top: 1px solid var(--line-on-dark); }
-.h-hero__foot p { grid-column: 1 / span 5; margin: 0; color: var(--color-on-dark); font-size: clamp(1rem, 0.95rem + 0.25vw, 1.15rem); line-height: 1.6; }
-.h-hero__foot .btn-row { grid-column: 7 / -1; justify-content: flex-end; margin: 0; }
+/* Hero: la escena queda fija mientras crece el árbol; luego la sección siguiente la cubre como un telón. */
+.h-hero { position: relative; background: var(--color-primary); }
+.js .h-hero:not(.sin-3d) { height: 300svh; }
+.h-hero__stage { position: sticky; top: 0; display: flex; flex-direction: column; justify-content: flex-end; min-height: max(100svh, 600px); padding-bottom: clamp(24px, 3vw, 44px); overflow: hidden; }
+.h-hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.2s var(--ease); }
+.h-hero.is-3d canvas { opacity: 1; }
+.h-hero.sin-3d canvas { display: none; }
+.h-hero__stage::after { content: ''; position: absolute; inset: var(--pie, 82%) 0 0; background: rgb(20 40 62 / 0.96); pointer-events: none; }
+.h-hero__content { position: relative; z-index: 2; pointer-events: none; }
+.h-hero__content a, .h-hero__content button { pointer-events: auto; }
+.h-hero__titulo { position: relative; }
+.h-hero__title { position: relative; font-size: var(--fs-display); line-height: 0.92; letter-spacing: -0.028em; }
+/* Imagen del árbol: se ve mientras carga la escena y cuando no hay animación. */
+/* En pantallas muy anchas aprovecha el margen exterior: el titular ya alcanzó su tamaño máximo. */
+.h-hero__poster { position: absolute; right: min(0px, calc((1600px - 100vw) * 0.35)); bottom: 0; width: auto; height: min(60svh, 22vw); transition: opacity 1s var(--ease); }
+.h-hero.is-3d:not(.sin-3d) .h-hero__poster { opacity: 0; }
+.h-hero__foot { position: relative; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 22px 40px; margin-top: clamp(14px, 1.6vw, 24px); padding-top: clamp(16px, 1.6vw, 24px); border-top: 1px solid var(--line-on-dark); }
+.h-hero__foot p { flex: 1 1 340px; max-width: 60ch; margin: 0; font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.1rem); line-height: 1.55; }
+.h-hero__foot .btn-row { margin: 0; }
+@media (max-width: 1279px) {
+  .h-hero__poster { right: auto; left: 50%; bottom: 100%; height: min(34svh, 72vw); transform: translateX(-50%); }
+}
+@media (max-width: 639px) {
+  .h-hero__foot .btn-row, .h-hero__foot .btn { width: 100%; }
+  .js .h-hero:not(.sin-3d) { height: 260svh; }
+}
 
-/* Capítulo 2: propuesta */
-.h-statement { max-width: 17em; font-size: var(--fs-statement); line-height: 1.02; letter-spacing: -0.02em; }
+/* Telón: el capítulo siguiente sube sobre la escena fija. */
+.h-telon { position: relative; z-index: 2; }
+.js .h-hero:not(.sin-3d) + .h-telon { margin-top: -100svh; }
+@media (prefers-reduced-motion: reduce) {
+  .js .h-hero:not(.sin-3d) { height: auto; }
+  .js .h-hero:not(.sin-3d) + .h-telon { margin-top: 0; }
+}
+
+/* Propuesta */
 .h-intro { margin-top: clamp(40px, 6vw, 96px); }
 .h-intro__text { grid-column: 7 / -1; font-size: clamp(1.05rem, 1rem + 0.25vw, 1.2rem); line-height: 1.65; }
-.h-values { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--grid-gap); margin: clamp(56px, 8vw, 128px) 0 0; padding: 0; list-style: none; }
-.h-values li { padding-top: 18px; border-top: 1px solid var(--line-on-light); }
-.h-values h3 { margin-bottom: 12px; }
-.h-values p { margin: 0; max-width: 34ch; }
+.h-valores { margin-top: clamp(56px, 8vw, 128px); }
 
-/* Encabezado de capítulo */
-.h-head { align-items: end; row-gap: 24px; margin-bottom: clamp(40px, 6vw, 88px); }
-.h-head__title { grid-column: 1 / span 8; }
-.h-head__aside { grid-column: 9 / -1; }
-.h-head__aside p { margin: 0; }
-
-/* Capítulo 3: áreas */
-.h-areas { margin: 0; padding: 0; list-style: none; border-bottom: 1px solid var(--line-on-light); }
-.h-areas a { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--grid-gap); align-items: baseline; padding-block: clamp(18px, 2vw, 28px); border-top: 1px solid var(--line-on-light); color: var(--color-primary); text-decoration: none; transition: color 0.2s var(--ease), background-color 0.2s var(--ease); }
-.h-areas a:hover { color: var(--color-accent-text); }
-.h-areas__num { grid-column: 1; font: 500 var(--fs-label) / 1 var(--font-ui); letter-spacing: 0.1em; color: var(--color-muted); }
-.h-areas__title { grid-column: 2 / span 6; font: 400 clamp(1.7rem, 1.3rem + 1.5vw, 2.9rem) / 1.08 var(--font-serif); letter-spacing: -0.012em; }
-.h-areas__desc { grid-column: 8 / span 4; font-size: 0.95rem; line-height: 1.55; color: var(--color-text); }
-.h-areas__arrow { grid-column: 12; justify-self: end; align-self: center; width: 28px; height: 12px; transition: transform 0.25s var(--ease); }
-.h-areas a:hover .h-areas__arrow { transform: translateX(5px); }
-
-/* Capítulo 4: enfoque */
-.h-approach__img { width: 100%; height: clamp(300px, 56vw, 780px); object-fit: cover; }
+/* Enfoque */
+.h-approach { position: relative; z-index: 2; background: var(--color-surface); }
+.h-approach__marco { height: clamp(300px, 56vw, 780px); overflow: hidden; }
+.h-approach__marco img { width: 100%; height: 118%; object-fit: cover; will-change: transform; }
 .h-approach__body { padding-block: clamp(64px, 9vw, 140px) var(--chapter); }
 .h-approach__title { grid-column: 1 / span 6; }
 .h-approach__text { grid-column: 8 / -1; }
-.h-rows { margin: 22px 0 26px; padding: 0; list-style: none; border-bottom: 1px solid var(--line-on-light); }
-.h-rows li { padding-block: 14px; border-top: 1px solid var(--line-on-light); }
 
-/* Capítulo 5: proceso */
-.h-steps { margin-top: 0; grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.h-steps h3 { margin-bottom: 12px; }
+/* Proceso: el título queda fijo y una línea avanza junto a los pasos. */
+.h-proceso { position: relative; z-index: 2; }
+.h-proceso__grid { align-items: start; row-gap: 40px; }
+.h-proceso__titulo { grid-column: 1 / span 5; position: sticky; top: 120px; }
+.h-proceso__titulo p:last-child { max-width: 34ch; margin-top: 18px; }
+.h-pasos { position: relative; grid-column: 7 / -1; margin: 0; padding: 0 0 0 clamp(24px, 3vw, 44px); list-style: none; counter-reset: paso; }
+.h-pasos::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--line-on-light); }
+.h-pasos::after { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--color-primary); transform: scaleY(var(--avance, 0)); transform-origin: top; }
+.h-pasos li { padding-block: clamp(32px, 5vw, 76px); counter-increment: paso; }
+/* Los pasos no activos se atenúan sin perder contraste de lectura. */
+.h-pasos h3, .h-pasos p { opacity: 0.72; transition: opacity 0.6s var(--ease); }
+.h-pasos li.is-activo h3, .h-pasos li.is-activo p, html:not(.js) .h-pasos h3, html:not(.js) .h-pasos p { opacity: 1; }
+.h-pasos li::before { content: '0' counter(paso); display: block; margin-bottom: 18px; font: 500 var(--fs-label) / 1 var(--font-sans); letter-spacing: 0.1em; color: var(--color-accent-text); }
+.h-pasos h3 { margin-bottom: 12px; font-size: clamp(1.8rem, 1.5rem + 1.2vw, 2.7rem); line-height: 1.08; }
+.h-pasos p { margin: 0; max-width: 46ch; }
 
-/* Capítulo 6: biblioteca */
+/* Biblioteca */
+.h-biblio { position: relative; z-index: 2; background: var(--color-surface); }
 .h-lib-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px 32px; margin-bottom: clamp(36px, 5vw, 72px); }
-.h-lib__cat { display: block; margin-bottom: 10px; font: 500 var(--fs-label) / 1.4 var(--font-ui); letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-text); }
+.h-lib__cat { display: block; margin-bottom: 10px; font: 500 var(--fs-label) / 1.4 var(--font-sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-text); }
 .h-lib a { display: block; color: var(--color-primary); text-decoration: none; }
 .h-lib a:hover h3 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
 .h-lib p { margin: 0; color: var(--color-text); }
 .h-lib__main { grid-column: 1 / span 7; }
-.h-lib__main img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin-bottom: 26px; }
+.h-lib__main .h-lib__foto { overflow: hidden; margin-bottom: 26px; }
+.h-lib__main img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; transition: transform 1.2s var(--ease-out); }
+.h-lib__main:hover img { transform: scale(1.03); }
 .h-lib__main h3 { margin-bottom: 12px; font-size: clamp(2rem, 1.5rem + 2vw, 3.25rem); line-height: 1.06; }
 .h-lib__list { grid-column: 9 / -1; margin: 0; padding: 0; list-style: none; }
 .h-lib__list li { padding-block: 26px; border-top: 1px solid var(--line-on-light); }
@@ -66,24 +83,12 @@
 .h-lib__list p { font-size: 0.95rem; line-height: 1.55; }
 
 @media (max-width: 1023px) {
-  .h-hero__foot p { grid-column: 1 / -1; }
-  .h-hero__foot .btn-row { grid-column: 1 / -1; justify-content: flex-start; }
-  .h-head__title, .h-head__aside { grid-column: 1 / -1; }
   .h-intro__text { grid-column: 4 / -1; }
-  .h-areas__title { grid-column: 2 / span 10; }
-  .h-areas__desc { grid-column: 2 / span 10; margin-top: 8px; }
-  .h-areas__arrow { grid-column: 12; grid-row: 1; }
-  .h-approach__title, .h-approach__text { grid-column: 1 / -1; }
+  .h-approach__title, .h-approach__text, .h-proceso__titulo, .h-pasos, .h-lib__main, .h-lib__list { grid-column: 1 / -1; }
   .h-approach__text { margin-top: 32px; }
-  .h-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 40px; }
-  .h-lib__main, .h-lib__list { grid-column: 1 / -1; }
+  .h-proceso__titulo { position: static; }
   .h-lib__list { margin-top: 40px; }
 }
 @media (max-width: 639px) {
-  .h-hero__foot .btn-row .btn { width: 100%; }
   .h-intro__text { grid-column: 1 / -1; }
-  .h-values, .h-steps { grid-template-columns: 1fr; }
-  .h-areas__num { grid-column: 1 / span 2; }
-  .h-areas__title, .h-areas__desc { grid-column: 3 / -1; }
-  .h-areas__arrow { display: none; }
 }

@@ -1,6 +1,6 @@
 # Informe de reconstrucción
 
-> **Nota:** este informe describe la versión fiel a la referencia, guardada con la etiqueta `base-antes-rediseno`. Desde el [plan de UX y diseño](plan-ux-diseno.md), el sitio se aleja a propósito de esa estructura; la comparación de fidelidad deja de aplicar a las fases nuevas.
+> **Nota:** este informe describe la versión fiel a la referencia, guardada con la etiqueta `base-antes-rediseno`. Desde el [plan de UX y diseño](plan-ux-diseno.md), el sitio se aleja a propósito de esa estructura; la comparación de fidelidad deja de aplicar a las fases nuevas. El estado actual se resume en [revision-rediseno.md](revision-rediseno.md).
 
 **Fecha:** 4 de noviembre de 2026. **Documento interno.**
 

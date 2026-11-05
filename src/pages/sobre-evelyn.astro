@@ -1,47 +1,28 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Principles from '../components/sections/Principles.astro';
+import PageHero from '../components/ui/PageHero.astro';
 import PostsSection from '../components/sections/PostsSection.astro';
 import Cta from '../components/sections/Cta.astro';
+import { principios } from '../lib/institucional';
 
 const posts = (await getCollection('articulos')).filter(a => a.data.destacado).slice(3, 6);
-const compromisos = [
-  { t: 'Trato humano', d: 'Escuchar con respeto y sin juicios' },
-  { t: 'Confidencialidad', d: 'Reserva en cada conversación' },
-  { t: 'Comunicación clara', d: 'Explicar opciones y riesgos con franqueza' }
-];
 const etica = [
   { t: 'Ética profesional', d: 'El ejercicio de la profesión se rige por deberes jurídicos, morales y éticos, incluido el secreto profesional. La comunicación pública también debe ser digna, moderada y veraz.' },
   { t: 'Atención personalizada', d: 'Ninguna familia es igual a otra. Cada consulta requiere comprender sus circunstancias antes de sugerir un camino.' },
   { t: 'Compromiso con el derecho de familia', d: 'Las normas cambian. El Código Procesal de Familia, vigente desde octubre de 2024, es un buen ejemplo de la importancia de consultar la legislación actual.' }
 ];
+const crumbs = [{ label: 'Sobre Evelyn' }];
 ---
-<Base title="Sobre Evelyn Elizondo" description="Conozca la forma de trabajar de Evelyn Elizondo en derecho de familia en Costa Rica: ética, atención personalizada, confidencialidad y comunicación clara." crumbs={[{ label: 'Sobre Evelyn' }]}>
-  <section class="hero-blue on-dark">
-    <img src="/assets/images/portico.webp" alt="" width="1600" height="1000" decoding="async" />
-    <div>
-      <h1>Asesoría legal con criterio, sensibilidad y compromiso.</h1>
-      <p>Evelyn Elizondo | Derecho de Familia | Costa Rica</p>
-    </div>
-  </section>
+<Base title="Sobre Evelyn Elizondo" description="Conozca la forma de trabajar de Evelyn Elizondo en derecho de familia en Costa Rica: ética, atención personalizada, confidencialidad y comunicación clara." crumbs={crumbs}>
+  <PageHero titulo="Asesoría legal con criterio, sensibilidad y *compromiso.*" lede="Evelyn Elizondo | Derecho de Familia | Costa Rica" crumbs={crumbs} />
 
-  <section class="section" style="padding-block:clamp(44px,5vw,64px)">
-    <div class="wrap trio">
-      {compromisos.map(c => <div><h2>{c.t}</h2><p>{c.d}</p></div>)}
-    </div>
-  </section>
-
-  <section class="section bg-ivory" style="padding-top:clamp(24px,3vw,48px)">
-    <div class="wrap media-split">
-      <div class="monogram-panel" role="img" aria-label="Monograma EE de Evelyn Elizondo">
-        <img src="/assets/images/luz-ventana-vertical-sm.webp" alt="" width="700" height="856" loading="lazy" decoding="async" />
-        <img src="/assets/brand/evelyn-elizondo-monogram-dark.svg" alt="" width="200" height="200" />
-      </div>
-      <div>
-        <h2>Los asuntos de familia exigen tanto <em>criterio</em> como sensibilidad.</h2>
-        <p style="margin-top:12px">Cuando está en juego lo más personal, una persona necesita una orientación que:</p>
-        <ul class="checks">
+  <section class="chapter bg-ivory">
+    <div class="wrap g12" style="row-gap:32px">
+      <h2 class="statement" style="grid-column:1/-1" data-partir>Los asuntos de familia exigen tanto <em>criterio</em> como sensibilidad.</h2>
+      <div class="reveal" style="grid-column:7/-1" id="sobre-texto">
+        <p>Cuando está en juego lo más personal, una persona necesita una orientación que:</p>
+        <ul class="rows">
           <li>Escuche sus objetivos y preocupaciones sin juzgar</li>
           <li>Explique la ley con palabras comprensibles</li>
           <li>Tome en cuenta el interés superior de las personas menores de edad</li>
@@ -49,26 +30,36 @@ const etica = [
           <li>Plantee opciones realistas, sin promesas de resultado</li>
           <li>Proteja la información que se le confía</li>
         </ul>
-        <details class="more">
-          <summary>Leer más</summary>
-          <div><p>Esta marca nace para ofrecer información y orientación en derecho de familia, con un trato cercano y responsable. Antes de una consulta, puede revisar las áreas y artículos de este sitio para familiarizarse con la terminología y las opciones que existen en Costa Rica.</p></div>
-        </details>
+        <p>Esta marca nace para ofrecer información y orientación en derecho de familia, con un trato cercano y responsable. Antes de una consulta, puede revisar las áreas y artículos de este sitio para familiarizarse con la terminología y las opciones que existen en Costa Rica.</p>
         <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
       </div>
     </div>
   </section>
 
-  <section class="section">
-    <div class="wrap center">
-      <p class="eyebrow">Forma de trabajar</p>
-      <h2>Tres pilares de una atención responsable</h2>
-    </div>
-    <div class="wrap" style="max-width:820px">
-      {etica.map(e => <div class="aspect"><h3>{e.t}</h3><p>{e.d}</p></div>)}
+  <div data-mascara style="height:clamp(280px,44vw,640px);overflow:hidden">
+    <img data-paralaje style="width:100%;height:118%;object-fit:cover" src="/assets/images/escalera-ancha.webp" srcset="/assets/images/escalera-ancha-sm.webp 700w, /assets/images/escalera-ancha.webp 1600w" sizes="100vw" alt="Escalera de piedra iluminada por luz lateral" width="1600" height="900" loading="lazy" decoding="async" />
+  </div>
+
+  <section class="chapter">
+    <div class="wrap">
+      <p class="eyebrow reveal">Forma de trabajar</p>
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Tres pilares de una atención responsable</h2>
+      <ul class="values">{etica.map((e, i) => <li class="reveal" style={`--retraso:${i * 0.1}s`}><h3>{e.t}</h3><p>{e.d}</p></li>)}</ul>
     </div>
   </section>
 
-  <Principles />
+  <section class="chapter bg-ivory">
+    <div class="wrap">
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Principios que guían la atención</h2>
+      <ul class="values">
+        {principios.map((p, i) => <li class="reveal" style={`--retraso:${(i % 3) * 0.1}s`}><h3>{p.titulo}</h3><p>{p.texto}</p><span class="values__tag">{p.etiqueta}</span></li>)}
+      </ul>
+    </div>
+  </section>
+
   <PostsSection titulo="Lecturas recomendadas" posts={posts} />
   <Cta imagen="columnata" />
 </Base>
+<style>
+  @media (max-width: 1023px) { #sobre-texto { grid-column: 1 / -1 !important; } }
+</style>
