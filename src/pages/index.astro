@@ -10,15 +10,14 @@ import '../styles/home.css';
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const articulos = await getCollection('articulos');
 const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4);
-const poster = site.heroConcepto === 'particulas' ? 'arbol-puntos' : 'arbol-lineas';
 ---
 <Base title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
-  <section class="h-hero on-dark" data-hero data-concepto={site.heroConcepto}>
+  <section class="h-hero on-dark" data-hero>
     <div class="h-hero__stage">
       <canvas aria-hidden="true"></canvas>
       <div class="wrap h-hero__content">
         <div class="h-hero__titulo">
-          <img class="h-hero__poster" src={`/assets/images/${poster}.webp`} alt="" width="900" height="700" decoding="async" />
+          <img class="h-hero__poster" src="/assets/images/arbol-lineas.webp" alt="" width="900" height="700" decoding="async" />
           <h1 class="h-hero__title" data-arbol-titulo data-partir>Protegemos lo que <em>más</em> importa.</h1>
         </div>
         <div class="h-hero__foot" data-arbol-pie>

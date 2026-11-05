@@ -24,8 +24,6 @@ export const site = {
     retention: clean(env.PUBLIC_PRIVACY_RETENTION),
     transfers: clean(env.PUBLIC_PRIVACY_TRANSFERS)
   },
-  // Concepto del árbol en la portada: 'crece', 'particulas' o 'sombra'. Se puede comparar con /?arbol=particulas.
-  heroConcepto: 'crece',
   // Fecha en que se contrastaron las fuentes normativas oficiales.
   legalVerifiedAt: '2026-11-04'
 };

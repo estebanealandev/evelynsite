@@ -1,13 +1,8 @@
-// Orquesta una escena del árbol: un lienzo, scroll, cursor, pausa y calidad adaptativa.
+// Orquesta la escena del árbol: lienzo, scroll, cursor, pausa y calidad adaptativa.
 import { WebGLRenderer } from 'three';
+import { crear } from './arbol-crece';
 import type { Bosque } from './bosque';
-import { clamp, type Concepto, type Crear, type Zona } from './types';
-
-const CONCEPTOS: Record<string, () => Promise<{ crear: Crear }>> = {
-  crece: () => import('./arbol-crece'),
-  particulas: () => import('./arbol-particulas'),
-  sombra: () => import('./arbol-sombra')
-};
+import { clamp, type Arbol, type Zona } from './types';
 
 // Calcula el árbol fuera del hilo principal. Si el Worker falla, lo calcula aquí como respaldo.
 function pedirBosque(pequena: boolean): Promise<Bosque> {
@@ -24,15 +19,13 @@ function pedirBosque(pequena: boolean): Promise<Bosque> {
   }
 }
 
-export type Control = { elegir(id: string): Promise<void>; pausar(valor: boolean): void; onFps?: (fps: number) => void };
+export type Control = { pausar(valor: boolean): void };
 
 type Opciones = {
   raiz: HTMLElement;
   canvas: HTMLCanvasElement;
   titulo: Element;
   pie: Element;
-  // Panel de pruebas que ocupa espacio arriba, solo en el laboratorio.
-  panel?: Element | null;
   // Parte final del recorrido, en pantallas, reservada para que la sección siguiente cubra el hero.
   cola?: number;
   // Muestra el estado final, quieto.
@@ -50,11 +43,11 @@ export function iniciarEscena(o: Opciones): Control | null {
     return null;
   }
 
-  const estadoPublico = { concepto: '', frames: 0, fps: 0, quieto: !!o.quieto, calidad: 1 };
-  (window as unknown as { __lab: typeof estadoPublico }).__lab = estadoPublico;
+  // Estado de solo lectura para las pruebas automáticas.
+  const estadoPublico = { frames: 0, fps: 0, calidad: 1 };
+  (window as unknown as { __arbol: typeof estadoPublico }).__arbol = estadoPublico;
 
-  let actual: Concepto | null = null;
-  let turno = 0;
+  let arbol: Arbol | null = null;
   let visible = true;
   let pausado = !!o.quieto;
   // Baja la resolución de forma progresiva si el dispositivo no logra mantener la fluidez.
@@ -67,11 +60,9 @@ export function iniciarEscena(o: Opciones): Control | null {
   let cx = 0, cy = 0, mx = 0, my = 0;
   let acumulado = 0, cuenta = 0;
   let primerCuadro = false;
-  let control: Control;
-  const bosque = pedirBosque(innerWidth < 768);
   let zona: Zona = { sueloX: 0.8, sueloY: 0.8, altura: 0.6, linea1: [0, 0, 0, 0], linea2: [0, 0, 0, 0] };
 
-  const dpr = () => Math.min(devicePixelRatio || 1, innerWidth < 768 ? 1.5 : 1.75, actual?.dprMax ?? 9) * calidad;
+  const dpr = () => Math.min(devicePixelRatio || 1, innerWidth < 768 ? 1.5 : 1.75) * calidad;
 
   // Coloca el árbol sobre la línea del pie si hay espacio a la derecha del titular; si no, sobre el titular.
   const medirZona = () => {
@@ -89,9 +80,7 @@ export function iniciarEscena(o: Opciones): Control | null {
     if (!lineas.length) return;
     const margen = o.titulo.getBoundingClientRect();
     const izq = margen.left - c.left, der = margen.right - c.left;
-    const panel = o.panel?.getBoundingClientRect();
-    const cabecera = document.querySelector<HTMLElement>('.site-header')?.offsetHeight ?? 0;
-    const arriba = Math.max(cabecera, panel && panel.bottom < innerHeight / 2 ? panel.bottom - c.top : 0) + 10;
+    const arriba = (document.querySelector<HTMLElement>('.site-header')?.offsetHeight ?? 0) + 10;
     const finTexto = Math.max(...lineas.map(l => l.right)) - c.left;
     const pie = o.pie.getBoundingClientRect().top - c.top;
     const techo = lineas[0].top - c.top;
@@ -120,7 +109,7 @@ export function iniciarEscena(o: Opciones): Control | null {
     r.setPixelRatio(dpr());
     r.setSize(w, h, false);
     medirZona();
-    actual?.resize(w, h);
+    arbol?.resize(w, h);
   };
 
   const scrollObjetivo = () => {
@@ -130,21 +119,20 @@ export function iniciarEscena(o: Opciones): Control | null {
   };
 
   const dibujar = (dt: number) => {
-    if (!actual) return;
-    actual.frame({ dt, t, progreso, x: cx, y: cy, zona });
+    if (!arbol) return;
+    arbol.frame({ dt, t, progreso, x: cx, y: cy, zona });
     estadoPublico.frames++;
     if (!primerCuadro) { primerCuadro = true; o.alPrimerCuadro?.(); }
   };
 
   const bucle = () => {
     requestAnimationFrame(bucle);
-    if (!visible || document.hidden || !actual) { delta(); return; }
+    if (!visible || document.hidden || !arbol) { delta(); return; }
     const dt = Math.min(delta(), 0.1);
     if (pausado) return;
     acumulado += dt; cuenta++;
     if (acumulado >= 0.5) {
       estadoPublico.fps = Math.round(cuenta / acumulado);
-      control.onFps?.(estadoPublico.fps);
       lento = estadoPublico.fps < 28 ? lento + 1 : 0;
       if (lento >= 3 && calidad > 0.6) {
         calidad = Math.max(0.6, calidad * 0.8);
@@ -162,27 +150,11 @@ export function iniciarEscena(o: Opciones): Control | null {
     dibujar(dt);
   };
 
-  control = {
-    async elegir(pedido) {
-      const id = CONCEPTOS[pedido] ? pedido : 'crece';
-      const este = ++turno;
-      const [{ crear }, datos] = await Promise.all([CONCEPTOS[id](), bosque]);
-      if (este !== turno) return;
-      actual?.dispose();
-      r.setClearColor(0x14283e, 1);
-      actual = crear(r, datos);
-      estadoPublico.concepto = id;
-      if (!pausado) t = 0;
-      dimensiones();
-      if (pausado) dibujar(0);
-    },
-    pausar(valor) {
-      pausado = valor;
-      // Al pausar se muestra un estado completo: el árbol nunca queda a medio crecer.
-      if (valor) { t = Math.max(t, 100); progreso = 1; dibujar(0); }
-      else delta();
-    }
-  };
+  pedirBosque(innerWidth < 768).then(datos => {
+    arbol = crear(r, datos);
+    dimensiones();
+    if (pausado) dibujar(0);
+  });
 
   addEventListener('resize', () => { dimensiones(); if (pausado) dibujar(0); });
   addEventListener('pointermove', e => {
@@ -197,5 +169,12 @@ export function iniciarEscena(o: Opciones): Control | null {
   });
   document.fonts?.ready.then(() => { dimensiones(); if (pausado) dibujar(0); });
   bucle();
-  return control;
+  return {
+    pausar(valor) {
+      pausado = valor;
+      // Al pausar se muestra un estado completo: el árbol nunca queda a medio crecer.
+      if (valor) { t = Math.max(t, 100); progreso = 1; dibujar(0); }
+      else delta();
+    }
+  };
 }

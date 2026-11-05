@@ -12,31 +12,20 @@ MAIL_MODE=outbox PORT=4321 node ./dist/server/entry.mjs
 
 | Qué | Dirección |
 |---|---|
-| **Comparar los tres árboles** | http://localhost:4321/laboratorio (botones o teclas `1`, `2`, `3`) |
-| Portada real con el árbol que crece | http://localhost:4321/ |
-| Portada con partículas | http://localhost:4321/?arbol=particulas |
-| Portada con sombra | http://localhost:4321/?arbol=sombra |
+| Portada con el árbol que crece | http://localhost:4321/ |
 | Orientador | http://localhost:4321/servicios#por-donde-empiezo |
 | Página de servicio rediseñada | http://localhost:4321/servicios/divorcios |
 | Salida rápida | http://localhost:4321/servicios/proteccion-familiar |
 | Formulario por pasos | http://localhost:4321/agendar-consulta |
 | Blog con búsqueda | http://localhost:4321/blog |
 
-Comparativa: [conceptos-arbol.webp](reference/screenshots/fases/conceptos-arbol.webp).
-
 ## 2. Lo que debe decidir
 
-### 2.1 El árbol
+### 2.1 El árbol: decidido
 
-En todos, un árbol grande resguarda a dos jóvenes.
+Se eligió **Crecer**: el árbol se dibuja trazo a trazo, después brotan los jóvenes y caen algunas hojas. El scroll lo completa.
 
-| Concepto | Qué hace | Valoración |
-|---|---|---|
-| **1. Crecer** (recomendado) | El árbol se dibuja trazo a trazo, después brotan los jóvenes y caen algunas hojas. El scroll lo completa | El que mejor cuenta la idea: la familia crece y se protege |
-| **2. Partículas** | Puntos de luz dispersos se reúnen hasta formar el árbol | El más delicado y moderno; el árbol tarda más en leerse |
-| **3. Sombra** | Solo se ve la sombra del árbol sobre un muro iluminado | El más sereno y original; el menos evidente. Es el más exigente para el equipo |
-
-Para fijarlo, cambie `heroConcepto` en `src/config/site.ts`, compile de nuevo y retire `/laboratorio`.
+`/laboratorio` y los conceptos *Partículas* y *Sombra* se retiraron del sitio. Su código sigue disponible en el historial de git, en el commit `fd38d7a`.
 
 ### 2.2 Otras decisiones
 
@@ -88,11 +77,11 @@ Para fijarlo, cambie `heroConcepto` en `src/config/site.ts`, compile de nuevo y 
 
 | Comprobación | Resultado |
 |---|---|
-| Playwright, dos pasadas, escritorio y móvil | **402 superadas, 0 fallidas**. 18 omitidas por diseño: aplican solo a un perfil |
+| Playwright, dos pasadas, escritorio y móvil | **386 superadas, 0 fallidas**. 14 omitidas por diseño: aplican solo a un perfil |
 | TypeScript | 0 errores |
 | Identidad anterior | Sin referencias residuales |
 | Accesibilidad con axe (WCAG 2.2 A y AA), 9 páginas | 0 violaciones graves o críticas |
-| Contraste real del titular sobre las tres escenas (390, 1440 y 1920 px) | Mínimo medido: 11,6:1 (requisito: 3:1) |
+| Contraste real del titular sobre el árbol (390, 1440 y 1920 px) | Mínimo medido: 11,48:1 (requisito: 3:1) |
 | Sin WebGL, sin JavaScript, sin el script de interacciones y con movimiento reducido | Contenido completo |
 | Solicitudes externas en las páginas principales | Ninguna |
 
@@ -100,16 +89,20 @@ Para fijarlo, cambie `heroConcepto` en `src/config/site.ts`, compile de nuevo y 
 
 | Página | LCP | CLS | Peso total |
 |---|---:|---:|---:|
-| Portada, 390 px | 1,48 s | 0,065 | 782 KB |
-| Portada, 1440 px | 1,33 s | 0,012 | 782 KB |
-| Servicio, 390 px | 1,20 s | 0,008 | 203 KB |
+| Portada, 390 px | 1,44 s | 0,065 | 778 KB |
+| Portada, 1440 px | 1,33 s | 0,012 | 778 KB |
+| Servicio, 390 px | 1,19 s | 0,008 | 203 KB |
 | Artículo, 390 px | 1,23 s | 0 | 179 KB |
 
-**Fluidez con la RTX 4060, sin límite de cuadros:** de 626 a 2333 cuadros por segundo según escena y tamaño. Hay mucho margen en este equipo, pero el dato no predice el comportamiento en un teléfono.
+**Fluidez con la RTX 4060, sin límite de cuadros:** de 626 a 2333 cuadros por segundo entre las tres escenas originales, medido antes de retirar las otras dos y sin repetir después. Hay mucho margen en este equipo, pero el dato no predice el comportamiento en un teléfono.
+
+### Imagen de reserva corregida
+
+Al fijar *Crecer* apareció un defecto anterior: la imagen que se ve sin 3D, con movimiento reducido y durante la carga incluía el trozo de texto «rta.» del titular. Se regeneró sin texto y una prueba comprueba ahora que no vuelva a ocurrir.
 
 ## 6. Lo que no está verificado
 
-- **Teléfono real:** todo el móvil se simuló. Es el mayor riesgo, sobre todo con *Sombra*.
+- **Teléfono real:** todo el móvil se simuló. Es el mayor riesgo.
 - **Safari y Firefox:** no probados. El sitio se probó solo en Chrome.
 - **Lector de pantalla:** no probado con uno real.
 - **Vista del panel integrado:** a mí no me sirvió para medir fluidez, porque iba a 1 fps sin foco. Es una limitación del panel, comprobada sin escena.

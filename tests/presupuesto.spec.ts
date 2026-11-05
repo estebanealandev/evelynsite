@@ -57,7 +57,7 @@ test.describe('experiencia de carga con red y CPU limitadas', () => {
     const workers: string[] = [];
     page.on('worker', w => workers.push(w.url()));
     await page.goto('/');
-    await page.waitForFunction(() => (window as any).__lab?.frames > 0, null, { timeout: 60000 });
+    await page.waitForFunction(() => (window as any).__arbol?.frames > 0, null, { timeout: 60000 });
     expect(workers.length).toBeGreaterThan(0);
   });
 

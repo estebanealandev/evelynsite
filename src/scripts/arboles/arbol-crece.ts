@@ -1,7 +1,10 @@
-// Concepto 1: el árbol crece trazo a trazo. Después llegan los jóvenes, las hojas y la luz.
+// El árbol crece trazo a trazo. Después llegan los jóvenes, las hojas y la luz.
 import { BufferAttribute, BufferGeometry, Group, NoToneMapping, PerspectiveCamera, Points, Scene, ShaderMaterial, SRGBColorSpace } from 'three';
 import { actualizarComunes, CAMARA_FOV, CAMARA_Z, crearComunes, crearHalo, crearHojas, crearRamas, encuadre, GLSL_MASCARA } from './arbol';
 import { suave, type Crear } from './types';
+
+// `?poster` lo usa scripts/generate-tree-poster.mjs para fotografiar el árbol solo, sin resplandor.
+const poster = location.search.includes('poster');
 
 export const crear: Crear = (renderer, bosque) => {
   renderer.toneMapping = NoToneMapping;
@@ -76,12 +79,13 @@ export const crear: Crear = (renderer, bosque) => {
       u.uFlor.value = final * 1.12;
       u.uT.value = t;
       u.uViento.value = x;
-      actualizarComunes(u, renderer, camera, zona, e.esc);
+      // La imagen estática no va detrás del titular: no necesita la máscara que lo protege.
+      actualizarComunes(u, renderer, camera, poster ? { ...zona, linea1: [0, 0, 0, 0], linea2: [0, 0, 0, 0] } : zona, e.esc);
 
       halo.u.uCentro.value.set(zona.sueloX, zona.sueloY - zona.altura * 0.62);
       halo.u.uAsp.value = aspecto;
       halo.u.uRadio.value = zona.altura * 0.8;
-      halo.u.uLuz.value = location.search.includes('poster') ? 0 : (0.025 + 0.085 * progreso) * suave(t / 3);
+      halo.u.uLuz.value = poster ? 0 : (0.025 + 0.085 * progreso) * suave(t / 3);
       renderer.render(scene, camera);
     },
     dispose() {

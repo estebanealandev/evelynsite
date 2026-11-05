@@ -7,7 +7,7 @@
 | 0. Red de seguridad | Hecha |
 | 1. Limpieza y base visual | Hecha |
 | 2. Sistema de movimiento | Hecha, con CSS y JavaScript nativos, sin GSAP ni Lenis |
-| 3. three.js | Hecha con un cambio de idea: el monograma se descartó y se reemplazó por el árbol familiar. Quedan tres versiones para elegir en `/laboratorio` |
+| 3. three.js | Hecha con un cambio de idea: el monograma se descartó y se reemplazó por el árbol familiar. De las tres versiones se eligió *Crecer*, y `/laboratorio` se retiró |
 | 4. Portada completa | Hecha |
 | 5. Servicios y lectura | Hecha, incluidos orientador y salida rápida. Requiere revisión jurídica |
 | 6. Blog, formulario y navegación | Hecha |

@@ -8,7 +8,7 @@ export default defineConfig({
   use: {
     baseURL: 'http://127.0.0.1:4325',
     channel: 'chrome',
-    // Permite ejecutar WebGL sin tarjeta gráfica en las pruebas del laboratorio.
+    // Permite ejecutar WebGL sin tarjeta gráfica en las pruebas de la escena del árbol.
     launchOptions: { args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'] }
   },
   projects: [

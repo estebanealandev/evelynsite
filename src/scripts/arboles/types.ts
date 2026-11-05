@@ -1,4 +1,4 @@
-// Contrato común de los prototipos del laboratorio.
+// Contrato entre la escena y el árbol.
 import type { WebGLRenderer } from 'three';
 import type { Bosque } from './bosque';
 
@@ -18,15 +18,13 @@ export type Estado = {
 export type Linea = [number, number, number, number];
 export type Zona = { sueloX: number; sueloY: number; altura: number; linea1: Linea; linea2: Linea };
 
-export type Concepto = {
+export type Arbol = {
   resize(ancho: number, alto: number): void;
   frame(estado: Estado): void;
   dispose(): void;
-  // Densidad máxima de píxeles: las imágenes suaves no necesitan más.
-  dprMax?: number;
 };
 
-export type Crear = (renderer: WebGLRenderer, bosque: Bosque) => Concepto;
+export type Crear = (renderer: WebGLRenderer, bosque: Bosque) => Arbol;
 
 export const clamp = (v: number, a = 0, b = 1) => Math.min(b, Math.max(a, v));
 export const suave = (v: number) => { const x = clamp(v); return x * x * (3 - 2 * x); };

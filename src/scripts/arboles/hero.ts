@@ -19,7 +19,6 @@ if (raiz) {
   if (reducido || limitado || !hayWebGL()) {
     raiz.classList.add('sin-3d');
   } else {
-    const concepto = new URLSearchParams(location.search).get('arbol') || raiz.dataset.concepto || 'crece';
     const cargar = async () => {
       const { iniciarEscena } = await import('./escena');
       const control = iniciarEscena({
@@ -32,7 +31,6 @@ if (raiz) {
         alPrimerCuadro: () => raiz.classList.add('is-3d')
       });
       if (!control) { raiz.classList.add('sin-3d'); return; }
-      await control.elegir(concepto);
       addEventListener('movimiento', e => control.pausar((e as CustomEvent<boolean>).detail));
     };
     // Espera a que la página esté libre para no competir con el primer contenido.

@@ -158,10 +158,9 @@ test.describe('portada', () => {
     await ctx.close();
   });
 
-  test('la escena carga y se puede comparar por dirección', async ({ page }) => {
-    await page.goto('/?arbol=particulas');
-    await page.waitForFunction(() => (window as any).__lab?.frames > 2, null, { timeout: 60000 });
-    expect(await page.evaluate(() => (window as any).__lab.concepto)).toBe('particulas');
+  test('la escena carga en la portada', async ({ page }) => {
+    await page.goto('/');
+    await page.waitForFunction(() => (window as any).__arbol?.frames > 2, null, { timeout: 60000 });
     await expect(page.locator('.h-hero')).toHaveClass(/is-3d/);
   });
 });
@@ -206,15 +205,15 @@ test.describe('interacciones', () => {
   });
 
   test('pausar animaciones se recuerda y detiene la escena', async ({ page }) => {
-    await page.goto('/?arbol=crece');
-    await page.waitForFunction(() => (window as any).__lab?.frames > 2, null, { timeout: 60000 });
+    await page.goto('/');
+    await page.waitForFunction(() => (window as any).__arbol?.frames > 2, null, { timeout: 60000 });
     const btn = page.locator('[data-movimiento-btn]');
     await btn.scrollIntoViewIfNeeded();
     await btn.click();
     await expect(btn).toHaveText('Reanudar animaciones');
-    const a = await page.evaluate(() => (window as any).__lab.frames);
+    const a = await page.evaluate(() => (window as any).__arbol.frames);
     await page.waitForTimeout(500);
-    expect(await page.evaluate(() => (window as any).__lab.frames)).toBe(a);
+    expect(await page.evaluate(() => (window as any).__arbol.frames)).toBe(a);
     await page.goto('/blog');
     expect(await page.evaluate(() => document.documentElement.dataset.movimiento)).toBe('pausado');
     await expect(page.locator('[data-movimiento-btn]')).toHaveText('Reanudar animaciones');

@@ -101,9 +101,7 @@ Al cambiar una norma, actualice `legalVerifiedAt` en `src/config/site.ts`.
 
 La portada carga la escena 3D de forma diferida, con three.js alojado localmente. No se carga con movimiento reducido, ahorro de datos, poca memoria o sin WebGL: en esos casos se muestra una imagen del árbol.
 
-- **Elegir el concepto:** `heroConcepto` en `src/config/site.ts` (`crece`, `particulas` o `sombra`).
-- **Comparar:** `/laboratorio`, o la portada con `/?arbol=particulas`. El laboratorio no se indexa y debe retirarse al decidir.
-- **Regenerar las imágenes de reserva:** con el servidor en marcha, `BASE=http://127.0.0.1:4321 npm run poster`, y luego volver a compilar.
+- **Regenerar la imagen de reserva:** con el servidor en marcha, `BASE=http://127.0.0.1:4321 npm run poster`, y luego volver a compilar.
 
 ## Pruebas
 
