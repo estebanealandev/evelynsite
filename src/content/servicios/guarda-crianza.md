@@ -10,7 +10,7 @@ imagenAncha: "luz-ventana"
 alt: "Luz de ventana sobre un muro claro con sombras de hojas"
 hero:
   titulo: "Guarda y crianza: cómo se decide el *cuidado* de hijas e hijos"
-  entrada: "Al terminar una relación, los progenitores deben acordar o pedir que se resuelva la custodia, los alimentos, la educación y la interrelación familiar, según el interés superior de la persona menor de edad."
+  entrada: "Al terminar un matrimonio o una unión de hecho, los progenitores deben acordar la custodia, los alimentos, la educación y la interrelación familiar o, sin acuerdo, lo dispone el tribunal, según el interés superior de la persona menor de edad. Si hay violencia, no tiene que negociar para pedir protección."
   puntos:
     - "Atributos de la responsabilidad parental"
     - "Custodia y acuerdos"
@@ -51,7 +51,7 @@ aspectos:
       resumen: "Son decisiones judiciales por causas graves, ampliadas por reformas de 2024 y 2025."
       detalle: "El artículo 159 prevé la suspensión, entre otras causas, por violencia doméstica o intrafamiliar, por omitir denunciar relaciones impropias que afecten a los hijos (Ley N.º 10603) y por violencia vicaria (Ley N.º 10634). El artículo 158 bis enumera las causas de pérdida, incluida la violencia vicaria determinada en resolución judicial firme. En la violencia vicaria, la persona juzgadora valora la pertinencia según el caso, la afectación y el interés superior."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Está por separarse y tiene hijos menores de edad"
     - "Hay desacuerdos sobre educación, salud o residencia"
@@ -100,6 +100,8 @@ fuentes:
     detalle: "arts. 5, 14, 30"
   - ref: "CPF"
     detalle: "arts. 9, 222, 316 a 318"
+  - ref: "LCVD"
+    detalle: "arts. 3, 7, 8"
 aviso: "Si existe un riesgo inmediato para una persona menor de edad, llame al 9-1-1: este sitio no atiende emergencias. El Patronato Nacional de la Infancia dispone de la línea gratuita 1147 para niñas, niños y adolescentes."
 relacionados: ["interrelacion-familiar", "pensiones-alimentarias", "proteccion-familiar"]
 siguientes:
@@ -110,6 +112,10 @@ siguientes:
     - "Medidas de protección vigentes o denuncias presentadas, si existen"
     - "Lo que haya cambiado desde la última decisión y desde cuándo"
 ---
+
+## Si hay violencia
+
+La autoridad puede suspender provisionalmente a la presunta persona agresora la guarda, crianza y educación, y confiar la guarda protectora a quien considere idóneo cuando corresponda (artículo 3, incisos f e i, de la Ley N.º 7586). Se pide de forma verbal o escrita, sin otro proceso (artículo 8), y para personas menores de edad también deben solicitarlo su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7). La prioridad de la custodia compartida está condicionada al interés superior.
 
 ## Cuando hay acuerdo
 

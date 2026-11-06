@@ -6,7 +6,7 @@
   "tema": "Libertad de aceptar asuntos",
   "texto": "El artículo 37 del Código de Deberes reconoce la libertad de aceptar o rechazar asuntos",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -20,7 +20,9 @@
   "relacionadas": [
    "/"
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-002",
@@ -52,7 +54,7 @@
   "tema": "Deber de informar",
   "texto": "El Código de Deberes pide informar periódicamente el estado del asunto, cuando sea necesario",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -65,7 +67,9 @@
   "relacionadas": [
    "/"
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-004",
@@ -74,7 +78,7 @@
   "tema": "Mandato para conciliar",
   "texto": "exige mandato específico para conciliar, transigir o desistir",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -87,7 +91,9 @@
   "relacionadas": [
    "/"
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-005",
@@ -96,7 +102,7 @@
   "tema": "Conocimiento previo de la causa",
   "texto": "El artículo 32 del Código de Deberes exige obtener pleno conocimiento de la causa antes de aceptarla y emitir opinión",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -106,7 +112,9 @@
     "cita": "deberán obtener pleno conocimiento de la causa de su cliente antes de aceptarla y emitir opinión sobre ella"
    }
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-006",
@@ -115,7 +123,7 @@
   "tema": "Secreto profesional",
   "texto": "El artículo 41 del Código de Deberes protege las confidencias hechas a una persona abogada con ocasión de su ejercicio, aun después de cesar la relación profesional",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -132,7 +140,9 @@
     "cita": "La obligación de guardar secreto profesional perdura aún después de cesada la relación profesional"
    }
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-007",
@@ -141,7 +151,7 @@
   "tema": "Excepciones al secreto",
   "texto": "Los artículos 42 y 43 prevén excepciones, como la intención de cometer un ilícito",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -158,7 +168,9 @@
     "cita": "Si un cliente comunica a su abogado o abogada la intención de cometer un ilícito, esta confidencia no es materia de secreto profesional"
    }
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-008",
@@ -186,7 +198,7 @@
   "tema": "No asegurar el éxito",
   "texto": "El artículo 33 del Código de Deberes impide asegurar el éxito o magnificar las dificultades",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "NO_VERIFICABLE",
   "respaldos": [
    {
     "norma": "CDJ",
@@ -196,7 +208,9 @@
     "cita": "No deberán asegurar nunca el éxito ni magnificar sus dificultades, sino exclusivamente exponer el amparo legal de la causa y sus probabilidades razonables"
    }
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
  },
  {
   "id": "FAM-INS-010",
@@ -272,6 +286,54 @@
   "estado": "NO_VERIFICABLE",
   "retirada": true,
   "motivo": "No consta un equipo y la frase está prohibida por la guía. Se sustituye por los deberes de CDJ arts. 34 y 35.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-015",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Forma de trabajar",
+  "texto": "Antes de opinar se revisan hechos, documentos y plazos. La opinión expone lo favorable y lo desfavorable",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta. Requiere confirmación de Evelyn.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-016",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Forma de trabajar",
+  "texto": "Allí se explican las vías posibles, con sus aspectos favorables y desfavorables.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta. Requiere confirmación de Evelyn.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-017",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Forma de trabajar",
+  "texto": "Las opciones, los riesgos y los plazos se explican con palabras comprensibles.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica; se refiere ahora a los textos del sitio.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-018",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Forma de trabajar",
+  "texto": "Cuando hay personas menores de edad, ese criterio entra en el análisis desde el inicio.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
   "consultado": "2026-11-05"
  }
 ]

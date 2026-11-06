@@ -1,13 +1,13 @@
 {
  "generado": "2026-11-06",
- "total": 918,
- "publicadas": 824,
- "retiradas": 94,
+ "total": 1061,
+ "publicadas": 891,
+ "retiradas": 170,
  "resumen": {
-  "VERIFICADA": 822,
-  "REQUIERE_CORRECCION": 60,
-  "SIN_RESPALDO": 22,
-  "NO_VERIFICABLE": 12,
+  "VERIFICADA": 889,
+  "REQUIERE_CORRECCION": 115,
+  "SIN_RESPALDO": 23,
+  "NO_VERIFICABLE": 32,
   "HISTORICA": 2
  },
  "afirmaciones": [
@@ -488,7 +488,7 @@
    "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
    "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
    "tema": "Sin cosa juzgada sobre hijas e hijos",
-   "texto": "lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental (artículo 152 del Código de Familia)",
+   "texto": "lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152 del Código de Familia)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -574,6 +574,115 @@
    "estado": "SIN_RESPALDO",
    "retirada": true,
    "motivo": "Frase genérica sin respaldo normativo. Se sustituyó por preguntas ligadas a los efectos legales.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-093",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Conciliación",
+   "texto": "El Código Procesal de Familia permite conciliar cuando procede",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 8 de la revisión adversarial: el artículo 9 dice «se intentará».",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-094",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Conciliación",
+   "texto": "El Código Procesal de Familia manda intentar la conciliación cuando procede",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "9"
+     ],
+     "cita": "cuando proceda, se intentará la conciliación"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-095",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Justicia restaurativa",
+   "texto": "No son un trámite que una persona afectada deba buscar por su cuenta ni un motivo para reunirse con quien ejerce violencia.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 46 de la revisión adversarial: conclusión sin norma que la diga.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-096",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Justicia restaurativa",
+   "texto": "Los artículos 9 y 196 no imponen a la persona afectada reunirse o negociar con quien ejerce violencia",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "9"
+     ],
+     "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "196"
+     ],
+     "cita": "el caso podrá abordarse mediante los mecanismos propios de justicia restaurativa, si cumple con los criterios de admisibilidad y viabilidad"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: carácter voluntario según la Ley N.º 9582, que no está en la copia oficial.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-097",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Sin cosa juzgada sobre hijas e hijos",
+   "texto": "lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental (artículo 152 del Código de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 27 de la revisión adversarial: afirmaba solo la vía incidental; el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CCI-098",
+   "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+   "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+   "tema": "Vía de modificación",
+   "texto": "Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI)"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "222"
+     ],
+     "cita": "modificaciones de sentencias sobre estas pretensiones"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: vía que corresponde.",
    "consultado": "2026-11-05"
   },
   {
@@ -840,7 +949,7 @@
    "archivo": "src/content/servicios/acuerdos-familiares.md",
    "pagina": "/servicios/acuerdos-familiares",
    "tema": "Sin cosa juzgada sobre personas menores de edad",
-   "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
+   "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -1373,6 +1482,100 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-ACU-093",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Sin cosa juzgada sobre personas menores de edad",
+   "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 27 de la revisión adversarial: afirmaba solo la vía incidental.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ACU-094",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Modificación",
+   "texto": "Lo relativo a personas menores de edad puede modificarse por vía incidental (artículo 152 del Código de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 27 de la revisión adversarial: afirmaba solo la vía incidental.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ACU-095",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Modificación",
+   "texto": "Lo relativo a personas menores de edad puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152 del Código de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI)"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ACU-096",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Vía de modificación",
+   "texto": "Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI)"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "222"
+     ],
+     "cita": "modificaciones de sentencias sobre estas pretensiones"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: vía que corresponde.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ACU-097",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Título",
+   "texto": "De la conversación al acuerdo válido",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 47 de la revisión adversarial: el título empujaba a la conversación directa.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ACU-098",
+   "archivo": "src/content/servicios/acuerdos-familiares.md",
+   "pagina": "/servicios/acuerdos-familiares",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-AGE-001",
    "archivo": "src/pages/agendar-consulta.astro",
    "pagina": "/agendar-consulta",
@@ -1402,6 +1605,30 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "El formulario se transmite por correo. El secreto de CDJ art. 41 no se afirma como efecto del formulario: requiere análisis de la relación concreta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-AGE-003",
+   "archivo": "src/pages/agendar-consulta.astro",
+   "pagina": "/agendar-consulta",
+   "tema": "Sin consulta previa",
+   "texto": "Para pedir medidas de protección no hace falta una consulta previa",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "fuenteExterna": {
+    "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+    "titulo": "Poder Judicial, Servicios",
+    "cita": "Indica que no requiere abogada o abogado"
+   },
    "consultado": "2026-11-05"
   },
   {
@@ -1642,7 +1869,7 @@
    "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
    "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
    "tema": "Prohibición de conciliar",
-   "texto": "Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+   "texto": "Se prohíbe cuando se constaten relaciones desiguales de poder",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -1776,7 +2003,7 @@
    "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
    "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
    "tema": "Secreto profesional",
-   "texto": "la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho)",
+   "texto": "la obligación perdura después de cesar la relación (artículo 41)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -1855,6 +2082,119 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Sin artículo. Se citaron los arts. 63 y 121 del CPF con sus condiciones.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-094",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Conciliación",
+   "texto": "Puede intentarse cuando procede.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 8 de la revisión adversarial: el artículo 9 dice «se intentará».",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-095",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Conciliación",
+   "texto": "No es un paso que deba aceptar si existe violencia o temor.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 8 de la revisión adversarial: la prohibición exige constatación y «temor» no figura en la norma.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-096",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Prohibición de conciliar",
+   "texto": "Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 8 de la revisión adversarial: frase reescrita junto con el resto del punto.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-097",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Conciliación",
+   "texto": "Cuando procede, la norma manda intentarla, y en pensiones alimentarias el tribunal convoca a una audiencia previa (artículos 9 y 269 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "9"
+     ],
+     "cita": "cuando proceda, se intentará la conciliación"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "269"
+     ],
+     "cita": "el tribunal convocará a las partes a una audiencia previa de conciliación"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: efectos de no comparecer y cómo pedir que no se realice.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-098",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Convocatoria",
+   "texto": "Una convocatoria no obliga a aceptar un acuerdo",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "270"
+     ],
+     "cita": "no prosperara en ella una conciliación entre las partes"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-099",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Secreto profesional",
+   "texto": "la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: se aclara a quién se aplica el Código de Deberes.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INI-100",
+   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+   "tema": "Alcance del Código de Deberes",
+   "texto": "se aplica a las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CDJ",
+     "articulos": [
+      "1"
+     ],
+     "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+    }
+   ],
    "consultado": "2026-11-05"
   },
   {
@@ -2298,6 +2638,63 @@
    "retirada": true
   },
   {
+   "id": "FAM-ARP-023",
+   "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+   "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+   "tema": "Exoneración",
+   "texto": "Por eso, cumplir dieciocho años no es, por sí solo, un motivo para dejar de pagar sin solicitar antes la exoneración.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 19 de la revisión adversarial: conclusión presentada como consecuencia de una norma que no la dice.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ARP-024",
+   "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+   "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+   "tema": "Salvedad de otros procesos",
+   "texto": "Pero si en un proceso de divorcio, separación judicial o penal se resuelve cosa distinta, se está a lo que se disponga",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "173"
+     ],
+     "cita": "Pero, si en un proceso de divorcio, separación judicial o penal, el juez resolviere cosa distinta, se estará a lo que se disponga"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-ARP-025",
+   "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+   "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+   "tema": "Cuota mientras se tramita",
+   "texto": "Dejar de pagarla sin una resolución expone a las vías de cobro (artículos 283 y 285 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "283"
+     ],
+     "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "285"
+     ],
+     "cita": "aunque se trate de mensualidades para las cuales no haya solicitado apremio corporal"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-AVI-001",
    "archivo": "src/pages/aviso-juridico.astro",
    "pagina": "/aviso-juridico",
@@ -2361,7 +2758,7 @@
    "archivo": "src/pages/aviso-juridico.astro",
    "pagina": "/aviso-juridico",
    "tema": "Publicidad profesional",
-   "texto": "que pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
+   "texto": "pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -2409,6 +2806,62 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "La suscripción se retira del sitio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-AVI-008",
+   "archivo": "src/pages/aviso-juridico.astro",
+   "pagina": "/aviso-juridico",
+   "tema": "Publicidad profesional",
+   "texto": "que pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 31 de la revisión adversarial: se retira «Este sitio procura ajustarse»: no consta la colegiatura.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-AVI-009",
+   "archivo": "src/pages/aviso-juridico.astro",
+   "pagina": "/aviso-juridico",
+   "tema": "Alcance del Código de Deberes",
+   "texto": "de aplicación forzosa para las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CDJ",
+     "articulos": [
+      "1"
+     ],
+     "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+    }
+   ],
+   "excepciones": "Pendiente del Colegio de Abogados: criterio sobre el párrafo segundo del artículo 30 y sobre los artículos 29 y 30 frente a contenidos con llamados a consulta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-AVI-010",
+   "archivo": "src/pages/aviso-juridico.astro",
+   "pagina": "/aviso-juridico",
+   "tema": "Publicidad",
+   "texto": "Este sitio procura ajustarse al artículo 30",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 31 de la revisión adversarial: da por hecho que el Código de Deberes obliga a quien presta el servicio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-AVI-011",
+   "archivo": "src/pages/aviso-juridico.astro",
+   "pagina": "/aviso-juridico",
+   "tema": "Relación profesional",
+   "texto": "Esta solo existe cuando se acuerda expresamente.",
+   "tipo": "derecho_vigente",
+   "estado": "SIN_RESPALDO",
+   "retirada": true,
+   "motivo": "Hallazgo 29 de la revisión adversarial: afirmación absoluta sin norma que la diga; se reformula como condición para iniciarla desde este sitio. Pendiente de persona abogada.",
    "consultado": "2026-11-05"
   },
   {
@@ -2849,6 +3302,80 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-BIB-021",
+   "archivo": "src/lib/biblioteca.ts",
+   "pagina": "/biblioteca-juridica",
+   "tema": "CF, Ley 9823",
+   "texto": "Ley N.º 9823, del 3 de marzo de 2020: reformó, entre otros, el artículo 49, sobre la acción de divorcio",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "49"
+     ],
+     "cita": "N° 9823 del 3 de marzo de 2020"
+    }
+   ],
+   "excepciones": "Hallazgo 41.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-BIB-022",
+   "archivo": "src/lib/biblioteca.ts",
+   "pagina": "/biblioteca-juridica",
+   "tema": "CF, Ley 9781",
+   "texto": "Ley N.º 9781, del 12 de noviembre de 2019: reformó, entre otros, los artículos 151 y 152, sobre el régimen de interrelación familiar",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "151"
+     ],
+     "cita": "N° 9781 del 12 de noviembre de 2019"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "N° 9781 del 12 de noviembre de 2019"
+    }
+   ],
+   "excepciones": "Hallazgo 41.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-BIB-023",
+   "archivo": "src/lib/biblioteca.ts",
+   "pagina": "/biblioteca-juridica",
+   "tema": "LCVD, Ley 9692",
+   "texto": "Ley N.º 9692, del 9 de julio de 2019: reformó, entre otros, el inciso e) del artículo 3, sobre el decomiso de armas",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "N° 9692 del 9 de julio de 2019"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "Decomisar las armas y los objetos que se utilicen para intimidar o agredir"
+    }
+   ],
+   "excepciones": "Hallazgo 41.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-GAN-001",
    "archivo": "src/content/servicios/bienes-gananciales.md",
    "pagina": "/servicios/bienes-gananciales",
@@ -3285,7 +3812,7 @@
    "archivo": "src/content/servicios/bienes-gananciales.md",
    "pagina": "/servicios/bienes-gananciales",
    "tema": "Embargo preventivo",
-   "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)",
+   "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140 del Código Procesal de Familia)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -3423,7 +3950,7 @@
    "archivo": "src/content/servicios/bienes-gananciales.md",
    "pagina": "/servicios/bienes-gananciales",
    "tema": "Herencia o donación",
-   "texto": "excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria",
+   "texto": "No, si se recibió por título gratuito (artículo 41 del Código de Familia)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -3700,6 +4227,42 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Omitía que puede disponerse la continuación mientras haya beneficiarios (CF 47 c).",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GAN-037",
+   "archivo": "src/content/servicios/bienes-gananciales.md",
+   "pagina": "/servicios/bienes-gananciales",
+   "tema": "Embargo preventivo",
+   "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 36 de la revisión adversarial: la norma es más amplia y añade la valoración judicial.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GAN-038",
+   "archivo": "src/content/servicios/bienes-gananciales.md",
+   "pagina": "/servicios/bienes-gananciales",
+   "tema": "Herencia o donación",
+   "texto": "excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 42 de la revisión adversarial: la respuesta repetía un párrafo de la misma página.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GAN-039",
+   "archivo": "src/content/servicios/bienes-gananciales.md",
+   "pagina": "/servicios/bienes-gananciales",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
    "consultado": "2026-11-05"
   },
   {
@@ -5074,6 +5637,64 @@
    "retirada": true
   },
   {
+   "id": "FAM-CEP-027",
+   "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+   "pagina": "/blog/como-se-establece-pension-alimentaria",
+   "tema": "Sentencia anticipada",
+   "texto": "Si por cualquier motivo la audiencia no se realiza en el plazo o no hay conciliación",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "270"
+     ],
+     "cita": "Si por cualquier motivo no se realizara la audiencia previa dentro del plazo máximo de diez días hábiles"
+    }
+   ],
+   "excepciones": "Hallazgo 8. Pendiente de persona abogada: efectos de no comparecer.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CEP-028",
+   "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+   "pagina": "/blog/como-se-establece-pension-alimentaria",
+   "tema": "Título",
+   "texto": "Si hay cuotas de antes de la demanda",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 20 de la revisión adversarial: antes de la demanda no hay cuotas fijadas; el título podía aplicar el tope de doce meses a las cuotas no pagadas.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CEP-029",
+   "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+   "pagina": "/blog/como-se-establece-pension-alimentaria",
+   "tema": "Cuotas no pagadas",
+   "texto": "No debe confundirse con las cuotas ya fijadas y no pagadas, que tienen sus propias vías de cobro (artículos 283 y 285 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "283"
+     ],
+     "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "285"
+     ],
+     "cita": "aunque se trate de mensualidades para las cuales no haya solicitado apremio corporal"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-CBG-001",
    "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
    "pagina": "/blog/como-se-regulan-bienes-gananciales",
@@ -5119,7 +5740,7 @@
    "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
    "pagina": "/blog/como-se-regulan-bienes-gananciales",
    "tema": "Dominio durante el matrimonio",
-   "texto": "sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40)",
+   "texto": "sin capitulaciones cada cónyuge dispone de sus bienes (artículo 40)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -5365,7 +5986,7 @@
    "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
    "pagina": "/blog/como-se-regulan-bienes-gananciales",
    "tema": "Límite del embargo",
-   "texto": "Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140)",
+   "texto": "Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -5375,6 +5996,13 @@
       "140"
      ],
      "cita": "la autoridad judicial deberá valorar adecuadamente si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "140"
+     ],
+     "cita": "si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
     }
    ],
    "consultado": "2026-11-05"
@@ -5633,6 +6261,94 @@
    "estado": "SIN_RESPALDO",
    "retirada": true,
    "motivo": "Advertencia genérica. Sustituida por el análisis de cada exclusión.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CBG-029",
+   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+   "pagina": "/blog/como-se-regulan-bienes-gananciales",
+   "tema": "Dominio durante el matrimonio",
+   "texto": "sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 28 de la revisión adversarial: sin excepciones, podía leerse como permiso para traspasar bienes antes de un divorcio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CBG-030",
+   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+   "pagina": "/blog/como-se-regulan-bienes-gananciales",
+   "tema": "Momento del derecho",
+   "texto": "el régimen no opera",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 28 de la revisión adversarial: afirmación absoluta; se sustituye por lo que dice el artículo 41.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CBG-031",
+   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+   "pagina": "/blog/como-se-regulan-bienes-gananciales",
+   "tema": "Momento del derecho",
+   "texto": "Mientras no llegue uno de los momentos del artículo 41, el derecho a participar en los gananciales aún no nace",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "41"
+     ],
+     "cita": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CBG-032",
+   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+   "pagina": "/blog/como-se-regulan-bienes-gananciales",
+   "tema": "Límites a la libre disposición",
+   "texto": "Esa libertad tiene límites: el inmueble afectado a habitación familiar (artículo 42), la liquidación anticipada (artículo 41) y las peticiones de nulidad o de inoponibilidad de traspasos que menciona el artículo 226 del Código Procesal de Familia",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "42"
+     ],
+     "cita": "no podrá ser enajenado ni gravado sino con el consentimiento de ambos cónyuges"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "41"
+     ],
+     "cita": "por actos que amenacen burlarlo"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "226"
+     ],
+     "cita": "peticiones de nulidad o de inoponibilidad de traspasos de bienes con vocación ganancial"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-CBG-033",
+   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+   "pagina": "/blog/como-se-regulan-bienes-gananciales",
+   "tema": "Límite del embargo",
+   "texto": "Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 36 de la revisión adversarial: la norma es más amplia y añade la valoración judicial.",
    "consultado": "2026-11-05"
   },
   {
@@ -6582,7 +7298,7 @@
    "estado": "VERIFICADA",
    "consultado": "2026-11-05",
    "tema": "Daños y perjuicios",
-   "texto": "El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48",
+   "texto": "El artículo 48 bis permite al cónyuge inocente pedirlos cuando el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48, conjuntamente con la acción de separación o de divorcio",
    "respaldos": [
     {
      "norma": "CF",
@@ -6698,6 +7414,114 @@
    "texto": "Limitada a los requisitos del trámite",
    "motivo": "La norma no lo formula así; la fila se retira de la comparación.",
    "retirada": true
+  },
+  {
+   "id": "FAM-DCC-023",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Daños y perjuicios",
+   "texto": "El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 24 de la revisión adversarial: el «solo» no está en la norma.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DCC-024",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Otros reclamos",
+   "texto": "Si otros hechos pueden fundar un reclamo requiere análisis (artículo 222, inciso 10, del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "222"
+     ],
+     "cita": "10) Los reclamos de daños y perjuicios"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DCC-025",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Límites de la separación judicial",
+   "texto": "El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "59"
+     ],
+     "cita": "Por el cónyuge inocente en el caso de los incisos 1), 2), 3) y 4) del artículo anterior"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "59"
+     ],
+     "cita": "Caducarán tales acciones en un término de dos años, salvo las que se fundamentan en los incisos 2), 3), 5) y 8) indicados"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DCC-026",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Alimentos en el convenio",
+   "texto": "En un convenio, el punto lo definen los cónyuges.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 37 de la revisión adversarial: omitía la tensión con la irrenunciabilidad del artículo 167.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DCC-027",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Alimentos en el convenio",
+   "texto": "En un convenio debe establecerse si existe o no esa obligación y su monto. Cómo se armoniza con la irrenunciabilidad del artículo 167 requiere análisis",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "48"
+     ],
+     "cita": "El establecimiento del derecho o no de obligación alimentaria entre los cónyuges y el monto en que se obligan"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "167"
+     ],
+     "cita": "El derecho a los alimentos no podrá renunciarse"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DCC-028",
+   "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+   "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+   "tema": "Título",
+   "texto": "Pasar del conflicto al acuerdo",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 47 de la revisión adversarial: el título empujaba hacia el acuerdo.",
+   "consultado": "2026-11-05"
   },
   {
    "id": "FAM-DMC-001",
@@ -7218,6 +8042,57 @@
    "texto": "otros puntos patrimoniales pueden ser más difíciles de reabrir",
    "motivo": "Sin norma específica en la copia oficial; se sustituye por los límites del art. 293 CPF.",
    "retirada": true
+  },
+  {
+   "id": "FAM-DMC-026",
+   "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+   "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+   "tema": "Firma bajo presión",
+   "texto": "por lo breve de esa oportunidad",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 32 de la revisión adversarial: no distinguía el trámite judicial del Registro Civil ni recordaba las medidas de protección.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DMC-027",
+   "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+   "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+   "tema": "Firma bajo presión",
+   "texto": "en el trámite judicial la oposición solo se admite antes de la aprobación",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "293"
+     ],
+     "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: vías si el convenio va al Registro Civil o ya fue aprobado.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DMC-028",
+   "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+   "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+   "tema": "Medidas de protección",
+   "texto": "Las medidas de protección pueden pedirse con independencia de ese trámite (artículo 8 de la Ley N.º 7586)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "consultado": "2026-11-05"
   },
   {
    "id": "FAM-DIV-001",
@@ -8171,6 +9046,89 @@
    "texto": "Lo relativo a los hijos puede ser modificado por el tribunal al momento de la aprobación, porque sus derechos no dependen únicamente de la voluntad de los progenitores.",
    "motivo": "La justificación no consta en la norma; se conserva la facultad con cita de los arts. 48 y 152 CF.",
    "retirada": true
+  },
+  {
+   "id": "FAM-DIV-044",
+   "archivo": "src/content/servicios/divorcios.md",
+   "pagina": "/servicios/divorcios",
+   "tema": "Medidas de protección distintas",
+   "texto": "Las medidas de protección de la Ley N.º 7586 son distintas: se piden con independencia de cualquier otro proceso (artículo 8)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DIV-045",
+   "archivo": "src/content/servicios/divorcios.md",
+   "pagina": "/servicios/divorcios",
+   "tema": "Medidas dentro del proceso",
+   "texto": "Dentro del proceso, la autoridad también puede ordenar la salida del hogar y otras medidas de protección (artículos 136 y 137 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "136"
+     ],
+     "cita": "la autoridad judicial podrá ordenar o autorizar a cualquiera de los cónyuges o convivientes la salida inmediata del hogar"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "137"
+     ],
+     "cita": "cualquier medida de protección que estime pertinente"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DIV-046",
+   "archivo": "src/content/servicios/divorcios.md",
+   "pagina": "/servicios/divorcios",
+   "tema": "Límites de la separación judicial",
+   "texto": "El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "59"
+     ],
+     "cita": "Por el cónyuge inocente en el caso de los incisos 1), 2), 3) y 4) del artículo anterior"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "59"
+     ],
+     "cita": "Caducarán tales acciones en un término de dos años, salvo las que se fundamentan en los incisos 2), 3), 5) y 8) indicados"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-DIV-047",
+   "archivo": "src/content/servicios/divorcios.md",
+   "pagina": "/servicios/divorcios",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+   "consultado": "2026-11-05"
   },
   {
    "id": "FAM-EMP-001",
@@ -9879,6 +10837,70 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-FPE-024",
+   "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+   "pagina": "/orientacion/revisar-una-pension-alimentaria",
+   "tema": "Alimentos e interrelación",
+   "texto": "El pago de alimentos y la interrelación familiar no deberían condicionarse entre sí.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 44 de la revisión adversarial: conclusión sin atribuir; se sustituye por lo que dicen las normas.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-FPE-025",
+   "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+   "pagina": "/orientacion/revisar-una-pension-alimentaria",
+   "tema": "Alimentos e interrelación",
+   "texto": "Los artículos 151 y 152 del Código de Familia y 35 del Código de la Niñez y la Adolescencia no condicionan la interrelación al pago",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "151"
+     ],
+     "cita": "todo lo concerniente a la fijación o modificación del régimen de interrelación familiar"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación"
+    },
+    {
+     "norma": "CNA",
+     "articulos": [
+      "35"
+     ],
+     "cita": "el padre y la madre quedan obligados a sufragar los gastos"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-FPE-026",
+   "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+   "pagina": "/orientacion/revisar-una-pension-alimentaria",
+   "tema": "Causas que eximen",
+   "texto": "el artículo 173 no incluye el incumplimiento del régimen entre las causas que eximen de alimentos",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "173"
+     ],
+     "cita": "No existirá obligación de proporcionar alimentos"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-FIL-001",
    "archivo": "src/content/servicios/filiacion-paternidad.md",
    "pagina": "/servicios/filiacion-paternidad",
@@ -10598,7 +11620,7 @@
    "tema": "Liquidación de alimentos",
    "texto": "El artículo 96 del Código de Familia dispone que la obligación alimentaria se retrotrae a la fecha de presentación de la demanda y se liquida en el proceso alimentario, mediante ejecución de sentencia",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "REQUIERE_CORRECCION",
    "respaldos": [
     {
      "norma": "CF",
@@ -10608,7 +11630,9 @@
      "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda y se liquidará en el proceso alimentario correspondiente, mediante el trámite de ejecución de sentencia"
     }
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 42 de la revisión adversarial: pregunta frecuente que repetía un punto de la misma página; se eliminó. El contenido sigue en «Plazos y efectos» (artículo 96)."
   },
   {
    "id": "FAM-FIL-032",
@@ -10749,6 +11773,45 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Se precisa con el art. 63 bis de la Ley 3504, adicionado por L9747.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-FIL-040",
+   "archivo": "src/content/servicios/filiacion-paternidad.md",
+   "pagina": "/servicios/filiacion-paternidad",
+   "tema": "Paternidad por presunción",
+   "texto": "si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "84"
+     ],
+     "cita": "por motivo de la presunción de paternidad de un padre que no corresponde a la verdad biológica, se podrá pedir su reconocimiento por quien corresponda ante el Registro Civil"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "84"
+     ],
+     "cita": "Si sucediera una oposición fundada del padre o la madre registrales, el asunto deberá conocerse jurisdiccionalmente mediante el proceso resolutivo familiar"
+    }
+   ],
+   "excepciones": "Hallazgo 22. Pendiente de persona abogada: legitimación actual de madre e hijo.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-FIL-041",
+   "archivo": "src/content/servicios/filiacion-paternidad.md",
+   "pagina": "/servicios/filiacion-paternidad",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
    "consultado": "2026-11-05"
   },
   {
@@ -12072,13 +13135,153 @@
    "retirada": true
   },
   {
+   "id": "FAM-GUA-036",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Entrada",
+   "texto": "Al terminar una relación, los progenitores deben acordar o pedir que se resuelva la custodia",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 7 de la revisión adversarial: «una relación» es más amplio que el artículo 152, y faltaba una salida expresa para quien sufre violencia.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-037",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Entrada",
+   "texto": "Al terminar un matrimonio o una unión de hecho, los progenitores deben acordar la custodia, los alimentos, la educación y la interrelación familiar o, sin acuerdo, lo dispone el tribunal, según el interés superior de la persona menor de edad",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-038",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Sin negociar",
+   "texto": "Si hay violencia, no tiene que negociar para pedir protección",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-039",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Suspensión y guarda protectora",
+   "texto": "La autoridad puede suspender provisionalmente a la presunta persona agresora la guarda, crianza y educación, y confiar la guarda protectora a quien considere idóneo cuando corresponda (artículo 3, incisos f e i, de la Ley N.º 7586)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "se podrá suspender provisionalmente a la presunta persona agresora el ejercicio de la guarda, crianza y educación de sus hijos e hijas menores de edad"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "Confiar la guarda protectora a quien la autoridad judicial considere idóneo para esa función"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-040",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Cómo se pide",
+   "texto": "Se pide de forma verbal o escrita, sin otro proceso (artículo 8), y para personas menores de edad también deben solicitarlo su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "7"
+     ],
+     "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-041",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Prioridad condicionada",
+   "texto": "La prioridad de la custodia compartida está condicionada al interés superior",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "152"
+     ],
+     "cita": "Será prioritario elegir la custodia y el ejercicio de la responsabilidad parental compartidas para ambos padres; para ello, se tomará en cuenta el interés superior del menor"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-GUA-042",
+   "archivo": "src/content/servicios/guarda-crianza.md",
+   "pagina": "/servicios/guarda-crianza",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-INS-001",
    "archivo": "src/lib/institucional.ts",
    "pagina": "/sobre-evelyn",
    "tema": "Libertad de aceptar asuntos",
    "texto": "El artículo 37 del Código de Deberes reconoce la libertad de aceptar o rechazar asuntos",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12092,7 +13295,9 @@
    "relacionadas": [
     "/"
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-002",
@@ -12124,7 +13329,7 @@
    "tema": "Deber de informar",
    "texto": "El Código de Deberes pide informar periódicamente el estado del asunto, cuando sea necesario",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12137,7 +13342,9 @@
    "relacionadas": [
     "/"
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-004",
@@ -12146,7 +13353,7 @@
    "tema": "Mandato para conciliar",
    "texto": "exige mandato específico para conciliar, transigir o desistir",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12159,7 +13366,9 @@
    "relacionadas": [
     "/"
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-005",
@@ -12168,7 +13377,7 @@
    "tema": "Conocimiento previo de la causa",
    "texto": "El artículo 32 del Código de Deberes exige obtener pleno conocimiento de la causa antes de aceptarla y emitir opinión",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12178,7 +13387,9 @@
      "cita": "deberán obtener pleno conocimiento de la causa de su cliente antes de aceptarla y emitir opinión sobre ella"
     }
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-006",
@@ -12187,7 +13398,7 @@
    "tema": "Secreto profesional",
    "texto": "El artículo 41 del Código de Deberes protege las confidencias hechas a una persona abogada con ocasión de su ejercicio, aun después de cesar la relación profesional",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12204,7 +13415,9 @@
      "cita": "La obligación de guardar secreto profesional perdura aún después de cesada la relación profesional"
     }
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-007",
@@ -12213,7 +13426,7 @@
    "tema": "Excepciones al secreto",
    "texto": "Los artículos 42 y 43 prevén excepciones, como la intención de cometer un ilícito",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12230,7 +13443,9 @@
      "cita": "Si un cliente comunica a su abogado o abogada la intención de cometer un ilícito, esta confidencia no es materia de secreto profesional"
     }
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-008",
@@ -12258,7 +13473,7 @@
    "tema": "No asegurar el éxito",
    "texto": "El artículo 33 del Código de Deberes impide asegurar el éxito o magnificar las dificultades",
    "tipo": "derecho_vigente",
-   "estado": "VERIFICADA",
+   "estado": "NO_VERIFICABLE",
    "respaldos": [
     {
      "norma": "CDJ",
@@ -12268,7 +13483,9 @@
      "cita": "No deberán asegurar nunca el éxito ni magnificar sus dificultades, sino exclusivamente exponer el amparo legal de la causa y sus probabilidades razonables"
     }
    ],
-   "consultado": "2026-11-05"
+   "consultado": "2026-11-05",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: no consta la colegiatura de Evelyn Elizondo; el artículo 1 del Código de Deberes limita su aplicación a personas inscritas. No se atribuye ese deber a quien presta el servicio. Restituir solo si consta la inscripción."
   },
   {
    "id": "FAM-INS-010",
@@ -12344,6 +13561,54 @@
    "estado": "NO_VERIFICABLE",
    "retirada": true,
    "motivo": "No consta un equipo y la frase está prohibida por la guía. Se sustituye por los deberes de CDJ arts. 34 y 35.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INS-015",
+   "archivo": "src/lib/institucional.ts",
+   "pagina": "/sobre-evelyn",
+   "tema": "Forma de trabajar",
+   "texto": "Antes de opinar se revisan hechos, documentos y plazos. La opinión expone lo favorable y lo desfavorable",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta. Requiere confirmación de Evelyn.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INS-016",
+   "archivo": "src/lib/institucional.ts",
+   "pagina": "/sobre-evelyn",
+   "tema": "Forma de trabajar",
+   "texto": "Allí se explican las vías posibles, con sus aspectos favorables y desfavorables.",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta. Requiere confirmación de Evelyn.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INS-017",
+   "archivo": "src/lib/institucional.ts",
+   "pagina": "/sobre-evelyn",
+   "tema": "Forma de trabajar",
+   "texto": "Las opciones, los riesgos y los plazos se explican con palabras comprensibles.",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica; se refiere ahora a los textos del sitio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INS-018",
+   "archivo": "src/lib/institucional.ts",
+   "pagina": "/sobre-evelyn",
+   "tema": "Forma de trabajar",
+   "texto": "Cuando hay personas menores de edad, ese criterio entra en el análisis desde el inicio.",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
    "consultado": "2026-11-05"
   },
   {
@@ -13112,7 +14377,7 @@
    "archivo": "src/content/servicios/interrelacion-familiar.md",
    "pagina": "/servicios/interrelacion-familiar",
    "tema": "Femicidio",
-   "texto": "el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
+   "texto": "pierde la posibilidad de tener un régimen de interrelación con ella y no puede ejercer su guarda, crianza y educación. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -13131,6 +14396,13 @@
      ],
      "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo de acuerdo con el interés superior de los hijos y las hijas menores de edad o por un cambio de circunstancias, con excepción de lo señalado en el párrafo 4",
      "reforma": "Ley 10263"
+    },
+    {
+     "norma": "CNA",
+     "articulos": [
+      "35"
+     ],
+     "cita": "no podrá ejercer su guarda, crianza y educación"
     }
    ],
    "consultado": "2026-11-05"
@@ -13193,6 +14465,133 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Vago. Se precisa con CF 152 y CPF 290.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-038",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Cómo pedir la suspensión",
+   "texto": "Esa suspensión se pide como medida de protección, de forma verbal o escrita, sin abrir antes un proceso de modificación del régimen (artículo 8)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal, con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: qué decir sobre no entregar a la persona menor de edad mientras se resuelve.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-039",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Orden inmediata",
+   "texto": "La autoridad competente debe ordenar de inmediato aplicar las medidas solicitadas (artículo 10)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "10"
+     ],
+     "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-040",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Quién debe solicitarlas",
+   "texto": "Si la persona afectada es menor de edad, también deben solicitarlas su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "7"
+     ],
+     "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-041",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Temor durante el contacto",
+   "texto": "pida medidas de protección sin esperar otro trámite",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-042",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Femicidio",
+   "texto": "el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 38 de la revisión adversarial: omitía que tampoco puede ejercer la guarda, crianza y educación.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-043",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Otros parientes",
+   "texto": "El artículo 133 del Código Procesal de Familia habla, para el régimen provisional, de quien pretenda el régimen, sin limitarlo a los progenitores",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "133"
+     ],
+     "cita": "la identidad y relación propia entre estas personas y quien pretenda el régimen"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-INT-044",
+   "archivo": "src/content/servicios/interrelacion-familiar.md",
+   "pagina": "/servicios/interrelacion-familiar",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
    "consultado": "2026-11-05"
   },
   {
@@ -14383,6 +15782,57 @@
    "retirada": true
   },
   {
+   "id": "FAM-PEN-057",
+   "archivo": "src/content/servicios/pensiones-alimentarias.md",
+   "pagina": "/servicios/pensiones-alimentarias",
+   "tema": "Prueba de los estudios",
+   "texto": "con buenos rendimientos y una carga académica razonable, requisitos que deben probarse (artículo 173)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "173"
+     ],
+     "cita": "Estos requisitos deberán probarse al interponer la demanda"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PEN-058",
+   "archivo": "src/content/servicios/pensiones-alimentarias.md",
+   "pagina": "/servicios/pensiones-alimentarias",
+   "tema": "Hijas e hijos incapaces",
+   "texto": "El artículo 169 también obliga respecto de hijas e hijos incapaces, por lo que la mayoría de edad no resuelve por sí sola esos casos",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "169"
+     ],
+     "cita": "Los padres y madres a sus hijos e hijas menores o incapaces"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: relación entre los artículos 169 y 173.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PEN-059",
+   "archivo": "src/content/servicios/pensiones-alimentarias.md",
+   "pagina": "/servicios/pensiones-alimentarias",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-PRI-001",
    "archivo": "src/pages/politica-de-privacidad.astro",
    "pagina": "/politica-de-privacidad",
@@ -14813,6 +16263,33 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-PRI-024",
+   "archivo": "src/pages/politica-de-privacidad.astro",
+   "pagina": "/politica-de-privacidad",
+   "tema": "Datos sensibles",
+   "texto": "El mismo artículo prohíbe tratar datos relativos a la salud, la vida y la orientación sexual, entre otros, salvo excepciones como las necesarias para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "L8968",
+     "articulos": [
+      "9"
+     ],
+     "cita": "Se prohíbe el tratamiento de datos de carácter personal que revelen el origen racial o étnico, opiniones políticas, convicciones religiosas, espirituales o filosóficas, así como los relativos a la salud, la vida y la orientación sexual, entre otros"
+    },
+    {
+     "norma": "L8968",
+     "articulos": [
+      "9"
+     ],
+     "cita": "necesarios para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: base jurídica si esos datos llegan por el formulario.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-POR-001",
    "archivo": "src/pages/index.astro",
    "pagina": "/",
@@ -14877,7 +16354,7 @@
    "archivo": "src/pages/index.astro",
    "pagina": "/",
    "tema": "Interés superior",
-   "texto": "Se considera el interés superior de las personas menores de edad",
+   "texto": "Cómo incide el interés superior de las personas menores de edad",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -14940,11 +16417,71 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-POR-009",
+   "archivo": "src/pages/index.astro",
+   "pagina": "/",
+   "tema": "Interés superior",
+   "texto": "Se considera el interés superior de las personas menores de edad",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: el punto dejó de describir una forma de trabajar.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-POR-010",
+   "archivo": "src/pages/index.astro",
+   "pagina": "/",
+   "tema": "Rótulo",
+   "texto": "Áreas de práctica",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: choca con el aviso jurídico y da por hecho servicios sin confirmar.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-POR-011",
+   "archivo": "src/pages/index.astro",
+   "pagina": "/",
+   "tema": "Forma de trabajar",
+   "texto": "Cada asunto se analiza con estos criterios:",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-POR-012",
+   "archivo": "src/pages/index.astro",
+   "pagina": "/",
+   "tema": "Forma de trabajar",
+   "texto": "Se exponen las vías posibles, con lo favorable y lo desfavorable.",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-POR-013",
+   "archivo": "src/pages/index.astro",
+   "pagina": "/",
+   "tema": "Forma de trabajar",
+   "texto": "Cómo se trabaja",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: rótulo sobre la práctica que no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-PFI-001",
    "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
    "pagina": "/blog/procedimientos-filiacion-paternidad",
    "tema": "Posesión notoria",
-   "texto": "existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así",
+   "texto": "Para el hijo de matrimonio, el artículo 80 del Código de Familia la describe como tratarlo como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros, de modo que estos y el vecindario lo reputen hijo",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -14954,13 +16491,6 @@
       "80"
      ],
      "cita": "La posesión notoria de estado del hijo consiste en que sus padres lo hayan tratado como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros"
-    },
-    {
-     "norma": "CF",
-     "articulos": [
-      "93"
-     ],
-     "cita": "consiste en que sus presuntos padres lo hayan tratado como hijo, o dado sus apellidos, o proveído sus alimentos, o presentado como hijo a terceros"
     }
    ],
    "consultado": "2026-11-05"
@@ -14970,7 +16500,7 @@
    "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
    "pagina": "/blog/procedimientos-filiacion-paternidad",
    "tema": "Apreciación",
-   "texto": "En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente",
+   "texto": "Para el extramatrimonial, el artículo 93 enumera esas circunstancias en forma alternativa, y el juez las aprecia discrecionalmente",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -14980,6 +16510,13 @@
       "93"
      ],
      "cita": "circunstancias todas que serán apreciadas discrecionalmente por el Juez"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "93"
+     ],
+     "cita": "lo hayan tratado como hijo, o dado sus apellidos, o proveído sus alimentos, o presentado como hijo a terceros"
     }
    ],
    "consultado": "2026-11-05"
@@ -15721,14 +17258,14 @@
     {
      "norma": "CF",
      "articulos": [
-      "77"
+      "78"
      ],
      "cita": "Sobre la filiación no puede haber transacción ni compromiso en árbitros, pero puede haber transacción o arbitramento sobre los derechos pecuniarios"
     },
     {
      "norma": "CF",
      "articulos": [
-      "77"
+      "78"
      ],
      "cita": "La transacción o el compromiso tratándose de menores de edad u otros incapaces, requieren aprobación del Tribunal"
     }
@@ -15770,6 +17307,77 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Se detallan los límites de 25 años y del documento hallado.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFI-039",
+   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+   "pagina": "/blog/procedimientos-filiacion-paternidad",
+   "tema": "Posesión notoria",
+   "texto": "existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 21 de la revisión adversarial: aplicaba al artículo 80 el «o» del artículo 93; el 80 usa «y».",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFI-040",
+   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+   "pagina": "/blog/procedimientos-filiacion-paternidad",
+   "tema": "Apreciación",
+   "texto": "En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 21 de la revisión adversarial: se distinguen los artículos 80 y 93.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFI-041",
+   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+   "pagina": "/blog/procedimientos-filiacion-paternidad",
+   "tema": "Paternidad por presunción",
+   "texto": "si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "84"
+     ],
+     "cita": "por motivo de la presunción de paternidad de un padre que no corresponde a la verdad biológica, se podrá pedir su reconocimiento por quien corresponda ante el Registro Civil"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "84"
+     ],
+     "cita": "Si sucediera una oposición fundada del padre o la madre registrales, el asunto deberá conocerse jurisdiccionalmente mediante el proceso resolutivo familiar"
+    }
+   ],
+   "excepciones": "Hallazgo 22: la propuesta decía «oposición»; el artículo 84 dice «oposición fundada». Pendiente de persona abogada: legitimación actual de madre e hijo.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFI-042",
+   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+   "pagina": "/blog/procedimientos-filiacion-paternidad",
+   "tema": "Plazo del artículo 88",
+   "texto": "La Sala Constitucional anuló un límite de dos años semejante en el artículo 86, según la nota citada",
+   "tipo": "jurisprudencia_nota_sinalevi",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "86"
+     ],
+     "cita": "La acción del hijo no será admisible después de dos años contados desde la mayoría de edad"
+    }
+   ],
+   "excepciones": "Solo se conoce por la nota de SINALEVI. Pendiente de persona abogada: si el plazo del artículo 88 sigue aplicándose.",
    "consultado": "2026-11-05"
   },
   {
@@ -16697,7 +18305,7 @@
    "archivo": "src/content/servicios/proteccion-familiar.md",
    "pagina": "/servicios/proteccion-familiar",
    "tema": "Relación terminada",
-   "texto": "El artículo 2 indica que el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
+   "texto": "el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -16709,7 +18317,6 @@
      "cita": "El vínculo por afinidad subsistirá, aun cuando haya finalizado la relación que lo originó."
     }
    ],
-   "excepciones": "Otras situaciones requieren análisis; así lo dice el texto.",
    "consultado": "2026-11-05"
   },
   {
@@ -16809,7 +18416,7 @@
    "archivo": "src/content/servicios/proteccion-familiar.md",
    "pagina": "/servicios/proteccion-familiar",
    "tema": "Sin recurso contra la primera resolución",
-   "texto": "Las medidas se aplican desde que se ordenan y contra esa primera resolución no cabe recurso (artículo 10)",
+   "texto": "La autoridad ordena las medidas de inmediato y contra esa primera resolución no cabe recurso (artículo 10)",
    "tipo": "derecho_vigente",
    "estado": "VERIFICADA",
    "respaldos": [
@@ -16819,6 +18426,13 @@
       "10"
      ],
      "cita": "no cabrá recurso alguno contra ella"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "10"
+     ],
+     "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
     }
    ],
    "consultado": "2026-11-05"
@@ -17002,6 +18616,544 @@
    "estado": "SIN_RESPALDO",
    "retirada": true,
    "motivo": "Título sustituido por uno descriptivo. Se añadió que ninguna medida garantiza por sí sola la seguridad.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-097",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Relación terminada",
+   "texto": "El artículo 2 indica que el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 1 de la revisión adversarial: «depende» y «requieren análisis» disuadían de pedir medidas; ninguna norma exige un análisis previo.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-098",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Relación terminada",
+   "texto": "Depende del vínculo.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 1 de la revisión adversarial: respuesta que disuadía de presentar la solicitud.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-099",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Relación terminada",
+   "texto": "Otras situaciones requieren análisis.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 1 de la revisión adversarial: ninguna norma exige un análisis previo a la solicitud.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-100",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Definición del vínculo",
+   "texto": "Si una relación no encaja con claridad en estas definiciones, el punto requiere análisis jurídico.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 1 de la revisión adversarial: sustituido: la solicitud puede presentarse y lo valora la autoridad judicial.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-101",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Relación terminada",
+   "texto": "Sí puede presentar la solicitud aunque la relación haya terminado. La ley protege en particular a las víctimas de violencia en las relaciones de pareja (artículo 1)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "1"
+     ],
+     "cita": "esta Ley protegerá, en particular, a las víctimas de violencia en las relaciones de pareja"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: alcance para exparejas sin convivencia ni matrimonio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-102",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Vínculo dudoso",
+   "texto": "Si no está claro que su vínculo encaje en la definición, lo valora la autoridad judicial: no hace falta aclararlo antes de pedir las medidas",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "9"
+     ],
+     "cita": "La falta de indicación de pruebas no impedirá que la autoridad judicial dé curso a la solicitud"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "14"
+     ],
+     "cita": "La autoridad judicial resolverá con base en las reglas de la sana crítica racional"
+    }
+   ],
+   "excepciones": "Presentar la solicitud no asegura que se concedan las medidas. Pendiente de persona abogada: alcance del artículo 2 para exparejas.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-103",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Vínculo dudoso",
+   "texto": "la solicitud puede presentarse igualmente y la autoridad judicial lo valora",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "14"
+     ],
+     "cita": "La autoridad judicial resolverá con base en las reglas de la sana crítica racional"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-104",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Sin consulta ni patrocinio",
+   "texto": "No necesita una consulta previa ni contratar a una persona abogada para pedirlas",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "50"
+     ],
+     "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal"
+    }
+   ],
+   "fuenteExterna": {
+    "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+    "titulo": "Poder Judicial, Servicios",
+    "cita": "Indica que no requiere abogada o abogado"
+   },
+   "excepciones": "Pendiente de persona abogada: que el artículo 50, inciso 4, del Código Procesal de Familia alcance a las medidas de la Ley N.º 7586.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-105",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Autenticación",
+   "texto": "Si presenta personalmente la solicitud escrita, esta no requiere autenticación (artículo 8)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "La solicitud escrita solo requerirá autenticación cuando quien la formula no la presente personalmente"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-106",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Patrocinio letrado",
+   "texto": "el artículo 50 del Código Procesal de Familia exceptúa de patrocinio letrado la protección cautelar",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "50"
+     ],
+     "cita": "4) Protección cautelar"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-107",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Urgencia y competencia",
+   "texto": "En una urgencia, si no puede acudir al despacho que corresponde por territorio, la petición puede plantearse en cualquier despacho competente por la materia (artículo 17 del Código Procesal de Familia)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "17"
+     ],
+     "cita": "ante casos de urgencias e imposibilidad de acudir al despacho competente según el territorio, se puede plantear la respectiva petición en cualquier despacho competente por la materia"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-108",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Título de situaciones",
+   "texto": "Cuándo buscar orientación",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 2 de la revisión adversarial: precedía a una invitación a consultar en la página sobre violencia.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-109",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Legitimación",
+   "texto": "En ciertos casos, otra persona o una institución puede solicitarlas (artículo 7)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 34 de la revisión adversarial: el artículo 7 dice «deberán» para personas menores de edad o con discapacidad.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-110",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Legitimación",
+   "texto": "Para personas menores de edad o con discapacidad, la ley dice que también deben solicitarlas (artículo 7)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "7"
+     ],
+     "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-111",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Temor al abandono",
+   "texto": "Si teme que salir del hogar se interprete como abandono (artículos 58 y 173 del Código de Familia), puede pedir que se le autorice un domicilio diferente (artículo 3, inciso b)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "58"
+     ],
+     "cita": "El abandono voluntario y malicioso que uno de los cónyuges haga del otro"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "173"
+     ],
+     "cita": "Cuando el cónyuge haya incurrido en abandono voluntario y malicioso del hogar"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "Autorizar a la presunta persona agredida un domicilio diferente del común, previa solicitud suya"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: redacción sobre el abandono y criterio jurisprudencial, si existe.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-112",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Vencimiento",
+   "texto": "El artículo 4 no regula una renovación. Si el riesgo continúa, no espere al vencimiento: busque asesoría, por ejemplo la que el artículo 17 encarga al Instituto Nacional de las Mujeres",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "4"
+     ],
+     "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "17"
+     ],
+     "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: si procede una nueva solicitud y con qué requisitos.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-113",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Delito de incumplimiento",
+   "texto": "La Ley N.º 7586 lo nombra, pero no lo describe ni fija su pena",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección"
+    }
+   ],
+   "excepciones": "La Ley N.º 8589 no está en la copia oficial. Pendiente de persona abogada: tipo penal y ámbito.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-114",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Conciliación",
+   "texto": "Nada de esto obliga a una persona a reunirse o negociar con quien ejerce violencia",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 46 de la revisión adversarial: conclusión sin norma que la diga; se atribuye a lo que los artículos no imponen.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-115",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Conciliación",
+   "texto": "Los artículos 9 y 196 no imponen a la persona afectada reunirse o negociar con quien ejerce violencia",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CPF",
+     "articulos": [
+      "9"
+     ],
+     "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+    },
+    {
+     "norma": "CPF",
+     "articulos": [
+      "196"
+     ],
+     "cita": "el caso podrá abordarse mediante los mecanismos propios de justicia restaurativa, si cumple con los criterios de admisibilidad y viabilidad"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: carácter voluntario según la Ley N.º 9582, que no está en la copia oficial.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-116",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Sin recurso contra la primera resolución",
+   "texto": "Las medidas se aplican desde que se ordenan y contra esa primera resolución no cabe recurso (artículo 10)",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 4 de la revisión adversarial: la norma manda ordenar de inmediato; no dice que la medida ya esté cumplida ni notificada.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-117",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Aplicación de medidas",
+   "texto": "Aplicación inmediata",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 4 de la revisión adversarial: el título del paso sugería una medida ya cumplida; el artículo 10 habla de ordenar.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-118",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Título",
+   "texto": "las medidas de protección que puede ordenar un juzgado",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 11 de la revisión adversarial: el artículo 3 dice «ordenará».",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-119",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Título",
+   "texto": "las medidas de protección que ordena un juzgado",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "la autoridad competente ordenará cualquiera de las siguientes medidas de protección"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-120",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Sin pruebas",
+   "texto": "La solicitud no se detiene por eso.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 12 de la revisión adversarial: omitía que la prueba cuenta si hay audiencia.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-121",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Sin pruebas",
+   "texto": "La falta de indicación de pruebas no impide dar curso a la solicitud (artículo 9)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "9"
+     ],
+     "cita": "La falta de indicación de pruebas no impedirá que la autoridad judicial dé curso a la solicitud"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-122",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Prueba en la audiencia",
+   "texto": "Si luego se convoca a una audiencia, la prueba se valora para decidir si las medidas se mantienen (artículo 14), y en caso de duda se está a lo más favorable para el supuesto agredido (artículo 13)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "14"
+     ],
+     "cita": "el juzgado resolverá, de inmediato, si las medidas aplicadas se mantienen en ejecución o no"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "13"
+     ],
+     "cita": "se estará a lo más favorable para el supuesto agredido"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-123",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Qué reunir",
+   "texto": "Pruebas, si existen: mensajes, fotografías, constancias médicas o nombres de testigos",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 13 de la revisión adversarial: una lista de qué reunir podía llevar a exponerse; la norma no pide reunirlas.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-124",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Qué reunir",
+   "texto": "Pruebas, solo si ya las tiene y puede conservarlas sin riesgo",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "9"
+     ],
+     "cita": "Las pruebas, si existen"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-125",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Línea 1147",
+   "texto": "línea gratuita 1147 para niñas, niños y adolescentes",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "respaldos": [],
+   "fuenteExterna": {
+    "url": "https://pani.go.cr/pani-recuerda-a-ninos-y-ninas-que-la-linea-gratuita-1147-es-para-ellos-y-ellas/",
+    "titulo": "Patronato Nacional de la Infancia: PANI recuerda a niños y niñas que la línea gratuita 1147 es para ellos y ellas",
+    "cita": "línea gratuita 1147"
+   },
+   "excepciones": "Hallazgo 15. Solo se publica la existencia de la línea, como en guarda y crianza. El horario no se publica: fuentes-verificadas.json lo marca NO_VERIFICABLE (FV-EMER-09).",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PFA-126",
+   "archivo": "src/content/servicios/proteccion-familiar.md",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Título",
+   "texto": "Uso indebido de la ley",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 35 de la revisión adversarial: el título podía disuadir a quien teme ser acusado de abusar de la ley.",
    "consultado": "2026-11-05"
   },
   {
@@ -17619,6 +19771,212 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-PJV-092",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Aplicación de medidas",
+   "texto": "se aplican de inmediato al plantearse la solicitud",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 4 de la revisión adversarial: el artículo 10 manda ordenar; la orden aún debe notificarse y ejecutarse.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PJV-093",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Aplicación de medidas",
+   "texto": "Planteada la solicitud, la autoridad competente debe ordenar de inmediato aplicar las medidas de la Ley contra la Violencia Doméstica, N.º 7586 (artículo 10)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "10"
+     ],
+     "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PJV-094",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Notificación y ejecución",
+   "texto": "Esa orden todavía debe notificarse y ejecutarse",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "10"
+     ],
+     "cita": "Esta resolución deberá notificarse"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "17"
+     ],
+     "cita": "La autoridad judicial deberá revisar los resultados de la ejecución de las medidas"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PJV-095",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Vencimiento",
+   "texto": "La ley no prevé en ese artículo una renovación, de modo que lo procedente al acercarse el vencimiento debe revisarse con asesoría si el riesgo continúa.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 10 de la revisión adversarial: la redacción no decía qué hacer ni a quién acudir.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PJV-096",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Vencimiento",
+   "texto": "El artículo 4 no regula una renovación. Si el riesgo continúa, no espere al vencimiento: busque asesoría, por ejemplo la que el artículo 17 encarga al Instituto Nacional de las Mujeres",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "4"
+     ],
+     "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "17"
+     ],
+     "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: si procede una nueva solicitud y con qué requisitos.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-PJV-097",
+   "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+   "pagina": "/blog/proteccion-juridica-violencia-domestica",
+   "tema": "Delito de incumplimiento",
+   "texto": "La Ley N.º 7586 nombra ese delito, pero no lo describe ni fija su pena",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección"
+    }
+   ],
+   "excepciones": "La Ley N.º 8589 no está en la copia oficial. Pendiente de persona abogada: tipo penal y ámbito.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RAY-001",
+   "archivo": "src/components/sections/RecursosAyuda.astro",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "9-1-1 para violencia",
+   "texto": "para situaciones de violencia, todos los días del año, las 24 horas",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "fuenteExterna": {
+    "url": "https://www.inamu.go.cr/en/contacto",
+    "titulo": "INAMU, Contacto",
+    "cita": "Situaciones de violencia: 9-1-1 todos los días del año (24-7)"
+   },
+   "relacionadas": [
+    "/blog/proteccion-juridica-violencia-domestica"
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RAY-002",
+   "archivo": "src/components/sections/RecursosAyuda.astro",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Transferencia a la línea del INAMU",
+   "texto": "pedir a la operadora u operador que transfiera a la línea directa del INAMU",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "fuenteExterna": {
+    "url": "https://www.inamu.go.cr/web/inamu/preguntas-frecuentes",
+    "titulo": "INAMU, Preguntas frecuentes",
+    "cita": "Por medio de la plataforma del 9-1-1 y solicitar a la operadora u operador que le transfiera a la línea directa del INAMU."
+   },
+   "relacionadas": [
+    "/blog/proteccion-juridica-violencia-domestica"
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RAY-003",
+   "archivo": "src/components/sections/RecursosAyuda.astro",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Juzgados disponibles",
+   "texto": "están disponibles las 24 horas",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "fuenteExterna": {
+    "url": "https://observatoriodegenero.poder-judicial.go.cr/index.php/soy-mujer-y-busco/averiguar-sobre-violencia-domestica",
+    "titulo": "Poder Judicial, Observatorio de Género",
+    "cita": "En los Juzgados de Violencia Doméstica que están disponibles las 24 horas del día."
+   },
+   "relacionadas": [
+    "/blog/proteccion-juridica-violencia-domestica"
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RAY-004",
+   "archivo": "src/components/sections/RecursosAyuda.astro",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Sin abogada ni abogado",
+   "texto": "no se requiere abogada o abogado",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "fuenteExterna": {
+    "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+    "titulo": "Poder Judicial, Servicios",
+    "cita": "Indica que no requiere abogada o abogado"
+   },
+   "relacionadas": [
+    "/blog/proteccion-juridica-violencia-domestica"
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RAY-005",
+   "archivo": "src/components/sections/RecursosAyuda.astro",
+   "pagina": "/servicios/proteccion-familiar",
+   "tema": "Línea 1125",
+   "texto": "de lunes a viernes, de 8:00 a. m. a 4:00 p. m.",
+   "tipo": "criterio_administrativo",
+   "estado": "VERIFICADA",
+   "fuenteExterna": {
+    "url": "https://www.inamu.go.cr/en/contacto",
+    "titulo": "INAMU, Contacto",
+    "cita": "Derechos de las mujeres: 1125 de lunes a viernes de 8:00 a.m. a 4:00 p.m."
+   },
+   "relacionadas": [
+    "/blog/proteccion-juridica-violencia-domestica"
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-RIF-001",
    "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
    "pagina": "/blog/regimen-interrelacion-familiar",
@@ -18007,6 +20365,70 @@
    "consultado": "2026-11-05"
   },
   {
+   "id": "FAM-RIF-021",
+   "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+   "pagina": "/blog/regimen-interrelacion-familiar",
+   "tema": "Perjuicio",
+   "texto": "Si de la investigación resulta un perjuicio, la vía es pedir a la autoridad judicial que modifique o suspenda el contacto.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 6 de la revisión adversarial: «la vía» sugería una sola salida, posterior a la investigación del PANI.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RIF-022",
+   "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+   "pagina": "/blog/regimen-interrelacion-familiar",
+   "tema": "Perjuicio",
+   "texto": "Si de la investigación resulta un perjuicio, puede pedirse a la autoridad judicial que modifique o suspenda el contacto",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CNA",
+     "articulos": [
+      "35"
+     ],
+     "cita": "deberá modificar o suspender el ejercicio de estos derechos"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-RIF-023",
+   "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+   "pagina": "/blog/regimen-interrelacion-familiar",
+   "tema": "Violencia sin esperar",
+   "texto": "Si hay violencia, no hace falta esperar esa investigación: pueden pedirse medidas de protección de forma verbal o escrita y, tratándose de una persona menor de edad, cualquier persona que conozca la situación debe solicitarlas (artículos 3, inciso h, 7 y 8 de la Ley contra la Violencia Doméstica)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "3"
+     ],
+     "cita": "Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "7"
+     ],
+     "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+    },
+    {
+     "norma": "LCVD",
+     "articulos": [
+      "8"
+     ],
+     "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+    }
+   ],
+   "consultado": "2026-11-05"
+  },
+  {
    "id": "FAM-SOB-001",
    "archivo": "src/pages/sobre-evelyn.astro",
    "pagina": "/sobre-evelyn",
@@ -18131,6 +20553,98 @@
    "estado": "NO_VERIFICABLE",
    "retirada": true,
    "motivo": "Dato no confirmado y autoelogio.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-009",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Alcance del Código de Deberes",
+   "texto": "es de aplicación forzosa para las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CDJ",
+     "articulos": [
+      "1"
+     ],
+     "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+    }
+   ],
+   "excepciones": "Explicación general. No afirma que Evelyn Elizondo esté inscrita: no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-010",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Publicidad",
+   "texto": "Por eso este sitio explica normas y procedimientos, sin calificarse a sí mismo.",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 31 de la revisión adversarial: declarar que no se autocalifica es autocalificarse.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-011",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Título",
+   "texto": "Normativa al día",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 31 de la revisión adversarial: es un mérito; se cambia por «Fecha de las normas».",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-012",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Forma de trabajar",
+   "texto": "Esos elementos se revisan antes de sugerir una vía.",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-013",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Título",
+   "texto": "Criterios que se aplican a cada consulta",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: presentaba deberes del Código como criterios aplicados, sin que conste la colegiatura.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-014",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Título",
+   "texto": "Tres reglas de trabajo",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 9 de la revisión adversarial: afirmación sobre la práctica que no consta.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-SOB-015",
+   "archivo": "src/pages/sobre-evelyn.astro",
+   "pagina": "/sobre-evelyn",
+   "tema": "Descripción",
+   "texto": "secreto profesional y límites de la publicidad",
+   "tipo": "derecho_vigente",
+   "estado": "NO_VERIFICABLE",
+   "retirada": true,
+   "motivo": "Hallazgo 3 de la revisión adversarial: la descripción de la página ofrecía secreto profesional sin que conste la colegiatura.",
    "consultado": "2026-11-05"
   },
   {
@@ -19515,6 +22029,52 @@
    "estado": "REQUIERE_CORRECCION",
    "retirada": true,
    "motivo": "Redundante frente a los requisitos del art. 245, que ya se explican.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-UNI-034",
+   "archivo": "src/content/servicios/union-de-hecho.md",
+   "pagina": "/servicios/union-de-hecho",
+   "tema": "Remisión al artículo 48",
+   "texto": "El artículo 246 remite a la forma de trámite del artículo 48, que hoy incluye la vía del Registro Civil y un plazo de tres meses para presentar el convenio ante la autoridad judicial",
+   "tipo": "derecho_vigente",
+   "estado": "VERIFICADA",
+   "respaldos": [
+    {
+     "norma": "CF",
+     "articulos": [
+      "246"
+     ],
+     "cita": "se deberán seguir los requisitos y la forma de trámite establecidos en el artículo 48"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "48"
+     ],
+     "cita": "la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+    },
+    {
+     "norma": "CF",
+     "articulos": [
+      "48"
+     ],
+     "cita": "dentro de los tres meses siguientes a su celebración notarial"
+    }
+   ],
+   "excepciones": "Pendiente de persona abogada: cómo se aplican al reconocimiento de la unión.",
+   "consultado": "2026-11-05"
+  },
+  {
+   "id": "FAM-UNI-035",
+   "archivo": "src/content/servicios/union-de-hecho.md",
+   "pagina": "/servicios/union-de-hecho",
+   "tema": "Título de situaciones",
+   "texto": "Situaciones en las que puede ser útil asesorarse",
+   "tipo": "derecho_vigente",
+   "estado": "REQUIERE_CORRECCION",
+   "retirada": true,
+   "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
    "consultado": "2026-11-05"
   }
  ]

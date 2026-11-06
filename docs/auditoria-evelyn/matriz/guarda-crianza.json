@@ -767,5 +767,145 @@
   "texto": "No existe un modelo de custodia ideal para todos los casos; cada solución debe responder al bienestar de la persona menor de edad.",
   "motivo": "Afirmación general sin norma; se sustituye por la prioridad y el criterio del art. 152 CF.",
   "retirada": true
+ },
+ {
+  "id": "FAM-GUA-036",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Entrada",
+  "texto": "Al terminar una relación, los progenitores deben acordar o pedir que se resuelva la custodia",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 7 de la revisión adversarial: «una relación» es más amplio que el artículo 152, y faltaba una salida expresa para quien sufre violencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-037",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Entrada",
+  "texto": "Al terminar un matrimonio o una unión de hecho, los progenitores deben acordar la custodia, los alimentos, la educación y la interrelación familiar o, sin acuerdo, lo dispone el tribunal, según el interés superior de la persona menor de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-038",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Sin negociar",
+  "texto": "Si hay violencia, no tiene que negociar para pedir protección",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-039",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Suspensión y guarda protectora",
+  "texto": "La autoridad puede suspender provisionalmente a la presunta persona agresora la guarda, crianza y educación, y confiar la guarda protectora a quien considere idóneo cuando corresponda (artículo 3, incisos f e i, de la Ley N.º 7586)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "se podrá suspender provisionalmente a la presunta persona agresora el ejercicio de la guarda, crianza y educación de sus hijos e hijas menores de edad"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Confiar la guarda protectora a quien la autoridad judicial considere idóneo para esa función"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-040",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Cómo se pide",
+  "texto": "Se pide de forma verbal o escrita, sin otro proceso (artículo 8), y para personas menores de edad también deben solicitarlo su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-041",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Prioridad condicionada",
+  "texto": "La prioridad de la custodia compartida está condicionada al interés superior",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "Será prioritario elegir la custodia y el ejercicio de la responsabilidad parental compartidas para ambos padres; para ello, se tomará en cuenta el interés superior del menor"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GUA-042",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+  "consultado": "2026-11-05"
  }
 ]

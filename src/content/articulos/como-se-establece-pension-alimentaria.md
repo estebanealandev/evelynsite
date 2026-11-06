@@ -14,7 +14,7 @@ fuentes:
   - ref: "CF"
     detalle: "arts. 96, 164, 168, 172"
   - ref: "CPF"
-    detalle: "arts. 9, 50, 56, 101, 257, 259, 263, 265, 267 a 273, 275, 280"
+    detalle: "arts. 9, 50, 56, 101, 257, 259, 263, 265, 267 a 273, 275, 280, 283, 285"
   - ref: "L9747"
     detalle: "art. 4 y transitorios"
 ---
@@ -41,7 +41,7 @@ La conciliación tiene un límite: se prohíbe cuando se constaten relaciones de
 
 ## 3. La sentencia anticipada
 
-Si la audiencia no se realiza en el plazo o no hay conciliación, se dicta dentro de las veinticuatro horas siguientes al vencimiento (artículo 270). Debe contener, entre otros puntos:
+Si por cualquier motivo la audiencia no se realiza en el plazo o no hay conciliación, se dicta dentro de las veinticuatro horas siguientes al vencimiento (artículo 270). Debe contener, entre otros puntos:
 
 - La razón y el fundamento del derecho.
 - El monto razonado de la cuota mensual para cada persona beneficiaria.
@@ -69,6 +69,6 @@ Si en el proceso se decide que quien pagó no es obligado preferente o que la pe
 
 El Código de Familia no fija un porcentaje único. El artículo 164 atiende las posibilidades económicas y el capital de quien debe darlos, y las necesidades, el nivel de vida acostumbrado y los bienes de quien los recibe.
 
-## Si hay cuotas de antes de la demanda
+## Si se reclaman alimentos de antes de la demanda
 
-Los alimentos pasados solo se cobran por los doce meses anteriores a la demanda, y si la persona alimentaria tuvo que contraer deudas para vivir (artículo 172 del Código de Familia). En la declaración de paternidad, el artículo 96 prevé una regla propia, con retroactividad a la fecha de presentación de la demanda.
+Los alimentos pasados solo se cobran por los doce meses anteriores a la demanda, y si la persona alimentaria tuvo que contraer deudas para vivir (artículo 172 del Código de Familia). En la declaración de paternidad, el artículo 96 prevé una regla propia, con retroactividad a la fecha de presentación de la demanda. No debe confundirse con las cuotas ya fijadas y no pagadas, que tienen sus propias vías de cobro (artículos 283 y 285 del Código Procesal de Familia).

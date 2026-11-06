@@ -237,7 +237,7 @@
   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
   "tema": "Prohibición de conciliar",
-  "texto": "Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+  "texto": "Se prohíbe cuando se constaten relaciones desiguales de poder",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -371,7 +371,7 @@
   "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
   "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
   "tema": "Secreto profesional",
-  "texto": "la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho)",
+  "texto": "la obligación perdura después de cesar la relación (artículo 41)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -450,6 +450,119 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "Sin artículo. Se citaron los arts. 63 y 121 del CPF con sus condiciones.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-094",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Conciliación",
+  "texto": "Puede intentarse cuando procede.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 8 de la revisión adversarial: el artículo 9 dice «se intentará».",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-095",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Conciliación",
+  "texto": "No es un paso que deba aceptar si existe violencia o temor.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 8 de la revisión adversarial: la prohibición exige constatación y «temor» no figura en la norma.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-096",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Prohibición de conciliar",
+  "texto": "Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 8 de la revisión adversarial: frase reescrita junto con el resto del punto.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-097",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Conciliación",
+  "texto": "Cuando procede, la norma manda intentarla, y en pensiones alimentarias el tribunal convoca a una audiencia previa (artículos 9 y 269 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "cita": "cuando proceda, se intentará la conciliación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "el tribunal convocará a las partes a una audiencia previa de conciliación"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: efectos de no comparecer y cómo pedir que no se realice.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-098",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Convocatoria",
+  "texto": "Una convocatoria no obliga a aceptar un acuerdo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "no prosperara en ella una conciliación entre las partes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-099",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Secreto profesional",
+  "texto": "la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: se aclara a quién se aplica el Código de Deberes.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-100",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Alcance del Código de Deberes",
+  "texto": "se aplica a las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "1"
+    ],
+    "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+   }
+  ],
   "consultado": "2026-11-05"
  }
 ]

@@ -5,6 +5,7 @@ import PageHero from '../../components/ui/PageHero.astro';
 import PostsSection from '../../components/sections/PostsSection.astro';
 import Cta from '../../components/sections/Cta.astro';
 import SeguridadNavegacion from '../../components/sections/SeguridadNavegacion.astro';
+import RecursosAyuda from '../../components/sections/RecursosAyuda.astro';
 import { em, fechaLarga } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
 import { site } from '../../config/site';
@@ -22,11 +23,12 @@ const articulos = (await getCollection('articulos')).filter(a => a.data.servicio
 const otros = (await getCollection('articulos')).filter(a => !a.data.servicios.includes(servicio.id));
 const lecturas = [...articulos, ...otros].slice(0, 3);
 const crumbs = [{ label: 'Áreas', href: '/servicios' }, { label: d.titulo }];
+const riesgo = servicio.id === 'proteccion-familiar';
 const secciones = [
   ['en-breve', 'En breve'],
   ['que-dice-la-ley', '¿Qué dice la ley?'],
   ['con-mas-detalle', 'Con más detalle'],
-  ['cuando-asesorarse', '¿Cuándo asesorarse?'],
+  ['cuando-asesorarse', d.situaciones.titulo],
   ['como-es-el-tramite', '¿Cómo es el trámite?'],
   ['a-tener-presente', 'A tener presente'],
   ...(d.preguntas.length ? [['preguntas', 'Preguntas frecuentes']] : []),
@@ -35,9 +37,9 @@ const secciones = [
 ];
 ---
 <Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura salidaRapida={servicio.id === 'proteccion-familiar'}>
-  <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={`Área de práctica ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
+  <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={`Tema ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
   {d.aviso && <div class="wrap" style="margin-top:28px"><p class="notice notice--urgent" role="note">{d.aviso}</p></div>}
-  {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /></div>}
+  {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /><RecursosAyuda /></div>}
 
   <div class="wrap g12 read">
     <details class="toc" open data-toc>
@@ -73,7 +75,7 @@ const secciones = [
       <section class="read__section" id="cuando-asesorarse">
         <h2>{d.situaciones.titulo}</h2>
         <ul class="rows rows--cols">{d.situaciones.items.map((s: string) => <li>{s}</li>)}</ul>
-        <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+        {!riesgo && <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>}
       </section>
 
       <section class="read__section" id="como-es-el-tramite">
@@ -124,5 +126,6 @@ const secciones = [
   </div>
 
   <PostsSection titulo="Para seguir leyendo" posts={lecturas} bg="bg-ivory" />
-  <Cta imagen={d.imagenAncha} />
+  {/* Quien lee sobre violencia no necesita una consulta para pedir medidas: esta página no la propone. */}
+  {!riesgo && <Cta imagen={d.imagenAncha} />}
 </Base>

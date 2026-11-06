@@ -371,7 +371,7 @@
   "estado": "VERIFICADA",
   "consultado": "2026-11-05",
   "tema": "Daños y perjuicios",
-  "texto": "El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48",
+  "texto": "El artículo 48 bis permite al cónyuge inocente pedirlos cuando el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48, conjuntamente con la acción de separación o de divorcio",
   "respaldos": [
    {
     "norma": "CF",
@@ -487,5 +487,113 @@
   "texto": "Limitada a los requisitos del trámite",
   "motivo": "La norma no lo formula así; la fila se retira de la comparación.",
   "retirada": true
+ },
+ {
+  "id": "FAM-DCC-023",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Daños y perjuicios",
+  "texto": "El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 24 de la revisión adversarial: el «solo» no está en la norma.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DCC-024",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Otros reclamos",
+  "texto": "Si otros hechos pueden fundar un reclamo requiere análisis (artículo 222, inciso 10, del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "10) Los reclamos de daños y perjuicios"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DCC-025",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Límites de la separación judicial",
+  "texto": "El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "59"
+    ],
+    "cita": "Por el cónyuge inocente en el caso de los incisos 1), 2), 3) y 4) del artículo anterior"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "59"
+    ],
+    "cita": "Caducarán tales acciones en un término de dos años, salvo las que se fundamentan en los incisos 2), 3), 5) y 8) indicados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DCC-026",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Alimentos en el convenio",
+  "texto": "En un convenio, el punto lo definen los cónyuges.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 37 de la revisión adversarial: omitía la tensión con la irrenunciabilidad del artículo 167.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DCC-027",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Alimentos en el convenio",
+  "texto": "En un convenio debe establecerse si existe o no esa obligación y su monto. Cómo se armoniza con la irrenunciabilidad del artículo 167 requiere análisis",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "El establecimiento del derecho o no de obligación alimentaria entre los cónyuges y el monto en que se obligan"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "167"
+    ],
+    "cita": "El derecho a los alimentos no podrá renunciarse"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DCC-028",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tema": "Título",
+  "texto": "Pasar del conflicto al acuerdo",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 47 de la revisión adversarial: el título empujaba hacia el acuerdo.",
+  "consultado": "2026-11-05"
  }
 ]

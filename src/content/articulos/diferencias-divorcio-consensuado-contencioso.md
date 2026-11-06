@@ -12,7 +12,7 @@ destacado: true
 servicios: ["divorcios"]
 fuentes:
   - ref: "CF"
-    detalle: "arts. 48, 48 bis, 49, 52, 57, 58"
+    detalle: "arts. 48, 48 bis, 49, 52, 57, 58, 59, 167"
   - ref: "CPF"
     detalle: "arts. 9, 222, 223, 225, 226, 228, 230, 231, 232, 233, 293"
 ---
@@ -43,7 +43,7 @@ En las demás causales rige la regla general:
 - Separación judicial por un plazo no menor de un año, sin reconciliación.
 - Ausencia del cónyuge legalmente declarada, en cuyo caso actúa el cónyuge presente, y el tribunal nombra un curador ad litem a la parte demandada.
 
-La separación de hecho exige un plazo no menor de tres años. Si el plazo aún no se cumplió, puede ser relevante la separación judicial, que tiene otras causales (artículo 58), entre ellas la separación de hecho durante un año consecutivo ocurrida después de dos años de verificado el matrimonio.
+La separación de hecho exige un plazo no menor de tres años. Si el plazo aún no se cumplió, puede ser relevante la separación judicial, que tiene otras causales (artículo 58), entre ellas la separación de hecho durante un año consecutivo ocurrida después de dos años de verificado el matrimonio. El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58.
 
 ## El plazo de un año y la reconciliación
 
@@ -65,10 +65,10 @@ La sentencia integral debe dictarse y notificarse dentro del quinto día posteri
 
 ## Efectos que dependen de la vía
 
-- **Daños y perjuicios.** El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48, y debe hacerlo conjuntamente con la acción de separación o de divorcio (artículo 48 bis).
-- **Alimentos.** En la sentencia, el tribunal puede conceder pensión al cónyuge declarado inocente a cargo del culpable. Si no existe culpable, puede concederla a uno de ellos según las circunstancias (artículo 57). En un convenio, el punto lo definen los cónyuges.
+- **Daños y perjuicios.** El artículo 48 bis permite al cónyuge inocente pedirlos cuando el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48, conjuntamente con la acción de separación o de divorcio. Si otros hechos pueden fundar un reclamo requiere análisis (artículo 222, inciso 10, del Código Procesal de Familia).
+- **Alimentos.** En la sentencia, el tribunal puede conceder pensión al cónyuge declarado inocente a cargo del culpable. Si no existe culpable, puede concederla a uno de ellos según las circunstancias (artículo 57). En un convenio debe establecerse si existe o no esa obligación y su monto. Cómo se armoniza con la irrenunciabilidad del artículo 167 requiere análisis.
 
-## Pasar del conflicto al acuerdo
+## Conciliación durante el proceso
 
 Cuando sea procedente, en la audiencia inicial la autoridad judicial invita a conciliar y, si hay acuerdo parcial o total, lo homologa en ese momento (artículo 231). La audiencia de prueba también insta a considerar una forma alterna de solución (artículo 233).
 

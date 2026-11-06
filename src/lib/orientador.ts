@@ -34,6 +34,7 @@ export const preguntas: Record<string, Pregunta> = {
   hijos: {
     pregunta: '¿Qué tema le interesa?',
     opciones: [
+      { texto: 'Me preocupa la seguridad de una persona menor de edad', resultado: 'proteccion-familiar', riesgo: true },
       { texto: 'Con quién viven o quién decide sobre su crianza', resultado: 'guarda-crianza' },
       { texto: 'El contacto con su familia', resultado: 'interrelacion-familiar' },
       { texto: 'La pensión alimentaria', resultado: 'pensiones-alimentarias', ficha: 'revisar-una-pension-alimentaria' },

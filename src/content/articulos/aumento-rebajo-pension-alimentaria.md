@@ -14,7 +14,7 @@ fuentes:
   - ref: "CF"
     detalle: "arts. 173, 174"
   - ref: "CPF"
-    detalle: "arts. 101, 262, 276, 277, 278, 279, 287"
+    detalle: "arts. 101, 262, 276, 277, 278, 279, 283, 285, 287"
 ---
 
 Una cuota puede cambiar cuando cambian las circunstancias de quien la da o de quien la recibe (artículo 174 del Código de Familia). Lo decidido sobre su monto no constituye cosa juzgada material y puede modificarse mediante los procedimientos del Código Procesal de Familia (artículo 262). Según la situación, hay vías distintas:
@@ -55,7 +55,7 @@ El artículo 173 del Código de Familia enumera los casos en que no existe oblig
 6. Entre ex cónyuges, si la persona beneficiaria contrae nuevas nupcias o establece una convivencia de hecho.
 7. Si quien demanda incumplió sus propios deberes alimentarios con la persona demandada, cuando legalmente debió cumplirlos.
 
-Estas causales se prueban ante la autoridad que conozca de la demanda alimentaria. Por eso, cumplir dieciocho años no es, por sí solo, un motivo para dejar de pagar sin solicitar antes la exoneración.
+Estas causales se prueban ante la autoridad que conozca de la demanda alimentaria. Pero si en un proceso de divorcio, separación judicial o penal se resuelve cosa distinta, se está a lo que se disponga. La norma no indica qué ocurre con una cuota ya fijada mientras no se tramita la exoneración. Dejar de pagarla sin una resolución expone a las vías de cobro (artículos 283 y 285 del Código Procesal de Familia).
 
 ## Cómo se tramita
 

@@ -43,7 +43,7 @@ aspectos:
       detalle: "El artículo 48 admite que uno solo de los cónyuges actúe por medio de un apoderado especialísimo dado en escritura pública. El artículo 55 del Código Procesal de Familia añade que ese mandato debe contener las cláusulas exactas del eventual acuerdo, bajo pena de nulidad del convenio."
     - titulo: "Acuerdos sobre hijas e hijos"
       resumen: "La autoridad judicial puede modificarlos, y lo resuelto puede revisarse."
-      detalle: "En el divorcio o la separación por mutuo consentimiento, el pacto no vale mientras el Tribunal no se pronuncie. La autoridad judicial puede pedir que se complete o aclare, y debe improbarlo o modificarlo en beneficio de las hijas e hijos cuando corresponda. Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152). Al reconocer a hijas e hijos menores de edad habidos fuera del matrimonio, también debe acordarse lo relativo a la responsabilidad parental, ante una sede judicial, el Registro Civil, el Patronato Nacional de la Infancia o notario público (artículo 141)."
+      detalle: "En el divorcio o la separación por mutuo consentimiento, el pacto no vale mientras el Tribunal no se pronuncie. La autoridad judicial puede pedir que se complete o aclare, y debe improbarlo o modificarlo en beneficio de las hijas e hijos cuando corresponda. Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152). Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar, por lo que la vía se revisa según la resolución. Al reconocer a hijas e hijos menores de edad habidos fuera del matrimonio, también debe acordarse lo relativo a la responsabilidad parental, ante una sede judicial, el Registro Civil, el Patronato Nacional de la Infancia o notario público (artículo 141)."
     - titulo: "Fin de la unión de hecho por mutuo consentimiento"
       resumen: "Se sigue la forma del artículo 48, con requisitos adicionales."
       detalle: "Según el artículo 246 del Código de Familia, una vez finalizada la unión, quienes convivieron pueden solicitar de común acuerdo su reconocimiento, siguiendo los requisitos y el trámite del artículo 48. La escritura debe incluir las declaraciones de al menos dos personas sobre la existencia de la unión y sus requisitos. El plazo de caducidad es de dos años desde la ruptura de la convivencia."
@@ -57,7 +57,7 @@ aspectos:
       resumen: "Reconocidas por la Sala Constitucional, según una nota oficial."
       detalle: "Una nota de SINALEVI en el artículo 37 del Código de Familia indica que la resolución N.º 13920 del 9 de junio de 2023 reconoció el derecho de suscribir y registrar capitulaciones para las uniones de hecho, incluidas las parejas del mismo sexo. La nota no detalla el trámite registral, que debe comprobarse antes de otorgar la escritura."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Planea contraer matrimonio y desea regular sus bienes"
     - "Ya contrajo matrimonio y quiere otorgar capitulaciones"
@@ -69,7 +69,7 @@ situaciones:
     - "Quiere revisar un acuerdo que ya no refleja su realidad"
     - "Siente presión o temor para firmar un acuerdo"
 procedimiento:
-  titulo: "De la conversación al *acuerdo válido*"
+  titulo: "Del borrador al *acuerdo válido*"
   entrada: "Un acuerdo debe ser jurídicamente posible y comprensible para quienes lo firman."
   pasos:
     - titulo: "Definir el objetivo"
@@ -96,12 +96,12 @@ preguntas:
   - p: "¿Qué pasa si no hay capitulaciones?"
     r: "Cada cónyuge queda dueño y dispone libremente de sus bienes (artículo 40). Al disolverse o declararse nulo el matrimonio, o al declararse la separación judicial, nace el derecho a participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro (artículo 41)."
   - p: "¿Lo conciliado puede cambiarse después?"
-    r: "Depende del contenido. Lo acordado tiene carácter y eficacia de cosa juzgada material o formal según el contenido del acuerdo (artículo 9 del Código Procesal de Familia). Lo relativo a personas menores de edad puede modificarse por vía incidental (artículo 152 del Código de Familia)."
+    r: "Depende del contenido. Lo acordado tiene carácter y eficacia de cosa juzgada material o formal según el contenido del acuerdo (artículo 9 del Código Procesal de Familia). Lo relativo a personas menores de edad puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152 del Código de Familia). Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar, por lo que la vía se revisa según la resolución."
 fuentes:
   - ref: "CF"
     detalle: "arts. 37 a 41, 48, 60, 141, 152, 167, 246"
   - ref: "CPF"
-    detalle: "arts. 9, 55, 193, 194, 195, 196, 197"
+    detalle: "arts. 9, 55, 193, 194, 195, 196, 197, 222"
   - ref: "LCVD"
     detalle: "art. 8"
 siguientes:

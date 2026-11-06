@@ -26,7 +26,9 @@ export const biblioteca: NormaBiblioteca[] = [
       'Ley N.º 10603, del 15 de noviembre de 2024: reformó los artículos 143 y 159, sobre relaciones impropias.',
       'Ley N.º 10223, del 5 de mayo de 2022: reformó el artículo 245, sobre la unión de hecho.',
       'Ley N.º 10228, del 5 de mayo de 2022: interpretó el artículo 245. Para los alimentos entre personas convivientes, la unión se constata en el juzgado de pensiones alimentarias.',
-      'Ley N.º 10192, del 28 de abril de 2022: adicionó un capítulo sobre cuidados y corrió la numeración de artículos posteriores.'
+      'Ley N.º 10192, del 28 de abril de 2022: adicionó un capítulo sobre cuidados y corrió la numeración de artículos posteriores.',
+      'Ley N.º 9823, del 3 de marzo de 2020: reformó, entre otros, el artículo 49, sobre la acción de divorcio.',
+      'Ley N.º 9781, del 12 de noviembre de 2019: reformó, entre otros, los artículos 151 y 152, sobre el régimen de interrelación familiar.'
     ],
     servicios: ['divorcios', 'pensiones-alimentarias', 'guarda-crianza', 'interrelacion-familiar', 'bienes-gananciales', 'union-de-hecho', 'filiacion-paternidad', 'acuerdos-familiares']
   },
@@ -89,7 +91,8 @@ export const biblioteca: NormaBiblioteca[] = [
     ],
     reformas: [
       'Ley N.º 10634, del 29 de enero de 2025 (Ley contra la Violencia Vicaria): reformó, entre otros, los artículos 2 y 3, e incorporó la violencia vicaria.',
-      'Ley N.º 9747: reformó, entre otros, el inciso l) del artículo 3, sobre la obligación alimentaria provisional.'
+      'Ley N.º 9747: reformó, entre otros, el inciso l) del artículo 3, sobre la obligación alimentaria provisional.',
+      'Ley N.º 9692, del 9 de julio de 2019: reformó, entre otros, el inciso e) del artículo 3, sobre el decomiso de armas.'
     ],
     servicios: ['proteccion-familiar']
   },

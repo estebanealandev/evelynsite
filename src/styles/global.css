@@ -479,6 +479,13 @@ html[data-movimiento='pausado'] [data-mascara] > * { clip-path: none !important;
 }
 
 /* Seguridad al navegar, guías y biblioteca */
+.ayuda { margin-top: 12px; padding: clamp(18px, 2.2vw, 28px); border: 1px solid var(--line-on-light); background: var(--color-surface); }
+.ayuda h2 { font-size: var(--fs-h3); line-height: 1.16; }
+.ayuda ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px var(--grid-gap); margin: 16px 0 0; padding: 0; list-style: none; }
+.ayuda h3 { font-size: 1.1rem; margin-bottom: 6px; }
+.ayuda p { margin: 0; font-size: 0.96rem; line-height: 1.55; }
+.ayuda__nota { margin-top: 16px !important; font-size: var(--fs-small) !important; color: var(--color-muted); }
+@media (max-width: 899px) { .ayuda ul { grid-template-columns: minmax(0, 1fr); } }
 .seguridad { border: 1px solid var(--line-on-light); background: var(--color-surface); }
 .seguridad summary { min-height: 48px; padding: 13px 18px; font-weight: 500; color: var(--color-primary); cursor: pointer; }
 .seguridad > div { padding: 0 18px 18px; font-size: 0.96rem; }

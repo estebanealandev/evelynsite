@@ -48,7 +48,7 @@ aspectos:
       resumen: "Al disolverse el matrimonio, nace el derecho a participar en los gananciales."
       detalle: "Según el artículo 41 del Código de Familia, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro. Quedan fuera, entre otros, los bienes adquiridos por título gratuito y los adquiridos durante la separación de hecho. Si el inmueble se utiliza como habitación familiar, el progenitor que tenga el cuidado personal de los hijos menores de edad tiene preferencia para el pago de lo que corresponda como ganancial."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Desea divorciarse y existe acuerdo con su cónyuge"
     - "Su cónyuge no acepta el divorcio"
@@ -90,14 +90,16 @@ preguntas:
   - p: "¿Hace falta un tiempo mínimo de matrimonio?"
     r: "El artículo 48 del Código de Familia no lo establece para el divorcio. El tiempo sí importa en algunas causales, como la separación de hecho no menor de tres años."
   - p: "¿Se pueden pedir medidas antes de que termine el proceso?"
-    r: "Las medidas cautelares pueden solicitarse en cualquier estado del proceso o antes de su interposición (artículo 127 del Código Procesal de Familia). Si se concede una medida anticipada, la demanda debe presentarse dentro del mes siguiente a su dictado o ejecución, o la medida caduca (artículo 130)."
+    r: "Las medidas cautelares pueden solicitarse en cualquier estado del proceso o antes de su interposición (artículo 127 del Código Procesal de Familia). Si se concede una medida anticipada, la demanda debe presentarse dentro del mes siguiente a su dictado o ejecución, o la medida caduca (artículo 130). Las medidas de protección de la Ley N.º 7586 son distintas: se piden con independencia de cualquier otro proceso (artículo 8). Dentro del proceso, la autoridad también puede ordenar la salida del hogar y otras medidas de protección (artículos 136 y 137 del Código Procesal de Familia)."
   - p: "¿Qué diferencia hay entre separación judicial y divorcio?"
-    r: "La separación judicial produce los mismos efectos que el divorcio, con la diferencia de que no disuelve el vínculo y subsisten los deberes de fidelidad y mutuo auxilio (artículo 62 del Código de Familia). Sus causales son más amplias (artículo 58) y también puede tramitarse por mutuo consentimiento (artículo 60)."
+    r: "La separación judicial produce los mismos efectos que el divorcio, con la diferencia de que no disuelve el vínculo y subsisten los deberes de fidelidad y mutuo auxilio (artículo 62 del Código de Familia). Sus causales son más amplias (artículo 58) y también puede tramitarse por mutuo consentimiento (artículo 60). El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58."
 fuentes:
   - ref: "CF"
-    detalle: "arts. 41, 48, 48 bis, 49, 50, 52, 55, 56, 57, 58, 60, 62, 152"
+    detalle: "arts. 41, 48, 48 bis, 49, 50, 52, 55, 56, 57, 58, 59, 60, 62, 152"
   - ref: "CPF"
-    detalle: "arts. 9, 55, 127, 130, 222, 223, 226, 230, 233, 289, 290, 292, 293"
+    detalle: "arts. 9, 55, 127, 130, 136, 137, 222, 223, 226, 230, 233, 289, 290, 292, 293"
+  - ref: "LCVD"
+    detalle: "art. 8"
   - ref: "L9747"
     detalle: "transitorio I y disposición de vigencia"
 relacionados: ["guarda-crianza", "pensiones-alimentarias", "bienes-gananciales"]

@@ -765,7 +765,7 @@
   "archivo": "src/content/servicios/interrelacion-familiar.md",
   "pagina": "/servicios/interrelacion-familiar",
   "tema": "Femicidio",
-  "texto": "el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
+  "texto": "pierde la posibilidad de tener un régimen de interrelación con ella y no puede ejercer su guarda, crianza y educación. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -784,6 +784,13 @@
     ],
     "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo de acuerdo con el interés superior de los hijos y las hijas menores de edad o por un cambio de circunstancias, con excepción de lo señalado en el párrafo 4",
     "reforma": "Ley 10263"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "no podrá ejercer su guarda, crianza y educación"
    }
   ],
   "consultado": "2026-11-05"
@@ -846,6 +853,133 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "Vago. Se precisa con CF 152 y CPF 290.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-038",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Cómo pedir la suspensión",
+  "texto": "Esa suspensión se pide como medida de protección, de forma verbal o escrita, sin abrir antes un proceso de modificación del régimen (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal, con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: qué decir sobre no entregar a la persona menor de edad mientras se resuelve.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-039",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Orden inmediata",
+  "texto": "La autoridad competente debe ordenar de inmediato aplicar las medidas solicitadas (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-040",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Quién debe solicitarlas",
+  "texto": "Si la persona afectada es menor de edad, también deben solicitarlas su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-041",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Temor durante el contacto",
+  "texto": "pida medidas de protección sin esperar otro trámite",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-042",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Femicidio",
+  "texto": "el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 38 de la revisión adversarial: omitía que tampoco puede ejercer la guarda, crianza y educación.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-043",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Otros parientes",
+  "texto": "El artículo 133 del Código Procesal de Familia habla, para el régimen provisional, de quien pretenda el régimen, sin limitarlo a los progenitores",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "133"
+    ],
+    "cita": "la identidad y relación propia entre estas personas y quien pretenda el régimen"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-044",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
   "consultado": "2026-11-05"
  }
 ]

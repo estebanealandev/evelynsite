@@ -263,7 +263,7 @@
   "archivo": "src/content/servicios/acuerdos-familiares.md",
   "pagina": "/servicios/acuerdos-familiares",
   "tema": "Sin cosa juzgada sobre personas menores de edad",
-  "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
+  "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -793,6 +793,100 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "No indicaba, en el mismo pasaje, la prohibición ante relaciones desiguales de poder ni la vía de justicia restaurativa del art. 9 reformado por la Ley 10558. Se reescribió.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-093",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Sin cosa juzgada sobre personas menores de edad",
+  "texto": "Lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 27 de la revisión adversarial: afirmaba solo la vía incidental.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-094",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Modificación",
+  "texto": "Lo relativo a personas menores de edad puede modificarse por vía incidental (artículo 152 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 27 de la revisión adversarial: afirmaba solo la vía incidental.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-095",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Modificación",
+  "texto": "Lo relativo a personas menores de edad puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI)"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-096",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Vía de modificación",
+  "texto": "Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI)"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "modificaciones de sentencias sobre estas pretensiones"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: vía que corresponde.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-097",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Título",
+  "texto": "De la conversación al acuerdo válido",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 47 de la revisión adversarial: el título empujaba a la conversación directa.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ACU-098",
+  "archivo": "src/content/servicios/acuerdos-familiares.md",
+  "pagina": "/servicios/acuerdos-familiares",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
   "consultado": "2026-11-05"
  }
 ]

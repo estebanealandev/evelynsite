@@ -12,7 +12,7 @@ destacado: false
 servicios: ["filiacion-paternidad", "pensiones-alimentarias"]
 fuentes:
   - ref: "CF"
-    detalle: "arts. 71 a 74, 76, 77, 80, 86, 88, 90, 93, 95, 96, 98, 99"
+    detalle: "arts. 71 a 74, 76, 77, 78, 80, 84, 86, 88, 90, 93, 95, 96, 98, 99"
   - ref: "CPF"
     detalle: "arts. 96, 112, 113, 188, 192, 222"
 ---
@@ -21,7 +21,7 @@ No hay un plazo único en materia de filiación. Depende de quién actúa y de q
 
 ## Una noción clave: la posesión notoria de estado
 
-Varios plazos dependen de este concepto. Según los artículos 80 y 93 del Código de Familia, existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así. En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente.
+Varios plazos dependen de este concepto. Para el hijo de matrimonio, el artículo 80 del Código de Familia la describe como tratarlo como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros, de modo que estos y el vecindario lo reputen hijo. Para el extramatrimonial, el artículo 93 enumera esas circunstancias en forma alternativa, y el juez las aprecia discrecionalmente.
 
 Si ya hay una filiación establecida por posesión notoria de estado, no se admite la acción de investigación (artículo 99) ni un reconocimiento (artículo 90).
 
@@ -37,7 +37,7 @@ SINALEVI anota que el artículo 95 quedó reformado de acuerdo con la anulación
 
 ## Si el marido impugna la paternidad
 
-El artículo 72 reserva esta acción al marido, personalmente o por apoderado especialísimo. El artículo 73 fija el tiempo:
+El artículo 72 reserva esta acción al marido, personalmente o por apoderado especialísimo. Esa regla no agota el tema: si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84). El artículo 73 fija el tiempo:
 
 - **Regla general.** Puede intentarse en cualquier tiempo.
 - **Excepción.** Si el hijo está en posesión notoria de estado, debe intentarse dentro del año siguiente a la fecha en que el marido conoció los hechos que fundamentan la impugnación. Ese plazo no corre contra el marido incapaz mental que carezca de curador.
@@ -52,7 +52,7 @@ Hay otro supuesto: el artículo 71 permite a la madre, al hijo o a quien lo repr
 Aquí las notas cambian la lectura. El artículo 86 permite impugnar el reconocimiento al reconocido o a quien tenga interés, cuando se hizo mediante falsedad o error.
 
 - **El propio hijo o hija.** Según la nota de SINALEVI, la resolución N.º 151 del 16 de enero de 2002 anuló el párrafo que le daba solo dos años desde la mayoría de edad o desde que tuvo noticia de los hechos. Ese límite ya no aparece en el artículo 86.
-- **Hijo mayor reconocido.** El reconocimiento requiere su consentimiento. Si hubo falsedad o error, el artículo 88 le da dos años desde que lo conoció. Este artículo no lleva nota en la copia oficial.
+- **Hijo mayor reconocido.** El reconocimiento requiere su consentimiento. Si hubo falsedad o error, el artículo 88 le da dos años desde que lo conoció. Este artículo no lleva nota en la copia oficial. La Sala Constitucional anuló un límite de dos años semejante en el artículo 86, según la nota citada. Si el plazo del artículo 88 sigue aplicándose igual es un punto que requiere análisis, de modo que no conviene darlo por perdido sin revisarlo.
 - **Tercero interesado.** El artículo 86 todavía dice que la acción se ejerce únicamente durante la minoridad del reconocido. Sin embargo, la nota indica que la resolución N.º 6813 del 23 de abril de 2008 declaró inconstitucional ese límite porque discriminaba a los hijos extramatrimoniales menores de edad en posesión notoria de estado. El plazo para el tercero que impugna el reconocimiento de esos hijos es el del artículo 73: un año desde que conoció los hechos.
 
 La nota no resuelve de forma expresa qué plazo tiene el tercero si no hay posesión notoria de estado. Ese caso requiere análisis.
@@ -76,4 +76,4 @@ Una sentencia que desplaza la filiación no se ejecuta hasta quedar firme (artí
 
 ## Lo que no se puede negociar
 
-Según el Código de Familia, sobre la filiación no puede haber transacción ni compromiso en árbitros. Sí pueden pactarse los derechos pecuniarios que deriven de la filiación legalmente declarada, con aprobación del tribunal cuando se trate de personas menores de edad u otras personas incapaces.
+Según el artículo 78 del Código de Familia, sobre la filiación no puede haber transacción ni compromiso en árbitros. Sí pueden pactarse los derechos pecuniarios que deriven de la filiación legalmente declarada, con aprobación del tribunal cuando se trate de personas menores de edad u otras personas incapaces.

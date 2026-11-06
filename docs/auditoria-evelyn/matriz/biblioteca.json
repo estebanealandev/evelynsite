@@ -435,5 +435,79 @@
    }
   ],
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-BIB-021",
+  "archivo": "src/lib/biblioteca.ts",
+  "pagina": "/biblioteca-juridica",
+  "tema": "CF, Ley 9823",
+  "texto": "Ley N.º 9823, del 3 de marzo de 2020: reformó, entre otros, el artículo 49, sobre la acción de divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "cita": "N° 9823 del 3 de marzo de 2020"
+   }
+  ],
+  "excepciones": "Hallazgo 41.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-BIB-022",
+  "archivo": "src/lib/biblioteca.ts",
+  "pagina": "/biblioteca-juridica",
+  "tema": "CF, Ley 9781",
+  "texto": "Ley N.º 9781, del 12 de noviembre de 2019: reformó, entre otros, los artículos 151 y 152, sobre el régimen de interrelación familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "N° 9781 del 12 de noviembre de 2019"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "N° 9781 del 12 de noviembre de 2019"
+   }
+  ],
+  "excepciones": "Hallazgo 41.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-BIB-023",
+  "archivo": "src/lib/biblioteca.ts",
+  "pagina": "/biblioteca-juridica",
+  "tema": "LCVD, Ley 9692",
+  "texto": "Ley N.º 9692, del 9 de julio de 2019: reformó, entre otros, el inciso e) del artículo 3, sobre el decomiso de armas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "N° 9692 del 9 de julio de 2019"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Decomisar las armas y los objetos que se utilicen para intimidar o agredir"
+   }
+  ],
+  "excepciones": "Hallazgo 41.",
+  "consultado": "2026-11-05"
  }
 ]

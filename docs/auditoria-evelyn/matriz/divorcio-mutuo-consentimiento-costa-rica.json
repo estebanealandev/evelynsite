@@ -518,5 +518,56 @@
   "texto": "otros puntos patrimoniales pueden ser más difíciles de reabrir",
   "motivo": "Sin norma específica en la copia oficial; se sustituye por los límites del art. 293 CPF.",
   "retirada": true
+ },
+ {
+  "id": "FAM-DMC-026",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tema": "Firma bajo presión",
+  "texto": "por lo breve de esa oportunidad",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 32 de la revisión adversarial: no distinguía el trámite judicial del Registro Civil ni recordaba las medidas de protección.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DMC-027",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tema": "Firma bajo presión",
+  "texto": "en el trámite judicial la oposición solo se admite antes de la aprobación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: vías si el convenio va al Registro Civil o ya fue aprobado.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DMC-028",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tema": "Medidas de protección",
+  "texto": "Las medidas de protección pueden pedirse con independencia de ese trámite (artículo 8 de la Ley N.º 7586)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
  }
 ]

@@ -18,7 +18,7 @@ fuentes:
   - ref: "CPF"
     detalle: "arts. 9, 20, 32, 87, 89, 96, 133, 316, 317, 318, 319"
   - ref: "LCVD"
-    detalle: "art. 3"
+    detalle: "arts. 3, 7, 8"
 ---
 
 Cuando un régimen de interrelación familiar deja de funcionar, lo que corresponde depende de la causa. Una cosa es que la persona menor de edad no quiera asistir, otra que un adulto incumpla lo resuelto, y otra que el régimen haya quedado desfasado o le esté causando un perjuicio. Las normas dan una respuesta distinta a cada caso y, en casi todos, la decisión final queda en manos de la autoridad judicial.
@@ -27,7 +27,7 @@ Cuando un régimen de interrelación familiar deja de funcionar, lo que correspo
 
 El artículo 35 del Código de la Niñez y la Adolescencia dice dos cosas sobre la negativa a mantener contacto, visitas y comunicación: debe ser considerada, y obliga a quien tenga la custodia a solicitar a la oficina local del Patronato Nacional de la Infancia (PANI) que investigue y brinde la atención psicosocial necesaria.
 
-La norma no ordena ignorar esa negativa, ni dice que termine por sí sola el régimen. Si de la investigación resulta un perjuicio, la vía es pedir a la autoridad judicial que modifique o suspenda el contacto. Esa decisión atiende al interés superior de la persona menor de edad y a su capacidad de decisión y comprensión.
+La norma no ordena ignorar esa negativa, ni dice que termine por sí sola el régimen. Si de la investigación resulta un perjuicio, puede pedirse a la autoridad judicial que modifique o suspenda el contacto. Si hay violencia, no hace falta esperar esa investigación: pueden pedirse medidas de protección de forma verbal o escrita y, tratándose de una persona menor de edad, cualquier persona que conozca la situación debe solicitarlas (artículos 3, inciso h, 7 y 8 de la Ley contra la Violencia Doméstica). Esa decisión atiende al interés superior de la persona menor de edad y a su capacidad de decisión y comprensión.
 
 ## Si un adulto incumple lo resuelto
 

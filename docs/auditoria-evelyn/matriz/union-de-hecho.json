@@ -823,5 +823,51 @@
   "retirada": true,
   "motivo": "Redundante frente a los requisitos del art. 245, que ya se explican.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-034",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Remisión al artículo 48",
+  "texto": "El artículo 246 remite a la forma de trámite del artículo 48, que hoy incluye la vía del Registro Civil y un plazo de tres meses para presentar el convenio ante la autoridad judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "se deberán seguir los requisitos y la forma de trámite establecidos en el artículo 48"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "dentro de los tres meses siguientes a su celebración notarial"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: cómo se aplican al reconocimiento de la unión.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-035",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+  "consultado": "2026-11-05"
  }
 ]

@@ -125,5 +125,97 @@
   "retirada": true,
   "motivo": "Dato no confirmado y autoelogio.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-009",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Alcance del Código de Deberes",
+  "texto": "es de aplicación forzosa para las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "1"
+    ],
+    "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+   }
+  ],
+  "excepciones": "Explicación general. No afirma que Evelyn Elizondo esté inscrita: no consta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-010",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Publicidad",
+  "texto": "Por eso este sitio explica normas y procedimientos, sin calificarse a sí mismo.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 31 de la revisión adversarial: declarar que no se autocalifica es autocalificarse.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-011",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Título",
+  "texto": "Normativa al día",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 31 de la revisión adversarial: es un mérito; se cambia por «Fecha de las normas».",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-012",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Forma de trabajar",
+  "texto": "Esos elementos se revisan antes de sugerir una vía.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-013",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Título",
+  "texto": "Criterios que se aplican a cada consulta",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: presentaba deberes del Código como criterios aplicados, sin que conste la colegiatura.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-014",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Título",
+  "texto": "Tres reglas de trabajo",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación sobre la práctica que no consta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-015",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Descripción",
+  "texto": "secreto profesional y límites de la publicidad",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 3 de la revisión adversarial: la descripción de la página ofrecía secreto profesional sin que conste la colegiatura.",
+  "consultado": "2026-11-05"
  }
 ]

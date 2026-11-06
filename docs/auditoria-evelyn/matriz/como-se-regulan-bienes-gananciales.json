@@ -45,7 +45,7 @@
   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
   "pagina": "/blog/como-se-regulan-bienes-gananciales",
   "tema": "Dominio durante el matrimonio",
-  "texto": "sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40)",
+  "texto": "sin capitulaciones cada cónyuge dispone de sus bienes (artículo 40)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -291,7 +291,7 @@
   "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
   "pagina": "/blog/como-se-regulan-bienes-gananciales",
   "tema": "Límite del embargo",
-  "texto": "Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140)",
+  "texto": "Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -301,6 +301,13 @@
      "140"
     ],
     "cita": "la autoridad judicial deberá valorar adecuadamente si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
    }
   ],
   "consultado": "2026-11-05"
@@ -559,6 +566,94 @@
   "estado": "SIN_RESPALDO",
   "retirada": true,
   "motivo": "Advertencia genérica. Sustituida por el análisis de cada exclusión.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-029",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Dominio durante el matrimonio",
+  "texto": "sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 28 de la revisión adversarial: sin excepciones, podía leerse como permiso para traspasar bienes antes de un divorcio.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-030",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Momento del derecho",
+  "texto": "el régimen no opera",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 28 de la revisión adversarial: afirmación absoluta; se sustituye por lo que dice el artículo 41.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-031",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Momento del derecho",
+  "texto": "Mientras no llegue uno de los momentos del artículo 41, el derecho a participar en los gananciales aún no nace",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-032",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Límites a la libre disposición",
+  "texto": "Esa libertad tiene límites: el inmueble afectado a habitación familiar (artículo 42), la liquidación anticipada (artículo 41) y las peticiones de nulidad o de inoponibilidad de traspasos que menciona el artículo 226 del Código Procesal de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "42"
+    ],
+    "cita": "no podrá ser enajenado ni gravado sino con el consentimiento de ambos cónyuges"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "por actos que amenacen burlarlo"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "cita": "peticiones de nulidad o de inoponibilidad de traspasos de bienes con vocación ganancial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-033",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Límite del embargo",
+  "texto": "Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 36 de la revisión adversarial: la norma es más amplia y añade la valoración judicial.",
   "consultado": "2026-11-05"
  }
 ]

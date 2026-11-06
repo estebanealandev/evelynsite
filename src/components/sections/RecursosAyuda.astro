@@ -1,0 +1,36 @@
+---
+// Recursos institucionales comprobados en fuentes oficiales: ver docs/auditoria-evelyn/fuentes-verificadas.json.
+// Solo se publica lo que la institución indica; los datos sin fuente oficial reciente se dejan fuera.
+const recursos = [
+  {
+    titulo: '9-1-1',
+    texto: 'El INAMU indica este número para situaciones de violencia, todos los días del año, las 24 horas. También se puede pedir a la operadora u operador que transfiera a la línea directa del INAMU.',
+    fuente: 'https://www.inamu.go.cr/web/inamu/preguntas-frecuentes',
+    entidad: 'INAMU'
+  },
+  {
+    titulo: 'Juzgados de Violencia Doméstica',
+    texto: 'El Observatorio de Género del Poder Judicial indica que están disponibles las 24 horas. Si no hay uno cerca, las medidas se piden en horario hábil, de 7:30 a. m. a 4:30 p. m., en juzgados mixtos o contravencionales. El Poder Judicial indica que no se requiere abogada o abogado. Su línea gratuita es el 800-800-3000.',
+    fuente: 'https://observatoriodegenero.poder-judicial.go.cr/index.php/soy-mujer-y-busco/averiguar-sobre-violencia-domestica',
+    entidad: 'Poder Judicial'
+  },
+  {
+    titulo: 'Línea 1125 del INAMU',
+    texto: 'Sobre derechos de las mujeres, de lunes a viernes, de 8:00 a. m. a 4:00 p. m. Para situaciones de violencia, el INAMU indica el 9-1-1.',
+    fuente: 'https://www.inamu.go.cr/en/contacto',
+    entidad: 'INAMU'
+  }
+];
+---
+<section class="ayuda" aria-labelledby="ayuda-titulo">
+  <h2 id="ayuda-titulo">Dónde pedir ayuda</h2>
+  <ul>
+    {recursos.map(r => (
+      <li>
+        <h3>{r.titulo}</h3>
+        <p>{r.texto} <a href={r.fuente} rel="noopener noreferrer" target="_blank">Fuente: {r.entidad}</a>.</p>
+      </li>
+    ))}
+  </ul>
+  <p class="ayuda__nota">Comprobado en fuentes oficiales el 5 de noviembre de 2026. Estos servicios son de las instituciones citadas, no de este sitio.</p>
+</section>

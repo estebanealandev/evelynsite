@@ -462,5 +462,69 @@
    }
   ],
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-024",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Alimentos e interrelación",
+  "texto": "El pago de alimentos y la interrelación familiar no deberían condicionarse entre sí.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 44 de la revisión adversarial: conclusión sin atribuir; se sustituye por lo que dicen las normas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-025",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Alimentos e interrelación",
+  "texto": "Los artículos 151 y 152 del Código de Familia y 35 del Código de la Niñez y la Adolescencia no condicionan la interrelación al pago",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "todo lo concerniente a la fijación o modificación del régimen de interrelación familiar"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "el padre y la madre quedan obligados a sufragar los gastos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-026",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Causas que eximen",
+  "texto": "el artículo 173 no incluye el incumplimiento del régimen entre las causas que eximen de alimentos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "No existirá obligación de proporcionar alimentos"
+   }
+  ],
+  "consultado": "2026-11-05"
  }
 ]

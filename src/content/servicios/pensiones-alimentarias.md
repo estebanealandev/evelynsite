@@ -51,7 +51,7 @@ aspectos:
       resumen: "Embargo, anotación crediticia y restricción para salir del país."
       detalle: "Una resolución firme que indique los montos debidos permite cobrar en el mismo despacho mediante ejecución directa, con embargo de bienes y anotación como deudor alimentario en el historial crediticio de la Superintendencia General de Entidades Financieras (artículo 285 del Código Procesal de Familia). Para salir del país, la persona deudora necesita autorización de la parte acreedora, salvo que garantice todos los pagos correspondientes a un año (artículo 261)."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Necesita solicitar una pensión para sus hijos"
     - "Le notificaron una demanda de alimentos"
@@ -85,7 +85,7 @@ importante:
     - "La deuda alimentaria tiene prioridad sobre cualquier otra, sin excepción (artículo 171)"
     - "No tener trabajo, salario o ingresos no es excusa atendible para oponerse a la fijación, sin perjuicio del análisis de la prueba (artículo 265 del Código Procesal de Familia)"
     - "Los alimentos pasados solo pueden cobrarse por los doce meses anteriores a la demanda y si hubo que contraer deudas para vivir, sin perjuicio del artículo 96 (artículo 172)"
-    - "La mayoría de edad hace cesar la obligación, salvo que no se hayan terminado los estudios para adquirir una profesión u oficio, sin sobrepasar los veinticinco años y con buenos rendimientos y una carga académica razonable (artículo 173)"
+    - "La mayoría de edad hace cesar la obligación, salvo que no se hayan terminado los estudios para adquirir una profesión u oficio, sin sobrepasar los veinticinco años y con buenos rendimientos y una carga académica razonable, requisitos que deben probarse (artículo 173). El artículo 169 también obliga respecto de hijas e hijos incapaces, por lo que la mayoría de edad no resuelve por sí sola esos casos"
     - "Declarada la paternidad, la obligación alimentaria se retrotrae a la fecha de presentación de la demanda (artículo 96)"
     - "No puede despedirse a una persona trabajadora por la retención del salario ordenada en virtud de una deuda alimentaria (artículo 282 del Código Procesal de Familia)"
   cierre: "La parte beneficiaria sin recursos para contratar patrocinio letrado puede solicitar asistencia a la Defensa Pública del Poder Judicial (artículo 56 del Código Procesal de Familia)."

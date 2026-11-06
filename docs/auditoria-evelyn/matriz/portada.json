@@ -64,7 +64,7 @@
   "archivo": "src/pages/index.astro",
   "pagina": "/",
   "tema": "Interés superior",
-  "texto": "Se considera el interés superior de las personas menores de edad",
+  "texto": "Cómo incide el interés superior de las personas menores de edad",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -124,6 +124,66 @@
   "estado": "NO_VERIFICABLE",
   "retirada": true,
   "motivo": "No consta que exista un equipo: guía editorial, voz impersonal.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-009",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Interés superior",
+  "texto": "Se considera el interés superior de las personas menores de edad",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: el punto dejó de describir una forma de trabajar.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-010",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Rótulo",
+  "texto": "Áreas de práctica",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: choca con el aviso jurídico y da por hecho servicios sin confirmar.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-011",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Forma de trabajar",
+  "texto": "Cada asunto se analiza con estos criterios:",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-012",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Forma de trabajar",
+  "texto": "Se exponen las vías posibles, con lo favorable y lo desfavorable.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: afirmación de hecho sobre la práctica que no consta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-013",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Forma de trabajar",
+  "texto": "Cómo se trabaja",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 9 de la revisión adversarial: rótulo sobre la práctica que no consta.",
   "consultado": "2026-11-05"
  }
 ]

@@ -14,11 +14,11 @@ fuentes:
   - ref: "CF"
     detalle: "arts. 48, 49, 96, 172, 245, 246"
   - ref: "CPF"
-    detalle: "arts. 9, 42, 50, 56, 63, 121, 222, 257"
+    detalle: "arts. 9, 42, 50, 56, 63, 121, 222, 257, 269"
   - ref: "LCVD"
     detalle: "arts. 8, 17"
   - ref: "CDJ"
-    detalle: "arts. 41, 42"
+    detalle: "arts. 1, 41, 42"
 ---
 
 Antes de iniciar un proceso conviene revisar cuatro cosas: si hay un riesgo que deba atenderse primero, si algún plazo está corriendo, qué vía corresponde a cada tema y si se requiere patrocinio letrado.
@@ -45,7 +45,7 @@ Un mismo conflicto puede incluir el vínculo matrimonial, las hijas e hijos, los
 - **Divorcio por mutuo consentimiento.** Requiere un convenio en escritura pública. Sin hijos menores de edad comunes ni bienes a los que se refiera el convenio, la escritura se presenta al Registro Civil. En los demás casos, el trámite es judicial (artículo 48).
 - **Pretensiones contenciosas.** El vínculo matrimonial, el reconocimiento de la unión de hecho, el régimen patrimonial, la filiación, los conflictos sobre los atributos de la responsabilidad parental y otras pretensiones se conocen en el proceso resolutivo familiar (artículo 222 del Código Procesal de Familia).
 - **Pensión alimentaria.** Tiene un trámite propio, y las gestiones pueden ser verbales o escritas (artículo 257). Entre personas convivientes, la Ley N.º 10228 interpretó el artículo 245 del Código de Familia: según la nota de SINALEVI, la unión de hecho se constata directamente en el juzgado de pensiones, sin tramitar antes otro proceso ante un juzgado de familia.
-- **Conciliación.** Puede intentarse cuando procede. Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia). No es un paso que deba aceptar si existe violencia o temor.
+- **Conciliación.** Cuando procede, la norma manda intentarla, y en pensiones alimentarias el tribunal convoca a una audiencia previa (artículos 9 y 269 del Código Procesal de Familia). Se prohíbe cuando se constaten relaciones desiguales de poder, de modo que conviene informar la situación al despacho antes de la audiencia. Una convocatoria no obliga a aceptar un acuerdo.
 
 ## 4. Si necesita patrocinio letrado
 
@@ -61,7 +61,7 @@ Si no cuenta con recursos, estas normas pueden ser relevantes:
 
 Toda audiencia judicial es privada, sin perjuicio de que la autoridad judicial autorice la presencia de personas ajenas al proceso, con la necesaria anuencia de las partes y con finalidad académica o de colaboración (artículo 121 del Código Procesal de Familia). Los escritos, documentos e informes se consideran privados (artículo 63).
 
-Las confidencias que se hacen a una persona abogada con ocasión de su ejercicio profesional constituyen secreto profesional, y la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho). Tiene excepciones limitadas (artículo 42).
+El Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho se aplica a las personas abogadas inscritas en el Colegio de Abogados (artículo 1). Según ese Código, las confidencias que se hacen a una persona abogada con ocasión de su ejercicio profesional constituyen secreto profesional, y la obligación perdura después de cesar la relación (artículo 41). Tiene excepciones limitadas (artículo 42).
 
 ## 6. Qué reunir
 

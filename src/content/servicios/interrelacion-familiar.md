@@ -45,7 +45,7 @@ aspectos:
       resumen: "Los ejecuta el PANI u otro órgano público, y puede participar un ente privado acreditado."
       detalle: "Una vez firme el fallo, el artículo 319 del Código Procesal de Familia encarga la ejecución del régimen supervisado al PANI o a cualquier otro órgano público que realice labores en beneficio de esta población, sin perjuicio del compromiso que adquiera un ente privado acreditado. Quienes supervisan deben entregar informes cuando la autoridad judicial lo disponga."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Quiere establecer un régimen por primera vez"
     - "El régimen actual no se está cumpliendo"
@@ -76,10 +76,10 @@ importante:
     - "El padre y la madre quedan obligados a sufragar los gastos de guarda, crianza y educación, cualquiera que sea la persona o institución a cuyo cargo queden los hijos e hijas (artículo 35 del Código de la Niñez y la Adolescencia)"
     - "La deuda alimentaria tiene vías de cobro propias, como el apremio corporal y el cobro ejecutorio (artículos 283 y 285 del Código Procesal de Familia)"
     - "La negativa a dar alimentos figura entre las causas de pérdida de los atributos de la responsabilidad parental (artículo 158 bis, inciso f, del Código de Familia), un asunto que se discute en el proceso resolutivo familiar"
-  cierre: "Si ya existe una resolución o un acuerdo homologado, su incumplimiento puede llevar a una ejecución forzosa. Esto vale tanto para el régimen como para la cuota alimentaria."
+  cierre: "Si ya existe una resolución o un acuerdo homologado, su incumplimiento puede llevar a una ejecución forzosa. Esto vale tanto para el régimen como para la cuota alimentaria. Si teme por la seguridad de la persona menor de edad durante el contacto, pida medidas de protección sin esperar otro trámite, y ante un peligro inmediato llame al 9-1-1."
 preguntas:
   - p: "¿Una persona abuela puede pedir un régimen de interrelación?"
-    r: "El artículo 35 del Código de la Niñez y la Adolescencia y el artículo 152, inciso c), del Código de Familia incluyen a parientes hasta el cuarto grado de consanguinidad. Ambos formulan el contacto como un derecho de la persona menor de edad, sujeto a su interés superior. El artículo 151 menciona la petición de los progenitores, por lo que la forma en que otro pariente debe plantearlo requiere análisis."
+    r: "El artículo 35 del Código de la Niñez y la Adolescencia y el artículo 152, inciso c), del Código de Familia incluyen a parientes hasta el cuarto grado de consanguinidad. Ambos formulan el contacto como un derecho de la persona menor de edad, sujeto a su interés superior. El artículo 151 menciona la petición de los progenitores, por lo que la forma en que otro pariente debe plantearlo requiere análisis. El artículo 133 del Código Procesal de Familia habla, para el régimen provisional, de quien pretenda el régimen, sin limitarlo a los progenitores."
   - p: "¿Puedo suspender el contacto si no pagan la pensión?"
     r: "Las normas citadas no prevén esa suspensión ni la dejan en manos de uno de los progenitores. Si existe un perjuicio, puede pedirse a la autoridad judicial que modifique o suspenda el régimen. Si hay deuda alimentaria, se reclama por sus propias vías."
   - p: "¿Puedo dejar de pagar la pensión si no me dejan ver a mi hijo o hija?"
@@ -94,7 +94,7 @@ fuentes:
   - ref: "CPF"
     detalle: "arts. 9, 16, 89, 133, 222, 283, 285, 290, 316, 318, 319"
   - ref: "LCVD"
-    detalle: "art. 3"
+    detalle: "arts. 3, 7, 8, 10"
 siguientes:
   titulo: "Qué conviene tener a mano"
   items:
@@ -115,12 +115,12 @@ Esto explica por qué el interés superior de la persona menor de edad pesa más
 
 ## Cuando hay violencia
 
-La Ley contra la Violencia Doméstica permite suspender provisionalmente a la presunta persona agresora el derecho de visitar a sus hijos e hijas menores de edad, en los casos en que ejerza algún tipo de agresión (artículo 3, inciso h).
+La Ley contra la Violencia Doméstica permite suspender provisionalmente a la presunta persona agresora el derecho de visitar a sus hijos e hijas menores de edad, en los casos en que ejerza algún tipo de agresión (artículo 3, inciso h). Esa suspensión se pide como medida de protección, de forma verbal o escrita, sin abrir antes un proceso de modificación del régimen (artículo 8). La autoridad competente debe ordenar de inmediato aplicar las medidas solicitadas (artículo 10). Si la persona afectada es menor de edad, también deben solicitarlas su representante legal, el PANI, una autoridad de policía o cualquier persona que conozca la situación (artículo 7).
 
 Otras normas pueden aplicar:
 
 - El artículo 9 del Código Procesal de Familia prohíbe la conciliación cuando se constaten relaciones desiguales de poder.
 - El artículo 159 del Código de Familia incluye la violencia doméstica o intrafamiliar y, desde la Ley N.º 10634, la violencia vicaria entre las causas de suspensión de los atributos de la responsabilidad parental. En la violencia vicaria, la persona juzgadora valora la pertinencia según el caso concreto.
-- Según el artículo 35 del Código de la Niñez y la Adolescencia, el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto.
+- Según el artículo 35 del Código de la Niñez y la Adolescencia, el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella y no puede ejercer su guarda, crianza y educación. Esta regla es la excepción a la posibilidad de modificar lo resuelto.
 
 Una medida judicial no garantiza por sí sola la seguridad. Ante un peligro inmediato, llame al 9-1-1.

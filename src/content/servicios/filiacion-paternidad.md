@@ -40,12 +40,12 @@ aspectos:
       detalle: "El artículo 91 lo permite y el artículo 94 admite la investigación de paternidad del hijo por nacer. La calidad de padre o madre puede establecerse mediante la posesión notoria de estado o cualquier otro medio de prueba (artículo 92). No se admite la acción si el hijo tiene una filiación establecida por posesión notoria de estado (artículo 99)."
     - titulo: "Impugnación"
       resumen: "La ley fija quién puede plantearla y en qué plazo."
-      detalle: "La paternidad de los hijos nacidos en matrimonio solo puede ser impugnada por el marido personalmente o por apoderado especialísimo y, en ciertos casos, por sus herederos o curador (artículo 72). La madre o el hijo pueden pedir que se declare habido fuera del matrimonio al nacido después de trescientos días de la separación de hecho, si no tuvo posesión notoria de estado por parte del marido (artículo 71). El reconocimiento puede impugnarse por falsedad o error (artículo 86)."
+      detalle: "La paternidad de los hijos nacidos en matrimonio solo puede ser impugnada por el marido personalmente o por apoderado especialísimo y, en ciertos casos, por sus herederos o curador (artículo 72). Esa regla no agota el tema: si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84). La madre o el hijo pueden pedir que se declare habido fuera del matrimonio al nacido después de trescientos días de la separación de hecho, si no tuvo posesión notoria de estado por parte del marido (artículo 71). El reconocimiento puede impugnarse por falsedad o error (artículo 86)."
     - titulo: "Prueba científica"
       resumen: "Es admisible en todo proceso de investigación o impugnación."
       detalle: "Puede evacuarla el Organismo de Investigación Judicial o laboratorios acreditados y reconocidos por la Corte Suprema de Justicia (artículo 98 del Código de Familia). La autoridad judicial puede ordenarla de oficio al inicio del proceso y, en resolución fundada, disponer que las muestras las suministren parientes de las partes (artículo 188 del Código Procesal de Familia, reformado por la Ley N.º 10558)."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Desea reconocer a un hijo o hija"
     - "El padre o la madre no ha reconocido a su hijo o hija"
@@ -86,8 +86,6 @@ preguntas:
     r: "El artículo 192 del Código Procesal de Familia dispone que la inasistencia injustificada genera una presunción de veracidad en su contra sobre lo que se pretendía demostrar. Si la prueba es absolutamente indispensable, la autoridad judicial usa medios coercitivos para obtener las muestras, incluso la conducción policial. El artículo 98 del Código de Familia permite además considerar maliciosa la negativa sin fundamento razonable."
   - p: "¿Puede hacerse la prueba si la persona falleció?"
     r: "El artículo 188 del Código Procesal de Familia permite pedir muestras a parientes y, de ser necesario, ordenar la exhumación, con la persona juzgadora presente en la obtención de las muestras."
-  - p: "¿La declaración de paternidad genera alimentos retroactivos?"
-    r: "El artículo 96 del Código de Familia dispone que la obligación alimentaria se retrotrae a la fecha de presentación de la demanda y se liquida en el proceso alimentario, mediante ejecución de sentencia."
 fuentes:
   - ref: "CF"
     detalle: "arts. 69, 71 a 73, 76, 84 a 92, 94 a 99, 98 bis, 141"

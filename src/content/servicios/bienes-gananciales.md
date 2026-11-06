@@ -48,7 +48,7 @@ aspectos:
       resumen: "Reconocida, surte los efectos patrimoniales del matrimonio."
       detalle: "El artículo 245 del Código de Familia reconoce a la unión de hecho que cumple sus requisitos todos los efectos patrimoniales propios del matrimonio formalizado legalmente. El artículo 247 retrotrae esos efectos a la fecha en que se inició la unión. La acción tiene un plazo de caducidad de dos años (artículo 246)."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Se está divorciando o separando y hay bienes en juego"
     - "Hay una vivienda inscrita a nombre de un solo cónyuge"
@@ -76,7 +76,7 @@ importante:
   subtitulo: "Conviene saber que:"
   items:
     - "Se permite renunciar a las ventajas de la distribución final en capitulaciones o en un convenio en escritura pública (artículo 41 del Código de Familia)"
-    - "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)"
+    - "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140 del Código Procesal de Familia)"
     - "Sobre un bien en copropiedad, si ambas partes quieren la titularidad completa y no hay acuerdo, puede ordenarse el remate. Esto ocurre si no hay hijos o hijas menores de edad, o si quien tendrá su custodia no tiene interés en quedarse con el bien y pagar al otro cónyuge (artículo 322)"
     - "Las capitulaciones pueden modificarse después del matrimonio. Si hay personas menores de edad, se requiere autorización del tribunal (artículo 39 del Código de Familia)"
   cierre: "El artículo 41 solo excluye lo que enumera, de modo que la fecha y el origen de cada bien suelen decidir el resultado."
@@ -86,7 +86,7 @@ preguntas:
   - p: "Compré una casa antes de casarme, ¿es ganancial?"
     r: "El artículo 41 excluye los bienes cuya causa o título de adquisición precedió al matrimonio. No trata de forma expresa los pagos o las mejoras hechos después de casarse, por lo que esos aspectos requieren análisis con la documentación."
   - p: "¿Una herencia o donación es ganancial?"
-    r: "El artículo 41 del Código de Familia excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria. También excluye los bienes muebles o inmuebles que los sustituyeron, si se subrogaron a otros propios."
+    r: "No, si se recibió por título gratuito (artículo 41 del Código de Familia). Conviene conservar el documento que lo demuestre, sobre todo si después el bien se vendió o sustituyó."
   - p: "¿Qué pasa con lo adquirido estando separados de hecho?"
     r: "El artículo 41 lo excluye de los gananciales. Por eso puede ser decisivo probar cuándo inició la separación."
 fuentes:

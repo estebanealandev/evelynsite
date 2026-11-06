@@ -436,7 +436,7 @@
   "archivo": "src/content/servicios/bienes-gananciales.md",
   "pagina": "/servicios/bienes-gananciales",
   "tema": "Embargo preventivo",
-  "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)",
+  "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140 del Código Procesal de Familia)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -574,7 +574,7 @@
   "archivo": "src/content/servicios/bienes-gananciales.md",
   "pagina": "/servicios/bienes-gananciales",
   "tema": "Herencia o donación",
-  "texto": "excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria",
+  "texto": "No, si se recibió por título gratuito (artículo 41 del Código de Familia)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -851,6 +851,42 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "Omitía que puede disponerse la continuación mientras haya beneficiarios (CF 47 c).",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-037",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Embargo preventivo",
+  "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 36 de la revisión adversarial: la norma es más amplia y añade la valoración judicial.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-038",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Herencia o donación",
+  "texto": "excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 42 de la revisión adversarial: la respuesta repetía un párrafo de la misma página.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-039",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
   "consultado": "2026-11-05"
  }
 ]

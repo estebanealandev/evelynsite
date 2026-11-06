@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/ui/PageHero.astro';
 import PostsSection from '../../components/sections/PostsSection.astro';
 import SeguridadNavegacion from '../../components/sections/SeguridadNavegacion.astro';
+import RecursosAyuda from '../../components/sections/RecursosAyuda.astro';
 import { fechaLarga, slugify } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
 import { site } from '../../config/site';
@@ -48,7 +49,7 @@ const crumbs = [{ label: 'Blog', href: '/blog' }, { label: d.categoria, href: `/
   <PageHero titulo={d.titulo} crumbs={crumbs}>
     <p slot="antes" class="post-meta"><a href={`/blog/categoria/${slugify(d.categoria)}`}>{d.categoria}</a> · {fechaLarga(d.fecha)}</p>
   </PageHero>
-  {articulo.id === 'proteccion-juridica-violencia-domestica' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /></div>}
+  {articulo.id === 'proteccion-juridica-violencia-domestica' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /><RecursosAyuda /></div>}
   <figure class="article-img" style="margin-block:clamp(28px,4vw,56px) 0"><div data-mascara><img src={`/assets/images/${d.imagen}.webp`} srcset={`/assets/images/${d.imagen}-sm.webp 700w, /assets/images/${d.imagen}.webp 1400w`} sizes="100vw" alt={d.alt} width="1400" height="600" fetchpriority="high" decoding="async" /></div></figure>
 
   <div class="wrap g12 read">

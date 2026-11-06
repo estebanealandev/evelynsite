@@ -924,7 +924,7 @@
   "archivo": "src/content/servicios/proteccion-familiar.md",
   "pagina": "/servicios/proteccion-familiar",
   "tema": "Relación terminada",
-  "texto": "El artículo 2 indica que el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
+  "texto": "el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -936,7 +936,6 @@
     "cita": "El vínculo por afinidad subsistirá, aun cuando haya finalizado la relación que lo originó."
    }
   ],
-  "excepciones": "Otras situaciones requieren análisis; así lo dice el texto.",
   "consultado": "2026-11-05"
  },
  {
@@ -1036,7 +1035,7 @@
   "archivo": "src/content/servicios/proteccion-familiar.md",
   "pagina": "/servicios/proteccion-familiar",
   "tema": "Sin recurso contra la primera resolución",
-  "texto": "Las medidas se aplican desde que se ordenan y contra esa primera resolución no cabe recurso (artículo 10)",
+  "texto": "La autoridad ordena las medidas de inmediato y contra esa primera resolución no cabe recurso (artículo 10)",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -1046,6 +1045,13 @@
      "10"
     ],
     "cita": "no cabrá recurso alguno contra ella"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
    }
   ],
   "consultado": "2026-11-05"
@@ -1229,6 +1235,544 @@
   "estado": "SIN_RESPALDO",
   "retirada": true,
   "motivo": "Título sustituido por uno descriptivo. Se añadió que ninguna medida garantiza por sí sola la seguridad.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-097",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Relación terminada",
+  "texto": "El artículo 2 indica que el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 1 de la revisión adversarial: «depende» y «requieren análisis» disuadían de pedir medidas; ninguna norma exige un análisis previo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-098",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Relación terminada",
+  "texto": "Depende del vínculo.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 1 de la revisión adversarial: respuesta que disuadía de presentar la solicitud.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-099",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Relación terminada",
+  "texto": "Otras situaciones requieren análisis.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 1 de la revisión adversarial: ninguna norma exige un análisis previo a la solicitud.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-100",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Definición del vínculo",
+  "texto": "Si una relación no encaja con claridad en estas definiciones, el punto requiere análisis jurídico.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 1 de la revisión adversarial: sustituido: la solicitud puede presentarse y lo valora la autoridad judicial.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-101",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Relación terminada",
+  "texto": "Sí puede presentar la solicitud aunque la relación haya terminado. La ley protege en particular a las víctimas de violencia en las relaciones de pareja (artículo 1)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "1"
+    ],
+    "cita": "esta Ley protegerá, en particular, a las víctimas de violencia en las relaciones de pareja"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: alcance para exparejas sin convivencia ni matrimonio.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-102",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Vínculo dudoso",
+  "texto": "Si no está claro que su vínculo encaje en la definición, lo valora la autoridad judicial: no hace falta aclararlo antes de pedir las medidas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "La falta de indicación de pruebas no impedirá que la autoridad judicial dé curso a la solicitud"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "La autoridad judicial resolverá con base en las reglas de la sana crítica racional"
+   }
+  ],
+  "excepciones": "Presentar la solicitud no asegura que se concedan las medidas. Pendiente de persona abogada: alcance del artículo 2 para exparejas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-103",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Vínculo dudoso",
+  "texto": "la solicitud puede presentarse igualmente y la autoridad judicial lo valora",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "La autoridad judicial resolverá con base en las reglas de la sana crítica racional"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-104",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin consulta ni patrocinio",
+  "texto": "No necesita una consulta previa ni contratar a una persona abogada para pedirlas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal"
+   }
+  ],
+  "fuenteExterna": {
+   "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+   "titulo": "Poder Judicial, Servicios",
+   "cita": "Indica que no requiere abogada o abogado"
+  },
+  "excepciones": "Pendiente de persona abogada: que el artículo 50, inciso 4, del Código Procesal de Familia alcance a las medidas de la Ley N.º 7586.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-105",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Autenticación",
+  "texto": "Si presenta personalmente la solicitud escrita, esta no requiere autenticación (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "La solicitud escrita solo requerirá autenticación cuando quien la formula no la presente personalmente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-106",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Patrocinio letrado",
+  "texto": "el artículo 50 del Código Procesal de Familia exceptúa de patrocinio letrado la protección cautelar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "4) Protección cautelar"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-107",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Urgencia y competencia",
+  "texto": "En una urgencia, si no puede acudir al despacho que corresponde por territorio, la petición puede plantearse en cualquier despacho competente por la materia (artículo 17 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "17"
+    ],
+    "cita": "ante casos de urgencias e imposibilidad de acudir al despacho competente según el territorio, se puede plantear la respectiva petición en cualquier despacho competente por la materia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-108",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Título de situaciones",
+  "texto": "Cuándo buscar orientación",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 2 de la revisión adversarial: precedía a una invitación a consultar en la página sobre violencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-109",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Legitimación",
+  "texto": "En ciertos casos, otra persona o una institución puede solicitarlas (artículo 7)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 34 de la revisión adversarial: el artículo 7 dice «deberán» para personas menores de edad o con discapacidad.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-110",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Legitimación",
+  "texto": "Para personas menores de edad o con discapacidad, la ley dice que también deben solicitarlas (artículo 7)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-111",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Temor al abandono",
+  "texto": "Si teme que salir del hogar se interprete como abandono (artículos 58 y 173 del Código de Familia), puede pedir que se le autorice un domicilio diferente (artículo 3, inciso b)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "58"
+    ],
+    "cita": "El abandono voluntario y malicioso que uno de los cónyuges haga del otro"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando el cónyuge haya incurrido en abandono voluntario y malicioso del hogar"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Autorizar a la presunta persona agredida un domicilio diferente del común, previa solicitud suya"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: redacción sobre el abandono y criterio jurisprudencial, si existe.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-112",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Vencimiento",
+  "texto": "El artículo 4 no regula una renovación. Si el riesgo continúa, no espere al vencimiento: busque asesoría, por ejemplo la que el artículo 17 encarga al Instituto Nacional de las Mujeres",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: si procede una nueva solicitud y con qué requisitos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-113",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Delito de incumplimiento",
+  "texto": "La Ley N.º 7586 lo nombra, pero no lo describe ni fija su pena",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección"
+   }
+  ],
+  "excepciones": "La Ley N.º 8589 no está en la copia oficial. Pendiente de persona abogada: tipo penal y ámbito.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-114",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Conciliación",
+  "texto": "Nada de esto obliga a una persona a reunirse o negociar con quien ejerce violencia",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 46 de la revisión adversarial: conclusión sin norma que la diga; se atribuye a lo que los artículos no imponen.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-115",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Conciliación",
+  "texto": "Los artículos 9 y 196 no imponen a la persona afectada reunirse o negociar con quien ejerce violencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "cita": "el caso podrá abordarse mediante los mecanismos propios de justicia restaurativa, si cumple con los criterios de admisibilidad y viabilidad"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: carácter voluntario según la Ley N.º 9582, que no está en la copia oficial.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-116",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin recurso contra la primera resolución",
+  "texto": "Las medidas se aplican desde que se ordenan y contra esa primera resolución no cabe recurso (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 4 de la revisión adversarial: la norma manda ordenar de inmediato; no dice que la medida ya esté cumplida ni notificada.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-117",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Aplicación de medidas",
+  "texto": "Aplicación inmediata",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 4 de la revisión adversarial: el título del paso sugería una medida ya cumplida; el artículo 10 habla de ordenar.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-118",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Título",
+  "texto": "las medidas de protección que puede ordenar un juzgado",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 11 de la revisión adversarial: el artículo 3 dice «ordenará».",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-119",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Título",
+  "texto": "las medidas de protección que ordena un juzgado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "la autoridad competente ordenará cualquiera de las siguientes medidas de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-120",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin pruebas",
+  "texto": "La solicitud no se detiene por eso.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 12 de la revisión adversarial: omitía que la prueba cuenta si hay audiencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-121",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin pruebas",
+  "texto": "La falta de indicación de pruebas no impide dar curso a la solicitud (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "La falta de indicación de pruebas no impedirá que la autoridad judicial dé curso a la solicitud"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-122",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Prueba en la audiencia",
+  "texto": "Si luego se convoca a una audiencia, la prueba se valora para decidir si las medidas se mantienen (artículo 14), y en caso de duda se está a lo más favorable para el supuesto agredido (artículo 13)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "el juzgado resolverá, de inmediato, si las medidas aplicadas se mantienen en ejecución o no"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "13"
+    ],
+    "cita": "se estará a lo más favorable para el supuesto agredido"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-123",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Qué reunir",
+  "texto": "Pruebas, si existen: mensajes, fotografías, constancias médicas o nombres de testigos",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 13 de la revisión adversarial: una lista de qué reunir podía llevar a exponerse; la norma no pide reunirlas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-124",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Qué reunir",
+  "texto": "Pruebas, solo si ya las tiene y puede conservarlas sin riesgo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Las pruebas, si existen"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-125",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Línea 1147",
+  "texto": "línea gratuita 1147 para niñas, niños y adolescentes",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://pani.go.cr/pani-recuerda-a-ninos-y-ninas-que-la-linea-gratuita-1147-es-para-ellos-y-ellas/",
+   "titulo": "Patronato Nacional de la Infancia: PANI recuerda a niños y niñas que la línea gratuita 1147 es para ellos y ellas",
+   "cita": "línea gratuita 1147"
+  },
+  "excepciones": "Hallazgo 15. Solo se publica la existencia de la línea, como en guarda y crianza. El horario no se publica: fuentes-verificadas.json lo marca NO_VERIFICABLE (FV-EMER-09).",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-126",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Título",
+  "texto": "Uso indebido de la ley",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 35 de la revisión adversarial: el título podía disuadir a quien teme ser acusado de abusar de la ley.",
   "consultado": "2026-11-05"
  }
 ]

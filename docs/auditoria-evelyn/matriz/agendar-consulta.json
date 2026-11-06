@@ -30,5 +30,29 @@
   "retirada": true,
   "motivo": "El formulario se transmite por correo. El secreto de CDJ art. 41 no se afirma como efecto del formulario: requiere análisis de la relación concreta.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AGE-003",
+  "archivo": "src/pages/agendar-consulta.astro",
+  "pagina": "/agendar-consulta",
+  "tema": "Sin consulta previa",
+  "texto": "Para pedir medidas de protección no hace falta una consulta previa",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "fuenteExterna": {
+   "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+   "titulo": "Poder Judicial, Servicios",
+   "cita": "Indica que no requiere abogada o abogado"
+  },
+  "consultado": "2026-11-05"
  }
 ]

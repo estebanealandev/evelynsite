@@ -5,7 +5,7 @@ import path from 'node:path';
 import { DIR_NORMAS } from './catalogo.mjs';
 
 // La copia oficial tiene algún número partido, como «Artículo 27 4-»: el grupo final lo recompone.
-const TITULO = /^[ \t]*(?:ART[ÍI]CULO|Art[íi]culo)[ \t]+(\d+)(?:[ \t]+(\d)(?=[ \t]*[-.–—:]))?[ \t]*(?:[°ºo][ \t]*)?(bis|ter|qu[aá]ter)?\b/gim;
+const TITULO = /^[ \t]*(?:ART[ÍI]CULO|Art[íi]culo)[ \t]*(\d+)(?:[ \t]+(\d)(?=[ \t]*[-.–—:]))?[ \t]*(?:[°ºo][ \t]*)?(bis|ter|qu[aá]ter)?\b/gim;
 
 export const hash = t => createHash('sha256').update(t).digest('hex').slice(0, 16);
 export const leer = clave => fs.readFileSync(path.join(DIR_NORMAS, `${clave}.txt`), 'utf8');

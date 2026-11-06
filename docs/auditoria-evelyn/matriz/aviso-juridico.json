@@ -63,7 +63,7 @@
   "archivo": "src/pages/aviso-juridico.astro",
   "pagina": "/aviso-juridico",
   "tema": "Publicidad profesional",
-  "texto": "que pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
+  "texto": "pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -111,6 +111,62 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "La suscripción se retira del sitio.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-008",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Publicidad profesional",
+  "texto": "que pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 31 de la revisión adversarial: se retira «Este sitio procura ajustarse»: no consta la colegiatura.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-009",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Alcance del Código de Deberes",
+  "texto": "de aplicación forzosa para las personas abogadas inscritas en el Colegio de Abogados (artículo 1)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "1"
+    ],
+    "cita": "son de aplicación forzosa para todos los abogados y abogadas que se encuentran autorizados (as) como tales e inscritos (as) en el Colegio de Abogados"
+   }
+  ],
+  "excepciones": "Pendiente del Colegio de Abogados: criterio sobre el párrafo segundo del artículo 30 y sobre los artículos 29 y 30 frente a contenidos con llamados a consulta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-010",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Publicidad",
+  "texto": "Este sitio procura ajustarse al artículo 30",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Hallazgo 31 de la revisión adversarial: da por hecho que el Código de Deberes obliga a quien presta el servicio.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-011",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Relación profesional",
+  "texto": "Esta solo existe cuando se acuerda expresamente.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Hallazgo 29 de la revisión adversarial: afirmación absoluta sin norma que la diga; se reformula como condición para iniciarla desde este sitio. Pendiente de persona abogada.",
   "consultado": "2026-11-05"
  }
 ]

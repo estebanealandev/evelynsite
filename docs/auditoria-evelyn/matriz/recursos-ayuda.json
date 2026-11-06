@@ -1,0 +1,92 @@
+[
+ {
+  "id": "FAM-RAY-001",
+  "archivo": "src/components/sections/RecursosAyuda.astro",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "9-1-1 para violencia",
+  "texto": "para situaciones de violencia, todos los días del año, las 24 horas",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.inamu.go.cr/en/contacto",
+   "titulo": "INAMU, Contacto",
+   "cita": "Situaciones de violencia: 9-1-1 todos los días del año (24-7)"
+  },
+  "relacionadas": [
+   "/blog/proteccion-juridica-violencia-domestica"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RAY-002",
+  "archivo": "src/components/sections/RecursosAyuda.astro",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Transferencia a la línea del INAMU",
+  "texto": "pedir a la operadora u operador que transfiera a la línea directa del INAMU",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.inamu.go.cr/web/inamu/preguntas-frecuentes",
+   "titulo": "INAMU, Preguntas frecuentes",
+   "cita": "Por medio de la plataforma del 9-1-1 y solicitar a la operadora u operador que le transfiera a la línea directa del INAMU."
+  },
+  "relacionadas": [
+   "/blog/proteccion-juridica-violencia-domestica"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RAY-003",
+  "archivo": "src/components/sections/RecursosAyuda.astro",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Juzgados disponibles",
+  "texto": "están disponibles las 24 horas",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://observatoriodegenero.poder-judicial.go.cr/index.php/soy-mujer-y-busco/averiguar-sobre-violencia-domestica",
+   "titulo": "Poder Judicial, Observatorio de Género",
+   "cita": "En los Juzgados de Violencia Doméstica que están disponibles las 24 horas del día."
+  },
+  "relacionadas": [
+   "/blog/proteccion-juridica-violencia-domestica"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RAY-004",
+  "archivo": "src/components/sections/RecursosAyuda.astro",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin abogada ni abogado",
+  "texto": "no se requiere abogada o abogado",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://servicios.poder-judicial.go.cr/index.php/servicio?service=58",
+   "titulo": "Poder Judicial, Servicios",
+   "cita": "Indica que no requiere abogada o abogado"
+  },
+  "relacionadas": [
+   "/blog/proteccion-juridica-violencia-domestica"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RAY-005",
+  "archivo": "src/components/sections/RecursosAyuda.astro",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Línea 1125",
+  "texto": "de lunes a viernes, de 8:00 a. m. a 4:00 p. m.",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.inamu.go.cr/en/contacto",
+   "titulo": "INAMU, Contacto",
+   "cita": "Derechos de las mujeres: 1125 de lunes a viernes de 8:00 a.m. a 4:00 p.m."
+  },
+  "relacionadas": [
+   "/blog/proteccion-juridica-violencia-domestica"
+  ],
+  "consultado": "2026-11-05"
+ }
+]

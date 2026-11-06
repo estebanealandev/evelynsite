@@ -4,7 +4,7 @@
   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
   "pagina": "/blog/procedimientos-filiacion-paternidad",
   "tema": "Posesión notoria",
-  "texto": "existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así",
+  "texto": "Para el hijo de matrimonio, el artículo 80 del Código de Familia la describe como tratarlo como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros, de modo que estos y el vecindario lo reputen hijo",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -14,13 +14,6 @@
      "80"
     ],
     "cita": "La posesión notoria de estado del hijo consiste en que sus padres lo hayan tratado como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros"
-   },
-   {
-    "norma": "CF",
-    "articulos": [
-     "93"
-    ],
-    "cita": "consiste en que sus presuntos padres lo hayan tratado como hijo, o dado sus apellidos, o proveído sus alimentos, o presentado como hijo a terceros"
    }
   ],
   "consultado": "2026-11-05"
@@ -30,7 +23,7 @@
   "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
   "pagina": "/blog/procedimientos-filiacion-paternidad",
   "tema": "Apreciación",
-  "texto": "En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente",
+  "texto": "Para el extramatrimonial, el artículo 93 enumera esas circunstancias en forma alternativa, y el juez las aprecia discrecionalmente",
   "tipo": "derecho_vigente",
   "estado": "VERIFICADA",
   "respaldos": [
@@ -40,6 +33,13 @@
      "93"
     ],
     "cita": "circunstancias todas que serán apreciadas discrecionalmente por el Juez"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "93"
+    ],
+    "cita": "lo hayan tratado como hijo, o dado sus apellidos, o proveído sus alimentos, o presentado como hijo a terceros"
    }
   ],
   "consultado": "2026-11-05"
@@ -781,14 +781,14 @@
    {
     "norma": "CF",
     "articulos": [
-     "77"
+     "78"
     ],
     "cita": "Sobre la filiación no puede haber transacción ni compromiso en árbitros, pero puede haber transacción o arbitramento sobre los derechos pecuniarios"
    },
    {
     "norma": "CF",
     "articulos": [
-     "77"
+     "78"
     ],
     "cita": "La transacción o el compromiso tratándose de menores de edad u otros incapaces, requieren aprobación del Tribunal"
    }
@@ -830,6 +830,77 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "Se detallan los límites de 25 años y del documento hallado.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-039",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Posesión notoria",
+  "texto": "existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 21 de la revisión adversarial: aplicaba al artículo 80 el «o» del artículo 93; el 80 usa «y».",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-040",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Apreciación",
+  "texto": "En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 21 de la revisión adversarial: se distinguen los artículos 80 y 93.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-041",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Paternidad por presunción",
+  "texto": "si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "por motivo de la presunción de paternidad de un padre que no corresponde a la verdad biológica, se podrá pedir su reconocimiento por quien corresponda ante el Registro Civil"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "Si sucediera una oposición fundada del padre o la madre registrales, el asunto deberá conocerse jurisdiccionalmente mediante el proceso resolutivo familiar"
+   }
+  ],
+  "excepciones": "Hallazgo 22: la propuesta decía «oposición»; el artículo 84 dice «oposición fundada». Pendiente de persona abogada: legitimación actual de madre e hijo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-042",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Plazo del artículo 88",
+  "texto": "La Sala Constitucional anuló un límite de dos años semejante en el artículo 86, según la nota citada",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "La acción del hijo no será admisible después de dos años contados desde la mayoría de edad"
+   }
+  ],
+  "excepciones": "Solo se conoce por la nota de SINALEVI. Pendiente de persona abogada: si el plazo del artículo 88 sigue aplicándose.",
   "consultado": "2026-11-05"
  }
 ]

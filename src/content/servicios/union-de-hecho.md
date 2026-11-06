@@ -48,7 +48,7 @@ aspectos:
       resumen: "Una nota de SINALEVI recoge una resolución de la Sala Constitucional."
       detalle: "La nota incorporada a los artículos 37, 41 y 245 indica que la resolución N.º 13920 del 9 de junio de 2023 reconoció el derecho a suscribir y registrar capitulaciones para las uniones de hecho, incluidas las parejas del mismo sexo, y no solo en el matrimonio."
 situaciones:
-  titulo: "Situaciones en las que puede ser útil asesorarse"
+  titulo: "Situaciones frecuentes en este tema"
   items:
     - "Terminó una convivencia prolongada"
     - "Falleció su pareja y hay bienes o derechos en discusión"
@@ -63,7 +63,7 @@ procedimiento:
   entrada: "La vía depende de si los convivientes están de acuerdo. En ambas rige el mismo plazo de caducidad."
   pasos:
     - titulo: "Por mutuo consentimiento"
-      texto: "Una vez finalizada la unión, los convivientes otorgan un convenio en escritura pública, con los requisitos y la forma de trámite del artículo 48 del Código de Familia, e incluyen las declaraciones de al menos dos personas sobre la existencia de la unión y sus requisitos (artículo 246)."
+      texto: "Una vez finalizada la unión, los convivientes otorgan un convenio en escritura pública, con los requisitos y la forma de trámite del artículo 48 del Código de Familia, e incluyen las declaraciones de al menos dos personas sobre la existencia de la unión y sus requisitos (artículo 246). El artículo 246 remite a la forma de trámite del artículo 48, que hoy incluye la vía del Registro Civil y un plazo de tres meses para presentar el convenio ante la autoridad judicial. Cómo se aplican al reconocimiento de la unión requiere análisis."
     - titulo: "Trámite del convenio"
       texto: "La petición se presenta ante la autoridad judicial de la residencia o el domicilio de cualquiera de los convivientes, con el testimonio de la escritura y las certificaciones (artículos 18 y 289 del Código Procesal de Familia). Si hay personas menores de edad, se les da oportunidad de opinar y la sentencia se notifica al PANI (artículo 290)."
     - titulo: "Por proceso contencioso"

@@ -951,5 +951,88 @@
   "texto": "Lo relativo a los hijos puede ser modificado por el tribunal al momento de la aprobación, porque sus derechos no dependen únicamente de la voluntad de los progenitores.",
   "motivo": "La justificación no consta en la norma; se conserva la facultad con cita de los arts. 48 y 152 CF.",
   "retirada": true
+ },
+ {
+  "id": "FAM-DIV-044",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tema": "Medidas de protección distintas",
+  "texto": "Las medidas de protección de la Ley N.º 7586 son distintas: se piden con independencia de cualquier otro proceso (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DIV-045",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tema": "Medidas dentro del proceso",
+  "texto": "Dentro del proceso, la autoridad también puede ordenar la salida del hogar y otras medidas de protección (artículos 136 y 137 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "136"
+    ],
+    "cita": "la autoridad judicial podrá ordenar o autorizar a cualquiera de los cónyuges o convivientes la salida inmediata del hogar"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "137"
+    ],
+    "cita": "cualquier medida de protección que estime pertinente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DIV-046",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tema": "Límites de la separación judicial",
+  "texto": "El artículo 59 limita quién puede pedirla según la causal y fija una caducidad de dos años desde que se conocieron los hechos, salvo en los incisos 2), 3), 5) y 8) del artículo 58",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "59"
+    ],
+    "cita": "Por el cónyuge inocente en el caso de los incisos 1), 2), 3) y 4) del artículo anterior"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "59"
+    ],
+    "cita": "Caducarán tales acciones en un término de dos años, salvo las que se fundamentan en los incisos 2), 3), 5) y 8) indicados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-DIV-047",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+  "consultado": "2026-11-05"
  }
 ]

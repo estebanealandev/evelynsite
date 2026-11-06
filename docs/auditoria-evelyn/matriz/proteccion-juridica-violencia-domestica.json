@@ -612,5 +612,121 @@
   "retirada": true,
   "motivo": "Contenido movido: el artículo repetía la página de servicio. Se reenfocó en lo que ocurre después de la solicitud.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-092",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Aplicación de medidas",
+  "texto": "se aplican de inmediato al plantearse la solicitud",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 4 de la revisión adversarial: el artículo 10 manda ordenar; la orden aún debe notificarse y ejecutarse.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-093",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Aplicación de medidas",
+  "texto": "Planteada la solicitud, la autoridad competente debe ordenar de inmediato aplicar las medidas de la Ley contra la Violencia Doméstica, N.º 7586 (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-094",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Notificación y ejecución",
+  "texto": "Esa orden todavía debe notificarse y ejecutarse",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "Esta resolución deberá notificarse"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "La autoridad judicial deberá revisar los resultados de la ejecución de las medidas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-095",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Vencimiento",
+  "texto": "La ley no prevé en ese artículo una renovación, de modo que lo procedente al acercarse el vencimiento debe revisarse con asesoría si el riesgo continúa.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 10 de la revisión adversarial: la redacción no decía qué hacer ni a quién acudir.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-096",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Vencimiento",
+  "texto": "El artículo 4 no regula una renovación. Si el riesgo continúa, no espere al vencimiento: busque asesoría, por ejemplo la que el artículo 17 encarga al Instituto Nacional de las Mujeres",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: si procede una nueva solicitud y con qué requisitos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-097",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Delito de incumplimiento",
+  "texto": "La Ley N.º 7586 nombra ese delito, pero no lo describe ni fija su pena",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección"
+   }
+  ],
+  "excepciones": "La Ley N.º 8589 no está en la copia oficial. Pendiente de persona abogada: tipo penal y ámbito.",
+  "consultado": "2026-11-05"
  }
 ]

@@ -21,7 +21,7 @@ fuentes:
 
 > **Si está en peligro, llame ahora al 9-1-1.** Este sitio y sus formularios no atienden emergencias.
 
-Las medidas de la Ley contra la Violencia Doméstica, N.º 7586, se aplican de inmediato al plantearse la solicitud. Después pueden venir una audiencia, una resolución y un seguimiento judicial. Duran un año si una resolución firme no dispone otra cosa. Son órdenes judiciales cuyo incumplimiento tiene consecuencias penales, pero ninguna medida garantiza por sí sola la seguridad de una persona. Qué medidas existen y quién puede pedirlas se explica en la página de [violencia doméstica y medidas de protección](/servicios/proteccion-familiar).
+Planteada la solicitud, la autoridad competente debe ordenar de inmediato aplicar las medidas de la Ley contra la Violencia Doméstica, N.º 7586 (artículo 10). Esa orden todavía debe notificarse y ejecutarse: si entre tanto hay peligro, llame al 9-1-1. Después pueden venir una audiencia, una resolución y un seguimiento judicial. Duran un año si una resolución firme no dispone otra cosa. Son órdenes judiciales cuyo incumplimiento tiene consecuencias penales, pero ninguna medida garantiza por sí sola la seguridad de una persona. Qué medidas existen y quién puede pedirlas se explica en la página de [violencia doméstica y medidas de protección](/servicios/proteccion-familiar).
 
 ## Al presentar la solicitud
 
@@ -47,7 +47,7 @@ Respecto de la pensión provisional, una nota de SINALEVI bajo el artículo 10 r
 
 ## Cuánto duran y cómo terminan
 
-Se mantienen por un año, mientras no sean levantadas o modificadas antes por resolución judicial firme (artículo 4). La ley no prevé en ese artículo una renovación, de modo que lo procedente al acercarse el vencimiento debe revisarse con asesoría si el riesgo continúa.
+Se mantienen por un año, mientras no sean levantadas o modificadas antes por resolución judicial firme (artículo 4). El artículo 4 no regula una renovación. Si el riesgo continúa, no espere al vencimiento: busque asesoría, por ejemplo la que el artículo 17 encarga al Instituto Nacional de las Mujeres.
 
 Según el artículo 5:
 
@@ -67,6 +67,8 @@ La ley establece estas obligaciones:
 
 - **Autoridad judicial.** Debe testimoniar piezas al Ministerio Público para el juzgamiento por el delito de incumplimiento de una medida de protección (artículo 3) y revisar los resultados de la ejecución de las medidas (artículo 17).
 - **Policía administrativa.** Debe vigilar el cumplimiento efectivo de las medidas (artículo 17). Además, debe intervenir de oficio o a solicitud, socorrer a las personas agredidas aun dentro de su domicilio, detener a las presuntas personas agresoras y ponerlas a la orden de la autoridad competente, levantar un acta y decomisar armas (artículo 20).
+
+La Ley N.º 7586 nombra ese delito, pero no lo describe ni fija su pena: este artículo no desarrolla la norma penal que lo regula.
 
 Conviene informar el incumplimiento al juzgado que dictó las medidas. No se recomienda confrontar a la otra persona ni intentar resolverlo directamente con ella.
 

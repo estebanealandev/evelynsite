@@ -15,6 +15,8 @@ fuentes:
     detalle: "arts. 48, 60, 152, 167, 173"
   - ref: "CPF"
     detalle: "arts. 55, 260, 289 a 293"
+  - ref: "LCVD"
+    detalle: "art. 8"
 ---
 
 Firmar el convenio de divorcio no disuelve el matrimonio. Según el artículo 48 del Código de Familia, reformado por la Ley N.º 10650, el convenio tiene efectos una vez aprobado en la vía judicial o administrativa correspondiente. Entre la firma y esa aprobación pueden surgir plazos, dudas de la autoridad y hasta una oposición. Este artículo se concentra en esa etapa. El contenido general del divorcio está en la página de divorcios.
@@ -46,7 +48,7 @@ La oposición al convenio está limitada: solo se admite cuando se trate de vici
 
 Si se plantea, la otra parte tiene cinco días para manifestarse y aportar prueba. Después se cita a una audiencia, se escuchan conclusiones y se dicta la parte dispositiva. La sentencia integral debe dictarse y notificarse dentro de tres días.
 
-Quien firmó bajo presión o violencia debe buscar asesoría de inmediato, por lo breve de esa oportunidad. Ante un peligro inmediato, llame al 9-1-1: este sitio no atiende emergencias.
+Quien firmó bajo presión o violencia debe buscar asesoría de inmediato, porque en el trámite judicial la oposición solo se admite antes de la aprobación. Si el convenio va al Registro Civil o ya fue aprobado, qué vías quedan requiere análisis. Las medidas de protección pueden pedirse con independencia de ese trámite (artículo 8 de la Ley N.º 7586). Ante un peligro inmediato, llame al 9-1-1: este sitio no atiende emergencias.
 
 ## Qué revisa la autoridad judicial
 

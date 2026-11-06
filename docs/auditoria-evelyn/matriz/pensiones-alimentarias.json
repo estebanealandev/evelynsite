@@ -1185,5 +1185,56 @@
   "texto": "Si no se realiza la audiencia o no hay conciliación, se dicta una sentencia anticipada con el monto razonado de la cuota. Las partes pueden oponerse en cinco días, pero la oposición no suspende sus efectos.",
   "motivo": "Se completa con la audiencia del art. 273 y la consecuencia de no oponerse (art. 272 CPF).",
   "retirada": true
+ },
+ {
+  "id": "FAM-PEN-057",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tema": "Prueba de los estudios",
+  "texto": "con buenos rendimientos y una carga académica razonable, requisitos que deben probarse (artículo 173)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Estos requisitos deberán probarse al interponer la demanda"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PEN-058",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tema": "Hijas e hijos incapaces",
+  "texto": "El artículo 169 también obliga respecto de hijas e hijos incapaces, por lo que la mayoría de edad no resuelve por sí sola esos casos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "169"
+    ],
+    "cita": "Los padres y madres a sus hijos e hijas menores o incapaces"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: relación entre los artículos 169 y 173.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PEN-059",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
+  "consultado": "2026-11-05"
  }
 ]

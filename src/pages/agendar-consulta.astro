@@ -9,7 +9,7 @@ const pasos = [
 ];
 const crumbs = [{ label: 'Agendar una consulta' }];
 ---
-<Base title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica por formulario. Revise qué ocurre después, qué datos se piden y cómo se tratan." crumbs={crumbs}>
+<Base salidaRapida title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica por formulario. Revise qué ocurre después, qué datos se piden y cómo se tratan." crumbs={crumbs}>
   <PageHero titulo="Solicite una *consulta*" lede="Indique el tipo de asunto y descríbalo de forma general. La consulta permite revisar su situación y las opciones que contempla la legislación costarricense." crumbs={crumbs} />
 
   <section class="section" id="formulario">
@@ -20,7 +20,7 @@ const crumbs = [{ label: 'Agendar una consulta' }];
         <p style="margin-top:22px;font-size:var(--fs-small)">¿Prefiere conocer más primero? Revise las <a href="/servicios">áreas</a> o el <a href="/blog">blog</a>.</p>
       </aside>
       <div style="grid-column:6/-1" id="agendar-form">
-        <p class="notice notice--urgent" role="note" style="margin-bottom:30px">Este formulario no atiende emergencias. Si usted o alguien más está en peligro, llame al 9-1-1.</p>
+        <p class="notice notice--urgent" role="note" style="margin-bottom:30px">Este formulario no atiende emergencias. Si usted o alguien más está en peligro, llame al 9-1-1. Para pedir medidas de protección no hace falta una consulta previa: vea <a href="/servicios/proteccion-familiar">violencia doméstica y medidas de protección</a>.</p>
         <ConsultaForm />
       </div>
     </div>

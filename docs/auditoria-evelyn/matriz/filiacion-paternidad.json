@@ -719,7 +719,7 @@
   "tema": "Liquidación de alimentos",
   "texto": "El artículo 96 del Código de Familia dispone que la obligación alimentaria se retrotrae a la fecha de presentación de la demanda y se liquida en el proceso alimentario, mediante ejecución de sentencia",
   "tipo": "derecho_vigente",
-  "estado": "VERIFICADA",
+  "estado": "REQUIERE_CORRECCION",
   "respaldos": [
    {
     "norma": "CF",
@@ -729,7 +729,9 @@
     "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda y se liquidará en el proceso alimentario correspondiente, mediante el trámite de ejecución de sentencia"
    }
   ],
-  "consultado": "2026-11-05"
+  "consultado": "2026-11-05",
+  "retirada": true,
+  "motivo": "Hallazgo 42 de la revisión adversarial: pregunta frecuente que repetía un punto de la misma página; se eliminó. El contenido sigue en «Plazos y efectos» (artículo 96)."
  },
  {
   "id": "FAM-FIL-032",
@@ -870,6 +872,45 @@
   "estado": "REQUIERE_CORRECCION",
   "retirada": true,
   "motivo": "Se precisa con el art. 63 bis de la Ley 3504, adicionado por L9747.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-040",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Paternidad por presunción",
+  "texto": "si la paternidad asignada por presunción no corresponde a la verdad biológica, puede pedirse el reconocimiento ante el Registro Civil y, si hay oposición fundada de los padres registrales, se acude al proceso resolutivo familiar (artículo 84)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "por motivo de la presunción de paternidad de un padre que no corresponde a la verdad biológica, se podrá pedir su reconocimiento por quien corresponda ante el Registro Civil"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "Si sucediera una oposición fundada del padre o la madre registrales, el asunto deberá conocerse jurisdiccionalmente mediante el proceso resolutivo familiar"
+   }
+  ],
+  "excepciones": "Hallazgo 22. Pendiente de persona abogada: legitimación actual de madre e hijo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-041",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Título de situaciones",
+  "texto": "Situaciones en las que puede ser útil asesorarse",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 43 de la revisión adversarial: la lista funcionaba como captación antes de un botón de consulta.",
   "consultado": "2026-11-05"
  }
 ]

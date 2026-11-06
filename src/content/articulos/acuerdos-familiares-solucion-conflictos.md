@@ -12,14 +12,14 @@ destacado: false
 servicios: ["acuerdos-familiares"]
 fuentes:
   - ref: "CPF"
-    detalle: "arts. 9, 31, 193 a 197, 231, 233, 237, 269, 270"
+    detalle: "arts. 9, 31, 193 a 197, 222, 231, 233, 237, 269, 270"
   - ref: "CF"
     detalle: "arts. 141, 152, 167"
   - ref: "LCVD"
     detalle: "art. 8"
 ---
 
-El Código Procesal de Familia permite conciliar cuando procede, pero no la plantea como salida para todo conflicto: la prohíbe si se constatan relaciones desiguales de poder y la excluye en derechos irrenunciables o indisponibles. Si hay violencia, lo primero es la seguridad. Las medidas de protección de la Ley N.º 7586 se piden con independencia de cualquier otro proceso (artículo 8) y no requieren negociar con nadie. Ante un peligro inmediato, llame al 9-1-1.
+El Código Procesal de Familia manda intentar la conciliación cuando procede, pero no la plantea como salida para todo conflicto: la prohíbe si se constatan relaciones desiguales de poder y la excluye en derechos irrenunciables o indisponibles. Si hay violencia, lo primero es la seguridad. Las medidas de protección de la Ley N.º 7586 se piden con independencia de cualquier otro proceso (artículo 8) y no requieren negociar con nadie. Ante un peligro inmediato, llame al 9-1-1.
 
 ## Cuándo está prohibida o no procede
 
@@ -33,7 +33,7 @@ Algunos límites vienen del Código de Familia. El derecho a los alimentos no pu
 
 Los artículos 9 y 196 permiten abordar mediante mecanismos propios de justicia restaurativa algunos casos que no pueden conciliarse. El artículo 196 menciona la violencia intrafamiliar y la protección de derechos de personas en estado de vulnerabilidad. En ambos, la condición es que el caso cumpla los criterios de admisibilidad y viabilidad, que el Código no desarrolla en esos artículos.
 
-La Ley N.º 10558 también reformó el art. 2 de la Ley de Justicia Restaurativa, N.º 9582, para incluir los casos dispuestos por el artículo 9 del Código Procesal de Familia. Estos mecanismos son una posibilidad sujeta a esos criterios. No son un trámite que una persona afectada deba buscar por su cuenta ni un motivo para reunirse con quien ejerce violencia.
+La Ley N.º 10558 también reformó el art. 2 de la Ley de Justicia Restaurativa, N.º 9582, para incluir los casos dispuestos por el artículo 9 del Código Procesal de Familia. Estos mecanismos son una posibilidad sujeta a esos criterios. Los artículos 9 y 196 no imponen a la persona afectada reunirse o negociar con quien ejerce violencia.
 
 ## En qué momentos puede intentarse
 
@@ -60,7 +60,7 @@ Si el arreglo se refiere a derechos propios de personas menores de edad o con di
 ## Qué efectos tiene lo acordado
 
 - **Cosa juzgada.** Lo acordado tiene carácter y eficacia de cosa juzgada material o formal, según su contenido (artículo 9).
-- **Hijas e hijos.** En el divorcio y la separación por mutuo consentimiento, lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental (artículo 152 del Código de Familia).
+- **Hijas e hijos.** En el divorcio y la separación por mutuo consentimiento, lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse, a solicitud de parte o del Patronato Nacional de la Infancia (artículo 152 del Código de Familia). Ese artículo menciona la vía incidental y el artículo 222 del Código Procesal de Familia incluye estas modificaciones en el proceso resolutivo familiar, por lo que la vía se revisa según la resolución.
 - **Pensiones.** Los acuerdos extrajudiciales surten efectos desde su adopción. El apremio corporal solo se puede solicitar desde la homologación judicial y respecto de las cuotas futuras. Lo adeudado antes de homologar se cobra por apremio patrimonial (artículo 197).
 - **Revisión por vulneración de derechos.** Como medida de protección, la autoridad puede suspender o modificar provisionalmente un acuerdo conciliatorio extrajudicial que viole o amenace violar los derechos consagrados en la normativa sustantiva (artículo 237).
 

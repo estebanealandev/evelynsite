@@ -8,13 +8,13 @@ import { principios } from '../lib/institucional';
 
 const posts = (await getCollection('articulos')).filter(a => a.data.destacado).slice(3, 6);
 const etica = [
-  { t: 'Deberes profesionales', d: 'El Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho regula la relación con la clientela y la publicidad. Su artículo 30 pide moderación y evitar el autoelogio o la información que induzca a error. Por eso este sitio explica normas y procedimientos, sin calificarse a sí mismo.' },
-  { t: 'Análisis de cada asunto', d: 'La misma norma puede producir efectos distintos según los hechos, la prueba y las resoluciones ya dictadas. Esos elementos se revisan antes de sugerir una vía.' },
-  { t: 'Normativa al día', d: 'El Código Procesal de Familia rige desde el 1 de octubre de 2024. La Ley N.º 10558, de octubre de 2024, lo reformó, y la Ley N.º 10650, de febrero de 2025, cambió el artículo 48 del Código de Familia. Las áreas y los artículos indican la fecha en que se consultaron las normas.' }
+  { t: 'Qué dice el Código de Deberes', d: 'El Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho es de aplicación forzosa para las personas abogadas inscritas en el Colegio de Abogados (artículo 1). Regula, entre otros puntos, la relación con la clientela y la publicidad. Su artículo 30 pide moderación y evitar el autoelogio o la información que induzca a error.' },
+  { t: 'Análisis de cada asunto', d: 'La misma norma puede producir efectos distintos según los hechos, la prueba y las resoluciones ya dictadas. Sin esos elementos no puede sugerirse una vía.' },
+  { t: 'Fecha de las normas', d: 'El Código Procesal de Familia rige desde el 1 de octubre de 2024. La Ley N.º 10558, de octubre de 2024, lo reformó, y la Ley N.º 10650, de febrero de 2025, cambió el artículo 48 del Código de Familia. Las áreas y los artículos indican la fecha en que se consultaron las normas.' }
 ];
 const crumbs = [{ label: 'Sobre Evelyn' }];
 ---
-<Base title="Sobre Evelyn Elizondo" description="Cómo se trabaja en derecho de familia en Costa Rica con Evelyn Elizondo: revisión de la solicitud, análisis del asunto, secreto profesional y límites de la publicidad." crumbs={crumbs}>
+<Base title="Sobre Evelyn Elizondo" description="Qué procura aclarar una consulta de derecho de familia en Costa Rica con Evelyn Elizondo: vías, documentos, plazos, efectos y los límites de la publicidad profesional." crumbs={crumbs}>
   <PageHero titulo="Cómo se trabaja en derecho de *familia*" lede="Evelyn Elizondo | Derecho de Familia | Costa Rica" crumbs={crumbs} />
 
   <section class="chapter bg-ivory">
@@ -42,15 +42,15 @@ const crumbs = [{ label: 'Sobre Evelyn' }];
 
   <section class="chapter">
     <div class="wrap">
-      <p class="eyebrow reveal">Forma de trabajar</p>
-      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Tres reglas de trabajo</h2>
+      <p class="eyebrow reveal">Marco general</p>
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Tres puntos de referencia</h2>
       <ul class="values">{etica.map((e, i) => <li class="reveal" style={`--retraso:${i * 0.1}s`}><h3>{e.t}</h3><p>{e.d}</p></li>)}</ul>
     </div>
   </section>
 
   <section class="chapter bg-ivory">
     <div class="wrap">
-      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Criterios que se aplican a cada consulta</h2>
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Criterios generales sobre una consulta</h2>
       <ul class="values">
         {principios.map((p, i) => <li class="reveal" style={`--retraso:${(i % 3) * 0.1}s`}><h3>{p.titulo}</h3><p>{p.texto}</p><span class="values__tag">{p.etiqueta}</span></li>)}
       </ul>

@@ -127,6 +127,17 @@ test.describe('orientador', () => {
   });
 });
 
+test.describe('página de violencia', () => {
+  test('no propone agendar una consulta y remite a recursos oficiales', async ({ page }) => {
+    await page.goto('/servicios/proteccion-familiar');
+    await expect(page.locator('main').getByRole('link', { name: 'Agendar una consulta' })).toHaveCount(0);
+    const ayuda = page.locator('.ayuda');
+    await expect(ayuda).toContainText('9-1-1');
+    await expect(ayuda).toContainText('no se requiere abogada o abogado');
+    await expect(ayuda.getByRole('link').first()).toHaveAttribute('href', /inamu\.go\.cr/);
+  });
+});
+
 test.describe('salida rápida: lo que promete', () => {
   test('explica sus límites sin afirmar que borra el historial', async ({ page }) => {
     await page.goto('/servicios/proteccion-familiar');

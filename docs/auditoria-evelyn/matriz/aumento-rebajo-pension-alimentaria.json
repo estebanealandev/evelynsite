@@ -438,5 +438,62 @@
   "texto": "en un porcentaje igual a la variación del salario de referencia que indica esa norma",
   "motivo": "El art. 279 CPF remite al salario establecido según la Ley N.º 7337.",
   "retirada": true
+ },
+ {
+  "id": "FAM-ARP-023",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tema": "Exoneración",
+  "texto": "Por eso, cumplir dieciocho años no es, por sí solo, un motivo para dejar de pagar sin solicitar antes la exoneración.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 19 de la revisión adversarial: conclusión presentada como consecuencia de una norma que no la dice.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ARP-024",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tema": "Salvedad de otros procesos",
+  "texto": "Pero si en un proceso de divorcio, separación judicial o penal se resuelve cosa distinta, se está a lo que se disponga",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Pero, si en un proceso de divorcio, separación judicial o penal, el juez resolviere cosa distinta, se estará a lo que se disponga"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-ARP-025",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tema": "Cuota mientras se tramita",
+  "texto": "Dejar de pagarla sin una resolución expone a las vías de cobro (artículos 283 y 285 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "aunque se trate de mensualidades para las cuales no haya solicitado apremio corporal"
+   }
+  ],
+  "consultado": "2026-11-05"
  }
 ]

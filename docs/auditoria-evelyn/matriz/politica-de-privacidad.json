@@ -428,5 +428,32 @@
   "retirada": true,
   "motivo": "Se limita a lo comprobable en el sitio y se añaden L8968 art. 14 y R37554 art. 40.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-024",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Datos sensibles",
+  "texto": "El mismo artículo prohíbe tratar datos relativos a la salud, la vida y la orientación sexual, entre otros, salvo excepciones como las necesarias para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Se prohíbe el tratamiento de datos de carácter personal que revelen el origen racial o étnico, opiniones políticas, convicciones religiosas, espirituales o filosóficas, así como los relativos a la salud, la vida y la orientación sexual, entre otros"
+   },
+   {
+    "norma": "L8968",
+    "articulos": [
+     "9"
+    ],
+    "cita": "necesarios para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial"
+   }
+  ],
+  "excepciones": "Pendiente de persona abogada: base jurídica si esos datos llegan por el formulario.",
+  "consultado": "2026-11-05"
  }
 ]

@@ -386,5 +386,69 @@
   "retirada": true,
   "motivo": "Consejo genérico que repetía el servicio. El artículo se reenfocó en el incumplimiento.",
   "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-021",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Perjuicio",
+  "texto": "Si de la investigación resulta un perjuicio, la vía es pedir a la autoridad judicial que modifique o suspenda el contacto.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 6 de la revisión adversarial: «la vía» sugería una sola salida, posterior a la investigación del PANI.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-022",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Perjuicio",
+  "texto": "Si de la investigación resulta un perjuicio, puede pedirse a la autoridad judicial que modifique o suspenda el contacto",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "deberá modificar o suspender el ejercicio de estos derechos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-023",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Violencia sin esperar",
+  "texto": "Si hay violencia, no hace falta esperar esa investigación: pueden pedirse medidas de protección de forma verbal o escrita y, tratándose de una persona menor de edad, cualquier persona que conozca la situación debe solicitarlas (artículos 3, inciso h, 7 y 8 de la Ley contra la Violencia Doméstica)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona que tenga conocimiento"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
  }
 ]

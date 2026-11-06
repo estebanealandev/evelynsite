@@ -12,14 +12,14 @@ destacado: true
 servicios: ["bienes-gananciales", "divorcios"]
 fuentes:
   - ref: "CF"
-    detalle: "arts. 40, 41, 245, 247"
+    detalle: "arts. 40, 41, 42, 245, 247"
   - ref: "CPF"
-    detalle: "arts. 140, 141, 143, 320 a 322, 330, 333"
+    detalle: "arts. 140, 141, 143, 226, 320 a 322, 330, 333"
 ---
 
 Según el artículo 41 del Código de Familia, cada cónyuge tiene derecho a participar en la mitad del valor neto de los bienes gananciales que consten en el patrimonio del otro. Son gananciales los bienes que no entran en la lista de exclusiones de ese mismo artículo, porque la norma dice que «únicamente» esos no lo son. Esa lista es, por tanto, la primera revisión que hay que hacer con cada bien.
 
-Mientras no llegue uno de los momentos del artículo 41, el régimen no opera: sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40). El derecho nace al disolverse o declararse nulo el matrimonio, al declararse la separación judicial o al celebrarse capitulaciones después de las nupcias.
+Mientras no llegue uno de los momentos del artículo 41, el derecho a participar en los gananciales aún no nace, y sin capitulaciones cada cónyuge dispone de sus bienes (artículo 40). Esa libertad tiene límites: el inmueble afectado a habitación familiar (artículo 42), la liquidación anticipada (artículo 41) y las peticiones de nulidad o de inoponibilidad de traspasos que menciona el artículo 226 del Código Procesal de Familia. El derecho nace al disolverse o declararse nulo el matrimonio, al declararse la separación judicial o al celebrarse capitulaciones después de las nupcias.
 
 ## Las cinco exclusiones
 
@@ -45,7 +45,7 @@ El Código Procesal de Familia prevé medidas según el tipo de bien:
 
 - **Bienes inscribibles.** En el proceso donde se discute la ganancialidad de bienes inmuebles, muebles inscribibles o derechos de concesión, se ordena anotarlos en el registro correspondiente (artículo 141).
 - **Muebles no inscritos.** La autoridad judicial puede inventariarlos, ordenar a quien los posea no enajenarlos ni gravarlos sin consentimiento del despacho y disponer su depósito judicial (artículo 143).
-- **Embargo preventivo.** Puede pedirse en procesos con pretensiones patrimoniales para impedir que se eluda la responsabilidad mediante el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140).
+- **Embargo preventivo.** Puede pedirse en procesos con pretensiones patrimoniales para impedir que se eluda la responsabilidad mediante el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se pide sobre una propiedad, la autoridad judicial valora si puede afectar los derechos de otros miembros de la familia, en especial personas en estado de vulnerabilidad, y de ser así lo deniega (artículo 140).
 
 ## La liquidación paso a paso
 

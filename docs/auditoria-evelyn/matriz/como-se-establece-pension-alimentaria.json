@@ -589,5 +589,63 @@
   "texto": "Ejecución. La cuota es ejecutable por los medios coercitivos después del tercer día de la notificación",
   "motivo": "Se presentaba como cuarto paso y omitía la audiencia de los arts. 272 y 273 CPF.",
   "retirada": true
+ },
+ {
+  "id": "FAM-CEP-027",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tema": "Sentencia anticipada",
+  "texto": "Si por cualquier motivo la audiencia no se realiza en el plazo o no hay conciliación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "Si por cualquier motivo no se realizara la audiencia previa dentro del plazo máximo de diez días hábiles"
+   }
+  ],
+  "excepciones": "Hallazgo 8. Pendiente de persona abogada: efectos de no comparecer.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CEP-028",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tema": "Título",
+  "texto": "Si hay cuotas de antes de la demanda",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Hallazgo 20 de la revisión adversarial: antes de la demanda no hay cuotas fijadas; el título podía aplicar el tope de doce meses a las cuotas no pagadas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CEP-029",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tema": "Cuotas no pagadas",
+  "texto": "No debe confundirse con las cuotas ya fijadas y no pagadas, que tienen sus propias vías de cobro (artículos 283 y 285 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "aunque se trate de mensualidades para las cuales no haya solicitado apremio corporal"
+   }
+  ],
+  "consultado": "2026-11-05"
  }
 ]
