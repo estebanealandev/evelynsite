@@ -27,7 +27,7 @@ if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers |
       <ul>
         <li><strong>Formulario de consulta:</strong> tipo de asunto, mensaje de hasta 1200 caracteres, nombre, correo electrónico, teléfono (opcional) y constancia de su consentimiento.</li>
         <li><strong>Campos técnicos del formulario:</strong> un campo trampa y la hora de inicio del llenado, que sirven para detectar envíos automatizados. No se guardan ni se incluyen en el mensaje.</li>
-        <li><strong>Dirección IP:</strong> para limitar envíos repetidos, el servidor calcula una huella SHA-256 de la dirección IP y la conserva en memoria con la hora de los intentos. No se escribe en disco y se pierde al reiniciar el servidor.</li>
+        <li><strong>Dirección IP:</strong> para limitar envíos repetidos, el servidor calcula una huella cifrada de la dirección IP, con una clave que solo existe en memoria, y la conserva con la hora de los intentos. No se escribe en disco, se borra cuando vence el límite y se pierde al reiniciar el servidor.</li>
       </ul>
       <p>El mensaje es texto libre y un asunto de familia puede revelar información íntima. Basta una descripción general: se solicita no incluir datos sensibles, como información de salud, ni nombres de personas menores de edad, números de cédula o de expediente, o detalles íntimos. El formulario no admite archivos. Según el artículo 9 de la Ley N.º 8968, ninguna persona está obligada a suministrar datos sensibles. El mismo artículo prohíbe tratar datos relativos a la salud, la vida y la orientación sexual, entre otros, salvo excepciones como las necesarias para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial.</p>
 
@@ -45,18 +45,18 @@ if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers |
 
       <h2>Destinatarios y proveedores</h2>
       <p>Las solicitudes se envían por correo electrónico, mediante SMTP con TLS exigido, a la dirección que define el responsable. Pueden consultarlas el responsable y quienes este designe para atender la solicitud. Los proveedores técnicos intervienen en lo necesario para prestar su servicio. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
-      <p>Por defecto, el sitio no envía un acuse automático a su correo. Si se activa, ese mensaje no repite el contenido de la solicitud.</p>
+      <p>El sitio no envía mensajes automáticos a su correo: un acuse podría revelar la consulta a quien revise ese buzón.</p>
 
       <h2>Qué se guarda en su navegador</h2>
       <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies propias.</p>
-      <p>Solo guarda una preferencia en el almacenamiento local del navegador (localStorage, clave «movimiento») si elige «Pausar animaciones». Se elimina al reanudarlas y no se envía al servidor. El formulario no guarda borradores, y el orientador de áreas no guarda ni envía sus respuestas.</p>
+      <p>Solo guarda una preferencia en el almacenamiento local del navegador (localStorage, clave «movimiento») si elige «Pausar animaciones». Se elimina al reanudarlas y no se envía al servidor. El formulario no guarda borradores y el orientador de áreas no guarda ni envía sus respuestas. Por su parte, el navegador registra las páginas visitadas en su historial y puede ofrecer autocompletar nombre, correo o teléfono según su configuración; el sitio no puede borrar esos datos.</p>
       <p>Los enlaces a fuentes oficiales y el botón «Salir rápido», donde aparece, llevan a sitios de terceros con sus propias condiciones.</p>
 
       <h2>Conservación</h2>
       <p>El sitio no guarda las solicitudes en un sistema propio: se remiten por correo y permanecen en el buzón del responsable. Según el artículo 6 de la Ley N.º 8968, el responsable debe eliminar los datos que hayan dejado de ser pertinentes o necesarios para la finalidad por la que se recibieron. El plazo de conservación de esos mensajes es: {p.retention ?? <span class="pending">{pendiente}</span>}</p>
 
       <h2>Seguridad y confidencialidad</h2>
-      <p>El sitio valida y limpia la información en el servidor y limita las solicitudes repetidas. Sus registros técnicos anotan solo el tipo de fallo, sin el contenido de los formularios ni datos personales.</p>
+      <p>El sitio valida y limpia la información en el servidor y limita las solicitudes repetidas. Los registros de la aplicación anotan solo el tipo de fallo, sin el contenido de los formularios ni datos personales. El servidor de alojamiento o el proxy pueden llevar sus propios registros de acceso, con dirección IP y página visitada; su plazo se informa con los proveedores.</p>
       <p>Antes de enviar datos, compruebe que la dirección del sitio comience con https. Ningún medio electrónico elimina todo riesgo, por lo que conviene limitar el mensaje a lo necesario.</p>
       <p>Según el artículo 11 de la Ley N.º 8968, la persona responsable y quienes intervengan en el tratamiento están obligadas al secreto profesional o funcional, aun después de finalizar su relación con la base de datos. Una decisión judicial puede relevar de ese deber en lo estrictamente necesario.</p>
 

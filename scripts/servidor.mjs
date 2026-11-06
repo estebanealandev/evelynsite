@@ -1,6 +1,7 @@
 // Arranca el sitio con cabeceras de seguridad, también para las páginas estáticas.
 // Astro solo controla las respuestas dinámicas; estas cabeceras cubren todas.
 import http from 'node:http';
+import net from 'node:net';
 
 process.env.ASTRO_NODE_AUTOSTART = 'disabled';
 const { handler } = await import('../dist/server/entry.mjs');
@@ -14,17 +15,41 @@ const cabeceras = {
   'Content-Security-Policy': "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'",
   'X-Frame-Options': 'DENY',
   'X-Content-Type-Options': 'nosniff',
-  'Referrer-Policy': 'no-referrer',
+  // `same-origin` conserva la cabecera Origin en el envío del formulario sin JavaScript.
+  'Referrer-Policy': 'same-origin',
   'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()',
   'Cross-Origin-Opener-Policy': 'same-origin',
   ...(esHttps ? { 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains' } : {})
 };
 
-const servidor = http.createServer((req, res) => {
+const confiarEnProxy = process.env.TRUST_PROXY === 'true';
+
+// Astro toma la IP de X-Forwarded-For. Aquí se deja solo el valor de confianza para que nadie pueda inventarlo.
+function fijarDireccion(req) {
+  const ultimo = confiarEnProxy ? req.headers['x-forwarded-for']?.split(',').pop()?.trim() : null;
+  req.headers['x-forwarded-for'] = net.isIP(ultimo ?? '') ? ultimo : req.socket.remoteAddress ?? '';
+  if (!confiarEnProxy) {
+    delete req.headers['x-forwarded-host'];
+    delete req.headers['x-forwarded-proto'];
+    delete req.headers['x-forwarded-port'];
+  }
+}
+
+// Las páginas no se guardan en la caché del navegador: en un equipo compartido, una página en caché o el botón
+// Atrás no deben mostrar lo que se leyó o escribió. Los recursos con nombre versionado sí se guardan.
+const esRecurso = url => /^\/(_astro|assets)\//.test(url) || /\.[a-z0-9]+(\?|$)/i.test(url);
+
+const servidor = http.createServer({ connectionsCheckingInterval: 5000 }, (req, res) => {
+  fijarDireccion(req);
   for (const [k, v] of Object.entries(cabeceras)) res.setHeader(k, v);
+  if (!esRecurso(req.url)) res.setHeader('Cache-Control', 'no-store');
   handler(req, res);
 });
+servidor.maxConnections = 2000;
 servidor.requestTimeout = 30_000;
 servidor.headersTimeout = 15_000;
+if (process.env.PUBLIC_SITE_READY === 'true' && process.env.MAIL_MODE !== 'smtp') {
+  console.error('Aviso: el sitio está marcado como listo y el correo no está en modo smtp: el formulario no enviará nada.');
+}
 servidor.listen(PORT, HOST, () => console.log(`Sitio en http://${HOST}:${PORT}`));
 for (const s of ['SIGINT', 'SIGTERM']) process.on(s, () => servidor.close(() => process.exit(0)));

@@ -5,20 +5,17 @@ import type { Errores } from './validation';
 
 const env = (k: string, d = '') => process.env[k] ?? d;
 
-export function ipCliente(request: Request, clientAddress: string | undefined) {
-  if (env('TRUST_PROXY') === 'true') {
-    // El último valor lo añade el proxy de confianza; los anteriores los puede inventar quien envía la petición.
-    const ultimo = request.headers.get('x-forwarded-for')?.split(',').pop()?.trim();
-    if (ultimo) return ultimo;
-  }
-  return clientAddress ?? 'desconocida';
+// scripts/servidor.mjs ya sustituye X-Forwarded-For por la dirección de confianza.
+export function ipCliente(_request: Request, clientAddress: string | undefined) {
+  const ip = clientAddress ?? 'desconocida';
+  // Cada dispositivo IPv6 puede tener muchas direcciones: se agrupan por red (/64).
+  return ip.includes(':') ? ip.split(':').slice(0, 4).join(':') : ip;
 }
 
-export function limiteExcedido(ip: string, ambito: string) {
-  const max = Number(env('RATE_LIMIT_MAX', '5')) || 5;
-  const min = Number(env('RATE_LIMIT_WINDOW_MINUTES', '10')) || 10;
-  return !permitido(`${ambito}:${ip}`, max, min * 60_000);
-}
+const ventana = () => (Number(env('RATE_LIMIT_WINDOW_MINUTES', '10')) || 10) * 60_000;
+const maximo = () => Number(env('RATE_LIMIT_MAX', '5')) || 5;
+export const limiteEnvios = (ip: string) => !permitido(`envio:${ip}`, maximo(), ventana());
+export const limitePeticiones = (ip: string) => !permitido(`peticion:${ip}`, maximo() * 6, ventana());
 
 const LIMITE_CUERPO = 20_000;
 
@@ -71,6 +68,8 @@ export const respuestas = {
     quiereJson ? json({ ok: false, mensaje: 'Revise los campos señalados.', errores }, 422) : ir(d.error),
   limite: (quiereJson: boolean, d: Destinos) =>
     quiereJson ? json({ ok: false, mensaje: 'Ha enviado varias solicitudes en poco tiempo. Intente de nuevo más tarde.' }, 429) : ir(d.error),
+  descartado: (quiereJson: boolean, d: Destinos) =>
+    quiereJson ? json({ ok: false, mensaje: 'La solicitud no se envió. Espere unos segundos e intente de nuevo.' }, 422) : ir(d.error),
   fallo: (quiereJson: boolean, d: Destinos, e: unknown) => {
     // Solo se registra el tipo de fallo: nunca datos de la persona.
     console.error('[formulario]', e instanceof CorreoNoDisponible ? 'envio_no_disponible' : 'error_envio');

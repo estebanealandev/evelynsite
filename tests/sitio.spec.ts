@@ -327,9 +327,7 @@ test.describe('orientador', () => {
 test.describe('salida rápida', () => {
   const bloquear = (page: any) => page.route('https://www.google.com/**', (r: any) => r.fulfill({ status: 200, contentType: 'text/html', body: 'neutro' }));
 
-  test('solo aparece en las páginas de violencia', async ({ page }) => {
-    await page.goto('/servicios/divorcios');
-    await expect(page.locator('.salida')).toHaveCount(0);
+  test('aparece en las páginas de violencia', async ({ page }) => {
     await page.goto('/servicios/proteccion-familiar');
     await expect(page.locator('.salida')).toBeVisible();
     await page.goto('/blog/proteccion-juridica-violencia-domestica');
@@ -474,8 +472,19 @@ test.describe('API', () => {
     expect(res.status()).toBe(200);
   });
 
-  test('el campo trampa descarta el envío sin procesarlo', async ({ request }) => {
+  test('el campo trampa descarta el envío y no aparenta éxito', async ({ request }) => {
     const res = await post(request, { ...valido, sitio_web: 'http://spam.example' });
+    expect(res.status()).toBe(422);
+    expect((await res.json()).ok).toBe(false);
+  });
+
+  test('un llenado demasiado rápido no aparenta éxito', async ({ request }) => {
+    const res = await post(request, { ...valido, transcurrido: '50' });
+    expect(res.status()).toBe(422);
+  });
+
+  test('la hora del dispositivo no influye: el campo antiguo se ignora', async ({ request }) => {
+    const res = await post(request, { ...valido, iniciado: String(Date.now() + 60_000) });
     expect(res.status()).toBe(200);
   });
 

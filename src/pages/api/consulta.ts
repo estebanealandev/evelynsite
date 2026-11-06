@@ -1,24 +1,26 @@
 import type { APIRoute } from 'astro';
 import { esSpam, validarConsulta } from '../../lib/validation';
-import { acuse, enviar } from '../../lib/mailer';
-import { ipCliente, leerCampos, limiteExcedido, respuestas } from '../../lib/form-endpoint';
+import { enviar } from '../../lib/mailer';
+import { ipCliente, leerCampos, limiteEnvios, limitePeticiones, respuestas } from '../../lib/form-endpoint';
 
 export const prerender = false;
 
 const destinos = { exito: '/consulta-recibida', error: '/consulta-no-enviada' };
-const OK = 'Solicitud recibida. Enviarla no crea, por sí solo, una relación profesional.';
+const OK = 'Solicitud recibida. Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.';
 
 export const POST: APIRoute = async ({ request, clientAddress }) => {
-  // El límite va primero para no gastar recursos leyendo peticiones de quien ya lo superó.
-  const quiereJsonAntes = (request.headers.get('accept') ?? '').includes('application/json');
-  if (limiteExcedido(ipCliente(request, clientAddress), 'consulta')) return respuestas.limite(quiereJsonAntes, destinos);
-  const { campos, quiereJson } = await leerCampos(request);
+  const quiereJson = (request.headers.get('accept') ?? '').includes('application/json');
+  const ip = ipCliente(request, clientAddress);
+  // Un tope amplio protege al servidor; los errores de validación no agotan el cupo de envíos.
+  if (limitePeticiones(ip)) return respuestas.limite(quiereJson, destinos);
+  const { campos } = await leerCampos(request);
   if (!campos) return respuestas.invalido(quiereJson, destinos, {});
-  // Ante spam se responde igual que ante un envío correcto, sin procesar nada.
-  if (esSpam(campos)) return respuestas.exito(quiereJson, destinos, OK);
+  // Nunca se responde con éxito si no se envió: una persona real podría caer aquí y creer que su solicitud llegó.
+  if (esSpam(campos)) return respuestas.descartado(quiereJson, destinos);
 
   const { datos, errores, valido } = validarConsulta(campos);
   if (!valido) return respuestas.invalido(quiereJson, destinos, errores);
+  if (limiteEnvios(ip)) return respuestas.limite(quiereJson, destinos);
 
   try {
     await enviar({
@@ -38,12 +40,5 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
   } catch (e) {
     return respuestas.fallo(quiereJson, destinos, e);
   }
-  // El acuse es secundario: su fallo no invalida una solicitud ya recibida.
-  await acuse(
-    datos.correo,
-    'Solicitud recibida',
-    'Su solicitud fue recibida.\n\nEste mensaje es automático y no constituye una relación profesional ni asesoría jurídica.\n\nEvelyn Elizondo'
-  ).catch(() => console.error('[formulario] error_acuse'));
-
   return respuestas.exito(quiereJson, destinos, OK);
 };

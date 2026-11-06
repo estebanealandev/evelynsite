@@ -8,7 +8,7 @@
    "norma": "Ley 5476",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=970&param2=&param3=1&param4=",
    "version": "43 de 43",
-   "sha256": "ab3618d53371e85f",
+   "sha256": "3e8ae7054ba251a5",
    "articulos": {
     "1": "6f44160d578cd92e",
     "2": "313b41e1e884939e",
@@ -86,7 +86,8 @@
     "74": "600a89b580aa0594",
     "75": "708558418bb68e09",
     "76": "2fc86213dfc05ff9",
-    "77": "a0e23d81d0a085b8",
+    "77": "3c46967e90dbd449",
+    "78": "ee87c9eea541d261",
     "79": "d526bcdc2796339f",
     "80": "97e21b011a94c3ae",
     "81": "5514b37a078aa46b",
@@ -257,7 +258,7 @@
     "246": "7e8eb6a634bc5077",
     "247": "f64f09c5eb8be719",
     "248": "28486111b5ddce24",
-    "249": "d310c946144ba5b3",
+    "249": "f32827009bdcbac5",
     "12 bis": "12a35d93dfa0bc83",
     "14 bis": "38f18a804e32d25b",
     "48 bis": "1c0fe1e55c81981e",
@@ -274,7 +275,7 @@
    "norma": "Ley 9747",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=90569&param2=&param3=1&param4=",
    "version": "4 de 4",
-   "sha256": "266099070d8ffe19",
+   "sha256": "80cec1c723aeb58c",
    "articulos": {
     "1": "221daa4292bcf351",
     "2": "2723a735c278a1f7",
@@ -629,7 +630,7 @@
     "351": "028ee48ad749713d",
     "352": "09ddde3a6ff29675",
     "353": "f26559b57d0fd801",
-    "354": "a17eba18fed9f8ef",
+    "354": "167ece4f7a92fd0e",
     "295 bis": "0bdc5e603723a354"
    }
   },
@@ -639,12 +640,12 @@
    "norma": "Ley 9747",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=90576&param2=&param3=1&param4=",
    "version": "3 de 3",
-   "sha256": "2bc848d1ffd02438",
+   "sha256": "ec3a942b151d8ed2",
    "articulos": {
     "1": "353df886a40c6870",
     "2": "b7238d1d4aa13aa0",
     "3": "211704de4c465ee6",
-    "4": "7955786959052714",
+    "4": "19473970202418a9",
     "5": "8aa35fea390e763f",
     "6": "4fb7db3fc4423c49",
     "7": "64ffd9a55bdcf370",
@@ -706,7 +707,10 @@
     "106 bis": "fc51bdbb12cb3f98",
     "119 bis": "c5784d6805e17433",
     "121 bis": "72ecb213f153bef5",
-    "124 bis": "10d1796f55e4ea07"
+    "124 bis": "10d1796f55e4ea07",
+    "transitorio i": "7ebde84b114434bf",
+    "transitorio ii": "98c31c47b261b7fa",
+    "transitorio iii": "4ea5ee38dbd78b0a"
    }
   },
   "CNA": {
@@ -715,7 +719,7 @@
    "norma": "Ley 7739",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=43077&param2=&param3=1&param4=",
    "version": "23 de 23",
-   "sha256": "fec2bcda2db3b74f",
+   "sha256": "4985b9b3459b75f4",
    "articulos": {
     "1": "5114971522e03a0f",
     "2": "f7103b6e3394b916",
@@ -910,11 +914,17 @@
     "192": "9988ab4eba680d61",
     "193": "e41c2ed37582625c",
     "194": "7c2e62c7e574b1aa",
-    "195": "d6dca78241b5d798",
+    "195": "3d00e232f987a685",
     "24 bis": "3dd5be6c1b58808c",
     "31 bis": "324e1fe080231cca",
     "94 bis": "a2f6355f5883e559",
-    "187 bis": "6f8077cc8715fee4"
+    "187 bis": "6f8077cc8715fee4",
+    "transitorio i": "837b9435582963fc",
+    "transitorio ii": "bd5a43a1c239599e",
+    "transitorio iii": "cfafc2a3af4670ea",
+    "transitorio iv": "eb53ccec17370da2",
+    "transitorio v": "23169992186b851e",
+    "transitorio vi": "76e877bd4b21c3a6"
    }
   },
   "LCVD": {
@@ -923,7 +933,7 @@
    "norma": "Ley 7586",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=27926&param2=&param3=1&param4=",
    "version": "7 de 7",
-   "sha256": "a926c9136037135f",
+   "sha256": "9c895bbe3e141410",
    "articulos": {
     "1": "26a23344a07145e6",
     "2": "56792aac4f9fbf96",
@@ -950,7 +960,7 @@
     "23": "fe3b62037edfd62c",
     "24": "e538db53167e8288",
     "25": "e098f1f4beaa6a81",
-    "26": "4be9bb7db157b94e",
+    "26": "ea3ece36055e3a07",
     "20 bis": "f80ff67768f1d483",
     "20 ter": "a7c39ffcb8ab48ee"
    }
@@ -961,7 +971,7 @@
    "norma": "Ley 8968",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=70975&param2=&param3=1&param4=",
    "version": "1 de 1",
-   "sha256": "5b1a1566f47ec091",
+   "sha256": "6e65c223dd0066f3",
    "articulos": {
     "1": "c034644ae34df484",
     "2": "dec6109a79f6a0f3",
@@ -996,7 +1006,10 @@
     "31": "68f60110ba27b7d1",
     "32": "05dacb47a3e4640a",
     "33": "9987c345884114f5",
-    "34": "e29c5acbe4591233"
+    "34": "759447a5180ff9b4",
+    "transitorio i": "b8ea573ff53e3393",
+    "transitorio ii": "c46c0f0c93cf6c7a",
+    "transitorio iii": "98197b3e3d8cc762"
    }
   },
   "R37554": {
@@ -1005,7 +1018,7 @@
    "norma": "Decreto Ejecutivo 37554",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=74352&param2=&param3=1&param4=",
    "version": "3 de 3",
-   "sha256": "8be74ba87562d6f9",
+   "sha256": "3689a4350b02bfe9",
    "articulos": {
     "1": "2641d8b8d5027f24",
     "2": "03c01b87db6eb17a",
@@ -1096,7 +1109,8 @@
     "87": "829703c8bd45c894",
     "88": "3aef4695c014aa2c",
     "89": "9869f06ac418c7d4",
-    "90": "7aa9b2153894fd17"
+    "90": "f2eb45bcee2403bb",
+    "transitorio i": "a85b45e944e29aa4"
    }
   },
   "CDJ": {
@@ -1105,7 +1119,7 @@
    "norma": "Reglamento 47",
    "url": "https://sinalevi.go.cr/ResultadosNormativa/Informacion?param1=54060&param2=&param3=1&param4=",
    "version": "8 de 8",
-   "sha256": "ff706067fdf3b37f",
+   "sha256": "3c616e8a2f5948f8",
    "articulos": {
     "1": "a45f4bc7c480be08",
     "2": "a2ec6908f3f1b67c",
@@ -1196,8 +1210,10 @@
     "87": "37e32780ec709d62",
     "88": "a1a2011c13c94746",
     "89": "a6441d594e7c6e51",
-    "90": "ca93695e69dec7bc",
-    "87 bis": "538031ed49eaa2d3"
+    "90": "78043502219d3df5",
+    "87 bis": "538031ed49eaa2d3",
+    "transitorio i": "984923ef90f3edc8",
+    "transitorio ii": "33ace99a38fd9eba"
    }
   }
  }

@@ -37,8 +37,8 @@ const secciones = [
 ];
 ---
 <Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura salidaRapida={servicio.id === 'proteccion-familiar'}>
-  <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={`Tema ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
-  {d.aviso && <div class="wrap" style="margin-top:28px"><p class="notice notice--urgent" role="note">{d.aviso}</p></div>}
+  <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={riesgo ? undefined : `Tema ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
+  {d.aviso && <div class="wrap" style="margin-top:28px"><p class="notice notice--urgent" role="note" set:html={d.aviso.replace(/9-1-1/g, '<a class="tel" href="tel:911">9-1-1</a>')} /></div>}
   {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /><RecursosAyuda /></div>}
 
   <div class="wrap g12 read">

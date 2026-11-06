@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-# Ajustar la ruta al repositorio. El código de salida 2 significa que hay cambios que revisar.
+# Ajustar la ruta al repositorio. Cualquier salida distinta de 0 deja la unidad en estado fallido: 1 norma sin
+# comprobar, 2 cambios, 3 ambos. Conviene añadir OnFailure= con el aviso que se use (correo u otro).
 WorkingDirectory=/ruta/al/repositorio
 ExecStart=/usr/bin/npm run normas:vigilar
-SuccessExitStatus=2

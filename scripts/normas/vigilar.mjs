@@ -1,11 +1,12 @@
 // Vigilancia normativa: compara la última versión oficial con la copia guardada y señala qué afirmaciones revisar.
-// Uso: npm run normas:vigilar   (código de salida 2 si hay cambios; 1 si una fuente falla)
+// Uso: npm run normas:vigilar
+// Salida: 0 sin cambios y todo comprobado; 1 alguna norma sin comprobar; 2 hay cambios; 3 cambios y normas sin comprobar.
 // No modifica el contenido ni interpreta las reformas: genera un informe para decidir.
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { DIR_NORMAS } from './catalogo.mjs';
+import { catalogo, DIR_NORMAS } from './catalogo.mjs';
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'normas-'));
 let fallo = false;
@@ -17,18 +18,22 @@ try {
 }
 const leerJson = f => JSON.parse(fs.readFileSync(f, 'utf8'));
 const antes = leerJson(path.join(DIR_NORMAS, 'registro.json'));
-const ahora = leerJson(path.join(tmp, 'registro.json'));
+const rutaAhora = path.join(tmp, 'registro.json');
+const ahora = fs.existsSync(rutaAhora) ? leerJson(rutaAhora) : { normas: {} };
 const matriz = fs.existsSync('docs/auditoria-evelyn/matriz-juridica.json') ? leerJson('docs/auditoria-evelyn/matriz-juridica.json').afirmaciones : [];
 
 const cambios = [];
 const sinDatos = [];
-for (const [clave, viejo] of Object.entries(antes.normas)) {
+// Se recorre el catálogo: una norma que falte en cualquiera de los dos registros cuenta como no comprobada.
+for (const clave of Object.keys(catalogo)) {
+  const viejo = antes.normas[clave];
   const nuevo = ahora.normas[clave];
-  if (!nuevo) { sinDatos.push(clave); continue; }
+  if (!viejo || !nuevo) { sinDatos.push(clave); continue; }
   if (nuevo.sha256 === viejo.sha256 && nuevo.version === viejo.version) continue;
   const articulos = new Set([...Object.keys(viejo.articulos), ...Object.keys(nuevo.articulos)]);
   const tocados = [...articulos].filter(a => viejo.articulos[a] !== nuevo.articulos[a]);
-  const afectadas = matriz.filter(c => !c.retirada && (c.respaldos || []).some(r => r.norma === clave && (r.articulos || []).some(a => tocados.includes(String(a).toLowerCase()))));
+  const hayTransitorio = tocados.some(a => a.startsWith('transitorio'));
+  const afectadas = matriz.filter(c => !c.retirada && (c.respaldos || []).some(r => r.norma === clave && ((r.articulos || []).some(a => tocados.includes(String(a).toLowerCase())) || (hayTransitorio && /transitorio/i.test(`${c.texto} ${r.cita ?? ''}`)))));
   cambios.push({ clave, titulo: viejo.titulo, versionAnterior: viejo.version, versionNueva: nuevo.version, articulos: tocados, afectadas: afectadas.map(c => ({ id: c.id, pagina: c.pagina, tema: c.tema })) });
 }
 
@@ -50,4 +55,5 @@ const archivo = path.join(dirInformes, `${hoy}.md`);
 fs.writeFileSync(archivo, `${lineas.join('\n')}\n`);
 fs.rmSync(tmp, { recursive: true, force: true });
 console.log(`Informe: ${archivo}. Normas con cambios: ${cambios.length}. Sin comprobar: ${sinDatos.length}.`);
-process.exit(cambios.length ? 2 : fallo || sinDatos.length ? 1 : 0);
+const sinComprobar = fallo || sinDatos.length > 0;
+process.exit(cambios.length ? (sinComprobar ? 3 : 2) : sinComprobar ? 1 : 0);

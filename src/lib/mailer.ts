@@ -4,7 +4,8 @@ import path from 'node:path';
 import { randomUUID } from 'node:crypto';
 import nodemailer from 'nodemailer';
 
-const env = (k: string) => process.env[k] ?? (import.meta.env as Record<string, string | undefined>)[k] ?? '';
+// Solo se leen al ejecutar. Un acceso dinámico a import.meta.env dejaría las claves incrustadas en la compilación.
+const env = (k: string) => process.env[k] ?? '';
 
 export type Mensaje = { asunto: string; texto: string; responderA?: string; para?: string };
 
@@ -45,9 +46,4 @@ export async function enviar(m: Mensaje) {
   }
 
   throw new CorreoNoDisponible('Envío de correo deshabilitado');
-}
-
-export async function acuse(correo: string, asunto: string, texto: string) {
-  if (env('MAIL_SEND_ACK') !== 'true') return;
-  await enviar({ para: correo, asunto, texto });
 }

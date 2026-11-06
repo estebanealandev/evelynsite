@@ -4,18 +4,21 @@
 const recursos = [
   {
     titulo: '9-1-1',
+    tel: '911',
     texto: 'El INAMU indica este número para situaciones de violencia, todos los días del año, las 24 horas. También se puede pedir a la operadora u operador que transfiera a la línea directa del INAMU.',
     fuente: 'https://www.inamu.go.cr/web/inamu/preguntas-frecuentes',
     entidad: 'INAMU'
   },
   {
     titulo: 'Juzgados de Violencia Doméstica',
+    tel: '',
     texto: 'El Observatorio de Género del Poder Judicial indica que están disponibles las 24 horas. Si no hay uno cerca, las medidas se piden en horario hábil, de 7:30 a. m. a 4:30 p. m., en juzgados mixtos o contravencionales. El Poder Judicial indica que no se requiere abogada o abogado. Su línea gratuita es el 800-800-3000.',
     fuente: 'https://observatoriodegenero.poder-judicial.go.cr/index.php/soy-mujer-y-busco/averiguar-sobre-violencia-domestica',
     entidad: 'Poder Judicial'
   },
   {
     titulo: 'Línea 1125 del INAMU',
+    tel: '',
     texto: 'Sobre derechos de las mujeres, de lunes a viernes, de 8:00 a. m. a 4:00 p. m. Para situaciones de violencia, el INAMU indica el 9-1-1.',
     fuente: 'https://www.inamu.go.cr/en/contacto',
     entidad: 'INAMU'
@@ -27,7 +30,7 @@ const recursos = [
   <ul>
     {recursos.map(r => (
       <li>
-        <h3>{r.titulo}</h3>
+        <h3>{r.tel ? <a class="tel" href={`tel:${r.tel}`}>{r.titulo}</a> : r.titulo}</h3>
         <p>{r.texto} <a href={r.fuente} rel="noopener noreferrer" target="_blank">Fuente: {r.entidad}</a>.</p>
       </li>
     ))}

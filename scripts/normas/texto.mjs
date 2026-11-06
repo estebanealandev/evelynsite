@@ -27,3 +27,18 @@ export function articulos(texto) {
   });
   return salida;
 }
+
+// Igual que articulos(), pero separa también los transitorios. Se usa para detectar cambios.
+const TRANSITORIO = /^[ \t]*TRANSITORIO[ \t]+([IVXLC]+|[ÚU]NICO)\b/gim;
+export function fragmentos(texto) {
+  const marcas = [...texto.matchAll(TRANSITORIO)];
+  const principal = marcas.length ? texto.slice(0, marcas[0].index) : texto;
+  const salida = articulos(principal);
+  marcas.forEach((m, i) => {
+    const clave = `transitorio ${m[1].toLowerCase()}`;
+    const fin = i + 1 < marcas.length ? marcas[i + 1].index : texto.length;
+    const cuerpo = texto.slice(m.index, fin).trim();
+    salida[clave] = salida[clave] ? `${salida[clave]}\n\n${cuerpo}` : cuerpo;
+  });
+  return salida;
+}

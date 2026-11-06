@@ -21,8 +21,8 @@ const crumbs = [{ label: 'Biblioteca jurídica' }];
         <p>{n.para}</p>
         <dl class="norma__detalle">
           {n.regula.length > 0 && <><dt>Temas</dt><dd>{n.regula.join(' · ')}</dd></>}
-          {n.reformas.length > 0 && <><dt>Reformas recientes que conviene ver</dt><dd>{n.reformas.join(' · ')}</dd></>}
-          {n.servicios.length > 0 && <><dt>Áreas relacionadas</dt><dd>{n.servicios.map((id, i) => <>{i > 0 && ' · '}<a href={`/servicios/${id}`}>{titulo(id)?.data.titulo}</a></>)}</dd></>}
+          {n.reformas.length > 0 && <><dt>Reformas recientes que conviene ver</dt><dd><ul class="norma__lista">{n.reformas.map(r => <li>{r}</li>)}</ul></dd></>}
+          {n.servicios.length > 0 && <><dt>Áreas relacionadas</dt><dd><ul class="tag-list">{n.servicios.map(id => <li><a href={`/servicios/${id}`}>{titulo(id)?.data.titulo}</a></li>)}</ul></dd></>}
         </dl>
       </article>
     ))}

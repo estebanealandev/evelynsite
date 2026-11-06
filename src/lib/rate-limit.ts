@@ -1,10 +1,18 @@
 // Límite de solicitudes en memoria. Suficiente para una sola instancia; ver README si se escala.
-import { createHash } from 'node:crypto';
+import { createHmac, randomBytes } from 'node:crypto';
 
 const visitas = new Map<string, number[]>();
+// Clave aleatoria que solo vive en memoria: sin ella, la huella no permite recuperar la dirección IP.
+const CLAVE = randomBytes(32);
+let ultimaLimpieza = 0;
 
 export function permitido(clave: string, max: number, ventanaMs: number, ahora = Date.now()) {
-  const id = createHash('sha256').update(clave).digest('hex');
+  // Las entradas vencidas se borran aunque haya poco tráfico.
+  if (ahora - ultimaLimpieza > 60_000) {
+    ultimaLimpieza = ahora;
+    for (const [k, v] of visitas) if (!v.some(t => ahora - t < ventanaMs)) visitas.delete(k);
+  }
+  const id = createHmac('sha256', CLAVE).update(clave).digest('hex');
   const recientes = (visitas.get(id) ?? []).filter(t => ahora - t < ventanaMs);
   if (recientes.length >= max) {
     visitas.set(id, recientes);

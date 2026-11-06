@@ -2,12 +2,12 @@
 // Con JavaScript se presenta paso a paso; sin él, todos los campos quedan visibles y el envío funciona igual.
 import { consultaTipos } from '../../config/site';
 ---
-<form class="form" action="/api/consulta" method="post" data-ajax data-pasos novalidate>
-  <div class="pasos" aria-hidden="true"><span data-pasos-texto>Paso 1 de 3</span><span class="pasos__barra"><i></i></span></div>
+<form class="form" action="/api/consulta" method="post" data-ajax data-pasos>
+  <div class="pasos"><span data-pasos-texto role="status">Paso 1 de 3</span><span class="pasos__barra" aria-hidden="true"><i></i></span></div>
 
-  <fieldset data-paso>
+  <fieldset data-paso aria-describedby="e-tipo">
     <legend>¿Sobre qué es su consulta?</legend>
-    <div class="opciones" role="radiogroup" aria-describedby="e-tipo">
+    <div class="opciones">
       {consultaTipos.map((t, i) => (
         <label class="opcion">
           <input type="radio" name="tipo" value={t} required data-msg="Seleccione el tipo de consulta." id={`c-tipo-${i}`} />
@@ -51,7 +51,7 @@ import { consultaTipos } from '../../config/site';
     <div class="hp" aria-hidden="true">
       <label for="c-sitio">No complete este campo</label>
       <input id="c-sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
-      <input name="iniciado" type="hidden" value="" />
+      <input name="transcurrido" type="hidden" value="" />
     </div>
     <div class="field">
       <label class="check" for="c-consentimiento">

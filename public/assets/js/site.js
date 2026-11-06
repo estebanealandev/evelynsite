@@ -30,6 +30,8 @@
       burger.querySelector('.visually-hidden').textContent = open ? 'Cerrar menú' : 'Abrir menú';
       menu.dataset.open = String(open);
       menu.inert = !open;
+      // Con el menú abierto, el foco no debe llegar al contenido que queda detrás.
+      $$('main, .site-footer').forEach(el => { el.inert = open; });
       raiz.classList.toggle('menu-abierto', open);
       document.body.style.overflow = open ? 'hidden' : '';
     };
@@ -211,8 +213,15 @@
   if (salida) {
     salida.addEventListener('click', e => { e.preventDefault(); irAFuera(salida.href); });
     let ultimaEsc = 0;
+    let menuAbiertoAlPulsar = false;
+    // Fase de captura: se comprueba antes de que el menú se cierre con esa misma tecla.
     addEventListener('keydown', e => {
-      if (e.key !== 'Escape') return;
+      if (e.key === 'Escape') menuAbiertoAlPulsar = !!$('.burger[aria-expanded="true"], .has-menu[data-open="true"]');
+    }, true);
+    addEventListener('keydown', e => {
+      if (e.key !== 'Escape' || e.repeat) return;
+      // Si Esc cerró un menú abierto, no cuenta para salir.
+      if (menuAbiertoAlPulsar) { menuAbiertoAlPulsar = false; ultimaEsc = 0; return; }
       const ahora = Date.now();
       if (ahora - ultimaEsc < 700) irAFuera(salida.href);
       ultimaEsc = ahora;
@@ -230,7 +239,12 @@
       if (texto) el.textContent = texto;
       return el;
     };
-    const enfocar = () => { const t = $('[tabindex="-1"]', panel); if (t) t.focus({ preventScroll: true }); };
+    const enfocar = () => {
+      const t = $('[tabindex="-1"]', panel);
+      if (!t) return;
+      t.focus({ preventScroll: true });
+      t.scrollIntoView({ block: 'center', behavior: sinMovimiento() ? 'auto' : 'smooth' });
+    };
     const boton = (clase, texto, accion) => {
       const b = crear('button', clase, texto);
       b.type = 'button';
@@ -246,7 +260,7 @@
     const preguntar = id => {
       const q = datos.preguntas[id];
       panel.replaceChildren();
-      const h = crear('p', 'guia__q', q.pregunta);
+      const h = crear('h3', 'guia__q', q.pregunta);
       h.tabIndex = -1;
       const ul = crear('ul', 'guia__ops');
       q.opciones.forEach(o => {
@@ -254,13 +268,28 @@
         li.append(boton('guia__op', o.texto, () => {
           camino.push(id);
           if (o.siguiente) preguntar(o.siguiente);
-          else if (o.listado) location.assign('/servicios');
+          else if (o.listado) sinClasificar();
           else resultado(o);
           enfocar();
         }));
         ul.append(li);
       });
       panel.append(h, ul, controles());
+    };
+    const sinClasificar = () => {
+      panel.replaceChildren();
+      const c = crear('div', 'guia__res');
+      const h = crear('h3', '', 'Vea todos los temas');
+      h.tabIndex = -1;
+      c.append(h, crear('p', '', 'La lista completa de áreas puede ayudarle a ubicar el asunto. También puede describirlo en una solicitud de consulta, de forma general.'));
+      const r = crear('div', 'btn-row');
+      const ver = crear('a', 'btn', 'Ver todos los temas');
+      ver.href = '/servicios';
+      const k = crear('a', 'btn btn-outline', 'Agendar una consulta');
+      k.href = '/agendar-consulta';
+      r.append(ver, k);
+      c.append(r);
+      panel.append(c, controles());
     };
     const resultado = o => {
       const area = o.resultado ? datos.areas[o.resultado] : null;
@@ -270,8 +299,8 @@
       const c = crear('div', 'guia__res');
       const h = crear('h3', '', principal.titulo);
       h.tabIndex = -1;
-      c.append(crear('p', 'eyebrow', 'Tema para revisar'), h, crear('p', '', principal.resumen));
       if (o.riesgo) c.append(crear('p', 'notice notice--urgent', datos.aviso));
+      c.append(crear('p', 'eyebrow', 'Tema para revisar'), h, crear('p', '', principal.resumen));
       const r = crear('div', 'btn-row');
       const leer = crear('a', 'btn', area ? 'Leer esta área' : 'Leer esta guía');
       leer.href = area ? `/servicios/${o.resultado}` : `/orientacion/${o.ficha}`;
@@ -327,11 +356,16 @@
 
   // Formularios: mejora progresiva sobre el envío nativo
   $$('form[data-ajax]').forEach(form => {
-    const started = form.querySelector('input[name="iniciado"]');
-    if (started) started.value = String(Date.now());
+    // Sin JavaScript valida el navegador; con él, los mensajes propios.
+    form.noValidate = true;
+    const transcurrido = form.querySelector('input[name="transcurrido"]');
+    const inicio = performance.now();
+    // Lo escrito no debe reaparecer con el botón Atrás en un equipo compartido.
+    addEventListener('pagehide', () => form.reset());
     const status = form.querySelector('.form__status');
     const btn = form.querySelector('button[type="submit"]');
     const show = (kind, msg) => { status.dataset.kind = kind; status.textContent = msg; };
+    const aviso = () => { status.tabIndex = -1; status.focus(); };
 
     // Paso a paso, si el formulario lo admite.
     const pasosF = $$('[data-paso]', form);
@@ -399,16 +433,18 @@
       btn.setAttribute('aria-busy', 'true');
       btn.disabled = true;
       try {
+        if (transcurrido) transcurrido.value = String(Math.round(performance.now() - inicio));
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
         const data = await res.json().catch(() => ({}));
         if (res.ok && data.ok) {
           form.reset();
-          if (started) started.value = String(Date.now());
-          if (pasosF.length) irA(0);
+          form.classList.add('is-enviado');
           show('ok', data.mensaje);
-        } else { showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); }
+          aviso();
+        } else { showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); if (!data.errores) aviso(); }
       } catch {
         show('error', 'No hay conexión con el servidor. Su solicitud no se ha enviado; intente de nuevo.');
+        aviso();
       } finally {
         btn.removeAttribute('aria-busy');
         btn.disabled = false;

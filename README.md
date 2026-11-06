@@ -49,13 +49,12 @@ Consulte [.env.example](.env.example).
 | `PUBLIC_DATA_CONTROLLER*`, `PUBLIC_PRIVACY_*` | Datos de la política de privacidad |
 | `MAIL_MODE` | `smtp`, `outbox` o `disabled` |
 | `MAIL_TO`, `MAIL_FROM`, `SMTP_*` | Configuración de correo |
-| `MAIL_SEND_ACK` | Acuse de recibo automático, sin repetir el contenido |
 | `TRUST_PROXY` | Activar solo detrás de un proxy de confianza |
 | `RATE_LIMIT_MAX`, `RATE_LIMIT_WINDOW_MINUTES` | Límite de solicitudes |
 
 ## Formularios
 
-Hay dos endpoints: `/api/consulta` y `/api/suscripcion`.
+Hay un endpoint: `/api/consulta`.
 
 - **Proveedor:** cualquiera con SMTP, como el correo del dominio o un servicio transaccional. Las claves se guardan solo en variables del servidor.
 - **Protección:** validación en navegador y servidor, saneamiento, campo trampa, tiempo mínimo, límite por IP (huella hash en memoria) y verificación de origen.

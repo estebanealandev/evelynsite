@@ -11,7 +11,8 @@ test.describe('cabeceras y política de contenido', () => {
       const h = (await request.get(ruta)).headers();
       expect(h['x-frame-options']).toBe('DENY');
       expect(h['x-content-type-options']).toBe('nosniff');
-      expect(h['referrer-policy']).toBe('no-referrer');
+      expect(h['referrer-policy']).toBe('same-origin');
+      expect(h['cache-control']).toBe('no-store');
       expect(h['content-security-policy']).toContain("frame-ancestors 'none'");
       expect(h['permissions-policy']).toContain('geolocation=()');
     });
@@ -69,6 +70,17 @@ test.describe('API del formulario', () => {
     }
   });
 
+  test('una cabecera X-Forwarded-For inventada no evade el límite de envíos', async ({ request }) => {
+    // Con el límite real de la prueba se comprueba que todas cuentan para la misma dirección.
+    const r = await request.post('/api/consulta', { headers: { ...json, 'x-forwarded-for': '203.0.113.9' }, form: { ...valido, correo: 'mal' } });
+    expect(r.status()).toBe(422);
+  });
+
+  test('el texto con signos de menor y mayor no se recorta', async ({ request }) => {
+    const res = await request.post('/api/consulta', { headers: json, form: { ...valido, mensaje: 'La pensión es <100000 colones y quiero que sea >150000 colones por mes' } });
+    expect(res.status()).toBe(200);
+  });
+
   test('el error de validación no repite los datos enviados', async ({ request }) => {
     const res = await request.post('/api/consulta', { headers: json, form: { ...valido, correo: 'dato-sensible-no-valido', mensaje: 'corto' } });
     expect(await res.text()).not.toContain('dato-sensible');
@@ -119,11 +131,21 @@ test.describe('orientador', () => {
     await expect(page.getByRole('link', { name: 'Leer esta guía' })).toHaveAttribute('href', '/orientacion/recibi-una-notificacion-judicial');
   });
 
-  test('la opción sin clasificar lleva al listado', async ({ page }) => {
-    await page.goto('/#por-donde-empiezo');
-    if (!(await page.getByRole('button', { name: /no lo tengo claro/ }).count())) await page.goto('/servicios#por-donde-empiezo');
+  test('la opción sin clasificar ofrece el listado sin recargar', async ({ page }) => {
+    await page.goto('/servicios#por-donde-empiezo');
     await page.getByRole('button', { name: /no lo tengo claro/ }).click();
-    await expect(page).toHaveURL(/\/servicios$/);
+    await expect(page.getByRole('link', { name: 'Ver todos los temas' })).toHaveAttribute('href', '/servicios');
+    await expect(page.locator(':focus')).toHaveText('Vea todos los temas');
+  });
+});
+
+test.describe('sin JavaScript', () => {
+  test('el navegador valida el formulario antes de enviarlo', async ({ browser, baseURL }) => {
+    const ctx = await browser.newContext({ baseURL, javaScriptEnabled: false });
+    const page = await ctx.newPage();
+    await page.goto('/agendar-consulta');
+    expect(await page.locator('form[action="/api/consulta"]').getAttribute('novalidate')).toBeNull();
+    await ctx.close();
   });
 });
 
@@ -134,7 +156,7 @@ test.describe('página de violencia', () => {
     const ayuda = page.locator('.ayuda');
     await expect(ayuda).toContainText('9-1-1');
     await expect(ayuda).toContainText('no se requiere abogada o abogado');
-    await expect(ayuda.getByRole('link').first()).toHaveAttribute('href', /inamu\.go\.cr/);
+    await expect(ayuda.locator('a[target=_blank]').first()).toHaveAttribute('href', /inamu\.go\.cr/);
   });
 });
 
@@ -147,6 +169,18 @@ test.describe('salida rápida: lo que promete', () => {
     await expect(nota).toContainText('programas espía');
     const cuerpo = (await page.locator('main').innerText()).toLowerCase();
     expect(cuerpo).not.toMatch(/(?<!no )\b(borra|elimina) (todo )?(su|el) historial/);
+  });
+
+  test('está en todo el sitio salvo la portada y se alcanza pronto con el teclado', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.locator('.salida')).toHaveCount(0);
+    for (const ruta of ['/servicios', '/agendar-consulta', '/orientacion', '/biblioteca-juridica']) {
+      await page.goto(ruta);
+      await expect(page.locator('.salida')).toBeVisible();
+    }
+    // Va después del enlace para saltar al contenido.
+    const orden = await page.evaluate(() => [...document.querySelectorAll('a[href], button')].slice(0, 2).map(e => e.className));
+    expect(orden[1]).toContain('salida');
   });
 
   test('funciona desde teclado y es visible en móvil', async ({ page }) => {
