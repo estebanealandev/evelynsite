@@ -83,7 +83,7 @@ Más 63 fuentes externas, de ellas 5 no verificables, en [fuentes-verificadas.js
 
 - Encabezados interiores claros: el azul oscuro queda para la portada y el pie.
 - Escala tipográfica más contenida, con columna de lectura de 68 caracteres.
-- **Árbol:** un solo árbol con raíces, en vez de uno grande con dos jóvenes, que se leían como progenitor e hijos. El concepto *Crecer* se mantiene. **Cambia algo que tú elegiste:** si prefieres la composición anterior, se revierte en `src/scripts/arboles/bosque.ts`.
+- **Árbol:** se conserva el árbol grande con dos jóvenes del concepto *Crecer*, por decisión del propietario tras ver en pantalla la alternativa de un solo árbol con raíces. Queda pendiente confirmar que no sugiere un único tipo de familia. Además, el crecimiento ya no se ralentiza en equipos con pocos cuadros por segundo.
 - Marca regenerada con la nueva fuente. La imagen estática del árbol tiene fondo transparente, sin el rectángulo que se notaba.
 - Comparaciones antes y después (izquierda y derecha) en [capturas/](capturas/).
 
@@ -123,7 +123,9 @@ También: cuerpo limitado de verdad, sin archivos ni JSON, TLS obligatorio, asun
 | Linter | No hay ninguno configurado: no se ejecutó |
 | Matriz jurídica | 1061 afirmaciones, 0 errores, 0 avisos |
 | Chrome, escritorio y móvil, 2 pasadas | 301 superadas, 47 omitidas, 0 fallidas en cada una |
+| Chrome, tras restaurar el árbol, 1 pasada | 303 superadas, 47 omitidas, 0 fallidas |
 | Firefox, WebKit y iPhone emulado | 447 superadas, 74 omitidas, **1 fallida** |
+| Pruebas del árbol en Firefox y WebKit, tras restaurarlo | 18 superadas |
 | `npm audit` | 0 vulnerabilidades |
 | Auditoría de identidad | Sin referencias residuales |
 

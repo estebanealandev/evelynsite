@@ -44,7 +44,7 @@ export function iniciarEscena(o: Opciones): Control | null {
   }
 
   // Estado de solo lectura para las pruebas automáticas.
-  const estadoPublico = { frames: 0, fps: 0, calidad: 1 };
+  const estadoPublico = { frames: 0, fps: 0, calidad: 1, tiempo: 0 };
   (window as unknown as { __arbol: typeof estadoPublico }).__arbol = estadoPublico;
 
   let arbol: Arbol | null = null;
@@ -128,7 +128,8 @@ export function iniciarEscena(o: Opciones): Control | null {
   const bucle = () => {
     requestAnimationFrame(bucle);
     if (!visible || document.hidden || !arbol) { delta(); return; }
-    const dt = Math.min(delta(), 0.1);
+    // Tope alto: con pocos cuadros por segundo, el árbol debe crecer en el mismo tiempo, no más despacio.
+    const dt = Math.min(delta(), 0.5);
     if (pausado) return;
     acumulado += dt; cuenta++;
     if (acumulado >= 0.5) {
@@ -143,6 +144,7 @@ export function iniciarEscena(o: Opciones): Control | null {
       acumulado = 0; cuenta = 0;
     }
     t += dt;
+    estadoPublico.tiempo = t;
     const k = 1 - Math.exp(-dt * 5);
     progreso += (scrollObjetivo() - progreso) * k;
     cx += (mx - cx) * k;

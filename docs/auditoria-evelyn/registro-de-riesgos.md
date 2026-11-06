@@ -18,4 +18,4 @@
 | Carga intermitente de la portada en WebKit (1 de 5 repeticiones) | Media | Sin causa demostrada; puede ser WebGL por software | **Probar en Safari real** |
 | Proyecto 23.982 aprobado después de la consulta | Alta | No se menciona. La vigilancia detectaría el cambio en el Código de Familia | Volver a comprobar antes de publicar |
 | Línea 1147 del PANI sin lectura directa de la fuente | Media | Publicada sin horario; el sitio oficial bloqueó la lectura automática | Confirmar a mano |
-
+| El árbol grande con dos jóvenes puede leerse como un único modelo de familia | Baja | Es una metáfora visual, sin texto que lo afirme. Se conserva por decisión del propietario | Aceptado por el propietario |

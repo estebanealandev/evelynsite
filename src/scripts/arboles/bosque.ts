@@ -1,4 +1,4 @@
-// Árbol de copa ancha con raíces visibles. Toda la forma se genera por código.
+// Árbol de copa ancha y dos árboles jóvenes bajo su sombra. Toda la forma se genera por código.
 // No importa three.js: se ejecuta en un Worker para no bloquear la página.
 type V3 = [number, number, number];
 export type Tramo = { a: V3; b: V3; r0: number; r1: number; nace: number; dur: number; tono: number };
@@ -132,34 +132,18 @@ function crearArbol({ semilla, atractores, hojasPorPunta, tono }: Opciones): Bos
   return { tramos, hojas };
 }
 
-// Raíces superficiales que salen del tronco y se ramifican a ras de suelo.
-function crearRaices(semilla: number): Bosque {
-  const r = azar(semilla);
-  const tramos: Tramo[] = [];
-  const hojas: Hoja[] = [];
-  const rama = (origen: V3, dir: number, largo: number, grosor: number, nace: number, nivel: number) => {
-    let p = origen;
-    let y = Math.max(0.004, origen[1]);
-    const pasos = 7;
-    for (let i = 0; i < pasos; i++) {
-      const f = 1 - i / pasos;
-      const q: V3 = [p[0] + dir * (largo / pasos), Math.max(0.002, y * 0.72 + (r() - 0.5) * 0.006), p[2] + (r() - 0.5) * 0.03];
-      const t = nace + (i / pasos) * 0.2;
-      tramos.push({ a: p, b: q, r0: grosor * f, r1: grosor * Math.max(0.12, f - 1 / pasos), nace: t, dur: 0.05, tono: 1 });
-      if (nivel < 2 && i > 0 && r() < 0.5) rama(q, dir * (0.75 + r() * 0.5), largo * (0.34 + r() * 0.22), grosor * f * 0.55, t + 0.015, nivel + 1);
-      p = q;
-      y = q[1];
-    }
-  };
-  for (const [dir, largo, grosor] of [[-1, 0.34, 0.0062], [1, 0.38, 0.0066], [-1, 0.22, 0.0046], [1, 0.25, 0.0048], [-1, 0.13, 0.0034], [1, 0.15, 0.0034]] as const) {
-    rama([dir * 0.006, 0.012 + r() * 0.012, (r() - 0.5) * 0.012], dir, largo, grosor, r() * 0.05, 0);
+// Un árbol que resguarda a dos árboles jóvenes, que empiezan a crecer después.
+export function crearBosque(pequena: boolean): Bosque {
+  const grande = crearArbol({ semilla: 31, atractores: pequena ? 190 : 300, hojasPorPunta: pequena ? 5 : 8, tono: 0 });
+  const jovenes: [number, number, number, number][] = [[-0.2, 0.25, 12, 0.32], [0.23, 0.18, 47, 0.44]];
+  const tramos = [...grande.tramos];
+  const hojas = [...grande.hojas];
+  for (const [x, esc, semilla, inicio] of jovenes) {
+    const j = crearArbol({ semilla, atractores: 60, hojasPorPunta: 6, tono: 1 });
+    const m = (v: V3): V3 => [v[0] * esc + x, v[1] * esc, v[2] * esc + 0.02];
+    const t = (v: number) => inicio + v * (1 - inicio);
+    for (const q of j.tramos) tramos.push({ ...q, a: m(q.a), b: m(q.b), r0: q.r0 * esc * 1.5, r1: q.r1 * esc * 1.5, nace: t(q.nace), dur: q.dur * (1 - inicio) });
+    for (const h of j.hojas) hojas.push({ ...h, p: m(h.p), nace: t(h.nace), tam: h.tam * 0.74, tono: 1 });
   }
   return { tramos, hojas };
-}
-
-// Un solo árbol: raíces que se extienden y ramas que se cruzan. No fija cuántas personas forman una familia.
-export function crearBosque(pequena: boolean): Bosque {
-  const copa = crearArbol({ semilla: 31, atractores: pequena ? 190 : 300, hojasPorPunta: pequena ? 5 : 8, tono: 0 });
-  const raices = crearRaices(47);
-  return { tramos: [...copa.tramos, ...raices.tramos], hojas: copa.hojas };
 }

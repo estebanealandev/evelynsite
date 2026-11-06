@@ -169,3 +169,19 @@ test('el laboratorio ya no existe y three.js no llega a otras páginas', async (
   await page.goto('/servicios', { waitUntil: 'networkidle' });
   expect(await page.evaluate(() => (window as any).__gl === true)).toBe(false);
 });
+
+test('con pocos cuadros por segundo el árbol crece en el mismo tiempo', async ({ page }) => {
+  // Limita requestAnimationFrame a unos 4 cuadros por segundo, como un equipo muy lento.
+  await page.addInitScript(() => {
+    const original = window.requestAnimationFrame.bind(window);
+    window.requestAnimationFrame = cb => original(() => { setTimeout(() => original(cb), 240); }) as unknown as number;
+  });
+  await page.goto('/');
+  await page.waitForFunction(() => (window as any).__arbol?.frames > 0, null, { timeout: 60000 });
+  const inicio = await page.evaluate(() => (window as any).__arbol.tiempo);
+  await page.waitForTimeout(4000);
+  const fin = await page.evaluate(() => (window as any).__arbol.tiempo);
+  // Con un tope de 0,1 s por cuadro avanzaría unos 1,6 s en estos 4 s.
+  expect(fin - inicio).toBeGreaterThan(3);
+});
+

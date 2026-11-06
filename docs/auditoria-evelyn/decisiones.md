@@ -17,7 +17,7 @@ Tomadas sin consultar porque el encargo así lo pide. Todas se pueden revertir c
 | `noindex` en páginas de etiqueta y fuera del sitemap | Son listados breves que compiten con el blog y las categorías | Indexarlas |
 | Newsreader e IBM Plex Sans | No hay licencias de Tiempos, Söhne ni Lyon en el repositorio y no se compra nada. Ambas tienen licencia OFL | Usar archivos comerciales |
 | Encabezado interior claro | Las páginas de lectura larga no necesitan un bloque oscuro; el oscuro queda para la portada y el pie | Mantener navy en todas |
-| Árbol único con raíces en lugar de árbol grande y dos jóvenes | Tres árboles se leían como progenitor e hijos: una sola forma de familia. Se mantiene el concepto *Crecer* | Conservar la composición anterior |
+| Árbol grande con dos jóvenes | Decisión del propietario tras comparar en pantalla. La alternativa de un solo árbol con raíces se probó y se descartó; consta en el commit `61dc289` | Árbol único con raíces, propuesto para no sugerir un solo tipo de familia |
 | Orientador: «Tema para revisar» y sin consulta en el resultado de riesgo | Señala qué leer. Ante un riesgo, lo prioritario es el aviso y poder salir | «Le puede servir» con invitación a agendar |
 | Publicación en `main`: no se hace | Faltan revisión legal, datos reales, SMTP y dominio | Fusionar por tener pruebas en verde |
 | Vigilancia programada como temporizador en `ops/`, sin instalar | Instalarlo cambia la configuración del equipo. Requiere decidir dónde corre | Crear tareas persistentes por cuenta propia |
