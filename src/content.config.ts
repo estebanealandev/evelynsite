@@ -37,6 +37,8 @@ const servicios = defineCollection({
     fuentes: z.array(fuente),
     relacionados: z.array(z.string()),
     aviso: z.string().optional(),
+    // Qué conviene reunir o hacer a continuación. Es opcional porque no todas las áreas lo necesitan.
+    siguientes: z.object({ titulo: z.string(), items: z.array(z.string()) }).optional(),
     revisionProfesional: z.enum(['pendiente', 'aprobada']).default('pendiente')
   })
 });
@@ -60,4 +62,22 @@ const articulos = defineCollection({
   })
 });
 
-export const collections = { servicios, articulos };
+// Fichas por situación: explican qué reunir y qué suele ser relevante, sin concluir nada sobre el caso.
+const fichas = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/fichas' }),
+  schema: z.object({
+    titulo: z.string(),
+    orden: z.number(),
+    metaTitulo: z.string().max(70),
+    metaDescripcion: z.string().max(170),
+    resumen: z.string(),
+    reunir: z.array(z.string()),
+    aspectos: z.array(z.object({ titulo: z.string(), texto: z.string() })),
+    limites: z.string(),
+    servicios: z.array(z.string()),
+    fuentes: z.array(fuente),
+    revisionProfesional: z.enum(['pendiente', 'aprobada']).default('pendiente')
+  })
+});
+
+export const collections = { servicios, articulos, fichas };

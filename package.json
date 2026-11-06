@@ -18,7 +18,10 @@
     "test:visual": "node scripts/compare-structure.mjs",
     "capture": "node scripts/capture-phase.mjs",
     "poster": "node scripts/generate-tree-poster.mjs",
-    "audit:identity": "node scripts/audit-identity.mjs"
+    "audit:identity": "node scripts/audit-identity.mjs",
+    "normas:descargar": "node scripts/normas/descargar.mjs",
+    "normas:verificar": "node scripts/normas/verificar.mjs",
+    "normas:vigilar": "node scripts/normas/vigilar.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.9",
@@ -41,6 +44,7 @@
     "smtp-server": "^3.21.3",
     "topojson-client": "^3.1.0",
     "typescript": "^5.9.0",
-    "world-atlas": "^2.0.2"
+    "world-atlas": "^2.0.2",
+    "yaml": "^2.9.1"
   }
 }
