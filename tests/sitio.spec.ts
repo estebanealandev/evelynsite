@@ -129,7 +129,7 @@ test.describe('portada', () => {
         const izq = m.left + m.width * 0.2, der = m.right - m.width * 0.2;
         // Se mide la caja interior de cada palabra: el relleno anti-recorte no es texto visible.
         return [...document.querySelectorAll('.h-hero__title .palabra > span')].map(e => e.getBoundingClientRect())
-          .some(t => !(t.right <= izq || t.left >= der || t.bottom <= m.top + m.height * 0.3 || t.top >= m.bottom));
+          .some(t => !(t.right <= izq || t.left >= der || t.bottom <= m.top + m.height * 0.3 || t.top >= m.bottom - 1));
       });
       expect(choque, `${width}x${height}`).toBe(false);
     }

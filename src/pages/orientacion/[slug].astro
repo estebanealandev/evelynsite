@@ -20,7 +20,7 @@ const crumbs = [{ label: 'Guías por situación', href: '/orientacion' }, { labe
 <Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura>
   <PageHero titulo={d.titulo} lede={d.resumen} crumbs={crumbs} />
   <div class="wrap g12 read">
-    <article class="read__body" style="grid-column:1 / span 8">
+    <article class="read__body read__body--sola">
       <section class="read__section">
         <h2>Qué conviene reunir</h2>
         <ul class="rows">{d.reunir.map((r: string) => <li>{r}</li>)}</ul>

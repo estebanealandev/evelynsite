@@ -36,6 +36,8 @@ test.describe('peso de JavaScript', () => {
 
 test.describe('experiencia de carga con red y CPU limitadas', () => {
   test.describe.configure({ mode: 'serial' });
+  // La limitación de red y CPU solo existe en Chromium.
+  test.skip(({ browserName }) => browserName !== 'chromium', 'requiere Chromium');
   for (const ruta of ['/', '/servicios/divorcios', '/blog/cambios-codigo-procesal-familia']) {
     test(`${ruta}: LCP y CLS dentro del límite`, async ({ page }) => {
       await limitar(page);
