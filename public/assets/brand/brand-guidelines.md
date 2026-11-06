@@ -51,8 +51,8 @@ Evite los dorados brillantes, los efectos metálicos y los degradados ostentosos
 
 Todas tienen licencia SIL OFL 1.1 y se sirven localmente.
 
-- **Titulares:** Cormorant Garamond (400, 500 e itálicas).
-- **Texto, botones y navegación:** Inter.
+- **Titulares:** Newsreader, variable con tamaño óptico (SIL OFL 1.1).
+- **Texto, botones y navegación:** IBM Plex Sans, variable (SIL OFL 1.1).
 
 ## Reglas de uso
 

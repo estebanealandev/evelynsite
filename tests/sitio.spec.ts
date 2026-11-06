@@ -83,7 +83,8 @@ test.describe('metadatos', () => {
     const org = datos.find(d => d['@type'] === 'LegalService');
     expect(org.name).toBe('Evelyn Elizondo');
     expect(org.address).toBeUndefined();
-    expect(datos.some(d => d['@type'] === 'FAQPage')).toBe(true);
+    // Google retiró los resultados enriquecidos de preguntas frecuentes: no se declara ese marcado.
+    expect(datos.some(d => d['@type'] === 'FAQPage')).toBe(false);
     expect(datos.some(d => d['@type'] === 'BreadcrumbList')).toBe(true);
   });
 });
@@ -194,11 +195,13 @@ test.describe('interacciones', () => {
   });
 
   test('la cabecera se vuelve sólida, se oculta al bajar y vuelve al subir', async ({ page }) => {
+    // En la portada empieza transparente sobre el encabezado oscuro; en las demás páginas es sólida desde el inicio.
+    await page.goto('/');
+    await expect(page.locator('.site-header')).not.toHaveClass(/is-solid/);
     await page.goto('/blog');
     const h = page.locator('.site-header');
-    await expect(h).not.toHaveClass(/is-solid/);
-    await page.evaluate(() => scrollTo({ top: 1200, behavior: 'instant' }));
     await expect(h).toHaveClass(/is-solid/);
+    await page.evaluate(() => scrollTo({ top: 1200, behavior: 'instant' }));
     await expect(h).toHaveClass(/is-oculta/);
     await page.evaluate(() => scrollTo({ top: 900, behavior: 'instant' }));
     await expect(h).not.toHaveClass(/is-oculta/);
@@ -289,7 +292,7 @@ test.describe('interacciones', () => {
 test.describe('orientador', () => {
   test('lleva al área correcta en dos pasos y permite volver', async ({ page }) => {
     await page.goto('/servicios#por-donde-empiezo');
-    await page.getByRole('button', { name: 'Tengo una duda sobre mis hijas o hijos' }).click();
+    await page.getByRole('button', { name: 'Hijas o hijos' }).click();
     await page.getByRole('button', { name: 'La pensión alimentaria' }).click();
     await expect(page.getByRole('link', { name: 'Leer esta área' })).toHaveAttribute('href', '/servicios/pensiones-alimentarias');
     await page.getByRole('button', { name: 'Volver' }).click();
@@ -307,7 +310,7 @@ test.describe('orientador', () => {
     await page.goto('/servicios', { waitUntil: 'networkidle' });
     const envios: string[] = [];
     page.on('request', r => { if (r.method() !== 'GET') envios.push(r.url()); });
-    await page.getByRole('button', { name: 'Convivimos sin estar casados' }).click();
+    await page.getByRole('button', { name: 'Convivencia sin matrimonio' }).click();
     await page.waitForTimeout(300);
     expect(envios).toEqual([]);
   });
@@ -424,7 +427,7 @@ test.describe('formulario de consulta', () => {
     await page.waitForTimeout(3100);
     const [res] = await Promise.all([page.waitForResponse('**/api/consulta'), page.click(`${FORM} button[type=submit]`)]);
     expect(res.status()).toBe(200);
-    await expect(page.locator(`${FORM} .form__status`)).toContainText('Recibimos');
+    await expect(page.locator(`${FORM} .form__status`)).toContainText('Solicitud recibida');
   });
 
   test('error de red: no simula éxito', async ({ page }) => {
@@ -487,9 +490,9 @@ test.describe('API', () => {
     expect(res.headers().location).toBe('/consulta-recibida');
   });
 
-  test('suscripción exige consentimiento', async ({ request }) => {
+  test('la suscripción retirada ya no existe', async ({ request }) => {
     const res = await request.post('/api/suscripcion', { headers: { accept: 'application/json', origin }, form: { correo: 'p@example.test' } });
-    expect(res.status()).toBe(422);
+    expect(res.status()).toBe(404);
   });
 });
 

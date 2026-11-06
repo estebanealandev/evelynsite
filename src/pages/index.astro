@@ -11,20 +11,20 @@ const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden
 const articulos = await getCollection('articulos');
 const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4);
 ---
-<Base title={`${site.name} | Derecho de Familia en Costa Rica`} description="Orientación y acompañamiento jurídico en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho.">
+<Base title={`${site.name} | Derecho de Familia en Costa Rica`} description="Derecho de familia en Costa Rica: divorcio, pensiones alimentarias, guarda y crianza, gananciales y unión de hecho, con las normas citadas y formulario de consulta.">
   <section class="h-hero on-dark" data-hero>
     <div class="h-hero__stage">
       <canvas aria-hidden="true"></canvas>
       <div class="wrap h-hero__content">
         <div class="h-hero__titulo">
           <img class="h-hero__poster" src="/assets/images/arbol-lineas.webp" alt="" width="900" height="700" decoding="async" />
-          <h1 class="h-hero__title" data-arbol-titulo data-partir>Protegemos lo que <em>más</em> importa.</h1>
+          <h1 class="h-hero__title" data-arbol-titulo data-partir>Derecho de familia en <em>Costa Rica.</em></h1>
         </div>
         <div class="h-hero__foot" data-arbol-pie>
-          <p class="reveal" style="--retraso:.3s">Brindamos orientación y acompañamiento jurídico en asuntos de derecho de familia, con un enfoque humano, estratégico y comprometido con la protección de sus derechos.</p>
+          <p class="reveal" style="--retraso:.3s">Divorcio, pensiones alimentarias, guarda y crianza, interrelación familiar, bienes gananciales, unión de hecho y filiación. Cada área explica las reglas vigentes y qué conviene revisar antes de solicitar una consulta.</p>
           <div class="btn-row reveal" style="--retraso:.4s">
             <a class="btn" href="/agendar-consulta">Agendar una consulta</a>
-            <a class="btn btn-outline" href="/servicios">Conocer nuestros servicios</a>
+            <a class="btn btn-outline" href="/servicios">Ver las áreas</a>
           </div>
         </div>
       </div>
@@ -33,11 +33,11 @@ const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4
 
   <section class="chapter bg-ivory h-telon">
     <div class="wrap">
-      <h2 class="statement" data-partir>La asesoría adecuada puede marcar una diferencia en una etapa <em>decisiva.</em></h2>
+      <h2 class="statement" data-partir>Antes de firmar un acuerdo o contestar una demanda, conviene saber qué se está <em>decidiendo.</em></h2>
       <div class="g12 h-intro">
         <div class="h-intro__text reveal">
-          <p>Una separación, una pensión o una decisión sobre la crianza de los hijos pueden sentirse abrumadoras. Conocer los derechos, las obligaciones y las opciones que contempla la legislación costarricense ayuda a decidir con mayor serenidad.</p>
-          <p>Recibir orientación especializada a tiempo permite aclarar plazos, ordenar la información y valorar cada camino posible.</p>
+          <p>Las reglas de estos asuntos cambiaron en los últimos años. El Código Procesal de Familia rige desde el 1 de octubre de 2024, y la Ley N.º 10650, de febrero de 2025, reformó el artículo 48 del Código de Familia sobre el divorcio.</p>
+          <p>Por eso cada área indica qué normas se consultaron. Para una consulta conviene tener a mano las resoluciones o notificaciones recibidas, sus fechas y cualquier convenio firmado.</p>
         </div>
       </div>
       <ul class="values h-valores">
@@ -51,10 +51,10 @@ const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4
       <div class="g12 head">
         <div class="head__title">
           <p class="eyebrow reveal">Áreas de práctica</p>
-          <h2 data-partir>Información y orientación en derecho de <em>familia.</em></h2>
+          <h2 data-partir>Temas de derecho de <em>familia.</em></h2>
         </div>
         <div class="head__aside reveal">
-          <p>Cada área tiene reglas propias en el ordenamiento costarricense. Estas páginas explican, de forma general, en qué consisten y qué conviene considerar.</p>
+          <p>Cada página explica en qué consiste el tema, qué condiciones exige la norma y qué conviene reunir. Es información general: su aplicación depende de los hechos y de la prueba.</p>
           <p style="margin-top:14px"><a class="link-arrow" href="/servicios#por-donde-empiezo">¿No sabe por dónde empezar?</a></p>
         </div>
       </div>
@@ -68,18 +68,18 @@ const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4
     </div>
     <div class="wrap g12 h-approach__body">
       <div class="h-approach__title">
-        <p class="eyebrow reveal">Nuestro enfoque</p>
-        <h2 data-partir>El buen consejo busca resolver, no <em>agravar.</em></h2>
+        <p class="eyebrow reveal">Cómo se trabaja</p>
+        <h2 data-partir>Primero los hechos y la norma; después, la <em>opinión.</em></h2>
       </div>
       <div class="h-approach__text reveal">
-        <p>Un asunto de familia no se reduce a un expediente. Una orientación jurídica debería:</p>
+        <p>Cada asunto se analiza con estos criterios:</p>
         <ul class="rows">
-          <li>Partir de la legislación costarricense vigente.</li>
-          <li>Atender sus objetivos y explicar sus opciones.</li>
-          <li>Comunicar de forma clara y oportuna.</li>
-          <li>Priorizar el interés superior de los hijos.</li>
+          <li>Se parte de la legislación costarricense vigente y de sus reformas.</li>
+          <li>Se exponen las vías posibles, con lo favorable y lo desfavorable.</li>
+          <li>Se explica cada paso con palabras comprensibles.</li>
+          <li>Se considera el interés superior de las personas menores de edad.</li>
         </ul>
-        <p>Cuando es posible y seguro, un buen acuerdo puede ahorrar desgaste. La conciliación no procede en todos los casos: el Código Procesal de Familia la prohíbe si se constatan relaciones desiguales de poder.</p>
+        <p>Un acuerdo puede ser una vía cuando es posible y seguro. La conciliación no procede en todos los casos: el artículo 9 del Código Procesal de Familia la prohíbe en situaciones en que se constaten relaciones desiguales de poder.</p>
         <a class="link-arrow" href="/sobre-evelyn">Sobre Evelyn</a>
       </div>
     </div>
@@ -89,8 +89,8 @@ const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4
     <div class="wrap g12 h-proceso__grid">
       <div class="h-proceso__titulo">
         <p class="eyebrow reveal">El proceso</p>
-        <h2 data-partir>Un acompañamiento <em>claro,</em> paso a paso.</h2>
-        <p class="reveal">Cada etapa se explica con lenguaje comprensible, sin promesas sobre el resultado de un asunto.</p>
+        <h2 data-partir>De la solicitud a la relación <em>profesional.</em></h2>
+        <p class="reveal">Qué ocurre en cada etapa, sin promesas sobre el resultado de un asunto.</p>
       </div>
       <ol class="h-pasos" data-pasos-scroll>
         {proceso.map(s => <li><h3>{s.titulo}</h3><p>{s.texto}</p></li>)}
@@ -102,10 +102,14 @@ const [principal, ...otros] = articulos.filter(a => a.data.destacado).slice(0, 4
     <div class="wrap">
       <div class="h-lib-head">
         <div>
-          <p class="eyebrow reveal">Biblioteca</p>
-          <h2 data-partir>Para leer con calma</h2>
+          <p class="eyebrow reveal">Artículos</p>
+          <h2 data-partir>Para leer antes de decidir</h2>
         </div>
-        <a class="link-arrow reveal" href="/blog">Ver todos los artículos</a>
+        <p class="h-lib-enlaces reveal">
+          <a class="link-arrow" href="/blog">Ver todos los artículos</a>
+          <a class="link-arrow" href="/orientacion">Guías por situación</a>
+          <a class="link-arrow" href="/biblioteca-juridica">Biblioteca jurídica</a>
+        </p>
       </div>
       <div class="g12 h-lib">
         <a class="h-lib__main reveal" href={`/blog/${principal.id}`}>

@@ -1,0 +1,466 @@
+[
+ {
+  "id": "FAM-FPE-001",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Modificación",
+  "texto": "El artículo 174 del Código de Familia permite modificar la prestación alimentaria por el cambio de circunstancias de quien la da o de quien la recibe",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "174"
+    ],
+    "cita": "La prestación alimentaria podrá modificarse por el cambio de circunstancias de quien la da o de quien la recibe"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/pensiones-alimentarias"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-002",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Sin cosa juzgada material",
+  "texto": "El artículo 262 del Código Procesal de Familia agrega que lo resuelto sobre el monto no constituye cosa juzgada material",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "262"
+    ],
+    "cita": "sobre el monto de la cuota alimentaria, constituirá cosa juzgada material"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-003",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Trámite",
+  "texto": "Según el artículo 277 del Código Procesal de Familia, la modificación o exoneración se tramita en legajo separado y puede pedirse por escrito o de forma verbal, con los motivos, la pretensión concreta y la prueba",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "El trámite de modificación o exoneración de la cuota de pensión alimentaria y el cobro de gastos extraordinarios se hará en legajo separado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "hará la solicitud mediante escrito o de forma verbal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-004",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Audiencia única",
+  "texto": "El artículo 278 prevé una audiencia única con notificación personal a la persona accionada",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "278"
+    ],
+    "cita": "la autoridad judicial convocará a una audiencia a las partes, con notificación personal a la persona accionada"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-005",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Patrocinio letrado",
+  "texto": "El artículo 50 no exige patrocinio letrado en esta materia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Relativos a la materia de pensiones alimentarias"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-006",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Aumento automático",
+  "texto": "El artículo 279 del Código Procesal de Familia prevé un aumento automático de la cuota: cada seis meses, en enero y julio, si la persona obligada es asalariada, y cada año, en enero, si no lo es",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada asalariada, cada seis meses en los meses de enero y julio"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada no asalariada, de forma anual en el mes de enero"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-007",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Contenido de los alimentos",
+  "texto": "El artículo 164 del Código de Familia incluye sustento, habitación, vestido, asistencia médica, diversión, transporte, educación y otros rubros",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "cita": "Se entienden por alimentos los que provean sustento, habitación, vestido, asistencia médica, diversión, transporte y otros"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-008",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Aguinaldo y salario escolar",
+  "texto": "También regula la cuota de aguinaldo y, según proceda, la de salario escolar o los gastos de inicio de lecciones",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "cita": "por concepto de aguinaldo, dentro de los primeros veinte días del mes de diciembre de cada año"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-009",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Gastos extraordinarios",
+  "texto": "El artículo 37 del Código de la Niñez y la Adolescencia menciona además gastos extraordinarios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Gastos extraordinarios por concepto de educación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-010",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Carga de la prueba",
+  "texto": "El artículo 259 del Código Procesal de Familia asigna la carga probatoria a quien niegue o se oponga a los ingresos y formas económicas indicados por la parte acreedora",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "259"
+    ],
+    "cita": "La carga probatoria corresponderá a quien niegue o se oponga a los ingresos y las formas económicas indicadas por la parte acreedora"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-011",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Falta de ingresos",
+  "texto": "El artículo 265 señala que no tener trabajo, salario o ingresos no es excusa atendible para oponerse a la fijación, sin perjuicio del análisis de la prueba",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "No será excusa atendible para oponerse a la fijación de la cuota de pensión alimentaria el no tener trabajo, salario o ingresos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-012",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Ocultar bienes",
+  "texto": "Ocultar bienes o ingresos puede llevar a testimoniar piezas ante el Ministerio Público",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "Si se ocultaran o distrajeran bienes o ingresos, se testimoniarán piezas ante el Ministerio Público"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-013",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Inexistencia de la obligación",
+  "texto": "El artículo 173 del Código de Familia enumera casos en que no existe obligación, como cuando quien recibe deja de necesitar los alimentos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando quien los recibe deje de necesitarlos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-014",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Mayoría de edad y estudios",
+  "texto": "mientras no sobrepasen los veinticinco años y obtengan buenos rendimientos con una carga académica razonable",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "mientras no sobrepasen los veinticinco años de edad y obtengan buenos rendimientos con una carga académica razonable"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-015",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Prueba de la causal",
+  "texto": "Las causales deben probarse ante la autoridad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Las causales eximentes de la obligación alimentaria se probarán ante la autoridad que conozca de la demanda alimentaria"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-016",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Efecto de la solicitud",
+  "texto": "Solicitar la revisión no cambia el monto por sí solo: el cambio se decide en la resolución del trámite",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "278"
+    ],
+    "cita": "Se procederá al dictado de la parte dispositiva de la sentencia"
+   }
+  ],
+  "excepciones": "Lectura del trámite de los artículos 277 y 278, sin norma que lo enuncie en esos términos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-017",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Plazo o tractos",
+  "texto": "el artículo 287 del Código Procesal de Familia permite pedir un plazo o el pago en tractos, según lo que se compruebe",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "se podrá conceder un plazo prudencial que no exceda de un mes"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "el pago en tractos de una deuda morosa total o parcial de alimentos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-018",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Irrenunciabilidad",
+  "texto": "El derecho a los alimentos no puede renunciarse (artículo 167 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "167"
+    ],
+    "cita": "El derecho a los alimentos no podrá renunciarse ni transmitirse de modo alguno"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-019",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Homologación",
+  "texto": "Los acuerdos pactados tienen carácter de sentencia ejecutoria si se homologan ante la autoridad judicial competente (artículo 39 del Código de la Niñez y la Adolescencia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "39"
+    ],
+    "cita": "Los acuerdos sobre alimentos pactados entre las partes tendrán carácter de sentencia ejecutoria, siempre que se homologuen ante la autoridad judicial competente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-020",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Ejecución de otros acuerdos",
+  "texto": "el artículo 260 del Código Procesal de Familia regula la ejecución de otros acuerdos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "260"
+    ],
+    "cita": "cualquiera de las partes podrá iniciar el trámite de ejecución de lo acordado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-021",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Conciliación",
+  "texto": "La conciliación se prohíbe cuando se constatan relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-022",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Derogación de la Ley 7654",
+  "texto": "El artículo 4 de la Ley N.º 9747 derogó la Ley N.º 7654, de Pensiones Alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se deroga, en su totalidad, la Ley N.º 7654, Ley de Pensiones Alimentarias"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FPE-023",
+  "archivo": "src/content/fichas/revisar-una-pension-alimentaria.md",
+  "pagina": "/orientacion/revisar-una-pension-alimentaria",
+  "tema": "Vigencia",
+  "texto": "que rige desde el 1 de octubre de 2024",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ }
+]

@@ -1,8 +1,8 @@
 ---
-titulo: "Acuerdos familiares y mecanismos de solución de conflictos"
-metaTitulo: "Acuerdos familiares y conciliación en Costa Rica"
-metaDescripcion: "Cuándo procede la conciliación en familia, qué asuntos no se pueden conciliar y cómo se homologan los acuerdos según el Código Procesal de Familia."
-resumen: "Conciliación, homologación, asuntos no conciliables y justicia restaurativa."
+titulo: "Conciliación en procesos de familia: cuándo procede y cuándo está prohibida"
+metaTitulo: "Conciliación en procesos de familia en Costa Rica: límites y efectos"
+metaDescripcion: "Cuándo procede la conciliación en familia, en qué casos está prohibida, cómo se homologa un acuerdo y qué efectos tiene según el Código Procesal de Familia."
+resumen: "Momentos en que puede intentarse, prohibiciones, homologación, efectos y justicia restaurativa."
 categoria: "Procesos de familia"
 etiquetas: ["Conciliación", "Homologación", "Justicia restaurativa"]
 fecha: "2026-11-04"
@@ -12,39 +12,58 @@ destacado: false
 servicios: ["acuerdos-familiares"]
 fuentes:
   - ref: "CPF"
-    detalle: "arts. 6, 9, 193 a 197"
+    detalle: "arts. 9, 31, 193 a 197, 231, 233, 237, 269, 270"
   - ref: "CF"
-    detalle: "arts. 141, 167"
+    detalle: "arts. 141, 152, 167"
+  - ref: "LCVD"
+    detalle: "art. 8"
 ---
 
-Muchos conflictos familiares pueden resolverse sin una sentencia que imponga la solución. El Código Procesal de Familia promueve esa posibilidad, pero también le pone límites claros.
+El Código Procesal de Familia permite conciliar cuando procede, pero no la plantea como salida para todo conflicto: la prohíbe si se constatan relaciones desiguales de poder y la excluye en derechos irrenunciables o indisponibles. Si hay violencia, lo primero es la seguridad. Las medidas de protección de la Ley N.º 7586 se piden con independencia de cualquier otro proceso (artículo 8) y no requieren negociar con nadie. Ante un peligro inmediato, llame al 9-1-1.
 
-## Un proceso que busca reducir el conflicto
+## Cuándo está prohibida o no procede
 
-El artículo 6 enumera principios propios del proceso familiar, como el equilibrio entre las partes, la ausencia de contención, la solución integral y el mejor interés. En las audiencias, la autoridad explica a las partes la necesidad de mantener una actitud no adversarial.
+- **Relaciones desiguales de poder.** El artículo 9, reformado por la Ley N.º 10558 de 23 de octubre de 2024, prohíbe la conciliación en las situaciones en que se constaten. El Código no enumera en ese artículo cuáles son ni cómo se constatan, de modo que el punto se analiza según los hechos.
+- **Derechos irrenunciables o indisponibles.** No procede conciliar sobre ellos (artículo 196). Si un proceso incluye otros extremos que no los afectan, se puede admitir un arreglo parcial.
+- **Materia no conciliable o gestión dilatoria.** La autoridad judicial puede rechazar la solicitud de audiencia en esos dos supuestos (artículo 193).
 
-## La conciliación
+Algunos límites vienen del Código de Familia. El derecho a los alimentos no puede renunciarse ni transmitirse (artículo 167). Los derechos y las obligaciones de la responsabilidad parental tampoco pueden renunciarse, ni modificarse por acuerdo, salvo lo dispuesto para la separación y el divorcio por mutuo consentimiento en cuanto a guarda, crianza y educación (artículo 141).
 
-El artículo 9 prevé que, cuando proceda, se intente una audiencia de conciliación previa al inicio del proceso o a solicitud de alguna de las partes, en cualquier estado del proceso. La autoridad puede remitir a los centros especializados del Poder Judicial, sin perjuicio de que las partes acudan a entes externos debidamente acreditados.
+## Justicia restaurativa: qué dice la norma
 
-Lo acordado tiene carácter y eficacia de cosa juzgada material o formal, según su contenido.
+Los artículos 9 y 196 permiten abordar mediante mecanismos propios de justicia restaurativa algunos casos que no pueden conciliarse. El artículo 196 menciona la violencia intrafamiliar y la protección de derechos de personas en estado de vulnerabilidad. En ambos, la condición es que el caso cumpla los criterios de admisibilidad y viabilidad, que el Código no desarrolla en esos artículos.
 
-## Acuerdos extrajudiciales
+La Ley N.º 10558 también reformó el art. 2 de la Ley de Justicia Restaurativa, N.º 9582, para incluir los casos dispuestos por el artículo 9 del Código Procesal de Familia. Estos mecanismos son una posibilidad sujeta a esos criterios. No son un trámite que una persona afectada deba buscar por su cuenta ni un motivo para reunirse con quien ejerce violencia.
 
-Según el artículo 194, las partes pueden presentar arreglos conciliatorios en cualquier tipo de proceso. La autoridad los revisa y, si están ajustados a derecho, los homologa. Si solo una parte los presenta, se da audiencia a la otra.
+## En qué momentos puede intentarse
 
-En pensiones, el artículo 197 aclara que los acuerdos surten efectos desde su adopción, pero el apremio corporal solo puede pedirse desde la homologación y respecto de las cuotas futuras.
+Cuando la conciliación procede, puede aparecer en varias etapas:
 
-## Cuándo no procede
+- **Antes de la demanda.** Las partes pueden solicitar una audiencia, incluso de manera verbal ante el juzgado competente. La persona juzgadora la convoca o remite de inmediato la gestión al centro de conciliación especializado más cercano. Si no se logra conciliar, la gestión se archiva de manera definitiva (artículo 9).
+- **Durante cualquier proceso.** Las partes pueden proponer una audiencia en cualquier estado del proceso (artículo 193).
+- **En la audiencia inicial del proceso resolutivo familiar.** Cuando sea procedente, la autoridad judicial invita a conciliar. Si hay acuerdo total o parcial, lo homologa en ese mismo momento. Si fracasa o no procede, el proceso continúa (artículo 231).
+- **En la audiencia de prueba y decisoria.** La autoridad insta a las partes a considerar una forma alterna de solución del conflicto (artículo 233).
+- **En pensiones alimentarias.** Si la demanda es admisible, el tribunal convoca a una audiencia previa de conciliación dentro de los diez días hábiles a su presentación o corrección (artículo 269). Si no se realiza o no prospera, se dicta sentencia anticipada (artículo 270).
 
-- **Relaciones desiguales de poder:** el artículo 9 prohíbe la conciliación si se constatan.
-- **Derechos irrenunciables o indisponibles:** no pueden conciliarse (artículo 196).
-- **Violencia intrafamiliar o protección de personas vulnerables:** solo podrá abordarse con mecanismos de justicia restaurativa si cumple los criterios de admisibilidad y viabilidad (artículo 196).
+Quienes administran justicia deben fomentar la conciliación o la mediación solo en los casos procedentes (artículo 31). La misma norma les ordena dictar medidas para evitar la violación de derechos de personas en situación de riesgo de violencia intrafamiliar o en desbalance de poder.
 
-## Límites de lo que se puede pactar
+## Quién la dirige
 
-El derecho a los alimentos no puede renunciarse ni transmitirse (artículo 167 del Código de Familia). Los derechos y obligaciones de la responsabilidad parental tampoco, salvo lo que la ley prevé para la separación y el divorcio por mutuo consentimiento (artículo 141).
+La autoridad judicial lleva a cabo esta etapa y puede remitir a las partes a los centros especializados del Poder Judicial. Las partes pueden decidir la intervención de entes externos debidamente acreditados. También pueden aplicarse otros mecanismos de la Ley N.º 7727 si son compatibles con los objetivos y los fines de la materia familiar (artículo 9).
 
-## ¿Qué hace que un acuerdo funcione?
+## Acuerdos alcanzados fuera del proceso
 
-Información suficiente, libertad para decidir, términos claros y soluciones realistas. Un acuerdo aceptado por presión o sin comprender sus efectos puede crear más problemas de los que resuelve.
+Las partes pueden presentar arreglos de tipo conciliatorio en cualquier tipo de proceso. La autoridad judicial los revisa, los homologa si los encuentra ajustados a derecho y, cuando lo considere necesario, convoca a una audiencia. Si una sola parte presenta el acuerdo, se da audiencia a la otra (artículo 194).
+
+Si el arreglo se refiere a derechos propios de personas menores de edad o con discapacidad que puedan externar su opinión, se escucha su posición antes de homologar, cuando se considere necesario para una mejor resolución (artículo 195).
+
+## Qué efectos tiene lo acordado
+
+- **Cosa juzgada.** Lo acordado tiene carácter y eficacia de cosa juzgada material o formal, según su contenido (artículo 9).
+- **Hijas e hijos.** En el divorcio y la separación por mutuo consentimiento, lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental (artículo 152 del Código de Familia).
+- **Pensiones.** Los acuerdos extrajudiciales surten efectos desde su adopción. El apremio corporal solo se puede solicitar desde la homologación judicial y respecto de las cuotas futuras. Lo adeudado antes de homologar se cobra por apremio patrimonial (artículo 197).
+- **Revisión por vulneración de derechos.** Como medida de protección, la autoridad puede suspender o modificar provisionalmente un acuerdo conciliatorio extrajudicial que viole o amenace violar los derechos consagrados en la normativa sustantiva (artículo 237).
+
+## Antes de aceptar una propuesta
+
+Conviene saber qué derechos toca, qué efecto tendría y si puede cambiarse después. Si hubo presión, miedo o violencia, informe esa situación a su representante legal o a la autoridad judicial antes de la audiencia, para que se valore si la conciliación está prohibida.

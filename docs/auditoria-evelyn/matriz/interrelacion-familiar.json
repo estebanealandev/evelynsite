@@ -1,0 +1,851 @@
+[
+ {
+  "id": "FAM-INT-001",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Término vigente",
+  "texto": "Lo que suele llamarse «visitas» es, en la norma vigente, el régimen de interrelación familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación con sus padres o madres que no cohabiten con ellos y ellas",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-002",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Contenido del régimen y Ley 9781",
+  "texto": "La Ley N.º 9781 de 2019 reformó el Código de Familia para regular el régimen de interrelación familiar. Según el artículo 152, inciso c), incluye el derecho de las personas menores de edad a mantener contacto, visitas y comunicación con sus padres o madres que no cohabiten con ellas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación con sus padres o madres que no cohabiten con ellos y ellas",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "Así reformado por el artículo 1° de la Ley Régimen de interrelación familiar, N° 9781 del 12 de noviembre de 2019",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-003",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Sin horario modelo; interés superior",
+  "texto": "Los artículos 151 y 152 del Código de Familia no fijan un horario modelo. El criterio que imponen para resolver es el interés superior de la persona menor de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "En todo caso, se deberá resolver tomando en cuenta el interés superior de la persona menor de edad",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "En caso de divorcio, nulidad de matrimonio o separación judicial o por mutuo consentimiento, los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-004",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Círculo familiar y afectivo",
+  "texto": "reconoce el contacto regular y directo con el círculo familiar y afectivo hasta el cuarto grado de consanguinidad y segundo de afinidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "tienen derecho a tener contacto de manera regular y directa con su círculo familiar y afectivo, hasta el cuarto grado de consanguinidad y segundo de afinidad, así como con terceros no parientes que formen parte de dicho círculo familiar extendido y afectivo",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-005",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Cuándo debe acordarse",
+  "texto": "lo exige en caso de divorcio, nulidad de matrimonio, separación judicial o por mutuo consentimiento, y lo extiende a la finalización de las uniones de hecho y su posterior reconocimiento en sede jurisdiccional",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "En caso de divorcio, nulidad de matrimonio o separación judicial o por mutuo consentimiento, los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa y su posterior reconocimiento en sede jurisdiccional",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-006",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Acuerdo al reconocer",
+  "texto": "lo pide también al reconocer hijas e hijos menores habidos fuera del matrimonio, en sede judicial o ante el Registro Civil, el Patronato Nacional de la Infancia (PANI) o notario público. A falta de acuerdo, dispone el tribunal",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "cuando se realice el reconocimiento de hijas e hijos menores habidos fuera del matrimonio, el padre y la madre deberán acordar los atributos de la responsabilidad parental, guarda, crianza, educación y régimen de interrelación familiar",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "sea en sede judicial o ante el Registro Civil, el Patronato Nacional de la Infancia (PANI) o notario público; en defecto de acuerdo o cuando el interés superior de la persona menor de edad así lo justifique, el Tribunal dispondrá",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-007",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Negativa de la persona menor de edad",
+  "texto": "la negativa a mantener contacto, visitas y comunicación debe ser considerada y obliga a quien tenga su custodia a solicitar a la oficina local del PANI que investigue y brinde la atención psicosocial necesaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La negativa del menor a mantener contacto, visitas y comunicación deberá ser considerada y obligará, a quien tenga su custodia, a solicitar a la oficina local del Patronato Nacional de la Infancia (PANI) que investigue y brinde la atención psicosocial necesaria",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-008",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Modificación o suspensión por perjuicio",
+  "texto": "La autoridad judicial debe modificar o suspender los lugares, la frecuencia y las condiciones de la interrelación cuando se determine que implican un perjuicio físico, moral o psicológico",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La autoridad judicial, mediante resolución fundamentada, deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación, cuando se determine que impliquen un perjuicio",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-009",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Regímenes supervisados",
+  "texto": "Una vez firme el fallo, el artículo 319 del Código Procesal de Familia encarga la ejecución del régimen supervisado al PANI o a cualquier otro órgano público",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "319"
+    ],
+    "cita": "luego de la firmeza del fallo, estará a cargo del Patronato Nacional de la Infancia (PANI) o de cualquier otro órgano público que realice labores en beneficio de esta población, sin perjuicio del compromiso que adquiera algún ente privado acreditado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "319"
+    ],
+    "cita": "deberán entregar los informes sobre lo acontecido, cuando así sea dispuesto por la autoridad judicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-010",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Aprobación del convenio",
+  "texto": "el pacto no vale mientras el tribunal no se pronuncie. La autoridad puede pedir que se complete o aclare, e improbarlo o modificarlo en beneficio de los hijos e hijas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "el pacto no valdrá mientras el Tribunal no se pronuncie sobre la aprobación de la separación",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "La autoridad judicial podrá pedir que se complete o aclare el convenio presentado, si es omiso o confuso en los puntos señalados en este artículo de previo a su aprobación; en estos casos deberá improbar o modificar el convenio en beneficio de los hijos y las hijas",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-011",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Opinión de la persona menor de edad en el convenio",
+  "texto": "se le da oportunidad de opinar (artículo 290 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "cita": "A la persona menor de edad hija del matrimonio o de la unión de hecho se le concederá la oportunidad de ser escuchada para que exprese su opinión respecto a lo relativo a su cuidado personal o su interrelación con sus progenitores",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-012",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Vía judicial y competencia",
+  "texto": "Sin acuerdo, se decide en el procedimiento resolutivo familiar, incluida la fijación o modificación del régimen (artículo 151 del Código de Familia y artículo 222, inciso 6, del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "mediante el procedimiento resolutivo familiar establecido en el Código Procesal de Familia, el Tribunal decidirá",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "incluyendo todo lo concerniente a la fijación o modificación del régimen de interrelación familiar",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "6) Los conflictos en el ejercicio de los atributos de la responsabilidad parental, incluidos los referidos al cuidado personal de hijas e hijos y modificaciones de sentencias sobre estas pretensiones"
+   }
+  ],
+  "excepciones": "CF 152 sigue hablando de vía incidental para modificar; CPF 222 inc. 6 incluye modificaciones de sentencia. Ver hallazgos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-013",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Competencia territorial",
+  "texto": "es competente la autoridad judicial del lugar donde esta reside (artículo 16)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "16"
+    ],
+    "cita": "En caso de tratarse de la discusión en la pretensión principal de un derecho de una persona menor de edad, se tendrá por competente la autoridad judicial del lugar de residencia habitual o el domicilio de la persona menor de edad involucrada"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-014",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Revisión",
+  "texto": "Lo resuelto no constituye cosa juzgada y puede modificarse, a solicitud de parte o del PANI",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "89"
+    ],
+    "cita": "produce cosa juzgada material, salvo lo relativo a guarda, crianza y educación, la suspensión de los atributos de la responsabilidad parental y la que resuelva el sistema de interrelación familiar"
+   }
+  ],
+  "excepciones": "CNA 35 exceptúa el supuesto de su párrafo 4.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-015",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Ejecución coercitiva",
+  "texto": "la autoridad judicial puede ordenar medios coercitivos, incluso el allanamiento y el apercibimiento de sanciones penales (artículo 318 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "318"
+    ],
+    "cita": "la autoridad judicial podrá ordenar el cumplimiento por medios coercitivos, incluso el allanamiento y el apercibimiento de las sanciones penales que correspondan, en caso de negativa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-016",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Tutela de la realidad",
+  "texto": "Puede abstenerse de ejecutar si pasó un tiempo prolongado y se consolidó una situación distinta que beneficia a la persona menor de edad (artículo 316)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "316"
+    ],
+    "cita": "la autoridad judicial se abstendrá de ejecutarla en aquellos casos en que la realidad haga evidente que se ha consolidado una situación diferente de la que se pretende ejecutar y esta beneficia a la persona en la referida condición"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-017",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Pensión y contacto: lo que dicen las normas",
+  "texto": "regulan el contacto y no mencionan el pago de la pensión como condición para mantenerlo o suspenderlo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La autoridad judicial, mediante resolución fundamentada, deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación, cuando se determine que impliquen un perjuicio",
+    "reforma": "Ley 10263"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "En todo caso, se deberá resolver tomando en cuenta el interés superior de la persona menor de edad",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "En caso de divorcio, nulidad de matrimonio o separación judicial o por mutuo consentimiento, los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "excepciones": "Reformulación de la afirmación anterior, sin artículo expreso. Es una constatación sobre el texto de esos tres artículos.",
+  "relacionadas": [
+   "/servicios/pensiones-alimentarias"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-018",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Quién modifica o suspende",
+  "texto": "Modificar o suspender la interrelación corresponde a la autoridad judicial, mediante resolución fundamentada",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La autoridad judicial, mediante resolución fundamentada, deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación, cuando se determine que impliquen un perjuicio",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-019",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Obligación de gastos",
+  "texto": "El padre y la madre quedan obligados a sufragar los gastos de guarda, crianza y educación, cualquiera que sea la persona o institución a cuyo cargo queden los hijos e hijas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "Cualquiera que sea la persona o institución a cuyo cargo queden los hijos y las hijas, el padre y la madre quedan obligados a sufragar los gastos que demanden su guarda, crianza y educación",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-020",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Cobro de alimentos",
+  "texto": "La deuda alimentaria tiene vías de cobro propias, como el apremio corporal y el cobro ejecutorio (artículos 283 y 285 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora mayor de edad y menor de sesenta y cinco años orden de apremio corporal"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "podrán ser cobradas en el propio despacho judicial que conoce del proceso mediante la vía de ejecución directa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-021",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Negativa a dar alimentos",
+  "texto": "La negativa a dar alimentos figura entre las causas de pérdida de los atributos de la responsabilidad parental (artículo 158 bis, inciso f, del Código de Familia), un asunto que se discute en el proceso resolutivo familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "cita": "f) La negativa de los padres a dar alimentos a sus hijos",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "8) La pérdida, con petición o no de adaptabilidad, y la suspensión de los atributos de la responsabilidad parental"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-022",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Ejecución del incumplimiento",
+  "texto": "su incumplimiento puede llevar a una ejecución forzosa. Esto vale tanto para el régimen como para la cuota alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "318"
+    ],
+    "cita": "la autoridad judicial podrá ordenar el cumplimiento por medios coercitivos, incluso el allanamiento y el apercibimiento de las sanciones penales que correspondan, en caso de negativa"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "En caso de no cumplirse el pago de la deuda alimentaria, a petición de la parte acreedora se podrá girar contra la persona deudora mayor de edad y menor de sesenta y cinco años orden de apremio corporal"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "podrán ser cobradas en el propio despacho judicial que conoce del proceso mediante la vía de ejecución directa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-023",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Parientes y legitimación",
+  "texto": "la forma en que otro pariente debe plantearlo requiere análisis",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "mediante el procedimiento resolutivo familiar establecido en el Código Procesal de Familia, el Tribunal decidirá",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "tienen derecho a tener contacto de manera regular y directa con su círculo familiar y afectivo, hasta el cuarto grado de consanguinidad y segundo de afinidad, así como con terceros no parientes que formen parte de dicho círculo familiar extendido y afectivo",
+    "reforma": "Ley 10263"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación con sus padres o madres que no cohabiten con ellos y ellas",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-024",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Suspensión por impago",
+  "texto": "Las normas citadas no prevén esa suspensión ni la dejan en manos de uno de los progenitores",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La autoridad judicial, mediante resolución fundamentada, deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación, cuando se determine que impliquen un perjuicio",
+    "reforma": "Ley 10263"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "En todo caso, se deberá resolver tomando en cuenta el interés superior de la persona menor de edad",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-025",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Causales de inexistencia de alimentos",
+  "texto": "El artículo 173 del Código de Familia enumera los casos en que no existe obligación alimentaria y no menciona el incumplimiento del régimen de interrelación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "No existirá obligación de proporcionar alimentos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-026",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Régimen provisional",
+  "texto": "El artículo 133 del Código Procesal de Familia permite establecer un régimen provisional de interrelación familiar en los procesos familiares",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "133"
+    ],
+    "cita": "En los procesos familiares se podrá establecer un régimen provisional de interrelación familiar con personas menores de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-027",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Derecho a la vida familiar",
+  "texto": "El artículo 30 del mismo Código añade su derecho a conocer a su padre y madre, y a crecer y desarrollarse a su lado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "30"
+    ],
+    "cita": "Las personas menores de edad tendrán derecho a conocer a su padre y madre; asimismo, a crecer y desarrollarse a su lado y ser cuidadas por ellos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-028",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Interés superior",
+  "texto": "el artículo 151 del Código de Familia ordena resolver tomándolo en cuenta en todos los casos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "cita": "En todo caso, se deberá resolver tomando en cuenta el interés superior de la persona menor de edad",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-029",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Suspensión por violencia",
+  "texto": "permite suspender provisionalmente a la presunta persona agresora el derecho de visitar a sus hijos e hijas menores de edad, en los casos en que ejerza algún tipo de agresión (artículo 3, inciso h)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "h) Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad, en los casos en que esta ejerza algún tipo de agresión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-030",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Prohibición de conciliar",
+  "texto": "El artículo 9 del Código Procesal de Familia prohíbe la conciliación cuando se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-031",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Violencia y atributos",
+  "texto": "incluye la violencia doméstica o intrafamiliar y, desde la Ley N.º 10634, la violencia vicaria entre las causas de suspensión de los atributos de la responsabilidad parental",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "c) Por violencia doméstica o intrafamiliar contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad o afinidad",
+    "reforma": "Ley 10603"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "d) Por violencia vicaria contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad, afinidad o adopción; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto",
+    "reforma": "Ley 10634"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-032",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Femicidio",
+  "texto": "el padre que haya dado muerte a la madre de la persona menor de edad, o haya procurado hacerlo, pierde la posibilidad de tener un régimen de interrelación con ella. Esta regla es la excepción a la posibilidad de modificar lo resuelto",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "En caso de que el padre de la persona menor de edad le haya dado muerte a su madre o haya procurado hacerlo, el primero perderá la posibilidad de tener un régimen de interrelación familiar con la persona menor de edad",
+    "reforma": "Ley 10263"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo de acuerdo con el interés superior de los hijos y las hijas menores de edad o por un cambio de circunstancias, con excepción de lo señalado en el párrafo 4",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-033",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Pensión y contacto",
+  "texto": "El contacto no depende del pago de la pensión: son obligaciones y derechos con reglas propias",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Ningún artículo lo dice de forma expresa. CF 158 bis f) vincula la negativa a dar alimentos con la pérdida de atributos. Se sustituye por una descripción de lo que dicen CNA 35 y CF 151 y 152.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-034",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Pensión y contacto",
+  "texto": "La pensión y la interrelación son temas distintos. Antes de tomar una decisión unilateral, conviene obtener orientación jurídica.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Formulación categórica sin artículo. Se responde desde CNA 35 y las vías de cobro de CPF 283 y 285.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-035",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Derecho a la vida familiar",
+  "texto": "su derecho a conocer a su padre y madre, y a crecer y desarrollarse a su lado, salvo decisión judicial en otro sentido",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "En CNA 30 la salvedad de decisión judicial se refiere a permanecer en el hogar y no a conocer o crecer junto a los progenitores.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-036",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Tutela de la realidad",
+  "texto": "debe atender la realidad actual de la persona menor de edad",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "CPF 316 tiene condiciones concretas: tiempo prolongado, situación consolidada, beneficio y remisión a modificación de fallo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INT-037",
+  "archivo": "src/content/servicios/interrelacion-familiar.md",
+  "pagina": "/servicios/interrelacion-familiar",
+  "tema": "Acuerdo",
+  "texto": "El acuerdo está sujeto a revisión judicial en los supuestos que indica la ley.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Vago. Se precisa con CF 152 y CPF 290.",
+  "consultado": "2026-11-05"
+ }
+]

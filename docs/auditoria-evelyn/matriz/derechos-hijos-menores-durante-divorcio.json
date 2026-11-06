@@ -1,0 +1,525 @@
+[
+ {
+  "id": "FAM-DHM-001",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Opinión en mutuo consentimiento",
+  "texto": "Se le concede la oportunidad de ser escuchada para que exprese su opinión sobre su cuidado personal o su interrelación con sus progenitores",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se le concederá la oportunidad de ser escuchada para que exprese su opinión respecto a lo relativo a su cuidado personal o su interrelación con sus progenitores"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "también podrá ser realizarse por escrito en el documento en el que se solicita la aprobación del convenio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-002",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Opinión sin contestación",
+  "texto": "la sentencia se puede emitir una vez garantizado su derecho a emitir opinión",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la sentencia se podrá emitir una vez que se le haya garantizado su derecho a emitir su opinión a la persona menor de edad"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-003",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Deber judicial",
+  "texto": "escuchar a las personas cuyos derechos se discuten",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "31"
+    ],
+    "cita": "escuchar a las partes en conflicto y a aquellas personas cuyos derechos se están discutiendo en el proceso, a fin de conocer la opinión de ellas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-004",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Derecho general de opinión",
+  "texto": "reconoce su derecho a expresar su opinión, con las limitaciones de la ley, en los procesos judiciales y administrativos",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Expresar su opinión en los ámbitos de su vida cotidiana, especialmente en la familia, la comunidad y la escuela; también como usuarios de todos los servicios públicos y, con las limitaciones de la ley, en todos los procesos judiciales y administrativos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-005",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Interés superior",
+  "texto": "se consideran su edad, grado de madurez y capacidad de discernimiento",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Toda acción pública o privada concerniente a una persona menor de dieciocho años, deberá considerar su interés superior"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Su edad, grado de madurez, capacidad de discernimiento y demás condiciones personales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-006",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación al aprobar",
+  "texto": "Lo convenido sobre los hijos puede ser modificado por el tribunal al momento de su aprobación",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Lo convenido con respecto a los derechos y las disposiciones relacionados con los hijos podrá ser modificado por el tribunal al momento de su aprobación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-007",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Variación",
+  "texto": "Puede variar lo acordado sobre su cuidado personal y visitas",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "se dictará la resolución que apruebe o no el acuerdo. La autoridad judicial podrá variar lo acordado en lo que respecta a los derechos de las personas menores de edad referentes a cuidado personal y visitas"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá improbar o modificar el convenio en beneficio de los hijos y las hijas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-008",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "PANI",
+  "texto": "que puede impugnarla si estima que se violó algún derecho fundamental",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "cuyo representante podrá impugnarla en caso de que estime que se ha producido alguna violación a los derechos fundamentales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-009",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación posterior",
+  "texto": "a solicitud de parte o del Patronato Nacional de la Infancia",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-010",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vida familiar",
+  "texto": "reconoce su derecho a conocer a su padre y madre, a crecer y desarrollarse a su lado y a ser cuidadas por ellos",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "30"
+    ],
+    "cita": "tendrán derecho a conocer a su padre y madre; asimismo, a crecer y desarrollarse a su lado y ser cuidadas por ellos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-011",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Círculo familiar",
+  "texto": "reconoce el contacto regular y directo con su círculo familiar y afectivo, hasta el cuarto grado de consanguinidad y segundo de afinidad",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "reforma": "Ley 10263",
+    "cita": "tienen derecho a tener contacto de manera regular y directa con su círculo familiar y afectivo, hasta el cuarto grado de consanguinidad y segundo de afinidad"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-012",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Hermanos",
+  "texto": "El tribunal debe procurar no separar a hermanos y hermanas",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "procurando no separar a los hermanos y las hermanas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-013",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Negativa al contacto",
+  "texto": "obliga a quien tenga su custodia a solicitar a la oficina local del Patronato Nacional de la Infancia que investigue",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "reforma": "Ley 10263",
+    "cita": "La negativa del menor a mantener contacto, visitas y comunicación deberá ser considerada y obligará, a quien tenga su custodia, a solicitar a la oficina local del Patronato Nacional de la Infancia (PANI) que investigue"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/interrelacion-familiar"
+  ]
+ },
+ {
+  "id": "FAM-DHM-014",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación o suspensión",
+  "texto": "debe modificar o suspender el ejercicio de estos derechos en cuanto a lugares, frecuencia y condiciones",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "reforma": "Ley 10263",
+    "cita": "deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-015",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Gastos",
+  "texto": "los progenitores siguen obligados a sufragar los gastos de guarda, crianza y educación",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Cualquiera que sea la persona o institución a cuyo cargo queden los hijos y las hijas, los padres y las madres quedan obligados a sufragar los gastos que demanden su guarda, crianza y educación"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "de forma proporcional a las capacidades y los ingresos económicos del padre y la madre"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-016",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prestación alimentaria",
+  "texto": "garantiza la prestación alimentaria y ciertos gastos extraordinarios",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Extraordinariamente, la prestación alimentaria comprenderá, además, el pago de lo siguiente"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-017",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vivienda",
+  "texto": "Debe asegurarse el derecho a la vivienda de los hijos e hijas menores",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá asegurarse el derecho a la vivienda para los hijos y las hijas menores"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-018",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Permanencia en el hogar",
+  "texto": "Tienen derecho a permanecer en su hogar, del cual no pueden ser expulsadas ni impedidas de regresar, salvo decisión judicial",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "30"
+    ],
+    "cita": "Tendrán derecho a permanecer en su hogar del cual no podrán ser expulsadas ni impedidas de regresar a él, salvo decisión judicial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-019",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Preferencia ganancial",
+  "texto": "tiene preferencia para el pago de lo que corresponda como ganancial",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "se trata de un bien inmueble que se utiliza como habitación familiar, tendrá preferencia para el pago del monto que corresponde como ganancial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-020",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Protección frente a violencia",
+  "texto": "incluidas las relaciones impropias",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "143"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "orientar, educar, cuidar, vigilar, disciplinar a los hijos y las hijas, así como protegerlos frente a cualquier tipo de violencia, incluyendo las elaciones impropias"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "143"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "Esto no autoriza, en ningún caso, el uso del castigo corporal ni ninguna otra forma de trato humillante"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-021",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Medidas de protección",
+  "texto": "Existen medidas de protección en la Ley contra la Violencia Doméstica",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Cuando se trate de situaciones de violencia doméstica o vicaria, la autoridad competente ordenará cualquiera de las siguientes medidas de protección"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "130"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "Se encuentren en una relación impropia o en otras situaciones de riesgo de violencia y desprotección"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-022",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Conciliación",
+  "texto": "se prohíbe la conciliación cuando se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DHM-023",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Línea 1147",
+  "texto": "línea gratuita 1147 para niñas, niños y adolescentes",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://pani.go.cr/pani-recuerda-a-ninos-y-ninas-que-la-linea-gratuita-1147-es-para-ellos-y-ellas/",
+   "titulo": "Patronato Nacional de la Infancia: PANI recuerda a niños y niñas que la línea gratuita 1147 es para ellos y ellas",
+   "cita": "línea gratuita 1147"
+  }
+ },
+ {
+  "id": "FAM-DHM-024",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "consultado": "2026-11-05",
+  "tema": "Consejos sin norma",
+  "texto": "Más allá de lo legal, suele ayudar mantener rutinas estables, explicar los cambios según la edad, evitar poner a los hijos en medio del conflicto y buscar apoyo profesional",
+  "motivo": "Recomendación psicosocial sin fuente; se retira.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DHM-025",
+  "archivo": "src/content/articulos/derechos-hijos-menores-durante-divorcio.md",
+  "pagina": "/blog/derechos-hijos-menores-durante-divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Extensión del art. 290",
+  "texto": "En el trámite de mutuo consentimiento, el artículo 290 ... dispone",
+  "motivo": "Era la única vía mencionada; se añade el art. 226 y el deber del art. 31 CPF.",
+  "retirada": true
+ }
+]

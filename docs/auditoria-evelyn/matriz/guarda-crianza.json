@@ -1,0 +1,771 @@
+[
+ {
+  "id": "FAM-GUA-001",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Atributos de la responsabilidad parental",
+  "texto": "compete a los padres regir a los hijos, protegerlos, administrar sus bienes y representarlos legalmente",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "140"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "Compete a los padres regir a los hijos, protegerlos, administrar sus bienes y representarlos legalmente"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-002",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Deberes y relaciones impropias",
+  "texto": "así como protegerlos frente a cualquier tipo de violencia, incluyendo las relaciones impropias",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "143"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "orientar, educar, cuidar, vigilar, disciplinar a los hijos y las hijas, así como protegerlos frente a cualquier tipo de violencia, incluyendo las elaciones impropias"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "143"
+    ],
+    "cita": "Así reformado por el artículo 1° de la Ley para reforzar la protección de las personas menores de edad frente a las relaciones impropias, N° 10603 del 15 de noviembre del 2024"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-003",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Castigo corporal",
+  "texto": "no autoriza, en ningún caso, el castigo corporal ni ninguna otra forma de trato humillante",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "143"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "Esto no autoriza, en ningún caso, el uso del castigo corporal ni ninguna otra forma de trato humillante"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-004",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ejercicio conjunto",
+  "texto": "ejercen la responsabilidad parental con iguales derechos y deberes",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "ejercerán, con iguales derechos y deberes, la responsabilidad parental sobre sus hijas e hijos habidos en el matrimonio y uniones de hecho"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-005",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Irrenunciabilidad",
+  "texto": "no pueden renunciarse ni modificarse por acuerdo, salvo lo dispuesto para la separación y el divorcio por mutuo consentimiento",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Tampoco pueden modificarse por acuerdo de las partes, salvo lo dispuesto para la separación y el divorcio por mutuo consentimiento, en cuanto se refiera a la guarda, crianza y educación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-006",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Custodia compartida",
+  "texto": "será prioritario elegir la custodia y el ejercicio de la responsabilidad parental compartidas para ambos padres",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Será prioritario elegir la custodia y el ejercicio de la responsabilidad parental compartidas para ambos padres; para ello, se tomará en cuenta el interés superior del menor"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-007",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vivienda",
+  "texto": "También exige asegurar el derecho a la vivienda de los hijos e hijas menores",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá asegurarse el derecho a la vivienda para los hijos y las hijas menores"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-008",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Interés superior",
+  "texto": "su condición de sujeto de derechos y responsabilidades",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Toda acción pública o privada concerniente a una persona menor de dieciocho años, deberá considerar su interés superior"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Su edad, grado de madurez, capacidad de discernimiento y demás condiciones personales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-009",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Reconocimiento y sedes de acuerdo",
+  "texto": "El acuerdo puede hacerse en sede judicial o ante el Registro Civil, el Patronato Nacional de la Infancia o notario público",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "sea en sede judicial o ante el Registro Civil, el Patronato Nacional de la Infancia (PANI) o notario público; en defecto de acuerdo o cuando el interés superior de la persona menor de edad así lo justifique, el Tribunal dispondrá"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-010",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Progenitores menores de edad",
+  "texto": "ejercen los atributos aun cuando sean menores de edad",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "155"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "aun cuando fueran menores de edad, ejercerán los atributos de la responsabilidad parental sobre los hijos habidos fuera del matrimonio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-011",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Tutela e institución",
+  "texto": "como último recurso y durante el menor tiempo posible, a una institución especializada",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "se confiarán a una persona idónea de su círculo familiar y afectivo o, en su defecto como último recurso y durante el menor tiempo posible, a una institución especializada"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-012",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Causales de suspensión",
+  "texto": "por omitir denunciar relaciones impropias que afecten a los hijos (Ley N.º 10603) y por violencia vicaria (Ley N.º 10634)",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "Por violencia doméstica o intrafamiliar contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad o afinidad"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10603",
+    "cita": "Por la omisión de denunciar las relaciones impropias en que se vean afectados sus hijos e hijas"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Por violencia vicaria contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad, afinidad o adopción"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "Nótese que ya existe un incido d) pero con diferente texto"
+   }
+  ],
+  "excepciones": "El art. 159 tiene dos incisos d); por eso no se cita la letra sin su contenido."
+ },
+ {
+  "id": "FAM-GUA-013",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Causas de pérdida",
+  "texto": "incluida la violencia vicaria determinada en resolución judicial firme",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "cita": "Son causas de pérdida de los atributos de la responsabilidad parental"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Mediante resolución judicial en firme que determine un caso de violencia vicaria; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-014",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Facultad judicial en violencia vicaria",
+  "texto": "la persona juzgadora valora la pertinencia según el caso, la afectación y el interés superior",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Mediante resolución judicial en firme que determine un caso de violencia vicaria; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "en cuyo caso podrá desaplicar esta causal"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-015",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Acuerdo o resolución",
+  "texto": "Sin acuerdo, dispone el tribunal en resolución fundada",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa y su posterior reconocimiento en sede jurisdiccional"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-016",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aprobación judicial",
+  "texto": "el pacto no vale mientras el tribunal no se pronuncie, en resolución fundamentada y en un plazo de quince días hábiles",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "el pacto no valdrá mientras el Tribunal no se pronuncie sobre la aprobación de la separación en resolución fundamentada en un plazo de quince días hábiles"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá improbar o modificar el convenio en beneficio de los hijos y las hijas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-017",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Proceso resolutivo",
+  "texto": "incluidos los referidos al cuidado personal, se conocen en este proceso",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "Los conflictos en el ejercicio de los atributos de la responsabilidad parental, incluidos los referidos al cuidado personal de hijas e hijos y modificaciones de sentencias sobre estas pretensiones"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "En caso de conflicto, a petición de cualquiera de ellos, y mediante el procedimiento resolutivo familiar establecido en el Código Procesal de Familia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-018",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación",
+  "texto": "Lo resuelto no constituye cosa juzgada",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-019",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vida familiar",
+  "texto": "tienen derecho a conocer a su padre y madre, y a crecer y desarrollarse a su lado y ser cuidadas por ellos",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "30"
+    ],
+    "cita": "tendrán derecho a conocer a su padre y madre; asimismo, a crecer y desarrollarse a su lado y ser cuidadas por ellos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-020",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Opinión",
+  "texto": "Tienen derecho a expresar su opinión, con las limitaciones de la ley, en los procesos judiciales y administrativos",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Expresar su opinión en los ámbitos de su vida cotidiana, especialmente en la familia, la comunidad y la escuela; también como usuarios de todos los servicios públicos y, con las limitaciones de la ley, en todos los procesos judiciales y administrativos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-021",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Gastos",
+  "texto": "siguen obligados a sufragar los gastos de guarda, crianza y educación",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Cualquiera que sea la persona o institución a cuyo cargo queden los hijos y las hijas, los padres y las madres quedan obligados a sufragar los gastos que demanden su guarda, crianza y educación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-022",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Decisión médica",
+  "texto": "queda autorizada la decisión facultativa aun contra el criterio de los padres",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "144"
+    ],
+    "reforma": "Ley 8409",
+    "cita": "queda autorizada la decisión facultativa pertinente, aun contra el criterio de los padres"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-023",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prohibición de conciliar",
+  "texto": "Se prohíbe la conciliación cuando se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/proteccion-familiar"
+  ]
+ },
+ {
+  "id": "FAM-GUA-024",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vía de modificación",
+  "texto": "menciona la vía incidental, mientras que el artículo 222 del Código Procesal de Familia incluye en el proceso resolutivo familiar las modificaciones de sentencias",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "Los conflictos en el ejercicio de los atributos de la responsabilidad parental, incluidos los referidos al cuidado personal de hijas e hijos y modificaciones de sentencias sobre estas pretensiones"
+   }
+  ],
+  "excepciones": "Tensión entre normas señalada en hallazgos; requiere criterio profesional."
+ },
+ {
+  "id": "FAM-GUA-025",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Uniones de hecho y fuera de matrimonio",
+  "texto": "se aplica a la finalización de las uniones de hecho por cualquier causa",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa y su posterior reconocimiento en sede jurisdiccional"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "ejercerán, con iguales derechos y deberes, la responsabilidad parental sobre sus hijas e hijos habidos en el matrimonio y uniones de hecho"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "155"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "aun cuando fueran menores de edad, ejercerán los atributos de la responsabilidad parental sobre los hijos habidos fuera del matrimonio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-026",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Tutela de la realidad",
+  "texto": "se abstiene de ejecutarla si la realidad hace evidente que se consolidó una situación diferente",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "316"
+    ],
+    "cita": "la autoridad judicial se abstendrá de ejecutarla en aquellos casos en que la realidad haga evidente que se ha consolidado una situación diferente"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-027",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Contenido del acuerdo",
+  "texto": "de forma proporcional a las capacidades y los ingresos de cada progenitor",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "de forma proporcional a las capacidades y los ingresos económicos del padre y la madre"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-028",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Conflicto entre progenitores",
+  "texto": "a petición de cualquiera de los progenitores y mediante el procedimiento resolutivo familiar",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "151"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "En caso de conflicto, a petición de cualquiera de ellos, y mediante el procedimiento resolutivo familiar establecido en el Código Procesal de Familia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-029",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ejecución provisional",
+  "texto": "puede ejecutarse provisionalmente, en resolución fundada, aunque no esté firme",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "317"
+    ],
+    "cita": "la ejecución provisional de la sentencia sin estar firme cuando se trate del cuidado de personas en estado de vulnerabilidad"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-030",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Medios coercitivos",
+  "texto": "puede ordenar el cumplimiento por medios coercitivos, incluso el allanamiento",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "318"
+    ],
+    "cita": "la autoridad judicial podrá ordenar el cumplimiento por medios coercitivos, incluso el allanamiento y el apercibimiento de las sanciones penales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-GUA-031",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Línea 1147",
+  "texto": "línea gratuita 1147 para niñas, niños y adolescentes",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://pani.go.cr/pani-recuerda-a-ninos-y-ninas-que-la-linea-gratuita-1147-es-para-ellos-y-ellas/",
+   "titulo": "Patronato Nacional de la Infancia: PANI recuerda a niños y niñas que la línea gratuita 1147 es para ellos y ellas",
+   "cita": "línea gratuita 1147"
+  }
+ },
+ {
+  "id": "FAM-GUA-032",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Alcance de la aprobación judicial",
+  "texto": "El pacto requiere pronunciamiento de la autoridad judicial.",
+  "motivo": "El art. 152 CF lo exige para divorcio y separación por mutuo consentimiento; se generalizaba a nulidad y unión de hecho, y el art. 141 permite otras sedes para reconocimientos.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-GUA-033",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Contenido del art. 143",
+  "texto": "El artículo 143 añade los deberes de orientar, educar, cuidar y vigilar",
+  "motivo": "Omitía disciplinar y el deber de proteger frente a la violencia, incluidas las relaciones impropias (Ley 10603).",
+  "retirada": true
+ },
+ {
+  "id": "FAM-GUA-034",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Opinión de personas menores de edad",
+  "texto": "Sus opiniones deben ser consideradas según su edad y madurez",
+  "motivo": "Sin artículo que lo respaldara en esos términos; se sustituye por el art. 14 CNA.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-GUA-035",
+  "archivo": "src/content/servicios/guarda-crianza.md",
+  "pagina": "/servicios/guarda-crianza",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "consultado": "2026-11-05",
+  "tema": "Modelo de custodia",
+  "texto": "No existe un modelo de custodia ideal para todos los casos; cada solución debe responder al bienestar de la persona menor de edad.",
+  "motivo": "Afirmación general sin norma; se sustituye por la prioridad y el criterio del art. 152 CF.",
+  "retirada": true
+ }
+]

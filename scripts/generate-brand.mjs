@@ -18,13 +18,13 @@ const C = {
   carbon: '#24282d'
 };
 
-const fontDir = 'node_modules/@fontsource/cormorant-garamond/files';
+const fontDir = 'node_modules/@fontsource/newsreader/files';
 const loadFont = name => {
   const b = fs.readFileSync(path.join(fontDir, name));
   return opentype.parse(b.buffer.slice(b.byteOffset, b.byteOffset + b.byteLength));
 };
-const serif = loadFont('cormorant-garamond-latin-500-normal.woff');
-const italic = loadFont('cormorant-garamond-latin-400-italic.woff');
+const serif = loadFont('newsreader-latin-500-normal.woff');
+const italic = loadFont('newsreader-latin-400-italic.woff');
 
 // Convierte texto a un único trazo, con interletraje y kerning manuales.
 function textPath(font, text, size, tracking, x = 0, y = 0) {
@@ -200,12 +200,11 @@ fs.writeFileSync(path.join(OUT, 'brand-colors.json'), JSON.stringify({
 const F = 'public/assets/fonts';
 fs.mkdirSync(F, { recursive: true });
 const copies = [
-  ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-normal.woff2', 'cormorant-400.woff2'],
-  ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-normal.woff2', 'cormorant-500.woff2'],
-  ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-400-italic.woff2', 'cormorant-400i.woff2'],
-  ['@fontsource/cormorant-garamond/files/cormorant-garamond-latin-500-italic.woff2', 'cormorant-500i.woff2'],
-  ['@fontsource-variable/inter/files/inter-latin-wght-normal.woff2', 'inter.woff2'],
-  ['@fontsource-variable/inter/files/inter-latin-wght-italic.woff2', 'inter-i.woff2']
+  // Newsreader se guarda como subconjunto (español y puntuación) en public/assets/fonts: no se copia aquí.
+  ['@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-normal.woff2', 'ibm-plex-sans.woff2'],
+  ['@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-italic.woff2', 'ibm-plex-sans-i.woff2'],
+  ['@fontsource-variable/newsreader/LICENSE', 'LICENCIA-newsreader.txt'],
+  ['@fontsource-variable/ibm-plex-sans/LICENSE', 'LICENCIA-ibm-plex-sans.txt']
 ];
 for (const [src, dest] of copies) fs.copyFileSync(path.join('node_modules', src), path.join(F, dest));
 

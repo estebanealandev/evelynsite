@@ -1,8 +1,8 @@
 ---
-titulo: "Cómo funciona el divorcio por mutuo consentimiento en Costa Rica"
-metaTitulo: "Divorcio por mutuo consentimiento en Costa Rica"
-metaDescripcion: "Requisitos del convenio, cuándo se tramita ante el Registro Civil o el juzgado y qué ocurre con hijos y bienes en un divorcio por mutuo acuerdo."
-resumen: "Requisitos del convenio y vías de trámite cuando ambos cónyuges están de acuerdo."
+titulo: "Divorcio por mutuo consentimiento: qué puede pasar entre la firma del convenio y su aprobación"
+metaTitulo: "Divorcio por mutuo consentimiento: del convenio a la aprobación"
+metaDescripcion: "Firmar el convenio no divorcia. Plazo de tres meses, cónyuge que no firma la petición, oposición, cambios del juez y trámite ante el Registro Civil."
+resumen: "Firmar no basta: qué ocurre con el plazo de tres meses, si uno de los cónyuges cambia de opinión o si la autoridad judicial varía lo pactado."
 categoria: "Divorcio"
 etiquetas: ["Mutuo consentimiento", "Registro Civil", "Convenio"]
 fecha: "2026-11-04"
@@ -12,45 +12,63 @@ destacado: true
 servicios: ["divorcios", "guarda-crianza"]
 fuentes:
   - ref: "CF"
-    detalle: "arts. 48, 55, 56, 152"
+    detalle: "arts. 48, 60, 152, 167, 173"
   - ref: "CPF"
-    detalle: "arts. 289 a 293"
+    detalle: "arts. 55, 260, 289 a 293"
 ---
 
-Cuando dos personas casadas deciden terminar su matrimonio y coinciden en cómo resolver las consecuencias, la ley ofrece una vía específica: el divorcio por mutuo consentimiento. Está regulado en el artículo 48 del Código de Familia, reformado en 2025 por la Ley N.º 10650.
+Firmar el convenio de divorcio no disuelve el matrimonio. Según el artículo 48 del Código de Familia, reformado por la Ley N.º 10650, el convenio tiene efectos una vez aprobado en la vía judicial o administrativa correspondiente. Entre la firma y esa aprobación pueden surgir plazos, dudas de la autoridad y hasta una oposición. Este artículo se concentra en esa etapa. El contenido general del divorcio está en la página de divorcios.
 
-## El convenio de divorcio
+## Primero: cuál es la vía
 
-El paso central es otorgar un convenio en escritura pública. Los cónyuges deben comparecer personalmente, o uno de ellos mediante apoderado especialísimo dado en escritura pública. El convenio debe indicar:
+- **Registro Civil.** Si no existen hijos menores de edad comunes ni bienes a los cuales se haga referencia en el convenio, la escritura se presenta directamente para su aprobación e inscripción.
+- **Vía judicial.** Si existen hijos menores de edad o bienes de referencia en el convenio, el trámite se verifica conforme al Código Procesal de Familia.
 
-- A quién corresponde la custodia personal de los hijos comunes menores de edad.
-- Cuál de los cónyuges asume la obligación de alimentar a esos hijos y en qué proporción.
-- Si existe o no derecho a alimentos entre los cónyuges, y el monto.
-- La decisión sobre la propiedad y distribución de los bienes de cada uno.
+La ficha del trámite publicada por el Tribunal Supremo de Elecciones añade, como criterio administrativo, que en el testimonio se debe indicar que no hay hijos menores de edad dentro del matrimonio ni bienes gananciales, y que deben aportarse certificaciones de bienes muebles e inmuebles del Registro Nacional. Puede presentarla el notario o una persona autorizada, y la ficha indica un plazo de resolución de 30 días hábiles. El Código habla de bienes mencionados en el convenio y la ficha de bienes gananciales, de modo que, si hay patrimonio, conviene revisar la vía antes de firmar.
 
-## ¿Registro Civil o juzgado?
+## Si uno de los cónyuges no puede comparecer
 
-La vía depende de lo que exista en el matrimonio:
+El convenio se otorga personalmente o por uno solo de los cónyuges mediante apoderado especialísimo dado en escritura pública. El artículo 55 del Código Procesal de Familia agrega que el mandato debe contener las cláusulas exactas del eventual acuerdo, bajo pena de nulidad del convenio. También permite revocar el poder antes de que la persona apoderada haya realizado el encargo.
 
-- **Sin hijos menores de edad comunes ni bienes a los que se refiera el convenio:** la escritura se presenta directamente al Registro Civil para su aprobación e inscripción.
-- **Con hijos menores de edad o bienes de referencia:** el trámite se verifica judicialmente, conforme al Código Procesal de Familia.
+## Los tres meses
 
-## Un plazo que conviene vigilar
+El convenio debe presentarse ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que lo presenten los cónyuges de forma conjunta. El artículo 48 no indica la consecuencia de presentarlo fuera de ese plazo, así que un convenio que ya lo superó requiere análisis antes de presentarse.
 
-El convenio debe presentarse ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que lo presenten ambos cónyuges de forma conjunta. Solo tiene efectos una vez aprobado en la vía que corresponda.
+## Si solo uno presenta la petición
 
-## La revisión judicial
+Los cónyuges pueden presentar la petición por escrito, conjunta o separadamente, o por medio de la persona autorizada, con el testimonio de la escritura y las certificaciones correspondientes (artículo 289 del Código Procesal de Familia).
 
-Los artículos 289 a 293 del Código Procesal de Familia regulan el trámite judicial. Algunos puntos destacados son:
+Si el escrito no viene firmado por uno de ellos, y este no autorizó esa forma de presentación en la escritura, se le notifica y se le conceden cinco días para lo que corresponda (artículo 291).
 
-- La petición puede presentarse conjunta o separadamente, con el testimonio de la escritura y las certificaciones correspondientes.
-- La persona menor de edad tiene oportunidad de expresar su opinión sobre su cuidado personal e interrelación.
-- La sentencia que aprueba el convenio se notifica a la oficina local del Patronato Nacional de la Infancia.
-- La autoridad puede variar lo acordado respecto de los derechos de las personas menores de edad.
-- Solo se admite oposición por vicios en el consentimiento o falsedad, alegada antes de la aprobación.
+## Si alguien cambia de opinión
 
-## Antes de firmar
+La oposición al convenio está limitada: solo se admite cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación (artículo 293). Cambiar de parecer sin alegar alguna de esas causas no está contemplado como motivo de oposición en ese artículo.
 
-Un acuerdo inicial puede parecer sencillo y, aun así, tener efectos duraderos. Por ejemplo, conviene entender qué significa renunciar a los alimentos entre cónyuges o cómo quedará la vivienda familiar.
+Si se plantea, la otra parte tiene cinco días para manifestarse y aportar prueba. Después se cita a una audiencia, se escuchan conclusiones y se dicta la parte dispositiva. La sentencia integral debe dictarse y notificarse dentro de tres días.
 
-Lo relativo a los hijos no constituye cosa juzgada y puede revisarse si cambian las circunstancias, mientras que otros puntos patrimoniales pueden ser más difíciles de reabrir. Por eso resulta prudente leerlo con calma y aclarar las dudas antes de la firma.
+Quien firmó bajo presión o violencia debe buscar asesoría de inmediato, por lo breve de esa oportunidad. Ante un peligro inmediato, llame al 9-1-1: este sitio no atiende emergencias.
+
+## Qué revisa la autoridad judicial
+
+Estando en forma la petición, se dicta la resolución que aprueba o no el acuerdo. Varias cosas pueden suceder antes:
+
+- **Aclaraciones.** Puede pedir documentos faltantes, aclaración o adición. Si hay duda sobre una cláusula, cita a una audiencia (artículo 292).
+- **Cambios sobre los hijos.** Puede variar lo acordado sobre los derechos de las personas menores de edad referentes a cuidado personal y visitas (artículo 292). Si el convenio es omiso o confuso en esos puntos, debe improbarlo o modificarlo en beneficio de los hijos (artículo 152 del Código de Familia).
+- **Opinión de hijas e hijos.** Se les concede la oportunidad de ser escuchados sobre su cuidado personal o su interrelación con los progenitores, de forma directa o por escrito en el documento de solicitud (artículo 290).
+- **Plazo.** El artículo 152 del Código de Familia prevé un pronunciamiento en un plazo de quince días hábiles, sin que eso garantice cuándo termina todo el trámite.
+
+Aprobado el convenio, la sentencia se notifica a la oficina local del Patronato Nacional de la Infancia, cuya representación puede impugnarla si estima que se violó algún derecho fundamental de las personas menores de edad.
+
+## Una cláusula que merece especial lectura
+
+El convenio debe establecer si existe o no obligación alimentaria entre los cónyuges y el monto. A la vez, el artículo 167 del Código de Familia dice que el derecho a los alimentos no puede renunciarse. Cómo se armonizan ambas reglas en un caso concreto requiere análisis, por lo que esa cláusula no debería tratarse como un trámite de formulario.
+
+Lo pactado entre ex cónyuges tampoco es definitivo en todos los casos: no existe obligación cuando la persona beneficiaria contrae nuevas nupcias o establece una convivencia de hecho (artículo 173 del Código de Familia).
+
+## Después de la aprobación
+
+La resolución puede remitir al convenio en lugar de transcribirlo. En ese caso, para inscribirla debe acompañarse copia certificada por el tribunal (artículo 292). Si el convenio fijó una cuota alimentaria, las piezas necesarias se envían al despacho de pensiones alimentarias para su ejecución (artículo 260).
+
+Lo relativo a los hijos no constituye cosa juzgada y puede modificarse por conveniencia de estos o por un cambio de circunstancias (artículo 152 del Código de Familia).
+
+La separación judicial por mutuo consentimiento sigue las mismas formas y trámites, salvo en el punto de los alimentos entre cónyuges: el convenio no debe establecer si se mantiene o no ese derecho, sino únicamente, si así lo convienen, referirse al monto (artículo 60).

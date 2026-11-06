@@ -33,26 +33,14 @@ const c = site.contact;
         <li><a href="/politica-de-privacidad">Política de privacidad</a></li>
       </ul>
     </nav>
-    <div class="footer-news">
-      <h2>Contenidos informativos</h2>
-      <form class="footer-sub" action="/api/suscripcion" method="post" data-ajax novalidate>
-        <label class="visually-hidden" for="s-correo">Correo electrónico</label>
-        <input id="s-correo" name="correo" type="email" placeholder="Correo electrónico" autocomplete="email" required maxlength="200" data-msg="Indique un correo electrónico válido." />
-        <span class="field__error" data-error="correo"></span>
-        <div class="hp" aria-hidden="true">
-          <label for="s-sitio">No complete este campo</label>
-          <input id="s-sitio" name="sitio_web" type="text" tabindex="-1" autocomplete="off" />
-          <input name="iniciado" type="hidden" value="" />
-        </div>
-        <label class="check" for="s-consentimiento">
-          <input id="s-consentimiento" name="consentimiento" type="checkbox" required data-msg="Marque la casilla de consentimiento." />
-          <span>Acepto recibir estos contenidos, según la <a href="/politica-de-privacidad">política de privacidad</a>.</span>
-        </label>
-        <span class="field__error" data-error="consentimiento"></span>
-        <div class="form__status" role="status" aria-live="polite"></div>
-        <button class="btn btn-outline" type="submit">Suscribirme</button>
-      </form>
-    </div>
+    <nav aria-labelledby="pie-recursos">
+      <h2 id="pie-recursos">Recursos</h2>
+      <ul class="footer-nav">
+        <li><a href="/orientacion">Guías por situación</a></li>
+        <li><a href="/biblioteca-juridica">Biblioteca jurídica</a></li>
+        <li><a href="/servicios/proteccion-familiar">Si hay violencia o riesgo</a></li>
+      </ul>
+    </nav>
   </div>
   <div class="wrap footer-bottom">
     <div>

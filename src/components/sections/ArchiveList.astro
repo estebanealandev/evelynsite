@@ -6,7 +6,7 @@ import Cta from './Cta.astro';
 const { titulo, entrada, posts, tipo, metaDescripcion } = Astro.props;
 const crumbs = [{ label: 'Blog', href: '/blog' }, { label: titulo }];
 ---
-<Base title={`${titulo}: blog de derecho de familia`} description={metaDescripcion} crumbs={crumbs}>
+<Base title={`${titulo}: blog de derecho de familia`} description={metaDescripcion} crumbs={crumbs} noindex={tipo === 'Etiqueta'}>
   <PageHero titulo={titulo} lede={entrada} eyebrow={tipo} crumbs={crumbs} />
   <section class="section">
     <div class="wrap">

@@ -1,0 +1,593 @@
+[
+ {
+  "id": "FAM-CEP-001",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vías",
+  "texto": "Se establece mediante una demanda ante la autoridad judicial o por un acuerdo",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "las gestiones de las partes e intervinientes podrán ser verbales o escritas"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "197"
+    ],
+    "cita": "el cual solo se podrá solicitar a partir de la homologación judicial y en relación con las cuotas futuras. Los montos adeudados antes de la homologación se cobrarán por la vía de apremio patrimonial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-002",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Efectos inmediatos",
+  "texto": "se dicta una sentencia anticipada que ya tiene efectos, aunque la otra parte se oponga",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "se procederá al dictado de una resolución con carácter de sentencia anticipada, dentro de las veinticuatro horas siguientes al vencimiento de dicho plazo"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "Las partes podrán oponerse a la sentencia anticipada en el plazo de cinco días. La oposición no suspenderá sus efectos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-003",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vigencia y derogatoria",
+  "texto": "La Ley N.º 9747 derogó en su totalidad la anterior Ley de Pensiones Alimentarias, N.º 7654",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se deroga, en su totalidad, la Ley N.º 7654, Ley de Pensiones Alimentarias"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-004",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Procesos pendientes",
+  "texto": "Los procesos que estaban pendientes se tramitan, en cuanto sea posible, ajustándolos a la nueva legislación",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Los procesos que estuvieran pendientes a la entrada en vigor de este Código se tramitarán, en cuanto sea posible, ajustándolos a la nueva legislación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-005",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Forma de la demanda",
+  "texto": "Puede ser verbal o escrita",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "las gestiones de las partes e intervinientes podrán ser verbales o escritas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-006",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Patrocinio y defensa",
+  "texto": "No obliga a tener patrocinio letrado",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Relativos a la materia de pensiones alimentarias"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "56"
+    ],
+    "cita": "la parte beneficiaria que no cuente con los recursos económicos para contratar patrocinio letrado podrá solicitar asistencia letrada a la Defensa Pública del Poder Judicial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-007",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Notificaciones",
+  "texto": "No es necesario indicar medio o lugar para notificaciones; en ese caso, se notifica por estrados",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "267"
+    ],
+    "cita": "No será necesario indicar medio o lugar para notificaciones, en cuyo caso las notificaciones serán por estrados"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-008",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Monto por persona",
+  "texto": "debe expresarse el monto pretendido para cada una",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "267"
+    ],
+    "cita": "Cuando se pretenda alimentos para dos o más personas, deberá expresarse la pretensión del monto a imponer para cada una"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "267"
+    ],
+    "cita": "En la demanda se podrá solicitar la orden de retención salarial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-009",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Rechazo de plano",
+  "texto": "La demanda se rechaza de plano si es evidente que el derecho no existe",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "268"
+    ],
+    "cita": "La demanda se rechazará de plano cuando sea evidente la inexistencia del derecho o cuando se tenga conocimiento de la existencia de otro proceso"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-010",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Representación",
+  "texto": "que pueden probar esa circunstancia por los medios a su alcance",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "263"
+    ],
+    "cita": "sus representantes legales cuando tengan a su cargo a esas personas y, en su defecto, sus simples guardadores, quienes podrán probar tal circunstancia por los medios a su alcance"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-011",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencia previa",
+  "texto": "el tribunal convoca dentro de los diez días hábiles a su presentación o corrección",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "dentro de los diez días hábiles a la presentación de la demanda o de su corrección, el tribunal convocará a las partes a una audiencia previa de conciliación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "La autoridad judicial podrá consultar, antes de esa audiencia, la información de planillas reportadas ante la Caja Costarricense de Seguro Social (CCSS)"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-012",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Límite",
+  "texto": "se prohíbe cuando se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-013",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sentencia anticipada",
+  "texto": "se dicta dentro de las veinticuatro horas siguientes al vencimiento",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "se procederá al dictado de una resolución con carácter de sentencia anticipada, dentro de las veinticuatro horas siguientes al vencimiento de dicho plazo"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "El monto razonado de la cuota alimentaria mensual para cada una de las personas beneficiarias"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "Apercibimiento de la existencia del apremio corporal a pedido de parte"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "La orden de inclusión en el índice de personas obligadas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-014",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Oposición",
+  "texto": "Las partes pueden oponerse en cinco días",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "Las partes podrán oponerse a la sentencia anticipada en el plazo de cinco días. La oposición no suspenderá sus efectos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "deberá contener una concreta y clara referencia a los hechos de la demanda, las pretensiones que se solicitan y el ofrecimiento de la prueba"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-015",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Exigibilidad",
+  "texto": "La cuota es ejecutable por los medios coercitivos después del tercer día de la notificación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "280"
+    ],
+    "cita": "será ejecutable por los medios coercitivos establecidos, después del tercer día de la notificación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-016",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prueba",
+  "texto": "La carga probatoria corresponde a quien niegue o se oponga a los ingresos indicados por la parte acreedora",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "259"
+    ],
+    "cita": "La carga probatoria corresponderá a quien niegue o se oponga a los ingresos y las formas económicas indicadas por la parte acreedora, la responsabilidad en el aporte de esta corresponderá a quien tenga mejores elementos para entregarla"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-017",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Excusa",
+  "texto": "no es excusa atendible para oponerse el no tener trabajo, salario o ingresos",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "No será excusa atendible para oponerse a la fijación de la cuota de pensión alimentaria el no tener trabajo, salario o ingresos, tampoco que los negocios no produzcan utilidades; todo sin perjuicio del análisis de la prueba"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-018",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin oposición",
+  "texto": "la ejecución continúa sin ulterior trámite",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "272"
+    ],
+    "cita": "se continuarán los procedimientos de ejecución de cobro de los montos allí establecidos sin necesidad de ulterior trámite"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-019",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencia tras oposición",
+  "texto": "se convoca una audiencia dentro de los quince días siguientes",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "273"
+    ],
+    "cita": "se convocará a una audiencia a realizarse dentro de los quince días siguientes a la presentación de la oposición"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "273"
+    ],
+    "cita": "La indicación del monto pedido en la demanda no implicará limitación alguna para la fijación de la cuota alimentaria"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "273"
+    ],
+    "cita": "La sentencia integral deberá ser dictada y notificada dentro del plazo de tres días"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-020",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apelación",
+  "texto": "son apelables el auto que considere infundada la oposición y las sentencias que resuelven el fondo",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "101"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Consideren infundada la oposición a la sentencia anticipada en materia de pensiones alimentarias"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "101"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Todas las sentencias que resuelven el fondo del asunto"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-021",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Restitución",
+  "texto": "quien haya pagado puede exigir la restitución",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "168"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "quien la haya pagado, sus representantes o las personas herederas podrán exigir la restitución del monto cubierto"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "275"
+    ],
+    "cita": "Para el cobro de las sumas adeudadas por la restitución de cuotas alimentarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-022",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cálculo",
+  "texto": "El artículo 164 atiende las posibilidades económicas y el capital de quien debe darlos",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "todo conforme a las posibilidades económicas y el capital que le pertenezca o posea quien ha de darlos. Se tomarán en cuenta las necesidades y el nivel de vida acostumbrado por el beneficiario"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-023",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Alimentos pasados",
+  "texto": "Los alimentos pasados solo se cobran por los doce meses anteriores a la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "172"
+    ],
+    "cita": "No pueden cobrarse alimentos pasados, más que por los doce meses anteriores a la demanda, y eso en caso de que el alimentario haya tenido que contraer deudas para vivir"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-024",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Retroactividad por paternidad",
+  "texto": "con retroactividad a la fecha de presentación de la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda"
+   }
+  ]
+ },
+ {
+  "id": "FAM-CEP-025",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "consultado": "2026-11-05",
+  "tema": "Comentario sobre información antigua",
+  "texto": "Si encuentra información que aún la cita como vigente, probablemente esté desactualizada.",
+  "motivo": "No aporta una afirmación jurídica comprobable; se retira y queda la derogatoria.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-CEP-026",
+  "archivo": "src/content/articulos/como-se-establece-pension-alimentaria.md",
+  "pagina": "/blog/como-se-establece-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Secuencia sin audiencia final",
+  "texto": "Ejecución. La cuota es ejecutable por los medios coercitivos después del tercer día de la notificación",
+  "motivo": "Se presentaba como cuarto paso y omitía la audiencia de los arts. 272 y 273 CPF.",
+  "retirada": true
+ }
+]

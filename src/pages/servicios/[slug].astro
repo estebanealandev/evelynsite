@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import PageHero from '../../components/ui/PageHero.astro';
 import PostsSection from '../../components/sections/PostsSection.astro';
 import Cta from '../../components/sections/Cta.astro';
+import SeguridadNavegacion from '../../components/sections/SeguridadNavegacion.astro';
 import { em, fechaLarga } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
 import { site } from '../../config/site';
@@ -21,11 +22,6 @@ const articulos = (await getCollection('articulos')).filter(a => a.data.servicio
 const otros = (await getCollection('articulos')).filter(a => !a.data.servicios.includes(servicio.id));
 const lecturas = [...articulos, ...otros].slice(0, 3);
 const crumbs = [{ label: 'Áreas', href: '/servicios' }, { label: d.titulo }];
-const faq = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: d.preguntas.map((q: { p: string; r: string }) => ({ '@type': 'Question', name: q.p, acceptedAnswer: { '@type': 'Answer', text: q.r } }))
-};
 const secciones = [
   ['en-breve', 'En breve'],
   ['que-dice-la-ley', '¿Qué dice la ley?'],
@@ -33,14 +29,15 @@ const secciones = [
   ['cuando-asesorarse', '¿Cuándo asesorarse?'],
   ['como-es-el-tramite', '¿Cómo es el trámite?'],
   ['a-tener-presente', 'A tener presente'],
-  ['preguntas', 'Preguntas frecuentes'],
+  ...(d.preguntas.length ? [['preguntas', 'Preguntas frecuentes']] : []),
+  ...(d.siguientes ? [['siguientes', d.siguientes.titulo]] : []),
   ['fuentes', 'Fuentes']
 ];
 ---
-<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} jsonLd={[faq]} lectura salidaRapida={servicio.id === 'proteccion-familiar'}>
+<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura salidaRapida={servicio.id === 'proteccion-familiar'}>
   <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={`Área de práctica ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
   {d.aviso && <div class="wrap" style="margin-top:28px"><p class="notice notice--urgent" role="note">{d.aviso}</p></div>}
-  {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><p class="notice" role="note">El botón «Salir rápido», o la tecla Esc pulsada dos veces, abre otro sitio de inmediato. Es una ayuda, pero no borra todo su historial de navegación.</p></div>}
+  {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /></div>}
 
   <div class="wrap g12 read">
     <details class="toc" open data-toc>
@@ -95,12 +92,19 @@ const secciones = [
         <p>{d.importante.cierre}</p>
       </section>
 
-      <section class="read__section" id="preguntas">
+      {d.preguntas.length > 0 && <section class="read__section" id="preguntas">
         <h2 style="margin-bottom:26px">Preguntas frecuentes</h2>
         <div class="faq">
           {d.preguntas.map((q: { p: string; r: string }) => <details><summary>{q.p}</summary><div><p>{q.r}</p></div></details>)}
         </div>
-      </section>
+      </section>}
+
+      {d.siguientes && (
+        <section class="read__section" id="siguientes">
+          <h2>{d.siguientes.titulo}</h2>
+          <ul class="rows">{d.siguientes.items.map((i: string) => <li>{i}</li>)}</ul>
+        </section>
+      )}
 
       <section class="read__section sources" id="fuentes">
         <h2>Fuentes normativas</h2>

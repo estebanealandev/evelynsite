@@ -1,0 +1,43 @@
+---
+titulo: "Recibí una notificación judicial"
+orden: 1
+metaTitulo: "Recibí una notificación judicial: qué revisar en Costa Rica"
+metaDescripcion: "Qué información reunir al recibir una notificación en un proceso de familia en Costa Rica y qué revisar: tipo de proceso, resolución, plazo y patrocinio letrado."
+resumen: "La resolución notificada indica qué se pide y qué plazo corre. Ese plazo depende del tipo de proceso y de lo que ordene la resolución, por lo que conviene leerla completa y anotar la fecha."
+reunir:
+  - "El documento de notificación completo, con todas sus páginas y copias adjuntas."
+  - "La fecha, la hora y el lugar en que se recibió, y quién lo recibió."
+  - "El número de expediente y el despacho que dictó la resolución."
+  - "La demanda o solicitud y la prueba que la acompañan, si se entregaron."
+  - "Resoluciones, convenios o procesos anteriores entre las mismas personas."
+  - "Documentos relacionados con lo que se pide, como comprobantes de pago, de ingresos o de bienes."
+  - "Un medio para recibir notificaciones futuras."
+aspectos:
+  - titulo: "Qué tipo de proceso es"
+    texto: "El artículo 212 del Código Procesal de Familia distingue procesos resolutivos familiares, de protección cautelar, de petición unilateral, resolutivos especiales y de ejecución de resoluciones. Las reglas cambian según el tipo, y una pensión alimentaria o una medida de protección siguen trámites propios."
+  - titulo: "Qué plazo corre"
+    texto: "Depende del tipo de proceso y de lo que indique la resolución. Como referencia, el Código Procesal de Familia prevé ocho días hábiles para contestar la demanda en el proceso resolutivo familiar (artículo 223) y cinco días para oponerse a una sentencia anticipada de alimentos (artículo 271). Salvo excepción expresa, los plazos corren desde el día hábil siguiente a aquel en que se notificó a todas las partes (artículo 73). El cómputo de un caso concreto debe confirmarse con la resolución y el expediente."
+  - titulo: "Cómo se notificó"
+    texto: "El artículo 84 del Código Procesal de Familia remite a la Ley N.º 8687, de Notificaciones Judiciales, salvo lo que el propio Código disponga. Su artículo 87 pide notificación personal o en casa de habitación para ciertas resoluciones, como la primera que ordena el depósito de cuotas alimentarias."
+  - titulo: "Qué debe contener una contestación"
+    texto: "En el proceso resolutivo familiar, el artículo 221 pide referirse a cada uno de los hechos y pretensiones y ofrecer la prueba, aportando la documental. Las excepciones se oponen con la contestación (artículo 224), y las pretensiones propias contra la parte actora se formulan en ese momento (artículo 228)."
+  - titulo: "Qué prevé la ley si no se contesta"
+    texto: "En el proceso resolutivo familiar, el artículo 226 prevé que la demanda se tenga por no contestada y que el proceso continúe, con posibilidad de apersonarse después y tomarlo en el estado en que se encuentre. En algunos divorcios, separaciones judiciales y reconocimientos de unión de hecho sin hijas o hijos menores de edad o con discapacidad puede dictarse sentencia sin audiencia inicial. En alimentos, si nadie se opone a tiempo a la sentencia anticipada, el artículo 272 prevé continuar con la ejecución del cobro."
+  - titulo: "Si hace falta patrocinio letrado"
+    texto: "El artículo 50 del Código Procesal de Familia exige comparecer con patrocinio letrado, salvo excepciones como los procesos de pensiones alimentarias, de petición unilateral y de protección cautelar, y los resolutivos familiares que no producen cosa juzgada material. Conviene comprobar en cuál se encuentra el asunto."
+  - titulo: "Si son medidas de protección"
+    texto: "La Ley contra la Violencia Doméstica tiene reglas propias. La persona contra quien se dictaron puede pedir una comparecencia dentro de los cinco días siguientes a la notificación del auto inicial (artículo 12). La resolución posterior puede apelarse en tres días hábiles, y la apelación no suspende la ejecución de las medidas (artículo 15). No se recomienda buscar a la otra persona para aclarar lo notificado."
+limites: "Esta ficha es orientación general y no analiza ninguna notificación concreta. Los plazos y los efectos dependen del tipo de proceso, de la resolución y de la forma en que se notificó. Enviar el formulario de consulta no detiene ningún plazo. Si hay peligro inmediato, llame al 9-1-1: este sitio no atiende emergencias."
+servicios:
+  - "divorcios"
+  - "pensiones-alimentarias"
+  - "guarda-crianza"
+  - "interrelacion-familiar"
+  - "proteccion-familiar"
+fuentes:
+  - ref: "CPF"
+    detalle: "Arts. 50, 73, 84, 87, 212, 221, 223, 224, 226, 228, 271, 272"
+  - ref: "LCVD"
+    detalle: "Arts. 12, 15"
+revisionProfesional: "pendiente"
+---

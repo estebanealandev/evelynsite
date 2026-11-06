@@ -1,0 +1,277 @@
+[
+ {
+  "id": "FAM-INS-001",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Libertad de aceptar asuntos",
+  "texto": "El artículo 37 del Código de Deberes reconoce la libertad de aceptar o rechazar asuntos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Quienes ejercen la profesión del derecho son libres de aceptar o rechazar asuntos en que se solicite su intervención"
+   }
+  ],
+  "excepciones": "En nombramiento de oficio debe justificarse la decisión.",
+  "relacionadas": [
+   "/"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-002",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Formulario y plazos",
+  "texto": "Enviarlo no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "excepciones": "Conclusión por ausencia: ninguna norma consultada da a un formulario privado efecto sobre los plazos procesales, que dependen de la notificación.",
+  "relacionadas": [
+   "/"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-003",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Deber de informar",
+  "texto": "El Código de Deberes pide informar periódicamente el estado del asunto, cuando sea necesario",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "34"
+    ],
+    "cita": "deberán informar al cliente periódicamente el estado del asunto, siempre que sea necesario"
+   }
+  ],
+  "relacionadas": [
+   "/"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-004",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Mandato para conciliar",
+  "texto": "exige mandato específico para conciliar, transigir o desistir",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "35"
+    ],
+    "cita": "no podrán en ningún modo conciliar, transigir ni desistir en los asuntos que dirijan"
+   }
+  ],
+  "relacionadas": [
+   "/"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-005",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Conocimiento previo de la causa",
+  "texto": "El artículo 32 del Código de Deberes exige obtener pleno conocimiento de la causa antes de aceptarla y emitir opinión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "32"
+    ],
+    "cita": "deberán obtener pleno conocimiento de la causa de su cliente antes de aceptarla y emitir opinión sobre ella"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-006",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Secreto profesional",
+  "texto": "El artículo 41 del Código de Deberes protege las confidencias hechas a una persona abogada con ocasión de su ejercicio, aun después de cesar la relación profesional",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Constituyen secreto profesional las confidencias que se hagan al abogado o abogada con ocasión de su ejercicio profesional"
+   },
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "41"
+    ],
+    "cita": "La obligación de guardar secreto profesional perdura aún después de cesada la relación profesional"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-007",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Excepciones al secreto",
+  "texto": "Los artículos 42 y 43 prevén excepciones, como la intención de cometer un ilícito",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "42"
+    ],
+    "cita": "La obligación del secreto profesional cede a las necesidades de la defensa del abogado y la abogada cuando es acusado"
+   },
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "43"
+    ],
+    "cita": "Si un cliente comunica a su abogado o abogada la intención de cometer un ilícito, esta confidencia no es materia de secreto profesional"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-008",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Interés superior",
+  "texto": "El artículo 5 del Código de la Niñez y la Adolescencia ordena considerarlo en toda acción pública o privada concerniente a una persona menor de dieciocho años",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Toda acción pública o privada concerniente a una persona menor de dieciocho años, deberá considerar su interés superior"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-009",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "No asegurar el éxito",
+  "texto": "El artículo 33 del Código de Deberes impide asegurar el éxito o magnificar las dificultades",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "33"
+    ],
+    "cita": "No deberán asegurar nunca el éxito ni magnificar sus dificultades, sino exclusivamente exponer el amparo legal de la causa y sus probabilidades razonables"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-010",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Conciliación",
+  "texto": "El artículo 9 del Código Procesal de Familia prevé intentar la conciliación cuando proceda y la prohíbe en situaciones en que se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "En los procesos familiares, cuando proceda, se intentará la conciliación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-011",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Secreto profesional sin cita",
+  "texto": "La información que comparte un cliente queda amparada por el secreto profesional que exige la normativa del Colegio de Abogados y Abogadas.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Afirmación absoluta sin excepciones. CDJ arts. 41 a 43 definen su alcance y sus excepciones.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-012",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Interés superior sin cita",
+  "texto": "el análisis parte de su interés superior, tal como lo ordena la legislación costarricense",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se identifica la norma: CNA art. 5.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-013",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Frases genéricas",
+  "texto": "Asesoría jurídica personalizada",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Frase genérica de autopromoción. CDJ art. 30.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INS-014",
+  "archivo": "src/lib/institucional.ts",
+  "pagina": "/sobre-evelyn",
+  "tema": "Primera persona",
+  "texto": "Le acompañamos durante el proceso",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "No consta un equipo y la frase está prohibida por la guía. Se sustituye por los deberes de CDJ arts. 34 y 35.",
+  "consultado": "2026-11-05"
+ }
+]

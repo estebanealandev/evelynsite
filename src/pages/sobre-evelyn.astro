@@ -8,29 +8,29 @@ import { principios } from '../lib/institucional';
 
 const posts = (await getCollection('articulos')).filter(a => a.data.destacado).slice(3, 6);
 const etica = [
-  { t: 'Ética profesional', d: 'El ejercicio de la profesión se rige por deberes jurídicos, morales y éticos, incluido el secreto profesional. La comunicación pública también debe ser digna, moderada y veraz.' },
-  { t: 'Atención personalizada', d: 'Ninguna familia es igual a otra. Cada consulta requiere comprender sus circunstancias antes de sugerir un camino.' },
-  { t: 'Compromiso con el derecho de familia', d: 'Las normas cambian. El Código Procesal de Familia, vigente desde octubre de 2024, es un buen ejemplo de la importancia de consultar la legislación actual.' }
+  { t: 'Deberes profesionales', d: 'El Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho regula la relación con la clientela y la publicidad. Su artículo 30 pide moderación y evitar el autoelogio o la información que induzca a error. Por eso este sitio explica normas y procedimientos, sin calificarse a sí mismo.' },
+  { t: 'Análisis de cada asunto', d: 'La misma norma puede producir efectos distintos según los hechos, la prueba y las resoluciones ya dictadas. Esos elementos se revisan antes de sugerir una vía.' },
+  { t: 'Normativa al día', d: 'El Código Procesal de Familia rige desde el 1 de octubre de 2024. La Ley N.º 10558, de octubre de 2024, lo reformó, y la Ley N.º 10650, de febrero de 2025, cambió el artículo 48 del Código de Familia. Las áreas y los artículos indican la fecha en que se consultaron las normas.' }
 ];
 const crumbs = [{ label: 'Sobre Evelyn' }];
 ---
-<Base title="Sobre Evelyn Elizondo" description="Conozca la forma de trabajar de Evelyn Elizondo en derecho de familia en Costa Rica: ética, atención personalizada, confidencialidad y comunicación clara." crumbs={crumbs}>
-  <PageHero titulo="Asesoría legal con criterio, sensibilidad y *compromiso.*" lede="Evelyn Elizondo | Derecho de Familia | Costa Rica" crumbs={crumbs} />
+<Base title="Sobre Evelyn Elizondo" description="Cómo se trabaja en derecho de familia en Costa Rica con Evelyn Elizondo: revisión de la solicitud, análisis del asunto, secreto profesional y límites de la publicidad." crumbs={crumbs}>
+  <PageHero titulo="Cómo se trabaja en derecho de *familia*" lede="Evelyn Elizondo | Derecho de Familia | Costa Rica" crumbs={crumbs} />
 
   <section class="chapter bg-ivory">
     <div class="wrap g12" style="row-gap:32px">
-      <h2 class="statement" style="grid-column:1/-1" data-partir>Los asuntos de familia exigen tanto <em>criterio</em> como sensibilidad.</h2>
+      <h2 class="statement" style="grid-column:1/-1" data-partir>Una opinión jurídica depende de los <em>hechos,</em> la prueba y la norma vigente.</h2>
       <div class="reveal" style="grid-column:7/-1" id="sobre-texto">
-        <p>Cuando está en juego lo más personal, una persona necesita una orientación que:</p>
+        <p>Una consulta de derecho de familia procura responder preguntas concretas:</p>
         <ul class="rows">
-          <li>Escuche sus objetivos y preocupaciones sin juzgar</li>
-          <li>Explique la ley con palabras comprensibles</li>
-          <li>Tome en cuenta el interés superior de las personas menores de edad</li>
-          <li>Procure reducir tensiones en lugar de aumentarlas</li>
-          <li>Plantee opciones realistas, sin promesas de resultado</li>
-          <li>Proteja la información que se le confía</li>
+          <li>Qué vías existen y qué exige cada una</li>
+          <li>Qué documentos y datos hacen falta</li>
+          <li>Qué plazos pueden estar corriendo</li>
+          <li>Qué efectos tiene un acuerdo o una resolución</li>
+          <li>Cómo incide el interés superior de las personas menores de edad</li>
+          <li>Qué aspectos son favorables y cuáles desfavorables</li>
         </ul>
-        <p>Esta marca nace para ofrecer información y orientación en derecho de familia, con un trato cercano y responsable. Antes de una consulta, puede revisar las áreas y artículos de este sitio para familiarizarse con la terminología y las opciones que existen en Costa Rica.</p>
+        <p>Antes de solicitar una consulta, puede revisar las áreas y los artículos de este sitio para conocer la terminología y las opciones que existen en Costa Rica.</p>
         <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
       </div>
     </div>
@@ -43,14 +43,14 @@ const crumbs = [{ label: 'Sobre Evelyn' }];
   <section class="chapter">
     <div class="wrap">
       <p class="eyebrow reveal">Forma de trabajar</p>
-      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Tres pilares de una atención responsable</h2>
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Tres reglas de trabajo</h2>
       <ul class="values">{etica.map((e, i) => <li class="reveal" style={`--retraso:${i * 0.1}s`}><h3>{e.t}</h3><p>{e.d}</p></li>)}</ul>
     </div>
   </section>
 
   <section class="chapter bg-ivory">
     <div class="wrap">
-      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Principios que guían la atención</h2>
+      <h2 data-partir style="margin-bottom:clamp(36px,5vw,72px)">Criterios que se aplican a cada consulta</h2>
       <ul class="values">
         {principios.map((p, i) => <li class="reveal" style={`--retraso:${(i % 3) * 0.1}s`}><h3>{p.titulo}</h3><p>{p.texto}</p><span class="values__tag">{p.etiqueta}</span></li>)}
       </ul>

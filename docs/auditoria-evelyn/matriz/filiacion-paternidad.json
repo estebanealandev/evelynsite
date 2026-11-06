@@ -1,0 +1,875 @@
+[
+ {
+  "id": "FAM-FIL-001",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Efecto",
+  "texto": "Por el reconocimiento o la declaración, el hijo o hija entra a formar parte de sus familias consanguíneas, para todo efecto",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "97"
+    ],
+    "cita": "Por el reconocimiento o declaración de paternidad o maternidad, el hijo entra jurídicamente a formar parte de las familias consanguíneas de sus progenitores, para todo efecto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-002",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Presunción en matrimonio",
+  "texto": "El artículo 69 presume habidos en el matrimonio a quienes nacen después de ciento ochenta días de su celebración y dentro de los trescientos días siguientes a su disolución o a la separación judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "69"
+    ],
+    "cita": "Se presumen habidos en el matrimonio los hijos nacidos después de ciento ochenta días contados desde su celebración"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "69"
+    ],
+    "cita": "también los nacidos dentro de los trescientos días siguientes a la disolución del matrimonio o a la separación de los cónyuges judicialmente decretada"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-003",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Presunción en unión de hecho",
+  "texto": "El artículo 92 presume la paternidad del hombre que haya convivido en unión de hecho durante el período de la concepción",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "92"
+    ],
+    "cita": "Se presume la paternidad del hombre que, durante el período de la concepción, haya convivido, en unión de hecho, de conformidad con lo indicado en el Título VII de este Código"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-004",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Reconocimiento",
+  "texto": "El artículo 84 permite reconocer a hijos habidos fuera del matrimonio cuya paternidad no conste en el Registro Civil, a hijos por nacer y a hijos muertos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "Podrán ser reconocidos por sus padres todos los hijos habidos fuera de matrimonio y cuya paternidad no conste en el Registro Civil; igualmente, los hijos por nacer y los hijos muertos",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-005",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Forma",
+  "texto": "Si no hay paternidad asignada, se hace con la comparecencia de ambos padres o el consentimiento expreso de la madre",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "el reconocimiento se hará ante el Registro Civil o notario público, siempre que ambos padres comparezcan personalmente o haya mediado consentimiento expreso de la madre",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-006",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Límites del reconocimiento",
+  "texto": "El reconocimiento es irrevocable (artículo 87), el hijo mayor de edad debe consentirlo (artículo 88) y el hecho por testamento no requiere el asentimiento de la madre (artículo 89). No se admite si ya hay una filiación establecida por posesión notoria de estado (artículo 90)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "87"
+    ],
+    "cita": "El reconocimiento es irrevocable"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "88"
+    ],
+    "cita": "El hijo mayor de edad no puede ser reconocido sin su consentimiento. Si hubiera habido falsedad o error en el mismo, podrá impugnarlo dentro de los dos años siguientes al conocimiento de esa circunstancia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "89"
+    ],
+    "cita": "El reconocimiento que resulte de testamento no requerirá el asentimiento de la madre"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "90"
+    ],
+    "cita": "No se admitirá ningún reconocimiento cuando el hijo tenga ya una filiación establecida por la posesión notoria de estado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-007",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Investigación",
+  "texto": "El artículo 91 lo permite y el artículo 94 admite la investigación de paternidad del hijo por nacer",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "91"
+    ],
+    "cita": "Es permitido al hijo y a sus descendientes investigar la paternidad y la maternidad"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "94"
+    ],
+    "cita": "Es permitida la investigación de paternidad del hijo por nacer"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-008",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Prueba de la calidad",
+  "texto": "La calidad de padre o madre puede establecerse mediante la posesión notoria de estado o cualquier otro medio de prueba (artículo 92)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "92"
+    ],
+    "cita": "La calidad de padre o madre se puede establecer mediante la posesión notoria de estado del hijo por parte del presunto padre o madre, o por cualquier otro medio de prueba"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-009",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Límite",
+  "texto": "No se admite la acción si el hijo tiene una filiación establecida por posesión notoria de estado (artículo 99)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "99"
+    ],
+    "cita": "No se admitirá la acción de investigación cuando el hijo tenga una filiación establecida por la posesión notoria de estado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-010",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Impugnación del marido",
+  "texto": "solo puede ser impugnada por el marido personalmente o por apoderado especialísimo y, en ciertos casos, por sus herederos o curador (artículo 72)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "72"
+    ],
+    "cita": "sólo puede ser impugnada por el marido personalmente o por apoderado especialísimo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "72"
+    ],
+    "cita": "El curador, en los casos de incapacidad mental prolongada o incurable del marido, podrá ejercer la acción de impugnación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-011",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Nacidos tras separación de hecho",
+  "texto": "La madre o el hijo pueden pedir que se declare habido fuera del matrimonio al nacido después de trescientos días de la separación de hecho, si no tuvo posesión notoria de estado por parte del marido (artículo 71)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "71"
+    ],
+    "cita": "Se tendrá como hijo habido fuera de matrimonio al que, nacido después de trescientos días de la separación de hecho de los cónyuges, no haya tenido posesión notoria de estado por parte del marido"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "71"
+    ],
+    "cita": "La declaración, mediante juicio, la hará el Tribunal a solicitud de la madre o del hijo, o de quien represente a éste"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-012",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Impugnación del reconocimiento",
+  "texto": "El reconocimiento puede impugnarse por falsedad o error (artículo 86)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "El reconocimiento podrá ser impugnado por el reconocido o por quien tenga interés, cuando ha sido hecho mediante falsedad o error"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-013",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Prueba científica",
+  "texto": "Puede evacuarla el Organismo de Investigación Judicial o laboratorios acreditados y reconocidos por la Corte Suprema de Justicia (artículo 98 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "98"
+    ],
+    "cita": "En todo proceso de investigación o impugnación de paternidad o maternidad, es admisible la prueba científica"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "98"
+    ],
+    "cita": "podrá ser evacuada por el Organismo de Investigación Judicial de la Corte Suprema de Justicia o por laboratorios debidamente acreditados y reconocidos por la Corte Suprema de Justicia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-014",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Prueba de oficio",
+  "texto": "La autoridad judicial puede ordenarla de oficio al inicio del proceso y, en resolución fundada, disponer que las muestras las suministren parientes de las partes (artículo 188 del Código Procesal de Familia, reformado por la Ley N.º 10558)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "188"
+    ],
+    "cita": "la autoridad judicial podrá ordenarla, incluso de oficio, al inicio del proceso. También, la persona juzgadora podrá ordenar, mediante resolución fundada, que las muestras que se requieren para realizar el examen científico sean suministradas por parientes de las partes",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-015",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Acta notarial",
+  "texto": "que envía el acta al Registro dentro de los ocho días hábiles siguientes (artículo 84 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "El notario público deberá enviar el acta respectiva al Registro Civil, dentro de los ocho días hábiles siguientes",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-016",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Paternidad asignada",
+  "texto": "el padre biológico presenta la gestión en el Registro Civil, que llama a los padres registrales. Si están conformes, el Registro autoriza el reconocimiento, salvo que considere verificar prueba testimonial o científica (artículo 63 bis de la Ley Orgánica del Tribunal Supremo de Elecciones y del Registro Civil, adicionado por la Ley N.º 9747)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "63 bis"
+    ],
+    "cita": "el padre biológico presentará la gestión ante la oficina del Registro Civil que corresponda, la cual llamará a quienes aparecen como padres registrales"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "63 bis"
+    ],
+    "cita": "Si hay conformidad de los padres registrales, el órgano encargado autorizará el reconocimiento, salvo que considere la verificación de algún tipo de prueba, sea testimonial o científica"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-017",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Oposición",
+  "texto": "Si hay oposición de los padres registrales o conflicto, el asunto se conoce en sede judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "Si sucediera una oposición fundada del padre o la madre registrales, el asunto deberá conocerse jurisdiccionalmente mediante el proceso resolutivo familiar de filiación",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "63 bis"
+    ],
+    "cita": "De existir oposición de alguno de ellos, se deberá archivar el asunto y enviar a las partes a la vía contenciosa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-018",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Proceso",
+  "texto": "La filiación está entre las pretensiones del artículo 222 del Código Procesal de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "4) La filiación y la oposición de la adopción"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-019",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Derogación",
+  "texto": "El proceso especial del antiguo artículo 98 bis del Código de Familia fue derogado por la Ley N.º 9747",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "98 bis"
+    ],
+    "cita": "Proceso especial para las acciones de filiación. (Derogado por el artículo 4° punto II) inciso a) de la ley que aprobó el Código Procesal de Familia, N° 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-020",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Inscripción",
+  "texto": "La sentencia firme que establece filiación se ejecuta de oficio ante el Registro dentro de los cinco días siguientes a su firmeza (artículo 313 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "313"
+    ],
+    "cita": "Todas las sentencias firmes que establezcan obligación de inscripción de estado civil, filiación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "313"
+    ],
+    "cita": "se deberán ejecutar de oficio dentro de los cinco días siguientes a esa firmeza"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-021",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Familias consanguíneas",
+  "texto": "El hijo o hija entra jurídicamente a formar parte de las familias consanguíneas de sus progenitores, para todo efecto (artículo 97 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "97"
+    ],
+    "cita": "Por el reconocimiento o declaración de paternidad o maternidad, el hijo entra jurídicamente a formar parte de las familias consanguíneas de sus progenitores, para todo efecto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-022",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Vindicación",
+  "texto": "El derecho de los hijos a vindicar su estado es imprescriptible y, por su muerte, pasa a los nietos (artículo 76)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "76"
+    ],
+    "cita": "El derecho de los hijos para vindicar el estado que les pertenece es imprescriptible. Por muerte de los hijos ese derecho pasa a los nietos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-023",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Plazos de investigación",
+  "texto": "La investigación tratándose de hijos mayores puede intentarse en cualquier momento. Si el padre o madre falleció durante la minoridad, la acción debe ejercerse antes de que el hijo cumpla veinticinco años, o dentro de dos años si aparece después un documento en que aquel expresó su paternidad o maternidad (artículo 95)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "La investigación de paternidad o maternidad, tratándose de hijos mayores, podrá intentarse en cualquier momento"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Si el padre o madre falleciere durante la minoridad del hijo, podrá intentarse la acción, aún después de su muerte con tal de que se ejercite antes de que el hijo haya cumplido veinticinco años"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "podrá establecer su acción dentro de los dos años siguientes a la aparición del documento, si esto ocurriere después de vencidos los términos indicados"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Así reformado este artículo de acuerdo con la anulación parcial ordenada por resolución de la Sala Constitucional Nº 1894-99 del 12 de marzo de 1999"
+   }
+  ],
+  "excepciones": "Texto con nota de anulación parcial (Sala Constitucional 1894-99). Sin perjuicio de las reglas sobre prescripción de bienes.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-024",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Plazo del marido",
+  "texto": "El marido puede impugnar en cualquier tiempo, salvo que el hijo esté en posesión notoria de estado: entonces tiene un año desde que conoció los hechos (artículo 73)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "La acción del marido para impugnar la paternidad podrá intentarse en cualquier tiempo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "en cuyo supuesto la acción deberá intentarse dentro del año siguiente a la fecha en que el marido tuvo conocimiento de los hechos que le sirven de fundamento para la impugnación. Este plazo no corre contra el marido incapaz mental que careciere de curador"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-025",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Tercero interesado",
+  "texto": "Un tercero interesado que impugne el reconocimiento de un hijo en posesión notoria de estado tiene el plazo del artículo 73, según la nota de SINALEVI bajo el artículo 86",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "el plazo de caducidad para que un tercero interesado impugne el reconocimiento de los hijos extramatrimoniales que estuvieren en posesión notoria de estado, será el establecido en el artículo 73, párrafo segundo, del Código de Familia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "en cuyo supuesto la acción deberá intentarse dentro del año siguiente a la fecha en que el marido tuvo conocimiento de los hechos que le sirven de fundamento para la impugnación. Este plazo no corre contra el marido incapaz mental que careciere de curador"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-026",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Alimentos retroactivos",
+  "texto": "Declarada la paternidad, la obligación alimentaria se retrotrae a la fecha de presentación de la demanda (artículo 96)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda y se liquidará en el proceso alimentario correspondiente, mediante el trámite de ejecución de sentencia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-027",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Gastos",
+  "texto": "El tribunal puede condenar a reembolsar a la madre los gastos de embarazo y maternidad, que prescriben en diez años (artículo 96)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "este podrá condenar en la sentencia al padre a reembolsarle a la madre, según los principios de equidad, los gastos de embarazo y maternidad de la hija o el hijo. Estos rubros tendrán un plazo de prescripción de diez años"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "aquellos gastos de maternidad del hijo o de la hija, debidamente acreditados, posteriores a los doce meses del nacimiento siempre que no estén cubiertos por la prescripción decenal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-028",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Inasistencia a la prueba",
+  "texto": "El artículo 192 del Código Procesal de Familia dispone que la inasistencia injustificada genera una presunción de veracidad en su contra sobre lo que se pretendía demostrar. Si la prueba es absolutamente indispensable, la autoridad judicial usa medios coercitivos para obtener las muestras, incluso la conducción policial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "192"
+    ],
+    "cita": "se tendrá como presunción de veracidad en su contra aquello que se pretendía demostrar con la prueba",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "192"
+    ],
+    "cita": "la autoridad judicial hará uso de los medios coercitivos necesarios para conseguir las muestras de la persona que se ha negado injustificadamente, incluyendo la posibilidad de que esta persona sea conducida por la autoridad de policía",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-029",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Negativa",
+  "texto": "El artículo 98 del Código de Familia permite además considerar maliciosa la negativa sin fundamento razonable",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "98"
+    ],
+    "cita": "Cuando sin un fundamento razonable, una parte se niegue a someterse a la práctica de la prueba dispuesta por el Tribunal, su proceder podrá ser considerado malicioso"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-030",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Persona fallecida",
+  "texto": "El artículo 188 del Código Procesal de Familia permite pedir muestras a parientes y, de ser necesario, ordenar la exhumación, con la persona juzgadora presente en la obtención de las muestras",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "188"
+    ],
+    "cita": "la autoridad judicial podrá ordenarla, incluso de oficio, al inicio del proceso. También, la persona juzgadora podrá ordenar, mediante resolución fundada, que las muestras que se requieren para realizar el examen científico sean suministradas por parientes de las partes",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "188"
+    ],
+    "cita": "se podrá ordenar la exhumación correspondiente, con la advertencia de que en este caso la persona juzgadora deberá estar presente en el acto de la obtención de las muestras",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-031",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Liquidación de alimentos",
+  "texto": "El artículo 96 del Código de Familia dispone que la obligación alimentaria se retrotrae a la fecha de presentación de la demanda y se liquida en el proceso alimentario, mediante ejecución de sentencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda y se liquidará en el proceso alimentario correspondiente, mediante el trámite de ejecución de sentencia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-032",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Reconocimiento en juicio",
+  "texto": "prevé que, en un proceso de impugnación de paternidad o de impugnación de reconocimiento, pueda reconocerse al hijo o hija cuya paternidad inscrita se pretende desplazar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "85"
+    ],
+    "cita": "En un proceso de impugnación de paternidad o de impugnación de reconocimiento de paternidad podrá reconocerse al hijo o a la hija cuya paternidad inscrita se pretenda desplazar",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-033",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Oportunidad",
+  "texto": "La pretensión puede pedirse hasta antes de terminar la recepción de prueba y surte efecto únicamente si se acoge el desplazamiento de estado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "85"
+    ],
+    "cita": "mediante pretensión que se pedirá hasta antes de terminar la recepción de prueba y surtirá efecto únicamente ante el acogimiento de la pretensión principal de desplazamiento de estado",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-034",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Acuerdo posterior",
+  "texto": "al reconocer hijas e hijos menores habidos fuera del matrimonio, el padre y la madre deben acordar los atributos de la responsabilidad parental, la guarda, la crianza, la educación y el régimen de interrelación familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "cuando se realice el reconocimiento de hijas e hijos menores habidos fuera del matrimonio, el padre y la madre deberán acordar los atributos de la responsabilidad parental, guarda, crianza, educación y régimen de interrelación familiar",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-035",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Notas",
+  "texto": "Es el caso de los artículos 86, 95 y 96",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "mediante resolución de la Sala Constitucional N° 006813 del 23 de abril de 2008, se declaró que el párrafo segundo de este numeral es inconstitucional"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Así reformado este artículo de acuerdo con la anulación parcial ordenada por resolución de la Sala Constitucional Nº 1894-99 del 12 de marzo de 1999"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "aquellos gastos de maternidad del hijo o de la hija, debidamente acreditados, posteriores a los doce meses del nacimiento siempre que no estén cubiertos por la prescripción decenal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-036",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Impugnación del marido",
+  "texto": "La acción puede intentarse en cualquier tiempo, salvo posesión notoria de estado: en ese caso, dentro del año siguiente a conocer los hechos (artículo 73).",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Correcta, pero incompleta. Se añade el supuesto del tercero bajo la nota del art. 86 y, en el artículo del blog, el del marido incapaz.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-037",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Negativa a la prueba",
+  "texto": "si se niega sin fundamento razonable a la prueba dispuesta por el tribunal, su proceder puede ser considerado malicioso y tenerse como indicio de veracidad",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Omitía CPF 192 (Ley 10558): presunción de veracidad y medios coercitivos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-038",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Plazo genérico",
+  "texto": "La lectura de estos plazos debe hacerse junto con las resoluciones constitucionales incorporadas al texto oficial.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Advertencia genérica. Se sustituye por el contenido de las notas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FIL-039",
+  "archivo": "src/content/servicios/filiacion-paternidad.md",
+  "pagina": "/servicios/filiacion-paternidad",
+  "tema": "Trámite ante presunción",
+  "texto": "puede pedirse el reconocimiento según los trámites del Registro Civil",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se precisa con el art. 63 bis de la Ley 3504, adicionado por L9747.",
+  "consultado": "2026-11-05"
+ }
+]

@@ -1,0 +1,10 @@
+[Unit]
+Description=Vigilancia normativa del sitio Evelyn Elizondo
+After=network-online.target
+
+[Service]
+Type=oneshot
+# Ajustar la ruta al repositorio. El código de salida 2 significa que hay cambios que revisar.
+WorkingDirectory=/ruta/al/repositorio
+ExecStart=/usr/bin/npm run normas:vigilar
+SuccessExitStatus=2

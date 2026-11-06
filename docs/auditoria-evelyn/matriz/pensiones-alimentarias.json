@@ -1,0 +1,1189 @@
+[
+ {
+  "id": "FAM-PEN-001",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Derogatoria de la Ley 7654",
+  "texto": "La Ley de Pensiones Alimentarias, N.º 7654, está derogada",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se deroga, en su totalidad, la Ley N.º 7654, Ley de Pensiones Alimentarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-002",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Qué incluyen los alimentos",
+  "texto": "incluye sustento, habitación, vestido, asistencia médica, diversión, transporte y otros",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "Se entienden por alimentos los que provean sustento, habitación, vestido, asistencia médica, diversión, transporte y otros"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-003",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Carácter subsidiario",
+  "texto": "Los alimentos no se deben sino en la parte que los bienes y el trabajo de quien los recibe no los satisfagan",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "166"
+    ],
+    "cita": "Los alimentos no se deben sino en la parte que los bienes y el trabajo del alimentario no los satisfagan"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-004",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Quiénes deben alimentos",
+  "texto": "inclusive los de crianza",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "169"
+    ],
+    "reforma": "Ley 10166",
+    "cita": "Los padres y madres a sus hijos e hijas menores o incapaces y los hijos y/o hijas a sus padres y madres, inclusive los y las de crianza"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-005",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cónyuges no separados",
+  "texto": "Los cónyuges pueden demandar alimentos aunque no se encuentren separados",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "170"
+    ],
+    "cita": "Los cónyuges podrán demandar alimentos para sí y sus hijos comunes, aunque no se encuentren separados"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-006",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aguinaldo",
+  "texto": "una cuota igual a la ordinaria por aguinaldo, sin necesidad de que se ordene en resolución",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "dentro de los primeros veinte días del mes de diciembre de cada año, una cuota igual a la que se paga como ordinaria, sin necesidad de que se ordene en resolución"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-007",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Inicio de lecciones",
+  "texto": "la autoridad judicial puede establecer un monto fijo anual por inicio de lecciones",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "puede establecerse un monto fijo anual por este concepto de inicio de lecciones para quienes no reciben salario escolar"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-008",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Carga de la prueba",
+  "texto": "La carga de la prueba recae en quien niegue los ingresos indicados por la parte acreedora",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "259"
+    ],
+    "cita": "La carga probatoria corresponderá a quien niegue o se oponga a los ingresos y las formas económicas indicadas por la parte acreedora, la responsabilidad en el aporte de esta corresponderá a quien tenga mejores elementos para entregarla"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-009",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Verificación de ingresos",
+  "texto": "La autoridad judicial puede consultar planillas de la Caja Costarricense de Seguro Social",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "La autoridad judicial podrá consultar, antes de esa audiencia, la información de planillas reportadas ante la Caja Costarricense de Seguro Social (CCSS)"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-010",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Deber patronal",
+  "texto": "Ningún patrono puede negar información sobre salarios",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "264"
+    ],
+    "cita": "Ningún patrono, persona física o representante legal de entidad jurídica podrá negar información acerca de los salarios y otros ingresos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-011",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ocultar bienes",
+  "texto": "Si se ocultan o distraen bienes o ingresos, se testimonian piezas ante el Ministerio Público",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "Si se ocultaran o distrajeran bienes o ingresos, se testimoniarán piezas ante el Ministerio Público"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-012",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Retención",
+  "texto": "La retención puede pedirse en cualquier momento de la ejecución, incluso desde la demanda",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "282"
+    ],
+    "cita": "En cualquier momento de su ejecución, incluso desde la propia demanda de alimentos, la parte actora o la demandada podrán solicitar al despacho judicial que se ordene la retención"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-013",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apremio corporal",
+  "texto": "hasta para el cobro de seis mensualidades incluyendo la presente",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "contra la persona deudora mayor de edad y menor de sesenta y cinco años orden de apremio corporal, la cual procederá hasta para el cobro de seis mensualidades incluyendo la presente"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "La segunda orden de apremio será girada hasta por cuatro meses"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-014",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Máximo de apremio",
+  "texto": "Nadie puede estar en apremio corporal por más de seis meses",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "Ninguna persona deudora alimentaria podrá estar en apremio corporal por más de seis meses"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-015",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apremio con retención",
+  "texto": "No procede contra quien tiene retención verificada de forma periódica",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "No procede el apremio corporal contra la persona deudora, a quien se le retiene la cuota alimentaria de su fuente de ingreso"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-016",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Exclusiones",
+  "texto": "El tribunal puede excluir a personas en estado avanzado de embarazo",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "283"
+    ],
+    "cita": "Se podrá excluir del cumplimiento de la orden de apremio corporal a aquellas personas que se encuentren en estado avanzado de embarazo"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-017",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apremio nocturno",
+  "texto": "puede imponerse un apremio nocturno, de las veinte horas a las cinco horas del día siguiente",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "284"
+    ],
+    "cita": "medida especial de apremio corporal nocturno que correrá a partir de las veinte horas hasta las cinco horas del día siguiente, hasta por un plazo máximo de seis meses"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "284"
+    ],
+    "cita": "la autoridad judicial procederá a cesar el beneficio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-018",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ejecución directa",
+  "texto": "permite cobrar en el mismo despacho mediante ejecución directa, con embargo de bienes",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "solicitando se ordene el embargo de bienes en cantidad suficiente"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "285"
+    ],
+    "cita": "hacer anotación en su historial crediticio como deudor alimentario"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-019",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Restricción migratoria",
+  "texto": "Para salir del país, la persona deudora necesita autorización de la parte acreedora",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "261"
+    ],
+    "cita": "deberá contar con la respectiva autorización de la parte acreedora de la obligación, salvo que garantice el cumplimiento de todos los pagos correspondientes a un año"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-020",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Forma de gestiones",
+  "texto": "Las gestiones pueden ser verbales o escritas",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "las gestiones de las partes e intervinientes podrán ser verbales o escritas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-021",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Contenido de la demanda",
+  "texto": "debe indicarse el monto pretendido para cada una, y puede solicitarse la retención salarial",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "267"
+    ],
+    "cita": "Cuando se pretenda alimentos para dos o más personas, deberá expresarse la pretensión del monto a imponer para cada una"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "267"
+    ],
+    "cita": "En la demanda se podrá solicitar la orden de retención salarial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-022",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Representación",
+  "texto": "sus representantes legales cuando las tienen a su cargo y, en su defecto, sus simples guardadores",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "263"
+    ],
+    "cita": "sus representantes legales cuando tengan a su cargo a esas personas y, en su defecto, sus simples guardadores, quienes podrán probar tal circunstancia por los medios a su alcance"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-023",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencia previa",
+  "texto": "el tribunal convoca a las partes dentro de los diez días hábiles a su presentación o corrección",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "dentro de los diez días hábiles a la presentación de la demanda o de su corrección, el tribunal convocará a las partes a una audiencia previa de conciliación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-024",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Límite a la conciliación",
+  "texto": "La conciliación se prohíbe cuando se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-025",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sentencia anticipada",
+  "texto": "se dicta dentro de las veinticuatro horas siguientes una resolución con el monto razonado de la cuota mensual",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "se procederá al dictado de una resolución con carácter de sentencia anticipada, dentro de las veinticuatro horas siguientes al vencimiento de dicho plazo"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "El monto razonado de la cuota alimentaria mensual para cada una de las personas beneficiarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-026",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Oposición",
+  "texto": "Las partes pueden oponerse en cinco días y la oposición no suspende los efectos de la sentencia anticipada",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "Las partes podrán oponerse a la sentencia anticipada en el plazo de cinco días. La oposición no suspenderá sus efectos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-027",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencia tras oposición",
+  "texto": "se convoca una audiencia dentro de los quince días siguientes",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "273"
+    ],
+    "cita": "se convocará a una audiencia a realizarse dentro de los quince días siguientes a la presentación de la oposición"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-028",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin oposición",
+  "texto": "Sin oposición, continúa la ejecución de cobro",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "272"
+    ],
+    "cita": "se continuarán los procedimientos de ejecución de cobro de los montos allí establecidos sin necesidad de ulterior trámite"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-029",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Exigibilidad",
+  "texto": "es ejecutable por los medios coercitivos después del tercer día de la notificación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "280"
+    ],
+    "cita": "será ejecutable por los medios coercitivos establecidos, después del tercer día de la notificación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-030",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Irrenunciabilidad",
+  "texto": "El derecho a los alimentos no puede renunciarse ni transmitirse",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "167"
+    ],
+    "cita": "El derecho a los alimentos no podrá renunciarse ni transmitirse de modo alguno. La obligación alimentaria es imprescriptible, personalísima e incompensable"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-031",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prioridad",
+  "texto": "La deuda alimentaria tiene prioridad sobre cualquier otra, sin excepción",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "171"
+    ],
+    "cita": "La deuda alimentaria tendrá prioridad sobre cualquier otra, sin excepción"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-032",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Falta de ingresos",
+  "texto": "No tener trabajo, salario o ingresos no es excusa atendible para oponerse a la fijación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "No será excusa atendible para oponerse a la fijación de la cuota de pensión alimentaria el no tener trabajo, salario o ingresos, tampoco que los negocios no produzcan utilidades; todo sin perjuicio del análisis de la prueba"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-033",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Alimentos pasados",
+  "texto": "Los alimentos pasados solo pueden cobrarse por los doce meses anteriores a la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "172"
+    ],
+    "cita": "No pueden cobrarse alimentos pasados, más que por los doce meses anteriores a la demanda, y eso en caso de que el alimentario haya tenido que contraer deudas para vivir"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-034",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Mayoría de edad",
+  "texto": "La mayoría de edad hace cesar la obligación, salvo que no se hayan terminado los estudios",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando los alimentarios hayan alcanzado su mayoridad, salvo que no hayan terminado los estudios para adquirir una profesión u oficio, mientras no sobrepasen los veinticinco años de edad y obtengan buenos rendimientos con una carga académica razonable"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-035",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Retroactividad por paternidad",
+  "texto": "la obligación alimentaria se retrotrae a la fecha de presentación de la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/filiacion-paternidad"
+  ]
+ },
+ {
+  "id": "FAM-PEN-036",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prohibición de despido",
+  "texto": "No puede despedirse a una persona trabajadora por la retención del salario",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "282"
+    ],
+    "cita": "No podrá despedirse a una persona trabajadora por la retención del salario ordenada en virtud de una deuda alimentaria"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-037",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Defensa Pública",
+  "texto": "puede solicitar asistencia a la Defensa Pública del Poder Judicial",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "56"
+    ],
+    "cita": "la parte beneficiaria que no cuente con los recursos económicos para contratar patrocinio letrado podrá solicitar asistencia letrada a la Defensa Pública del Poder Judicial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-038",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vigencia y procesos pendientes",
+  "texto": "el Código Procesal de Familia rige en su integridad desde el 1 de octubre de 2024",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Los procesos que estuvieran pendientes a la entrada en vigor de este Código se tramitarán, en cuanto sea posible, ajustándolos a la nueva legislación"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se deroga, en su totalidad, la Ley N.º 7654, Ley de Pensiones Alimentarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-039",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Patrocinio letrado",
+  "texto": "exceptúa del patrocinio letrado obligatorio los procesos relativos a la materia de pensiones alimentarias",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Relativos a la materia de pensiones alimentarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-040",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin porcentaje fijo",
+  "texto": "Ordena atender las posibilidades económicas y el capital de quien debe dar alimentos",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "164"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "todo conforme a las posibilidades económicas y el capital que le pertenezca o posea quien ha de darlos. Se tomarán en cuenta las necesidades y el nivel de vida acostumbrado por el beneficiario"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-041",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Monto pedido",
+  "texto": "El monto pedido en la demanda no limita la fijación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "273"
+    ],
+    "cita": "La indicación del monto pedido en la demanda no implicará limitación alguna para la fijación de la cuota alimentaria"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-042",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aumento automático",
+  "texto": "cada seis meses para personas asalariadas y anual, en enero, para las no asalariadas",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada asalariada, cada seis meses en los meses de enero y julio, de forma porcentual, de acuerdo con el aumento de ley decretado por el Estado para el sector público o privado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada no asalariada, de forma anual en el mes de enero"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-043",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación y beneficios",
+  "texto": "permite conceder un plazo de hasta un mes, prorrogable por otro",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "174"
+    ],
+    "cita": "La prestación alimentaria podrá modificarse por el cambio de circunstancias de quien la da o de quien la recibe"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "El trámite de modificación o exoneración de la cuota de pensión alimentaria y el cobro de gastos extraordinarios se hará en legajo separado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "278"
+    ],
+    "cita": "la autoridad judicial convocará a una audiencia a las partes, con notificación personal a la persona accionada"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "se podrá conceder un plazo prudencial que no exceda de un mes, prorrogable por otro"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "el pago en tractos de una deuda morosa total o parcial de alimentos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-044",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Alimentos en unión de hecho",
+  "texto": "Después de reconocida la unión, los convivientes pueden solicitarse pensión",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Después de reconocida la unión, los convivientes podrán solicitarse pensión alimenticia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Cuando la convivencia termine por un acto unilateral injustificado de uno de los convivientes, el otro podrá pedir para sí, una pensión alimenticia a cargo del primero, siempre que carezca de medios propios para subsistir"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/union-de-hecho"
+  ]
+ },
+ {
+  "id": "FAM-PEN-045",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Constatación en juzgado de pensiones",
+  "texto": "interpretó que la unión se constata directamente en el juzgado de pensiones alimentarias",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "reforma": "Ley 10228",
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso"
+   }
+  ],
+  "excepciones": "Se apoya en la nota de SINALEVI sobre la interpretación auténtica de la Ley 10228; no es jurisprudencia."
+ },
+ {
+  "id": "FAM-PEN-046",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Forma de pago",
+  "texto": "Las cuotas se fijan en una suma pagadera quincenal o mensualmente de forma anticipada",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "165"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "se fijarán en una suma pagadera en cuotas quincenales o mensuales anticipadas"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "165"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "La cuota alimentaria se cancelará en moneda nacional, salvo pacto en contrario"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-047",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Lugar de pago",
+  "texto": "por depósito bancario a una cuenta de la parte gestionante y, en su defecto, a una cuenta del Poder Judicial",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "281"
+    ],
+    "cita": "de forma directa o por depósito bancario a una cuenta de la parte gestionante y, en su defecto, a una cuenta del Poder Judicial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-048",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Acuerdos extrajudiciales",
+  "texto": "el apremio corporal solo puede pedirse a partir de la homologación judicial y respecto de las cuotas futuras",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "197"
+    ],
+    "cita": "el cual solo se podrá solicitar a partir de la homologación judicial y en relación con las cuotas futuras. Los montos adeudados antes de la homologación se cobrarán por la vía de apremio patrimonial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-049",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Acuerdos ejecutables sin homologar",
+  "texto": "pueden ejecutarse en esta vía sin homologación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "260"
+    ],
+    "cita": "podrán ejecutarse en esta vía los montos pactados o establecidos mediante los mecanismos previstos en la Ley N. º 7727"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-050",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Gastos extraordinarios",
+  "texto": "gastos médicos de necesidad notoria y urgente",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Extraordinariamente, la prestación alimentaria comprenderá, además, el pago de lo siguiente"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Gastos médicos extraordinarios, de necesidad notoria y urgente"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-051",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Trámite de extraordinarios",
+  "texto": "Si no están pactados, su cobro se tramita en legajo separado",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "El trámite de modificación o exoneración de la cuota de pensión alimentaria y el cobro de gastos extraordinarios se hará en legajo separado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "288"
+    ],
+    "cita": "se solicitará al despacho su cuantificación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-052",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_historico",
+  "estado": "HISTORICA",
+  "consultado": "2026-11-05",
+  "tema": "Derogación del art. 286",
+  "texto": "el artículo 286 que lo preveía fue derogado por la Ley N.º 10558 del 23 de octubre de 2024",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "286"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Derogado por el artículo 5° inciso 1) de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-053",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Subsidio supletorio",
+  "texto": "la autoridad judicial gestiona el subsidio ante el Instituto Mixto de Ayuda Social",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "38"
+    ],
+    "cita": "el juez gestionará el subsidio ante el Instituto Mixto de Ayuda Social"
+   },
+   {
+    "norma": "CNA",
+    "articulos": [
+     "38"
+    ],
+    "cita": "Si el obligado preferente se ausentare, presentare incapacidad temporal o imposibilidad de hecho para cumplir"
+   }
+  ]
+ },
+ {
+  "id": "FAM-PEN-054",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Representación del guardador",
+  "texto": "Quien cuide a una persona menor de edad puede actuar aun como simple guardador, según el artículo 263.",
+  "motivo": "El art. 263 CPF lo prevé en defecto de representantes legales que tengan a su cargo a la persona.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-PEN-055",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Apremio",
+  "texto": "La ley prevé retención salarial, apremio corporal y otros mecanismos.",
+  "motivo": "Resumen incompleto: faltaban exclusiones, límite de seis meses, embargo y anotación crediticia (arts. 283 a 285 CPF).",
+  "retirada": true
+ },
+ {
+  "id": "FAM-PEN-056",
+  "archivo": "src/content/servicios/pensiones-alimentarias.md",
+  "pagina": "/servicios/pensiones-alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Oposición sin audiencia",
+  "texto": "Si no se realiza la audiencia o no hay conciliación, se dicta una sentencia anticipada con el monto razonado de la cuota. Las partes pueden oponerse en cinco días, pero la oposición no suspende sus efectos.",
+  "motivo": "Se completa con la audiencia del art. 273 y la consecuencia de no oponerse (art. 272 CPF).",
+  "retirada": true
+ }
+]

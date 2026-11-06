@@ -7,8 +7,9 @@ const env = (k: string, d = '') => process.env[k] ?? d;
 
 export function ipCliente(request: Request, clientAddress: string | undefined) {
   if (env('TRUST_PROXY') === 'true') {
-    const f = request.headers.get('x-forwarded-for');
-    if (f) return f.split(',')[0].trim();
+    // El último valor lo añade el proxy de confianza; los anteriores los puede inventar quien envía la petición.
+    const ultimo = request.headers.get('x-forwarded-for')?.split(',').pop()?.trim();
+    if (ultimo) return ultimo;
   }
   return clientAddress ?? 'desconocida';
 }
@@ -19,16 +20,39 @@ export function limiteExcedido(ip: string, ambito: string) {
   return !permitido(`${ambito}:${ip}`, max, min * 60_000);
 }
 
+const LIMITE_CUERPO = 20_000;
+
+// Lee el cuerpo con un límite real: la cabecera content-length puede faltar o ser falsa.
+async function cuerpoLimitado(request: Request) {
+  if (!request.body) return null;
+  const lector = request.body.getReader();
+  const partes: Uint8Array[] = [];
+  let total = 0;
+  for (;;) {
+    const { done, value } = await lector.read();
+    if (done) break;
+    total += value.byteLength;
+    if (total > LIMITE_CUERPO) {
+      await lector.cancel();
+      return null;
+    }
+    partes.push(value);
+  }
+  return new Blob(partes as BlobPart[]);
+}
+
 export async function leerCampos(request: Request) {
   const tipo = request.headers.get('content-type') ?? '';
   const quiereJson = (request.headers.get('accept') ?? '').includes('application/json');
-  if (Number(request.headers.get('content-length') ?? 0) > 20_000) return { campos: null, quiereJson };
-  if (tipo.includes('application/json')) {
-    const campos = await request.json().catch(() => null);
-    return { campos, quiereJson };
-  }
-  const form = await request.formData().catch(() => null);
-  return { campos: form ? Object.fromEntries(form.entries()) : null, quiereJson };
+  if (!/^(application\/x-www-form-urlencoded|multipart\/form-data)/i.test(tipo)) return { campos: null, quiereJson };
+  const cuerpo = await cuerpoLimitado(request).catch(() => null);
+  if (!cuerpo) return { campos: null, quiereJson };
+  const form = await new Response(cuerpo, { headers: { 'content-type': tipo } }).formData().catch(() => null);
+  if (!form) return { campos: null, quiereJson };
+  // El formulario no admite archivos: si llega uno, la petición se rechaza completa.
+  const entradas = [...form.entries()];
+  if (entradas.some(([, v]) => typeof v !== 'string')) return { campos: null, quiereJson };
+  return { campos: Object.fromEntries(entradas), quiereJson };
 }
 
 const json = (cuerpo: unknown, status: number) =>
@@ -51,7 +75,7 @@ export const respuestas = {
     // Solo se registra el tipo de fallo: nunca datos de la persona.
     console.error('[formulario]', e instanceof CorreoNoDisponible ? 'envio_no_disponible' : 'error_envio');
     const mensaje =
-      'En este momento no fue posible procesar su solicitud y no se ha enviado. Por favor, intente de nuevo más tarde.';
+      'No fue posible procesar su solicitud y no se ha enviado. Intente de nuevo más tarde.';
     return quiereJson ? json({ ok: false, mensaje }, 503) : ir(d.error);
   }
 };

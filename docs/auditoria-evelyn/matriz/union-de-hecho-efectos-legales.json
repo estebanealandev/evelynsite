@@ -1,0 +1,561 @@
+[
+ {
+  "id": "FAM-UHE-001",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Dos plazos",
+  "texto": "la convivencia debe haber durado más de dos años para que la unión produzca efectos, y la acción para pedir su reconocimiento caduca dos años después de la ruptura o de la muerte del conviviente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "La unión de hecho pública. notoria, única y estable, por más de dos años",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-002",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Renumeración",
+  "texto": "la Ley N.º 10192 trasladó los antiguos artículos 242 a 245 del Código de Familia a los actuales",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "242",
+     "243",
+     "244",
+     "245",
+     "246",
+     "247",
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 242 al artículo 245",
+    "reforma": "Ley 10192"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 245 al artículo 248",
+    "reforma": "Ley 10192"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-003",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Requisitos",
+  "texto": "reformado por la Ley N.º 10223 de 2022, reconoce efectos a la unión pública, notoria, única y estable, por más de dos años, entre dos personas que posean aptitud legal para contraer matrimonio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "La unión de hecho pública. notoria, única y estable, por más de dos años",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Así reformado por el artículo único de la ley N° 10223 del 5 de mayo de 2022",
+    "reforma": "Ley 10223"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-004",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Aptitud legal",
+  "texto": "La aptitud legal se revisa con los impedimentos del artículo 14, como estar ligado por un matrimonio anterior o ser menor de dieciocho años",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Es legalmente imposible el matrimonio: 1) De la persona que esté ligada por un matrimonio anterior"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "7) De la persona menor de dieciocho años",
+    "reforma": "Ley 9406"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-005",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Conviviente casado",
+  "texto": "si durante parte de la convivencia uno de los dos seguía casado, debe analizarse desde cuándo se cumple el requisito",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Es legalmente imposible el matrimonio: 1) De la persona que esté ligada por un matrimonio anterior"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   }
+  ],
+  "excepciones": "Formulado como análisis. Jurisprudencia no revisada.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-006",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Legitimación",
+  "texto": "Cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-007",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Caducidad",
+  "texto": "La acción caduca en dos años",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-008",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Inicio del plazo",
+  "texto": "Desde la ruptura de la convivencia o la muerte del causante conviviente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-009",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Mutuo consentimiento",
+  "texto": "Los convivientes pueden solicitarlo por mutuo consentimiento una vez finalizada la unión, con el mismo plazo de caducidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "los convivientes, por mutuo consentimiento, podrán solicitar el reconocimiento de la unión una vez finalizada y con el mismo plazo de caducidad",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-010",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Alegato",
+  "texto": "la caducidad se alega como excepción al contestar la demanda (artículo 224 del Código Procesal de Familia) y se resuelve de forma oral en la audiencia inicial, salvo que deba diferirse para practicar prueba. Si se declara con lugar, termina el proceso (artículo 229)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "224"
+    ],
+    "cita": "Las excepciones procesales y materiales deberán oponerse con la contestación",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "229"
+    ],
+    "cita": "si se han planteado las excepciones procesales de litispendencia, cosa juzgada, caducidad, prescripción y transacción, estas deberán ser resueltas de forma oral en la audiencia inicial. Si son declaradas con lugar se pondrá fin al proceso",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-011",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Escritura",
+  "texto": "El artículo 246 remite a los requisitos y la forma de trámite del artículo 48, y añade un requisito: la escritura pública debe incluir las declaraciones de al menos dos personas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "se deberán seguir los requisitos y la forma de trámite establecidos en el artículo 48 de este Código, pero en la escritura pública que se otorga deberán plasmarse las declaraciones de al menos dos personas",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "deben otorgar un convenio de divorcio en escritura pública",
+    "reforma": "Ley 10650"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-012",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Petición",
+  "texto": "la petición se presenta con el testimonio de la escritura y las certificaciones (artículo 289)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "289"
+    ],
+    "cita": "presentará la petición por escrito ante la autoridad judicial competente, adjuntando el testimonio de escritura y las certificaciones correspondientes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-013",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Notificación",
+  "texto": "A quien no firmó el escrito ni autorizó presentarlo de esa forma se le notifica y se le dan cinco días (artículo 291)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "291"
+    ],
+    "cita": "se le deberá notificar la presentación de la solicitud y se concederá un plazo de cinco días"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-014",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Variación",
+  "texto": "La autoridad judicial puede variar lo acordado sobre cuidado personal y visitas de las personas menores de edad (artículo 292)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "La autoridad judicial podrá variar lo acordado en lo que respecta a los derechos de las personas menores de edad referentes a cuidado personal y visitas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-015",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Oposición",
+  "texto": "Solo se admite oposición por vicios en el consentimiento o falsedad, alegada antes de la aprobación (artículo 293)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-016",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Efectos",
+  "texto": "surte todos los efectos patrimoniales propios del matrimonio formalizado legalmente (artículo 245). El reconocimiento judicial retrotrae esos efectos a la fecha en que se inició la unión (artículo 247)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-017",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Pretensión",
+  "texto": "la pretensión del artículo 222, inciso 3, del Código Procesal de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "3) La aplicación del régimen patrimonial del matrimonio y de la unión de hecho"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-018",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Alimentos",
+  "texto": "después de reconocida la unión, los convivientes pueden solicitarse pensión. Si la convivencia termina por un acto unilateral injustificado de uno de ellos, el otro puede pedirla a cargo del primero, siempre que carezca de medios propios para subsistir",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Después de reconocida la unión, los convivientes podrán solicitarse pensión alimenticia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Cuando la convivencia termine por un acto unilateral injustificado de uno de los convivientes, el otro podrá pedir para sí, una pensión alimenticia a cargo del primero, siempre que carezca de medios propios para subsistir"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-019",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Ley 10228",
+  "texto": "indica que la Ley N.º 10228 de 2022 interpretó auténticamente ese artículo",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-020",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Constatación",
+  "texto": "la existencia de la unión debe constatarse directamente en el juzgado de pensiones alimentarias, sin tramitar antes otro proceso ante un juzgado de familia",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-021",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Alcance",
+  "texto": "La nota se refiere solo a procesos alimentarios. Los efectos patrimoniales siguen ligados al reconocimiento de los artículos 246 y 247",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   }
+  ],
+  "excepciones": "Lectura de la nota. Conviene confirmarla.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-022",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Capitulaciones",
+  "texto": "Una nota de SINALEVI bajo los artículos 37, 41 y 245 indica que la Sala Constitucional, en la resolución N.º 13920 del 9 de junio de 2023, reconoció el derecho a suscribir y registrar capitulaciones para las uniones de hecho",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   }
+  ],
+  "excepciones": "Se cita la nota. No se leyó la sentencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UHE-023",
+  "archivo": "src/content/articulos/union-de-hecho-efectos-legales.md",
+  "pagina": "/blog/union-de-hecho-efectos-legales",
+  "tema": "Capitulaciones",
+  "texto": "según la nota oficial del texto vigente",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se precisa como nota de SINALEVI y se aclara que no detalla requisitos.",
+  "consultado": "2026-11-05"
+ }
+]

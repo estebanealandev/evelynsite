@@ -1,0 +1,955 @@
+[
+ {
+  "id": "FAM-DIV-001",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vía del convenio y su contenido",
+  "texto": "exige que el convenio indique a quién corresponde la custodia personal de los hijos comunes menores de edad",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "A quien corresponde la custodia personal de los hijos comunes menores de edad"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "El establecimiento del derecho o no de obligación alimentaria entre los cónyuges y el monto en que se obligan"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-002",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Otorgamiento personal o por apoderado",
+  "texto": "Lo otorgan personalmente o uno solo de ellos por medio de apoderado especialísimo dado en escritura pública",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "podrá decretarse el divorcio por el mutuo consentimiento de los cónyuges, para lo cual estos, personalmente, o uno solo de ellos por medio de un apoderado especialísimo dado en escritura pública, deben otorgar un convenio de divorcio en escritura pública"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-003",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cláusulas del poder",
+  "texto": "El poder debe contener las cláusulas exactas del acuerdo, bajo pena de nulidad del convenio",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "55"
+    ],
+    "cita": "el mandato deberá contener las cláusulas exactas del eventual acuerdo, bajo pena de nulidad del convenio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-004",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vía del Registro Civil",
+  "texto": "Si no los hay, la escritura se presenta directamente al Registro Civil para su aprobación e inscripción",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "no existen hijos menores de edad comunes ni bienes a los cuales se hace referencia en el convenio, la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/bienes-gananciales"
+  ]
+ },
+ {
+  "id": "FAM-DIV-005",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vía judicial",
+  "texto": "Si los hay, el trámite se verifica judicialmente conforme al Código Procesal de Familia",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Si existieran hijos menores de edad o bienes de referencia en el convenio, el trámite se verificará judicialmente conforme al Código Procesal de Familia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-006",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Efectos desde la aprobación",
+  "texto": "el convenio tiene efectos una vez aprobado en la vía que corresponda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "tendrá efectos una vez aprobado en la vía judicial o administrativa correspondiente"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-007",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Causales",
+  "texto": "la separación de hecho por un plazo no menor de tres años; y la incompatibilidad de caracteres",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La separación de hecho por un plazo no menor de tres años"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La incompatibilidad de caracteres de los cónyuges"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-008",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Decisión sobre hijos",
+  "texto": "tomando en cuenta el acuerdo, las aptitudes físicas y morales y las capacidades de los progenitores",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "tomando en cuenta el acuerdo, las aptitudes físicas y morales y las capacidades del padre y la madre, de conformidad con el interés superior de la persona menor de edad"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/guarda-crianza"
+  ]
+ },
+ {
+  "id": "FAM-DIV-009",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Alimentos e interrelación deben definirse",
+  "texto": "También deben definirse los alimentos y el régimen de interrelación familiar",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "de forma proporcional a las capacidades y los ingresos económicos del padre y la madre"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "El régimen de interrelación familiar, incluyendo el derecho de las personas menores de edad a mantener contacto, visitas y comunicación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-010",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Pensión entre cónyuges",
+  "texto": "permite conceder una pensión al cónyuge declarado inocente, a cargo del culpable",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "57"
+    ],
+    "cita": "el tribunal podrá conceder al cónyuge declarado inocente una pensión alimentaria a cargo del culpable"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "57"
+    ],
+    "cita": "Si no existe cónyuge culpable, el tribunal podrá conceder una pensión alimentaria a uno de los cónyuges y a cargo del otro, según las circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-011",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Revocación de la pensión",
+  "texto": "La pensión del inocente se revoca cuando contrae nuevas nupcias o establece unión de hecho",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "57"
+    ],
+    "cita": "se revocará cuando el inocente contraiga nuevas nupcias o establezca unión de hecho"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-012",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Gananciales",
+  "texto": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "Los adquiridos durante la separación de hecho de los cónyuges"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/bienes-gananciales"
+  ]
+ },
+ {
+  "id": "FAM-DIV-013",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Preferencia sobre habitación familiar",
+  "texto": "tiene preferencia para el pago de lo que corresponda como ganancial",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "se trata de un bien inmueble que se utiliza como habitación familiar, tendrá preferencia para el pago del monto que corresponde como ganancial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-014",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Requisitos administrativos ante el Registro Civil",
+  "texto": "La ficha del trámite publicada por el Tribunal Supremo de Elecciones pide indicar en el testimonio que no hay hijos menores de edad dentro del matrimonio ni bienes gananciales",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://www.tse.go.cr/pdf/requisitosytramites/Homologacion-de-acuerdos-de-divorcio-y-separacion.pdf",
+   "titulo": "Tribunal Supremo de Elecciones, Dirección General del Registro Civil. Ficha del trámite: Homologación de acuerdos de divorcio y separación de los cónyuges por mutuo consentimiento",
+   "cita": "En el testimonio se debe indicar que no tienen hijos menores de edad dentro del matrimonio, ni bienes gananciales y aportar las certificaciones de Bienes Muebles e Inmuebles emitidas por el Registro Nacional. Plazo de Resolución: 30 días hábiles."
+  }
+ },
+ {
+  "id": "FAM-DIV-015",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Presentación judicial",
+  "texto": "la petición se presenta por escrito, conjunta o separadamente, con el testimonio de la escritura y las certificaciones",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "289"
+    ],
+    "cita": "Los cónyuges o convivientes, conjunta o separadamente, o la persona autorizada, presentará la petición por escrito ante la autoridad judicial competente, adjuntando el testimonio de escritura y las certificaciones correspondientes"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-016",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Opinión y aprobación",
+  "texto": "La persona menor de edad tiene oportunidad de expresar su opinión y la autoridad judicial aprueba o no el acuerdo",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se le concederá la oportunidad de ser escuchada para que exprese su opinión respecto a lo relativo a su cuidado personal o su interrelación con sus progenitores"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "se dictará la resolución que apruebe o no el acuerdo. La autoridad judicial podrá variar lo acordado en lo que respecta a los derechos de las personas menores de edad referentes a cuidado personal y visitas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-017",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Proceso resolutivo y contestación",
+  "texto": "La parte demandada tiene ocho días hábiles para contestar",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "223"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "concediendo un traslado por un plazo de ocho días hábiles a fin de que proceda a dar contestación de forma escrita"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "En el proceso resolutivo familiar se conocerán las pretensiones contenciosas relacionadas con"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-018",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencias",
+  "texto": "se señala una audiencia inicial que debe realizarse dentro del mes siguiente",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "230"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se señalará hora y fecha para la audiencia inicial, la cual deberá realizarse dentro del mes siguiente"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la sentencia integral debe ser dictada y notificada en los medios señalados, dentro del quinto día posterior a la celebración de la audiencia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-019",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Disolución del vínculo",
+  "texto": "La sentencia firme de divorcio disuelve el vínculo matrimonial",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "55"
+    ],
+    "cita": "La sentencia firme de divorcio disuelve el vínculo matrimonial"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-020",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Legitimación",
+  "texto": "La acción por causal solo puede establecerla el cónyuge inocente, salvo en la separación de hecho y la incompatibilidad de caracteres",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "La acción de divorcio solo puede establecerse por el cónyuge inocente, salvo en los casos de las causales de separación de hecho y del inciso 8) del artículo 48, en los que podrá ser presentada por cualquiera de los cónyuges"
+   }
+  ],
+  "excepciones": "En ausencia judicialmente declarada actúa el cónyuge presente."
+ },
+ {
+  "id": "FAM-DIV-021",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo de un año",
+  "texto": "La demanda debe entablarse dentro de un año desde que la parte actora conoció los hechos que la motivan",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "La demanda deberá entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "En los casos de ausencia judicialmente declarada podrá plantear la acción el cónyuge presente en cualquier momento"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-022",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Reconciliación",
+  "texto": "No procede el divorcio si hubo reconciliación o vida marital después de conocer los hechos o después de la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "52"
+    ],
+    "cita": "No procede el divorcio si ha habido reconciliación o vida marital entre los cónyuges después del conocimiento de los hechos que habrían podido autorizarlo, o después de la demanda"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "52"
+    ],
+    "cita": "si se intenta una nueva acción de divorcio por causa sobrevenida a la reconciliación, el Tribunal podrá tomar en cuenta las causas anteriores"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-023",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo de tres meses",
+  "texto": "El convenio que va a la vía judicial debe presentarse dentro de los tres meses siguientes a su celebración notarial",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "deberá ser presentado ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que la presentación la hagan de forma conjunta los cónyuges"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-024",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Muerte de un cónyuge",
+  "texto": "La muerte de cualquiera de los cónyuges pone término al juicio de divorcio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "La muerte de cualquiera de los cónyuges pone término al juicio de divorcio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-025",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prohibición de conciliar",
+  "texto": "Se prohíbe la conciliación cuando se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/proteccion-familiar"
+  ]
+ },
+ {
+  "id": "FAM-DIV-026",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Oposición limitada",
+  "texto": "la oposición al convenio solo se admite por vicios en el consentimiento o falsedad",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-027",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo del tribunal",
+  "texto": "da quince días hábiles al tribunal para pronunciarse sobre el convenio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "el pacto no valdrá mientras el Tribunal no se pronuncie sobre la aprobación de la separación en resolución fundamentada en un plazo de quince días hábiles"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-028",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Falta de contestación",
+  "texto": "Si la otra persona no contesta la demanda, el proceso continúa",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se tendrá por no contestada y se continuará con los procedimientos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-029",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin tiempo mínimo de matrimonio",
+  "texto": "no lo establece para el divorcio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "Así reformado por el artículo único de la ley N° 10650 del 26 de febrero de 2025"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La separación de hecho por un plazo no menor de tres años"
+   }
+  ],
+  "excepciones": "Se comprueba por la lectura completa del artículo 48: no contiene un tiempo mínimo. Algunas causales exigen plazos propios."
+ },
+ {
+  "id": "FAM-DIV-030",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Medidas cautelares",
+  "texto": "Las medidas cautelares pueden solicitarse en cualquier estado del proceso o antes de su interposición",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "127"
+    ],
+    "cita": "Las medidas cautelares se podrán solicitar en cualquier estado del proceso o antes de su interposición"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "130"
+    ],
+    "cita": "la parte tendrá que presentar su demanda dentro del mes siguiente a su dictado o ejecución según corresponda; de lo contrario, esta caduca"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-031",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Separación judicial",
+  "texto": "La separación judicial produce los mismos efectos que el divorcio, con la diferencia de que no disuelve el vínculo",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "62"
+    ],
+    "cita": "aquélla no disuelve el vínculo, subsiste el deber de fidelidad y de mutuo auxilio"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "58"
+    ],
+    "cita": "La separación de hecho de los cónyuges durante un año consecutivo, ocurrida después de dos años de verificado el matrimonio"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "60"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "se seguirán las mismas normas establecidas en el artículo 48 de este Código para el divorcio por mutuo consentimiento"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-032",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Reforma del artículo 48",
+  "texto": "fue reformado por la Ley N.º 10650 del 26 de febrero de 2025",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "Así reformado por el artículo único de la ley N° 10650 del 26 de febrero de 2025"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-033",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vigencia y transitorio del CPF",
+  "texto": "rige en su integridad desde el 1 de octubre de 2024",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Los procesos que estuvieran pendientes a la entrada en vigor de este Código se tramitarán, en cuanto sea posible, ajustándolos a la nueva legislación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-034",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Facultades sobre el convenio",
+  "texto": "debe improbarlo o modificarlo en beneficio de los hijos",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Lo convenido con respecto a los derechos y las disposiciones relacionados con los hijos podrá ser modificado por el tribunal al momento de su aprobación"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá improbar o modificar el convenio en beneficio de los hijos y las hijas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-035",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Notificación al PANI",
+  "texto": "cuya representación puede impugnarla si estima que se violó algún derecho fundamental",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "cuyo representante podrá impugnarla en caso de que estime que se ha producido alguna violación a los derechos fundamentales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-036",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sentencia sin audiencia inicial",
+  "texto": "la falta de oposición permite dictar sentencia sin audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "en los procesos de divorcio, separación judicial y reconocimiento de unión de hecho en los que no existan hijos o hijas menores de edad o con discapacidad"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se podrá emitir sentencia sin necesidad de convocar a la audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-037",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Daños y perjuicios",
+  "texto": "el cónyuge inocente puede pedir daños y perjuicios junto con la acción de separación o de divorcio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48 bis"
+    ],
+    "cita": "el cónyuge inocente podrá pedir, conjuntamente con la acción de separación o de divorcio, daños y perjuicios"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-038",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Inscripción de la aprobación",
+  "texto": "la ejecutoria puede requerir copia certificada del convenio",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "deberá acompañarse a esta la copia certificada por el tribunal del respectivo convenio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-039",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Modificación posterior",
+  "texto": "Lo relativo a los hijos puede modificarse después según su conveniencia o por un cambio de circunstancias",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo de acuerdo con la conveniencia de los hijos y las hijas o por un cambio de circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DIV-040",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Efecto de la Ley 10650",
+  "texto": "La reforma introducida por la Ley N.º 10650, de 2025, recogió el texto actual de ese artículo.",
+  "motivo": "La copia oficial solo acredita que el artículo fue reformado por esa ley el 26 de febrero de 2025; se sustituye por esa referencia, sin afirmar qué cambió.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DIV-041",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Audiencias del proceso",
+  "texto": "En el proceso contencioso se celebran una audiencia inicial y una audiencia de prueba y decisoria.",
+  "motivo": "Era categórico: los arts. 225, 226 y 232 CPF permiten sentencia sin audiencia inicial o audiencia única.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DIV-042",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Reconciliación",
+  "texto": "No procede el divorcio si hubo reconciliación o vida marital después de conocer los hechos",
+  "motivo": "Omitía el supuesto posterior a la demanda y la regla de la causa sobrevenida del art. 52 CF.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DIV-043",
+  "archivo": "src/content/servicios/divorcios.md",
+  "pagina": "/servicios/divorcios",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Conclusión sobre todo el convenio",
+  "texto": "Lo relativo a los hijos puede ser modificado por el tribunal al momento de la aprobación, porque sus derechos no dependen únicamente de la voluntad de los progenitores.",
+  "motivo": "La justificación no consta en la norma; se conserva la facultad con cita de los arts. 48 y 152 CF.",
+  "retirada": true
+ }
+]

@@ -8,7 +8,7 @@ export default defineConfig({
   // Permite validar el origen de los formularios con el dominio real y con el servidor local de pruebas.
   security: {
     checkOrigin: true,
-    allowedDomains: [{ hostname: siteUrl.hostname, protocol: siteUrl.protocol.replace(':', '') }, { hostname: '127.0.0.1', protocol: 'http' }]
+    allowedDomains: [{ hostname: siteUrl.hostname, protocol: siteUrl.protocol.replace(':', '') }, ...(process.env.PUBLIC_SITE_READY === 'true' ? [] : [{ hostname: '127.0.0.1', protocol: 'http' }])]
   },
   output: 'static',
   adapter: node({ mode: 'standalone' }),

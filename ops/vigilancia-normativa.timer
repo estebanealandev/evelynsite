@@ -1,0 +1,10 @@
+[Unit]
+Description=Ejecuta la vigilancia normativa cada semana
+
+[Timer]
+OnCalendar=Mon *-*-* 07:00:00
+Persistent=true
+RandomizedDelaySec=1h
+
+[Install]
+WantedBy=timers.target

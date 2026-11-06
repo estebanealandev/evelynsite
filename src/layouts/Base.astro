@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
+import { createHash } from 'node:crypto';
 import { site } from '../config/site';
 
 const { title, description, image = '/assets/brand/og-default.jpg', type = 'website', noindex = false, jsonLd = [], crumbs = [], lectura = false, salidaRapida = false } = Astro.props;
@@ -36,14 +37,18 @@ const breadcrumb = crumbs.length
     }
   : null;
 const schemas = [org, breadcrumb, ...jsonLd].filter(Boolean);
+// Único script en línea: debe correr antes de pintar. La política lo admite por su huella y bloquea cualquier otro.
+const inicial = "document.documentElement.classList.add('js');try{if(localStorage.getItem('movimiento')==='pausado')document.documentElement.dataset.movimiento='pausado'}catch{}";
+const huella = createHash('sha256').update(inicial).digest('base64');
+const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'`;
 ---
 <!doctype html>
 <html lang="es-CR">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content={csp} />
+    <meta name="referrer" content="no-referrer" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
@@ -66,12 +71,9 @@ const schemas = [org, breadcrumb, ...jsonLd].filter(Boolean);
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="preload" href="/assets/fonts/cormorant-400.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
-    <script is:inline>
-      document.documentElement.classList.add('js');
-      try { if (localStorage.getItem('movimiento') === 'pausado') document.documentElement.dataset.movimiento = 'pausado'; } catch {}
-    </script>
+    <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <script is:inline set:html={inicial} />
     {schemas.map(s => <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />)}
     <slot name="head" />
   </head>

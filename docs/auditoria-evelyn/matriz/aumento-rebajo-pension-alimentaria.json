@@ -1,0 +1,442 @@
+[
+ {
+  "id": "FAM-ARP-001",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cambio de circunstancias",
+  "texto": "Una cuota puede cambiar cuando cambian las circunstancias de quien la da o de quien la recibe",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "174"
+    ],
+    "cita": "La prestación alimentaria podrá modificarse por el cambio de circunstancias de quien la da o de quien la recibe"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-002",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin cosa juzgada material",
+  "texto": "no constituye cosa juzgada material y puede modificarse mediante los procedimientos del Código Procesal de Familia",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "262"
+    ],
+    "cita": "sobre el monto de la cuota alimentaria, constituirá cosa juzgada material; lo decidido podrá ser modificado por medio de los procedimientos establecidos en este Código"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-003",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aumento asalariados",
+  "texto": "cada seis meses, en enero y julio, de forma porcentual",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada asalariada, cada seis meses en los meses de enero y julio, de forma porcentual, de acuerdo con el aumento de ley decretado por el Estado para el sector público o privado"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-004",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aumento no asalariados",
+  "texto": "cada año, en enero, en un porcentaje igual a la variación del salario establecido según la Ley N.º 7337",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "Para la persona obligada no asalariada, de forma anual en el mes de enero"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-005",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aumento ya considerado",
+  "texto": "se aplica hasta el siguiente período",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "279"
+    ],
+    "cita": "si al momento de establecer el monto vigente se había tomado en cuenta ese aumento próximo, se realizará hasta el siguiente período"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-006",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Solicitud",
+  "texto": "Quien lo pide debe exponer los motivos y su pretensión concreta, y ofrecer las pruebas",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "exponiendo los motivos en que se basa y su pretensión concreta, y debe ofrecer las pruebas respectivas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-007",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Exoneración: lista",
+  "texto": "enumera los casos en que no existe obligación de proporcionar alimentos",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "No existirá obligación de proporcionar alimentos"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando el deudor no pueda suministrarlos sin desatender sus necesidades alimentarias"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando quien los recibe deje de necesitarlos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-008",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Interpretación de la Sala Constitucional",
+  "texto": "la Sala Constitucional interpretó en la resolución N.º 3682 de 2009",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "La Sala Constitucional mediante resolución N° 3682 del 06 de marzo de 2009, interpretó el inciso anterior"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-009",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cónyuge",
+  "texto": "Si el cónyuge incurrió en abandono voluntario y malicioso del hogar o se comprueba adulterio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando el cónyuge haya incurrido en abandono voluntario y malicioso del hogar o se compruebe que comete o cometió adulterio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-010",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Mayoría de edad",
+  "texto": "Si se alcanzó la mayoría de edad, salvo que no se hayan terminado los estudios",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando los alimentarios hayan alcanzado su mayoridad, salvo que no hayan terminado los estudios para adquirir una profesión u oficio, mientras no sobrepasen los veinticinco años de edad y obtengan buenos rendimientos con una carga académica razonable"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-011",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ex cónyuges",
+  "texto": "Entre ex cónyuges, si la persona beneficiaria contrae nuevas nupcias o establece una convivencia de hecho",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Entre ex cónyuges, cuando el beneficiario contraiga nuevas nupcias o establezca una convivencia de hecho"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-012",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Incumplimiento previo",
+  "texto": "Si quien demanda incumplió sus propios deberes alimentarios",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Cuando el demandante haya incumplido los deberes alimentarios respecto a su demandado"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-013",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prueba de las causales",
+  "texto": "Estas causales se prueban ante la autoridad que conozca de la demanda alimentaria",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Las causales eximentes de la obligación alimentaria se probarán ante la autoridad que conozca de la demanda alimentaria"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-014",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Trámite",
+  "texto": "Se solicita por escrito o de forma verbal, y se tramita en legajo separado",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "El trámite de modificación o exoneración de la cuota de pensión alimentaria y el cobro de gastos extraordinarios se hará en legajo separado"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "277"
+    ],
+    "cita": "Si la gestión está incompleta, se aplicará el procedimiento de inadmisión previsto en este Código. Si fuera infundada, se rechazará de plano"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-015",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencia",
+  "texto": "se convoca a una audiencia, con notificación personal a la persona accionada",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "278"
+    ],
+    "cita": "la autoridad judicial convocará a una audiencia a las partes, con notificación personal a la persona accionada"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "278"
+    ],
+    "cita": "La sentencia integral deberá ser dictada y notificada dentro del plazo de tres días"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-016",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo por falta de trabajo",
+  "texto": "puede concedérsele un plazo prudencial de hasta un mes, prorrogable por otro",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "se podrá conceder un plazo prudencial que no exceda de un mes, prorrogable por otro"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-017",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Tractos",
+  "texto": "También puede pedir el pago en tractos de una deuda morosa total o parcial",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "el pago en tractos de una deuda morosa total o parcial de alimentos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-018",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Resolución rápida",
+  "texto": "resuelve dentro de las veinticuatro horas siguientes",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "287"
+    ],
+    "cita": "resolverá y notificará dentro de las veinticuatro horas siguientes, ordenando la suspensión, cuando proceda, de la orden de apremio corporal"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-019",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apelación",
+  "texto": "Lo resuelto sobre estos beneficios es apelable",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "101"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Resuelven sobre los beneficios de pago en tractos y búsqueda de trabajo en materia alimentaria"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-020",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Suspensión",
+  "texto": "la ejecución se suspende por acuerdo de partes o a solicitud de la parte actora",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "276"
+    ],
+    "cita": "la ejecución se puede suspender por acuerdo de partes o a solicitud de la parte actora"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "276"
+    ],
+    "cita": "En tanto se mantenga esa suspensión quedará sin efecto el impedimento migratorio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-ARP-021",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Exigibilidad mientras no se modifique",
+  "texto": "Dejar de pagar sin más no es una alternativa: la cuota sigue siendo exigible mientras no se modifique.",
+  "motivo": "La fórmula categórica no consta en un artículo; se expresa que las causales y cambios se tramitan y prueban ante la autoridad.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-ARP-022",
+  "archivo": "src/content/articulos/aumento-rebajo-pension-alimentaria.md",
+  "pagina": "/blog/aumento-rebajo-pension-alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Salario de referencia",
+  "texto": "en un porcentaje igual a la variación del salario de referencia que indica esa norma",
+  "motivo": "El art. 279 CPF remite al salario establecido según la Ley N.º 7337.",
+  "retirada": true
+ }
+]

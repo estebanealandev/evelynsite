@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import PageHero from '../components/ui/PageHero.astro';
+import { biblioteca } from '../lib/biblioteca';
+import { fuentes } from '../lib/sources';
+import { fechaLarga } from '../lib/format';
+import { site } from '../config/site';
+
+const servicios = await getCollection('servicios');
+const titulo = (id: string) => servicios.find(s => s.id === id);
+const crumbs = [{ label: 'Biblioteca jurídica' }];
+---
+<Base title="Biblioteca jurídica" description="Las normas fundamentales del derecho de familia en Costa Rica, con su fuente oficial, una explicación breve y las áreas con las que se relacionan." crumbs={crumbs}>
+  <PageHero titulo="Biblioteca jurídica" lede="Las normas que sustentan la información de este sitio, con un enlace a su texto oficial en SINALEVI. La selección y los resúmenes son editoriales y no reemplazan la lectura de la norma." crumbs={crumbs} />
+  <div class="wrap section">
+    {biblioteca.map(n => (
+      <article class="norma" id={n.ref.toLowerCase()}>
+        <h2>{fuentes[n.ref].nombre}</h2>
+        <p class="norma__meta"><a href={fuentes[n.ref].url} rel="noopener noreferrer" target="_blank">Texto oficial en SINALEVI</a></p>
+        <p>{n.para}</p>
+        <dl class="norma__detalle">
+          {n.regula.length > 0 && <><dt>Temas</dt><dd>{n.regula.join(' · ')}</dd></>}
+          {n.reformas.length > 0 && <><dt>Reformas recientes que conviene ver</dt><dd>{n.reformas.join(' · ')}</dd></>}
+          {n.servicios.length > 0 && <><dt>Áreas relacionadas</dt><dd>{n.servicios.map((id, i) => <>{i > 0 && ' · '}<a href={`/servicios/${id}`}>{titulo(id)?.data.titulo}</a></>)}</dd></>}
+        </dl>
+      </article>
+    ))}
+    <p style="margin-top:28px;max-width:68ch">Versiones comprobadas el {fechaLarga(site.legalVerifiedAt)}. Una norma puede cambiar después de esa fecha: verifique siempre el texto vigente en la fuente oficial.</p>
+  </div>
+</Base>

@@ -1,0 +1,52 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/ui/PageHero.astro';
+import { fechaLarga } from '../../lib/format';
+import { fuentes } from '../../lib/sources';
+import { site } from '../../config/site';
+
+export async function getStaticPaths() {
+  const fichas = await getCollection('fichas');
+  return fichas.map(f => ({ params: { slug: f.id }, props: { ficha: f } }));
+}
+const { ficha } = Astro.props;
+const d = ficha.data;
+const { Content } = await render(ficha);
+const servicios = await getCollection('servicios');
+const vinculados = d.servicios.map((id: string) => servicios.find(s => s.id === id)).filter(Boolean);
+const crumbs = [{ label: 'Guías por situación', href: '/orientacion' }, { label: d.titulo }];
+---
+<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura>
+  <PageHero titulo={d.titulo} lede={d.resumen} crumbs={crumbs} />
+  <div class="wrap g12 read">
+    <article class="read__body" style="grid-column:1 / span 8">
+      <section class="read__section">
+        <h2>Qué conviene reunir</h2>
+        <ul class="rows">{d.reunir.map((r: string) => <li>{r}</li>)}</ul>
+      </section>
+      <section class="read__section">
+        <h2>Qué suele ser relevante</h2>
+        {d.aspectos.map((a: { titulo: string; texto: string }) => (
+          <div class="read__item"><h3>{a.titulo}</h3><p>{a.texto}</p></div>
+        ))}
+      </section>
+      <section class="read__section prose"><Content /></section>
+      <p class="notice" role="note" style="margin-top:36px">{d.limites}</p>
+      <section class="read__section sources">
+        <h2>Fuentes normativas</h2>
+        <ul>
+          {d.fuentes.map((f: { ref: keyof typeof fuentes; detalle: string }) => (
+            <li><a href={fuentes[f.ref].url} rel="noopener noreferrer" target="_blank">{fuentes[f.ref].nombre}</a>: {f.detalle}.</li>
+          ))}
+        </ul>
+        <p style="margin-top:10px">Normativa consultada el {fechaLarga(site.legalVerifiedAt)}.</p>
+      </section>
+      <div style="margin-top:36px">
+        <p class="eyebrow" style="margin-bottom:10px">Áreas relacionadas</p>
+        <ul class="tag-list">{vinculados.map((s: any) => <li><a href={`/servicios/${s.id}`}>{s.data.titulo}</a></li>)}</ul>
+        <div class="btn-row"><a class="btn" href="/agendar-consulta">Agendar una consulta</a></div>
+      </div>
+    </article>
+  </div>
+</Base>

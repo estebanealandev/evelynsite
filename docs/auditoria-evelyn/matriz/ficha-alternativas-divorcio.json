@@ -1,0 +1,438 @@
+[
+ {
+  "id": "FAM-FDI-001",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Convenio en escritura pública",
+  "texto": "Según el artículo 48 del Código de Familia, reformado por la Ley N.º 10650, los cónyuges otorgan un convenio de divorcio en escritura pública",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "deben otorgar un convenio de divorcio en escritura pública que contenga los siguientes puntos"
+   }
+  ],
+  "excepciones": "Pueden actuar personalmente o uno por medio de apoderado especialísimo en escritura pública.",
+  "relacionadas": [
+   "/servicios/divorcios"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-002",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Registro Civil",
+  "texto": "Si no existen hijos menores de edad comunes ni bienes a los que se refiera el convenio, la escritura se presenta directamente al Registro Civil para su aprobación e inscripción",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-003",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Vía judicial",
+  "texto": "Si existen hijos menores de edad o bienes referidos en el convenio, el artículo 48 remite al trámite judicial del Código Procesal de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "el trámite se verificará judicialmente conforme al Código Procesal de Familia"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "289"
+    ],
+    "cita": "presentará la petición por escrito ante la autoridad judicial competente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-004",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Tres meses",
+  "texto": "El convenio debe presentarse dentro de los tres meses siguientes a su celebración notarial, salvo presentación conjunta",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "dentro de los tres meses siguientes a su celebración notarial, salvo que la presentación la hagan de forma conjunta los cónyuges"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-005",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Persona menor de edad",
+  "texto": "Se le da oportunidad de ser escuchada a la persona menor de edad (artículo 290)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se le concederá la oportunidad de ser escuchada"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-006",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Variación judicial",
+  "texto": "la autoridad judicial puede variar lo acordado sobre su cuidado personal e interrelación (artículo 292)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "La autoridad judicial podrá variar lo acordado en lo que respecta a los derechos de las personas menores de edad referentes a cuidado personal y visitas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-007",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Contenido del convenio",
+  "texto": "El artículo 48 pide indicar a quién corresponde la custodia personal de los hijos comunes menores de edad, quién asume sus alimentos y en qué proporción, si hay obligación alimentaria entre los cónyuges y cómo se distribuyen los bienes",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "A quien corresponde la custodia personal de los hijos comunes menores de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-008",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Efectos",
+  "texto": "El convenio surte efectos una vez aprobado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "tendrá efectos una vez aprobado en la vía judicial o administrativa correspondiente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-009",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Causales",
+  "texto": "el artículo 48 enumera causales como la separación de hecho no menor de tres años, la separación judicial no menor de un año sin reconciliación y la incompatibilidad de caracteres",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "La separación de hecho por un plazo no menor de tres años"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La incompatibilidad de caracteres de los cónyuges"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-010",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Legitimación y plazo",
+  "texto": "El artículo 49 regula quién puede presentar la demanda y un plazo de un año desde que la parte actora conoció los hechos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "La demanda deberá entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven"
+   }
+  ],
+  "excepciones": "La aplicación a la causal concreta requiere análisis; se indica en el texto.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-011",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Proceso",
+  "texto": "Las pretensiones contenciosas sobre el vínculo se conocen en el proceso resolutivo familiar (artículo 222 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "En el proceso resolutivo familiar se conocerán las pretensiones contenciosas relacionadas con"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-012",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Reconciliación",
+  "texto": "el artículo 52 del Código de Familia regula el efecto de una reconciliación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "52"
+    ],
+    "cita": "No procede el divorcio si ha habido reconciliación o vida marital entre los cónyuges"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-013",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Separación judicial",
+  "texto": "con causales propias (artículo 58 del Código de Familia) y posibilidad de mutuo consentimiento (artículo 60)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "58"
+    ],
+    "cita": "Son causales para decretar la separación judicial entre los cónyuges"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "60"
+    ],
+    "cita": "Se puede decretar la separación judicial de los cónyuges por mutuo consentimiento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-014",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Remisión",
+  "texto": "Lo dispuesto para el divorcio se aplica en lo que corresponda (artículo 61)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "61"
+    ],
+    "cita": "Lo dispuesto para el divorcio se observará también para la separación judicial en cuanto fuere aplicable"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-015",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Gananciales",
+  "texto": "El artículo 41 del Código de Familia reconoce a cada cónyuge el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-016",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Bienes no gananciales",
+  "texto": "como los adquiridos por título gratuito o durante la separación de hecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Los adquiridos durante la separación de hecho de los cónyuges"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-017",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Guarda en el divorcio",
+  "texto": "el artículo 56 del Código de Familia pide decidir sobre guarda, crianza y educación según el interés superior de la persona menor de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "cita": "de conformidad con el interés superior de la persona menor de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-018",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Modificabilidad",
+  "texto": "Lo resuelto no constituye cosa juzgada y puede modificarse por la conveniencia de las hijas e hijos o por un cambio de circunstancias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "56"
+    ],
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo de acuerdo con la conveniencia de los hijos y las hijas o por un cambio de circunstancias"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-019",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Violencia",
+  "texto": "El artículo 9 del Código Procesal de Familia prohíbe la conciliación en situaciones en que se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-020",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Medidas independientes",
+  "texto": "Las medidas de protección pueden solicitarse con independencia de cualquier otro proceso (artículo 8 de la Ley contra la Violencia Doméstica)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FDI-021",
+  "archivo": "src/content/fichas/alternativas-para-divorciarse.md",
+  "pagina": "/orientacion/alternativas-para-divorciarse",
+  "tema": "Oposición limitada al convenio",
+  "texto": "Un convenio firmado puede ser difícil de cambiar en lo patrimonial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ],
+  "excepciones": "Formulación prudente: lo relativo a personas menores de edad puede variar (CF arts. 48 y 56; CPF art. 292).",
+  "consultado": "2026-11-05"
+ }
+]

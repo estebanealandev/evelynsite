@@ -1,0 +1,567 @@
+[
+ {
+  "id": "FAM-CCI-001",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Prohibición",
+  "texto": "prohíbe la conciliación en las situaciones en que se constaten",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-002",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Fecha de la reforma",
+  "texto": "reformado por la Ley N.º 10558 de 23 de octubre de 2024",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Así reformado por el artículo 1° de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-003",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Medidas independientes",
+  "texto": "Las medidas de protección de la Ley N.º 7586 se piden con independencia de cualquier otro proceso (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "con independencia de cualquier otro proceso, ya sea penal o de familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-004",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Derechos irrenunciables y arreglo parcial",
+  "texto": "No procede conciliar sobre ellos (artículo 196). Si un proceso incluye otros extremos que no los afectan, se puede admitir un arreglo parcial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "No procederá la conciliación, cuando se trata de la discusión de derechos irrenunciables o indisponibles."
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Cuando en un proceso se concilian extremos que no afectan los aquí enunciados, se podrá admitir el arreglo parcial."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-005",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Rechazo de la audiencia",
+  "texto": "La autoridad judicial puede rechazar la solicitud de audiencia en esos dos supuestos (artículo 193)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "193"
+    ],
+    "cita": "sin que se pueda rechazar la solicitud, salvo que se trate de materia no conciliable o que sea previsible que la gestión pretenda dilatar el proceso"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-006",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Alimentos",
+  "texto": "El derecho a los alimentos no puede renunciarse ni transmitirse (artículo 167)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "167"
+    ],
+    "cita": "El derecho a los alimentos no podrá renunciarse ni transmitirse de modo alguno."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-007",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Responsabilidad parental",
+  "texto": "salvo lo dispuesto para la separación y el divorcio por mutuo consentimiento en cuanto a guarda, crianza y educación (artículo 141)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "Tampoco pueden modificarse por acuerdo de las partes, salvo lo dispuesto para la separación y el divorcio por mutuo consentimiento, en cuanto se refiera a la guarda, crianza y educación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-008",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Justicia restaurativa",
+  "texto": "El artículo 196 menciona la violencia intrafamiliar y la protección de derechos de personas en estado de vulnerabilidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "En violencia intrafamiliar o protección de derechos de personas en estado de vulnerabilidad, el caso podrá abordarse mediante los mecanismos propios de justicia restaurativa, si cumple con los criterios de admisibilidad y viabilidad."
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "si el caso cumple con los criterios de admisibilidad y viabilidad, podrá abordarse mediante los mecanismos propios de justicia restaurativa"
+   }
+  ],
+  "excepciones": "Búsqueda en la copia oficial: «justicia restaurativa» solo aparece en los arts. 9 y 196 del CPF.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-009",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Reforma de la Ley 9582",
+  "texto": "para incluir los casos dispuestos por el artículo 9 del Código Procesal de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Asimismo, en los casos dispuestos por el artículo 9 de la Ley 9747, Código Procesal de Familia, de 23 de octubre de 2019."
+  },
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-010",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Conciliación antes de la demanda",
+  "texto": "Las partes pueden solicitar una audiencia, incluso de manera verbal ante el juzgado competente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "las partes podrán solicitar, incluso de manera verbal ante el juzgado competente, una audiencia de conciliación previo a la presentación de la demanda"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-011",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Archivo si no se concilia",
+  "texto": "Si no se logra conciliar, la gestión se archiva de manera definitiva (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "En caso de no lograrse una conciliación, la gestión será archivada de manera definitiva."
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "o remitir de inmediato la gestión al centro de conciliación especializado más cercano"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-012",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Audiencia en cualquier estado",
+  "texto": "Las partes pueden proponer una audiencia en cualquier estado del proceso (artículo 193)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "193"
+    ],
+    "cita": "en cualquier estado de este u otros procesos, las partes podrán proponer la realización de una audiencia conciliatoria"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-013",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Audiencia inicial",
+  "texto": "Cuando sea procedente, la autoridad judicial invita a conciliar. Si hay acuerdo total o parcial, lo homologa en ese mismo momento",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Cuando sea procedente, la autoridad judicial invitará a las partes a conciliar"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la autoridad judicial, en ese mismo momento, homologará el acuerdo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-014",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Audiencia de prueba y decisoria",
+  "texto": "La autoridad insta a las partes a considerar una forma alterna de solución del conflicto (artículo 233)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Instar a las partes a considerar una forma alterna de la solución del conflicto."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-015",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Pensiones: audiencia previa",
+  "texto": "el tribunal convoca a una audiencia previa de conciliación dentro de los diez días hábiles a su presentación o corrección (artículo 269)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "Si la demanda es admisible, dentro de los diez días hábiles a la presentación de la demanda o de su corrección, el tribunal convocará a las partes a una audiencia previa de conciliación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-016",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Pensiones: sentencia anticipada",
+  "texto": "Si no se realiza o no prospera, se dicta sentencia anticipada (artículo 270)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "no prosperara en ella una conciliación entre las partes, se procederá al dictado de una resolución con carácter de sentencia anticipada"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-017",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Deberes de la judicatura",
+  "texto": "Quienes administran justicia deben fomentar la conciliación o la mediación solo en los casos procedentes (artículo 31)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "31"
+    ],
+    "cita": "Fomentar, en los casos procedentes, tanto en la etapa previa como en cualquier otra del proceso, la conciliación o mediación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "31"
+    ],
+    "cita": "personas en situación de riesgo de violencia intrafamiliar o en desbalance de poder"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-018",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Quién dirige",
+  "texto": "La autoridad judicial lleva a cabo esta etapa y puede remitir a las partes a los centros especializados del Poder Judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Esta etapa la llevará a cabo la autoridad judicial, quien también podrá remitir a las partes a los centros especializados del Poder Judicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-019",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Ley 7727",
+  "texto": "También pueden aplicarse otros mecanismos de la Ley N.º 7727 si son compatibles con los objetivos y los fines de la materia familiar (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "siempre que sean compatibles con los objetivos y los fines de la materia familiar"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-020",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Acuerdos extrajudiciales",
+  "texto": "La autoridad judicial los revisa, los homologa si los encuentra ajustados a derecho y, cuando lo considere necesario, convoca a una audiencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "194"
+    ],
+    "cita": "La autoridad judicial revisará el arreglo y, si lo encuentra ajustado a derecho, lo homologará. Cuando se considere necesario, se convocará a una audiencia para la discusión de lo conciliado."
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "194"
+    ],
+    "cita": "Si el acuerdo es presentado al despacho por una sola de las partes, se debe dar audiencia a la parte contraria"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-021",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Opinión previa",
+  "texto": "se escucha su posición antes de homologar, cuando se considere necesario para una mejor resolución (artículo 195)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "195"
+    ],
+    "cita": "Tratándose de personas menores de edad o con discapacidad que puedan externar su opinión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-022",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Cosa juzgada",
+  "texto": "Lo acordado tiene carácter y eficacia de cosa juzgada material o formal, según su contenido (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Lo acordado tendrá carácter y eficacia de cosa juzgada material o formal, según el contenido del acuerdo."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-023",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Sin cosa juzgada sobre hijas e hijos",
+  "texto": "lo resuelto sobre personas menores de edad no constituye cosa juzgada y puede modificarse por vía incidental (artículo 152 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo por vía incidental"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-024",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Pensiones: efectos",
+  "texto": "El apremio corporal solo se puede solicitar desde la homologación judicial y respecto de las cuotas futuras. Lo adeudado antes de homologar se cobra por apremio patrimonial (artículo 197)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "197"
+    ],
+    "cita": "el cual solo se podrá solicitar a partir de la homologación judicial y en relación con las cuotas futuras. Los montos adeudados antes de la homologación se cobrarán por la vía de apremio patrimonial."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-025",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Revisión de acuerdos",
+  "texto": "la autoridad puede suspender o modificar provisionalmente un acuerdo conciliatorio extrajudicial que viole o amenace violar los derechos consagrados en la normativa sustantiva (artículo 237)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "237"
+    ],
+    "cita": "Suspender o modificar provisionalmente cualquier medida o acuerdo conciliatorio extrajudicial que viole o amenace violar los derechos consagrados en la normativa sustantiva."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-090",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Justicia restaurativa",
+  "texto": "solo podrá abordarse con mecanismos de justicia restaurativa si cumple los criterios de admisibilidad y viabilidad (artículo 196)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El art. 196 no dice «solo». Se corrigió y se añadió el art. 9 reformado por la Ley 10558 y la reforma de la Ley 9582.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-091",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Promoción general de la conciliación",
+  "texto": "Muchos conflictos familiares pueden resolverse sin una sentencia que imponga la solución. El Código Procesal de Familia promueve esa posibilidad",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Presentaba la conciliación como camino general. Se sustituyó por la regla: procede «cuando proceda» y tiene prohibiciones.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CCI-092",
+  "archivo": "src/content/articulos/acuerdos-familiares-solucion-conflictos.md",
+  "pagina": "/blog/acuerdos-familiares-solucion-conflictos",
+  "tema": "Condiciones de un buen acuerdo",
+  "texto": "Información suficiente, libertad para decidir, términos claros y soluciones realistas.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Frase genérica sin respaldo normativo. Se sustituyó por preguntas ligadas a los efectos legales.",
+  "consultado": "2026-11-05"
+ }
+]

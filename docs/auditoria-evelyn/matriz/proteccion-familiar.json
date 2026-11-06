@@ -1,0 +1,1234 @@
+[
+ {
+  "id": "FAM-PFA-001",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Formas de violencia",
+  "texto": "La ley reconoce cuatro formas de violencia doméstica: física, psicológica, sexual y patrimonial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "cita": "el menoscabo de su integridad física, sexual, psicológica o patrimonial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-002",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Solicitud verbal o escrita e independencia de otros procesos",
+  "texto": "La solicitud puede hacerse por escrito o de forma verbal (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal, con independencia de cualquier otro proceso, ya sea penal o de familia."
+   }
+  ],
+  "excepciones": "La solicitud escrita requiere autenticación cuando quien la formula no la presenta personalmente.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-003",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Falta de pruebas",
+  "texto": "La falta de indicación de pruebas no impide que la autoridad judicial dé curso a la solicitud (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "La falta de indicación de pruebas no impedirá que la autoridad judicial dé curso a la solicitud."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-004",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Peligro inminente",
+  "texto": "Ante peligro inminente para la integridad física, las medidas deben dictarse de inmediato (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Cuando exista peligro inminente para la integridad física de las personas protegidas por esta ley, de inmediato el juez dictará las medidas de protección pertinentes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-005",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Finalidad y protección especial",
+  "texto": "Ordena brindar protección especial a madres, personas menores de edad, personas adultas mayores y personas con alguna condición de discapacidad, y protege en particular a las víctimas de violencia en las relaciones de pareja o de abuso sexual intrafamiliar (artículo 1)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "1"
+    ],
+    "cita": "brindarán protección especial a madres, personas menores de edad, personas adultas mayores y personas que presenten alguna condición de discapacidad"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "1"
+    ],
+    "cita": "esta Ley protegerá, en particular, a las víctimas de violencia en las relaciones de pareja o de abuso sexual intrafamiliar"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-006",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Definición de violencia doméstica (art. 2 a, Ley 10634)",
+  "texto": "ejercida contra un pariente colateral por consanguinidad, afinidad o adopción hasta el tercer grado inclusive, por vínculo jurídico o de hecho, o por una relación de guarda, tutela o curatela",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "ejercida contra un pariente colateral por consanguinidad, afinidad o adopción hasta el tercer grado inclusive, por vínculo jurídico o de hecho, o por una relación de guarda, tutela o curatela"
+   }
+  ],
+  "excepciones": "El inciso a) dice «pariente colateral» y el inciso f) define parentesco por vía ascendente, descendente o colateral. Se señala como duda en hallazgos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-007",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Parentesco",
+  "texto": "El inciso f) define el parentesco hasta el tercer grado por vía ascendente, descendente o colateral, originado en un vínculo jurídico, biológico o de unión de hecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "cita": "Relación de adopción, afinidad o consanguinidad hasta tercer grado inclusive, por vía ascendente, descendente o colateral, originada en un vínculo jurídico, biológico o de unión de hecho."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-008",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Violencia psicológica, física, sexual y patrimonial",
+  "texto": "Psicológica: degradar o controlar las acciones, los comportamientos, las creencias y las decisiones de otra persona mediante intimidación, manipulación, amenaza, humillación o aislamiento",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "cita": "Acción u omisión destinada a degradar o controlar las acciones, comportamientos, creencias y decisiones de otras personas, por medio de intimidación, manipulación, amenaza, directa o indirecta, humillación, aislamiento"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "cita": "daño, pérdida, transformación, sustracción, destrucción, retención o distracción de objetos, instrumentos de trabajo, documentos personales, bienes, valores, derechos o recursos económicos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-009",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Definiciones no restrictivas",
+  "texto": "La ley describe cada forma y aclara que esas definiciones no son restrictivas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Las definiciones comprendidas en los incisos b), c), d), e), f) y g) no serán restrictivas."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-010",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Violencia vicaria (art. 2 g)",
+  "texto": "quien mantenga o mantuvo una relación de matrimonio, de unión de hecho o alguna relación sentimental con la mujer, cuyo objetivo sea causarle un daño emocional, psicológico o patrimonial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "acción u omisión cometida por parte de quien mantenga o mantuvo una relación de matrimonio, de unión de hecho o alguna relación sentimental con la mujer, actuando por sí o por interpósita persona, cuyo objetivo sea causar un daño emocional, psicológico o patrimonial a la mujer"
+   }
+  ],
+  "excepciones": "La norma nombra a la mujer; por eso el texto lo indica de forma expresa.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-011",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Medidas en violencia vicaria (art. 3)",
+  "texto": "El artículo 3 permite ordenar las medidas de protección también en estas situaciones",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Cuando se trate de situaciones de violencia doméstica o vicaria, la autoridad competente ordenará cualquiera de las siguientes medidas de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-012",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Salida del domicilio y domicilio diferente",
+  "texto": "ordenar a la presunta persona agresora salir de inmediato del domicilio común; autorizar a la persona agredida un domicilio diferente, si lo solicita",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Ordenar a la presunta persona agresora que salga inmediatamente del domicilio común"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Autorizar a la presunta persona agredida un domicilio diferente del común, previa solicitud suya"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-013",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Armas, prohibiciones y auxilio policial",
+  "texto": "prohibir el acceso al domicilio y al lugar de trabajo o estudio de la persona agredida y el acercamiento a esos lugares; y emitir una orden de protección y auxilio policial, de la cual la víctima porta copia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Prohibirle el acceso a la presunta persona agresora al domicilio, permanente o temporal, de la persona agredida y a su lugar de trabajo o estudio."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "acercarse a dichos lugares a una distancia razonable"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Emitir una orden de protección y auxilio policial"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Prohibir que la presunta persona agresora posea o porte armas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-014",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Allanamiento",
+  "texto": "ordenar el allanamiento cuando se arriesgue gravemente la integridad de quienes habitan allí",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Ordenar el allanamiento del domicilio, pudiendo procederse a cualquier hora cuando, por violencia doméstica o vicaria, se arriesgue gravemente la integridad física, sexual, patrimonial o psicológica de cualquiera de sus habitantes permanentes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-015",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Guarda, crianza y visitas",
+  "texto": "De ser necesario y según las particularidades del caso, se puede suspender provisionalmente a la presunta persona agresora el ejercicio de la guarda, crianza y educación de sus hijos e hijas menores de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "De ser necesario y según las particularidades del caso, se podrá suspender provisionalmente a la presunta persona agresora el ejercicio de la guarda, crianza y educación de sus hijos e hijas menores de edad"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "el derecho de visitar a los hijos e hijas menores de edad, en los casos en que esta ejerza algún tipo de agresión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-016",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Alimentos provisionales",
+  "texto": "fijar una obligación alimentaria provisional a favor de la presunta víctima y de los demás dependientes que corresponda, conforme al artículo 270 del Código Procesal de Familia, aun sin documento idóneo que acredite el parentesco",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Fijar una obligación alimentaria provisional en favor de la presunta víctima y de los demás dependientes que corresponda, de conformidad con el artículo 270 del Código Procesal de Familia, aun cuando no se cuente con documento idóneo que acredite el grado de parentesco."
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "Sentencia anticipada."
+   }
+  ],
+  "relacionadas": [
+   "/servicios/pensiones-alimentarias"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-017",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Embargo, menaje y reparación",
+  "texto": "disponer el embargo preventivo de la casa de habitación familiar y de bienes de la presunta persona agresora, por un máximo de tres meses prorrogables",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Disponer el embargo preventivo, por un plazo máximo de tres meses, contado a partir de la fecha en que se ejecute la resolución que lo ordene, sobre la casa de habitación familiar"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Otorgar el uso exclusivo del menaje de casa a la persona agredida."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Se incluyen gastos de traslado, reparaciones a la propiedad, alojamiento y gastos médicos."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-018",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Quién puede pedirlas: personas menores de edad y con discapacidad",
+  "texto": "también deben solicitarlas su representante legal, el Patronato Nacional de la Infancia, una autoridad de policía o cualquier otra persona que conozca la situación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "En los casos de personas menores y en los de personas con discapacidad, las medidas de protección también deberán ser solicitadas por su representante legal, el Patronato Nacional de la Infancia (PANI), una autoridad de policía o cualquier otra persona"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-019",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Quién puede pedirlas: persona afectada",
+  "texto": "La persona afectada puede solicitarlas por su cuenta, posibilidad que el inciso c) presupone",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "esta se encuentre imposibilitada para solicitar las medidas de protección por su cuenta"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "La persona agredida o quien haya requerido las medidas"
+   }
+  ],
+  "excepciones": "El art. 7 no enumera a la persona adulta afectada en un inciso propio. Se señala en hallazgos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-020",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Quién puede pedirlas: instituciones y cualquier persona",
+  "texto": "Cualquier persona puede hacerlo cuando exista un riesgo grave para la vida o la integridad física de la presunta víctima o esta no pueda solicitarlas por su cuenta",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "Cualquier persona, cuando exista un riesgo grave para la vida o la integridad física de la presunta víctima"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "7"
+    ],
+    "cita": "Las instituciones públicas o privadas que lleven a cabo programas de protección de los derechos humanos y la familia, cuando la persona agredida lo solicite, se encuentre grave o presente alguna discapacidad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-021",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Duración",
+  "texto": "Se mantienen por un año, mientras una resolución judicial firme no las levante o modifique antes",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-022",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Cese",
+  "texto": "La persona agredida o quien requirió las medidas puede solicitar el levantamiento anticipado, y la autoridad judicial puede ordenarlo si lo considera conveniente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "podrá solicitar el levantamiento anticipado de la medida. La autoridad judicial podrá ordenar esta acción si lo considera conveniente, previa valoración de los informes a que se refiere el artículo 17 siguiente."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-023",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Cese cuando la persona ofendida es menor de edad",
+  "texto": "el cese que no pida una persona representante del Patronato Nacional de la Infancia solo procede si esa institución lo recomienda (artículo 5)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "el cese a la medida, que no sea solicitado por una persona representante del Patronato Nacional de la Infancia, solo procederá cuando lo recomiende esa institución"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-024",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Incumplimiento",
+  "texto": "si se incumplen una o varias medidas, la autoridad competente debe testimoniar piezas al Ministerio Público para el juzgamiento por ese delito",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "De incumplirse una o varias de estas medidas contraviniendo una orden emanada de la autoridad competente, esta deberá testimoniar piezas al Ministerio Público para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-025",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Fuerza Pública",
+  "texto": "Si la presunta persona agresora se resiste o incumple la orden de salir del domicilio, la Fuerza Pública la obligará",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Si se resiste o incumple la orden será obligada por la Fuerza Pública"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-026",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Vigilancia policial",
+  "texto": "El artículo 17 obliga a la policía administrativa a vigilar el cumplimiento efectivo de las medidas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "La policía administrativa tiene la obligación de vigilar el cumplimiento efectivo de las medidas de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-027",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Prohibición de conciliar",
+  "texto": "Está prohibida cuando se constatan relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-028",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Justicia restaurativa",
+  "texto": "Ese artículo y el 196 permiten abordar algunos casos mediante mecanismos de justicia restaurativa, solo si cumplen los criterios de admisibilidad y viabilidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "si el caso cumple con los criterios de admisibilidad y viabilidad, podrá abordarse mediante los mecanismos propios de justicia restaurativa"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "En violencia intrafamiliar o protección de derechos de personas en estado de vulnerabilidad, el caso podrá abordarse mediante los mecanismos propios de justicia restaurativa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-029",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Comparecencia",
+  "texto": "El juzgado convoca a una audiencia oral si la presunta persona agresora lo pide dentro de los cinco días siguientes a la notificación del auto inicial, o si la presunta víctima tiene antecedentes como persona agresora",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "En el caso en que la presunta persona agresora lo solicite por escrito o verbalmente, dentro de los cinco días siguientes a la notificación del auto inicial, o que la presunta víctima tenga antecedentes como persona agresora"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-030",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Comparecencia sin la presencia de la presunta persona agresora",
+  "texto": "En casos justificados, la víctima puede pedir que su comparecencia se realice sin la presencia de la presunta persona agresora (artículo 12)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "En casos justificados, la víctima podrá pedir o la autoridad judicial podrá ordenar de oficio que su comparecencia se realice sin estar presente la presunta persona agresora"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-031",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Requisitos de la solicitud",
+  "texto": "Debe indicar los datos conocidos de la persona agredida y de la persona agresora, los hechos, las pruebas si existen, las medidas pedidas y la casa o el lugar para recibir notificaciones (artículo 9)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "El señalamiento de la casa o el lugar para recibir notificaciones."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "9"
+    ],
+    "cita": "El nombre, los apellidos, las calidades y el vecindario de la persona agredida y la persona agresora, si los conoce."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-032",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Aplicación inmediata",
+  "texto": "Planteada la solicitud, la autoridad competente ordena de inmediato aplicar las medidas solicitadas y puede ordenar otras de oficio (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "Planteada la solicitud, la autoridad competente ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-033",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Resolución y duda probatoria",
+  "texto": "En caso de duda en la apreciación de la prueba, se estará a lo más favorable para el supuesto agredido (artículo 13)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "13"
+    ],
+    "cita": "en caso de duda en la apreciación de la prueba, se estará a lo más favorable para el supuesto agredido"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Evacuada la prueba, la comparecencia se dará por concluida y el juzgado resolverá, de inmediato, si las medidas aplicadas se mantienen en ejecución o no."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-034",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Apelación",
+  "texto": "La resolución puede apelarse en tres días hábiles. Admitir la apelación no suspende la ejecución de las medidas (artículo 15)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "La resolución del juzgado podrá ser apelada en el término de tres días hábiles."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "el admitir la apelación no suspenderá la ejecución de las medidas decretadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-035",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Seguimiento",
+  "texto": "La autoridad judicial debe revisar los resultados de la ejecución mediante la comparecencia de las partes o con informes periódicos (artículo 17)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "La autoridad judicial deberá revisar los resultados de la ejecución de las medidas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-036",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Deber de intervención policial",
+  "texto": "La policía debe intervenir en situaciones de violencia doméstica, de oficio o a pedido de las víctimas o de terceras personas, y socorrer a las personas agredidas aun dentro de su domicilio (artículo 20)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "20"
+    ],
+    "cita": "Las autoridades de policía tienen el deber de intervenir en las situaciones de violencia doméstica, de oficio o cuando sean requeridas por las víctimas o por terceras personas."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "20"
+    ],
+    "cita": "Socorrer a las personas agredidas aun cuando se encuentren dentro de su domicilio."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-037",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Competencia",
+  "texto": "donde no existan, juzgados mixtos o contravencionales (artículo 6). Si esos despachos están imposibilitados para brindar el servicio, los juzgados penales también deben otorgarlas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "6"
+    ],
+    "cita": "Donde no existan juzgados especializados en violencia doméstica o de familia, serán competentes"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "6"
+    ],
+    "cita": "Esas medidas también deberán ser otorgadas por los juzgados penales, en los casos en que los despachos mencionados estén imposibilitados para brindar el servicio."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-038",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Examen médico y psicológico",
+  "texto": "la persona agredida o quien solicitó la medida puede pedirlo a la autoridad competente (artículo 11)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "11"
+    ],
+    "cita": "la persona agredida o el solicitante de la medida, de conformidad con lo contemplado en el artículo 7 de la presente ley, podrá pedir a la autoridad competente que se le practique un examen médico y sicológico"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-039",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "INAMU",
+  "texto": "La Ley N.º 7586 encarga al Instituto Nacional de las Mujeres ofrecer a las víctimas servicios de acompañamiento, asesoramiento jurídico y representación legal para estos trámites (artículo 17)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal necesarios para realizar los trámites contemplados en esta Ley"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-040",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Pruebas de oficio",
+  "texto": "la autoridad judicial ordena las pruebas que considere necesarias (artículo 14)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "ordenará las pruebas que considere necesarias a fin de establecer la verdad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-041",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Testimonio a la fiscalía",
+  "texto": "si los hechos constituyen delito, la autoridad judicial librará testimonio a la agencia fiscal (artículo 18)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "18"
+    ],
+    "cita": "Si los hechos que motivaron las medidas de protección constituyen delito, la autoridad judicial tomará las previsiones que estime convenientes y librará testimonio a la agencia fiscal respectiva."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-042",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Relación terminada",
+  "texto": "El artículo 2 indica que el vínculo por afinidad subsiste aunque haya finalizado la relación que lo originó",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "2"
+    ],
+    "cita": "El vínculo por afinidad subsistirá, aun cuando haya finalizado la relación que lo originó."
+   }
+  ],
+  "excepciones": "Otras situaciones requieren análisis; así lo dice el texto.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-043",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Pérdida por violencia vicaria",
+  "texto": "Una resolución judicial en firme que determine un caso de violencia vicaria es causa de pérdida de los atributos de la responsabilidad parental (artículo 158 bis, inciso h)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Mediante resolución judicial en firme que determine un caso de violencia vicaria; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto, la afectación a la persona menor de edad y la observancia de su interés superior."
+   }
+  ],
+  "relacionadas": [
+   "/servicios/guarda-crianza"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-044",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Suspensión por violencia vicaria",
+  "texto": "La violencia vicaria contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad, afinidad o adopción es causa de suspensión (artículo 159)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Por violencia vicaria contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad, afinidad o adopción; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto"
+   }
+  ],
+  "excepciones": "SINALEVI advierte que el art. 159 tiene dos incisos d) con distinto texto.",
+  "relacionadas": [
+   "/servicios/guarda-crianza"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-045",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Desaplicación y suspensión por violencia doméstica",
+  "texto": "en la suspensión puede desaplicar la causal. La violencia doméstica o intrafamiliar también es causa de suspensión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "en cuyo caso podrá desaplicar esta causal."
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "Por violencia doméstica o intrafamiliar contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad o afinidad."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-046",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Proceso para pérdida o suspensión",
+  "texto": "Estas decisiones se discuten en un proceso resolutivo familiar (artículo 222 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "La pérdida, con petición o no de adaptabilidad, y la suspensión de los atributos de la responsabilidad parental."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-047",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Sin recurso contra la primera resolución",
+  "texto": "Las medidas se aplican desde que se ordenan y contra esa primera resolución no cabe recurso (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "no cabrá recurso alguno contra ella"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-048",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Nota de la Sala Constitucional sobre pensión provisional",
+  "texto": "Una nota de SINALEVI recoge que la Sala Constitucional, en la resolución N.º 2896 del 14 de junio de 1996, admitió la apelación en un solo efecto contra la resolución que impone una pensión alimenticia provisional",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "La Sala Constitucional mediante resolución N° 2896 del 14 de junio de 1996"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "procede recurso de apelación en un sólo efecto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-049",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Nueva dirección en 24 horas",
+  "texto": "debe informar a la autoridad judicial su nueva dirección exacta en veinticuatro horas (artículo 3)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "En el término de veinticuatro horas, la presunta persona agresora deberá informar a la autoridad judicial sobre la dirección exacta de su nueva residencia."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-050",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Uso indebido de la ley",
+  "texto": "cuando se evidencie que la ley está siendo utilizada en contra de sus fines (artículo 5)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "También podrá ordenarse el levantamiento de oficio o a solicitud de parte, cuando evidencie que la ley está siendo utilizada en contra de sus fines."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "1"
+    ],
+    "cita": "La autoridad competente deberá procurar que las personas agresoras no utilicen contra las víctimas la presente Ley."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-051",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Impulso de oficio y formalidades",
+  "texto": "Los tribunales pueden impulsar el trámite de oficio y, ante peligro inminente, las formalidades no deben impedir una intervención oportuna (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Los tribunales estarán facultados para conducir la tramitación aplicando el impulso procesal de oficio."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "el cumplimiento de formalidades no se convertirá en impedimento para la intervención oportuna"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-090",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Línea telefónica no verificada",
+  "texto": "Personas menores de edad: línea 1147 del Patronato Nacional de la Infancia",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Retirada por instrucción: otro agente verifica los recursos institucionales y se integrarán después. En esta página solo queda el 9-1-1.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-091",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Legitimación",
+  "texto": "En esos casos y en los de personas con discapacidad, también pueden pedirlas su representante, el PANI, una autoridad de policía o cualquier otra persona que conozca la situación.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El art. 7 LCVD dice «deberán ser solicitadas». Se corrigió el verbo y se añadieron los incisos b) y c) con sus condiciones.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-092",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Justicia restaurativa",
+  "texto": "el caso solo podrá abordarse mediante mecanismos de justicia restaurativa si cumple los criterios de admisibilidad y viabilidad.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El art. 196 CPF dice «podrá abordarse», sin «solo», y la frase omitía el párrafo equivalente del art. 9 reformado por la Ley 10558. Se reformuló y se aclaró que nada obliga a reunirse o negociar.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-093",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Requisitos de la solicitud",
+  "texto": "Conviene indicar los datos conocidos de las personas, los hechos, las pruebas si existen, las medidas solicitadas y un lugar para notificaciones.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El art. 9 LCVD establece que el solicitante «deberá indicar» esos datos; no es una mera conveniencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-094",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Comparecencia",
+  "texto": "o en los casos que indica el artículo 12",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Remisión vaga. Se indicó el segundo supuesto del art. 12: que la presunta víctima tenga antecedentes como persona agresora.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-095",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Violencia vicaria",
+  "texto": "El artículo 3 de la ley se refiere a situaciones de violencia doméstica o vicaria.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Incompleto: no definía la violencia vicaria (art. 2 g) ni mencionaba los arts. 158 bis y 159 CF, ambos reformados por la Ley 10634. Se desarrolló.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFA-096",
+  "archivo": "src/content/servicios/proteccion-familiar.md",
+  "pagina": "/servicios/proteccion-familiar",
+  "tema": "Promesa implícita de seguridad",
+  "texto": "Protección frente a la violencia: su *seguridad* es lo primero",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Título sustituido por uno descriptivo. Se añadió que ninguna medida garantiza por sí sola la seguridad.",
+  "consultado": "2026-11-05"
+ }
+]

@@ -57,11 +57,12 @@
 
   // Cabecera: transparente sobre el encabezado oscuro, sólida después; se oculta al bajar y vuelve al subir.
   const header = $('.site-header');
-  const finHero = $('.h-telon') || $('.page-hero')?.nextElementSibling;
+  // Solo la portada tiene un encabezado oscuro; en las demás páginas la cabecera es siempre sólida.
+  const finHero = $('.h-telon');
   let ultimoY = scrollY;
   const pintarHeader = () => {
     const y = scrollY;
-    const solida = finHero ? finHero.getBoundingClientRect().top <= header.offsetHeight : y > 40;
+    const solida = finHero ? finHero.getBoundingClientRect().top <= header.offsetHeight : true;
     header.classList.toggle('is-solid', solida);
     const abierto = header.contains(document.activeElement) || $('.has-menu[data-open="true"]');
     if (y < 200 || abierto || y < ultimoY - 4) header.classList.remove('is-oculta');
@@ -200,81 +201,95 @@
     enlaces.forEach(a => a.addEventListener('click', () => { if (matchMedia('(max-width: 1023px)').matches) toc.open = false; }));
   }
 
-  // Salida rápida: reemplaza esta página en el historial y lleva a un sitio neutro.
+  // Salida rápida: oculta la página al instante, la reemplaza en el historial y lleva a un sitio neutro.
+  const irAFuera = destino => {
+    raiz.style.visibility = 'hidden';
+    document.title = '';
+    location.replace(destino);
+  };
   const salida = $('[data-salida]');
   if (salida) {
-    const salir = () => location.replace(salida.href);
-    salida.addEventListener('click', e => { e.preventDefault(); salir(); });
+    salida.addEventListener('click', e => { e.preventDefault(); irAFuera(salida.href); });
     let ultimaEsc = 0;
     addEventListener('keydown', e => {
       if (e.key !== 'Escape') return;
       const ahora = Date.now();
-      if (ahora - ultimaEsc < 700) salir();
+      if (ahora - ultimaEsc < 700) irAFuera(salida.href);
       ultimaEsc = ahora;
     });
   }
 
-  // Orientador: una pregunta a la vez. Nada se guarda ni se envía.
+  // Orientador: una pregunta a la vez. Señala qué leer; nada se guarda ni se envía.
   $$('[data-guia]').forEach(guia => {
     const datos = JSON.parse($('[data-guia-datos]', guia).textContent);
     const panel = $('[data-guia-panel]', guia);
     let camino = [];
+    const crear = (tag, clase, texto) => {
+      const el = document.createElement(tag);
+      if (clase) el.className = clase;
+      if (texto) el.textContent = texto;
+      return el;
+    };
     const enfocar = () => { const t = $('[tabindex="-1"]', panel); if (t) t.focus({ preventScroll: true }); };
+    const boton = (clase, texto, accion) => {
+      const b = crear('button', clase, texto);
+      b.type = 'button';
+      b.addEventListener('click', accion);
+      return b;
+    };
+    const controles = () => {
+      const c = crear('div', 'guia__ctrl');
+      if (camino.length) c.append(boton('guia__atras', 'Volver', () => { preguntar(camino.pop()); enfocar(); }));
+      if (camino.length) c.append(boton('guia__atras', 'Empezar de nuevo', () => { camino = []; preguntar(datos.inicio); enfocar(); }));
+      return c;
+    };
     const preguntar = id => {
       const q = datos.preguntas[id];
       panel.replaceChildren();
-      const h = document.createElement('p');
-      h.className = 'guia__q'; h.tabIndex = -1; h.textContent = q.pregunta;
-      const ul = document.createElement('ul');
-      ul.className = 'guia__ops';
+      const h = crear('p', 'guia__q', q.pregunta);
+      h.tabIndex = -1;
+      const ul = crear('ul', 'guia__ops');
       q.opciones.forEach(o => {
-        const li = document.createElement('li');
-        const b = document.createElement('button');
-        b.type = 'button'; b.className = 'guia__op'; b.textContent = o.texto;
-        b.addEventListener('click', () => {
+        const li = crear('li');
+        li.append(boton('guia__op', o.texto, () => {
           camino.push(id);
-          if (o.siguiente) preguntar(o.siguiente); else resultado(o);
+          if (o.siguiente) preguntar(o.siguiente);
+          else if (o.listado) location.assign('/servicios');
+          else resultado(o);
           enfocar();
-        });
-        li.append(b); ul.append(li);
+        }));
+        ul.append(li);
       });
-      panel.append(h, ul);
-      if (camino.length) panel.append(atras());
-    };
-    const atras = () => {
-      const b = document.createElement('button');
-      b.type = 'button'; b.className = 'guia__atras'; b.textContent = 'Volver';
-      b.addEventListener('click', () => { preguntar(camino.pop()); enfocar(); });
-      return b;
+      panel.append(h, ul, controles());
     };
     const resultado = o => {
-      const a = datos.areas[o.resultado];
+      const area = o.resultado ? datos.areas[o.resultado] : null;
+      const guiaFicha = o.ficha ? datos.guias[o.ficha] : null;
+      const principal = area || guiaFicha;
       panel.replaceChildren();
-      const c = document.createElement('div');
-      c.className = 'guia__res';
-      const e = document.createElement('p');
-      e.className = 'eyebrow'; e.textContent = 'Le puede servir';
-      const h = document.createElement('h3');
-      h.tabIndex = -1; h.textContent = a.titulo;
-      const p = document.createElement('p');
-      p.textContent = a.resumen;
-      c.append(e, h, p);
-      if (o.aviso) {
-        const av = document.createElement('p');
-        av.className = 'notice notice--urgent'; av.textContent = o.aviso;
-        c.append(av);
+      const c = crear('div', 'guia__res');
+      const h = crear('h3', '', principal.titulo);
+      h.tabIndex = -1;
+      c.append(crear('p', 'eyebrow', 'Tema para revisar'), h, crear('p', '', principal.resumen));
+      if (o.riesgo) c.append(crear('p', 'notice notice--urgent', datos.aviso));
+      const r = crear('div', 'btn-row');
+      const leer = crear('a', 'btn', area ? 'Leer esta área' : 'Leer esta guía');
+      leer.href = area ? `/servicios/${o.resultado}` : `/orientacion/${o.ficha}`;
+      r.append(leer);
+      if (area && guiaFicha) {
+        const g = crear('a', 'btn btn-outline', guiaFicha.titulo);
+        g.href = `/orientacion/${o.ficha}`;
+        r.append(g);
       }
-      const r = document.createElement('div');
-      r.className = 'btn-row';
-      const l = document.createElement('a');
-      l.className = 'btn'; l.href = `/servicios/${o.resultado}`; l.textContent = 'Leer esta área';
-      const k = document.createElement('a');
-      k.className = 'btn btn-outline'; k.href = '/agendar-consulta'; k.textContent = 'Agendar una consulta';
-      r.append(l, k);
-      const n = document.createElement('p');
-      n.className = 'guia__nota'; n.textContent = 'Esta guía solo le dirige a información general. No analiza su caso ni sustituye una asesoría.';
-      c.append(r, n);
-      panel.append(c, atras());
+      if (o.riesgo) {
+        const s = crear('a', 'btn btn-outline', 'Salir rápido');
+        s.href = 'https://www.google.com/';
+        s.rel = 'noreferrer';
+        s.addEventListener('click', e => { e.preventDefault(); irAFuera(s.href); });
+        r.append(s);
+      }
+      c.append(r, crear('p', 'guia__nota', 'Esta guía no analiza su caso ni determina qué procede. Hay excepciones que dependen de hechos que aquí no se preguntan.'));
+      panel.append(c, controles());
     };
     preguntar(datos.inicio);
   });

@@ -1,0 +1,34 @@
+[
+ {
+  "id": "FAM-AGE-001",
+  "archivo": "src/pages/agendar-consulta.astro",
+  "pagina": "/agendar-consulta",
+  "tema": "Formulario y plazos",
+  "texto": "Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "excepciones": "Conclusión por ausencia: ninguna norma consultada da a un formulario privado efecto sobre los plazos procesales, que dependen de la notificación.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AGE-002",
+  "archivo": "src/pages/agendar-consulta.astro",
+  "pagina": "/agendar-consulta",
+  "tema": "Confidencialidad del formulario",
+  "texto": "Agende una consulta confidencial",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El formulario se transmite por correo. El secreto de CDJ art. 41 no se afirma como efecto del formulario: requiere análisis de la relación concreta.",
+  "consultado": "2026-11-05"
+ }
+]

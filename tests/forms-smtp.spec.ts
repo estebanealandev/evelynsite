@@ -19,8 +19,8 @@ test('envía por SMTP y neutraliza la inyección de cabeceras', async ({ request
     }
   });
   await new Promise<void>(r => smtp.listen(2526, '127.0.0.1', () => r()));
-  const srv = spawn('node', ['./dist/server/entry.mjs'], {
-    env: { ...process.env, HOST: '127.0.0.1', PORT: '4327', MAIL_MODE: 'smtp', SMTP_HOST: '127.0.0.1', SMTP_PORT: '2526', MAIL_TO: 'destino@example.test', MAIL_FROM: 'sitio@example.test' },
+  const srv = spawn('node', ['scripts/servidor.mjs'], {
+    env: { ...process.env, HOST: '127.0.0.1', PORT: '4327', MAIL_MODE: 'smtp', SMTP_HOST: '127.0.0.1', SMTP_ALLOW_PLAINTEXT: 'true', SMTP_PORT: '2526', MAIL_TO: 'destino@example.test', MAIL_FROM: 'sitio@example.test' },
     stdio: 'ignore'
   });
   try {

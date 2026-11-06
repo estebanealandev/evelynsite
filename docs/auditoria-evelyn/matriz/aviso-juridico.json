@@ -1,0 +1,116 @@
+[
+ {
+  "id": "FAM-AVI-001",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Aceptación del asunto",
+  "texto": "no crea, por sí solo, una relación profesional",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "37"
+    ],
+    "cita": "son libres de aceptar o rechazar asuntos en que se solicite su intervención"
+   }
+  ],
+  "excepciones": "La relación se forma por acuerdo; el CDJ regula su aceptación, sin fijar una forma.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-002",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Plazos",
+  "texto": "Enviar un formulario no suspende ni interrumpe los plazos de un proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "excepciones": "Conclusión por ausencia: ninguna norma consultada da a un formulario privado efecto sobre los plazos procesales, que dependen de la notificación.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-003",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Sin garantía",
+  "texto": "Nada de lo publicado debe entenderse como promesa o garantía de un resultado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "33"
+    ],
+    "cita": "No deberán asegurar nunca el éxito ni magnificar sus dificultades"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-004",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Publicidad profesional",
+  "texto": "que pide anunciar los servicios de forma digna, con moderación y evitando el autoelogio o la información que induzca a error",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "30"
+    ],
+    "cita": "deberán hacerlo de forma digna, moral, con moderación, evitando el auto elogio o cualquier otra información que induzca a error"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-005",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Dominio público",
+  "texto": "Las normas citadas son de dominio público.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Depende de la legislación de derechos de autor, fuera del catálogo y no leída.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-006",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Originalidad",
+  "texto": "Los textos, la identidad gráfica y las imágenes de este sitio son originales.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "No consta confirmación de autoría y titularidad.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-AVI-007",
+  "archivo": "src/pages/aviso-juridico.astro",
+  "pagina": "/aviso-juridico",
+  "tema": "Suscripción",
+  "texto": "Visitar este sitio, suscribirse o enviar un formulario",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "La suscripción se retira del sitio.",
+  "consultado": "2026-11-05"
+ }
+]

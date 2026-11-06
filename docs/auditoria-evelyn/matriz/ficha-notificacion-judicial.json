@@ -1,0 +1,310 @@
+[
+ {
+  "id": "FAM-FNO-001",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Tipos de proceso",
+  "texto": "El artículo 212 del Código Procesal de Familia distingue procesos resolutivos familiares, de protección cautelar, de petición unilateral, resolutivos especiales y de ejecución de resoluciones",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "212"
+    ],
+    "cita": "Toda pretensión de carácter familiar se tramitará, según su naturaleza, en los siguientes procesos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-002",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Plazo para contestar",
+  "texto": "ocho días hábiles para contestar la demanda en el proceso resolutivo familiar (artículo 223)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "223"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "concediendo un traslado por un plazo de ocho días hábiles a fin de que proceda a dar contestación de forma escrita"
+   }
+  ],
+  "excepciones": "Solo para el proceso resolutivo familiar; debe confirmarse con la resolución.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-003",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Oposición a sentencia anticipada",
+  "texto": "cinco días para oponerse a una sentencia anticipada de alimentos (artículo 271)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "Las partes podrán oponerse a la sentencia anticipada en el plazo de cinco días"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-004",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Cómputo",
+  "texto": "Salvo excepción expresa, los plazos corren desde el día hábil siguiente a aquel en que se notificó a todas las partes (artículo 73)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-005",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Ley de notificaciones",
+  "texto": "El artículo 84 del Código Procesal de Familia remite a la Ley N.º 8687, de Notificaciones Judiciales, salvo lo que el propio Código disponga",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "84"
+    ],
+    "cita": "Salvo lo dispuesto en esta sección, las comunicaciones judiciales en los procesos contenidos en este Código se regularán conforme a lo preceptuado en la Ley N.º 8687"
+   }
+  ],
+  "excepciones": "No se afirma el contenido de la Ley 8687, que está fuera del catálogo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-006",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Notificación personal",
+  "texto": "Su artículo 87 pide notificación personal o en casa de habitación para ciertas resoluciones, como la primera que ordena el depósito de cuotas alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "87"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "La primera resolución que ordene el depósito de cuotas alimentarias"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-007",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Contenido de la contestación",
+  "texto": "el artículo 221 pide referirse a cada uno de los hechos y pretensiones y ofrecer la prueba, aportando la documental",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "221"
+    ],
+    "cita": "deberá referirse a cada uno de los hechos y pretensiones; además, deberá ofrecer la prueba aportando la de tipo documental"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-008",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Excepciones",
+  "texto": "Las excepciones se oponen con la contestación (artículo 224)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "224"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Las excepciones procesales y materiales deberán oponerse con la contestación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-009",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Pretensiones propias",
+  "texto": "las pretensiones propias contra la parte actora se formulan en ese momento (artículo 228)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "228"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Al momento de contestar la demanda, la parte accionada podrá formular pretensiones contra la parte actora"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-010",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Falta de contestación",
+  "texto": "el artículo 226 prevé que la demanda se tenga por no contestada y que el proceso continúe, con posibilidad de apersonarse después y tomarlo en el estado en que se encuentre",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "cita": "se tendrá por no contestada y se continuará con los procedimientos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "La parte demandada podrá apersonarse al proceso en cualquier momento y tomarlo en el estado en que se encuentre"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-011",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Sentencia sin audiencia",
+  "texto": "En algunos divorcios, separaciones judiciales y reconocimientos de unión de hecho sin hijas o hijos menores de edad o con discapacidad puede dictarse sentencia sin audiencia inicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se podrá emitir sentencia sin necesidad de convocar a la audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla"
+   }
+  ],
+  "excepciones": "No aplica si se formulan peticiones de nulidad, de inoponibilidad, de responsabilidad de terceros o de daños y perjuicios.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-012",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Sin oposición en alimentos",
+  "texto": "si nadie se opone a tiempo a la sentencia anticipada, el artículo 272 prevé continuar con la ejecución del cobro",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "272"
+    ],
+    "cita": "se continuarán los procedimientos de ejecución de cobro de los montos allí establecidos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-013",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Patrocinio letrado",
+  "texto": "El artículo 50 del Código Procesal de Familia exige comparecer con patrocinio letrado, salvo excepciones como los procesos de pensiones alimentarias, de petición unilateral y de protección cautelar, y los resolutivos familiares que no producen cosa juzgada material",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-014",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Comparecencia en medidas de protección",
+  "texto": "La persona contra quien se dictaron puede pedir una comparecencia dentro de los cinco días siguientes a la notificación del auto inicial (artículo 12)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "En el caso en que la presunta persona agresora lo solicite por escrito o verbalmente, dentro de los cinco días siguientes a la notificación del auto inicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-FNO-015",
+  "archivo": "src/content/fichas/recibi-una-notificacion-judicial.md",
+  "pagina": "/orientacion/recibi-una-notificacion-judicial",
+  "tema": "Apelación de medidas",
+  "texto": "La resolución posterior puede apelarse en tres días hábiles, y la apelación no suspende la ejecución de las medidas (artículo 15)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "La resolución del juzgado podrá ser apelada en el término de tres días hábiles"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "el admitir la apelación no suspenderá la ejecución de las medidas decretadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ }
+]

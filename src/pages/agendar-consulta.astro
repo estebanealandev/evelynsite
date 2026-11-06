@@ -3,14 +3,14 @@ import Base from '../layouts/Base.astro';
 import PageHero from '../components/ui/PageHero.astro';
 import ConsultaForm from '../components/forms/ConsultaForm.astro';
 const pasos = [
-  { titulo: 'Cuente su consulta', texto: 'Complete el formulario con una descripción general del asunto. No es necesario adjuntar documentos ni incluir detalles íntimos.' },
-  { titulo: 'Revisión de la solicitud', texto: 'La solicitud se revisa para determinar si puede atenderse y cómo continuar. Enviarla no crea, por sí solo, una relación profesional.' },
-  { titulo: 'Conversación reservada', texto: 'Si corresponde, se coordina una conversación para identificar los aspectos principales de su situación y aclarar el alcance y las condiciones de una posible asesoría.' }
+  { titulo: 'Envíe la solicitud', texto: 'Indique el tipo de asunto y escriba una descripción general de hasta 1200 caracteres. El formulario no admite documentos y no hace falta incluir detalles íntimos.' },
+  { titulo: 'Revisión de la solicitud', texto: 'La solicitud se revisa para determinar si puede atenderse y cómo continuar. Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.' },
+  { titulo: 'Conversación', texto: 'Si el asunto puede atenderse, se coordina una conversación para revisar hechos, documentos y plazos, y para aclarar el alcance y las condiciones de una posible asesoría.' }
 ];
 const crumbs = [{ label: 'Agendar una consulta' }];
 ---
-<Base title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica mediante un formulario reservado. Revise qué esperar y cómo se tratan sus datos." crumbs={crumbs}>
-  <PageHero titulo="Agende una consulta *confidencial*" lede="Cuéntenos brevemente su situación. Una consulta permite conocer su caso y las opciones que contempla la legislación costarricense." crumbs={crumbs} />
+<Base title="Agendar una consulta" description="Solicite una consulta sobre derecho de familia en Costa Rica por formulario. Revise qué ocurre después, qué datos se piden y cómo se tratan." crumbs={crumbs}>
+  <PageHero titulo="Solicite una *consulta*" lede="Indique el tipo de asunto y descríbalo de forma general. La consulta permite revisar su situación y las opciones que contempla la legislación costarricense." crumbs={crumbs} />
 
   <section class="section" id="formulario">
     <div class="wrap g12" style="row-gap:44px">

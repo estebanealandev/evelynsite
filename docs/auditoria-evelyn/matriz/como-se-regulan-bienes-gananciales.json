@@ -1,0 +1,564 @@
+[
+ {
+  "id": "FAM-CBG-001",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Derecho de participación",
+  "texto": "cada cónyuge tiene derecho a participar en la mitad del valor neto de los bienes gananciales que consten en el patrimonio del otro",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-002",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Lista cerrada",
+  "texto": "Son gananciales los bienes que no entran en la lista de exclusiones de ese mismo artículo, porque la norma dice que «únicamente» esos no lo son",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Únicamente, no son gananciales los siguientes bienes, sobre los cuales no existe el derecho de participación",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "excepciones": "Lectura del adverbio de la norma. Conviene confirmarla.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-003",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Dominio durante el matrimonio",
+  "texto": "sin capitulaciones, cada cónyuge dispone libremente de sus bienes (artículo 40)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "40"
+    ],
+    "cita": "cada cónyuge queda dueño y dispone libremente de los bienes que tenía al contraer matrimonio de los que adquiera durante él por cualquier título y de los frutos de unos y otros"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-004",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Momento",
+  "texto": "El derecho nace al disolverse o declararse nulo el matrimonio, al declararse la separación judicial o al celebrarse capitulaciones después de las nupcias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-005",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Título gratuito",
+  "texto": "Quedan fuera los bienes introducidos al matrimonio o adquiridos durante él de esta forma",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "1) Los que fueran introducidos al matrimonio, o adquiridos durante él, por título gratuito o por causa aleatoria",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "excepciones": "El ejemplo de donación es de esta página, no del artículo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-006",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Valores propios",
+  "texto": "que los valores sean propios de uno de los cónyuges y que las capitulaciones matrimoniales los hayan destinado a esa compra",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "2) Los comprados con valores propios de uno de los cónyuges, destinados a ello en las capitulaciones matrimoniales",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-007",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Título anterior",
+  "texto": "El elemento decisivo es que la causa o el título precedan a la boda. El artículo no trata de forma expresa los pagos o las mejoras posteriores, y sus efectos requieren análisis",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "3) Aquellos cuya causa o título de adquisición precedió al matrimonio",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-008",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Subrogación",
+  "texto": "Son los muebles o inmuebles que fueron subrogados a otros propios de alguno de los cónyuges",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "4) Los muebles o inmuebles que fueron subrogados a otros propios de alguno de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-009",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Separación de hecho",
+  "texto": "Se excluyen los adquiridos durante la separación de hecho de los cónyuges",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "5) Los adquiridos durante la separación de hecho de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-010",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Liquidación anticipada",
+  "texto": "El tribunal puede autorizarla, a solicitud de un cónyuge, si comprueba de modo indubitable que sus intereses corren el riesgo de ser comprometidos por la mala gestión del otro o por actos que amenacen burlarlo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Podrá procederse a la liquidación anticipada de los bienes gananciales cuando el tribunal, previa solicitud de uno de los cónyuges, compruebe, de modo indubitable, que los intereses de este corren el riesgo de ser comprometidos por la mala gestión de su consorte o por actos que amenacen burlarlo",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-011",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Renuncia",
+  "texto": "Las capitulaciones matrimoniales o un convenio en escritura pública permiten renunciar a las ventajas de la distribución final",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Se permite renunciar en las capitulaciones matrimoniales o en un convenio que deberá hacerse en escritura pública, a las ventajas de la distribución final",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-012",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Anotación",
+  "texto": "En el proceso donde se discute la ganancialidad de bienes inmuebles, muebles inscribibles o derechos de concesión, se ordena anotarlos en el registro correspondiente (artículo 141)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "En el proceso donde se discuta la declaratoria del derecho de ganancialidad de bienes inmuebles, muebles inscribibles o derechos de concesión de órganos administrativos, que presumiblemente puedan ser considerados de esa forma, se ordenará la anotación de estos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-013",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Muebles no inscritos",
+  "texto": "La autoridad judicial puede inventariarlos, ordenar a quien los posea no enajenarlos ni gravarlos sin consentimiento del despacho y disponer su depósito judicial (artículo 143)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "143"
+    ],
+    "cita": "la autoridad judicial podrá apersonarse al lugar en donde se encuentran, llevar a cabo un inventario detallado de dichos bienes y ordenar, a quien los posea, la obligación de no enajenarlos ni gravarlos sin consentimiento del despacho",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "143"
+    ],
+    "cita": "La autoridad jurisdiccional también podrá ordenar el depósito judicial de bienes",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-014",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Embargo preventivo",
+  "texto": "Puede pedirse en procesos con pretensiones patrimoniales para impedir que se eluda la responsabilidad mediante el ocultamiento o la distracción de bienes, sin garantía pecuniaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "En el trámite de procesos con pretensiones patrimoniales, a fin de impedir que la parte demandada, mediante el ocultamiento o la distracción de bienes, pueda eludir su responsabilidad, se podrá pedir el embargo preventivo de bienes, sin que se exija garantía pecuniaria alguna"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-015",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Límite del embargo",
+  "texto": "Si se pide sobre una propiedad y afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "la autoridad judicial deberá valorar adecuadamente si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-016",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Solicitud",
+  "texto": "Establecido en sentencia el derecho de ganancialidad e individualizados los bienes, cualquiera de las partes pide la ejecución, indica los bienes y ofrece la prueba para fijar su valor neto",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "Una vez establecido en sentencia el derecho de ganancialidad y cuando se hayan individualizado los bienes sobre los cuales recae de forma concreta, cualquiera de las partes interesadas solicitará la ejecución"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-017",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Audiencia",
+  "texto": "La otra parte tiene tres días para proponer otra prueba sobre el valor neto",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "se dará audiencia a la otra por tres días para proponer cualquier otro tipo de prueba sobre ese aspecto del valor neto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-018",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Pericia",
+  "texto": "Si es necesario y no hay acuerdo sobre el valor del bien, se incluye la pericial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "incluyendo, si fuera necesario y no hay acuerdo sobre el valor del bien, la de tipo pericial para la valoración del bien"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-019",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Conciliación",
+  "texto": "Rendidos el peritaje y los informes, se convoca a una audiencia de conciliación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "Rendidos el peritaje y los informes necesarios se convocará a una audiencia de conciliación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-020",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Resolución",
+  "texto": "Sin acuerdo, la autoridad judicial emite dentro del tercer día la resolución final sobre el valor del derecho, las obligaciones pecuniarias, su forma y un plazo razonable de pago",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "la autoridad judicial emitirá, dentro del tercer día, la resolución final sobre el valor del derecho reclamado, las obligaciones pecuniarias que se asumen, su forma y el plazo razonable de pago"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-021",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Cobro",
+  "texto": "Si no se cumple, la persona acreedora puede pedir el cobro ejecutorio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "podrá pedir el cobro de la suma indicada mediante el procedimiento de cobro ejecutorio"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-022",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Remate",
+  "texto": "Si no hay hijos o hijas menores de edad, o quien tendrá su custodia no tiene interés en quedarse con el bien y pagar al otro, y ambas partes quieren la titularidad completa sin acuerdo en otra solución, se ordena el remate",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "322"
+    ],
+    "cita": "Tratándose de bienes en copropiedad de la pareja, no existiendo hijos o hijas menores de edad o existiendo no hay interés en el que ostentará la custodia de ellos en permanecer con el bien y otorgar pago al otro cónyuge"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "322"
+    ],
+    "cita": "si ambas partes tienen interés en la titularidad completa del bien sin que exista acuerdo en otra solución"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-023",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Base del remate",
+  "texto": "La base es la acordada o, en su defecto, la del dictamen pericial, salvo que existan gravámenes hipotecarios, y no se rebaja ante remates fracasados",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "322"
+    ],
+    "cita": "la autoridad ordenará el remate con la base del acuerdo de partes o, en su defecto, del dictamen pericial pedido, salvo que existan gravámenes hipotecarios, sin posibilidad de rebajar la base ante los remates fracasados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-024",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Anotación y embargo",
+  "texto": "Si ya existe anotación del proceso resolutivo, no hace falta embargar el bien: basta con la certificación registral que muestre la preferencia (artículo 330)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "330"
+    ],
+    "cita": "No será necesario decretar embargo de los bienes sobre los cuales recayó el monto de derecho de ganancialidad, si ya existe anotación en virtud del proceso resolutivo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-025",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Orden del producto",
+  "texto": "El producto del remate se liquida después de las deudas preferentes, en este orden: intereses y costas, gastos de cuido y mantenimiento si hubo depositario judicial, y capital adeudado por el derecho de ganancialidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "333"
+    ],
+    "cita": "1) Intereses y costas. 2) Gastos de cuido y mantenimiento del bien cuando se nombró depositario mediante resolución judicial. 3) Capital adeudado por el derecho de ganancialidad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-026",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Preferencia de pago",
+  "texto": "quien tenga el cuidado personal de los hijos o hijas menores de edad tiene preferencia para el pago del monto ganancial. La regla también vale si el bien está en copropiedad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "tenga el cuidado personal de los hijos o las hijas menores de edad, y se trata de un bien inmueble que se utiliza como habitación familiar, tendrá preferencia para el pago del monto que corresponde como ganancial. La misma regla se aplicará, cuando dicho bien se encuentre en copropiedad",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-027",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Unión de hecho",
+  "texto": "La unión de hecho que cumple los requisitos surte los efectos patrimoniales propios del matrimonio (artículo 245), y su reconocimiento judicial los retrotrae a la fecha en que se inició (artículo 247)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CBG-028",
+  "archivo": "src/content/articulos/como-se-regulan-bienes-gananciales.md",
+  "pagina": "/blog/como-se-regulan-bienes-gananciales",
+  "tema": "Tono",
+  "texto": "Tanto la fecha de adquisición como el origen de los fondos y la separación de hecho pueden influir en el resultado.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Advertencia genérica. Sustituida por el análisis de cada exclusión.",
+  "consultado": "2026-11-05"
+ }
+]

@@ -7,11 +7,11 @@ import { fuentes } from '../lib/sources';
 const p = site.privacy;
 const pendiente = 'Dato por completar antes de la publicación.';
 // Impide publicar una política con datos sin definir.
-if (site.indexable && (!p.controller || !p.email || !p.providers || !p.retention || !p.transfers)) {
+if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers || !p.retention || !p.transfers)) {
   throw new Error('PUBLIC_SITE_READY=true requiere completar los datos de privacidad en las variables de entorno.');
 }
 ---
-<Base title="Política de privacidad" description="Cómo se tratan los datos personales recopilados en este sitio, conforme a la Ley N.º 8968 de Costa Rica y su reglamento." crumbs={[{ label: 'Política de privacidad' }]}>
+<Base title="Política de privacidad" description="Qué datos recoge este sitio, para qué, quién los recibe y qué se guarda en el navegador, según la Ley N.º 8968 de Costa Rica y su reglamento." crumbs={[{ label: 'Política de privacidad' }]}>
   <PageHero titulo="Política de privacidad" crumbs={[{ label: 'Política de privacidad' }]} />
   <section class="section">
     <div class="wrap"><div class="legal">
@@ -19,41 +19,54 @@ if (site.indexable && (!p.controller || !p.email || !p.providers || !p.retention
 
       <h2>Responsable</h2>
       <p>Responsable de la base de datos: {p.controller ?? <span class="pending">{pendiente}</span>}{p.controllerId && ` (${p.controllerId})`}.</p>
+      <p>Dirección: {p.address ?? <span class="pending">{pendiente}</span>}</p>
       <p>Contacto para privacidad: {p.email ? <a href={`mailto:${p.email}`}>{p.email}</a> : <span class="pending">{pendiente}</span>}</p>
 
       <h2>Datos que se recopilan</h2>
+      <p>Las solicitudes enviadas por el formulario llegan como mensajes al correo del responsable. Esos mensajes forman la base de datos a la que se refiere esta política. El sitio no tiene cuentas de usuario ni otros formularios.</p>
       <ul>
-        <li><strong>Formulario de consulta:</strong> nombre completo, correo electrónico, teléfono (opcional), tipo de consulta y mensaje.</li>
-        <li><strong>Suscripción:</strong> correo electrónico.</li>
-        <li><strong>Datos técnicos:</strong> para limitar envíos abusivos, el servidor conserva temporalmente en memoria una huella (hash) de la dirección IP, que no se escribe en disco.</li>
+        <li><strong>Formulario de consulta:</strong> tipo de asunto, mensaje de hasta 1200 caracteres, nombre, correo electrónico, teléfono (opcional) y constancia de su consentimiento.</li>
+        <li><strong>Campos técnicos del formulario:</strong> un campo trampa y la hora de inicio del llenado, que sirven para detectar envíos automatizados. No se guardan ni se incluyen en el mensaje.</li>
+        <li><strong>Dirección IP:</strong> para limitar envíos repetidos, el servidor calcula una huella SHA-256 de la dirección IP y la conserva en memoria con la hora de los intentos. No se escribe en disco y se pierde al reiniciar el servidor.</li>
       </ul>
-      <p>Le pedimos no incluir datos sensibles en el formulario, como información de salud, datos de personas menores de edad o documentos. Según el artículo 9 de la Ley N.º 8968, ninguna persona está obligada a suministrar datos sensibles.</p>
+      <p>El mensaje es texto libre y un asunto de familia puede revelar información íntima. Basta una descripción general: se solicita no incluir datos sensibles, como información de salud, ni nombres de personas menores de edad, números de cédula o de expediente, o detalles íntimos. El formulario no admite archivos. Según el artículo 9 de la Ley N.º 8968, ninguna persona está obligada a suministrar datos sensibles.</p>
 
       <h2>Finalidades</h2>
       <ul>
-        <li>Recibir y responder su solicitud de consulta.</li>
-        <li>Enviar contenidos informativos, si se suscribió.</li>
-        <li>Proteger el formulario contra envíos automatizados y abusivos.</li>
+        <li>Recibir y responder su solicitud de consulta, y determinar si el asunto puede atenderse.</li>
+        <li>Proteger el formulario contra envíos automatizados y repetidos.</li>
       </ul>
+      <p>Los datos no se tratan de manera incompatible con estos fines. Este sitio no envía boletines ni publicidad.</p>
 
       <h2>Consentimiento y carácter de las respuestas</h2>
-      <p>El tratamiento se basa en su consentimiento informado, otorgado al marcar la casilla del formulario. Los campos marcados como obligatorios son necesarios para atender la solicitud. Si no los completa, no será posible procesarla. Puede revocar su consentimiento mediante el contacto de privacidad.</p>
+      <p>El tratamiento se basa en su consentimiento expreso, que se otorga en forma electrónica al marcar la casilla del formulario. El mensaje que recibe el responsable deja constancia de esa marca.</p>
+      <p>Son obligatorios el tipo de asunto, el mensaje, el nombre, el correo y el consentimiento. El teléfono es facultativo. Si falta un dato obligatorio, la solicitud no se envía y no podrá atenderse por este medio.</p>
+      <p>Puede revocar su consentimiento en cualquier momento mediante el contacto de privacidad. La revocación no tiene efecto retroactivo.</p>
 
       <h2>Destinatarios y proveedores</h2>
-      <p>Las solicitudes se envían por correo electrónico a quien administra este sitio, a través del proveedor de correo configurado. Quienes consultan esos datos son las personas encargadas de atender la solicitud. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
-      <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies. Si elige pausar las animaciones, esa preferencia se guarda solo en su navegador.</p>
+      <p>Las solicitudes se envían por correo electrónico, mediante SMTP con TLS exigido, a la dirección que define el responsable. Pueden consultarlas el responsable y quienes este designe para atender la solicitud. Los proveedores técnicos intervienen en lo necesario para prestar su servicio. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
+      <p>Por defecto, el sitio no envía un acuse automático a su correo. Si se activa, ese mensaje no repite el contenido de la solicitud.</p>
+
+      <h2>Qué se guarda en su navegador</h2>
+      <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies propias.</p>
+      <p>Solo guarda una preferencia en el almacenamiento local del navegador (localStorage, clave «movimiento») si elige «Pausar animaciones». Se elimina al reanudarlas y no se envía al servidor. El formulario no guarda borradores, y el orientador de áreas no guarda ni envía sus respuestas.</p>
+      <p>Los enlaces a fuentes oficiales y el botón «Salir rápido», donde aparece, llevan a sitios de terceros con sus propias condiciones.</p>
 
       <h2>Conservación</h2>
-      <p>El sitio no guarda las solicitudes en una base de datos propia: se remiten por correo. El plazo de conservación de esos mensajes es: {p.retention ?? <span class="pending">{pendiente}</span>}</p>
+      <p>El sitio no guarda las solicitudes en un sistema propio: se remiten por correo y permanecen en el buzón del responsable. Según el artículo 6 de la Ley N.º 8968, el responsable debe eliminar los datos que hayan dejado de ser pertinentes o necesarios para la finalidad por la que se recibieron. El plazo de conservación de esos mensajes es: {p.retention ?? <span class="pending">{pendiente}</span>}</p>
 
-      <h2>Seguridad</h2>
-      <p>El sitio valida y limpia la información en el servidor, limita las solicitudes repetidas y no registra el contenido de los formularios ni datos personales en sus registros técnicos. El cifrado de la conexión (HTTPS) debe estar habilitado en el alojamiento de producción.</p>
+      <h2>Seguridad y confidencialidad</h2>
+      <p>El sitio valida y limpia la información en el servidor y limita las solicitudes repetidas. Sus registros técnicos anotan solo el tipo de fallo, sin el contenido de los formularios ni datos personales.</p>
+      <p>Antes de enviar datos, compruebe que la dirección del sitio comience con https. Ningún medio electrónico elimina todo riesgo, por lo que conviene limitar el mensaje a lo necesario.</p>
+      <p>Según el artículo 11 de la Ley N.º 8968, la persona responsable y quienes intervengan en el tratamiento están obligadas al secreto profesional o funcional, aun después de finalizar su relación con la base de datos. Una decisión judicial puede relevar de ese deber en lo estrictamente necesario.</p>
 
       <h2>Sus derechos</h2>
-      <p>Usted tiene derecho a acceder a sus datos, rectificarlos o suprimirlos y a consentir su cesión (artículo 7 de la Ley N.º 8968). El responsable debe resolver de manera gratuita en el plazo de cinco días hábiles desde que recibe la solicitud. También puede acudir a la Agencia de Protección de Datos de los Habitantes (Prodhab).</p>
+      <p>Usted tiene derecho a acceder a sus datos, a pedir su rectificación o supresión y a consentir su cesión (artículo 7 de la Ley N.º 8968). Para ejercerlos, escriba al contacto de privacidad e indique un medio para recibir notificaciones. Puede requerirse acreditar su identidad o representación.</p>
+      <p>El responsable debe atender la solicitud de manera gratuita y resolver en el plazo de cinco días hábiles. El artículo 18 del Reglamento cuenta ese plazo desde el día siguiente al recibido y lo interrumpe si se requiere información adicional. La supresión tiene excepciones, como los datos que deban mantenerse por disposición legal o resolución judicial (artículo 26 del Reglamento).</p>
+      <p>También puede acudir a la Agencia de Protección de Datos de los Habitantes (Prodhab), mediante el procedimiento que prevé el artículo 13 de la Ley N.º 8968.</p>
 
       <h2>Transferencias</h2>
-      <p>No se venden ni ceden datos a terceros. Almacenamiento fuera de Costa Rica por parte de proveedores: {p.transfers ?? <span class="pending">{pendiente}</span>}</p>
+      <p>El sitio no vende ni cede datos a terceros. Una transferencia requeriría su autorización expresa (artículo 14 de la Ley N.º 8968). Según el artículo 40 del Reglamento, no se considera transferencia el traslado a un encargado, proveedor de servicios o intermediario tecnológico. Almacenamiento fuera de Costa Rica por parte de proveedores: {p.transfers ?? <span class="pending">{pendiente}</span>}</p>
     </div></div>
   </section>
 </Base>

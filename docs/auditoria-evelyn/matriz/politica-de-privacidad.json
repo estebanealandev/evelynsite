@@ -1,0 +1,432 @@
+[
+ {
+  "id": "FAM-PRI-001",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Datos sensibles",
+  "texto": "Según el artículo 9 de la Ley N.º 8968, ninguna persona está obligada a suministrar datos sensibles",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Ninguna persona estará obligada a suministrar datos sensibles"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-002",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Adecuación al fin",
+  "texto": "Los datos no se tratan de manera incompatible con estos fines",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "6"
+    ],
+    "cita": "no serán tratados posteriormente de manera incompatible con dichos fines"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-003",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Consentimiento",
+  "texto": "El tratamiento se basa en su consentimiento expreso, que se otorga en forma electrónica al marcar la casilla del formulario",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Este consentimiento deberá constar por escrito, ya sea en un documento físico o electrónico"
+   },
+   {
+    "norma": "R37554",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Tratándose de consentimiento recabado en línea, el responsable deberá poner a disposición un procedimiento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-004",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Carácter de las respuestas",
+  "texto": "Son obligatorios el tipo de asunto, el mensaje, el nombre, el correo y el consentimiento. El teléfono es facultativo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Del carácter obligatorio o facultativo de sus respuestas a las preguntas que se le formulen durante la recolección de los datos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-005",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Consecuencias de no responder",
+  "texto": "Si falta un dato obligatorio, la solicitud no se envía y no podrá atenderse por este medio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "5"
+    ],
+    "cita": "De las consecuencias de la negativa a suministrar los datos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-006",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Revocación",
+  "texto": "Puede revocar su consentimiento en cualquier momento mediante el contacto de privacidad. La revocación no tiene efecto retroactivo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "7"
+    ],
+    "cita": "En cualquier momento, el titular podrá revocar su consentimiento"
+   },
+   {
+    "norma": "R37554",
+    "articulos": [
+     "8"
+    ],
+    "cita": "La revocación del consentimiento no tendrá efecto retroactivo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-007",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Destinatarios",
+  "texto": "Pueden consultarlas el responsable y quienes este designe para atender la solicitud",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "5"
+    ],
+    "cita": "De los destinatarios de la información, así como de quiénes podrán consultarla"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-008",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Eliminación",
+  "texto": "el responsable debe eliminar los datos que hayan dejado de ser pertinentes o necesarios para la finalidad por la que se recibieron",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "6"
+    ],
+    "cita": "El responsable de la base de datos eliminará los datos que hayan dejado de ser pertinentes o necesarios, en razón de la finalidad para la cual fueron recibidos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-009",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Deber de secreto",
+  "texto": "la persona responsable y quienes intervengan en el tratamiento están obligadas al secreto profesional o funcional, aun después de finalizar su relación con la base de datos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "11"
+    ],
+    "cita": "La persona responsable y quienes intervengan en cualquier fase del tratamiento de datos personales están obligadas al secreto profesional o funcional, aun después de finalizada su relación con la base de datos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-010",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Relevo del secreto",
+  "texto": "Una decisión judicial puede relevar de ese deber en lo estrictamente necesario",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "11"
+    ],
+    "cita": "podrá ser relevado del deber de secreto por decisión judicial en lo estrictamente necesario"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-011",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Derechos",
+  "texto": "Usted tiene derecho a acceder a sus datos, a pedir su rectificación o supresión y a consentir su cesión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "7"
+    ],
+    "cita": "Se garantiza el derecho de toda persona al acceso de sus datos personales, rectificación o supresión de estos y a consentir la cesión de sus datos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-012",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Medio de notificaciones",
+  "texto": "indique un medio para recibir notificaciones",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "17"
+    ],
+    "cita": "se deberá indicar medio para recibir notificaciones"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-013",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Acreditación",
+  "texto": "Puede requerirse acreditar su identidad o representación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "15"
+    ],
+    "cita": "previa acreditación de la titularidad o de la representación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-014",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Plazo y gratuidad",
+  "texto": "El responsable debe atender la solicitud de manera gratuita y resolver en el plazo de cinco días hábiles",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "7"
+    ],
+    "cita": "de manera gratuita, y resolver en el sentido que corresponda en el plazo de cinco días hábiles"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-015",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Cómputo del plazo",
+  "texto": "El artículo 18 del Reglamento cuenta ese plazo desde el día siguiente al recibido y lo interrumpe si se requiere información adicional",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "18"
+    ],
+    "cita": "contados a partir del día siguiente en que la misma haya sido recibida por el responsable"
+   },
+   {
+    "norma": "R37554",
+    "articulos": [
+     "18"
+    ],
+    "cita": "El plazo señalado se interrumpirá en caso de que el responsable requiera información adicional al titular"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-016",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Excepciones a la supresión",
+  "texto": "La supresión tiene excepciones, como los datos que deban mantenerse por disposición legal o resolución judicial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "26"
+    ],
+    "cita": "Los datos deban ser mantenidos por disposición constitucional, legal o resolución de órgano judicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-017",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Prodhab",
+  "texto": "También puede acudir a la Agencia de Protección de Datos de los Habitantes (Prodhab), mediante el procedimiento que prevé el artículo 13",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "13"
+    ],
+    "cita": "Toda persona interesada tiene derecho a un procedimiento administrativo sencillo y rápido ante la Prodhab"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-018",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Transferencia",
+  "texto": "Una transferencia requeriría su autorización expresa",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L8968",
+    "articulos": [
+     "14"
+    ],
+    "cita": "solo podrán transferir datos contenidos en ellas cuando el titular del derecho haya autorizado expresa y válidamente tal transferencia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-019",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Proveedores",
+  "texto": "no se considera transferencia el traslado a un encargado, proveedor de servicios o intermediario tecnológico",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "R37554",
+    "articulos": [
+     "40"
+    ],
+    "cita": "No se considera trasferencia el traslado de datos personales del responsable de una base de datos a un encargado, proveedor de servicios o intermediario tecnológico"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-020",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Suscripción",
+  "texto": "Suscripción: correo electrónico.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El sitio retira la suscripción por decisión del lote.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-021",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Huella de IP",
+  "texto": "el servidor conserva temporalmente en memoria una huella (hash) de la dirección IP",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Impreciso frente a src/lib/rate-limit.ts: se precisa SHA-256, la hora de los intentos y su pérdida al reiniciar.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-022",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Cifrado",
+  "texto": "El cifrado de la conexión (HTTPS) debe estar habilitado en el alojamiento de producción.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Nota interna, no una descripción comprobada del sitio publicado.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PRI-023",
+  "archivo": "src/pages/politica-de-privacidad.astro",
+  "pagina": "/politica-de-privacidad",
+  "tema": "Cesión",
+  "texto": "No se venden ni ceden datos a terceros.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se limita a lo comprobable en el sitio y se añaden L8968 art. 14 y R37554 art. 40.",
+  "consultado": "2026-11-05"
+ }
+]

@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/ui/PageHero.astro';
+
+const fichas = (await getCollection('fichas')).sort((a, b) => a.data.orden - b.data.orden);
+const crumbs = [{ label: 'Guías por situación' }];
+---
+<Base title="Guías por situación" description="Qué información conviene reunir y qué aspectos legales suelen ser relevantes en situaciones frecuentes de derecho de familia en Costa Rica." crumbs={crumbs}>
+  <PageHero titulo="Guías por situación" lede="Qué conviene reunir y qué aspectos suelen ser relevantes. Son una ayuda para ordenar la información y no concluyen nada sobre un caso concreto." crumbs={crumbs} />
+  <div class="wrap section">
+    <ul class="fichas">
+      {fichas.map(f => (
+        <li><a href={`/orientacion/${f.id}`}><h2>{f.data.titulo}</h2><p>{f.data.resumen}</p></a></li>
+      ))}
+    </ul>
+    <p style="margin-top:28px;max-width:60ch">Si hay peligro inmediato, llame al 9-1-1. Este sitio no atiende emergencias. Sobre violencia y medidas de protección, consulte <a href="/servicios/proteccion-familiar">esta área</a>.</p>
+  </div>
+</Base>

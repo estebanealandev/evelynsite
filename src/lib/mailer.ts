@@ -19,7 +19,8 @@ export async function enviar(m: Mensaje) {
   const para = m.para ?? env('MAIL_TO');
 
   if (modo === 'outbox') {
-    if (process.env.NODE_ENV === 'production') throw new CorreoNoDisponible('outbox no se permite en producción');
+    // Guardar consultas en disco solo se admite en desarrollo y pruebas.
+    if (process.env.NODE_ENV === 'production' || env('PUBLIC_SITE_READY') === 'true') throw new CorreoNoDisponible('outbox no se permite en producción');
     const dir = path.resolve('var/outbox');
     await fs.mkdir(dir, { recursive: true });
     await fs.writeFile(path.join(dir, `${Date.now()}-${randomUUID()}.json`), JSON.stringify({ ...m, para }, null, 2), { mode: 0o600 });
@@ -32,6 +33,11 @@ export async function enviar(m: Mensaje) {
       host: env('SMTP_HOST'),
       port: Number(env('SMTP_PORT') || 587),
       secure: env('SMTP_SECURE') === 'true',
+      // Una consulta puede contener datos sensibles: sin cifrado no se envía.
+      requireTLS: env('SMTP_SECURE') !== 'true' && (env('SMTP_ALLOW_PLAINTEXT') !== 'true' || env('PUBLIC_SITE_READY') === 'true'),
+      connectionTimeout: 10_000,
+      greetingTimeout: 10_000,
+      socketTimeout: 20_000,
       auth: env('SMTP_USER') ? { user: env('SMTP_USER'), pass: env('SMTP_PASS') } : undefined
     });
     await tx.sendMail({ from: env('MAIL_FROM'), to: para, replyTo: m.responderA, subject: m.asunto, text: m.texto });

@@ -1,0 +1,129 @@
+[
+ {
+  "id": "FAM-SOB-001",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Publicidad profesional",
+  "texto": "Su artículo 30 pide moderación y evitar el autoelogio o la información que induzca a error",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "30"
+    ],
+    "cita": "deberán hacerlo de forma digna, moral, con moderación, evitando el auto elogio o cualquier otra información que induzca a error"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-002",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Vigencia del Código Procesal de Familia",
+  "texto": "El Código Procesal de Familia rige desde el 1 de octubre de 2024",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-003",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Reforma del Código Procesal de Familia",
+  "texto": "La Ley N.º 10558, de octubre de 2024, lo reformó",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Así reformado por el artículo 1° de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-004",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Reforma del artículo 48",
+  "texto": "la Ley N.º 10650, de febrero de 2025, cambió el artículo 48 del Código de Familia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Así reformado por el artículo único de la ley N° 10650 del 26 de febrero de 2025"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-005",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Vigencia imprecisa",
+  "texto": "El Código Procesal de Familia, vigente desde octubre de 2024",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se precisa la fecha y se añaden las reformas posteriores: L9747, nota de vigencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-006",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Autoelogio",
+  "texto": "Asesoría legal con criterio, sensibilidad y compromiso.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "CDJ art. 30.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-007",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Frase genérica",
+  "texto": "Ninguna familia es igual a otra.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Fórmula sin contenido; guía editorial.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-SOB-008",
+  "archivo": "src/pages/sobre-evelyn.astro",
+  "pagina": "/sobre-evelyn",
+  "tema": "Origen de la marca",
+  "texto": "Esta marca nace para ofrecer información y orientación en derecho de familia, con un trato cercano y responsable.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Dato no confirmado y autoelogio.",
+  "consultado": "2026-11-05"
+ }
+]

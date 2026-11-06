@@ -1,0 +1,856 @@
+[
+ {
+  "id": "FAM-GAN-001",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Dominio durante el matrimonio",
+  "texto": "Sin capitulaciones matrimoniales, cada cónyuge es dueño y dispone libremente de los bienes que tenía al casarse, de los que adquiera durante el matrimonio por cualquier título y de los frutos de unos y otros",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "40"
+    ],
+    "cita": "cada cónyuge queda dueño y dispone libremente de los bienes que tenía al contraer matrimonio de los que adquiera durante él por cualquier título y de los frutos de unos y otros"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-002",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Sin copropiedad automática",
+  "texto": "El matrimonio no crea por sí solo una copropiedad. El derecho recae sobre el valor neto de los bienes gananciales que consten en el patrimonio del otro cónyuge",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "40"
+    ],
+    "cita": "cada cónyuge queda dueño y dispone libremente de los bienes que tenía al contraer matrimonio de los que adquiera durante él por cualquier título y de los frutos de unos y otros"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-003",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Momento del derecho",
+  "texto": "Al disolverse o anularse el matrimonio, con la separación judicial o con capitulaciones posteriores",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-004",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Participación y gravamen",
+  "texto": "cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro. Tales bienes se consideran gravados de pleno derecho, a partir de la declaratoria, a las resultas de la liquidación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Tales bienes se considerarán gravados de pleno derecho, a partir de la declaratoria a las resultas de la respectiva liquidación",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-005",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Exclusiones",
+  "texto": "Únicamente no son gananciales: los introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria; los comprados con valores propios destinados a ello en capitulaciones; aquellos cuya causa o título de adquisición precedió al matrimonio; los muebles o inmuebles subrogados a otros propios; y los adquiridos durante la separación de hecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Únicamente, no son gananciales los siguientes bienes, sobre los cuales no existe el derecho de participación",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "1) Los que fueran introducidos al matrimonio, o adquiridos durante él, por título gratuito o por causa aleatoria",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "2) Los comprados con valores propios de uno de los cónyuges, destinados a ello en las capitulaciones matrimoniales",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "3) Aquellos cuya causa o título de adquisición precedió al matrimonio",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "4) Los muebles o inmuebles que fueron subrogados a otros propios de alguno de los cónyuges",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "5) Los adquiridos durante la separación de hecho de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-006",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Liquidación anticipada",
+  "texto": "El tribunal puede autorizarla a solicitud de uno de los cónyuges si comprueba, de modo indubitable, que sus intereses corren el riesgo de ser comprometidos por la mala gestión del otro o por actos que amenacen burlarlo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Podrá procederse a la liquidación anticipada de los bienes gananciales cuando el tribunal, previa solicitud de uno de los cónyuges, compruebe, de modo indubitable, que los intereses de este corren el riesgo de ser comprometidos por la mala gestión de su consorte o por actos que amenacen burlarlo",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-007",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Inmueble afectado",
+  "texto": "El inmueble afectado e inscrito no puede enajenarse ni gravarse sin el consentimiento de ambos cónyuges o disposición judicial, y tampoco puede ser perseguido por acreedores personales del propietario, salvo las excepciones del artículo 42",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "42"
+    ],
+    "cita": "no podrá ser enajenado ni gravado sino con el consentimiento de ambos cónyuges, si el propietario estuviere ligado en matrimonio; o por disposición judicial"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "42"
+    ],
+    "cita": "Tampoco podrá ser perseguido por acreedores personales del propietario, salvo en caso de cobro de deudas contraídas por ambos cónyuges, o por el propietario con anterioridad a la inscripción"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-008",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Preferencia de pago",
+  "texto": "quien tenga el cuidado personal de los hijos o hijas menores de edad tiene preferencia para el pago del monto ganancial, también si el bien está en copropiedad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "tenga el cuidado personal de los hijos o las hijas menores de edad, y se trata de un bien inmueble que se utiliza como habitación familiar, tendrá preferencia para el pago del monto que corresponde como ganancial. La misma regla se aplicará, cuando dicho bien se encuentre en copropiedad",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-009",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Sociedades",
+  "texto": "Cuando se pide declarar la ganancialidad de acciones o cuotas, o se discute un abuso de la figura societaria, la autoridad judicial ordena anotar la demanda en los libros sociales y puede prohibir o condicionar su traspaso (artículo 142 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "cuando lo que se pretenda sea la declaratoria de ganancialidad de las acciones o cuotas, la autoridad judicial ordenará anotar la demanda en los libros sociales que corresponda y, además, tendrá la facultad de prohibir o de condicionar el traspaso de acciones o cuotas",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "Cuando en un proceso se discuta si se ha realizado un abuso de la figura societaria para la inscripción de bienes que en realidad pertenecen a alguno de los cónyuges o convivientes",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "relacionadas": [
+   "/blog/familias-con-patrimonio-empresarial"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-010",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Unión de hecho: efectos",
+  "texto": "reconoce a la unión de hecho que cumple sus requisitos todos los efectos patrimoniales propios del matrimonio formalizado legalmente. El artículo 247 retrotrae esos efectos a la fecha en que se inició la unión. La acción tiene un plazo de caducidad de dos años (artículo 246)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/union-de-hecho"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-011",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Vía",
+  "texto": "Sin acuerdo, la aplicación del régimen patrimonial se discute en el proceso resolutivo familiar (artículo 222, inciso 3, del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "3) La aplicación del régimen patrimonial del matrimonio y de la unión de hecho"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-012",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Declaratoria y anotación",
+  "texto": "La sentencia establece el derecho de ganancialidad e individualiza los bienes sobre los que recae (artículo 320 del Código Procesal de Familia). Mientras se discute, los bienes inscribibles que presumiblemente sean gananciales se anotan en el registro (artículo 141)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "Una vez establecido en sentencia el derecho de ganancialidad y cuando se hayan individualizado los bienes sobre los cuales recae de forma concreta, cualquiera de las partes interesadas solicitará la ejecución"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "En el proceso donde se discuta la declaratoria del derecho de ganancialidad de bienes inmuebles, muebles inscribibles o derechos de concesión de órganos administrativos, que presumiblemente puedan ser considerados de esa forma, se ordenará la anotación de estos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-013",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Prueba del valor neto",
+  "texto": "Cualquiera de las partes solicita la ejecución, indica los bienes y ofrece prueba. La otra parte tiene tres días para proponer la suya. Si no hay acuerdo sobre el valor y es necesario, puede ordenarse un peritaje (artículo 320)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "Una vez establecido en sentencia el derecho de ganancialidad y cuando se hayan individualizado los bienes sobre los cuales recae de forma concreta, cualquiera de las partes interesadas solicitará la ejecución"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "se dará audiencia a la otra por tres días para proponer cualquier otro tipo de prueba sobre ese aspecto del valor neto"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "incluyendo, si fuera necesario y no hay acuerdo sobre el valor del bien, la de tipo pericial para la valoración del bien"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-014",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Conciliación",
+  "texto": "Rendidos el peritaje y los informes necesarios, se convoca a una audiencia de conciliación (artículo 321)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "Rendidos el peritaje y los informes necesarios se convocará a una audiencia de conciliación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-015",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Resolución y cobro",
+  "texto": "Sin acuerdo, la autoridad judicial fija dentro del tercer día el valor del derecho, las obligaciones, su forma y un plazo razonable de pago. Si no se cumple, puede pedirse el cobro ejecutorio (artículo 321)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "la autoridad judicial emitirá, dentro del tercer día, la resolución final sobre el valor del derecho reclamado, las obligaciones pecuniarias que se asumen, su forma y el plazo razonable de pago"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "podrá pedir el cobro de la suma indicada mediante el procedimiento de cobro ejecutorio"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-016",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Renuncia",
+  "texto": "Se permite renunciar a las ventajas de la distribución final en capitulaciones o en un convenio en escritura pública (artículo 41 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Se permite renunciar en las capitulaciones matrimoniales o en un convenio que deberá hacerse en escritura pública, a las ventajas de la distribución final",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-017",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Embargo preventivo",
+  "texto": "Puede pedirse embargo preventivo para impedir el ocultamiento o la distracción de bienes, sin garantía pecuniaria. Si se trata de una propiedad y el embargo afectaría a familiares en estado de vulnerabilidad, la autoridad judicial lo deniega (artículo 140 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "En el trámite de procesos con pretensiones patrimoniales, a fin de impedir que la parte demandada, mediante el ocultamiento o la distracción de bienes, pueda eludir su responsabilidad, se podrá pedir el embargo preventivo de bienes, sin que se exija garantía pecuniaria alguna"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "la autoridad judicial deberá valorar adecuadamente si la procedencia de ese embargo puede afectar los derechos de otras personas miembros de la familia, en especial personas en estado de vulnerabilidad y, de ser así, denegará la petición"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-018",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Remate",
+  "texto": "Sobre un bien en copropiedad, si ambas partes quieren la titularidad completa y no hay acuerdo, puede ordenarse el remate. Esto ocurre si no hay hijos o hijas menores de edad, o si quien tendrá su custodia no tiene interés en quedarse con el bien y pagar al otro cónyuge (artículo 322)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "322"
+    ],
+    "cita": "Tratándose de bienes en copropiedad de la pareja, no existiendo hijos o hijas menores de edad o existiendo no hay interés en el que ostentará la custodia de ellos en permanecer con el bien y otorgar pago al otro cónyuge"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "322"
+    ],
+    "cita": "la autoridad ordenará el remate con la base del acuerdo de partes o, en su defecto, del dictamen pericial pedido, salvo que existan gravámenes hipotecarios, sin posibilidad de rebajar la base ante los remates fracasados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-019",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Modificar capitulaciones",
+  "texto": "Las capitulaciones pueden modificarse después del matrimonio. Si hay personas menores de edad, se requiere autorización del tribunal (artículo 39 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "39"
+    ],
+    "cita": "Las capitulaciones matrimoniales pueden ser modificadas después del matrimonio. Si hay menores de edad, ha de serlo con autorización del Tribunal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-020",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Lista cerrada",
+  "texto": "El artículo 41 solo excluye lo que enumera",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Únicamente, no son gananciales los siguientes bienes, sobre los cuales no existe el derecho de participación",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-021",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Mitad del valor neto",
+  "texto": "Cada cónyuge participa en la mitad del valor neto de los bienes gananciales del otro. Se excluye lo que enumera el artículo 41, y el resultado puede pagarse en dinero, con la forma y el plazo que fije la autoridad judicial si no hay acuerdo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Al disolverse o declararse nulo el matrimonio, al declararse la separación judicial y al celebrarse, después de las nupcias, capitulaciones matrimoniales, cada cónyuge adquiere el derecho de participar en la mitad del valor neto de los bienes gananciales constatados en el patrimonio del otro",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "321"
+    ],
+    "cita": "la autoridad judicial emitirá, dentro del tercer día, la resolución final sobre el valor del derecho reclamado, las obligaciones pecuniarias que se asumen, su forma y el plazo razonable de pago"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-022",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Casa anterior",
+  "texto": "El artículo 41 excluye los bienes cuya causa o título de adquisición precedió al matrimonio. No trata de forma expresa los pagos o las mejoras hechos después de casarse, por lo que esos aspectos requieren análisis con la documentación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "3) Aquellos cuya causa o título de adquisición precedió al matrimonio",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-023",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Herencia o donación",
+  "texto": "excluye los bienes introducidos al matrimonio o adquiridos durante él por título gratuito o causa aleatoria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "1) Los que fueran introducidos al matrimonio, o adquiridos durante él, por título gratuito o por causa aleatoria",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "4) Los muebles o inmuebles que fueron subrogados a otros propios de alguno de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-024",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Separación de hecho",
+  "texto": "El artículo 41 lo excluye de los gananciales. Por eso puede ser decisivo probar cuándo inició la separación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "5) Los adquiridos durante la separación de hecho de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-025",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Afectación",
+  "texto": "La hace el propietario a favor de su cónyuge o conviviente, de los hijos e hijas menores de edad o mayores mientras requieran alimentos, y de ciertas personas adultas que pertenezcan al grupo familiar, habiten el inmueble y cumplan las condiciones del artículo 43",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "42",
+     "43",
+     "44",
+     "45",
+     "46",
+     "47"
+    ],
+    "cita": "(Afectación del inmueble familiar, privilegios)"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "43"
+    ],
+    "cita": "La afectación la hará el propietario a favor de su cónyuge o conviviente, si se tratara de unión de hecho, de los hijos e hijas menores o mayores de edad, estos últimos mientras requieran alimentos",
+    "reforma": "Ley 9580"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-026",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Forma de la afectación",
+  "texto": "Tanto la afectación como su cesación deben hacerse en escritura pública e inscribirse, y surten efecto desde la inscripción",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "43"
+    ],
+    "cita": "Tanto la afectación como su cesación deberán hacerse en escritura pública e inscribirse en el registro correspondiente, y surtirán efectos desde la fecha de su inscripción",
+    "reforma": "Ley 9580"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-027",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Extensión",
+  "texto": "Los beneficios se otorgan al inmueble urbano de hasta mil metros cuadrados y al rural de hasta diez mil (artículo 46)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "46"
+    ],
+    "cita": "al inmueble urbano con una cabida no mayor de mil metros cuadrados, o al rural cuya extensión no exceda de diez mil metros cuadrados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-028",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Cesación",
+  "texto": "la afectación cesa, entre otros casos, por mutuo acuerdo, por muerte de los beneficiarios o cese de la obligación alimentaria con los hijos e hijas mayores, por separación judicial o divorcio, por disposición judicial o cuando el bien deja de servir para habitación familiar o pequeña explotación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "47"
+    ],
+    "cita": "a) Por mutuo acuerdo de los cónyuges o convivientes en unión de hecho"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "47"
+    ],
+    "cita": "c) Por separación judicialmente declarada, o por divorcio. En este caso podrá disponerse la continuación mientras haya beneficiarios con derecho"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "47"
+    ],
+    "cita": "d) Cuando de hecho el bien dejare de servir para habitación familiar o pequeña explotación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-029",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Continuación",
+  "texto": "En la separación judicial o el divorcio puede disponerse que continúe mientras haya beneficiarios con derecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "47"
+    ],
+    "cita": "c) Por separación judicialmente declarada, o por divorcio. En este caso podrá disponerse la continuación mientras haya beneficiarios con derecho"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-030",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Capitulaciones",
+  "texto": "Las capitulaciones matrimoniales pueden otorgarse antes de casarse o durante el matrimonio, comprenden bienes presentes y futuros, y para ser válidas deben constar en escritura pública e inscribirse en el Registro Público (artículo 37 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Las capitulaciones matrimoniales pueden otorgarse antes de la celebración del matrimonio o durante su existencia y comprenden los bienes presentes y futuros. Este convenio, para ser válido, debe constar en escritura pública e inscribirse en el Registro Público"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-031",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Capitulaciones en unión de hecho",
+  "texto": "Una nota de SINALEVI bajo los artículos 37, 41 y 245 indica que la Sala Constitucional, en la resolución N.º 13920 del 9 de junio de 2023, reconoció el derecho a suscribir y registrar capitulaciones para las uniones de hecho, incluidas las parejas del mismo sexo",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   }
+  ],
+  "excepciones": "Se cita la nota de SINALEVI. No se leyó la sentencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-032",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Modelo extranjero",
+  "texto": "No debe asumirse que aplica la community property de otros países: el modelo costarricense es distinto.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Comparación con derecho extranjero sin fuente. Se sustituye por lo que dicen CF 40 y 41.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-033",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Denominación doctrinal",
+  "texto": "Un régimen de participación diferida",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Etiqueta doctrinal que no aparece en la norma.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-034",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Remate",
+  "texto": "Sobre bienes en copropiedad, sin acuerdo y bajo ciertas condiciones, puede ordenarse el remate (artículo 322)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Omitía las condiciones de CPF 322. Se detallan.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-035",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Empresas",
+  "texto": "La ley no contiene una regla única para empresas.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "CF no regula sociedades, pero CPF 141, 142 y 331 sí contienen reglas sobre acciones, cuotas y bienes de sociedades.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-GAN-036",
+  "archivo": "src/content/servicios/bienes-gananciales.md",
+  "pagina": "/servicios/bienes-gananciales",
+  "tema": "Cesación",
+  "texto": "La afectación puede cesar, entre otros motivos, por mutuo acuerdo, por separación judicial o divorcio, o por disposición judicial.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Omitía que puede disponerse la continuación mientras haya beneficiarios (CF 47 c).",
+  "consultado": "2026-11-05"
+ }
+]

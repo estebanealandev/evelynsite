@@ -1,0 +1,522 @@
+[
+ {
+  "id": "FAM-DMC-001",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Efectos desde la aprobación",
+  "texto": "el convenio tiene efectos una vez aprobado en la vía judicial o administrativa correspondiente",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "tendrá efectos una vez aprobado en la vía judicial o administrativa correspondiente"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "Así reformado por el artículo único de la ley N° 10650 del 26 de febrero de 2025"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-002",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Registro Civil",
+  "texto": "Si no existen hijos menores de edad comunes ni bienes a los cuales se haga referencia en el convenio, la escritura se presenta directamente para su aprobación e inscripción",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "no existen hijos menores de edad comunes ni bienes a los cuales se hace referencia en el convenio, la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-003",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Vía judicial",
+  "texto": "Si existen hijos menores de edad o bienes de referencia en el convenio, el trámite se verifica conforme al Código Procesal de Familia",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Si existieran hijos menores de edad o bienes de referencia en el convenio, el trámite se verificará judicialmente conforme al Código Procesal de Familia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-004",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Criterio del TSE",
+  "texto": "en el testimonio se debe indicar que no hay hijos menores de edad dentro del matrimonio ni bienes gananciales",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://www.tse.go.cr/pdf/requisitosytramites/Homologacion-de-acuerdos-de-divorcio-y-separacion.pdf",
+   "titulo": "Tribunal Supremo de Elecciones, Dirección General del Registro Civil. Ficha del trámite: Homologación de acuerdos de divorcio y separación de los cónyuges por mutuo consentimiento",
+   "cita": "En el testimonio se debe indicar que no tienen hijos menores de edad dentro del matrimonio, ni bienes gananciales y aportar las certificaciones de Bienes Muebles e Inmuebles emitidas por el Registro Nacional. Plazo de Resolución: 30 días hábiles."
+  }
+ },
+ {
+  "id": "FAM-DMC-005",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "criterio_administrativo",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo según ficha",
+  "texto": "la ficha indica un plazo de resolución de 30 días hábiles",
+  "respaldos": [],
+  "fuenteExterna": {
+   "url": "https://www.tse.go.cr/pdf/requisitosytramites/Homologacion-de-acuerdos-de-divorcio-y-separacion.pdf",
+   "titulo": "Tribunal Supremo de Elecciones, Dirección General del Registro Civil. Ficha del trámite: Homologación de acuerdos de divorcio y separación de los cónyuges por mutuo consentimiento",
+   "cita": "En el testimonio se debe indicar que no tienen hijos menores de edad dentro del matrimonio, ni bienes gananciales y aportar las certificaciones de Bienes Muebles e Inmuebles emitidas por el Registro Nacional. Plazo de Resolución: 30 días hábiles."
+  }
+ },
+ {
+  "id": "FAM-DMC-006",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Apoderado especialísimo",
+  "texto": "por uno solo de los cónyuges mediante apoderado especialísimo dado en escritura pública",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "podrá decretarse el divorcio por el mutuo consentimiento de los cónyuges, para lo cual estos, personalmente, o uno solo de ellos por medio de un apoderado especialísimo dado en escritura pública, deben otorgar un convenio de divorcio en escritura pública"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-007",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Mandato",
+  "texto": "el mandato debe contener las cláusulas exactas del eventual acuerdo, bajo pena de nulidad del convenio",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "55"
+    ],
+    "cita": "el mandato deberá contener las cláusulas exactas del eventual acuerdo, bajo pena de nulidad del convenio"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "55"
+    ],
+    "cita": "El poder podrá ser revocado en cualquier momento, con tal de que la revocación se realice antes de que el mandatario haya realizado el encargo"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-008",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Tres meses",
+  "texto": "El convenio debe presentarse ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "deberá ser presentado ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que la presentación la hagan de forma conjunta los cónyuges"
+   }
+  ],
+  "excepciones": "La norma no indica la consecuencia del vencimiento; el texto lo dice así."
+ },
+ {
+  "id": "FAM-DMC-009",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Petición",
+  "texto": "Los cónyuges pueden presentar la petición por escrito, conjunta o separadamente",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "289"
+    ],
+    "cita": "Los cónyuges o convivientes, conjunta o separadamente, o la persona autorizada, presentará la petición por escrito ante la autoridad judicial competente, adjuntando el testimonio de escritura y las certificaciones correspondientes"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-010",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Quien no firma",
+  "texto": "se le notifica y se le conceden cinco días para lo que corresponda",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "291"
+    ],
+    "cita": "se le deberá notificar la presentación de la solicitud y se concederá un plazo de cinco días para lo que corresponda"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-011",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Oposición",
+  "texto": "solo se admite cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-012",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Trámite de oposición",
+  "texto": "la otra parte tiene cinco días para manifestarse y aportar prueba",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "se conferirá el plazo de cinco días a la otra parte para que se manifieste y aporte prueba"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "La sentencia integral deberá ser dictada y notificada dentro del plazo de tres días"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-013",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Aclaraciones",
+  "texto": "Si hay duda sobre una cláusula, cita a una audiencia",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "Cuando exista duda sobre alguna de las cláusulas del convenio, se citará a una audiencia para aclarar lo acordado"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-014",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cambios sobre hijos",
+  "texto": "Puede variar lo acordado sobre los derechos de las personas menores de edad referentes a cuidado personal y visitas",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "se dictará la resolución que apruebe o no el acuerdo. La autoridad judicial podrá variar lo acordado en lo que respecta a los derechos de las personas menores de edad referentes a cuidado personal y visitas"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "deberá improbar o modificar el convenio en beneficio de los hijos y las hijas"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-015",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Opinión",
+  "texto": "Se les concede la oportunidad de ser escuchados sobre su cuidado personal o su interrelación con los progenitores",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se le concederá la oportunidad de ser escuchada para que exprese su opinión respecto a lo relativo a su cuidado personal o su interrelación con sus progenitores"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "también podrá ser realizarse por escrito en el documento en el que se solicita la aprobación del convenio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-016",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo del art. 152",
+  "texto": "prevé un pronunciamiento en un plazo de quince días hábiles",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "el pacto no valdrá mientras el Tribunal no se pronuncie sobre la aprobación de la separación en resolución fundamentada en un plazo de quince días hábiles"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-017",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Notificación al PANI",
+  "texto": "la sentencia se notifica a la oficina local del Patronato Nacional de la Infancia",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "cuyo representante podrá impugnarla en caso de que estime que se ha producido alguna violación a los derechos fundamentales"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-018",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cláusula alimentaria",
+  "texto": "El convenio debe establecer si existe o no obligación alimentaria entre los cónyuges y el monto",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "El establecimiento del derecho o no de obligación alimentaria entre los cónyuges y el monto en que se obligan"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "167"
+    ],
+    "cita": "El derecho a los alimentos no podrá renunciarse ni transmitirse de modo alguno. La obligación alimentaria es imprescriptible, personalísima e incompensable"
+   }
+  ],
+  "excepciones": "Tensión con el art. 167 CF señalada como duda."
+ },
+ {
+  "id": "FAM-DMC-019",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Cese entre ex cónyuges",
+  "texto": "no existe obligación cuando la persona beneficiaria contrae nuevas nupcias o establece una convivencia de hecho",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "173"
+    ],
+    "cita": "Entre ex cónyuges, cuando el beneficiario contraiga nuevas nupcias o establezca una convivencia de hecho"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-020",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Inscripción",
+  "texto": "para inscribirla debe acompañarse copia certificada por el tribunal",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "292"
+    ],
+    "cita": "deberá acompañarse a esta la copia certificada por el tribunal del respectivo convenio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-021",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Ejecución de la cuota",
+  "texto": "las piezas necesarias se envían al despacho de pensiones alimentarias para su ejecución",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "260"
+    ],
+    "cita": "se deberán enviar las piezas necesarias para su debida ejecución al despacho de pensiones alimentarias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-022",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sin cosa juzgada",
+  "texto": "Lo relativo a los hijos no constituye cosa juzgada",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "reforma": "Ley 9781",
+    "cita": "podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-023",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Separación por mutuo consentimiento",
+  "texto": "el convenio no debe establecer si se mantiene o no ese derecho, sino únicamente, si así lo convienen, referirse al monto",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "60"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "se seguirán las mismas normas establecidas en el artículo 48 de este Código para el divorcio por mutuo consentimiento"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "60"
+    ],
+    "reforma": "Ley 9747",
+    "cita": "no se debe establecer si se mantiene o no el derecho de alimentos, sino únicamente, si así lo convienen, referirse al monto de alimentos"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DMC-024",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Renuncia a alimentos",
+  "texto": "conviene entender qué significa renunciar a los alimentos entre cónyuges",
+  "motivo": "El art. 167 CF declara irrenunciable el derecho; el art. 48 habla de establecer si existe o no. Se reformula como duda.",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DMC-025",
+  "archivo": "src/content/articulos/divorcio-mutuo-consentimiento-costa-rica.md",
+  "pagina": "/blog/divorcio-mutuo-consentimiento-costa-rica",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "consultado": "2026-11-05",
+  "tema": "Dificultad de reabrir",
+  "texto": "otros puntos patrimoniales pueden ser más difíciles de reabrir",
+  "motivo": "Sin norma específica en la copia oficial; se sustituye por los límites del art. 293 CPF.",
+  "retirada": true
+ }
+]

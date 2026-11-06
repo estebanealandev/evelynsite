@@ -1,23 +1,23 @@
 // Textos institucionales compartidos. No contienen datos biográficos, cifras, premios ni testimonios.
 export const valores = [
-  { titulo: 'Asesoría jurídica personalizada', texto: 'Cada situación familiar requiere atención individual y una comprensión profunda de sus circunstancias.' },
-  { titulo: 'Confidencialidad y discreción', texto: 'El tratamiento de asuntos personales exige reserva, respeto y comunicación responsable.' },
-  { titulo: 'Estrategia y claridad', texto: 'Cada proceso debe abordarse con análisis jurídico, planificación y comunicación transparente.' }
+  { titulo: 'Explicación con fuente', texto: 'Cada área indica las normas consultadas y la fecha de esa consulta, para que pueda comprobarse lo que se afirma y detectarse una reforma posterior.' },
+  { titulo: 'Solo lo necesario por formulario', texto: 'El formulario pide una descripción general. Los documentos, los detalles íntimos y los datos de personas menores de edad se dejan para la conversación, si corresponde.' },
+  { titulo: 'Opinión después de conocer el asunto', texto: 'Antes de opinar se revisan hechos, documentos y plazos. La opinión expone lo favorable y lo desfavorable, y no asegura un resultado.' }
 ];
 
 export const proceso = [
-  { titulo: 'Conversemos sobre su situación', texto: 'Un primer acercamiento permite identificar los aspectos principales de su situación y determinar los pasos de orientación jurídica que correspondan.' },
-  { titulo: 'Comprendemos sus necesidades', texto: 'Cada situación familiar requiere un análisis particular de los hechos, los intereses involucrados y las opciones disponibles en el marco de la legislación costarricense.' },
-  { titulo: 'Definimos un camino a seguir', texto: 'Una vez evaluadas las circunstancias y formalizada la relación profesional, se plantea una estrategia acorde con los objetivos y las posibilidades legales del caso.' },
-  { titulo: 'Le acompañamos durante el proceso', texto: 'Una comunicación clara y un seguimiento responsable permiten afrontar cada etapa con mayor información y seguridad.' }
+  { titulo: 'Solicitud', texto: 'Por el formulario se indica el tipo de asunto y una descripción general, sin adjuntar documentos. Enviarlo no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.' },
+  { titulo: 'Revisión', texto: 'La solicitud se revisa para determinar si el asunto puede atenderse. El artículo 37 del Código de Deberes reconoce la libertad de aceptar o rechazar asuntos.' },
+  { titulo: 'Conversación', texto: 'Si el asunto puede atenderse, se coordina una conversación para revisar hechos, documentos y plazos en curso. Allí se explican las vías posibles, con sus aspectos favorables y desfavorables.' },
+  { titulo: 'Relación profesional', texto: 'Si se decide continuar, se acuerdan el alcance y las condiciones. El Código de Deberes pide informar periódicamente el estado del asunto, cuando sea necesario, y exige mandato específico para conciliar, transigir o desistir.' }
 ];
 
 export const principios = [
-  { titulo: 'Escuchar antes de opinar', texto: 'Una orientación útil empieza por comprender los hechos, las preocupaciones y lo que cada persona necesita proteger.', etiqueta: 'Filosofía de atención' },
-  { titulo: 'Reserva en cada conversación', texto: 'La información que comparte un cliente queda amparada por el secreto profesional que exige la normativa del Colegio de Abogados y Abogadas.', etiqueta: 'Confidencialidad' },
-  { titulo: 'Explicar sin tecnicismos', texto: 'Las opciones, los riesgos y los plazos se comunican con palabras comprensibles, para que las decisiones se tomen con información.', etiqueta: 'Comunicación' },
-  { titulo: 'Las niñas, niños y adolescentes primero', texto: 'Cuando hay personas menores de edad, el análisis parte de su interés superior, tal como lo ordena la legislación costarricense.', etiqueta: 'Interés superior' },
-  { titulo: 'Sin promesas de resultado', texto: 'Ningún asunto puede garantizarse de antemano. Lo responsable es explicar las posibilidades reales según la ley y la prueba disponible.', etiqueta: 'Honestidad profesional' },
-  { titulo: 'La conciliación, cuando corresponde', texto: 'Los acuerdos pueden ser una buena vía, pero no siempre proceden: la ley prohíbe conciliar cuando existen relaciones desiguales de poder.', etiqueta: 'Método de trabajo' }
+  { titulo: 'Conocer el asunto antes de opinar', texto: 'El artículo 32 del Código de Deberes exige obtener pleno conocimiento de la causa antes de aceptarla y emitir opinión. Una descripción breve no alcanza para concluir sobre un caso.', etiqueta: 'Antes de opinar' },
+  { titulo: 'Secreto profesional', texto: 'El artículo 41 del Código de Deberes protege las confidencias hechas a una persona abogada con ocasión de su ejercicio, aun después de cesar la relación profesional. Los artículos 42 y 43 prevén excepciones, como la intención de cometer un ilícito.', etiqueta: 'Confidencialidad' },
+  { titulo: 'Explicar en lenguaje corriente', texto: 'Las opciones, los riesgos y los plazos se explican con palabras comprensibles. El término legal se indica cuando hace falta reconocerlo en una resolución o un convenio.', etiqueta: 'Comunicación' },
+  { titulo: 'Interés superior de la persona menor de edad', texto: 'El artículo 5 del Código de la Niñez y la Adolescencia ordena considerarlo en toda acción pública o privada concerniente a una persona menor de dieciocho años. Cuando hay personas menores de edad, ese criterio entra en el análisis desde el inicio.', etiqueta: 'Interés superior' },
+  { titulo: 'Sin promesas de resultado', texto: 'El artículo 33 del Código de Deberes impide asegurar el éxito o magnificar las dificultades. Corresponde exponer el amparo legal del asunto y sus probabilidades razonables.', etiqueta: 'Resultados' },
+  { titulo: 'Conciliación solo cuando procede', texto: 'El artículo 9 del Código Procesal de Familia prevé intentar la conciliación cuando proceda y la prohíbe en situaciones en que se constaten relaciones desiguales de poder. Ante violencia no se recomienda negociar ni confrontar.', etiqueta: 'Vías de solución' }
 ];
 

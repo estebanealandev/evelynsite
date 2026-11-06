@@ -1,0 +1,22 @@
+[
+ {
+  "id": "FAM-REC-001",
+  "archivo": "src/pages/consulta-recibida.astro",
+  "pagina": "/consulta-recibida",
+  "tema": "Formulario y plazos",
+  "texto": "Enviar este formulario no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "excepciones": "Conclusión por ausencia: ninguna norma consultada da a un formulario privado efecto sobre los plazos procesales, que dependen de la notificación.",
+  "consultado": "2026-11-05"
+ }
+]

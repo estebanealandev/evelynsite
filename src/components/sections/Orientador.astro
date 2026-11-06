@@ -1,19 +1,22 @@
 ---
-// Sin JavaScript se muestra la lista completa de situaciones; con JavaScript, una pregunta a la vez.
-import { inicio, preguntas } from '../../lib/orientador';
+// Sin JavaScript se muestra la lista completa de áreas; con JavaScript, una pregunta a la vez.
+import { getCollection } from 'astro:content';
+import { AVISO_RIESGO, inicio, preguntas } from '../../lib/orientador';
 const { servicios } = Astro.props;
+const fichas = await getCollection('fichas');
 const areas = Object.fromEntries(servicios.map((s: any) => [s.id, { titulo: s.data.titulo, resumen: s.data.resumen }]));
-const datos = JSON.stringify({ inicio, preguntas, areas });
+const guias = Object.fromEntries(fichas.map((f: any) => [f.id, { titulo: f.data.titulo, resumen: f.data.resumen }]));
+const datos = JSON.stringify({ inicio, preguntas, areas, guias, aviso: AVISO_RIESGO });
 ---
 <section class="section bg-ivory" id="por-donde-empiezo">
   <div class="wrap guia" data-guia>
     <div class="guia__intro">
       <p class="eyebrow">Orientador</p>
       <h2>¿Por dónde empiezo?</h2>
-      <p style="margin-top:16px;max-width:30em">Responda hasta dos preguntas para llegar a la información que puede servirle. No es asesoría jurídica y sus respuestas no se guardan ni se envían.</p>
+      <p style="margin-top:16px;max-width:30em">Dos preguntas como máximo para encontrar qué leer. Señala un tema, no una conclusión: qué vía corresponde depende de hechos que esta guía no pregunta. No es asesoría jurídica, y lo que elija no se guarda ni se envía.</p>
     </div>
     <div class="guia__panel" data-guia-panel aria-live="polite">
-      <p class="guia__q">¿Qué le trae hoy?</p>
+      <p class="guia__q">¿Sobre qué busca información?</p>
       <ul class="guia__ops">
         {servicios.map((s: any) => <li><a class="guia__op" href={`/servicios/${s.id}`}>{s.data.titulo}</a></li>)}
       </ul>

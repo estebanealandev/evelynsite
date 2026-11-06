@@ -1,0 +1,34 @@
+[
+ {
+  "id": "FAM-CTO-001",
+  "archivo": "src/pages/contacto.astro",
+  "pagina": "/contacto",
+  "tema": "Formulario y plazos",
+  "texto": "Enviar el formulario no detiene los plazos de un proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "Todos los plazos, salvo excepciones expresas en este Código, empezarán a correr al día hábil siguiente a aquel en que se hubiera notificado a todas las partes"
+   }
+  ],
+  "excepciones": "Conclusión por ausencia: ninguna norma consultada da a un formulario privado efecto sobre los plazos procesales, que dependen de la notificación.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CTO-002",
+  "archivo": "src/pages/contacto.astro",
+  "pagina": "/contacto",
+  "tema": "Reserva del canal",
+  "texto": "Puede enviar su solicitud de forma reservada por medio del formulario de consulta.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Promesa de reserva no comprobable sobre un envío por correo electrónico.",
+  "consultado": "2026-11-05"
+ }
+]

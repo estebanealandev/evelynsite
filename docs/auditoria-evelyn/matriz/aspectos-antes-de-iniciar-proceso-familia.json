@@ -1,0 +1,455 @@
+[
+ {
+  "id": "FAM-INI-001",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Medidas de protección",
+  "texto": "pueden pedirse por escrito o de forma verbal, con independencia de cualquier otro proceso (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "Las medidas podrán ser solicitadas por escrito o en forma verbal, con independencia de cualquier otro proceso, ya sea penal o de familia."
+   }
+  ],
+  "relacionadas": [
+   "/servicios/proteccion-familiar"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-002",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Plazo del divorcio por causal",
+  "texto": "La demanda debe entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "cita": "La demanda deberá entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven."
+   }
+  ],
+  "excepciones": "Ausencia judicialmente declarada; situaciones continuadas se presentan como asunto que requiere análisis.",
+  "relacionadas": [
+   "/servicios/divorcios"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-003",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Ausencia declarada",
+  "texto": "En los casos de ausencia judicialmente declarada, el cónyuge presente puede plantearla en cualquier momento (artículo 49 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "cita": "En los casos de ausencia judicialmente declarada podrá plantear la acción el cónyuge presente en cualquier momento."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-004",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Caducidad de la unión de hecho",
+  "texto": "La acción caduca en dos años a partir de la ruptura de la convivencia o de la muerte de la persona conviviente (artículo 246)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente."
+   }
+  ],
+  "relacionadas": [
+   "/servicios/union-de-hecho"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-005",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Alimentos pasados",
+  "texto": "Solo pueden cobrarse los de los doce meses anteriores a la demanda, y eso en caso de que la persona alimentaria haya tenido que contraer deudas para vivir (artículo 172)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "172"
+    ],
+    "cita": "No pueden cobrarse alimentos pasados, más que por los doce meses anteriores a la demanda, y eso en caso de que el alimentario haya tenido que contraer deudas para vivir."
+   }
+  ],
+  "relacionadas": [
+   "/servicios/pensiones-alimentarias"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-006",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Retroactividad por paternidad",
+  "texto": "la obligación alimentaria se retrotrae a la fecha de presentación de la demanda (artículo 96)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "declarada la paternidad, la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-007",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Plazo del convenio",
+  "texto": "Debe presentarse ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo presentación conjunta de los cónyuges (artículo 48)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "deberá ser presentado ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que la presentación la hagan de forma conjunta los cónyuges"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-008",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Mutuo consentimiento",
+  "texto": "Sin hijos menores de edad comunes ni bienes a los que se refiera el convenio, la escritura se presenta al Registro Civil. En los demás casos, el trámite es judicial (artículo 48)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "la escritura se presentará directamente al Registro Civil para su aprobación e inscripción"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "el trámite se verificará judicialmente conforme al Código Procesal de Familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-009",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Proceso resolutivo familiar",
+  "texto": "se conocen en el proceso resolutivo familiar (artículo 222 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "En el proceso resolutivo familiar se conocerán las pretensiones contenciosas relacionadas con"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-010",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Pensión: forma",
+  "texto": "Tiene un trámite propio, y las gestiones pueden ser verbales o escritas (artículo 257)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "se tramitarán de acuerdo con las disposiciones de este capítulo y las gestiones de las partes e intervinientes podrán ser verbales o escritas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-011",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Interpretación auténtica del art. 245 (Ley 10228)",
+  "texto": "la Ley N.º 10228 interpretó el artículo 245 del Código de Familia: según la nota de SINALEVI, la unión de hecho se constata directamente en el juzgado de pensiones",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "reforma": "Ley 10228",
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-012",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Prohibición de conciliar",
+  "texto": "Se prohíbe en aquellas situaciones en que se constaten relaciones desiguales de poder (artículo 9 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-013",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Patrocinio letrado",
+  "texto": "Toda persona debe comparecer con patrocinio letrado, salvo en estos procesos (artículo 50 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-014",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Defensa Pública",
+  "texto": "la parte beneficiaria sin recursos para contratar patrocinio letrado puede solicitar asistencia a la Defensa Pública (artículo 56)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "56"
+    ],
+    "cita": "la parte beneficiaria que no cuente con los recursos económicos para contratar patrocinio letrado podrá solicitar asistencia letrada a la Defensa Pública del Poder Judicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-015",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Personas menores de edad",
+  "texto": "El Estado garantiza asistencia y patrocinio letrado gratuito a las personas menores de edad que carezcan de medios económicos suficientes (artículo 42)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "42"
+    ],
+    "cita": "El Estado garantizará la asistencia y el patrocinio letrado gratuito a las personas menores de edad que carezcan de medios económicos suficientes."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-016",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "INAMU",
+  "texto": "el Instituto Nacional de las Mujeres ofrecerá a las víctimas asesoramiento jurídico y representación legal para esos trámites (artículo 17 de la Ley N.º 7586)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-017",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Privacidad de audiencias",
+  "texto": "Toda audiencia judicial es privada",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "121"
+    ],
+    "cita": "Toda audiencia judicial será privada sin perjuicio de la presencia de personas ajenas al proceso cuando la autoridad judicial lo autorice con la necesaria anuencia de las partes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-018",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Privacidad de documentos",
+  "texto": "Los escritos, documentos e informes se consideran privados (artículo 63)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "63"
+    ],
+    "cita": "Todos los escritos, documentos e informes se considerarán privados."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-019",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Secreto profesional",
+  "texto": "la obligación perdura después de cesar la relación (artículo 41 del Código de Deberes Jurídicos, Morales y Éticos del Profesional en Derecho)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "41"
+    ],
+    "cita": "La obligación de guardar secreto profesional perdura aún después de cesada la relación profesional."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-020",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Excepciones al secreto",
+  "texto": "Tiene excepciones limitadas (artículo 42)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CDJ",
+    "articulos": [
+     "42"
+    ],
+    "cita": "La obligación del secreto profesional cede a las necesidades de la defensa del abogado y la abogada cuando es acusado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-090",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Promesa de resultado",
+  "texto": "Ninguna persona profesional puede garantizar un resultado: desconfíe de quien lo prometa.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Reformulada: se limita a decir que el resultado lo decide una autoridad judicial, sin atribuirlo a una norma.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-091",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Plazo del divorcio",
+  "texto": "La acción de divorcio por causal, en general, debe entablarse dentro de un año desde que se conocieron los hechos",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se precisó con la redacción del art. 49 CF, la excepción de la ausencia declarada y el análisis que requieren las situaciones continuadas.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-092",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Alimentos pasados",
+  "texto": "bajo la condición que indica el artículo 172",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Remisión vaga. Se explicó la condición (haber contraído deudas para vivir) y la salvedad del art. 96.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-INI-093",
+  "archivo": "src/content/articulos/aspectos-antes-de-iniciar-proceso-familia.md",
+  "pagina": "/blog/aspectos-antes-de-iniciar-proceso-familia",
+  "tema": "Privacidad",
+  "texto": "Las audiencias familiares y la documentación del proceso tienen reglas de privacidad en el Código Procesal de Familia.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Sin artículo. Se citaron los arts. 63 y 121 del CPF con sus condiciones.",
+  "consultado": "2026-11-05"
+ }
+]

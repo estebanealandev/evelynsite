@@ -1,0 +1,129 @@
+[
+ {
+  "id": "FAM-POR-001",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Vigencia del Código Procesal de Familia",
+  "texto": "El Código Procesal de Familia rige desde el 1 de octubre de 2024",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-002",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Reforma del artículo 48 del Código de Familia",
+  "texto": "la Ley N.º 10650, de febrero de 2025, reformó el artículo 48 del Código de Familia sobre el divorcio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "Así reformado por el artículo único de la ley N° 10650 del 26 de febrero de 2025"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-003",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Prohibición de conciliar ante relaciones desiguales de poder",
+  "texto": "el artículo 9 del Código Procesal de Familia la prohíbe en situaciones en que se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-004",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Interés superior",
+  "texto": "Se considera el interés superior de las personas menores de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "5"
+    ],
+    "cita": "Toda acción pública o privada concerniente a una persona menor de dieciocho años, deberá considerar su interés superior"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-005",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Mensaje autoelogioso",
+  "texto": "Protegemos lo que más importa. Brindamos orientación y acompañamiento jurídico [...] con un enfoque humano, estratégico y comprometido con la protección de sus derechos.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Autoelogio y promesa implícita de protección. CDJ art. 30 pide moderación y evitar el auto elogio. Sustituido por la mención de especialidad y áreas, que el mismo artículo admite.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-006",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Especialización no confirmada",
+  "texto": "Recibir orientación especializada a tiempo permite aclarar plazos",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "No está confirmada una especialidad formal de la persona titular.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-007",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Terminología",
+  "texto": "Priorizar el interés superior de los hijos.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "CNA art. 5 protege a la persona menor de edad y ordena considerar su interés superior. Se corrige el término y el verbo.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-POR-008",
+  "archivo": "src/pages/index.astro",
+  "pagina": "/",
+  "tema": "Plural de equipo no confirmado",
+  "texto": "Conocer nuestros servicios",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "No consta que exista un equipo: guía editorial, voz impersonal.",
+  "consultado": "2026-11-05"
+ }
+]

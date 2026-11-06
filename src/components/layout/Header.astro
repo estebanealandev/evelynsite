@@ -5,7 +5,7 @@ const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const cur = (href: string) => (path === href || path.startsWith(href + '/') ? 'page' : undefined);
 ---
-<header class="site-header">
+<header class:list={["site-header", { "is-solid": path !== "/" }]}>
   <div class="wrap header-main">
     <a class="brand" href="/" aria-label="Evelyn Elizondo, página de inicio">
       <img class="brand__oscuro" src="/assets/brand/evelyn-elizondo-navbar-dark.svg" alt="Evelyn Elizondo" width="240" height="48" />

@@ -1,8 +1,8 @@
 ---
-titulo: "¿Cuándo puede solicitarse un aumento o rebajo de pensión?"
-metaTitulo: "Aumento o rebajo de pensión alimentaria en Costa Rica"
-metaDescripcion: "Cuándo procede modificar una pensión alimentaria, cómo funciona el aumento automático y qué trámite establece el Código Procesal de Familia."
-resumen: "Cambio de circunstancias, aumento automático y trámite de modificación."
+titulo: "¿Cuándo puede pedirse un aumento, un rebajo o la exoneración de una pensión?"
+metaTitulo: "Aumento, rebajo o exoneración de pensión alimentaria en Costa Rica"
+metaDescripcion: "Qué trámite corresponde a cada cambio en una pensión: aumento automático, modificación, exoneración, pérdida de empleo y pago en tractos."
+resumen: "Aumento automático, modificación, exoneración, pérdida de empleo y pago en tractos: qué corresponde a cada situación."
 categoria: "Pensiones alimentarias"
 etiquetas: ["Modificación de cuota", "Aumento automático", "Exoneración"]
 fecha: "2026-11-04"
@@ -14,41 +14,65 @@ fuentes:
   - ref: "CF"
     detalle: "arts. 173, 174"
   - ref: "CPF"
-    detalle: "arts. 277 a 279, 287"
+    detalle: "arts. 101, 262, 276, 277, 278, 279, 287"
 ---
 
-Una pensión alimentaria no es inmutable. El artículo 174 del Código de Familia dispone que la prestación puede modificarse por el cambio de circunstancias de quien la da o de quien la recibe.
+Una cuota puede cambiar cuando cambian las circunstancias de quien la da o de quien la recibe (artículo 174 del Código de Familia). Lo decidido sobre su monto no constituye cosa juzgada material y puede modificarse mediante los procedimientos del Código Procesal de Familia (artículo 262). Según la situación, hay vías distintas:
 
-## Primero: el aumento automático
+| Situación | Vía | Artículo |
+|---|---|---|
+| Actualización por costo de la vida | Aumento automático | 279 CPF |
+| Cambian las necesidades o los ingresos | Modificación de la cuota | 174 CF; 277 y 278 CPF |
+| Dejó de existir la obligación | Exoneración | 173 CF; 277 y 278 CPF |
+| No hay trabajo ni recursos, con cuotas adeudadas | Plazo para buscar trabajo | 287 CPF |
+| Hay una deuda atrasada | Pago en tractos | 287 CPF |
+| La parte actora no desea cobrar por ahora | Suspensión del cobro | 276 CPF |
 
-Antes de pedir un aumento, conviene saber que la ley ya prevé una actualización por el costo de la vida. Según el artículo 279 del Código Procesal de Familia:
+## El aumento automático
 
-- **Persona obligada asalariada:** cada seis meses, en enero y julio, de forma porcentual, según el aumento de ley decretado para el sector público o privado que corresponda.
-- **Persona obligada no asalariada:** cada año, en enero, en un porcentaje igual a la variación del salario de referencia que indica esa norma.
+Según el artículo 279 del Código Procesal de Familia, no hace falta pedirlo:
 
-## Cuándo pedir un aumento
+- **Persona obligada asalariada:** cada seis meses, en enero y julio, de forma porcentual, según el aumento de ley decretado por el Estado para el sector público o privado que corresponda.
+- **Persona obligada no asalariada:** cada año, en enero, en un porcentaje igual a la variación del salario establecido según la Ley N.º 7337.
 
-Puede valorarse cuando cambian las necesidades de la persona beneficiaria o mejoran las posibilidades económicas de quien paga. Por ejemplo, por nuevos gastos médicos o educativos, o por un aumento comprobable de ingresos.
+Si el monto vigente ya había tomado en cuenta ese aumento próximo, se aplica hasta el siguiente período.
 
-## Cuándo pedir un rebajo
+## Cuándo pedir un aumento o un rebajo
 
-Puede plantearse cuando disminuye de forma real la capacidad de pago o las necesidades de quien recibe. Dejar de pagar sin más no es una alternativa: la cuota sigue siendo exigible mientras no se modifique.
+La norma exige un cambio de circunstancias y no define una lista. Pueden plantearse, por ejemplo, nuevos gastos médicos o educativos, un aumento comprobable de ingresos, o una disminución real de la capacidad de pago. Quien lo pide debe exponer los motivos y su pretensión concreta, y ofrecer las pruebas (artículo 277).
 
-## Exoneración
+El Código no prevé un rebajo por decisión de una de las partes. Las normas citadas no indican desde qué fecha rige una cuota modificada. Ese punto requiere análisis según la resolución concreta.
 
-El artículo 173 del Código de Familia enumera supuestos en los que no existe obligación de proporcionar alimentos. Entre ellos, que quien recibe deje de necesitarlos o que alcance la mayoría de edad, salvo que no haya terminado estudios para adquirir una profesión u oficio, no sobrepase los veinticinco años y obtenga buenos rendimientos con una carga académica razonable.
+## La exoneración
 
-## El trámite
+El artículo 173 del Código de Familia enumera los casos en que no existe obligación de proporcionar alimentos:
 
-Se regula en los artículos 277 y 278 del Código Procesal de Familia:
+1. Si la persona deudora no puede suministrarlos sin desatender sus necesidades alimentarias o sin faltar a la misma obligación con quienes tengan título preferente.
+2. Si quien los recibe deja de necesitarlos.
+3. Por injuria, falta o daños graves contra quien los da, excepto entre padres e hijos. Según nota de SINALEVI, la Sala Constitucional interpretó en la resolución N.º 3682 de 2009 que también puede invocarse cuando el obligado es el hijo o hija y la persona beneficiaria es el padre o la madre.
+4. Si el cónyuge incurrió en abandono voluntario y malicioso del hogar o se comprueba adulterio.
+5. Si se alcanzó la mayoría de edad, salvo que no se hayan terminado los estudios para adquirir una profesión u oficio, sin sobrepasar los veinticinco años y con buenos rendimientos y una carga académica razonable.
+6. Entre ex cónyuges, si la persona beneficiaria contrae nuevas nupcias o establece una convivencia de hecho.
+7. Si quien demanda incumplió sus propios deberes alimentarios con la persona demandada, cuando legalmente debió cumplirlos.
 
-1. La solicitud se presenta por escrito o de forma verbal, con los motivos, la pretensión concreta y la prueba. Se tramita en legajo separado.
-2. Si está en forma, se convoca a una audiencia, con notificación personal a la persona accionada.
-3. En la audiencia se explican los derechos y deberes, se invita a conciliar, se escucha a la contraparte, se practica la prueba y se oyen conclusiones.
+Estas causales se prueban ante la autoridad que conozca de la demanda alimentaria. Por eso, cumplir dieciocho años no es, por sí solo, un motivo para dejar de pagar sin solicitar antes la exoneración.
+
+## Cómo se tramita
+
+Los artículos 277 y 278 del Código Procesal de Familia regulan la modificación y la exoneración:
+
+1. Se solicita por escrito o de forma verbal, y se tramita en legajo separado. Si la gestión está incompleta, se aplica el procedimiento de inadmisión; si es infundada, se rechaza de plano.
+2. Estando en forma, se convoca a una audiencia, con notificación personal a la persona accionada.
+3. En la audiencia se explican derechos y deberes, se invita a conciliar, se oye a la parte contraria y se practica la prueba.
 4. Se dicta la parte dispositiva de la sentencia. La sentencia integral debe dictarse y notificarse dentro de tres días.
 
 ## Si perdió el empleo
 
-El artículo 287 prevé que, si la persona deudora comprueba de forma satisfactoria que carece de trabajo y recursos para pagar, se le pueda conceder un plazo prudencial que no exceda de un mes, prorrogable por otro. También puede pedirse el pago en tractos de una deuda morosa.
+Hay dos preguntas distintas: cuánto debe pagarse en adelante y qué ocurre con lo ya adeudado.
 
-Son medidas distintas de la modificación de la cuota, por lo que conviene analizarlas juntas según el caso.
+- **En adelante:** se solicita la modificación por cambio de circunstancias.
+- **Lo adeudado:** si la persona deudora comprueba de forma satisfactoria que carece de trabajo y de recursos, puede concedérsele un plazo prudencial de hasta un mes, prorrogable por otro. También puede pedir el pago en tractos de una deuda morosa total o parcial.
+
+Pedidos estos beneficios, la autoridad recaba la prueba de inmediato, sin audiencia a las partes, y resuelve dentro de las veinticuatro horas siguientes. Si los concede, ordena suspender la orden de apremio cuando proceda (artículo 287). Lo resuelto sobre estos beneficios es apelable (artículo 101).
+
+Quien recibe la cuota también puede suspender el cobro: con sentencia firme, la ejecución se suspende por acuerdo de partes o a solicitud de la parte actora, y queda sin efecto el impedimento migratorio mientras dure (artículo 276). Esa suspensión no modifica el monto fijado.

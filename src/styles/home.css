@@ -11,7 +11,7 @@
 .h-hero__content { position: relative; z-index: 2; pointer-events: none; }
 .h-hero__content a, .h-hero__content button { pointer-events: auto; }
 .h-hero__titulo { position: relative; }
-.h-hero__title { position: relative; font-size: var(--fs-display); line-height: 0.92; letter-spacing: -0.028em; }
+.h-hero__title { position: relative; font-size: var(--fs-display); line-height: 0.98; letter-spacing: -0.024em; }
 /* Imagen del árbol: solo cuando no hay animación. Si la escena va a correr no se muestra, porque enseñaría el árbol completo antes de que crezca. */
 /* En pantallas muy anchas aprovecha el margen exterior: el titular ya alcanzó su tamaño máximo. */
 .h-hero__poster { position: absolute; right: min(0px, calc((1600px - 100vw) * 0.35)); bottom: 0; width: auto; height: min(60svh, 22vw); transition: opacity 1s var(--ease); }
@@ -72,6 +72,7 @@
 .h-biblio { position: relative; z-index: 2; background: var(--color-surface); }
 .h-lib-head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 18px 32px; margin-bottom: clamp(36px, 5vw, 72px); }
 .h-lib__cat { display: block; margin-bottom: 10px; font: 500 var(--fs-label) / 1.4 var(--font-sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent-text); }
+.h-lib-enlaces { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0; }
 .h-lib a { display: block; color: var(--color-primary); text-decoration: none; }
 .h-lib a:hover h3 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
 .h-lib p { margin: 0; color: var(--color-text); }

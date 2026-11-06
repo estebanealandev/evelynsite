@@ -1,0 +1,491 @@
+[
+ {
+  "id": "FAM-DCC-001",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Necesidad de causal",
+  "texto": "debe demandarse invocando una causal del artículo 48 del Código de Familia",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La separación de hecho por un plazo no menor de tres años"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-002",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Comparación: plazos",
+  "texto": "Tres meses para presentar el convenio ante la autoridad judicial, salvo presentación conjunta",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "deberá ser presentado ante la autoridad judicial dentro de los tres meses siguientes a su celebración notarial, salvo que la presentación la hagan de forma conjunta los cónyuges"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-003",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Comparación: oposición",
+  "texto": "Solo por vicios en el consentimiento o falsedad, antes de la aprobación",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "293"
+    ],
+    "cita": "Solo se admitirá oposición al convenio cuando se trate de vicios en el consentimiento o falsedad y se alegue antes de la aprobación"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-004",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Comparación: órgano",
+  "texto": "Autoridad judicial, en proceso resolutivo familiar",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "En el proceso resolutivo familiar se conocerán las pretensiones contenciosas relacionadas con"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-005",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Quién demanda",
+  "texto": "la acción de divorcio solo puede establecerse por el cónyuge inocente",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "La acción de divorcio solo puede establecerse por el cónyuge inocente, salvo en los casos de las causales de separación de hecho y del inciso 8) del artículo 48, en los que podrá ser presentada por cualquiera de los cónyuges"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-006",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Causales de regla general",
+  "texto": "Ausencia del cónyuge legalmente declarada, en cuyo caso actúa el cónyuge presente",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "En los casos de ausencia judicialmente declarada podrá plantear la acción el cónyuge presente en cualquier momento"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "el Tribunal nombrará al demandado un curador ad litem"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-007",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo de separación de hecho",
+  "texto": "La separación de hecho exige un plazo no menor de tres años",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "reforma": "Ley 10650",
+    "cita": "La separación de hecho por un plazo no menor de tres años"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-008",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Separación judicial",
+  "texto": "la separación de hecho durante un año consecutivo ocurrida después de dos años de verificado el matrimonio",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "58"
+    ],
+    "cita": "La separación de hecho de los cónyuges durante un año consecutivo, ocurrida después de dos años de verificado el matrimonio"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-009",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Plazo de un año",
+  "texto": "La demanda debe entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "49"
+    ],
+    "reforma": "Ley 9823",
+    "cita": "La demanda deberá entablarse dentro del plazo de un año contado desde que la parte actora tuvo conocimiento de los hechos que la motiven"
+   }
+  ],
+  "excepciones": "El texto advierte que su cómputo en situaciones continuas requiere análisis."
+ },
+ {
+  "id": "FAM-DCC-010",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Reconciliación",
+  "texto": "no procede el divorcio si hubo reconciliación o vida marital después de conocer los hechos o después de la demanda",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "52"
+    ],
+    "cita": "No procede el divorcio si ha habido reconciliación o vida marital entre los cónyuges después del conocimiento de los hechos que habrían podido autorizarlo, o después de la demanda"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "52"
+    ],
+    "cita": "si se intenta una nueva acción de divorcio por causa sobrevenida a la reconciliación, el Tribunal podrá tomar en cuenta las causas anteriores"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-011",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Contestación",
+  "texto": "La persona demandada tiene ocho días hábiles para contestar",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "223"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "concediendo un traslado por un plazo de ocho días hábiles a fin de que proceda a dar contestación de forma escrita"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-012",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Falta de contestación",
+  "texto": "puede dictarse sentencia sin audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se tendrá por no contestada y se continuará con los procedimientos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "en los procesos de divorcio, separación judicial y reconocimiento de unión de hecho en los que no existan hijos o hijas menores de edad o con discapacidad"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se podrá emitir sentencia sin necesidad de convocar a la audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-013",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Allanamiento",
+  "texto": "la sentencia se dicta dentro del tercer día",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "225"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se efectuará el dictado de la sentencia dentro del tercer día"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-014",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Oposición y pretensiones propias",
+  "texto": "Puede formular excepciones y también pretensiones propias vinculadas a la situación familiar",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "228"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Al momento de contestar la demanda, la parte accionada podrá formular pretensiones contra la parte actora"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-015",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Audiencias",
+  "texto": "sigue una audiencia de prueba y decisoria dentro de los quince días hábiles siguientes",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "230"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se señalará hora y fecha para la audiencia inicial, la cual deberá realizarse dentro del mes siguiente"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "La audiencia deberá verificarse dentro de los quince días hábiles siguientes, salvo que por razones probatorias o de otra índole, debidamente justificadas, amerite un plazo mayor"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "232"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se omitirá el señalamiento y, en su lugar, se le concederá a las partes la oportunidad de formular sus conclusiones"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-016",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Sentencia",
+  "texto": "La sentencia integral debe dictarse y notificarse dentro del quinto día posterior a la audiencia",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la sentencia integral debe ser dictada y notificada en los medios señalados, dentro del quinto día posterior a la celebración de la audiencia"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-017",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Daños y perjuicios",
+  "texto": "El cónyuge inocente puede pedirlos solo si el vínculo se disuelve por las causales de los incisos 2), 3) o 4) del artículo 48",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "48 bis"
+    ],
+    "cita": "el cónyuge inocente podrá pedir, conjuntamente con la acción de separación o de divorcio, daños y perjuicios"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-018",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Alimentos",
+  "texto": "En la sentencia, el tribunal puede conceder pensión al cónyuge declarado inocente a cargo del culpable",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "57"
+    ],
+    "cita": "el tribunal podrá conceder al cónyuge declarado inocente una pensión alimentaria a cargo del culpable"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "57"
+    ],
+    "cita": "Si no existe cónyuge culpable, el tribunal podrá conceder una pensión alimentaria a uno de los cónyuges y a cargo del otro, según las circunstancias"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-019",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Conciliación en audiencia",
+  "texto": "la autoridad judicial invita a conciliar y, si hay acuerdo parcial o total, lo homologa en ese momento",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la autoridad judicial invitará a las partes a conciliar"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la autoridad judicial, en ese mismo momento, homologará el acuerdo"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Instar a las partes a considerar una forma alterna de la solución del conflicto"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-020",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "consultado": "2026-11-05",
+  "tema": "Prohibición de conciliar",
+  "texto": "se prohíbe la conciliación en situaciones en que se constaten relaciones desiguales de poder",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder"
+   }
+  ]
+ },
+ {
+  "id": "FAM-DCC-021",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "consultado": "2026-11-05",
+  "tema": "Secuencia del proceso",
+  "texto": "Tras la demanda y su contestación, se convoca a una audiencia inicial",
+  "motivo": "Omitía allanamiento, sentencia sin audiencia y audiencia inicial única (arts. 225, 226 y 232 CPF).",
+  "retirada": true
+ },
+ {
+  "id": "FAM-DCC-022",
+  "archivo": "src/content/articulos/diferencias-divorcio-consensuado-contencioso.md",
+  "pagina": "/blog/diferencias-divorcio-consensuado-contencioso",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "consultado": "2026-11-05",
+  "tema": "Prueba en vía consensuada",
+  "texto": "Limitada a los requisitos del trámite",
+  "motivo": "La norma no lo formula así; la fila se retira de la comparación.",
+  "retirada": true
+ }
+]

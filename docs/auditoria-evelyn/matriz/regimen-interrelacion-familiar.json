@@ -1,0 +1,390 @@
+[
+ {
+  "id": "FAM-RIF-001",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Negativa",
+  "texto": "debe ser considerada, y obliga a quien tenga la custodia a solicitar a la oficina local del Patronato Nacional de la Infancia (PANI) que investigue y brinde la atención psicosocial necesaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La negativa del menor a mantener contacto, visitas y comunicación deberá ser considerada y obligará, a quien tenga su custodia, a solicitar a la oficina local del Patronato Nacional de la Infancia (PANI) que investigue y brinde la atención psicosocial necesaria",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-002",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Efecto de la negativa",
+  "texto": "Esa decisión atiende al interés superior de la persona menor de edad y a su capacidad de decisión y comprensión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "atendiendo al interés superior del hijo o la hija y su capacidad de decisión y comprensión",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-003",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Ejecución coercitiva",
+  "texto": "permite a la autoridad judicial ordenar el cumplimiento por medios coercitivos, incluso el allanamiento y el apercibimiento de las sanciones penales que correspondan, en caso de negativa",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "318"
+    ],
+    "cita": "la autoridad judicial podrá ordenar el cumplimiento por medios coercitivos, incluso el allanamiento y el apercibimiento de las sanciones penales que correspondan, en caso de negativa"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-004",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Notificación",
+  "texto": "se notifican a ambas partes de forma personal o en casa de habitación (artículo 87)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "87"
+    ],
+    "cita": "se deberá notificar a ambas partes las resoluciones en las que se establezca un sistema de interrelación familiar",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-005",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Ejecución provisional",
+  "texto": "puede ordenarse la ejecución provisional, de oficio o a petición de parte, en resolución fundada, cuando se trate de la fijación de relaciones interpersonales (artículo 317)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "317"
+    ],
+    "cita": "Se podrá ordenar, de oficio o a petición de parte y en resolución fundada, la ejecución provisional de la sentencia sin estar firme cuando se trate del cuidado de personas en estado de vulnerabilidad o de fijación de relaciones interpersonales"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-006",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Efecto de impugnar",
+  "texto": "Como regla, impugnar una resolución no suspende su ejecución, con las salvedades del artículo 96",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "La impugnación de una resolución judicial no interrumpirá ni suspenderá la ejecución de lo resuelto, salvo cuando de la ejecución provisional resulte un daño irreparable"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-007",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Régimen provisional",
+  "texto": "puede fijarse un régimen provisional (artículo 133)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "133"
+    ],
+    "cita": "En los procesos familiares se podrá establecer un régimen provisional de interrelación familiar con personas menores de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-008",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Competencia para ejecutar",
+  "texto": "si fue homologado por un tribunal sin competencia material para ejecutarlo, es competente el de la residencia actual de la persona a cuyo favor se pretende el derecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "20"
+    ],
+    "cita": "será competente el de la residencia actual de la persona a cuyo favor se pretende el derecho. En tal caso, la parte que pretende la ejecución aportará copia certificada del acuerdo homologado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-009",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Tutela de la realidad",
+  "texto": "cuando ha transcurrido un tiempo prolongado sin ejecución y la realidad muestra que se consolidó una situación diferente que beneficia a la persona menor de edad, la autoridad judicial se abstiene de ejecutar y remite a las partes a la vía de modificación del fallo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "316"
+    ],
+    "cita": "la autoridad judicial se abstendrá de ejecutarla en aquellos casos en que la realidad haga evidente que se ha consolidado una situación diferente de la que se pretende ejecutar y esta beneficia a la persona en la referida condición"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "316"
+    ],
+    "cita": "la autoridad judicial remitirá a las partes a la vía de modificación de fallo y sin perjuicio del disfrute del monto de pensión alimentaria vigente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-010",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Poder de abstención",
+  "texto": "El artículo 32, inciso 4, recoge el mismo poder de abstención",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "32"
+    ],
+    "cita": "Abstenerse de ejecutar las resoluciones en procesos que involucran protección de derechos de personas en estado de vulnerabilidad, tales como cuidado personal, interrelación familiar y otros, cuando haya transcurrido un tiempo prolongado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-011",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Sin cosa juzgada material",
+  "texto": "El artículo 89 del Código Procesal de Familia lo exceptúa de la cosa juzgada material",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "89"
+    ],
+    "cita": "produce cosa juzgada material, salvo lo relativo a guarda, crianza y educación, la suspensión de los atributos de la responsabilidad parental y la que resuelva el sistema de interrelación familiar"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-012",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Modificación",
+  "texto": "el artículo 152 del Código de Familia permite modificarlo a solicitud de parte o del PANI, según la conveniencia de los hijos e hijas o por un cambio de circunstancias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "no constituye cosa juzgada y el Tribunal podrá modificarlo por vía incidental, a solicitud de parte o del Patronato Nacional de la Infancia (PANI), de acuerdo con la conveniencia de los hijos y las hijas menores de edad o por un cambio de circunstancias",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-013",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Competencia para modificar",
+  "texto": "Para la modificación de un fallo es competente el juzgado de la residencia habitual o el domicilio de la persona a cuyo favor se verificó",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "20"
+    ],
+    "cita": "será competente para conocer dicha pretensión el juzgado de la residencia habitual o domicilio de la persona a cuyo favor se verificó el fallo. En tal caso, esta presentará copia certificada de la sentencia o del acuerdo homologado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-014",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Perjuicio",
+  "texto": "obliga a la autoridad judicial a modificar o suspender los lugares, la frecuencia y las condiciones de la interrelación cuando se determine un perjuicio físico, moral o psicológico",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "35"
+    ],
+    "cita": "La autoridad judicial, mediante resolución fundamentada, deberá modificar o suspender el ejercicio de estos derechos en cuanto a los lugares, la frecuencia y las condiciones de la interrelación, cuando se determine que impliquen un perjuicio",
+    "reforma": "Ley 10263"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-015",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Supervisión",
+  "texto": "Una vez firme el fallo, su ejecución queda a cargo del PANI o de otro órgano público",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "319"
+    ],
+    "cita": "luego de la firmeza del fallo, estará a cargo del Patronato Nacional de la Infancia (PANI) o de cualquier otro órgano público que realice labores en beneficio de esta población, sin perjuicio del compromiso que adquiera algún ente privado acreditado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-016",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Violencia: visitas",
+  "texto": "permite suspenderle provisionalmente el derecho de visitar a sus hijos e hijas menores de edad (artículo 3, inciso h)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "h) Suspenderle provisionalmente a la presunta persona agresora el derecho de visitar a los hijos e hijas menores de edad, en los casos en que esta ejerza algún tipo de agresión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-017",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Violencia: atributos",
+  "texto": "contempla la suspensión de los atributos de la responsabilidad parental por violencia doméstica, intrafamiliar o vicaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "c) Por violencia doméstica o intrafamiliar contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad o afinidad",
+    "reforma": "Ley 10603"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "cita": "d) Por violencia vicaria contra la persona menor de edad o alguno de sus familiares hasta tercer grado de consanguinidad, afinidad o adopción; no obstante, la persona juzgadora determinará la pertinencia en función del caso concreto",
+    "reforma": "Ley 10634"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-018",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Conciliación",
+  "texto": "prohíbe conciliar cuando se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-019",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Denominación",
+  "texto": "La Ley N.º 9781 de 2019 introdujo esta denominación en el Código de Familia.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "La copia oficial muestra la reforma por Ley 9781, pero no el texto anterior. Se retira del artículo y el servicio dice solo que reformó el Código.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-RIF-020",
+  "archivo": "src/content/articulos/regimen-interrelacion-familiar.md",
+  "pagina": "/blog/regimen-interrelacion-familiar",
+  "tema": "Acuerdos",
+  "texto": "Un buen acuerdo suele anticipar los horarios escolares, las vacaciones, las fechas especiales, los traslados y la comunicación a distancia.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Consejo genérico que repetía el servicio. El artículo se reenfocó en el incumplimiento.",
+  "consultado": "2026-11-05"
+ }
+]

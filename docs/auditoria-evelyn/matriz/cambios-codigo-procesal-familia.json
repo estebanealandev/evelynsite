@@ -1,0 +1,782 @@
+[
+ {
+  "id": "FAM-CPF-001",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Vigencia del Código",
+  "texto": "El Código Procesal de Familia, aprobado por la Ley N.º 9747, rige en su integridad desde el **1 de octubre de 2024**",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-002",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Vigencia de la Ley 10558",
+  "texto": "sus cambios rigen desde el **13 de noviembre de 2024**",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Rige a partir de su publicación."
+  },
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-003",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Fecha de la Ley 9747",
+  "texto": "**23 de octubre de 2019:** fecha de la Ley N.º 9747, que aprueba el Código",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "como lo dispone la Ley 9747, Código Procesal de Familia, de 23 de octubre de 2019."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-004",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Ley 10315",
+  "texto": "**27 de setiembre de 2022:** fecha de la Ley N.º 10315, que reformó la disposición de vigencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "reforma": "Ley 10315",
+    "cita": "Así reformado el párrafo anterior por el artículo único de la ley N° 10315 del 27 de setiembre de 2022"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-005",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Fecha de la Ley 10558",
+  "texto": "**23 de octubre de 2024:** fecha de la Ley N.º 10558, que reforma varios artículos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Así reformado por el artículo 1° de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-006",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Publicación de la Ley 10558",
+  "texto": "**13 de noviembre de 2024:** publicación de la Ley N.º 10558 en La Gaceta. Esa ley rige a partir de su publicación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Rige a partir de su publicación."
+  },
+  "excepciones": "Un artículo de la Revista Judicial citaría otra fecha de publicación (no se pudo abrir para confirmarlo). Se sigue a la Imprenta Nacional, fuente oficial.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-007",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Transitorio I",
+  "texto": "Se tramitan, en cuanto sea posible, ajustándolos a la nueva legislación",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Los procesos que estuvieran pendientes a la entrada en vigor de este Código se tramitarán, en cuanto sea posible, ajustándolos a la nueva legislación"
+   }
+  ],
+  "excepciones": "El transitorio dice «actualizaciones ya practicadas», probable error por «actuaciones». Se redactó como «lo ya practicado».",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-008",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Transitorio II",
+  "texto": "Contra las resoluciones que estuvieran dictadas al entrar en vigor el Código caben los recursos autorizados por las disposiciones procesales vigentes al momento en que se dictaron",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Contra las resoluciones que estuvieran dictadas al entrar en vigor este Código cabrán los recursos autorizados por las disposiciones procesales vigentes al momento en que se dictaron."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-009",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Transitorio III",
+  "texto": "mantuvo su vigencia para la tramitación exclusiva de los procesos en materia de familia hasta la entrada en vigencia del nuevo Código",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se mantendrá la vigencia de la Ley N.º 7130, Código Procesal Civil, de 16 de agosto de 1989, para la tramitación exclusiva de los procesos en materia de familia hasta la entrada en vigencia de este Código."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-010",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Ley 10558 sin transitorios",
+  "texto": "La Ley N.º 10558 no contiene transitorios propios",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Rige a partir de su publicación."
+  },
+  "excepciones": "Se leyó el texto publicado en La Gaceta: entre el art. 5 y la cláusula de vigencia no hay transitorios.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-011",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Derogación de la Ley 7654",
+  "texto": "En su totalidad, la **Ley de Pensiones Alimentarias, N.º 7654**. Hoy solo sirve como antecedente",
+  "tipo": "derecho_historico",
+  "estado": "HISTORICA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Se deroga, en su totalidad, la Ley N.º 7654, Ley de Pensiones Alimentarias"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-012",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Trámite actual de alimentos",
+  "texto": "Las pretensiones alimentarias se tramitan según el Código Procesal de Familia (artículo 257)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "Las pretensiones alimentarias derivadas de las relaciones familiares"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-013",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Derogaciones en el Código de Familia",
+  "texto": "arts. 53, 54, el inciso 7) del 58, el último párrafo del 96, 98 bis, 115 a 139, 153, 154, 157, 160 bis, 197 y 233 (hoy numerado 236)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "artículos 53, 54, el inciso 7) del artículo 58, el último párrafo del artículo 96, 98 bis, 115, 116, 117, 118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134, 135, 136, 137, 138, 139, 153, 154, 157, 160 bis, 197 y 233."
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "236"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 233 al artículo 236"
+   }
+  ],
+  "excepciones": "Se aclara la numeración de 2019 porque la Ley 10192 corrió la numeración del Código de Familia; el art. 233 actual es otro.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-014",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Derogaciones en el CNA",
+  "texto": "arts. 40 y 141 a 148",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "artículos 40, 141, 142, 143, 144, 145, 146, 147 y 148"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-015",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Otras derogaciones",
+  "texto": "El tercer párrafo del art. 27 del Código Civil, los arts. 110 y 114 de la Ley Orgánica del Ministerio de Trabajo y Seguridad Social, y los arts. 5 a 11 de la Ley N.º 9379",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "el tercer párrafo del artículo 27"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "artículos 110 y 114"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "artículos 5, 6, 7, 8, 9, 10 y 11"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-016",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Oralidad y privacidad",
+  "texto": "Salvo disposición en contrario, los procedimientos se rigen por el sistema de oralidad, con aplicación del principio de privacidad (artículo 4)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Salvo disposición en contrario, los procedimientos que regula este Código se regirán por el sistema procesal de oralidad con aplicación del principio de privacidad dentro de él."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-017",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Principios",
+  "texto": "El artículo 6 enumera, entre otros, el equilibrio entre las partes, la tutela de la realidad, la ausencia de contención, la solución integral, el abordaje interdisciplinario, el mejor interés y la accesibilidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "6"
+    ],
+    "cita": "tienen como centro a la persona humana y deben interpretarse conforme a los principios de equilibrio entre las partes, tutela de la realidad, ausencia de contención, solución integral, abordaje interdisciplinario"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-018",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Contestación",
+  "texto": "La parte demandada tiene ocho días hábiles para contestar (artículo 223)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "223"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "concediendo un traslado por un plazo de ocho días hábiles a fin de que proceda a dar contestación de forma escrita"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-019",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Audiencia inicial",
+  "texto": "La audiencia inicial debe realizarse dentro del mes siguiente a su señalamiento (artículo 230)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "230"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se señalará hora y fecha para la audiencia inicial, la cual deberá realizarse dentro del mes siguiente"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-020",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Audiencia de prueba",
+  "texto": "debe verificarse dentro de los quince días hábiles siguientes, salvo razones justificadas (artículo 231)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "231"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "La audiencia deberá verificarse dentro de los quince días hábiles siguientes, salvo que por razones probatorias o de otra índole, debidamente justificadas, amerite un plazo mayor."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-021",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Sentencia integral",
+  "texto": "La sentencia integral debe dictarse y notificarse dentro del quinto día posterior a esa audiencia (artículo 233)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "la sentencia integral debe ser dictada y notificada en los medios señalados, dentro del quinto día posterior a la celebración de la audiencia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-022",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Pensiones: forma",
+  "texto": "Las gestiones pueden ser verbales o escritas (artículo 257)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "257"
+    ],
+    "cita": "las gestiones de las partes e intervinientes podrán ser verbales o escritas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-023",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Pensiones: audiencia",
+  "texto": "El tribunal convoca a una audiencia previa de conciliación dentro de diez días hábiles (artículo 269)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "269"
+    ],
+    "cita": "dentro de los diez días hábiles a la presentación de la demanda o de su corrección, el tribunal convocará a las partes a una audiencia previa de conciliación"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-024",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Sentencia anticipada y oposición",
+  "texto": "a la que las partes pueden oponerse en cinco días sin que se suspendan sus efectos (artículo 271)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "270"
+    ],
+    "cita": "se procederá al dictado de una resolución con carácter de sentencia anticipada"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "271"
+    ],
+    "cita": "Las partes podrán oponerse a la sentencia anticipada en el plazo de cinco días. La oposición no suspenderá sus efectos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-025",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Patrocinio letrado",
+  "texto": "Es obligatorio, salvo en los resolutivos familiares que no producen cosa juzgada material, la petición unilateral, las pensiones alimentarias, la protección cautelar y la ejecución de fallos de asuntos que no producen cosa juzgada material (artículo 50)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "50"
+    ],
+    "cita": "Toda persona deberá comparecer al proceso con patrocinio letrado, excepto en los siguientes procesos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-026",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Lista de artículos reformados por la Ley 10558",
+  "texto": "9, 14, 44, 45, 46, 51, 53, 55, 61, 87, 92, 101, 142, 143, 164, 172, 174, 178, 179, 188, 192, 196, 214, 223 al 233, el inciso 4) del 237, 290 y 295",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9",
+     "14",
+     "44",
+     "237",
+     "290",
+     "295"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Así reformado por el artículo 1° de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ],
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Se reforman los artículos 9, 14, 44, 45, 46, 51, 53, 55, 61, 87, 92, 101, 142, 143, 164, 172, 174, 178, 179, 188, 192, 196, 214, 223 al 233, el inciso 4) del artículo 237, los artículos 290 y 295"
+  },
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-027",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Art. 9 vigente",
+  "texto": "El artículo 9 vigente prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder. Sin embargo, si el caso cumple con los criterios de admisibilidad y viabilidad, podrá abordarse mediante los mecanismos propios de justicia restaurativa."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-028",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Asuntos no conciliables",
+  "texto": "El artículo 196 regula los asuntos no conciliables",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Asuntos no conciliables."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-029",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Reforma de la Ley 9582",
+  "texto": "El art. 2 de la Ley de Justicia Restaurativa, N.º 9582, también se reformó para remitir a ese artículo 9",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Asimismo, en los casos dispuestos por el artículo 9 de la Ley 9747, Código Procesal de Familia, de 23 de octubre de 2019."
+  },
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-030",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Conocimiento concentrado",
+  "texto": "El artículo 14 regula cuándo una misma autoridad conoce los litigios sobre una misma situación familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "14"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "podrán conocer de todos aquellos litigios en los cuales se estén debatiendo pretensiones sobre esa misma situación familiar"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-031",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Arts. 223 a 233",
+  "texto": "Los artículos 223 a 233 regulan la contestación, las excepciones, el allanamiento, la falta de contestación y las audiencias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "223",
+     "224",
+     "225",
+     "226",
+     "227",
+     "228",
+     "229",
+     "230",
+     "231",
+     "232",
+     "233"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Alegato de excepciones."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-032",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Sentencia sin audiencia inicial",
+  "texto": "se puede emitir sentencia sin audiencia inicial, salvo que la persona juzgadora la estime indispensable (artículo 226)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "se podrá emitir sentencia sin necesidad de convocar a la audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-033",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Pensión como medida de protección",
+  "texto": "El inciso 4) del artículo 237 regula la pensión alimentaria ordenada en un proceso de protección y la oposición ante el Juzgado de Pensiones Alimentarias",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "237"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Ordenar el pago de una pensión alimentaria a favor de la persona protegida"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-034",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Art. 16 CNA",
+  "texto": "reformó el artículo 16 del Código de la Niñez y la Adolescencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CNA",
+    "articulos": [
+     "16"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Así reformado por el artículo 2° de la ley N° 10558 del 23 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-035",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Derogación del art. 286",
+  "texto": "**derogó el artículo 286 del Código**, sobre el fondo para el pago transitorio de la obligación alimentaria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "286"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Fondo para el pago transitorio de la obligación alimentaria. (Derogado por el artículo 5° inciso 1) de la ley N° 10558 del 23 de octubre de 2024)"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-036",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "LOPJ y Ley 9379",
+  "texto": "También derogó dos disposiciones de la Ley Orgánica del Poder Judicial y añadió un nuevo art. 5 a la Ley N.º 9379",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "fuenteExterna": {
+   "url": "https://www.imprentanacional.go.cr/gaceta/?date=13%2F11%2F2024",
+   "titulo": "La Gaceta, edición del 13 de noviembre de 2024, Ley N.º 10558 (Imprenta Nacional)",
+   "cita": "Se derogan las siguientes normas"
+  },
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-090",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Derogaciones en el Código de Familia",
+  "texto": "Varios artículos del Código de Familia, incluidos los relativos al antiguo trámite de filiación y adopción.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Caracterización imprecisa. Se sustituyó por la lista literal del art. 4 de la Ley 9747, con la advertencia sobre la numeración.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-091",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Transitorio I",
+  "texto": "armonizándolos con las actuaciones ya practicadas",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "El transitorio dice «actualizaciones ya practicadas». Se reformuló como «lo ya practicado» para no atribuirle una palabra distinta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-092",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Ley 10558 sin fecha de vigencia",
+  "texto": "la Ley N.º 10558 de 2024 reformó disposiciones",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Faltaba la fecha de publicación y de vigencia (13 de noviembre de 2024) y el detalle de los artículos reformados. Se completó con la edición oficial de La Gaceta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-CPF-093",
+  "archivo": "src/content/articulos/cambios-codigo-procesal-familia.md",
+  "pagina": "/blog/cambios-codigo-procesal-familia",
+  "tema": "Descripción de novedades",
+  "texto": "Es uno de los cambios más relevantes para quienes participan en un asunto de familia en Costa Rica.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "Valoración sin respaldo normativo.",
+  "consultado": "2026-11-05"
+ }
+]

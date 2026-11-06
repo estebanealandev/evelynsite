@@ -1,0 +1,616 @@
+[
+ {
+  "id": "FAM-PJV-001",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Aplicación inmediata y sin recurso",
+  "texto": "La autoridad competente ordena de inmediato aplicar las medidas solicitadas y puede ordenar otras de oficio. Contra esa resolución no cabe recurso (artículo 10)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "Planteada la solicitud, la autoridad competente ordenará, de inmediato, aplicar cualquiera de las medidas de protección solicitadas."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "no cabrá recurso alguno contra ella"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "el juzgado podrá ordenar, de oficio, la aplicación de otras medidas distintas de las solicitadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-002",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Peligro inminente",
+  "texto": "Cuando existe peligro inminente para la integridad física, las formalidades no deben impedir una intervención oportuna (artículo 8)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "8"
+    ],
+    "cita": "En estos casos, el cumplimiento de formalidades no se convertirá en impedimento para la intervención oportuna."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-003",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Supuestos de audiencia",
+  "texto": "que la presunta persona agresora la solicite dentro de los cinco días siguientes a la notificación del auto inicial, o que la presunta víctima tenga antecedentes como persona agresora",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "dentro de los cinco días siguientes a la notificación del auto inicial, o que la presunta víctima tenga antecedentes como persona agresora, el juzgado convocará a las partes a una audiencia oral"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-004",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Plazo antes de la audiencia",
+  "texto": "Entre la notificación del señalamiento y la audiencia debe mediar un plazo de cinco días (artículo 12)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "Entre esa notificación y la celebración de la audiencia debe mediar un plazo de cinco días."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-005",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Comparecencia sin la otra persona",
+  "texto": "que su comparecencia se realice sin estar presente la presunta persona agresora",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "que su comparecencia se realice sin estar presente la presunta persona agresora, a quien se le informará lo sucedido una vez finalizada la declaración y se le dará la oportunidad de referirse a esta"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-006",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Reconocimiento judicial",
+  "texto": "Si la víctima no puede comparecer por una discapacidad o enfermedad, la autoridad judicial realiza un reconocimiento judicial y allí la entrevista",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "Cuando la víctima no pueda comparecer por una discapacidad o enfermedad, de previo a resolver, la autoridad judicial realizará un reconocimiento judicial"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-007",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Citación de testigos",
+  "texto": "la autoridad debe citar a los testigos y considerar su criterio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "12"
+    ],
+    "cita": "si la persona agredida no está en condiciones de atender sus propios intereses, la autoridad judicial deberá citar a los testigos y considerar su criterio para resolver"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-008",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Resolución y duda",
+  "texto": "el juzgado resuelve de inmediato si las medidas se mantienen (artículo 14). En caso de duda en la apreciación de la prueba, se estará a lo más favorable para el supuesto agredido (artículo 13)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "14"
+    ],
+    "cita": "el juzgado resolverá, de inmediato, si las medidas aplicadas se mantienen en ejecución o no"
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "13"
+    ],
+    "cita": "se estará a lo más favorable para el supuesto agredido"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-009",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Apelación",
+  "texto": "La resolución del juzgado puede apelarse en tres días hábiles, pero admitir la apelación no suspende la ejecución de las medidas (artículo 15)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "La resolución del juzgado podrá ser apelada en el término de tres días hábiles."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "15"
+    ],
+    "cita": "el admitir la apelación no suspenderá la ejecución de las medidas decretadas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-010",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Plazo de la autoridad superior",
+  "texto": "La autoridad superior debe resolver dentro de los quince días siguientes a la fecha en que finalizó la tramitación del recurso (artículo 16)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "16"
+    ],
+    "cita": "La autoridad superior deberá resolver el recurso de apelación dentro de los quince días siguientes a la fecha en que finalizó su tramitación."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-011",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Nota de la Sala Constitucional",
+  "texto": "una nota de SINALEVI bajo el artículo 10 recoge que la Sala Constitucional, en la resolución N.º 2896 del 14 de junio de 1996, admitió la apelación en un solo efecto",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "10"
+    ],
+    "cita": "contra la resolución  del juez de familia que imponga una pensión alimenticia provisional conforme a ellos, procede recurso de apelación en un sólo efecto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-012",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Duración",
+  "texto": "Se mantienen por un año, mientras no sean levantadas o modificadas antes por resolución judicial firme (artículo 4)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Las medidas de protección se mantendrán por un año, mientras no sean levantadas o modificadas con anterioridad por resolución judicial firme."
+   }
+  ],
+  "excepciones": "El art. 4 no regula la renovación; el texto lo presenta como asunto que debe revisarse.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-013",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Levantamiento anticipado",
+  "texto": "La persona agredida o quien haya requerido las medidas puede solicitar su levantamiento anticipado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "La persona agredida o quien haya requerido las medidas, de acuerdo con el artículo 7 de esta Ley, podrá solicitar el levantamiento anticipado de la medida."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-014",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Cese en personas menores de edad",
+  "texto": "el cese que no solicite una persona representante del Patronato Nacional de la Infancia solo procede cuando esa institución lo recomiende",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "solo procederá cuando lo recomiende esa institución, la cual estará obligada a pronunciarse"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-015",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Uso contrario a los fines",
+  "texto": "si se evidencia que la ley está siendo utilizada en contra de sus fines",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "5"
+    ],
+    "cita": "cuando evidencie que la ley está siendo utilizada en contra de sus fines"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-016",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Registro confidencial",
+  "texto": "El Poder Judicial lleva un registro confidencial de las personas a quienes se les han impuesto medidas. Los asientos se cancelan en un plazo de cinco años desde la última resolución comunicada (artículo 4)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "4"
+    ],
+    "cita": "La información contenida en este registro será confidencial y de uso exclusivo del Poder Judicial. Los asientos contenidos en este registro se cancelarán definitivamente en un plazo de cinco años, contado a partir de la última resolución comunicada."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-017",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Orden de auxilio policial",
+  "texto": "permite a la víctima portar una copia para acudir a la autoridad más cercana en caso de amenaza fuera de su domicilio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "La víctima portará copia de esta orden para que pueda acudir a la autoridad más cercana, en caso de amenaza de agresión fuera de su domicilio."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-018",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Incumplimiento",
+  "texto": "Debe testimoniar piezas al Ministerio Público para el juzgamiento por el delito de incumplimiento de una medida de protección (artículo 3)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "esta deberá testimoniar piezas al Ministerio Público para que se siga el juzgamiento por el delito de incumplimiento de una medida de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-019",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Revisión judicial",
+  "texto": "revisar los resultados de la ejecución de las medidas (artículo 17)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "La autoridad judicial deberá revisar los resultados de la ejecución de las medidas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-020",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Vigilancia policial",
+  "texto": "Debe vigilar el cumplimiento efectivo de las medidas (artículo 17)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "La policía administrativa tiene la obligación de vigilar el cumplimiento efectivo de las medidas de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-021",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Deberes policiales",
+  "texto": "socorrer a las personas agredidas aun dentro de su domicilio, detener a las presuntas personas agresoras y ponerlas a la orden de la autoridad competente, levantar un acta y decomisar armas (artículo 20)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "20"
+    ],
+    "cita": "Detener a las presuntas personas agresoras y ponerlas a la orden de la autoridad competente."
+   },
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "20"
+    ],
+    "cita": "Socorrer a las personas agredidas aun cuando se encuentren dentro de su domicilio."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-022",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Testimonio a la fiscalía",
+  "texto": "Si los hechos constituyen delito, la autoridad judicial libra testimonio a la agencia fiscal (artículo 18)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "18"
+    ],
+    "cita": "librará testimonio a la agencia fiscal respectiva"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-023",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Juzgado penal",
+  "texto": "el juzgado penal puede ordenar medidas de la Ley N.º 7586 y pasar luego al despacho de violencia doméstica (artículo 17 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "17"
+    ],
+    "cita": "Cuando exista una denuncia penal relacionada con los hechos de violencia intrafamiliar, el juzgado de la materia penal podrá ordenar, con independencia de la cautela penal que considere, las medidas de protección"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-024",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Alimentos",
+  "texto": "Fijada la obligación alimentaria provisional, se testimonian piezas de oficio y se remiten a la autoridad judicial correspondiente (artículo 3, inciso l)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "3"
+    ],
+    "cita": "Una vez fijada, de oficio, se testimoniarán piezas y se remitirán a la autoridad judicial correspondiente."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-025",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Responsabilidad parental",
+  "texto": "incluidas las causales por violencia vicaria que añadió la Ley N.º 10634",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "158 bis"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Mediante resolución judicial en firme que determine un caso de violencia vicaria"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "159"
+    ],
+    "reforma": "Ley 10634",
+    "cita": "Por violencia vicaria contra la persona menor de edad"
+   }
+  ],
+  "relacionadas": [
+   "/servicios/guarda-crianza"
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-026",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Conciliación prohibida",
+  "texto": "El artículo 9 del Código Procesal de Familia prohíbe conciliar en las situaciones en que se constaten relaciones desiguales de poder",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "Se prohíbe la conciliación en aquellas situaciones en que se constaten relaciones desiguales de poder."
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-027",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Justicia restaurativa",
+  "texto": "Ese artículo y el 196 solo abren la posibilidad de mecanismos de justicia restaurativa si el caso cumple los criterios de admisibilidad y viabilidad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "196"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "si cumple con los criterios de admisibilidad y viabilidad"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "9"
+    ],
+    "reforma": "Ley 10558",
+    "cita": "si el caso cumple con los criterios de admisibilidad y viabilidad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-028",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "INAMU",
+  "texto": "el Instituto Nacional de las Mujeres ofrecerá a las víctimas servicios de acompañamiento, asesoramiento jurídico y representación legal necesarios para estos trámites",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "LCVD",
+    "articulos": [
+     "17"
+    ],
+    "cita": "les ofrecerá a las víctimas los servicios de acompañamiento, asesoramiento jurídico y representación legal necesarios para realizar los trámites contemplados en esta Ley"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-090",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Línea telefónica no verificada",
+  "texto": "Para personas menores de edad, también está disponible la línea 1147 del Patronato Nacional de la Infancia.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "Retirada por instrucción: otro agente verifica los recursos institucionales y se integrarán después. Queda solo el 9-1-1.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PJV-091",
+  "archivo": "src/content/articulos/proteccion-juridica-violencia-domestica.md",
+  "pagina": "/blog/proteccion-juridica-violencia-domestica",
+  "tema": "Duplicación con el servicio",
+  "texto": "Algunas medidas posibles",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Contenido movido: el artículo repetía la página de servicio. Se reenfocó en lo que ocurre después de la solicitud.",
+  "consultado": "2026-11-05"
+ }
+]

@@ -1,0 +1,835 @@
+[
+ {
+  "id": "FAM-PFI-001",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Posesión notoria",
+  "texto": "existe cuando los padres tratan a la persona como hija, le dan sus apellidos, proveen sus alimentos o la presentan como tal a terceros, y estos y el vecindario la reputan así",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "80"
+    ],
+    "cita": "La posesión notoria de estado del hijo consiste en que sus padres lo hayan tratado como tal, dándole sus apellidos, proveyendo sus alimentos y presentándolo con ese carácter a terceros"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "93"
+    ],
+    "cita": "consiste en que sus presuntos padres lo hayan tratado como hijo, o dado sus apellidos, o proveído sus alimentos, o presentado como hijo a terceros"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-002",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Apreciación",
+  "texto": "En el caso extramatrimonial, el juez aprecia esas circunstancias discrecionalmente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "93"
+    ],
+    "cita": "circunstancias todas que serán apreciadas discrecionalmente por el Juez"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-003",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Efecto de la posesión",
+  "texto": "no se admite la acción de investigación (artículo 99) ni un reconocimiento (artículo 90)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "99"
+    ],
+    "cita": "No se admitirá la acción de investigación cuando el hijo tenga una filiación establecida por la posesión notoria de estado"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "90"
+    ],
+    "cita": "No se admitirá ningún reconocimiento cuando el hijo tenga ya una filiación establecida por la posesión notoria de estado"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-004",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Vindicación",
+  "texto": "El derecho es imprescriptible y, por muerte del hijo, pasa a los nietos, para quienes también lo es (artículo 76)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "76"
+    ],
+    "cita": "El derecho de los hijos para vindicar el estado que les pertenece es imprescriptible. Por muerte de los hijos ese derecho pasa a los nietos"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-005",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Herederos",
+  "texto": "Solo pueden comenzarlas si el hijo o nieto falleció antes de la mayoridad, o si al entrar en ella estaba incapacitado mentalmente y murió en ese estado. Su acción prescribe en cuatro años desde la muerte (artículo 77)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "77"
+    ],
+    "cita": "solamente podrán comenzarlas en caso de que el hijo o nieto falleciere antes de llegar a la mayoridad, o si al entrar en ella estuviere incapacitado mentalmente y muriere en ese estado"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "77"
+    ],
+    "cita": "La acción de los herederos prescribe en cuatro años, contados desde la muerte del hijo o nieto"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-006",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Hijos mayores",
+  "texto": "La investigación de paternidad o maternidad puede intentarse en cualquier momento (artículo 95)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "La investigación de paternidad o maternidad, tratándose de hijos mayores, podrá intentarse en cualquier momento"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-007",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Progenitor fallecido",
+  "texto": "La acción puede intentarse después de su muerte, siempre que se ejercite antes de que el hijo cumpla veinticinco años (artículo 95)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Si el padre o madre falleciere durante la minoridad del hijo, podrá intentarse la acción, aún después de su muerte con tal de que se ejercite antes de que el hijo haya cumplido veinticinco años"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-008",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Documento",
+  "texto": "Si después de vencidos esos términos aparece un documento escrito o firmado en que el padre o madre expresó su paternidad o maternidad, la acción puede plantearse dentro de los dos años siguientes (artículo 95)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "podrá establecer su acción dentro de los dos años siguientes a la aparición del documento, si esto ocurriere después de vencidos los términos indicados"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-009",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Nota del art. 95",
+  "texto": "SINALEVI anota que el artículo 95 quedó reformado de acuerdo con la anulación parcial ordenada por la Sala Constitucional en la resolución N.º 1894-99",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Así reformado este artículo de acuerdo con la anulación parcial ordenada por resolución de la Sala Constitucional Nº 1894-99 del 12 de marzo de 1999"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-010",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Prescripción de bienes",
+  "texto": "todo esto se entiende sin perjuicio de las reglas generales sobre prescripción de bienes",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Lo dispuesto en este artículo ha de entenderse sin perjuicio de las reglas generales sobre prescripción de bienes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-011",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Tensión 76 y 95",
+  "texto": "La relación entre el límite de veinticinco años y la imprescriptibilidad del artículo 76 requiere análisis en cada caso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "76"
+    ],
+    "cita": "El derecho de los hijos para vindicar el estado que les pertenece es imprescriptible. Por muerte de los hijos ese derecho pasa a los nietos"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "95"
+    ],
+    "cita": "Si el padre o madre falleciere durante la minoridad del hijo, podrá intentarse la acción, aún después de su muerte con tal de que se ejercite antes de que el hijo haya cumplido veinticinco años"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-012",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Legitimación del marido",
+  "texto": "El artículo 72 reserva esta acción al marido, personalmente o por apoderado especialísimo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "72"
+    ],
+    "cita": "sólo puede ser impugnada por el marido personalmente o por apoderado especialísimo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-013",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Regla general",
+  "texto": "Puede intentarse en cualquier tiempo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "La acción del marido para impugnar la paternidad podrá intentarse en cualquier tiempo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-014",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Excepción",
+  "texto": "Si el hijo está en posesión notoria de estado, debe intentarse dentro del año siguiente a la fecha en que el marido conoció los hechos que fundamentan la impugnación. Ese plazo no corre contra el marido incapaz mental que carezca de curador",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "en cuyo supuesto la acción deberá intentarse dentro del año siguiente a la fecha en que el marido tuvo conocimiento de los hechos que le sirven de fundamento para la impugnación. Este plazo no corre contra el marido incapaz mental que careciere de curador"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-015",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Herederos del marido",
+  "texto": "pero no después de dos meses desde que el hijo entró en posesión de los bienes o desde que los perturbó en la posesión de la herencia (artículo 74)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "74"
+    ],
+    "cita": "La acción de los herederos no será admitida después de dos meses contados a partir del día en que el hijo hubiere entrado en posesión de los bienes del presunto padre"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "74"
+    ],
+    "cita": "desde el día en que los herederos fueron perturbados en la posesión de la herencia por el presunto hijo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-016",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Vía",
+  "texto": "El artículo 73 todavía dice «vía ordinaria». El artículo 222 del Código Procesal de Familia, vigente desde el 1 de octubre de 2024, incluye la filiación entre las pretensiones del proceso resolutivo familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "deberá plantearse en la vía ordinaria"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "4) La filiación y la oposición de la adopción"
+   },
+   {
+    "norma": "L9747",
+    "articulos": [
+     "4"
+    ],
+    "cita": "Este Código regirá en su integridad a partir del 1 de octubre de 2024"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-017",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Hijo tras separación de hecho",
+  "texto": "permite a la madre, al hijo o a quien lo represente pedir que se declare habido fuera del matrimonio al nacido después de trescientos días de la separación de hecho",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "71"
+    ],
+    "cita": "Se tendrá como hijo habido fuera de matrimonio al que, nacido después de trescientos días de la separación de hecho de los cónyuges, no haya tenido posesión notoria de estado por parte del marido"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "71"
+    ],
+    "cita": "La declaración, mediante juicio, la hará el Tribunal a solicitud de la madre o del hijo, o de quien represente a éste"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-018",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Impugnar reconocimiento",
+  "texto": "El artículo 86 permite impugnar el reconocimiento al reconocido o a quien tenga interés, cuando se hizo mediante falsedad o error",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "El reconocimiento podrá ser impugnado por el reconocido o por quien tenga interés, cuando ha sido hecho mediante falsedad o error"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-019",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Hijo: párrafo anulado",
+  "texto": "la resolución N.º 151 del 16 de enero de 2002 anuló el párrafo que le daba solo dos años desde la mayoría de edad o desde que tuvo noticia de los hechos",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "El párrafo segundo que constaba en este numeral fue anulado por resolución de la Sala Constitucional N° 00151 del 16 de enero de 2002"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "La acción del hijo no será admisible después de dos años contados desde la mayoría de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-020",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Hijo mayor reconocido",
+  "texto": "Si hubo falsedad o error, el artículo 88 le da dos años desde que lo conoció. Este artículo no lleva nota en la copia oficial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "88"
+    ],
+    "cita": "El hijo mayor de edad no puede ser reconocido sin su consentimiento. Si hubiera habido falsedad o error en el mismo, podrá impugnarlo dentro de los dos años siguientes al conocimiento de esa circunstancia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-021",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Tercero: texto",
+  "texto": "El artículo 86 todavía dice que la acción se ejerce únicamente durante la minoridad del reconocido",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "En el caso de tercero interesado, la acción deberá ser ejercida únicamente durante la minoridad del reconocido"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-022",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Tercero: nota",
+  "texto": "la resolución N.º 6813 del 23 de abril de 2008 declaró inconstitucional ese límite porque discriminaba a los hijos extramatrimoniales menores de edad en posesión notoria de estado",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "mediante resolución de la Sala Constitucional N° 006813 del 23 de abril de 2008, se declaró que el párrafo segundo de este numeral es inconstitucional"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "por lo que resulta discriminatorio para los hijos extramatrimoniales menores de edad que han estado en posesión notoria de estado"
+   }
+  ],
+  "excepciones": "La nota habla de «párrafo segundo» y describe el plazo hasta la mayoridad. Conviene leer la sentencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-023",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Tercero: plazo",
+  "texto": "El plazo para el tercero que impugna el reconocimiento de esos hijos es el del artículo 73: un año desde que conoció los hechos",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "el plazo de caducidad para que un tercero interesado impugne el reconocimiento de los hijos extramatrimoniales que estuvieren en posesión notoria de estado, será el establecido en el artículo 73, párrafo segundo, del Código de Familia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "73"
+    ],
+    "cita": "en cuyo supuesto la acción deberá intentarse dentro del año siguiente a la fecha en que el marido tuvo conocimiento de los hechos que le sirven de fundamento para la impugnación. Este plazo no corre contra el marido incapaz mental que careciere de curador"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-024",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Tercero sin posesión",
+  "texto": "La nota no resuelve de forma expresa qué plazo tiene el tercero si no hay posesión notoria de estado",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "86"
+    ],
+    "cita": "el plazo de caducidad para que un tercero interesado impugne el reconocimiento de los hijos extramatrimoniales que estuvieren en posesión notoria de estado, será el establecido en el artículo 73, párrafo segundo, del Código de Familia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-025",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Reembolso",
+  "texto": "puede condenar al padre a reembolsar a la madre los gastos de embarazo y maternidad, según los principios de equidad. Esos rubros prescriben en diez años (artículo 96)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "este podrá condenar en la sentencia al padre a reembolsarle a la madre, según los principios de equidad, los gastos de embarazo y maternidad de la hija o el hijo. Estos rubros tendrán un plazo de prescripción de diez años"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-026",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Nota del art. 96",
+  "texto": "el tribunal puede condenar incluso a reembolsar gastos debidamente acreditados posteriores a los doce meses del nacimiento, siempre que no estén cubiertos por la prescripción decenal",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "aquellos gastos de maternidad del hijo o de la hija, debidamente acreditados, posteriores a los doce meses del nacimiento siempre que no estén cubiertos por la prescripción decenal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-027",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Alimentos",
+  "texto": "Declarada la paternidad, la obligación alimentaria se retrotrae a la fecha de presentación de la demanda y se liquida en el proceso alimentario, por ejecución de sentencia",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "la obligación alimentaria del padre respecto de la hija o el hijo se retrotraerá a la fecha de presentación de la demanda y se liquidará en el proceso alimentario correspondiente, mediante el trámite de ejecución de sentencia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-028",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Prueba científica",
+  "texto": "admite la prueba científica en todo proceso de investigación o impugnación y la valora junto con el resto de la prueba",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "98"
+    ],
+    "cita": "En todo proceso de investigación o impugnación de paternidad o maternidad, es admisible la prueba científica"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "98"
+    ],
+    "cita": "la probanza será valorada de acuerdo con la conclusión científica y el resto del material probatorio"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-029",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Art. 188 CPF",
+  "texto": "la autoridad judicial puede ordenarla incluso de oficio, tomar muestras de parientes en resolución fundada y, si la persona falleció, ordenar la exhumación cuando sea necesario",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "188"
+    ],
+    "cita": "la autoridad judicial podrá ordenarla, incluso de oficio, al inicio del proceso. También, la persona juzgadora podrá ordenar, mediante resolución fundada, que las muestras que se requieren para realizar el examen científico sean suministradas por parientes de las partes",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "188"
+    ],
+    "cita": "se podrá ordenar la exhumación correspondiente, con la advertencia de que en este caso la persona juzgadora deberá estar presente en el acto de la obtención de las muestras",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-030",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Art. 192 CPF",
+  "texto": "la inasistencia injustificada genera una presunción de veracidad en contra de quien no asiste. Si la prueba es absolutamente indispensable, se usan medios coercitivos, incluso la conducción policial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "192"
+    ],
+    "cita": "se tendrá como presunción de veracidad en su contra aquello que se pretendía demostrar con la prueba",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "192"
+    ],
+    "cita": "la autoridad judicial hará uso de los medios coercitivos necesarios para conseguir las muestras de la persona que se ha negado injustificadamente, incluyendo la posibilidad de que esta persona sea conducida por la autoridad de policía",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-031",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Firmeza",
+  "texto": "Una sentencia que desplaza la filiación no se ejecuta hasta quedar firme (artículo 96 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "No se ejecutará la sentencia que resuelva sobre el estado civil de las personas, el desplazamiento de la filiación"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "96"
+    ],
+    "cita": "hasta que se encuentre firme"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-032",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Revisión",
+  "texto": "En ese caso solo procede a instancia de la persona cuya filiación se declaró, cuando sea mayor de edad",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "112"
+    ],
+    "cita": "salvo en materia filiatoria cuando la sentencia establezca un estado de filiación de una persona menor de edad; sin embargo, en este último caso procederá la revisión a instancia de la persona cuya filiación se declaró cuando adquiera la mayoría de edad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-033",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Revisión por prueba",
+  "texto": "También procede si se denegó el emplazamiento porque la prueba científica no pudo verificarse a tiempo (artículo 112, incisos 10 y 11)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "112"
+    ],
+    "cita": "salvo en materia filiatoria cuando la sentencia establezca un estado de filiación de una persona menor de edad; sin embargo, en este último caso procederá la revisión a instancia de la persona cuya filiación se declaró cuando adquiera la mayoría de edad"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "112"
+    ],
+    "cita": "Cuando en materia filíatoria se hubiera denegado el emplazamiento de estado, en virtud de que no fue posible verificar la prueba científica acorde con el tiempo del proceso"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-034",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Plazo de revisión",
+  "texto": "El plazo es de un año desde que pudo alegarse la causal, con un máximo de diez años desde la firmeza, salvo que se trate de derechos humanos vulnerados (artículo 113)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "113"
+    ],
+    "cita": "El plazo para interponer la revisión será de un año, contado a partir del momento en el cual la persona perjudicada tuviera la posibilidad de alegar la causal respectiva; no obstante, no procederá la demanda cuando hayan transcurrido diez años"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "113"
+    ],
+    "cita": "Tratándose de derechos humanos vulnerados no existirá caducidad del plazo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-035",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Transacción",
+  "texto": "sobre la filiación no puede haber transacción ni compromiso en árbitros. Sí pueden pactarse los derechos pecuniarios que deriven de la filiación legalmente declarada, con aprobación del tribunal",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "77"
+    ],
+    "cita": "Sobre la filiación no puede haber transacción ni compromiso en árbitros, pero puede haber transacción o arbitramento sobre los derechos pecuniarios"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "77"
+    ],
+    "cita": "La transacción o el compromiso tratándose de menores de edad u otros incapaces, requieren aprobación del Tribunal"
+   }
+  ],
+  "excepciones": "Es el art. 78 CF. En la copia oficial aparece sin espacio («Artículo78.») y el separador lo une al art. 77.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-036",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Reconocimientos",
+  "texto": "pueden ser impugnados por el reconocido o por quien tenga interés, por falsedad o error (artículo 86).",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Omitía los plazos y las notas de SINALEVI sobre 151-2002 y 6813-2008.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-037",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Remisión vaga",
+  "texto": "Estas normas deben leerse junto con las resoluciones de la Sala Constitucional incorporadas al texto oficial.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se sustituye por el contenido concreto de cada nota.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-PFI-038",
+  "archivo": "src/content/articulos/procedimientos-filiacion-paternidad.md",
+  "pagina": "/blog/procedimientos-filiacion-paternidad",
+  "tema": "Hijos mayores",
+  "texto": "puede intentarse en cualquier momento (artículo 95), con las reglas particulares que esa norma contempla en caso de fallecimiento.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Se detallan los límites de 25 años y del documento hallado.",
+  "consultado": "2026-11-05"
+ }
+]

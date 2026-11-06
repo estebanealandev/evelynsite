@@ -1,0 +1,827 @@
+[
+ {
+  "id": "FAM-UNI-001",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Requisitos y plazo",
+  "texto": "reconoce efectos patrimoniales a la unión pública, notoria, única y estable por más de dos años. La acción para pedir su reconocimiento caduca en dos años desde la ruptura o la muerte del conviviente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "La unión de hecho pública. notoria, única y estable, por más de dos años",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-002",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Caducidad: inicio",
+  "texto": "El plazo para pedir el reconocimiento es de caducidad y empieza a contar con la ruptura o la muerte del conviviente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-003",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Renumeración",
+  "texto": "La Ley N.º 10192 de 2022 cambió la numeración: los antiguos artículos 242 a 245 son hoy los artículos 245 a 248",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "242",
+     "243",
+     "244",
+     "245",
+     "246",
+     "247",
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 242 al artículo 245",
+    "reforma": "Ley 10192"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 245 al artículo 248",
+    "reforma": "Ley 10192"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-004",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Aptitud legal y Ley 10223",
+  "texto": "El artículo 245, reformado por la Ley N.º 10223 de 2022, exige además que sea entre dos personas que posean aptitud legal para contraer matrimonio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Así reformado por el artículo único de la ley N° 10223 del 5 de mayo de 2022",
+    "reforma": "Ley 10223"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-005",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Impedimentos",
+  "texto": "Los impedimentos para casarse están en el artículo 14, entre ellos estar ligado por un matrimonio anterior y ser menor de dieciocho años",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Es legalmente imposible el matrimonio: 1) De la persona que esté ligada por un matrimonio anterior"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "7) De la persona menor de dieciocho años",
+    "reforma": "Ley 9406"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-006",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Caducidad",
+  "texto": "la acción caduca en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente. Si se trata de un conviviente fallecido, el reconocimiento se solicita por medio de su sucesión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-007",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Retroactividad",
+  "texto": "el artículo 247 dispone que el reconocimiento judicial retrotrae esos efectos a la fecha en que se inició la unión",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-008",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Gastos y trabajo doméstico",
+  "texto": "El artículo 35 aplica también a las uniones de hecho el deber de sufragar proporcionalmente los gastos de la familia, y estima como contribución económica el trabajo doméstico no remunerado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "35"
+    ],
+    "cita": "Las mismas disposiciones serán aplicables para las uniones de hecho",
+    "reforma": "Ley 9765"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "35"
+    ],
+    "cita": "tendrá derecho a que dichas labores se estimen como su contribución económica al sostenimiento del hogar",
+    "reforma": "Ley 9765"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-009",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Alimentos",
+  "texto": "Después de reconocida la unión, los convivientes pueden solicitarse pensión. Si la convivencia termina por un acto unilateral injustificado de uno de ellos, el otro puede pedirla a cargo del primero, siempre que carezca de medios propios para subsistir (artículo 248)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Después de reconocida la unión, los convivientes podrán solicitarse pensión alimenticia"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Cuando la convivencia termine por un acto unilateral injustificado de uno de los convivientes, el otro podrá pedir para sí, una pensión alimenticia a cargo del primero, siempre que carezca de medios propios para subsistir"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-010",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Ley 10228",
+  "texto": "recoge la interpretación auténtica de la Ley N.º 10228: en los procesos alimentarios entre convivientes, la unión se constata directamente en el juzgado de pensiones alimentarias",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   }
+  ],
+  "excepciones": "Nota de SINALEVI bajo CF 245. No se leyó el texto de la Ley 10228.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-011",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Sin proceso previo",
+  "texto": "Reclamarlos no exige un proceso previo ante un juzgado de familia",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-012",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Hijos e hijas",
+  "texto": "se aplica a la finalización de las uniones de hecho por cualquier causa y su posterior reconocimiento en sede jurisdiccional, por lo que deben definirse custodia, alimentos e interrelación familiar",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "Estas mismas disposiciones serán aplicables a la finalización de las uniones de hecho por cualquier causa y su posterior reconocimiento en sede jurisdiccional",
+    "reforma": "Ley 9781"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "152"
+    ],
+    "cita": "En caso de divorcio, nulidad de matrimonio o separación judicial o por mutuo consentimiento, los cónyuges con hijos e hijas menores deberán acordar o, en defecto de acuerdo, el Tribunal dispondrá en resolución fundada",
+    "reforma": "Ley 9781"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-013",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Presunción",
+  "texto": "presume la paternidad del hombre que, durante el período de la concepción, haya convivido en unión de hecho conforme al Título VII",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "92"
+    ],
+    "cita": "Se presume la paternidad del hombre que, durante el período de la concepción, haya convivido, en unión de hecho, de conformidad con lo indicado en el Título VII de este Código"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-014",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Capitulaciones",
+  "texto": "La nota incorporada a los artículos 37, 41 y 245 indica que la resolución N.º 13920 del 9 de junio de 2023 reconoció el derecho a suscribir y registrar capitulaciones para las uniones de hecho, incluidas las parejas del mismo sexo",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   }
+  ],
+  "excepciones": "Se cita la nota de SINALEVI. No se leyó la sentencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-015",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Mutuo consentimiento",
+  "texto": "Una vez finalizada la unión, los convivientes otorgan un convenio en escritura pública, con los requisitos y la forma de trámite del artículo 48 del Código de Familia, e incluyen las declaraciones de al menos dos personas sobre la existencia de la unión y sus requisitos (artículo 246)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "los convivientes, por mutuo consentimiento, podrán solicitar el reconocimiento de la unión una vez finalizada y con el mismo plazo de caducidad",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "se deberán seguir los requisitos y la forma de trámite establecidos en el artículo 48 de este Código, pero en la escritura pública que se otorga deberán plasmarse las declaraciones de al menos dos personas",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "48"
+    ],
+    "cita": "deben otorgar un convenio de divorcio en escritura pública",
+    "reforma": "Ley 10650"
+   }
+  ],
+  "excepciones": "No se afirma que aplique la presentación directa ante el Registro Civil del art. 48: ver hallazgos.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-016",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Trámite",
+  "texto": "La petición se presenta ante la autoridad judicial de la residencia o el domicilio de cualquiera de los convivientes, con el testimonio de la escritura y las certificaciones (artículos 18 y 289 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "18"
+    ],
+    "cita": "Tratándose de diligencias de divorcio, separación judicial o cese de la unión de hecho por mutuo consentimiento, será competente la autoridad judicial de la residencia habitual o el domicilio de cualquiera de los cónyuges o convivientes"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "289"
+    ],
+    "cita": "presentará la petición por escrito ante la autoridad judicial competente, adjuntando el testimonio de escritura y las certificaciones correspondientes"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-017",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Personas menores de edad",
+  "texto": "se les da oportunidad de opinar y la sentencia se notifica al PANI (artículo 290)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "cita": "A la persona menor de edad hija del matrimonio o de la unión de hecho se le concederá la oportunidad de ser escuchada para que exprese su opinión respecto a lo relativo a su cuidado personal o su interrelación con sus progenitores",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "290"
+    ],
+    "cita": "La sentencia que apruebe el convenio será notificada a la oficina local del Patronato Nacional de la Infancia (PANI)",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-018",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Contencioso",
+  "texto": "Sin acuerdo, el reconocimiento de la unión y su régimen patrimonial se conocen en el proceso resolutivo familiar (artículo 222, incisos 2 y 3, del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "2) El reconocimiento de la unión de hecho"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "222"
+    ],
+    "cita": "3) La aplicación del régimen patrimonial del matrimonio y de la unión de hecho"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-019",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Atracción",
+  "texto": "Ese proceso atrae los demás procesos resolutivos patrimoniales y personales de las mismas partes (artículo 14)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "El proceso resolutivo familiar relacionado con la separación judicial, el divorcio, la nulidad del matrimonio o el reconocimiento de la unión de hecho atraerá a los demás procesos resolutivos referidos a pretensiones patrimoniales y personales de las mismas partes",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-020",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Excepción de caducidad",
+  "texto": "La caducidad puede alegarse como excepción al contestar la demanda. Si se acoge, pone fin al proceso (artículos 224 y 229 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "224"
+    ],
+    "cita": "Las excepciones procesales y materiales deberán oponerse con la contestación",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "229"
+    ],
+    "cita": "si se han planteado las excepciones procesales de litispendencia, cosa juzgada, caducidad, prescripción y transacción, estas deberán ser resueltas de forma oral en la audiencia inicial. Si son declaradas con lugar se pondrá fin al proceso",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-021",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Salida del hogar",
+  "texto": "la autoridad judicial puede ordenar o autorizar la salida inmediata del hogar de cualquiera de los convivientes, con independencia de quién sea el propietario (artículo 136 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "136"
+    ],
+    "cita": "la autoridad judicial podrá ordenar o autorizar a cualquiera de los cónyuges o convivientes la salida inmediata del hogar, con independencia de la titularidad de la propiedad"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-022",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Medidas patrimoniales",
+  "texto": "La anotación de bienes, el embargo preventivo y las medidas sobre acciones o cuotas también pueden pedirse si se discute la ganancialidad (artículos 140 a 142 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "En el trámite de procesos con pretensiones patrimoniales, a fin de impedir que la parte demandada, mediante el ocultamiento o la distracción de bienes, pueda eludir su responsabilidad, se podrá pedir el embargo preventivo de bienes, sin que se exija garantía pecuniaria alguna"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "En el proceso donde se discuta la declaratoria del derecho de ganancialidad de bienes inmuebles, muebles inscribibles o derechos de concesión de órganos administrativos, que presumiblemente puedan ser considerados de esa forma, se ordenará la anotación de estos"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "cuando lo que se pretenda sea la declaratoria de ganancialidad de las acciones o cuotas, la autoridad judicial ordenará anotar la demanda en los libros sociales que corresponda y, además, tendrá la facultad de prohibir o de condicionar el traspaso de acciones o cuotas",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-023",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Conviviente casado",
+  "texto": "El artículo 245 exige aptitud legal para contraer matrimonio, y el artículo 14 declara legalmente imposible el matrimonio de quien esté ligado por uno anterior. Una separación de hecho no equivale a un divorcio, de modo que debe analizarse desde cuándo se cumplió el requisito",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "14"
+    ],
+    "cita": "Es legalmente imposible el matrimonio: 1) De la persona que esté ligada por un matrimonio anterior"
+   }
+  ],
+  "excepciones": "Se formula como asunto de análisis. Hay jurisprudencia no revisada.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-024",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Comparación con matrimonio",
+  "texto": "El artículo 245 se refiere a los efectos patrimoniales propios del matrimonio, y el artículo 248 regula los alimentos. Otros efectos, como los sucesorios, deben revisarse en su propia normativa",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "Después de reconocida la unión, los convivientes podrán solicitarse pensión alimenticia"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-025",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Parejas del mismo sexo",
+  "texto": "La redacción vigente del artículo 245 se refiere a dos personas con aptitud legal para contraer matrimonio, sin distinguir por sexo. La nota de SINALEVI sobre la resolución N.º 13920 de 2023 de la Sala Constitucional menciona expresamente a las parejas del mismo sexo respecto de las capitulaciones",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "entre dos personas que posean aptitud legal para contraer matrimonio, surtirá todos los efectos patrimoniales propios del matrimonio formalizado legalmente",
+    "reforma": "Ley 10223"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-026",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Ley 10228 y caducidad",
+  "texto": "La nota de SINALEVI no dice si el plazo de caducidad del artículo 246 se aplica a esa constatación, de modo que ese punto requiere análisis",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "la constatación de la existencia de la unión de hecho debe realizarse directamente en el respectivo juzgado de pensiones alimentarias, sin necesidad de tramitar previamente otro proceso para realizar dicha constatación ante un juzgado de familia",
+    "reforma": "Ley 10228"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "246"
+    ],
+    "cita": "cualquiera de los convivientes o, si se trata de un conviviente fallecido, por medio de su sucesión, podrá solicitar el reconocimiento de esa unión. La acción caducará en dos años a partir de la ruptura de la convivencia o de la muerte del causante conviviente",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-027",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Numeración antigua",
+  "texto": "Muchos textos anteriores a 2022 hablan de los artículos 242 a 245 del Código de Familia. La Ley N.º 10192 los trasladó a los artículos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "242",
+     "243",
+     "244",
+     "245",
+     "246",
+     "247",
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 242 al artículo 245",
+    "reforma": "Ley 10192"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "248"
+    ],
+    "cita": "que lo traspaso del antiguo artículo 245 al artículo 248",
+    "reforma": "Ley 10192"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-028",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Efectos desde el inicio",
+  "texto": "Una vez reconocida, la unión surte efectos patrimoniales desde su inicio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "247"
+    ],
+    "cita": "El reconocimiento judicial de la unión de hecho retrotraerá sus efectos patrimoniales a la fecha en que se inició esa unión"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-029",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Afectación",
+  "texto": "El artículo 43 también permite afectar un inmueble a habitación familiar a favor del conviviente",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "43"
+    ],
+    "cita": "a favor de su cónyuge o conviviente, si se tratara de unión de hecho",
+    "reforma": "Ley 9580"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-030",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Falta de oposición",
+  "texto": "puede dictarse sentencia sin convocar a la audiencia inicial, salvo que la persona juzgadora la estime indispensable (artículo 226 del Código Procesal de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "cita": "Ante la falta de oposición a la demanda, en los procesos de divorcio, separación judicial y reconocimiento de unión de hecho en los que no existan hijos o hijas menores de edad o con discapacidad",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "226"
+    ],
+    "cita": "se podrá emitir sentencia sin necesidad de convocar a la audiencia inicial, salvo que la persona juzgadora estime indispensable realizarla",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-031",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Ley 10223",
+  "texto": "La Ley N.º 10223 de 2022 reformó este artículo para utilizar esa redacción.",
+  "tipo": "derecho_vigente",
+  "estado": "NO_VERIFICABLE",
+  "retirada": true,
+  "motivo": "La copia muestra la reforma, pero no la redacción anterior. Se mantiene solo que el artículo fue reformado por esa ley.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-032",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Alimentos",
+  "texto": "Después del reconocimiento, los convivientes pueden solicitarse pensión.",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Debe leerse con la nota sobre la Ley 10228: en procesos alimentarios la unión se constata en el juzgado de pensiones.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-UNI-033",
+  "archivo": "src/content/servicios/union-de-hecho.md",
+  "pagina": "/servicios/union-de-hecho",
+  "tema": "Advertencia sin base",
+  "texto": "La simple convivencia, sin los requisitos legales, puede no generar estos efectos",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Redundante frente a los requisitos del art. 245, que ya se explican.",
+  "consultado": "2026-11-05"
+ }
+]

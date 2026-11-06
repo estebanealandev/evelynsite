@@ -1,10 +1,10 @@
 ---
-titulo: "Consideraciones legales para familias con patrimonio empresarial"
-metaTitulo: "Divorcio y patrimonio empresarial en Costa Rica"
-metaDescripcion: "Qué considerar en Costa Rica cuando una empresa o sociedad forma parte del patrimonio familiar: gananciales, valoración, capitulaciones y medidas cautelares."
-resumen: "Cómo se analiza una empresa o sociedad cuando una familia atraviesa un cambio legal."
+titulo: "Empresas y sociedades en un divorcio o una separación: qué prevén las normas"
+metaTitulo: "Empresas y sociedades en un divorcio en Costa Rica"
+metaDescripcion: "El Código de Familia no regula empresas, pero el Código Procesal de Familia prevé medidas sobre acciones, cuotas y bienes de sociedades. Qué dice y qué deja sin resolver."
+resumen: "Qué dicen el Código de Familia y el Código Procesal de Familia sobre acciones, cuotas y bienes inscritos a nombre de una sociedad."
 categoria: "Bienes gananciales"
-etiquetas: ["Empresas", "Valoración", "Capitulaciones"]
+etiquetas: ["Sociedades", "Acciones y cuotas", "Medidas cautelares"]
 fecha: "2026-11-04"
 imagen: "blog-06"
 alt: "Galería de arcos de piedra"
@@ -12,42 +12,57 @@ destacado: false
 servicios: ["bienes-gananciales", "acuerdos-familiares"]
 fuentes:
   - ref: "CF"
-    detalle: "arts. 37, 40, 41"
+    detalle: "arts. 37, 39, 41, 245"
   - ref: "CPF"
-    detalle: "arts. 138, 140, 320"
+    detalle: "arts. 59, 140 a 142, 179, 265, 320, 331"
 ---
 
-Cuando una familia tiene un negocio, los asuntos personales y empresariales se entrecruzan. El Código de Familia no contiene un capítulo especial sobre empresas, así que el análisis parte de las reglas generales de los gananciales y de los hechos de cada caso.
+El Código de Familia no menciona sociedades ni personas jurídicas. No hay una regla especial que diga cuándo una empresa o sus acciones son gananciales: se aplican las reglas generales del artículo 41. Las reglas específicas están en el Código Procesal de Familia y se refieren a cómo proteger esos bienes durante el proceso y cómo cobrar lo resuelto.
 
-## Las preguntas de partida
+## Las preguntas que plantea el artículo 41
 
-- **¿Cuándo se adquirió la participación?** No son gananciales los bienes cuya causa o título de adquisición precedió al matrimonio.
-- **¿Cómo se adquirió?** Lo recibido por título gratuito o causa aleatoria tampoco es ganancial.
-- **¿Con qué fondos?** Pueden existir bienes subrogados a otros propios o comprados con valores propios destinados a ello en capitulaciones.
-- **¿Existía separación de hecho?** Lo adquirido durante ella está excluido.
+El artículo 41 enumera los bienes que no son gananciales. Aplicado a una participación en una empresa, lleva a estas preguntas:
 
-Las respuestas dependen de documentos: libros, escrituras, registros, traspasos y movimientos financieros.
+- **¿Cuándo se adquirió?** No son gananciales los bienes cuya causa o título de adquisición precedió al matrimonio.
+- **¿Cómo se adquirió?** Tampoco lo que se recibió por título gratuito o causa aleatoria.
+- **¿Con qué fondos?** Pueden existir bienes subrogados a otros propios, o comprados con valores propios destinados a ello en capitulaciones matrimoniales.
+- **¿Existía separación de hecho?** Lo adquirido durante ella queda excluido.
 
-## Valor neto
+## Acciones y cuotas
 
-El derecho de participación recae sobre la mitad del valor neto de los bienes gananciales, no sobre la gestión de la empresa. Si no hay acuerdo sobre el valor del bien, el artículo 320 del Código Procesal de Familia prevé la prueba pericial.
+El artículo 142 del Código Procesal de Familia, reformado por la Ley N.º 10558, contempla dos situaciones: que se pida declarar la ganancialidad de acciones o cuotas, y que se discuta un abuso de la figura societaria para inscribir bienes que en realidad pertenecen a alguno de los cónyuges o convivientes.
 
-## Capitulaciones
+En ambas, la autoridad judicial ordena anotar la demanda en los libros sociales y puede prohibir o condicionar el traspaso de las acciones o cuotas. También puede pedir que se le presenten los libros. Si la sociedad aún no los tiene, puede requerir a sus personeros que los legalicen en un plazo determinado.
 
-Las capitulaciones matrimoniales permiten regular bienes presentes y futuros, antes o durante el matrimonio. Deben constar en escritura pública e inscribirse en el Registro Público. También se permite renunciar a las ventajas de la distribución final en capitulaciones o en un convenio en escritura pública.
+## Bienes inscritos a nombre de una sociedad
 
-Son decisiones de fondo que deben tomarse con información suficiente.
+Según el artículo 141 del Código Procesal de Familia, se ordena anotar los bienes de una persona jurídica cuando se la demande por considerar que fue constituida para sustraer bienes con derecho de ganancialidad del patrimonio de la pareja, o que existe para esos fines.
+
+Si la sentencia podría afectar a la sociedad, su intervención en el proceso puede ser necesaria. El artículo 59 regula la integración de quienes deben demandar o ser demandados conjuntamente, también cuando se trata de una persona jurídica representada por una de las partes.
 
 ## Riesgo de ocultamiento
 
-El artículo 41 del Código de Familia permite la liquidación anticipada si el tribunal comprueba, de modo indubitable, que los intereses de un cónyuge corren riesgo por la mala gestión del otro o por actos que amenacen burlarlo.
+Hay dos vías distintas:
 
-El Código Procesal de Familia prevé el embargo preventivo en procesos con pretensiones patrimoniales, para impedir el ocultamiento o la distracción de bienes (artículo 140), y la administración interina cuando existan indicios de que el patrimonio corre peligro (artículo 138).
+- **Liquidación anticipada.** El tribunal puede autorizarla si comprueba de modo indubitable que los intereses de un cónyuge corren riesgo por la mala gestión del otro o por actos que amenacen burlarlo (artículo 41 del Código de Familia).
+- **Embargo preventivo.** En procesos con pretensiones patrimoniales, puede pedirse para impedir que la parte demandada eluda su responsabilidad mediante el ocultamiento o la distracción de bienes. No se exige garantía pecuniaria, y la autoridad judicial vigila que no sea excesivo (artículo 140 del Código Procesal de Familia).
 
-## Ingresos y pensión
+## Valor y cobro
 
-En materia alimentaria, el artículo 265 del Código Procesal de Familia señala que no es excusa atendible que los negocios no produzcan utilidades, sin perjuicio del análisis de la prueba. Si se ocultan o distraen bienes o ingresos, se testimonian piezas ante el Ministerio Público.
+Si no hay acuerdo sobre el valor de un bien declarado ganancial, el artículo 320 del Código Procesal de Familia permite ordenar prueba pericial. Según el artículo 179, el despacho puede pedir informes y documentos a cualquier persona física o jurídica cuando el hecho no pueda demostrarse por otro medio y no se violen derechos fundamentales ni se divulguen datos protegidos.
 
-## Un análisis conjunto
+El artículo 331 añade una regla de cobro: para cobrar una suma líquida fijada en una resolución de un proceso familiar, procede embargar los bienes de una sociedad en la cual los cónyuges, excónyuges o exconvivientes de hecho son los únicos accionistas.
 
-Estas situaciones pueden requerir la participación coordinada de profesionales en derecho, contabilidad o valoración. Lo que corresponde a cada caso solo puede determinarse revisando la documentación concreta.
+## Capitulaciones
+
+Las capitulaciones matrimoniales pueden comprender bienes presentes y futuros, antes o durante el matrimonio, y deben constar en escritura pública e inscribirse en el Registro Público (artículo 37 del Código de Familia). Pueden modificarse después y, si hay personas menores de edad, se requiere autorización del tribunal (artículo 39). El artículo 41 permite renunciar a las ventajas de la distribución final en capitulaciones o en un convenio en escritura pública.
+
+Una nota de SINALEVI bajo el artículo 245 indica que la Sala Constitucional reconoció, en la resolución N.º 13920 de 2023, el derecho a suscribir y registrar capitulaciones para las uniones de hecho.
+
+## Ingresos y pensión alimentaria
+
+El artículo 265 del Código Procesal de Familia dispone que no es excusa atendible para oponerse a la fijación de la cuota que los negocios no produzcan utilidades, sin perjuicio del análisis de la prueba. Si se ocultan o distraen bienes o ingresos, se testimonian piezas ante el Ministerio Público.
+
+## Lo que estas normas no resuelven
+
+Las normas revisadas no contienen reglas expresas sobre las utilidades que la sociedad no ha repartido, el aumento de valor de una empresa fundada antes del matrimonio, el método para valorarla o el destino de la gestión mientras dura el proceso. Esas cuestiones requieren revisar la documentación concreta y la jurisprudencia aplicable, y pueden requerir apoyo contable o pericial.

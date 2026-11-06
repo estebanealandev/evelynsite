@@ -14,6 +14,8 @@ export function permitido(clave: string, max: number, ventanaMs: number, ahora =
   visitas.set(id, recientes);
   if (visitas.size > 5000) {
     for (const [k, v] of visitas) if (!v.some(t => ahora - t < ventanaMs)) visitas.delete(k);
+    // Si aun así sigue creciendo, se descartan las entradas más antiguas para acotar la memoria.
+    if (visitas.size > 20000) for (const k of [...visitas.keys()].slice(0, visitas.size - 20000)) visitas.delete(k);
   }
   return true;
 }

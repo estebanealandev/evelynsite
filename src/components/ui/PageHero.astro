@@ -3,7 +3,7 @@ import Crumbs from './Crumbs.astro';
 import { em } from '../../lib/format';
 const { titulo, lede, eyebrow, crumbs } = Astro.props;
 ---
-<section class="page-hero on-dark">
+<section class="page-hero">
   <div class="wrap">
     {crumbs && <Crumbs items={crumbs} />}
     <slot name="antes" />

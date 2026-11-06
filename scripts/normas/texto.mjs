@@ -4,7 +4,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { DIR_NORMAS } from './catalogo.mjs';
 
-const TITULO = /^[ \t]*(?:ART[ÍI]CULO|Art[íi]culo)[ \t]+(\d+)[ \t]*(?:[°ºo][ \t]*)?(bis|ter|qu[aá]ter)?\b/gim;
+// La copia oficial tiene algún número partido, como «Artículo 27 4-»: el grupo final lo recompone.
+const TITULO = /^[ \t]*(?:ART[ÍI]CULO|Art[íi]culo)[ \t]+(\d+)(?:[ \t]+(\d)(?=[ \t]*[-.–—:]))?[ \t]*(?:[°ºo][ \t]*)?(bis|ter|qu[aá]ter)?\b/gim;
 
 export const hash = t => createHash('sha256').update(t).digest('hex').slice(0, 16);
 export const leer = clave => fs.readFileSync(path.join(DIR_NORMAS, `${clave}.txt`), 'utf8');
@@ -19,7 +20,7 @@ export function articulos(texto) {
   const marcas = [...texto.matchAll(TITULO)];
   const salida = {};
   marcas.forEach((m, i) => {
-    const clave = [m[1], (m[2] || '').toLowerCase().replace('á', 'a')].filter(Boolean).join(' ');
+    const clave = [`${m[1]}${m[2] || ''}`, (m[3] || '').toLowerCase().replace('á', 'a')].filter(Boolean).join(' ');
     const fin = i + 1 < marcas.length ? marcas[i + 1].index : texto.length;
     const cuerpo = texto.slice(m.index, fin).trim();
     salida[clave] = salida[clave] ? `${salida[clave]}\n\n${cuerpo}` : cuerpo;

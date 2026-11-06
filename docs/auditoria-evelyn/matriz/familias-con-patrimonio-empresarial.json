@@ -1,0 +1,500 @@
+[
+ {
+  "id": "FAM-EMP-001",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Sin régimen especial en CF",
+  "texto": "El Código de Familia no menciona sociedades ni personas jurídicas. No hay una regla especial que diga cuándo una empresa o sus acciones son gananciales: se aplican las reglas generales del artículo 41",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Únicamente, no son gananciales los siguientes bienes, sobre los cuales no existe el derecho de participación",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "excepciones": "Comprobado con búsqueda de «sociedad» y «persona jurídica» en la copia oficial del CF: sin resultados. No se revisó jurisprudencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-002",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Título anterior",
+  "texto": "No son gananciales los bienes cuya causa o título de adquisición precedió al matrimonio",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "3) Aquellos cuya causa o título de adquisición precedió al matrimonio",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-003",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Título gratuito",
+  "texto": "Tampoco lo que se recibió por título gratuito o causa aleatoria",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "1) Los que fueran introducidos al matrimonio, o adquiridos durante él, por título gratuito o por causa aleatoria",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-004",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Subrogación y valores propios",
+  "texto": "Pueden existir bienes subrogados a otros propios, o comprados con valores propios destinados a ello en capitulaciones matrimoniales",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "2) Los comprados con valores propios de uno de los cónyuges, destinados a ello en las capitulaciones matrimoniales",
+    "reforma": "Ley 9747"
+   },
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "4) Los muebles o inmuebles que fueron subrogados a otros propios de alguno de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-005",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Separación de hecho",
+  "texto": "Lo adquirido durante ella queda excluido",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "5) Los adquiridos durante la separación de hecho de los cónyuges",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-006",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Acciones y cuotas",
+  "texto": "contempla dos situaciones: que se pida declarar la ganancialidad de acciones o cuotas, y que se discuta un abuso de la figura societaria para inscribir bienes que en realidad pertenecen a alguno de los cónyuges o convivientes",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "cuando lo que se pretenda sea la declaratoria de ganancialidad de las acciones o cuotas, la autoridad judicial ordenará anotar la demanda en los libros sociales que corresponda y, además, tendrá la facultad de prohibir o de condicionar el traspaso de acciones o cuotas",
+    "reforma": "Ley 10558"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "Cuando en un proceso se discuta si se ha realizado un abuso de la figura societaria para la inscripción de bienes que en realidad pertenecen a alguno de los cónyuges o convivientes",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-007",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Medidas sobre libros",
+  "texto": "la autoridad judicial ordena anotar la demanda en los libros sociales y puede prohibir o condicionar el traspaso de las acciones o cuotas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "cuando lo que se pretenda sea la declaratoria de ganancialidad de las acciones o cuotas, la autoridad judicial ordenará anotar la demanda en los libros sociales que corresponda y, además, tendrá la facultad de prohibir o de condicionar el traspaso de acciones o cuotas",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-008",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Libros",
+  "texto": "Si la sociedad aún no los tiene, puede requerir a sus personeros que los legalicen en un plazo determinado",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "142"
+    ],
+    "cita": "la persona juzgadora podrá requerir a los personeros que realicen su legalización dentro de un determinado plazo",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-009",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Bienes de la sociedad",
+  "texto": "se ordena anotar los bienes de una persona jurídica cuando se la demande por considerar que fue constituida para sustraer bienes con derecho de ganancialidad del patrimonio de la pareja, o que existe para esos fines",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "141"
+    ],
+    "cita": "se ordenará la anotación de ese tipo de bienes de una persona jurídica, cuando se demande a ella por considerar que ha sido constituida para sustraer bienes con derecho de ganancialidad del patrimonio de la pareja, o que exista para tales fines"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-010",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Integración",
+  "texto": "El artículo 59 regula la integración de quienes deben demandar o ser demandados conjuntamente, también cuando se trata de una persona jurídica representada por una de las partes",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "59"
+    ],
+    "cita": "Si quien deba integrarse es una persona jurídica cuya representación la tiene una de las partes del proceso"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-011",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Liquidación anticipada",
+  "texto": "El tribunal puede autorizarla si comprueba de modo indubitable que los intereses de un cónyuge corren riesgo por la mala gestión del otro o por actos que amenacen burlarlo",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Podrá procederse a la liquidación anticipada de los bienes gananciales cuando el tribunal, previa solicitud de uno de los cónyuges, compruebe, de modo indubitable, que los intereses de este corren el riesgo de ser comprometidos por la mala gestión de su consorte o por actos que amenacen burlarlo",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-012",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Embargo preventivo",
+  "texto": "En procesos con pretensiones patrimoniales, puede pedirse para impedir que la parte demandada eluda su responsabilidad mediante el ocultamiento o la distracción de bienes. No se exige garantía pecuniaria, y la autoridad judicial vigila que no sea excesivo (artículo 140",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "En el trámite de procesos con pretensiones patrimoniales, a fin de impedir que la parte demandada, mediante el ocultamiento o la distracción de bienes, pueda eludir su responsabilidad, se podrá pedir el embargo preventivo de bienes, sin que se exija garantía pecuniaria alguna"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "140"
+    ],
+    "cita": "la autoridad judicial será vigilante en determinar, en cualquier momento del proceso, la existencia de un embargo excesivo"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-013",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Valor",
+  "texto": "el artículo 320 del Código Procesal de Familia permite ordenar prueba pericial",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "incluyendo, si fuera necesario y no hay acuerdo sobre el valor del bien, la de tipo pericial para la valoración del bien"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-014",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Informes",
+  "texto": "el despacho puede pedir informes y documentos a cualquier persona física o jurídica cuando el hecho no pueda demostrarse por otro medio y no se violen derechos fundamentales ni se divulguen datos protegidos",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "179"
+    ],
+    "cita": "los informes, expedientes, estudios y otros documentos referentes a los hechos del proceso y cuya demostración no pueda ser solventada por otro medio de prueba",
+    "reforma": "Ley 10558"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-015",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Embargo en sociedades comunes",
+  "texto": "para cobrar una suma líquida fijada en una resolución de un proceso familiar, procede embargar los bienes de una sociedad en la cual los cónyuges, excónyuges o exconvivientes de hecho son los únicos accionistas",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "331"
+    ],
+    "cita": "procederá el embargo de los bienes propiedad de una sociedad en la cual los cónyuges, excónyuges o exconvivientes de hecho son los únicos accionistas"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-016",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Capitulaciones",
+  "texto": "Las capitulaciones matrimoniales pueden comprender bienes presentes y futuros, antes o durante el matrimonio, y deben constar en escritura pública e inscribirse en el Registro Público (artículo 37 del Código de Familia)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "37"
+    ],
+    "cita": "Las capitulaciones matrimoniales pueden otorgarse antes de la celebración del matrimonio o durante su existencia y comprenden los bienes presentes y futuros. Este convenio, para ser válido, debe constar en escritura pública e inscribirse en el Registro Público"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-017",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Modificación",
+  "texto": "Pueden modificarse después y, si hay personas menores de edad, se requiere autorización del tribunal (artículo 39)",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "39"
+    ],
+    "cita": "Las capitulaciones matrimoniales pueden ser modificadas después del matrimonio. Si hay menores de edad, ha de serlo con autorización del Tribunal"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-018",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Renuncia",
+  "texto": "El artículo 41 permite renunciar a las ventajas de la distribución final en capitulaciones o en un convenio en escritura pública",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "41"
+    ],
+    "cita": "Se permite renunciar en las capitulaciones matrimoniales o en un convenio que deberá hacerse en escritura pública, a las ventajas de la distribución final",
+    "reforma": "Ley 9747"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-019",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Capitulaciones en unión de hecho",
+  "texto": "Una nota de SINALEVI bajo el artículo 245 indica que la Sala Constitucional reconoció, en la resolución N.º 13920 de 2023, el derecho a suscribir y registrar capitulaciones para las uniones de hecho",
+  "tipo": "jurisprudencia_nota_sinalevi",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "245"
+    ],
+    "cita": "Mediante resolución de la Sala Constitucional N° 13920 del 9 de junio de 2023, la Sala Constitucional reconoció el derecho de las personas a suscribir y registrar capitulaciones para las uniones de hecho, incluyendo a parejas del mismo sexo"
+   }
+  ],
+  "excepciones": "Se cita la nota. No se leyó la sentencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-020",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Alimentos",
+  "texto": "no es excusa atendible para oponerse a la fijación de la cuota que los negocios no produzcan utilidades, sin perjuicio del análisis de la prueba",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "No será excusa atendible para oponerse a la fijación de la cuota de pensión alimentaria el no tener trabajo, salario o ingresos, tampoco que los negocios no produzcan utilidades"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-021",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Ocultamiento en alimentos",
+  "texto": "Si se ocultan o distraen bienes o ingresos, se testimonian piezas ante el Ministerio Público",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CPF",
+    "articulos": [
+     "265"
+    ],
+    "cita": "Si se ocultaran o distrajeran bienes o ingresos, se testimoniarán piezas ante el Ministerio Público"
+   }
+  ],
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-022",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Vacíos",
+  "texto": "Las normas revisadas no contienen reglas expresas sobre las utilidades que la sociedad no ha repartido, el aumento de valor de una empresa fundada antes del matrimonio, el método para valorarla o el destino de la gestión mientras dura el proceso",
+  "tipo": "derecho_vigente",
+  "estado": "VERIFICADA",
+  "respaldos": [
+   {
+    "norma": "CF",
+    "articulos": [
+     "40"
+    ],
+    "cita": "cada cónyuge queda dueño y dispone libremente de los bienes que tenía al contraer matrimonio de los que adquiera durante él por cualquier título y de los frutos de unos y otros"
+   },
+   {
+    "norma": "CPF",
+    "articulos": [
+     "320"
+    ],
+    "cita": "incluyendo, si fuera necesario y no hay acuerdo sobre el valor del bien, la de tipo pericial para la valoración del bien"
+   }
+  ],
+  "excepciones": "Constatación sobre CF y CPF. Requiere revisar jurisprudencia.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-023",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Administración interina",
+  "texto": "y la administración interina cuando existan indicios de que el patrimonio corre peligro (artículo 138)",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "CPF 138 está en la sección de medidas en procesos de representación. Su aplicación a una empresa de la pareja no consta. Se retira.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-024",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Objeto del derecho",
+  "texto": "El derecho de participación recae sobre la mitad del valor neto de los bienes gananciales, no sobre la gestión de la empresa.",
+  "tipo": "derecho_vigente",
+  "estado": "SIN_RESPALDO",
+  "retirada": true,
+  "motivo": "La parte sobre la gestión no tiene artículo. Se deja como pregunta abierta.",
+  "consultado": "2026-11-05"
+ },
+ {
+  "id": "FAM-EMP-025",
+  "archivo": "src/content/articulos/familias-con-patrimonio-empresarial.md",
+  "pagina": "/blog/familias-con-patrimonio-empresarial",
+  "tema": "Título y enfoque",
+  "texto": "Consideraciones legales para familias con patrimonio empresarial",
+  "tipo": "derecho_vigente",
+  "estado": "REQUIERE_CORRECCION",
+  "retirada": true,
+  "motivo": "Título genérico. Se reenfoca en las reglas verificadas de CF 41 y CPF 141, 142 y 331.",
+  "consultado": "2026-11-05"
+ }
+]
