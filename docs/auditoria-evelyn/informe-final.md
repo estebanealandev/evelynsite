@@ -147,7 +147,7 @@ Una medición aislada de Divorcios dio 2,65 s; no se repitió en las siguientes.
 
 ## 14. Commits y ramas
 
-`c1758a7`, `61dc289`, `7c90b4d`, `613663f`, `9e2adb1` y el commit de este informe. La etiqueta `antes-plan-maestro` marca `5ade437`. `base-antes-rediseno` y `main` siguen intactas. El repositorio no tiene remoto: no hubo push ni PR.
+`c1758a7`, `61dc289`, `7c90b4d`, `613663f`, `9e2adb1` y el commit de este informe, integrados por avance rápido en `rediseno/completo`. La etiqueta `antes-plan-maestro` marca `5ade437`. `base-antes-rediseno` y `main` siguen intactas. El repositorio no tiene remoto: no hubo push ni PR.
 
 ## 15. Limitaciones de verificación
 
