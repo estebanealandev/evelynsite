@@ -15,3 +15,7 @@
 | SINALEVI cambia su página y rompe la descarga | Media | La descarga falla con error y no se toma como «sin cambios» | Mitigado |
 | Compatibilidad en Safari real | Media | Probado con WebKit de Playwright, que no equivale a Safari en un dispositivo | Pendiente |
 | Rendimiento con la fuente Newsreader, de 124 KB | Media | Subconjunto y medición en el presupuesto de LCP | Medido en Fase 6 |
+| Carga intermitente de la portada en WebKit (1 de 5 repeticiones) | Media | Sin causa demostrada; puede ser WebGL por software | **Probar en Safari real** |
+| Proyecto 23.982 aprobado después de la consulta | Alta | No se menciona. La vigilancia detectaría el cambio en el Código de Familia | Volver a comprobar antes de publicar |
+| Línea 1147 del PANI sin lectura directa de la fuente | Media | Publicada sin horario; el sitio oficial bloqueó la lectura automática | Confirmar a mano |
+

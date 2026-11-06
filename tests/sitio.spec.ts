@@ -113,13 +113,15 @@ test.describe('portada', () => {
     await expect.poll(() => page.locator('.h-hero__foot .btn-row').evaluate(e => Number(getComputedStyle(e).opacity)), { timeout: 3000 }).toBeGreaterThan(0.95);
   });
 
-  test('el árbol nunca invade el titular en ningún tamaño de pantalla', async ({ browser, baseURL }) => {
+  test('el árbol nunca invade el titular en ningún tamaño de pantalla', async ({ browser, baseURL, browserName, isMobile }) => {
     const ctx = await browser.newContext({ baseURL, reducedMotion: 'reduce' });
     const page = await ctx.newPage();
     await page.goto('/', { waitUntil: 'load' });
     // Con la tipografía de reserva el titular mide distinto: se espera la definitiva.
     await page.evaluate(() => document.fonts.ready);
-    for (const [width, height] of [[320, 568], [360, 640], [390, 664], [430, 932], [768, 1024], [1024, 768], [1280, 640], [1366, 768], [1440, 900], [1920, 1080], [2560, 1440]]) {
+    // Un iPhone emulado no tiene pantallas de escritorio: en ese perfil solo se prueban tamaños de teléfono.
+    const tamanos = [[320, 568], [360, 640], [390, 664], [430, 932], [768, 1024], [1024, 768], [1280, 640], [1366, 768], [1440, 900], [1920, 1080], [2560, 1440]].filter(([w]) => !(browserName === 'webkit' && isMobile && w > 430));
+    for (const [width, height] of tamanos) {
       await page.setViewportSize({ width, height });
       // Da tiempo a que el navegador recalcule las unidades de la nueva ventana.
       await page.waitForTimeout(150);

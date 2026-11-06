@@ -21,3 +21,9 @@ Tomadas sin consultar porque el encargo así lo pide. Todas se pueden revertir c
 | Orientador: «Tema para revisar» y sin consulta en el resultado de riesgo | Señala qué leer. Ante un riesgo, lo prioritario es el aviso y poder salir | «Le puede servir» con invitación a agendar |
 | Publicación en `main`: no se hace | Faltan revisión legal, datos reales, SMTP y dominio | Fusionar por tener pruebas en verde |
 | Vigilancia programada como temporizador en `ops/`, sin instalar | Instalarlo cambia la configuración del equipo. Requiere decidir dónde corre | Crear tareas persistentes por cuenta propia |
+| Salida rápida en todo el sitio salvo la portada | Cualquier página de familia puede leerla alguien bajo control. La revisión técnica lo señaló | Solo en páginas de violencia |
+| Retirar el acuse automático | No se puede verificar la dirección y puede revelar la consulta | Dejarlo desactivado |
+| `no-store` en todas las páginas | En un equipo compartido, Atrás no debe mostrar lo leído o escrito. Se paga con una recarga de HTML | Caché normal |
+| Sin invitación a consultar en la página de violencia | Para pedir medidas no hace falta una consulta | Mantener el llamado |
+| No citar la Ley 8589 ni la 9582 | No están en la copia oficial | Citarlas de memoria |
+

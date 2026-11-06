@@ -132,3 +132,16 @@ La lista completa está en [docs/legal-compliance-audit.md](docs/legal-complianc
 - [Guía de marca](public/assets/brand/brand-guidelines.md)
 
 `docs/reference/` contiene capturas del sitio de referencia solo para auditoría interna. No debe publicarse.
+
+## Auditoría y normas
+
+El estado completo está en [docs/auditoria-evelyn/informe-final.md](docs/auditoria-evelyn/informe-final.md).
+
+```bash
+npm run normas:verificar    # comprueba la matriz contra la copia oficial
+npm run normas:vigilar      # compara con SINALEVI y señala las afirmaciones afectadas
+npm run normas:descargar    # actualiza la copia, solo si llegan todas las normas
+npm run test:navegadores    # Firefox, WebKit e iPhone emulado
+```
+
+`npm start` usa `scripts/servidor.mjs`, que añade las cabeceras de seguridad. Detrás de un proxy, usar `HOST=127.0.0.1` y `TRUST_PROXY=true`. Newsreader se guarda como subconjunto en `public/assets/fonts`.
