@@ -38,9 +38,9 @@ test.describe('cabeceras y política de contenido', () => {
 
   test('las fuentes son locales y se aplican', async ({ page }) => {
     await page.goto('/servicios/divorcios', { waitUntil: 'networkidle' });
-    expect(await page.locator('h1').evaluate(e => getComputedStyle(e).fontFamily)).toContain('Newsreader');
-    expect(await page.locator('body').evaluate(e => getComputedStyle(e).fontFamily)).toContain('IBM Plex Sans');
-    expect(await page.evaluate(() => document.fonts.check('16px "IBM Plex Sans"') && document.fonts.check('32px Newsreader'))).toBe(true);
+    expect(await page.locator('h1').evaluate(e => getComputedStyle(e).fontFamily)).toContain('Schibsted Grotesk');
+    expect(await page.locator('body').evaluate(e => getComputedStyle(e).fontFamily)).toContain('Schibsted Grotesk');
+    expect(await page.evaluate(() => document.fonts.check('16px "Schibsted Grotesk"') && document.fonts.check('600 32px "Schibsted Grotesk"'))).toBe(true);
   });
 });
 

@@ -1,0 +1,28 @@
+// Control de calidad de la segunda ronda.
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
+import { join, relative } from 'node:path';
+import { navegador, cerrar, RAIZ, escribir, contraste } from './comun.mjs';
+import { PROPUESTAS } from './marcas.mjs';
+import { DATOS } from './datos.mjs';
+const lista = d => readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? lista(join(d, e.name)) : [join(d, e.name)]);
+const todo = ['a', 'b', 'c'].flatMap(i => lista(join(RAIZ, `propuesta-${i}`))), svgs = todo.filter(f => f.endsWith('.svg')), pngs = todo.filter(f => f.endsWith('.png')), fallos = [];
+const b = await navegador(), pg = await b.newPage();
+for (const f of svgs) { const s = readFileSync(f, 'utf8'), r = relative(RAIZ, f); const err = await pg.evaluate(t => { const d = new DOMParser().parseFromString(t, 'image/svg+xml'); return d.querySelector('parsererror') ? 'XML' : null; }, s); if (err) fallos.push(`${r}: XML`); if (/<text|<tspan|font-family/.test(s)) fallos.push(`${r}: texto vivo`); if (/<image|data:|base64/.test(s)) fallos.push(`${r}: raster`); if (/<script|href=|url\(http/.test(s)) fallos.push(`${r}: externo`); if (!/<title>/.test(s) || !/viewBox/.test(s)) fallos.push(`${r}: sin título o viewBox`); }
+const comps = ['principal-horizontal', 'principal-con-lema', 'compacta-vertical', 'isotipo'], modos = ['claro', 'oscuro', 'mono-negro', 'mono-blanco', 'invertido'];
+const info = f => pg.evaluate(async u => { const i = new Image(); i.src = u; await i.decode(); const c = document.createElement('canvas'); c.width = i.width; c.height = i.height; const x = c.getContext('2d'); x.drawImage(i, 0, 0); const d = x.getImageData(0, 0, i.width, i.height).data; let tr = 0; const col = new Set(); for (let k = 0; k < d.length; k += 4 * 41) { if (d[k + 3] < 8) tr++; if (d[k + 3] > 250) col.add(`${d[k]},${d[k + 1]},${d[k + 2]}`); } return { tr, col: col.size, w: i.width, h: i.height }; }, 'data:image/png;base64,' + readFileSync(f).toString('base64'));
+for (const i of 'abc') {
+  for (const c of comps) for (const m of modos) { const s = join(RAIZ, `propuesta-${i}/logos/svg/${c}-${m}.svg`), p = join(RAIZ, `propuesta-${i}/logos/png/${c}-${m}.png`); if (!existsSync(s) || !existsSync(p)) { fallos.push(`falta ${i} ${c} ${m}`); continue; } const r = await info(p); if (m !== 'invertido' && !r.tr) fallos.push(`${i} ${c} ${m}: sin transparencia`); if (m.startsWith('mono') && r.col > 1) fallos.push(`${i} ${c} ${m}: más de un color`); if (Math.max(r.w, r.h) < 2000) fallos.push(`${i} ${c} ${m}: resolución`); }
+  for (const f of ['favicon/favicon.svg', 'favicon/favicon.ico', 'favicon/favicon-16.png', 'favicon/apple-touch-icon.png', 'favicon/icon-512.png', 'favicon/icon-maskable-512.png', 'papeleria/tarjeta-anverso.svg', 'papeleria/tarjeta-reverso.svg', 'papeleria/hoja-membretada-a4.svg', 'papeleria/sobre-dl-anverso.svg', 'papeleria/sobre-dl-reverso.svg', 'papeleria/carpeta.svg', 'papeleria/libreta.svg', 'aplicaciones/cabecera-oscuro.svg', 'aplicaciones/cabecera-claro.svg', 'aplicaciones/hero.png', 'aplicaciones/tarjetas.png', 'aplicaciones/papeleria.png', 'aplicaciones/letrero.png', 'aplicaciones/portatil.png', 'aplicaciones/portada-actual-con-logo.png', 'aplicaciones/portada-con-paleta-propia.png', 'redes/og-1200x630.svg', 'redes/avatar-1080.svg', 'redes/firma-correo.svg', 'patron/patron.svg', 'tokens.json', 'tokens.css', 'README.md']) if (!existsSync(join(RAIZ, `propuesta-${i}/${f}`))) fallos.push(`falta ${i}/${f}`);
+  for (const n of ['hero', 'tarjetas', 'papeleria', 'letrero', 'portatil']) { const r = await info(join(RAIZ, `propuesta-${i}/aplicaciones/${n}.png`)); if (r.col < 200) fallos.push(`${i} ${n}: render sin contenido`); }
+}
+const sil = async i => pg.evaluate(async s => { const im = new Image(); im.src = 'data:image/svg+xml;base64,' + btoa(unescape(encodeURIComponent(s))); await im.decode(); const c = document.createElement('canvas'); c.width = c.height = 200; const x = c.getContext('2d'), k = Math.min(200 / im.width, 200 / im.height); x.drawImage(im, 0, 0, im.width * k, im.height * k); const d = x.getImageData(0, 0, 200, 200).data, o = []; for (let n = 3; n < d.length; n += 4) o.push(d[n] > 128 ? 1 : 0); return o; }, readFileSync(join(RAIZ, `propuesta-${i}/logos/svg/isotipo-mono-negro.svg`), 'utf8').replace('<svg ', '<svg width="1000" height="1000" '));
+const S = {}; for (const i of 'abc') S[i] = await sil(i);
+const iou = (a, c) => { let n = 0, u = 0; for (let k = 0; k < a.length; k++) { if (a[k] || c[k]) u++; if (a[k] && c[k]) n++; } return n / u; };
+const parecidos = { 'A/B': iou(S.a, S.b), 'A/C': iou(S.a, S.c), 'B/C': iou(S.b, S.c) };
+const cont = [];
+for (const i of 'abc') { const c = PROPUESTAS[i].color; for (const [x, f, min, n] of [[c.o, c.c, 4.5, 'oscuro/claro'], [c.o, c.p, 4.5, 'oscuro/papel'], [c.s, c.o, 4.5, 'sobre-oscuro/oscuro'], [c.n2, c.p, 4.5, 'secundario/papel'], [c.m, c.p, 2.5, 'medio/papel']]) { const r = contraste(x, f); cont.push([i, n, +r.toFixed(2)]); if (r < min) fallos.push(`contraste ${i} ${n}: ${r.toFixed(2)}`); } }
+if (new Set(['a', 'b', 'c'].flatMap(i => [PROPUESTAS[i].color.o, PROPUESTAS[i].color.c])).size !== 6) fallos.push('colores principales repetidos');
+for (const i of 'abc') if (!/SIL OPEN FONT LICENSE Version 1\.1/i.test(readFileSync(join(RAIZ, '_fuente/fuentes', DATOS[i].fuente[2]), 'utf8'))) fallos.push(`licencia ${i}`);
+await cerrar();
+escribir('brand-guidelines/validacion.json', JSON.stringify({ svg: svgs.length, png: pngs.length, parecidos, contrastes: cont, fallos }, null, 1) + '\n');
+console.log(JSON.stringify({ svg: svgs.length, png: pngs.length, parecidos, fallos: fallos.length })); fallos.slice(0, 20).forEach(f => console.log(' -', f));

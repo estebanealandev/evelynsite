@@ -54,7 +54,7 @@ const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
     <meta name="geo.region" content="CR" />
-    <meta name="theme-color" content="#14283e" />
+    <meta name="theme-color" content="#1b1a18" />
     <meta property="og:site_name" content={site.name} />
     <meta property="og:locale" content="es_CR" />
     <meta property="og:type" content={type} />
@@ -71,8 +71,7 @@ const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/assets/fonts/ibm-plex-sans.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin />
     <script is:inline set:html={inicial} />
     {schemas.map(s => <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />)}
     <slot name="head" />

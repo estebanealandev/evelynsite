@@ -7,7 +7,7 @@
 .h-hero canvas { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.2s var(--ease); }
 .h-hero.is-3d canvas { opacity: 1; }
 .h-hero.sin-3d canvas { display: none; }
-.h-hero__stage::after { content: ''; position: absolute; inset: var(--pie, 82%) 0 0; background: rgb(20 40 62 / 0.96); pointer-events: none; }
+.h-hero__stage::after { content: ''; position: absolute; inset: var(--pie, 82%) 0 0; background: rgb(27 26 24 / 0.96); pointer-events: none; }
 .h-hero__content { position: relative; z-index: 2; pointer-events: none; }
 .h-hero__content a, .h-hero__content button { pointer-events: auto; }
 .h-hero__titulo { position: relative; }

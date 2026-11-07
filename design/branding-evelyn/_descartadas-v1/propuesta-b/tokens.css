@@ -1,0 +1,12 @@
+:root {
+  --marca-primario: #1D3128;
+  --marca-acento: #B5623D;
+  --marca-acento-texto-sobre-claro: #8A4628;
+  --marca-fondo-claro: #F3EEE4;
+  --marca-fondo-oscuro: #1D3128;
+  --marca-texto-sobre-oscuro: #F3EEE4;
+  --marca-acento-sobre-oscuro: #D98A64;
+  --marca-acento-texto-sobre-oscuro: #E2A98C;
+  --marca-fuente-titulares: 'Tenor Sans', serif;
+  --marca-fuente-texto: 'Hanken Grotesk', sans-serif;
+}

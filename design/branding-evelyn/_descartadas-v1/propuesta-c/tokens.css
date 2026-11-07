@@ -1,0 +1,12 @@
+:root {
+  --marca-primario: #1B1916;
+  --marca-acento: #B5301C;
+  --marca-acento-texto-sobre-claro: #B5301C;
+  --marca-fondo-claro: #F7F3EA;
+  --marca-fondo-oscuro: #1B1916;
+  --marca-texto-sobre-oscuro: #F7F3EA;
+  --marca-acento-sobre-oscuro: #E2583F;
+  --marca-acento-texto-sobre-oscuro: #F0836E;
+  --marca-fuente-titulares: 'Ibarra Real Nova', serif;
+  --marca-fuente-texto: 'Source Serif 4', sans-serif;
+}

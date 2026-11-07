@@ -1,0 +1,31 @@
+{
+ "a": {
+  "valid": false,
+  "score": 80,
+  "issues": [
+   {
+    "severity": "error",
+    "element": "color.accent",
+    "message": "accent color (#94774B) fails WCAG AA on both white and dark backgrounds",
+    "suggestion": "Adjust lightness to achieve at least 4.5:1 contrast ratio"
+   }
+  ]
+ },
+ "b": {
+  "valid": false,
+  "score": 80,
+  "issues": [
+   {
+    "severity": "error",
+    "element": "color.accent",
+    "message": "accent color (#B5623D) fails WCAG AA on both white and dark backgrounds",
+    "suggestion": "Adjust lightness to achieve at least 4.5:1 contrast ratio"
+   }
+  ]
+ },
+ "c": {
+  "valid": true,
+  "score": 100,
+  "issues": []
+ }
+}

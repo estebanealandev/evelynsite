@@ -1,0 +1,87 @@
+{
+ "svg": 117,
+ "png": 111,
+ "parecidos": {
+  "A/B": 0.6353206538386567,
+  "A/C": 0.5473934281824734,
+  "B/C": 0.6295658509123423
+ },
+ "contrastes": [
+  [
+   "a",
+   "oscuro/claro",
+   11.9
+  ],
+  [
+   "a",
+   "oscuro/papel",
+   15.53
+  ],
+  [
+   "a",
+   "sobre-oscuro/oscuro",
+   11.9
+  ],
+  [
+   "a",
+   "secundario/papel",
+   10.44
+  ],
+  [
+   "a",
+   "medio/papel",
+   3.21
+  ],
+  [
+   "b",
+   "oscuro/claro",
+   11.5
+  ],
+  [
+   "b",
+   "oscuro/papel",
+   13.61
+  ],
+  [
+   "b",
+   "sobre-oscuro/oscuro",
+   11.5
+  ],
+  [
+   "b",
+   "secundario/papel",
+   9.53
+  ],
+  [
+   "b",
+   "medio/papel",
+   3.12
+  ],
+  [
+   "c",
+   "oscuro/claro",
+   12.13
+  ],
+  [
+   "c",
+   "oscuro/papel",
+   15.3
+  ],
+  [
+   "c",
+   "sobre-oscuro/oscuro",
+   12.13
+  ],
+  [
+   "c",
+   "secundario/papel",
+   11.27
+  ],
+  [
+   "c",
+   "medio/papel",
+   3.36
+  ]
+ ],
+ "fallos": []
+}

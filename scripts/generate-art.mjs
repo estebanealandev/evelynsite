@@ -366,6 +366,6 @@ if (!filter || filter === 'mapa') {
   const minY = Math.min(...all.map(c => c[1])), maxY = Math.max(...all.map(c => c[1]));
   const W = 800, k = W / (maxX - minX), H = Math.ceil((maxY - minY) * k * 1.01);
   const d = main.map(r => 'M' + r.map(([x, y]) => `${((x - minX) * k).toFixed(1)} ${((maxY - y) * k * 1.01).toFixed(1)}`).join('L') + 'Z').join('');
-  fs.writeFileSync(path.join(OUT, 'mapa-costa-rica.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 ${W + 16} ${H + 16}" role="img" aria-label="Silueta de Costa Rica"><path d="${d}" fill="#14283e" stroke="#b49a68" stroke-width="1.5" stroke-linejoin="round"/></svg>\n`);
+  fs.writeFileSync(path.join(OUT, 'mapa-costa-rica.svg'), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-8 -8 ${W + 16} ${H + 16}" role="img" aria-label="Silueta de Costa Rica"><path d="${d}" fill="#1b1a18" stroke="#8e867a" stroke-width="1.5" stroke-linejoin="round"/></svg>\n`);
   console.log('mapa-costa-rica.svg');
 }

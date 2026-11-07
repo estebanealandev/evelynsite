@@ -26,4 +26,5 @@ Tomadas sin consultar porque el encargo así lo pide. Todas se pueden revertir c
 | `no-store` en todas las páginas | En un equipo compartido, Atrás no debe mostrar lo leído o escrito. Se paga con una recarga de HTML | Caché normal |
 | Sin invitación a consultar en la página de violencia | Para pedir medidas no hace falta una consulta | Mantener el llamado |
 | No citar la Ley 8589 ni la 9582 | No están en la copia oficial | Citarlas de memoria |
-
+| Identidad A · Doble: hero negro `#1B1A18`, logo crema `#DAD5CC`, nombre en Marcellus, sitio en Schibsted Grotesk | La eligió el responsable del proyecto entre tres propuestas (`design/branding-evelyn/`). Falta la aprobación de Evelyn y la búsqueda de marcas | Navy con oro y Newsreader; propuestas B y C |
+| Símbolo de tres cortes con esquinas apenas redondeadas | Lo decidió el responsable del proyecto, que lo considera un diseño genérico. Usa la disposición de cortes del logotipo de El’Element, con otra proporción y otras esquinas; no hay licencia ni revisión legal, y una persona especialista debe compararlos antes de usarlo o registrarlo | Cuatro cortes; variante de dos E separadas |

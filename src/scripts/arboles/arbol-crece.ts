@@ -9,7 +9,7 @@ const poster = location.search.includes('poster');
 export const crear: Crear = (renderer, bosque) => {
   renderer.toneMapping = NoToneMapping;
   renderer.outputColorSpace = SRGBColorSpace;
-  renderer.setClearColor(0x14283e, 1);
+  renderer.setClearColor(0x1b1a18, 1);
   const scene = new Scene();
   const camera = new PerspectiveCamera(CAMARA_FOV, 1, 0.1, 40);
   camera.position.z = CAMARA_Z;
@@ -48,7 +48,7 @@ export const crear: Crear = (renderer, bosque) => {
       void main(){
         vec2 v=gl_PointCoord-.5; float c=cos(vR),s=sin(vR); v=vec2(c*v.x-s*v.y,s*v.x+c*v.y);
         float a=1.-smoothstep(.72,1.,length(v/vec2(.5,.2)));
-        gl_FragColor=vec4(.84,.68,.38,a*vA*.8*mascara());
+        gl_FragColor=vec4(.855,.835,.8,a*vA*.8*mascara());
       }`,
     transparent: true,
     depthTest: false,

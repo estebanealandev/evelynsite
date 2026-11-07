@@ -1,0 +1,471 @@
+{
+  "id": "brand_mw5g7aye",
+  "name": "Evelyn Elizondo",
+  "industry": "legal",
+  "style": "minimal",
+  "colors": {
+    "primary": {
+      "name": "primary",
+      "hex": "#b7311f",
+      "hsl": {
+        "h": 7,
+        "s": 71,
+        "l": 42
+      },
+      "usage": "Primary brand color"
+    },
+    "secondary": {
+      "name": "secondary",
+      "hex": "#c1402f",
+      "hsl": {
+        "h": 7,
+        "s": 61,
+        "l": 47
+      },
+      "usage": "Secondary brand color"
+    },
+    "accent": {
+      "name": "accent",
+      "hex": "#c7240f",
+      "hsl": {
+        "h": 7,
+        "s": 86,
+        "l": 42
+      },
+      "usage": "Accent and highlight color"
+    },
+    "neutral": [
+      {
+        "name": "neutral-100",
+        "hex": "#f3f2f2",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 95
+        },
+        "usage": "Neutral shade 1"
+      },
+      {
+        "name": "neutral-200",
+        "hex": "#e7e5e4",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 90
+        },
+        "usage": "Neutral shade 2"
+      },
+      {
+        "name": "neutral-300",
+        "hex": "#cfcac9",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 80
+        },
+        "usage": "Neutral shade 3"
+      },
+      {
+        "name": "neutral-400",
+        "hex": "#9e9594",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 60
+        },
+        "usage": "Neutral shade 4"
+      },
+      {
+        "name": "neutral-500",
+        "hex": "#6b6261",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 40
+        },
+        "usage": "Neutral shade 5"
+      },
+      {
+        "name": "neutral-600",
+        "hex": "#363130",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 20
+        },
+        "usage": "Neutral shade 6"
+      },
+      {
+        "name": "neutral-700",
+        "hex": "#1b1918",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 10
+        },
+        "usage": "Neutral shade 7"
+      },
+      {
+        "name": "neutral-800",
+        "hex": "#0d0c0c",
+        "hsl": {
+          "h": 7,
+          "s": 5,
+          "l": 5
+        },
+        "usage": "Neutral shade 8"
+      }
+    ],
+    "semantic": {
+      "success": {
+        "name": "success",
+        "hex": "#22c35d",
+        "hsl": {
+          "h": 142,
+          "s": 70,
+          "l": 45
+        },
+        "usage": "Success states"
+      },
+      "warning": {
+        "name": "warning",
+        "hex": "#f59f0a",
+        "hsl": {
+          "h": 38,
+          "s": 92,
+          "l": 50
+        },
+        "usage": "Warning states"
+      },
+      "error": {
+        "name": "error",
+        "hex": "#ef4343",
+        "hsl": {
+          "h": 0,
+          "s": 84,
+          "l": 60
+        },
+        "usage": "Error states"
+      },
+      "info": {
+        "name": "info",
+        "hex": "#368fe7",
+        "hsl": {
+          "h": 210,
+          "s": 79,
+          "l": 56
+        },
+        "usage": "Informational states"
+      }
+    },
+    "contrast": {
+      "primary-on-white": {
+        "ratio": 6.05,
+        "aa": true,
+        "aaLarge": true,
+        "aaa": false,
+        "aaaLarge": true
+      },
+      "primary-on-dark": {
+        "ratio": 2.88,
+        "aa": false,
+        "aaLarge": false,
+        "aaa": false,
+        "aaaLarge": false
+      },
+      "secondary-on-white": {
+        "ratio": 5.2,
+        "aa": true,
+        "aaLarge": true,
+        "aaa": false,
+        "aaaLarge": true
+      },
+      "accent-on-white": {
+        "ratio": 5.69,
+        "aa": true,
+        "aaLarge": true,
+        "aaa": false,
+        "aaaLarge": true
+      }
+    }
+  },
+  "typography": {
+    "headingFont": "Lora",
+    "bodyFont": "Inter",
+    "monoFont": "JetBrains Mono",
+    "baseSize": 16,
+    "scaleRatio": 1.25,
+    "steps": [
+      {
+        "name": "xs",
+        "size": "10.24px",
+        "lineHeight": "1.6",
+        "letterSpacing": "0.02em",
+        "weight": 400
+      },
+      {
+        "name": "sm",
+        "size": "12.8px",
+        "lineHeight": "1.6",
+        "letterSpacing": "0.02em",
+        "weight": 400
+      },
+      {
+        "name": "base",
+        "size": "16px",
+        "lineHeight": "1.6",
+        "letterSpacing": "0em",
+        "weight": 400
+      },
+      {
+        "name": "lg",
+        "size": "20px",
+        "lineHeight": "1.5",
+        "letterSpacing": "0em",
+        "weight": 400
+      },
+      {
+        "name": "xl",
+        "size": "25px",
+        "lineHeight": "1.3",
+        "letterSpacing": "-0.01em",
+        "weight": 400
+      },
+      {
+        "name": "2xl",
+        "size": "31.25px",
+        "lineHeight": "1.3",
+        "letterSpacing": "-0.01em",
+        "weight": 600
+      },
+      {
+        "name": "3xl",
+        "size": "39.06px",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.01em",
+        "weight": 600
+      },
+      {
+        "name": "4xl",
+        "size": "48.83px",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.01em",
+        "weight": 700
+      },
+      {
+        "name": "5xl",
+        "size": "61.04px",
+        "lineHeight": "1.2",
+        "letterSpacing": "-0.01em",
+        "weight": 700
+      }
+    ]
+  },
+  "spacing": {
+    "unit": 4,
+    "values": {
+      "0": "0px",
+      "1": "4px",
+      "2": "8px",
+      "3": "12px",
+      "4": "16px",
+      "5": "20px",
+      "6": "24px",
+      "8": "32px",
+      "10": "40px",
+      "12": "48px",
+      "16": "64px",
+      "20": "80px",
+      "24": "96px",
+      "0.5": "2px",
+      "1.5": "6px",
+      "2.5": "10px"
+    }
+  },
+  "shadows": {
+    "levels": {
+      "none": {
+        "offsetX": 0,
+        "offsetY": 0,
+        "blur": 0,
+        "spread": 0,
+        "color": "rgba(66, 39, 36, 0)",
+        "opacity": 0,
+        "cssValue": "none"
+      },
+      "sm": {
+        "offsetX": 0,
+        "offsetY": 1,
+        "blur": 2,
+        "spread": 0,
+        "color": "rgba(66, 39, 36, 0.05)",
+        "opacity": 0.05,
+        "cssValue": "1px 1px 2px 0px rgba(66, 39, 36, 0.05)"
+      },
+      "md": {
+        "offsetX": 0,
+        "offsetY": 2,
+        "blur": 4,
+        "spread": -1,
+        "color": "rgba(66, 39, 36, 0.08)",
+        "opacity": 0.08,
+        "cssValue": "2px 2px 4px -1px rgba(66, 39, 36, 0.08)"
+      },
+      "lg": {
+        "offsetX": 0,
+        "offsetY": 4,
+        "blur": 8,
+        "spread": -2,
+        "color": "rgba(66, 39, 36, 0.1)",
+        "opacity": 0.1,
+        "cssValue": "4px 4px 8px -2px rgba(66, 39, 36, 0.1)"
+      },
+      "xl": {
+        "offsetX": 0,
+        "offsetY": 8,
+        "blur": 16,
+        "spread": -4,
+        "color": "rgba(66, 39, 36, 0.12)",
+        "opacity": 0.12,
+        "cssValue": "8px 8px 16px -4px rgba(66, 39, 36, 0.12)"
+      },
+      "2xl": {
+        "offsetX": 0,
+        "offsetY": 16,
+        "blur": 32,
+        "spread": -8,
+        "color": "rgba(66, 39, 36, 0.15)",
+        "opacity": 0.15,
+        "cssValue": "16px 16px 32px -8px rgba(66, 39, 36, 0.15)"
+      }
+    }
+  },
+  "borders": {
+    "radii": {
+      "none": "0px",
+      "sm": "2px",
+      "md": "4px",
+      "lg": "6px",
+      "xl": "8px",
+      "full": "9999px",
+      "circle": "9999px"
+    },
+    "widths": {
+      "thin": "1px",
+      "medium": "1px",
+      "thick": "2px"
+    }
+  },
+  "motion": {
+    "durations": {
+      "instant": "0ms",
+      "fast": "100ms",
+      "normal": "200ms",
+      "slow": "300ms",
+      "slower": "400ms"
+    },
+    "easings": {
+      "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
+      "ease-out": "cubic-bezier(0, 0, 0.2, 1)",
+      "ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+      "bounce": "cubic-bezier(0.34, 1.2, 0.64, 1)"
+    },
+    "transitions": {
+      "fade": "opacity 200ms cubic-bezier(0, 0, 0.2, 1)",
+      "slide": "transform 200ms cubic-bezier(0, 0, 0.2, 1)",
+      "scale": "transform 100ms cubic-bezier(0, 0, 0.2, 1)",
+      "color": "color 300ms cubic-bezier(0, 0, 0.2, 1), background-color 300ms cubic-bezier(0, 0, 0.2, 1)",
+      "all": "all 200ms cubic-bezier(0, 0, 0.2, 1)"
+    }
+  },
+  "gradients": {
+    "presets": {
+      "hero": {
+        "type": "linear",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "#b7311f",
+            "position": 0
+          },
+          {
+            "color": "#c1402f",
+            "position": 100
+          }
+        ],
+        "cssValue": "linear-gradient(180deg, #b7311f 0%, #c1402f 100%)"
+      },
+      "button": {
+        "type": "linear",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "#c7240f",
+            "position": 0
+          },
+          {
+            "color": "#b7311f",
+            "position": 100
+          }
+        ],
+        "cssValue": "linear-gradient(180deg, #c7240f 0%, #b7311f 100%)"
+      },
+      "card": {
+        "type": "linear",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "#f3f2f2",
+            "position": 0
+          },
+          {
+            "color": "#e7e4e4",
+            "position": 100
+          }
+        ],
+        "cssValue": "linear-gradient(180deg, #f3f2f2 0%, #e7e4e4 100%)"
+      },
+      "text": {
+        "type": "linear",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "#b7311f",
+            "position": 0
+          },
+          {
+            "color": "#c7240f",
+            "position": 100
+          }
+        ],
+        "cssValue": "linear-gradient(180deg, #b7311f 0%, #c7240f 100%)"
+      },
+      "background": {
+        "type": "linear",
+        "angle": 180,
+        "stops": [
+          {
+            "color": "#f3f2f2",
+            "position": 0
+          },
+          {
+            "color": "#0d0c0c",
+            "position": 100
+          }
+        ],
+        "cssValue": "linear-gradient(180deg, #f3f2f2 0%, #0d0c0c 100%)"
+      }
+    }
+  },
+  "logo": {
+    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"120\" viewBox=\"0 0 400 120\">\n  <circle cx=\"62\" cy=\"60\" r=\"42\" fill=\"#b7311f\"/>\n  <text x=\"62\" y=\"60\" fill=\"white\" font-size=\"33.599999999999994\" font-family=\"'Lora', sans-serif\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text>\n  <text x=\"120\" y=\"60\" fill=\"#b7311f\" font-size=\"48\" font-family=\"'Lora', sans-serif\" font-weight=\"600\" dominant-baseline=\"central\">Evelyn Elizondo</text>\n</svg>",
+    "variants": {
+      "wordmark": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"120\" viewBox=\"0 0 400 120\">\n  <circle cx=\"62\" cy=\"60\" r=\"42\" fill=\"#b7311f\"/>\n  <text x=\"62\" y=\"60\" fill=\"white\" font-size=\"33.599999999999994\" font-family=\"'Lora', sans-serif\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text>\n  <text x=\"120\" y=\"60\" fill=\"#b7311f\" font-size=\"48\" font-family=\"'Lora', sans-serif\" font-weight=\"600\" dominant-baseline=\"central\">Evelyn Elizondo</text>\n</svg>",
+      "monogram": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\" viewBox=\"0 0 120 120\">\n  <rect x=\"10\" y=\"10\" width=\"100\" height=\"100\" rx=\"16\" fill=\"#b7311f\"/>\n  <text x=\"60\" y=\"60\" fill=\"white\" font-size=\"56\" font-family=\"'Lora', sans-serif\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text>\n</svg>",
+      "abstract": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"120\" height=\"120\" viewBox=\"0 0 120 120\">\n  <circle cx=\"40\" cy=\"60\" r=\"30\" fill=\"#b7311f\" opacity=\"0.8\"/>\n  <circle cx=\"60\" cy=\"40\" r=\"30\" fill=\"#b7311f\" opacity=\"0.5\"/>\n  <circle cx=\"80\" cy=\"60\" r=\"30\" fill=\"#b7311f\" opacity=\"0.3\"/>\n</svg>",
+      "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\">\n  <circle cx=\"32\" cy=\"32\" r=\"28\" fill=\"#b7311f\"/>\n  <text x=\"32\" y=\"32\" fill=\"white\" font-size=\"32\" font-family=\"'Lora', sans-serif\" font-weight=\"700\" text-anchor=\"middle\" dominant-baseline=\"central\">E</text>\n</svg>"
+    }
+  },
+  "createdAt": "2026-11-06T20:49:50.390Z"
+}

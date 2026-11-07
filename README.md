@@ -89,7 +89,7 @@ Cualquier alojamiento con Node funciona. Ejemplo: un VPS con `npm start` bajo sy
 | Textos institucionales | `src/lib/institucional.ts` |
 | Navegación y datos generales | `src/config/site.ts` |
 | Colores y tipografía | `:root` en `src/styles/global.css` |
-| Marca | `scripts/generate-brand.mjs` |
+| Marca | `scripts/instalar-marca.mjs`, desde `design/branding-evelyn` |
 | Imágenes | `scripts/generate-art.mjs` |
 
 Para añadir una fotografía real, por ejemplo el retrato, guárdela en `public/assets/images/` con una versión `-sm` y sustituya el panel `.monogram-panel` de `src/pages/sobre-evelyn.astro`.
@@ -144,4 +144,4 @@ npm run normas:descargar    # actualiza la copia, solo si llegan todas las norma
 npm run test:navegadores    # Firefox, WebKit e iPhone emulado
 ```
 
-`npm start` usa `scripts/servidor.mjs`, que añade las cabeceras de seguridad. Detrás de un proxy, usar `HOST=127.0.0.1` y `TRUST_PROXY=true`. Newsreader se guarda como subconjunto en `public/assets/fonts`.
+`npm start` usa `scripts/servidor.mjs`, que añade las cabeceras de seguridad. Detrás de un proxy, usar `HOST=127.0.0.1` y `TRUST_PROXY=true`. Schibsted Grotesk se guarda como subconjunto en `public/assets/fonts`.

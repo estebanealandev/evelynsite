@@ -1,0 +1,12 @@
+:root {
+  --marca-primario: #2A1826;
+  --marca-acento: #94774B;
+  --marca-acento-texto-sobre-claro: #7A5F36;
+  --marca-fondo-claro: #F1ECE3;
+  --marca-fondo-oscuro: #2A1826;
+  --marca-texto-sobre-oscuro: #F1ECE3;
+  --marca-acento-sobre-oscuro: #BFA374;
+  --marca-acento-texto-sobre-oscuro: #CDB58C;
+  --marca-fuente-titulares: 'Bodoni Moda', serif;
+  --marca-fuente-texto: 'Instrument Sans', sans-serif;
+}

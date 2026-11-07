@@ -1,0 +1,14 @@
+{
+  "name": "branding-evelyn-fuente",
+  "private": true,
+  "type": "module",
+  "description": "Generador de las tres propuestas. Aislado del sitio.",
+  "scripts": {
+    "generar": "node producir.mjs && node capturas.mjs && node render.mjs && node guias.mjs && node validar.mjs && node guias.mjs solo-galeria"
+  },
+  "dependencies": {
+    "fontkit": "2.0.4",
+    "paper": "0.12.18",
+    "svgo": "4.1.0"
+  }
+}

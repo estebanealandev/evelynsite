@@ -79,7 +79,7 @@ export function crearRamas(b: Bosque, u: Comunes) {
       varying float vT; varying float vS;
       void main(){
         if(vS<=0.) discard;
-        vec3 c=mix(vec3(.8,.78,.74),vec3(.85,.7,.42),vT);
+        vec3 c=mix(vec3(.8,.78,.74),vec3(.855,.835,.8),vT);
         gl_FragColor=vec4(c,.92*mascara());
       }`,
     transparent: true,
@@ -157,7 +157,7 @@ export function crearHalo() {
         float k=exp(-dot(d,d)/(uRadio*uRadio));
         // Un leve grano evita las bandas de color en el degradado.
         float g=fract(sin(dot(gl_FragCoord.xy,vec2(12.9898,78.233)))*43758.5453);
-        gl_FragColor=vec4(vec3(.95,.72,.42),k*uLuz+(g-.5)*.012);
+        gl_FragColor=vec4(vec3(.855,.835,.8),k*uLuz+(g-.5)*.012);
       }`,
     transparent: true,
     depthTest: false,

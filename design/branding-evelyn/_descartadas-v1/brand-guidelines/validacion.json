@@ -1,0 +1,104 @@
+{
+ "svg": 102,
+ "png": 102,
+ "trazos": 342,
+ "parecidos": {
+  "A/B": 0.21441653584510728,
+  "A/C": 0.1042883530527682,
+  "B/C": 0.11503587086488641
+ },
+ "contrastes": [
+  [
+   "a",
+   "tinta/claro",
+   "14.20"
+  ],
+  [
+   "a",
+   "lema/claro",
+   "5.07"
+  ],
+  [
+   "a",
+   "acento/claro",
+   "3.57"
+  ],
+  [
+   "a",
+   "claro/oscuro",
+   "14.20"
+  ],
+  [
+   "a",
+   "lema/oscuro",
+   "8.42"
+  ],
+  [
+   "a",
+   "acento/oscuro",
+   "6.93"
+  ],
+  [
+   "b",
+   "tinta/claro",
+   "11.93"
+  ],
+  [
+   "b",
+   "lema/claro",
+   "6.08"
+  ],
+  [
+   "b",
+   "acento/claro",
+   "3.80"
+  ],
+  [
+   "b",
+   "claro/oscuro",
+   "11.93"
+  ],
+  [
+   "b",
+   "lema/oscuro",
+   "6.76"
+  ],
+  [
+   "b",
+   "acento/oscuro",
+   "5.10"
+  ],
+  [
+   "c",
+   "tinta/claro",
+   "15.84"
+  ],
+  [
+   "c",
+   "lema/claro",
+   "5.57"
+  ],
+  [
+   "c",
+   "acento/claro",
+   "5.57"
+  ],
+  [
+   "c",
+   "claro/oscuro",
+   "15.84"
+  ],
+  [
+   "c",
+   "lema/oscuro",
+   "6.83"
+  ],
+  [
+   "c",
+   "acento/oscuro",
+   "4.76"
+  ]
+ ],
+ "licencias": 6,
+ "fallos": []
+}
