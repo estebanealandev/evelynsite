@@ -99,7 +99,7 @@ Comprobaciones manuales:
 | `/assets/js/site.js` | Incluye el mensaje del 429 |
 | `Permissions-Policy` | Con `browsing-topics=()` |
 
-## Segunda fase del formulario (2026-11-08, local, sin desplegar)
+## Segunda fase del formulario (2026-11-08, antes de desplegar)
 
 | Suite | Resultado |
 |---|---|
@@ -113,6 +113,20 @@ Comprobaciones manuales:
 | Navegador del panel, 375 px | Widget a 335 px de ancho y 73 px de alto, en español, sin desplazamiento horizontal |
 
 Las pruebas 1 a 16 de la misión y dónde está cada una: [turnstile-implementation.md](turnstile-implementation.md#pruebas).
+
+## Producción tras desplegar la segunda fase (2026-11-08, versión `c52105c5`)
+
+Compilación previa: `build:cf` sin `PUBLIC_TURNSTILE_SITE_KEY` (`turnstile=false`), `verificar-lanzamiento --compilacion` coherente con `noindex` y `auditar.mjs` sin errores críticos.
+
+| Prueba | Resultado |
+|---|---|
+| `npm run seguridad:produccion` | **Sin problemas**, incluido «formulario cerrado y la página lo advierte» y la coherencia de la política de privacidad |
+| `npm run seo:produccion` | **Sin problemas**: `noindex, nofollow` en todas las rutas |
+| POST del mismo origen con datos de prueba válidos (JSON) | **503** `cerrado: true`, «…su solicitud no se ha enviado…». Se detiene antes de Turnstile y no envía correo |
+| POST del mismo origen sin JavaScript | **303** a `/consulta-no-enviada` |
+| `/agendar-consulta` | Contiene `data-formulario-cerrado` y ninguna referencia a `challenges.cloudflare.com` |
+| `/consulta-recibida` | Título «Solicitud enviada» |
+| Bindings de la versión | `MAIL_MODE=disabled`; sin `TURNSTILE_SECRET_KEY` |
 
 ## Validación de reglas contra la API (`--validate-only`)
 

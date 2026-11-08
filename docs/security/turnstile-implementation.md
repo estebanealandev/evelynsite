@@ -4,11 +4,13 @@
 
 **El formulario NO está operativo y no envía consultas reales.** Está preparado para activarse de forma controlada.
 
-- **En producción (versión `d9386dca`):**
+- **En producción (versión `c52105c5`, desplegada el 2026-11-08 con autorización):**
   - el servidor exige Turnstile;
   - no hay widget ni clave secreta y el correo está desactivado (`MAIL_MODE=disabled`);
-  - todo envío recibe un 503 honesto. Nunca se simula un envío correcto.
-- **En la rama `security/cloudflare-free-hardening`, sin desplegar**, todo lo de este documento marcado como *rama*.
+  - todo envío recibe un 503 honesto. Nunca se simula un envío correcto;
+  - la página del formulario advierte antes de llenarlo que no se enviará nada;
+  - la política de privacidad describe Cloudflare y Email Service. Sigue siendo un **borrador pendiente de revisión jurídica**.
+- Todo lo marcado como *rama* en este documento está desplegado en esa versión, salvo la activación, que sigue pendiente.
 - **Para activarlo** hacen falta los 8 requisitos de [«Activación controlada»](#activación-controlada). Activar el formulario **no retira `noindex`**: la indexación sigue su propio proceso ([`src/config/lanzamiento.json`](../../src/config/lanzamiento.json)).
 
 ## Auditoría y cambios
@@ -242,4 +244,4 @@ Las claves de prueba no validan host ni acción. Antes de declarar el formulario
 | Quitar el secreto | `npx wrangler versions secret delete TURNSTILE_SECRET_KEY` y desplegar | 503: cerrado, nunca abierto |
 | Caída de Turnstile | Ninguna: el formulario responde 503 «Intente más tarde» | [incident-response.md](incident-response.md) §9. No hay interruptor de producción que lo apague, a propósito |
 
-Versión anterior estable: `d9386dca` (formulario cerrado, sin aviso). La anterior a esta rama es `5d023ca4`.
+Versión actual: `c52105c5` (formulario cerrado, con aviso). Anterior estable: `d9386dca` (formulario cerrado, sin aviso). La anterior a esta rama es `5d023ca4`.

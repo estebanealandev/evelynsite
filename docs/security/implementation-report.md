@@ -3,11 +3,11 @@
 - **Fecha:** 2026-11-08
 - **Rama:** `security/cloudflare-free-hardening`, creada desde `seo/geo-enterprise-2026` (`54a797e`, la versión desplegada).
 - **Sin push ni merge.** `main` intacta.
-- **Producción:** el 2026-11-08, con autorización, se aplicaron en la zona las 3 reglas WAF y la de rate limiting, y después se desplegó esta rama (versión `d9386dca-0ce1-4cda-b27a-7b73698a7419`; la anterior era `5d023ca4`). Todo verificado. Sin cambios de DNS, de ajustes de zona ni de la cuenta.
+- **Producción:** el 2026-11-08, con autorización, se aplicaron en la zona las 3 reglas WAF y la de rate limiting, y después se desplegó esta rama (versión `d9386dca-0ce1-4cda-b27a-7b73698a7419`; la anterior era `5d023ca4`). Ese mismo día, también con autorización, se desplegó la segunda fase del formulario (versión `c52105c5-1278-4f9d-83f3-c4f6d69b868e`). Todo verificado. Sin cambios de DNS, de ajustes de zona ni de la cuenta.
 - **`noindex` vigente.** No se envió ningún sitemap.
 - **Coste:** ninguno.
 
-## Segunda fase: formulario preparado para su activación (2026-11-08, sin desplegar)
+## Segunda fase: formulario preparado para su activación (2026-11-08, desplegada como `c52105c5`)
 
 **El formulario sigue sin estar operativo.** En esta fase se cerró todo lo que se podía hacer sin credenciales ni aprobaciones. El detalle está en [turnstile-implementation.md](turnstile-implementation.md).
 
@@ -93,7 +93,7 @@
 | Reglas WAF 4 y 5 | Sí | — | Reservadas | — | — | Solo ante un incidente o con evidencia |
 | Rate limiting de zona | Sí (1) | 0 | **ACTIVO Y VERIFICADO** (2026-11-08, ruleset `fcdec1f3…`) | 8 POST inválidos: 5 con 422 del Worker y del 6.º en adelante 429 `error code: 1015` del borde; a los 12 s, 422 otra vez | Ninguno | Calibrar con Security Events |
 | Binding de rate limiting y límite en memoria | Sí | Activo | **ACTIVO** (desplegado) | `wrangler deploy --dry-run` | Ninguno | — |
-| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO** y desplegado sin widget: el servidor exige el token y, sin secreto, responde 503 honesto. Las correcciones de la segunda fase (claves de prueba, reintento, carga tras el consentimiento) están **IMPLEMENTADAS LOCALMENTE** | Suites, y `test:turnstile` con el Siteverify real | Ninguno | Los 8 requisitos de activación ([turnstile-implementation.md](turnstile-implementation.md#activación-controlada)) |
+| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO** y desplegado sin widget: el servidor exige el token y, sin secreto, responde 503 honesto. Las correcciones de la segunda fase (claves de prueba, reintento, carga tras el consentimiento) están **DESPLEGADAS** en `c52105c5`, aún sin widget | Suites, y `test:turnstile` con el Siteverify real | Ninguno | Los 8 requisitos de activación ([turnstile-implementation.md](turnstile-implementation.md#activación-controlada)) |
 | Estados del formulario A–G y aviso de cierre | — | 503 genérico, sin aviso | **IMPLEMENTADO LOCALMENTE** | Pruebas 1–16 | Ninguno | Desplegar (con autorización) |
 | Política de privacidad coherente con la plataforma y Turnstile | — | Decía SMTP y «sin terceros» | **PREPARADO PARA ACTIVACIÓN** (borrador; la sección de Turnstile depende del widget) | `verificar-lanzamiento`, `seguridad:produccion` | Ninguno | **Revisión jurídica** ([privacy-policy-review.md](privacy-policy-review.md)) |
 | Formulario operativo (envío real) | — | No | **PENDIENTE DE DATOS** (correo real, widget, secreto, política aprobada y autorización) | `npm run formulario:preparar`: faltan 7 puntos | Ninguno | [Activación controlada](turnstile-implementation.md#activación-controlada) |
@@ -135,7 +135,7 @@
 2. ~~**Aplicar las reglas WAF y el rate limiting en la zona.**~~ **Hecho el 2026-11-08** y verificado ([waf-rules.md](waf-rules.md), [rate-limiting.md](rate-limiting.md)).
 3. ~~**Desplegar esta rama**~~ **Hecho el 2026-11-08** (versión `d9386dca`). Trae el 405, el código de Turnstile y el mensaje del formulario ante el 429 del borde; sin widget ni secreto, el formulario sigue en 503, como hoy.
 4. **CAA** (cambio de DNS).
-5. **Desplegar la segunda fase del formulario** (estados, aviso de cierre y política según la plataforma). Mejora lo que se publica aunque el formulario siga cerrado.
+5. ~~**Desplegar la segunda fase del formulario**~~ **Hecho el 2026-11-08** (versión `c52105c5`). El formulario sigue cerrado (503) y ahora lo advierte antes de llenarlo.
 6. **Activación del formulario:** los 8 requisitos y el procedimiento de [turnstile-implementation.md](turnstile-implementation.md#activación-controlada). Usar `wrangler versions secret put`, **nunca** `wrangler secret put`, que despliega al instante.
 7. Browser Cache TTL a «Respetar cabeceras».
 
@@ -145,7 +145,7 @@
 |---|---|
 | Cuenta sin 2FA | Solo la puede resolver el propietario |
 | DNSSEC sin cadena de confianza | Depende del registrador |
-| El formulario en producción no tiene Turnstile hasta la activación | Hoy no envía nada (503), así que no hay exposición. La versión desplegada aún no advierte antes de llenarlo; el aviso llega con el próximo despliegue |
+| El formulario en producción no tiene Turnstile hasta la activación | Hoy no envía nada (503), así que no hay exposición. La página lo advierte antes de llenarlo |
 | El limitador del Worker usa un hash SHA-256 sin clave de la IP | Opción: HMAC con un secreto ([privacy-policy-review.md](privacy-policy-review.md)) |
 | Token `lawyi-staging-setup` con escritura sobre Turnstile y Access en toda la cuenta | Solo el propietario: revocarlo antes de crear el widget |
 | Rate limiting aproximado (por centro de datos y con retraso) | Turnstile de un solo uso es el control fiable |
