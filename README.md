@@ -2,7 +2,7 @@
 
 Sitio corporativo en [Astro](https://astro.build) con páginas estáticas, un Worker de Cloudflare para el formulario y todos los recursos alojados localmente.
 
-> **Antes de publicar:** complete la lista de [pendientes de publicación](#pendientes-de-publicación). Hasta entonces, `PUBLIC_SITE_READY=false` mantiene el sitio con `noindex` y `robots.txt` bloqueado.
+> **Antes de publicar:** complete la lista de [pendientes de publicación](#pendientes-de-publicación). Hasta entonces el sitio se compila siempre con `noindex` (meta robots y `X-Robots-Tag`). La indexación solo se habilita con el procedimiento de [docs/seo/indexation-release-checklist.md](docs/seo/indexation-release-checklist.md).
 
 ## Requisitos
 
@@ -44,7 +44,9 @@ Consulte [.env.example](.env.example).
 | Variable | Función |
 |---|---|
 | `PUBLIC_SITE_URL` | Dominio definitivo. Canonical, sitemap, Open Graph y validación del origen de formularios |
-| `PUBLIC_SITE_READY` | `true` habilita la indexación. Exige completar los datos de privacidad o la compilación falla |
+| `SEO_INDEXING_ENABLED` | `true` pide indexar. Solo funciona con `SITE_ENV=production`, el dominio real y todos los requisitos de `src/config/lanzamiento.json` aprobados; si falta algo, la compilación falla. `PUBLIC_SITE_READY` ya no se fija a mano: se deriva de esta política |
+| `SITE_ENV` | `development` (por defecto), `preview`, `staging` o `production`. Solo `production` puede indexar |
+| `PUBLIC_PROFILE_APPROVED` | `true` declara el servicio profesional en los datos estructurados (ver docs/seo/structured-data.md) |
 | `PUBLIC_CONTACT_*` | Teléfono, correo, dirección y horario. Si están vacíos, no se muestran |
 | `PUBLIC_DATA_CONTROLLER*`, `PUBLIC_PRIVACY_*` | Datos de la política de privacidad |
 | `MAIL_MODE` | `smtp`, `outbox` o `disabled` |
@@ -108,6 +110,19 @@ npm run test:cf
 
 El servidor Node sigue disponible: `npm run build` y `npm start` detrás de un proxy con HTTPS, con `TRUST_PROXY=true`.
 
+
+### SEO y verificación
+
+| Comando | Para qué |
+|---|---|
+| `npm run seo:verificar` | Compila, audita y ejecuta las pruebas SEO y de indexación |
+| `npm run seo:auditar` / `seo:inventario` | Auditoría de `dist/`; la segunda escribe `docs/seo/inventario-rutas.md` |
+| `npm run seo:lanzamiento` | Requisitos de lanzamiento pendientes |
+| `npm run seo:dnssec` | Cadena DNSSEC del dominio (solo lectura) |
+| `npm run seo:produccion` | Revisa el sitio publicado: redirecciones, robots, canonical (solo lectura) |
+| `npm run seo:imagenes` | Regenera las imágenes sociales 1200 × 630 de `public/assets/og/` |
+
+`npm run deploy` comprueba que la compilación sea coherente con la política de indexación antes de subirla. Documentación en [docs/seo/](docs/seo/).
 ## Actualizar contenido
 
 | Contenido | Ubicación |
@@ -148,7 +163,7 @@ La lista completa está en [docs/legal-compliance-audit.md](docs/legal-complianc
 1. Revisión de todos los textos por una persona profesional en derecho de Costa Rica.
 2. Confirmación de servicios, datos profesionales y fotografía de Evelyn Elizondo.
 3. Datos de contacto y de privacidad, correo SMTP y dominio.
-4. Con todo lo anterior, `PUBLIC_SITE_READY=true` y nueva compilación.
+4. Con todo lo anterior, seguir [docs/seo/indexation-release-checklist.md](docs/seo/indexation-release-checklist.md).
 
 ## Documentación
 

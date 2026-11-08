@@ -43,9 +43,10 @@ test.describe('páginas nuevas', () => {
     for (const h of await enlaces.evaluateAll(a => a.map(e => (e as HTMLAnchorElement).href))) expect(h).toMatch(/^https:\/\/sinalevi\.go\.cr\//);
   });
 
-  test('las guías están en el sitemap y aclaran sus límites', async ({ page, request }) => {
+  test('el sitemap deja fuera las guías sin aprobación y estas aclaran sus límites', async ({ page, request }) => {
     const xml = await (await request.get('/sitemap.xml')).text();
-    expect(xml).toContain('/orientacion/recibi-una-notificacion-judicial');
+    // Las guías están pendientes de revisión profesional: no entran al sitemap hasta su aprobación.
+    expect(xml).not.toContain('/orientacion/recibi-una-notificacion-judicial');
     expect(xml).toContain('/biblioteca-juridica');
     expect(xml).not.toContain('/blog/etiqueta/');
     await page.goto('/orientacion/recibi-una-notificacion-judicial');

@@ -8,6 +8,7 @@ import RecursosAyuda from '../../components/sections/RecursosAyuda.astro';
 import { fechaLarga, slugify } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
 import { site } from '../../config/site';
+import { nodoArticulo } from '../../lib/seo/grafo';
 
 export async function getStaticPaths() {
   const articulos = await getCollection('articulos');
@@ -26,26 +27,23 @@ const relacionados = todos
   .filter((a: any) => a.id !== articulo.id)
   .sort((a: any, b: any) => Number(b.data.categoria === d.categoria) - Number(a.data.categoria === d.categoria))
   .slice(0, 3);
-const url = new URL(Astro.url.pathname, Astro.site).href;
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: d.titulo,
-  description: d.metaDescripcion,
-  datePublished: d.fecha,
-  dateModified: site.legalVerifiedAt,
-  inLanguage: 'es-CR',
-  image: new URL(`/assets/images/${d.imagen}.webp`, Astro.site).href,
-  mainEntityOfPage: url,
-  // La autoría de una persona solo se declara cuando está confirmada.
-  author: site.autora.verificada
-    ? { '@type': 'Person', name: site.autora.nombre, ...(site.autora.perfil ? { url: site.autora.perfil, sameAs: [site.autora.perfil] } : {}), ...(site.autora.credencial ? { hasCredential: { '@type': 'EducationalOccupationalCredential', name: site.autora.credencial } } : {}) }
-    : { '@type': 'Organization', name: site.name },
-  publisher: { '@type': 'Organization', name: site.name }
-};
+const url = new URL(Astro.url.pathname.replace(/\/$/, ''), Astro.site).href;
+const schema = nodoArticulo({
+  base: Astro.site!,
+  url,
+  titulo: d.titulo,
+  descripcion: d.metaDescripcion,
+  imagen: `/assets/og/articulo-${articulo.id}.jpg`,
+  publicado: d.fecha,
+  actualizado: d.actualizado,
+  seccion: d.categoria,
+  etiquetas: d.etiquetas
+});
 const crumbs = [{ label: 'Blog', href: '/blog' }, { label: d.categoria, href: `/blog/categoria/${slugify(d.categoria)}` }, { label: d.titulo }];
 ---
-<Base title={d.metaTitulo} description={d.metaDescripcion} type="article" crumbs={crumbs} jsonLd={[schema]} image={`/assets/images/${d.imagen}.webp`} lectura salidaRapida={articulo.id === 'proteccion-juridica-violencia-domestica'}>
+<Base title={d.metaTitulo} description={d.metaDescripcion} type="article" crumbs={crumbs} jsonLd={[schema]} image={`/assets/og/articulo-${articulo.id}.jpg`} imageAlt={d.alt}
+  publicado={d.fecha} actualizado={d.actualizado} tema={[d.categoria, ...vinculados.map((s: any) => s.data.titulo)]}
+  revision={d.revisionProfesional} revisadaPor={d.revisadoPor} revisadaEl={d.revisadoEl} lectura salidaRapida={articulo.id === 'proteccion-juridica-violencia-domestica'}>
   <PageHero titulo={d.titulo} crumbs={crumbs}>
     <p slot="antes" class="post-meta"><a href={`/blog/categoria/${slugify(d.categoria)}`}>{d.categoria}</a> · {fechaLarga(d.fecha)}</p>
   </PageHero>

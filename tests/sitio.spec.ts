@@ -1,6 +1,7 @@
 import { expect, test } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 import { principales, servicios } from './routes';
+import { getRutas } from './rutas-contenido';
 
 test.describe('rutas y dependencias', () => {
   for (const ruta of principales) {
@@ -27,7 +28,8 @@ test.describe('rutas y dependencias', () => {
 
   test('todos los enlaces internos del sitemap responden', async ({ request }) => {
     const xml = await (await request.get('/sitemap.xml')).text();
-    const rutas = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => new URL(m[1]).pathname);
+    // El sitemap ya solo lista lo indexable al lanzar: se completa con todas las rutas de contenido.
+    const rutas = [...new Set([...[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => new URL(m[1]).pathname), ...getRutas()])];
     expect(rutas.length).toBeGreaterThan(30);
     const enlaces = new Set<string>(rutas);
     for (const r of rutas) {
@@ -54,10 +56,10 @@ test.describe('rutas y dependencias', () => {
     await expect(page.locator('h1')).toContainText('404');
   });
 
-  test('sin publicación habilitada: noindex y robots bloqueado', async ({ page, request }) => {
+  test('sin publicación habilitada: noindex en la portada', async ({ page }) => {
+    // robots.txt ya no bloquea todo: el buscador debe poder leer el noindex (ver tests/seo.spec.ts).
     await page.goto('/');
     await expect(page.locator('meta[name=robots]')).toHaveAttribute('content', /noindex/);
-    expect(await (await request.get('/robots.txt')).text()).toContain('Disallow: /');
   });
 });
 
@@ -79,13 +81,14 @@ test.describe('metadatos', () => {
   test('datos estructurados válidos y sin datos inventados', async ({ page }) => {
     await page.goto('/servicios/divorcios');
     const bloques = await page.locator('script[type="application/ld+json"]').allTextContents();
-    const datos = bloques.map(b => JSON.parse(b));
-    const org = datos.find(d => d['@type'] === 'LegalService');
-    expect(org.name).toBe('Evelyn Elizondo');
-    expect(org.address).toBeUndefined();
+    const datos = JSON.parse(bloques[0])['@graph'];
+    expect(bloques).toHaveLength(1);
+    // Sin perfil profesional aprobado no se declara el servicio jurídico (ver tests/seo.spec.ts).
+    expect(datos.some((d: any) => d['@type'] === 'LegalService')).toBe(false);
+    expect(datos.find((d: any) => d['@type'] === 'WebSite').name).toBe('Evelyn Elizondo');
     // Google retiró los resultados enriquecidos de preguntas frecuentes: no se declara ese marcado.
-    expect(datos.some(d => d['@type'] === 'FAQPage')).toBe(false);
-    expect(datos.some(d => d['@type'] === 'BreadcrumbList')).toBe(true);
+    expect(datos.some((d: any) => d['@type'] === 'FAQPage')).toBe(false);
+    expect(datos.some((d: any) => d['@type'] === 'BreadcrumbList')).toBe(true);
   });
 });
 

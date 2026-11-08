@@ -9,7 +9,9 @@ export const site = {
   fullName: 'Evelyn Elizondo | Derecho de Familia | Costa Rica',
   description:
     'Información y orientación jurídica en derecho de familia en Costa Rica: divorcios, pensiones alimentarias, guarda y crianza, interrelación familiar, bienes gananciales y unión de hecho.',
+  // Lo fija astro.config.mjs a partir de src/config/indexacion.mjs: no se activa a mano.
   indexable: env.PUBLIC_SITE_READY === 'true',
+  entorno: (env.PUBLIC_SITE_ENV as string) || 'development',
   contact: {
     phone: clean(env.PUBLIC_CONTACT_PHONE),
     email: clean(env.PUBLIC_CONTACT_EMAIL),
@@ -31,6 +33,11 @@ export const site = {
     nombre: clean(env.PUBLIC_AUTHOR_NAME) ?? 'Evelyn Elizondo',
     credencial: clean(env.PUBLIC_AUTHOR_CREDENTIAL),
     perfil: clean(env.PUBLIC_AUTHOR_PROFILE_URL)
+  },
+  // Perfil profesional (servicio jurídico, contacto y área de atención) aprobado por Evelyn para declararse
+  // en los datos estructurados. Sin aprobación, el grafo no contiene ni LegalService ni datos de contacto.
+  perfil: {
+    aprobado: env.PUBLIC_PROFILE_APPROVED === 'true'
   },
   // Fecha en que se contrastaron las fuentes normativas oficiales.
   legalVerifiedAt: '2026-11-05'

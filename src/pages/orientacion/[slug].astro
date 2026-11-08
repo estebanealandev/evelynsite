@@ -17,7 +17,7 @@ const servicios = await getCollection('servicios');
 const vinculados = d.servicios.map((id: string) => servicios.find(s => s.id === id)).filter(Boolean);
 const crumbs = [{ label: 'Guías por situación', href: '/orientacion' }, { label: d.titulo }];
 ---
-<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura>
+<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura revision={d.revisionProfesional} revisadaPor={d.revisadoPor} revisadaEl={d.revisadoEl} actualizado={d.actualizado}>
   <PageHero titulo={d.titulo} lede={d.resumen} crumbs={crumbs} />
   <div class="wrap g12 read">
     <article class="read__body read__body--sola">

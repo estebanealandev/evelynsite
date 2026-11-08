@@ -12,7 +12,7 @@ const resto = articulos.filter(a => a.id !== principal.id);
 const categorias = [...new Set(articulos.map(a => a.data.categoria))].sort();
 const crumbs = [{ label: 'Blog' }];
 ---
-<Base title="Blog de derecho de familia en Costa Rica" description="Artículos informativos sobre divorcio, pensiones alimentarias, guarda y crianza, gananciales, unión de hecho y procesos de familia en Costa Rica." crumbs={crumbs}>
+<Base pagina="CollectionPage" title="Blog de derecho de familia en Costa Rica" description="Artículos informativos sobre divorcio, pensiones alimentarias, guarda y crianza, gananciales, unión de hecho y procesos de familia en Costa Rica." crumbs={crumbs}>
   <PageHero titulo="Artículos de derecho de *familia*" lede="Preguntas concretas sobre la legislación costarricense, con las normas consultadas." crumbs={crumbs} />
 
   <section class="section" style="padding-bottom:0">

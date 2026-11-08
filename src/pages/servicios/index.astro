@@ -8,7 +8,7 @@ import Cta from '../../components/sections/Cta.astro';
 const servicios = (await getCollection('servicios')).sort((a, b) => a.data.orden - b.data.orden);
 const crumbs = [{ label: 'Áreas' }];
 ---
-<Base title="Áreas de derecho de familia en Costa Rica" description="Información sobre divorcios, pensiones alimentarias, guarda y crianza, interrelación familiar, gananciales, unión de hecho, filiación, acuerdos y protección familiar." crumbs={crumbs}>
+<Base pagina="CollectionPage" title="Áreas de derecho de familia en Costa Rica" description="Información sobre divorcios, pensiones alimentarias, guarda y crianza, interrelación familiar, gananciales, unión de hecho, filiación, acuerdos y protección familiar." crumbs={crumbs}>
   <PageHero titulo="Áreas de derecho de *familia*" lede="Qué regula cada tema, qué condiciones exige la norma y qué conviene reunir, según la legislación costarricense vigente." crumbs={crumbs} />
   <section class="section">
     <div class="wrap">

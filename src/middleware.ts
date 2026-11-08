@@ -11,5 +11,7 @@ export const onRequest = defineMiddleware(async (ctx, next) => {
   for (const [k, v] of Object.entries(cabecerasSeguridad)) if (!res.headers.has(k)) res.headers.set(k, v);
   if (ctx.url.protocol === 'https:' && ctx.url.hostname !== 'localhost') res.headers.set('Strict-Transport-Security', HSTS);
   if (!esRecurso(ctx.url.pathname) && !res.headers.has('cache-control')) res.headers.set('Cache-Control', 'no-store');
+  // Lo que genera el Worker (formulario, errores) nunca es indexable.
+  res.headers.set('X-Robots-Tag', 'noindex, nofollow');
   return res;
 });

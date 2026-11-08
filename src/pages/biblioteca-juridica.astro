@@ -11,7 +11,7 @@ const servicios = await getCollection('servicios');
 const titulo = (id: string) => servicios.find(s => s.id === id);
 const crumbs = [{ label: 'Biblioteca jurídica' }];
 ---
-<Base title="Biblioteca jurídica" description="Las normas fundamentales del derecho de familia en Costa Rica, con su fuente oficial, una explicación breve y las áreas con las que se relacionan." crumbs={crumbs}>
+<Base pagina="CollectionPage" title="Biblioteca jurídica" description="Las normas fundamentales del derecho de familia en Costa Rica, con su fuente oficial, una explicación breve y las áreas con las que se relacionan." crumbs={crumbs}>
   <PageHero titulo="Biblioteca jurídica" lede="Las normas que sustentan la información de este sitio, con un enlace a su texto oficial en SINALEVI. La selección y los resúmenes son editoriales y no reemplazan la lectura de la norma." crumbs={crumbs} />
   <div class="wrap section">
     {biblioteca.map(n => (

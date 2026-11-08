@@ -1,0 +1,14 @@
+{
+  "$comentario": "Registro de autorización de lanzamiento. Solo una persona responsable lo modifica, con evidencia verificable. Ver docs/seo/indexation-release-checklist.md. Mientras algún requisito no esté 'aprobado', la compilación con SEO_INDEXING_ENABLED=true falla.",
+  "autorizacion": { "autorizadoPor": null, "fecha": null },
+  "requisitos": {
+    "aprobacionEvelyn": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "revisionJuridica": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "datosProfesionales": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "datosContacto": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "formulario": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": "Falta la dirección real de Evelyn; MAIL_MODE=disabled responde 503" },
+    "privacidad": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "dnssec": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": "2026-11-07: zona firmada en Cloudflare; el DS aún no aparece en .com (dig DS vacío)" },
+    "pruebasSeo": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null }
+  }
+}

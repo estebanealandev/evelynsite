@@ -6,7 +6,7 @@ import PostsSection from '../../components/sections/PostsSection.astro';
 import Cta from '../../components/sections/Cta.astro';
 import SeguridadNavegacion from '../../components/sections/SeguridadNavegacion.astro';
 import RecursosAyuda from '../../components/sections/RecursosAyuda.astro';
-import { em, fechaLarga } from '../../lib/format';
+import { em, fechaLarga, slugify } from '../../lib/format';
 import { fuentes } from '../../lib/sources';
 import { site } from '../../config/site';
 
@@ -19,9 +19,17 @@ const d = servicio.data;
 const { Content } = await render(servicio);
 const todos = await getCollection('servicios');
 const relacionados = d.relacionados.map((id: string) => todos.find(s => s.id === id)).filter(Boolean);
-const articulos = (await getCollection('articulos')).filter(a => a.data.servicios.includes(servicio.id));
-const otros = (await getCollection('articulos')).filter(a => !a.data.servicios.includes(servicio.id));
+// Primero los artículos cuyo tema principal es esta área (primer servicio declarado y misma categoría);
+// después los que la tratan de forma secundaria. Solo se completa con otros temas si faltan, y nunca en la
+// página de violencia, donde un artículo ajeno (p. ej. sobre conciliación) sería inadecuado.
+const todosArticulos = await getCollection('articulos');
+const sinY = (s: string) => slugify(s).replace(/-y-/g, '-');
+const puntaje = (a: (typeof todosArticulos)[number]) =>
+  a.data.servicios.indexOf(servicio.id) * 2 - (servicio.id.startsWith(sinY(a.data.categoria)) ? 1 : 0);
+const articulos = todosArticulos.filter(a => a.data.servicios.includes(servicio.id)).sort((a, b) => puntaje(a) - puntaje(b));
+const otros = servicio.id === 'proteccion-familiar' ? [] : todosArticulos.filter(a => !a.data.servicios.includes(servicio.id));
 const lecturas = [...articulos, ...otros].slice(0, 3);
+const guias = (await getCollection('fichas')).filter(f => f.data.servicios.includes(servicio.id));
 const crumbs = [{ label: 'Áreas', href: '/servicios' }, { label: d.titulo }];
 const riesgo = servicio.id === 'proteccion-familiar';
 const secciones = [
@@ -36,7 +44,9 @@ const secciones = [
   ['fuentes', 'Fuentes']
 ];
 ---
-<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura salidaRapida={servicio.id === 'proteccion-familiar'}>
+<Base title={d.metaTitulo} description={d.metaDescripcion} crumbs={crumbs} lectura salidaRapida={servicio.id === 'proteccion-familiar'}
+  image={`/assets/og/servicio-${servicio.id}.jpg`} imageAlt={d.alt} tema={[d.titulo, 'Derecho de familia', 'Costa Rica']}
+  revision={d.revisionProfesional} revisadaPor={d.revisadoPor} revisadaEl={d.revisadoEl} actualizado={d.actualizado}>
   <PageHero titulo={d.hero.titulo} lede={d.hero.entrada} eyebrow={riesgo ? undefined : `Tema ${String(d.orden).padStart(2, '0')}`} crumbs={crumbs} />
   {d.aviso && <div class="wrap" style="margin-top:28px"><p class="notice notice--urgent" role="note" set:html={d.aviso.replace(/9-1-1/g, '<a class="tel" href="tel:911">9-1-1</a>')} /></div>}
   {servicio.id === 'proteccion-familiar' && <div class="wrap" style="margin-top:12px"><SeguridadNavegacion /><RecursosAyuda /></div>}
@@ -121,6 +131,10 @@ const secciones = [
       <section style="margin-top:44px">
         <h2 style="margin-bottom:14px;font-size:var(--fs-h3)">Temas relacionados</h2>
         <ul class="tag-list">{relacionados.map((r: any) => <li><a href={`/servicios/${r.id}`}>{r.data.titulo}</a></li>)}</ul>
+        {guias.length > 0 && <>
+          <h2 style="margin:28px 0 14px;font-size:var(--fs-h3)">Guías por situación</h2>
+          <ul class="tag-list">{guias.map(g => <li><a href={`/orientacion/${g.id}`}>{g.data.titulo}</a></li>)}</ul>
+        </>}
       </section>
     </article>
   </div>

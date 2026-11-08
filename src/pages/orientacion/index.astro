@@ -6,7 +6,7 @@ import PageHero from '../../components/ui/PageHero.astro';
 const fichas = (await getCollection('fichas')).sort((a, b) => a.data.orden - b.data.orden);
 const crumbs = [{ label: 'Guías por situación' }];
 ---
-<Base title="Guías por situación" description="Qué información conviene reunir y qué aspectos legales suelen ser relevantes en situaciones frecuentes de derecho de familia en Costa Rica." crumbs={crumbs}>
+<Base pagina="CollectionPage" title="Guías por situación" description="Qué información conviene reunir y qué aspectos legales suelen ser relevantes en situaciones frecuentes de derecho de familia en Costa Rica." crumbs={crumbs}>
   <PageHero titulo="Guías por situación" lede="Qué conviene reunir y qué aspectos suelen ser relevantes. Son una ayuda para ordenar la información y no concluyen nada sobre un caso concreto." crumbs={crumbs} />
   <div class="wrap section">
     <ul class="fichas">

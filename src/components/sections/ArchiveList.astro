@@ -3,10 +3,10 @@ import Base from '../../layouts/Base.astro';
 import PostCard from '../ui/PostCard.astro';
 import PageHero from '../ui/PageHero.astro';
 import Cta from './Cta.astro';
-const { titulo, entrada, posts, tipo, metaDescripcion } = Astro.props;
+const { titulo, entrada, posts, tipo, metaDescripcion, noindex = false } = Astro.props;
 const crumbs = [{ label: 'Blog', href: '/blog' }, { label: titulo }];
 ---
-<Base title={`${titulo}: blog de derecho de familia`} description={metaDescripcion} crumbs={crumbs} noindex={tipo === 'Etiqueta'}>
+<Base title={`${titulo}: blog de derecho de familia`} description={metaDescripcion} crumbs={crumbs} noindex={noindex || tipo === 'Etiqueta'} pagina="CollectionPage">
   <PageHero titulo={titulo} lede={entrada} eyebrow={tipo} crumbs={crumbs} />
   <section class="section">
     <div class="wrap">

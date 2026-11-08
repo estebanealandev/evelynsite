@@ -4,39 +4,49 @@ import Header from '../components/layout/Header.astro';
 import Footer from '../components/layout/Footer.astro';
 import { createHash } from 'node:crypto';
 import { site } from '../config/site';
+import { robotsDePagina } from '../config/indexacion.mjs';
+import { grafo } from '../lib/seo/grafo';
 
-const { title, description, image = '/assets/brand/og-default.jpg', type = 'website', noindex = false, jsonLd = [], crumbs = [], lectura = false, salidaRapida = Astro.url.pathname !== '/' } = Astro.props;
-const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+const {
+  title,
+  description,
+  image = '/assets/brand/og-default.jpg',
+  imageAlt = 'Evelyn Elizondo, Derecho de Familia, Costa Rica',
+  type = 'website',
+  noindex = false,
+  revision,
+  pagina = 'WebPage',
+  tema = [],
+  revisadaPor,
+  revisadaEl,
+  publicado,
+  actualizado,
+  jsonLd = [],
+  crumbs = [],
+  lectura = false,
+  salidaRapida = Astro.url.pathname !== '/'
+} = Astro.props;
+// La marca se añade solo si cabe: los títulos largos se truncan en los resultados y la marca ya va en og:site_name.
+const conMarca = `${title} | ${site.name}`;
+const fullTitle = title.includes(site.name) || conMarca.length > 65 ? title : conMarca;
+// Canonical absoluto, sin barra final y sin parámetros: una sola URL por página.
 const canonical = new URL(Astro.url.pathname.replace(/\/$/, '') || '/', Astro.site).href;
-const robots = noindex || !site.indexable ? 'noindex, nofollow' : 'index, follow';
+// `noindex` marca páginas que no se indexan nunca; `revision` deja fuera el contenido jurídico sin aprobar.
+const robots = robotsDePagina({ indexable: site.indexable, excluida: noindex, revision });
 const ogImage = new URL(image, Astro.site).href;
-
-const org = {
-  '@context': 'https://schema.org',
-  '@type': 'LegalService',
-  '@id': new URL('/#organizacion', Astro.site).href,
-  name: site.name,
-  description: site.description,
-  url: new URL('/', Astro.site).href,
-  logo: new URL('/assets/brand/evelyn-elizondo-monogram.png', Astro.site).href,
-  areaServed: { '@type': 'Country', name: 'Costa Rica' },
-  knowsLanguage: 'es-CR',
-  ...(site.contact.phone ? { telephone: site.contact.phone } : {}),
-  ...(site.contact.email ? { email: site.contact.email } : {})
-};
-const breadcrumb = crumbs.length
-  ? {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [{ label: 'Inicio', href: '/' }, ...crumbs].map((c: any, i: number) => ({
-        '@type': 'ListItem',
-        position: i + 1,
-        name: c.label,
-        item: new URL(c.href ?? Astro.url.pathname, Astro.site).href
-      }))
-    }
-  : null;
-const schemas = [org, breadcrumb, ...jsonLd].filter(Boolean);
+const datos = grafo({
+  base: Astro.site!,
+  url: canonical,
+  titulo: fullTitle,
+  descripcion: description,
+  tipo: pagina,
+  imagen: image,
+  migas: crumbs,
+  tema,
+  revisadaPor,
+  revisadaEl,
+  nodos: jsonLd
+});
 // Único script en línea: debe correr antes de pintar. La política lo admite por su huella y bloquea cualquier otro.
 const inicial = "document.documentElement.classList.add('js');try{if(localStorage.getItem('movimiento')==='pausado')document.documentElement.dataset.movimiento='pausado'}catch{}";
 const huella = createHash('sha256').update(inicial).digest('base64');
@@ -62,7 +72,9 @@ const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:image:alt" content="Evelyn Elizondo, Derecho de Familia, Costa Rica" />
+    <meta property="og:image:alt" content={imageAlt} />
+    {type === 'article' && publicado && <meta property="article:published_time" content={publicado} />}
+    {type === 'article' && (actualizado ?? publicado) && <meta property="article:modified_time" content={actualizado ?? publicado} />}
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={fullTitle} />
     <meta name="twitter:description" content={description} />
@@ -73,7 +85,7 @@ const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="preload" href="/assets/fonts/schibsted-grotesk.woff2" as="font" type="font/woff2" crossorigin />
     <script is:inline set:html={inicial} />
-    {schemas.map(s => <script is:inline type="application/ld+json" set:html={JSON.stringify(s)} />)}
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(datos).replace(/</g, '\\u003c')} />
     <slot name="head" />
   </head>
   <body>

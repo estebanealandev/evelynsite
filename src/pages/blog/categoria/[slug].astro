@@ -9,5 +9,6 @@ export async function getStaticPaths() {
 }
 const { nombre, posts } = Astro.props;
 const n = posts.length;
+// Una categoría con un solo artículo duplica ese artículo: no se indexa ni entra al sitemap.
 ---
-<ArchiveList titulo={nombre} tipo="Categoría" entrada={`${n} ${n === 1 ? 'artículo' : 'artículos'} sobre la legislación costarricense`} posts={posts} metaDescripcion={`Artículos sobre ${nombre.toLowerCase()} en Costa Rica, con referencias a la legislación vigente.`} />
+<ArchiveList titulo={nombre} tipo="Categoría" entrada={`${n} ${n === 1 ? 'artículo' : 'artículos'} sobre la legislación costarricense`} posts={posts} noindex={n < 2} metaDescripcion={`Artículos sobre ${nombre.toLowerCase()} en Costa Rica, con referencias a la legislación vigente.`} />

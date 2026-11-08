@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "build:cf": "DESTINO=cloudflare PUBLIC_SITE_URL=https://evelynelizondo.com astro build",
-    "deploy": "npm run build:cf && wrangler deploy",
+    "build:cf": "DESTINO=cloudflare SITE_ENV=production PUBLIC_SITE_URL=https://evelynelizondo.com astro build",
+    "deploy": "npm run build:cf && node scripts/seo/verificar-lanzamiento.mjs --compilacion && node scripts/seo/auditar.mjs && wrangler deploy",
     "start": "NODE_ENV=production node --env-file-if-exists=.env scripts/servidor.mjs",
     "check": "astro check",
     "brand": "node scripts/instalar-marca.mjs",
@@ -25,7 +25,14 @@
     "normas:descargar": "node scripts/normas/descargar.mjs",
     "normas:verificar": "node scripts/normas/verificar.mjs",
     "normas:vigilar": "node scripts/normas/vigilar.mjs",
-    "test:navegadores": "NAVEGADORES=todos playwright test --project=firefox --project=webkit --project=webkit-movil"
+    "test:navegadores": "NAVEGADORES=todos playwright test --project=firefox --project=webkit --project=webkit-movil",
+    "seo:auditar": "node scripts/seo/auditar.mjs",
+    "seo:inventario": "node scripts/seo/auditar.mjs --informe docs/seo/inventario-rutas.md",
+    "seo:imagenes": "node scripts/seo/imagenes-sociales.mjs",
+    "seo:lanzamiento": "node scripts/seo/verificar-lanzamiento.mjs",
+    "seo:dnssec": "node scripts/seo/verificar-dnssec.mjs",
+    "seo:produccion": "node scripts/seo/verificar-produccion.mjs",
+    "seo:verificar": "npm run build && npm run seo:auditar && playwright test tests/seo.spec.ts tests/indexacion.spec.ts"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.9",

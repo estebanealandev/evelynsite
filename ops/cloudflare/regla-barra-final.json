@@ -1,0 +1,13 @@
+{
+  "$comentario": "PROPUESTA, NO APLICADA. Convierte la redirección 307 de Workers Static Assets (html_handling: drop-trailing-slash) en una 301 a nivel de zona, antes de llegar al Worker. Aplicar solo con autorización: cf rulesets ... --zone 3c656474ab87b43af43563a939e20f23 (fase http_request_dynamic_redirect, junto a la regla www existente; no reemplazar esa regla). Ver docs/seo/cloudflare-seo.md.",
+  "description": "Quitar la barra final con 301",
+  "expression": "(http.host eq \"evelynelizondo.com\" and ends_with(http.request.uri.path, \"/\") and http.request.uri.path ne \"/\")",
+  "action": "redirect",
+  "action_parameters": {
+    "from_value": {
+      "status_code": 301,
+      "target_url": { "expression": "concat(\"https://evelynelizondo.com\", substring(http.request.uri.path, 0, -1))" },
+      "preserve_query_string": true
+    }
+  }
+}
