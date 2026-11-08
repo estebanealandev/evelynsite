@@ -1,10 +1,10 @@
 # Cloudflare Turnstile en el formulario de consulta
 
-**Estado: IMPLEMENTADO LOCALMENTE.** El código está en esta rama y probado. En producción depende de tres pasos con autorización:
+**Estado: IMPLEMENTADO y desplegado sin widget** (2026-11-08, versión `d9386dca`). El servidor ya exige el token: sin secreto, el formulario responde 503 «No fue posible completar la verificación de seguridad…», sin éxito simulado. Para activarlo hacen falta, con autorización, la política de privacidad revisada y:
 
 1. Crear el widget.
 2. Fijar la clave pública al compilar.
-3. Guardar la clave secreta como secreto del Worker.
+3. Guardar la clave secreta como secreto del Worker y volver a desplegar.
 
 El envío de correo sigue desactivado (`MAIL_MODE=disabled`) hasta tener la dirección real de Evelyn. **Nunca se simula un envío correcto.**
 

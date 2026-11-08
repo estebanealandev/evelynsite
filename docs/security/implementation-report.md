@@ -3,7 +3,7 @@
 - **Fecha:** 2026-11-08
 - **Rama:** `security/cloudflare-free-hardening`, creada desde `seo/geo-enterprise-2026` (`54a797e`, la versión desplegada).
 - **Sin push ni merge.** `main` intacta.
-- **Producción:** el 2026-11-08, con autorización, se aplicaron en la zona las 3 reglas WAF y la de rate limiting, y se verificaron. Sin despliegue ni cambios de DNS, de ajustes de zona o de la cuenta.
+- **Producción:** el 2026-11-08, con autorización, se aplicaron en la zona las 3 reglas WAF y la de rate limiting, y después se desplegó esta rama (versión `d9386dca-0ce1-4cda-b27a-7b73698a7419`; la anterior era `5d023ca4`). Todo verificado. Sin cambios de DNS, de ajustes de zona ni de la cuenta.
 - **`noindex` vigente.** No se envió ningún sitemap.
 - **Coste:** ninguno.
 
@@ -71,11 +71,11 @@
 | Reglas WAF 4 y 5 | Sí | — | Reservadas | — | — | Solo ante un incidente o con evidencia |
 | Rate limiting de zona | Sí (1) | 0 | **ACTIVO Y VERIFICADO** (2026-11-08, ruleset `fcdec1f3…`) | 8 POST inválidos: 5 con 422 del Worker y del 6.º en adelante 429 `error code: 1015` del borde; a los 12 s, 422 otra vez | Ninguno | Calibrar con Security Events |
 | Binding de rate limiting y límite en memoria | Sí | Activo | **ACTIVO** (desplegado) | `wrangler deploy --dry-run` | Ninguno | — |
-| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO LOCALMENTE** | 14 pruebas e integración con el Siteverify real | Ninguno | Política de privacidad, widget, secreto y despliegue |
-| 405 y control de métodos | — | 404 | **IMPLEMENTADO LOCALMENTE** | `tests/seguridad.spec.ts` | Ninguno | Desplegar |
+| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO** y desplegado sin widget: el servidor exige el token y, sin secreto, responde 503 honesto | 14 pruebas e integración con el Siteverify real; en producción, POST sin token da 503 y sin JS 303 a `/consulta-no-enviada` | Ninguno | Política de privacidad, widget, clave pública, secreto y nuevo despliegue |
+| 405 y control de métodos | — | 404 | **ACTIVO** (desplegado). Desde fuera no se ve: la regla WAF 3 da 403 antes | `tests/seguridad.spec.ts` | Ninguno | — |
 | Validación, tamaño, Content-Type y repetición | — | Activo | **ACTIVO** más el token de un solo uso (local) | Suites | Ninguno | — |
 | CSP y cabeceras | Sí | Activo | **ACTIVO Y VERIFICADO**. CSP de Turnstile **IMPLEMENTADA LOCALMENTE** | `seguridad:produccion` | Ninguno | — |
-| Comprobación de archivos sensibles antes del despliegue | — | — | **IMPLEMENTADO LOCALMENTE** | Control negativo | Ninguno | — |
+| Comprobación de archivos sensibles antes del despliegue | — | — | **ACTIVO** (forma parte de `npm run deploy`; pasó en el despliegue del 2026-11-08) | Control negativo | Ninguno | — |
 | Bot Fight Mode | Sí | Desactivado | **NO RECOMENDADO** | `cf bot-management get` | Riesgo si se activa | Reevaluar con datos |
 | Super Bot Fight Mode, puntuación de bot, Attack Score | No | — | **NO DISPONIBLE EN FREE** | Documentación | — | — |
 | Browser Integrity Check | Sí | Activo | **ACTIVO Y VERIFICADO** | Ajuste `on`; sin desafíos a la lectura | Ninguno | — |
@@ -108,7 +108,7 @@
 
 1. **Propietario, en el panel:** activar 2FA y revisar o revocar los tokens. No depende del código.
 2. ~~**Aplicar las reglas WAF y el rate limiting en la zona.**~~ **Hecho el 2026-11-08** y verificado ([waf-rules.md](waf-rules.md), [rate-limiting.md](rate-limiting.md)).
-3. **Desplegar esta rama** (`npm run deploy`). Trae el 405, el código de Turnstile y el mensaje del formulario ante el 429 del borde; sin widget ni secreto, el formulario sigue en 503, como hoy.
+3. ~~**Desplegar esta rama**~~ **Hecho el 2026-11-08** (versión `d9386dca`). Trae el 405, el código de Turnstile y el mensaje del formulario ante el 429 del borde; sin widget ni secreto, el formulario sigue en 503, como hoy.
 4. **CAA** (cambio de DNS).
 5. **Turnstile en producción:**
    - política de privacidad revisada;

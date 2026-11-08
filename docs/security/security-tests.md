@@ -86,6 +86,19 @@ Comprobaciones manuales:
 | `seo:produccion` | **Sin problemas:** redirecciones 301 y `noindex` en las 17 páginas comprobadas |
 | `tests/sitio.spec.ts` (Node y Workers) | 150 pasadas, 4 omitidas y 0 fallidas, con la prueba nueva del 429 en texto plano |
 
+## Producción tras desplegar esta rama (2026-11-08, versión `d9386dca`)
+
+| Prueba | Resultado |
+|---|---|
+| `npm run deploy` | La compilación pasó `verificar-lanzamiento --compilacion` (sin archivos sensibles, `noindex`, CSP coherente) y `seo/auditar` antes de publicar |
+| `seguridad:produccion -- --esperar-waf` | **Sin problemas** |
+| `seo:produccion` | **Sin problemas** |
+| POST válido sin token, con JavaScript | 503 JSON «No fue posible completar la verificación de seguridad y la solicitud no se ha enviado…», con `verificacion: true`. No se envía nada |
+| El mismo POST sin JavaScript | 303 a `/consulta-no-enviada` |
+| `/agendar-consulta` | Sin widget ni `challenges.cloudflare.com`. La CSP de la meta solo admite `'self'` en `script-src` y `frame-src` |
+| `/assets/js/site.js` | Incluye el mensaje del 429 |
+| `Permissions-Policy` | Con `browsing-topics=()` |
+
 ## Validación de reglas contra la API (`--validate-only`)
 
 | Cuerpo | Resultado |

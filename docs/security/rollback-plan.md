@@ -14,8 +14,8 @@ npm run seo:produccion
 
 | Cambio | Reversión |
 |---|---|
-| Rama completa `security/cloudflare-free-hardening` | No está desplegada ni fusionada. Basta no usarla, o `git revert` de su commit |
-| Si se despliega y falla | `npx wrangler rollback` a la versión anterior (`5d023ca4-775d-48bc-9f7b-fca10334fe65`) o `npm run deploy` desde `seo/geo-enterprise-2026` |
+| Rama completa `security/cloudflare-free-hardening` | Desplegada el 2026-11-08 como versión `d9386dca-0ce1-4cda-b27a-7b73698a7419`, sin fusionar ni subir |
+| Si falla | `npx wrangler rollback` a la versión anterior (`5d023ca4-775d-48bc-9f7b-fca10334fe65`) o `npm run deploy` desde `seo/geo-enterprise-2026` |
 | Turnstile | Compilar sin `PUBLIC_TURNSTILE_SITE_KEY`. Con eso desaparece el widget, pero el servidor sigue exigiendo el token y responde 503: el formulario queda cerrado, nunca abierto. Para eliminar el requisito, revertir el commit |
 | 405 en `/api/consulta` | Revertir `export const ALL` en `src/pages/api/consulta.ts` |
 | Comprobaciones previas al despliegue | Revertir el bloque «Seguridad» de `scripts/seo/verificar-lanzamiento.mjs` |
