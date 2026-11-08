@@ -1,6 +1,6 @@
 # Cloudflare: cabeceras, caché, redirecciones, dominio e indexación
 
-Lo leído de la zona `evelynelizondo.com` (ID `3c656474ab87b43af43563a939e20f23`) el 2026-11-07 con la CLI `cf`, solo con lecturas. **Esta rama no cambió nada en Cloudflare ni desplegó.** El Worker publicado sigue siendo la versión de `05e689a`.
+Lo leído de la zona `evelynelizondo.com` (ID `3c656474ab87b43af43563a939e20f23`) el 2026-11-07 con la CLI `cf`. Con autorización del usuario, ese día se desplegó esta rama (versión del Worker `5d023ca4`) y se añadió la regla 301 de barra final. No se cambió nada más en la zona.
 
 ## Arquitectura
 
@@ -47,10 +47,10 @@ La zona no tiene Cache Rules (`http_request_cache_settings`: sin entrypoint). St
 | `http → https` | Always Use HTTPS (zona) | 301 ✔ |
 | `www → raíz` | Regla dinámica de zona «www a dominio principal», que conserva ruta y parámetros | 301 ✔. `_redirects` no admite redirecciones entre dominios, así que debe seguir en la zona |
 | `/home → /` | `redirects` de Astro | 301 ✔ |
-| `/ruta/ → /ruta` | `html_handling` de Static Assets | **307 (temporal)**. En Node ya responde 301 |
+| `/ruta/ → /ruta` | Regla dinámica de zona «Quitar la barra final con 301», que se evalúa antes que el 307 de `html_handling` | 301 ✔, conserva los parámetros. En Node, 301 desde `servidor.mjs` |
 | Mayúsculas (`/Servicios`) | — | 404. Ningún enlace las usa |
 
-**Pendiente de autorización:** `ops/cloudflare/regla-barra-final.json` contiene una regla de zona que responde 301 en lugar del 307. Debe añadirse **junto a** la regla `www` existente en la fase `http_request_dynamic_redirect`, sin reemplazarla. No se aplicó porque cambia la configuración de producción. El canonical ya apunta a la URL sin barra y el sitemap solo la incluye a ella, así que el riesgo actual es bajo.
+**Regla aplicada el 2026-11-07** (ruleset `http_request_dynamic_redirect`, versión 2). Se añadió junto a la regla `www`, que se conservó tal cual; la definición está en `ops/cloudflare/regla-barra-final.json`. El único caso con dos saltos es `www` más la barra final (`https://www…/blog/` → `/blog/` → `/blog`), y los dos son 301. Para volver atrás, actualizar el ruleset solo con la regla `www`.
 
 ## Rastreadores y seguridad
 

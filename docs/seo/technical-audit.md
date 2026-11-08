@@ -29,7 +29,7 @@ Se verificaron con `curl` y con `npm run seo:produccion` sobre el sitio publicad
 | I1 | Importante | El sitemap listaba 46 URL, contenido jurídico sin aprobar incluido, sin `lastmod` | `sitemap.xml.ts` | Corregido: solo URL elegibles al lanzar, con `lastmod` cuando hay una fecha real |
 | I2 | Importante | JSON-LD en bloques sueltos. Declaraba `LegalService`, un establecimiento, sin dirección, con datos profesionales sin confirmar | `Base.astro` | Corregido: un grafo `@graph` con `@id` estables, y servicio y persona solo con aprobación |
 | I3 | Importante | `Article.dateModified` usaba la fecha de consulta de las normas, no la de actualización del texto | `blog/[slug].astro` | Corregido: `actualizado` en el frontmatter o la fecha de publicación |
-| I4 | Importante | `/servicios/` responde 307 (temporal) hacia `/servicios` | `html_handling: drop-trailing-slash` | En Node, 301. En Cloudflare, regla de zona propuesta, sin aplicar (ver [cloudflare-seo.md](cloudflare-seo.md)) |
+| I4 | Importante | `/servicios/` responde 307 (temporal) hacia `/servicios` | `html_handling: drop-trailing-slash` | Corregido: 301 en Node y regla de zona 301 en Cloudflare, aplicada el 2026-11-07 con autorización |
 | I5 | Importante | Las áreas enlazaban sus 3 primeros artículos en orden alfabético: «Divorcios» no enlazaba sus dos artículos de divorcio | `servicios/[slug].astro` | Corregido: prioridad al tema principal y a la categoría |
 | I6 | Importante | Solo se llegaba a las guías desde `/orientacion` | Rastreo interno | Corregido: «Guías por situación» en cada área relacionada |
 | I7 | Importante | El registro DS de DNSSEC no está en `.com` | `npm run seo:dnssec` | Pendiente del registrador. No se modificó nada |

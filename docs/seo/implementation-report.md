@@ -41,7 +41,7 @@ El sitio queda preparado técnicamente para indexarse, y **sigue sin poder index
 | Las demás plantillas de páginas | Tipo de página (`AboutPage`, `ContactPage`, `CollectionPage`) y revisión |
 | `public/assets/og/` (nuevo) | 24 imágenes sociales JPEG de 1200 × 630 (`npm run seo:imagenes`) |
 | `scripts/seo/` (nuevo) | `auditar`, `verificar-lanzamiento`, `verificar-dnssec`, `verificar-produccion`, `medir-vitals` e `imagenes-sociales` |
-| `ops/cloudflare/regla-barra-final.json` (nuevo) | Regla de zona propuesta, **sin aplicar**: 301 para la barra final |
+| `ops/cloudflare/regla-barra-final.json` (nuevo) | Regla de zona con 301 para la barra final. Se aplicó con autorización tras el despliegue |
 | `package.json` | `build:cf` con `SITE_ENV=production`, `deploy` con verificación previa y scripts `seo:*` |
 | `tests/seo.spec.ts`, `tests/indexacion.spec.ts` (nuevos) | Ver [technical-audit.md](technical-audit.md), §4 |
 | `tests/sitio.spec.ts`, `tests/contenido.spec.ts` | Adaptadas: `robots.txt` ya no bloquea todo, el grafo es único, el rastreo de enlaces usa todas las rutas y las guías pendientes no están en el sitemap |
@@ -66,12 +66,20 @@ No se suprimió ni se debilitó ninguna prueba. Las tres aserciones que cambiaro
 | `npm run seo:produccion` (versión publicada, `05e689a`) | Se reproducen los hallazgos C1, C2 e I4. Se corrigen al desplegar esta rama |
 | `medir-vitals` (producción, móvil limitado) | LCP 0,7-1,3 s y CLS ≤ 0,066 en laboratorio (ver [core-web-vitals.md](core-web-vitals.md)) |
 
+## Despliegue (2026-11-07, autorizado por el usuario)
+
+- Se ejecutó `npm run deploy`: verificación, auditoría y despliegue. Versión del Worker: `5d023ca4-775d-48bc-9f7b-fca10334fe65`.
+- Se añadió la regla de zona 301 de barra final (ruleset de redirecciones, versión 2), conservando la regla `www`.
+- `npm run seo:produccion` da «Sin problemas»:
+  - `noindex, nofollow` en la meta y en `X-Robots-Tag` en todas las páginas comprobadas;
+  - `robots.txt` deja rastrear y no anuncia el sitemap;
+  - `http`, `www`, `/home` y la barra final responden con 301.
+- Sigue sin push, y `main` no se tocó.
+
 ## Qué **no** se hizo, y por qué
 
 | Acción | Motivo |
 |---|---|
-| Desplegar esta rama | Necesita autorización. Producción sigue en `05e689a`, con `Disallow: /` y sin `X-Robots-Tag` |
-| Aplicar la regla 301 de barra final | Cambia la configuración de producción. Queda propuesta en `ops/cloudflare/` |
 | Quitar `noindex`, enviar el sitemap, usar IndexNow o verificar en GSC o Bing | Están prohibidos hasta el lanzamiento autorizado |
 | Activar el correo del formulario | Falta la dirección real de Evelyn |
 | Validar con el Rich Results Test y validator.schema.org | No hay acceso desde este entorno. Queda como paso manual, con las validaciones automáticas en su lugar |
