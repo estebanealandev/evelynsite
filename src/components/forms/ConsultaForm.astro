@@ -1,8 +1,16 @@
 ---
 // Con JavaScript se presenta paso a paso; sin él, todos los campos quedan visibles y el envío funciona igual.
-import { consultaTipos, site } from '../../config/site';
+import { consultaTipos, formularioCerrado, site } from '../../config/site';
+const contacto = [site.contact.phone && `teléfono ${site.contact.phone}`, site.contact.email && `correo ${site.contact.email}`].filter(Boolean);
 ---
-<form class="form" action="/api/consulta" method="post" data-ajax data-pasos>
+{formularioCerrado && (
+  /* Estado A: en producción, sin widget el servidor rechaza todo envío. Se advierte antes de que se llene. */
+  <p class="notice notice--cerrado" role="note" id="formulario-cerrado" data-formulario-cerrado>
+    <strong>El envío en línea todavía no está habilitado.</strong> Puede revisar el formulario, pero si lo completa la solicitud no se enviará.
+    {contacto.length > 0 && <> Mientras tanto, puede comunicarse por {contacto.join(' o ')}.</>}
+  </p>
+)}
+<form class="form" action="/api/consulta" method="post" data-ajax data-pasos aria-describedby={formularioCerrado ? 'formulario-cerrado' : undefined}>
   <div class="pasos"><span data-pasos-texto role="status">Paso 1 de 3</span><span class="pasos__barra" aria-hidden="true"><i></i></span></div>
 
   <fieldset data-paso aria-describedby="e-tipo">
@@ -56,15 +64,15 @@ import { consultaTipos, site } from '../../config/site';
     <div class="field">
       <label class="check" for="c-consentimiento">
         <input id="c-consentimiento" name="consentimiento" type="checkbox" required data-msg="Para enviar la solicitud, debe autorizar el tratamiento de estos datos." aria-describedby="e-consentimiento" />
-        <span>Autorizo el tratamiento de mis datos personales para atender esta solicitud, según la <a href="/politica-de-privacidad">política de privacidad</a>. Entiendo que enviar este formulario no crea, por sí solo, una relación profesional.</span>
+        <span>Autorizo el tratamiento de mis datos personales para atender esta solicitud{site.turnstile && ', incluida la verificación de seguridad de Cloudflare (Turnstile), que empieza al marcar esta casilla'}, según la <a href="/politica-de-privacidad">política de privacidad</a>. Entiendo que enviar este formulario no crea, por sí solo, una relación profesional.</span>
       </label>
       <span class="field__error" id="e-consentimiento" data-error="consentimiento"></span>
     </div>
     {site.turnstile && (
       <div class="field turnstile">
-        {/* El script se carga al llegar a este paso: no afecta a la carga de la página ni al resto del sitio. */}
-        <div class="turnstile__widget" data-turnstile data-sitekey={site.turnstile} data-action="consulta"></div>
-        <span class="field__hint" id="h-turnstile">Verificación de seguridad de Cloudflare contra envíos automáticos. Normalmente no requiere ninguna acción.</span>
+        {/* El script se carga al marcar el consentimiento: Turnstile trata la IP y señales del navegador, así que no empieza antes. */}
+        <div class="turnstile__widget" data-turnstile data-sitekey={site.turnstile} data-action="consulta" aria-describedby="h-turnstile"></div>
+        <span class="field__hint" id="h-turnstile">Verificación de seguridad de Cloudflare contra envíos automáticos. Normalmente no requiere ninguna acción. Más detalles en la <a href="/politica-de-privacidad#seguridad-del-formulario">política de privacidad</a>.</span>
         <span class="field__error" id="e-turnstile" data-error="cf-turnstile-response"></span>
         <noscript><p class="field__hint">Para enviar este formulario necesita JavaScript, que se usa para esta verificación.</p></noscript>
       </div>

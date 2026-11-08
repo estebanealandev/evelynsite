@@ -13,7 +13,10 @@ export const site = {
   indexable: env.PUBLIC_SITE_READY === 'true',
   entorno: (env.PUBLIC_SITE_ENV as string) || 'development',
   // Clave pública del widget Turnstile. Sin ella no se carga nada de Cloudflare y el servidor rechaza los envíos.
+  // En producción, astro.config.mjs solo la admite con los requisitos de src/config/formulario.json cumplidos.
   turnstile: clean(env.PUBLIC_TURNSTILE_SITE_KEY),
+  // Donde se ejecuta la compilación: 'cloudflare' (Workers) o 'node' (servidor propio y pruebas).
+  plataforma: (env.PUBLIC_PLATAFORMA as string) === 'cloudflare' ? 'cloudflare' : 'node',
   contact: {
     phone: clean(env.PUBLIC_CONTACT_PHONE),
     email: clean(env.PUBLIC_CONTACT_EMAIL),
@@ -44,6 +47,9 @@ export const site = {
   // Fecha en que se contrastaron las fuentes normativas oficiales.
   legalVerifiedAt: '2026-11-05'
 };
+
+// En producción, sin widget el servidor rechaza todo envío: la página debe advertirlo antes de que se llene.
+export const formularioCerrado = site.entorno === 'production' && !site.turnstile;
 
 export const secondaryNav = [
   { label: 'Sobre Evelyn', href: '/sobre-evelyn' },

@@ -6,7 +6,9 @@ import { readFileSync } from 'node:fs';
 import { cabecerasSeguridad, esRecurso, HSTS } from '../src/lib/cabeceras.mjs';
 
 process.env.ASTRO_NODE_AUTOSTART = 'disabled';
-const { handler } = await import('../dist/server/entry.mjs');
+// DIST_DIR permite servir otra compilación (p. ej. la de prueba del widget Turnstile) sin tocar dist/.
+const DIST = new URL(`../${process.env.DIST_DIR || 'dist'}/`, import.meta.url);
+const { handler } = await import(new URL('server/entry.mjs', DIST).href);
 
 const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 4321);
@@ -17,7 +19,7 @@ const cabeceras = { ...cabecerasSeguridad, ...(esHttps ? { 'Strict-Transport-Sec
 // X-Robots-Tag igual a la meta robots compilada de cada página (lo escribe astro.config.mjs al compilar).
 // Sin ese archivo se asume lo más restrictivo.
 let robots = { indexable: false, rutas: {} };
-try { robots = JSON.parse(readFileSync(new URL('../dist/robots-compilados.json', import.meta.url), 'utf8')); } catch {}
+try { robots = JSON.parse(readFileSync(new URL('robots-compilados.json', DIST), 'utf8')); } catch {}
 const robotsDe = url => {
   if (!robots.indexable) return 'noindex, nofollow';
   const ruta = decodeURI(new URL(url, 'http://x').pathname).replace(/\/$/, '') || '/';

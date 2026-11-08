@@ -1,9 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
 import PageHero from '../components/ui/PageHero.astro';
+import { formularioCerrado, site } from '../config/site';
+// Destino de los envíos sin JavaScript que no se completaron. Nunca afirma que algo se haya enviado.
+const motivos = [
+  'datos incompletos (se piden tipo de asunto, un mensaje de al menos 20 caracteres, nombre, correo válido y la autorización)',
+  'varios intentos en poco tiempo',
+  site.turnstile && 'que no se completó la verificación de seguridad, que necesita JavaScript activado en el navegador',
+  'que el envío en línea no esté disponible'
+].filter(Boolean);
 ---
 <Base title="Su solicitud no se envió" description="Aviso de que la solicitud no pudo procesarse." noindex>
-  <PageHero titulo="Su solicitud no se envió" lede="Puede deberse a datos incompletos (se piden tipo de asunto, un mensaje de al menos 20 caracteres, nombre, correo válido y la autorización), a varios intentos en poco tiempo o a que el servicio no esté disponible. Si tiene un plazo en curso, atiéndalo sin esperar a este formulario. Ante una emergencia, llame al 9-1-1.">
+  <PageHero titulo="Su solicitud no se envió" lede={`Puede deberse a ${motivos.slice(0, -1).join(', ')} o a ${motivos.at(-1)}.${formularioCerrado ? ' En este momento el envío en línea todavía no está habilitado.' : ''} Si tiene un plazo en curso, atiéndalo sin esperar a este formulario. Ante una emergencia, llame al 9-1-1.`}>
     <div class="btn-row"><a class="btn" href="/agendar-consulta">Volver al formulario</a></div>
   </PageHero>
 </Base>

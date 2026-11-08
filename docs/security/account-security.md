@@ -16,6 +16,31 @@ Revisión de solo lectura del 2026-11-08 con la sesión OAuth del usuario. No se
 
 **Por qué A2 es crítico para este sitio:** un permiso de escritura sobre Access en todas las cuentas permitiría poner una aplicación de Access delante de `evelynelizondo.com`. Eso dejaría el sitio inaccesible para visitantes y buscadores sin tocar la zona. Además, nunca se ha usado.
 
+**Relación con el formulario:** A2 también tiene *Turnstile Sites Write* en toda la cuenta. Cuando exista el widget de producción, ese token podría cambiar sus hostnames o su modo, o rotar su secreto. El formulario dejaría de aceptar envíos (falla cerrado, con 503 o 403), pero quedaría inutilizado. Conviene resolver A2 **antes** de crear el widget.
+
+### Segunda lectura (2026-11-08, después del despliegue `d9386dca`)
+
+`cf user get` y `cf user tokens list` dan los mismos resultados: 2FA sigue desactivada y los cinco tokens siguen activos, sin caducidad ni filtro de IP. **Ningún token tiene escritura sobre la zona `evelynelizondo.com`** (`3c65…`): las escrituras de DNS son de la zona `339d…`. El riesgo sobre este sitio viene de los permisos de toda la cuenta (Access y Turnstile).
+
+## Checklist del propietario
+
+Nadie más puede hacerlo: no se piden ni se guardan contraseñas, códigos ni claves.
+
+- [ ] 2FA activada con al menos una llave de seguridad o *passkey* (WebAuthn), resistente al *phishing*
+- [ ] Segundo método registrado: otra llave o una app TOTP
+- [ ] Códigos de recuperación guardados fuera del equipo
+- [ ] 2FA activada también en el correo de la cuenta, que es la vía de recuperación
+- [ ] Sesiones activas revisadas (My Profile → Sessions) y cerradas las desconocidas
+- [ ] Miembros de la cuenta revisados y 2FA exigida a todos
+- [ ] `lawyi-staging-setup` revocado, o recreado con alcance mínimo, caducidad y filtro de IP, **antes de crear el widget Turnstile**
+- [ ] `lawyi-recuperacion-build` con caducidad y filtro de IP, o revocado
+- [ ] `Edit zone DNS` y `u047-dns-corte-user` revisados: caducidad o revocación
+- [ ] `Cloudflare Agent Token - 2026-09-02` (solo lectura) con caducidad, o revocado si ya no se usa
+- [ ] Ninguna Global API Key en uso
+- [ ] Audit Logs revisado tras estos cambios
+
+Antes de revocar un token, comprobar en su «último uso» y en los proyectos que lo usan (`lawyi`, `u047`) que nada dependa de él: revocar sin revisar puede interrumpir despliegues de otros proyectos.
+
 ## Acciones recomendadas (las hace el propietario)
 
 1. **Activar 2FA** en My Profile → Authentication:

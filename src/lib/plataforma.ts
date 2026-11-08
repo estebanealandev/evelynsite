@@ -11,11 +11,19 @@ const env = (k: string) => process.env[k] ?? '';
 
 export const variable = env;
 
+// Si el envío puede intentarse: sin esto, el formulario no debe pedir la verificación ni prometer nada.
+export function correoConfigurado(modo: string, para: string) {
+  if (modo === 'outbox') return process.env.NODE_ENV !== 'production' && env('PUBLIC_SITE_READY') !== 'true';
+  if (modo === 'smtp') return Boolean(env('SMTP_HOST') && para && env('MAIL_FROM'));
+  return false;
+}
+
 export async function transportar(modo: string, m: Mensaje & { para: string }) {
   if (modo === 'outbox') {
     // Guardar consultas en disco solo se admite en desarrollo y pruebas.
     if (process.env.NODE_ENV === 'production' || env('PUBLIC_SITE_READY') === 'true') throw new CorreoNoDisponible('outbox no se permite en producción');
-    const dir = path.resolve('var/outbox');
+    // OUTBOX_DIR separa el buzón de cada servidor de pruebas; siempre dentro de var/.
+    const dir = path.resolve('var', path.basename(env('OUTBOX_DIR') || 'outbox'));
     await fs.mkdir(dir, { recursive: true });
     await fs.writeFile(path.join(dir, `${Date.now()}-${randomUUID()}.json`), JSON.stringify(m, null, 2), { mode: 0o600 });
     return;

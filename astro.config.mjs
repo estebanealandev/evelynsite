@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import { loadEnv } from 'vite';
 import { cabecerasSeguridad, HSTS } from './src/lib/cabeceras.mjs';
 import { resolverIndexacion } from './src/config/indexacion.mjs';
+import { comprobarActivacion } from './src/config/formulario.mjs';
 import { agruparExcluidas } from './src/lib/seo/cabeceras-robots.mjs';
 
 // `astro build` no carga .env en process.env: sin esto, un sitio publicado saldría con canonical en localhost.
@@ -24,6 +25,14 @@ console.log(`[indexación] entorno=${politica.entorno} indexable=${listo} (${pol
 
 // DESTINO=cloudflare compila para Workers (npm run deploy); sin él, para el servidor Node de las pruebas.
 const enCloudflare = env.DESTINO === 'cloudflare';
+// La política de privacidad describe el alojamiento y el correo reales de cada compilación.
+process.env.PUBLIC_PLATAFORMA = enCloudflare ? 'cloudflare' : 'node';
+
+// El widget de Turnstile solo se publica en producción con los requisitos de src/config/formulario.json
+// cumplidos (correo real, widget de producción y política aprobada). Una clave de prueba nunca llega a producción.
+const registroFormulario = JSON.parse(readFileSync(new URL('./src/config/formulario.json', import.meta.url), 'utf8'));
+const formulario = comprobarActivacion({ entorno: politica.entorno, clave: (env.PUBLIC_TURNSTILE_SITE_KEY ?? '').trim() }, registroFormulario);
+console.log(`[formulario] turnstile=${formulario.activo} (${formulario.motivo})`);
 
 // Recorre el HTML compilado y anota la directiva robots de cada página. De ahí salen X-Robots-Tag en _headers
 // (Cloudflare) y en el servidor Node, así la cabecera nunca contradice a la etiqueta.

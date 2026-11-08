@@ -1,13 +1,14 @@
 import type { APIRoute } from 'astro';
 import { esSpam, validarConsulta } from '../../lib/validation';
-import { enviar } from '../../lib/mailer';
+import { correoListo, enviar } from '../../lib/mailer';
 import { limiteBorde } from '#plataforma';
 import { comprobarTurnstile, ipCliente, leerCampos, limiteEnvios, limitePeticiones, respuestas } from '../../lib/form-endpoint';
 
 export const prerender = false;
 
 const destinos = { exito: '/consulta-recibida', error: '/consulta-no-enviada' };
-const OK = 'Solicitud recibida. Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.';
+// El proveedor aceptó el mensaje para su entrega: no se afirma que haya llegado ni que se haya leído.
+const OK = 'Su solicitud se envió. Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.';
 
 export const POST: APIRoute = async ({ request, clientAddress, url }) => {
   const quiereJson = (request.headers.get('accept') ?? '').includes('application/json');
@@ -22,6 +23,8 @@ export const POST: APIRoute = async ({ request, clientAddress, url }) => {
   const { datos, errores, valido } = validarConsulta(campos);
   if (!valido) return respuestas.invalido(quiereJson, destinos, errores);
   if (limiteEnvios(ip)) return respuestas.limite(quiereJson, destinos);
+  // Sin correo configurado no se pide la verificación ni se gasta una consulta a Siteverify.
+  if (!correoListo()) return respuestas.cerrado(quiereJson, destinos);
   // Después de validar: el token solo sirve una vez y un error de escritura no debe gastarlo.
   const verificacion = await comprobarTurnstile(campos, url, clientAddress);
   if (!verificacion.ok) return respuestas.verificacion(quiereJson, destinos, verificacion.motivo);

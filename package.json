@@ -33,7 +33,9 @@
     "seo:dnssec": "node scripts/seo/verificar-dnssec.mjs",
     "seo:produccion": "node scripts/seo/verificar-produccion.mjs",
     "seo:verificar": "npm run build && npm run seo:auditar && playwright test tests/seo.spec.ts tests/indexacion.spec.ts",
-    "seguridad:produccion": "node scripts/seguridad/verificar-produccion.mjs"
+    "seguridad:produccion": "node scripts/seguridad/verificar-produccion.mjs",
+    "test:turnstile": "PUBLIC_TURNSTILE_SITE_KEY=1x00000000000000000000AA astro build --outDir dist-turnstile && TURNSTILE_E2E=1 playwright test tests/turnstile-widget.spec.ts",
+    "formulario:preparar": "node scripts/seguridad/preparar-formulario.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.9",

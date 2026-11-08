@@ -3,7 +3,7 @@ import { permitido } from './rate-limit';
 import { CorreoNoDisponible } from './mailer';
 import { variable } from '#plataforma';
 import type { Errores } from './validation';
-import { CAMPO, esSecretoDePrueba, turnstileActivo, verificarTurnstile, type Motivo } from './turnstile';
+import { CAMPO, esFalloDelServicio, esHostLocal, esSecretoDePrueba, turnstileActivo, verificarTurnstile, type Motivo } from './turnstile';
 
 const env = (k: string, d = '') => process.env[k] ?? d;
 
@@ -67,8 +67,8 @@ export type Destinos = { exito: string; error: string };
 export async function comprobarTurnstile(campos: Record<string, unknown>, url: URL, ip: string | undefined) {
   if (!turnstileActivo(variable('TURNSTILE_MODE'), url)) return { ok: true } as const;
   const secreto = variable('TURNSTILE_SECRET_KEY');
-  // Solo las claves de prueba oficiales pueden apuntar a un Siteverify simulado.
-  const destino = esSecretoDePrueba(secreto) ? variable('TURNSTILE_VERIFY_URL') || undefined : undefined;
+  // Solo las claves de prueba oficiales, y en una máquina local, pueden apuntar a un Siteverify simulado.
+  const destino = esSecretoDePrueba(secreto) && esHostLocal(url.hostname) ? variable('TURNSTILE_VERIFY_URL') || undefined : undefined;
   const r = await verificarTurnstile({ token: campos[CAMPO], secreto, hostEsperado: url.hostname, ip, url: destino });
   // Solo el motivo: nunca el token, la IP ni los datos del formulario.
   if (!r.ok) console.warn('[formulario] turnstile', r.motivo);
@@ -83,8 +83,9 @@ export const respuestas = {
     quiereJson ? json({ ok: false, mensaje: 'Ha enviado varias solicitudes en poco tiempo. Intente de nuevo más tarde.' }, 429) : ir(d.error),
   descartado: (quiereJson: boolean, d: Destinos) =>
     quiereJson ? json({ ok: false, mensaje: 'La solicitud no se envió. Espere unos segundos e intente de nuevo.' }, 422) : ir(d.error),
+  // B (token ausente o inválido): 403. C (Turnstile no disponible o mal configurado): 503.
   verificacion: (quiereJson: boolean, d: Destinos, motivo: Motivo) => {
-    const caido = motivo === 'no_disponible' || motivo === 'sin_configurar';
+    const caido = esFalloDelServicio(motivo);
     const mensaje = caido
       ? 'No fue posible completar la verificación de seguridad y la solicitud no se ha enviado. Intente de nuevo más tarde.'
       : 'No se pudo confirmar la verificación de seguridad y la solicitud no se ha enviado. Espere a que termine la verificación e intente de nuevo.';
@@ -95,11 +96,18 @@ export const respuestas = {
       status: 405,
       headers: { allow: 'POST', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }
     }),
+  // A/E: el envío no está configurado. 503 sin revelar qué falta.
+  cerrado: (quiereJson: boolean, d: Destinos) => {
+    console.warn('[formulario] envio_no_disponible');
+    const mensaje = 'El envío en línea no está disponible en este momento y su solicitud no se ha enviado. Intente de nuevo más tarde.';
+    return quiereJson ? json({ ok: false, mensaje, cerrado: true }, 503) : ir(d.error);
+  },
+  // G: el proveedor de correo no aceptó el mensaje. 502: el fallo es de un servicio externo.
   fallo: (quiereJson: boolean, d: Destinos, e: unknown) => {
+    if (e instanceof CorreoNoDisponible) return respuestas.cerrado(quiereJson, d);
     // Solo se registra el tipo de fallo: nunca datos de la persona.
-    console.error('[formulario]', e instanceof CorreoNoDisponible ? 'envio_no_disponible' : 'error_envio');
-    const mensaje =
-      'No fue posible procesar su solicitud y no se ha enviado. Intente de nuevo más tarde.';
-    return quiereJson ? json({ ok: false, mensaje }, 503) : ir(d.error);
+    console.error('[formulario] error_envio');
+    const mensaje = 'Hubo un error al enviar su solicitud y no se ha enviado. Intente de nuevo en unos minutos.';
+    return quiereJson ? json({ ok: false, mensaje }, 502) : ir(d.error);
   }
 };

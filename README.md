@@ -133,8 +133,10 @@ El servidor Node sigue disponible: `npm run build` y `npm start` detrás de un p
 |---|---|
 | `npm run seguridad:produccion` | Revisa el sitio publicado: cabeceras, CSP, métodos del formulario, rutas sensibles, lectura pública sin desafíos, HTTPS y TLS (solo lectura) |
 | `npm run seguridad:produccion -- --esperar-waf` | Además, exige que las reglas WAF estén aplicadas (403 en el borde) |
+| `npm run formulario:preparar [-- --remoto]` | Dice qué falta para activar el formulario: registro de `src/config/formulario.json`, clave pública, correo y, con `--remoto`, el secreto del Worker (solo lectura; no despliega) |
+| `npm run test:turnstile` | Compila `dist-turnstile/` con la clave pública de prueba y prueba el widget real contra el Siteverify real (necesita red) |
 
-`npm run deploy` también se detiene si `dist/` contiene archivos sensibles (ocultos, *source maps*, copias, claves) o si la CSP de Turnstile no coincide con el widget. Las reglas de Cloudflare preparadas están en [ops/cloudflare/seguridad/](ops/cloudflare/seguridad/) y la documentación en [docs/security/](docs/security/).
+`npm run deploy` también se detiene si `dist/` contiene archivos sensibles (ocultos, *source maps*, copias, claves), si la CSP de Turnstile no coincide con el widget o si la política de privacidad y el aviso de cierre no coinciden con él. Una compilación de producción con la clave de Turnstile falla si los requisitos de `src/config/formulario.json` no están aprobados. Activar el formulario: [docs/security/turnstile-implementation.md](docs/security/turnstile-implementation.md#activación-controlada). Las reglas de Cloudflare preparadas están en [ops/cloudflare/seguridad/](ops/cloudflare/seguridad/) y la documentación en [docs/security/](docs/security/).
 ## Actualizar contenido
 
 | Contenido | Ubicación |

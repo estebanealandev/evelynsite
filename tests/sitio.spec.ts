@@ -406,6 +406,62 @@ test.describe('formulario de consulta', () => {
     await page.check('#c-consentimiento', { force: true });
   };
 
+  test('estado A: en producción sin widget, la página advierte antes del formulario que no envía', async ({ page }) => {
+    await page.goto('/agendar-consulta');
+    const aviso = page.locator('[data-formulario-cerrado]');
+    // La compilación de Workers es de producción sin clave de Turnstile; la de Node es de desarrollo.
+    if (process.env.SERVIDOR === 'cloudflare') {
+      await expect(aviso).toBeVisible();
+      await expect(aviso).toContainText('no se enviará');
+      // El aviso va antes que cualquier campo.
+      expect(await aviso.evaluate(a => !!(a.compareDocumentPosition(document.querySelector('form[action="/api/consulta"]')!) & Node.DOCUMENT_POSITION_FOLLOWING))).toBe(true);
+    } else {
+      await expect(aviso).toHaveCount(0);
+    }
+  });
+
+  test('un error recuperable conserva lo escrito y el botón muestra el envío en curso', async ({ page }) => {
+    await page.goto('/agendar-consulta');
+    await llenar(page);
+    let soltar: () => void = () => {};
+    const espera = new Promise<void>(r => (soltar = r));
+    await page.route('**/api/consulta', async r => {
+      await espera;
+      await r.fulfill({ status: 503, contentType: 'application/json', body: JSON.stringify({ ok: false, mensaje: 'El envío en línea no está disponible en este momento y su solicitud no se ha enviado. Intente de nuevo más tarde.', cerrado: true }) });
+    });
+    await page.waitForTimeout(3100);
+    const boton = page.locator(`${FORM} button[type=submit]`);
+    await boton.click();
+    await expect(boton).toBeDisabled();
+    await expect(boton).toHaveText('Enviando…');
+    await expect(boton).toHaveAttribute('aria-busy', 'true');
+    soltar();
+    await expect(page.locator(`${FORM} .form__status`)).toContainText('no se ha enviado');
+    await expect(boton).toBeEnabled();
+    await expect(boton).toHaveText('Enviar solicitud');
+    await expect(page.locator('#c-nombre')).toHaveValue('Persona de Prueba');
+    await expect(page.locator('#c-correo')).toHaveValue('persona@example.test');
+    await expect(page.locator('#c-consentimiento')).toBeChecked();
+  });
+
+  test('un 403 del borde (regla WAF, HTML) se explica sin fingir éxito', async ({ page }) => {
+    await page.goto('/agendar-consulta');
+    await llenar(page);
+    await page.route('**/api/consulta', r => r.fulfill({ status: 403, contentType: 'text/html', body: '<html>Attention Required! | Cloudflare</html>' }));
+    await page.waitForTimeout(3100);
+    await page.click(`${FORM} button[type=submit]`);
+    await expect(page.locator(`${FORM} .form__status`)).toContainText('bloqueada por una regla de seguridad');
+    await expect(page.locator(`${FORM} .form__status`)).toContainText('no se ha enviado');
+  });
+
+  test('sin widget, ninguna página del recorrido pide recursos a Cloudflare Turnstile', async ({ page }) => {
+    const pedidos: string[] = [];
+    page.on('request', r => { if (r.url().includes('challenges.cloudflare.com')) pedidos.push(r.url()); });
+    for (const ruta of ['/', '/servicios/divorcios', '/blog', '/agendar-consulta']) await page.goto(ruta);
+    await llenar(page);
+    expect(pedidos).toEqual([]);
+  });
+
   test('avanza por pasos y exige cada uno', async ({ page }) => {
     await page.goto('/agendar-consulta');
     await expect(page.locator('[data-pasos-texto]')).toHaveText('Paso 1 de 3');
@@ -430,7 +486,7 @@ test.describe('formulario de consulta', () => {
     await page.waitForTimeout(3100);
     const [res] = await Promise.all([page.waitForResponse('**/api/consulta'), page.click(`${FORM} button[type=submit]`)]);
     expect(res.status()).toBe(200);
-    await expect(page.locator(`${FORM} .form__status`)).toContainText('Solicitud recibida');
+    await expect(page.locator(`${FORM} .form__status`)).toContainText('Su solicitud se envió');
   });
 
   test('error de red: no simula éxito', async ({ page }) => {

@@ -20,6 +20,8 @@ npm run seo:produccion
 | 405 en `/api/consulta` | Revertir `export const ALL` en `src/pages/api/consulta.ts` |
 | Comprobaciones previas al despliegue | Revertir el bloque «Seguridad» de `scripts/seo/verificar-lanzamiento.mjs` |
 | `Permissions-Policy` | Revertir `src/lib/cabeceras.mjs` |
+| Segunda fase del formulario (sin desplegar) | `git revert` de su commit. Si se despliega y falla: `npx wrangler rollback d9386dca-0ce1-4cda-b27a-7b73698a7419` |
+| Activación del formulario (futura) | [turnstile-implementation.md](turnstile-implementation.md#reversión): vuelve al formulario cerrado, nunca abierto |
 
 ## Zona de Cloudflare
 

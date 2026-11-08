@@ -7,6 +7,28 @@
 - **`noindex` vigente.** No se envió ningún sitemap.
 - **Coste:** ninguno.
 
+## Segunda fase: formulario preparado para su activación (2026-11-08, sin desplegar)
+
+**El formulario sigue sin estar operativo.** En esta fase se cerró todo lo que se podía hacer sin credenciales ni aprobaciones. El detalle está en [turnstile-implementation.md](turnstile-implementation.md).
+
+- **Corregido:** una clave secreta de prueba en producción habría aprobado cualquier token. Ahora se rechaza fuera de una máquina local, y una clave pública de prueba detiene la compilación de producción.
+- **Estados A–G** separados y con el código HTTP correcto:
+  - 503 si está cerrado o Turnstile no está disponible;
+  - 403 si el token no es válido;
+  - 429 por el límite;
+  - 502 si falla el proveedor;
+  - 200 solo cuando el proveedor acepta el mensaje.
+- **El correo se comprueba antes de Turnstile**, y el éxito ya no dice «recibida».
+- **Turnstile se carga al marcar la autorización**, no antes, y el texto de la autorización lo menciona.
+- **En producción sin widget, la página advierte antes del formulario que no envía.**
+- **Política de privacidad:** describe la plataforma real (Cloudflare y Email Service, en lugar de SMTP) y tiene una sección de Turnstile que solo aparece con el widget. Es un borrador **para revisión jurídica** ([privacy-policy-review.md](privacy-policy-review.md)).
+- **Bloqueos de activación:**
+  - [`src/config/formulario.json`](../../src/config/formulario.json) registra los requisitos, y la compilación de producción con widget falla si no están aprobados;
+  - `npm run formulario:preparar` comprueba el estado en solo lectura;
+  - los verificadores exigen que el widget, la CSP, la política y el aviso coincidan.
+- **Pruebas:** las 16 pruebas pedidas tienen cobertura, incluida una de extremo a extremo con el widget y el Siteverify reales (`npm run test:turnstile`).
+- **Cuenta:** la segunda lectura no muestra cambios. Sigue sin 2FA y con los 5 tokens. `lawyi-staging-setup` también puede modificar widgets Turnstile de toda la cuenta ([account-security.md](account-security.md)).
+
 ## Resumen ejecutivo
 
 1. **La base de Cloudflare Free ya es sólida y está verificada:**
@@ -71,7 +93,10 @@
 | Reglas WAF 4 y 5 | Sí | — | Reservadas | — | — | Solo ante un incidente o con evidencia |
 | Rate limiting de zona | Sí (1) | 0 | **ACTIVO Y VERIFICADO** (2026-11-08, ruleset `fcdec1f3…`) | 8 POST inválidos: 5 con 422 del Worker y del 6.º en adelante 429 `error code: 1015` del borde; a los 12 s, 422 otra vez | Ninguno | Calibrar con Security Events |
 | Binding de rate limiting y límite en memoria | Sí | Activo | **ACTIVO** (desplegado) | `wrangler deploy --dry-run` | Ninguno | — |
-| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO** y desplegado sin widget: el servidor exige el token y, sin secreto, responde 503 honesto | 14 pruebas e integración con el Siteverify real; en producción, POST sin token da 503 y sin JS 303 a `/consulta-no-enviada` | Ninguno | Política de privacidad, widget, clave pública, secreto y nuevo despliegue |
+| Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO** y desplegado sin widget: el servidor exige el token y, sin secreto, responde 503 honesto. Las correcciones de la segunda fase (claves de prueba, reintento, carga tras el consentimiento) están **IMPLEMENTADAS LOCALMENTE** | Suites, y `test:turnstile` con el Siteverify real | Ninguno | Los 8 requisitos de activación ([turnstile-implementation.md](turnstile-implementation.md#activación-controlada)) |
+| Estados del formulario A–G y aviso de cierre | — | 503 genérico, sin aviso | **IMPLEMENTADO LOCALMENTE** | Pruebas 1–16 | Ninguno | Desplegar (con autorización) |
+| Política de privacidad coherente con la plataforma y Turnstile | — | Decía SMTP y «sin terceros» | **PREPARADO PARA ACTIVACIÓN** (borrador; la sección de Turnstile depende del widget) | `verificar-lanzamiento`, `seguridad:produccion` | Ninguno | **Revisión jurídica** ([privacy-policy-review.md](privacy-policy-review.md)) |
+| Formulario operativo (envío real) | — | No | **PENDIENTE DE DATOS** (correo real, widget, secreto, política aprobada y autorización) | `npm run formulario:preparar`: faltan 7 puntos | Ninguno | [Activación controlada](turnstile-implementation.md#activación-controlada) |
 | 405 y control de métodos | — | 404 | **ACTIVO** (desplegado). Desde fuera no se ve: la regla WAF 3 da 403 antes | `tests/seguridad.spec.ts` | Ninguno | — |
 | Validación, tamaño, Content-Type y repetición | — | Activo | **ACTIVO** más el token de un solo uso (local) | Suites | Ninguno | — |
 | CSP y cabeceras | Sí | Activo | **ACTIVO Y VERIFICADO**. CSP de Turnstile **IMPLEMENTADA LOCALMENTE** | `seguridad:produccion` | Ninguno | — |
@@ -110,13 +135,9 @@
 2. ~~**Aplicar las reglas WAF y el rate limiting en la zona.**~~ **Hecho el 2026-11-08** y verificado ([waf-rules.md](waf-rules.md), [rate-limiting.md](rate-limiting.md)).
 3. ~~**Desplegar esta rama**~~ **Hecho el 2026-11-08** (versión `d9386dca`). Trae el 405, el código de Turnstile y el mensaje del formulario ante el 429 del borde; sin widget ni secreto, el formulario sigue en 503, como hoy.
 4. **CAA** (cambio de DNS).
-5. **Turnstile en producción:**
-   - política de privacidad revisada;
-   - crear el widget;
-   - clave pública en `build:cf`;
-   - `wrangler secret put`;
-   - desplegar.
-6. Browser Cache TTL a «Respetar cabeceras».
+5. **Desplegar la segunda fase del formulario** (estados, aviso de cierre y política según la plataforma). Mejora lo que se publica aunque el formulario siga cerrado.
+6. **Activación del formulario:** los 8 requisitos y el procedimiento de [turnstile-implementation.md](turnstile-implementation.md#activación-controlada). Usar `wrangler versions secret put`, **nunca** `wrangler secret put`, que despliega al instante.
+7. Browser Cache TTL a «Respetar cabeceras».
 
 ## Riesgos que permanecen
 
@@ -124,7 +145,9 @@
 |---|---|
 | Cuenta sin 2FA | Solo la puede resolver el propietario |
 | DNSSEC sin cadena de confianza | Depende del registrador |
-| El formulario en producción no tiene Turnstile hasta la activación | Hoy no envía nada (503), así que no hay exposición |
+| El formulario en producción no tiene Turnstile hasta la activación | Hoy no envía nada (503), así que no hay exposición. La versión desplegada aún no advierte antes de llenarlo; el aviso llega con el próximo despliegue |
+| El limitador del Worker usa un hash SHA-256 sin clave de la IP | Opción: HMAC con un secreto ([privacy-policy-review.md](privacy-policy-review.md)) |
+| Token `lawyi-staging-setup` con escritura sobre Turnstile y Access en toda la cuenta | Solo el propietario: revocarlo antes de crear el widget |
 | Rate limiting aproximado (por centro de datos y con retraso) | Turnstile de un solo uso es el control fiable |
 | Security Events muestreados y sin historial | Revisión semanal más los verificadores activos |
 | `style-src 'unsafe-inline'` | Bajo, con los scripts en línea bloqueados |
@@ -141,4 +164,4 @@
   - `seo:dnssec` hasta que salga en verde.
 - **Cada 6 meses:** revisar este inventario contra la documentación de Cloudflare, porque la disponibilidad de funciones cambia.
 
-Documentos: [inventario](cloudflare-free-inventory.md) · [auditoría inicial](cloudflare-initial-audit.md) · [WAF](waf-rules.md) · [rate limiting](rate-limiting.md) · [bots](bot-protection.md) · [IA](ai-crawlers-policy.md) · [TLS y DNSSEC](tls-dnssec.md) · [Turnstile](turnstile-implementation.md) · [Worker](workers-security.md) · [cuenta](account-security.md) · [cabeceras](security-headers.md) · [SEO y GEO](seo-geo-security-compatibility.md) · [pruebas](security-tests.md) · [incidentes](incident-response.md) · [reversión](rollback-plan.md)
+Documentos: [inventario](cloudflare-free-inventory.md) · [auditoría inicial](cloudflare-initial-audit.md) · [WAF](waf-rules.md) · [rate limiting](rate-limiting.md) · [bots](bot-protection.md) · [IA](ai-crawlers-policy.md) · [TLS y DNSSEC](tls-dnssec.md) · [formulario y Turnstile](turnstile-implementation.md) · [revisión de privacidad](privacy-policy-review.md) · [Worker](workers-security.md) · [cuenta](account-security.md) · [cabeceras](security-headers.md) · [SEO y GEO](seo-geo-security-compatibility.md) · [pruebas](security-tests.md) · [incidentes](incident-response.md) · [reversión](rollback-plan.md)

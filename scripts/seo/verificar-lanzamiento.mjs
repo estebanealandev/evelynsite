@@ -42,10 +42,19 @@ if (process.argv.includes('--compilacion')) {
     const cspDe = html => html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/)?.[1] ?? '';
     const formulario = leer('agendar-consulta/index.html');
     const conWidget = formulario.includes('data-turnstile');
-    if (cspDe(leer('index.html')).includes('challenges.cloudflare.com')) errores.push('la portada admite Turnstile en la CSP: debe limitarse al formulario');
+    // Solo la página del formulario puede admitir Cloudflare en su CSP.
+    const ampliadas = publicados.filter(p => p.endsWith('.html') && p !== 'agendar-consulta/index.html' && cspDe(leer(p)).includes('challenges.cloudflare.com'));
+    if (ampliadas.length) errores.push(`CSP con Turnstile fuera del formulario: ${ampliadas.join(', ')}`);
     if (conWidget !== cspDe(formulario).includes('https://challenges.cloudflare.com')) errores.push('el widget Turnstile y la CSP del formulario no coinciden');
+    const clave = formulario.match(/data-sitekey="([^"]+)"/)?.[1] ?? '';
+    if (/^[123]x0{20}[A-F]{2}$/.test(clave)) errores.push('el widget usa una clave pública de prueba de Turnstile');
+    // La política y el aviso de cierre deben describir lo que realmente se publica.
+    const privacidad = leer('politica-de-privacidad/index.html');
+    if (conWidget !== privacidad.includes('id="seguridad-del-formulario"')) errores.push('la política de privacidad no coincide con el uso de Turnstile');
+    if (conWidget && /no carga recursos de terceros/.test(privacidad)) errores.push('la política afirma que no se cargan recursos de terceros, pero el formulario carga Turnstile');
+    if (conWidget === formulario.includes('data-formulario-cerrado')) errores.push(conWidget ? 'el formulario activo muestra el aviso de cierre' : 'el formulario cerrado no advierte que no envía');
     if (c.indexable && !conWidget) errores.push('lanzamiento sin Turnstile en el formulario: falta PUBLIC_TURNSTILE_SITE_KEY');
-    console.log(`Turnstile en el formulario: ${conWidget ? 'sí' : 'no (sin PUBLIC_TURNSTILE_SITE_KEY; el servidor rechaza los envíos)'}`);
+    console.log(`Turnstile en el formulario: ${conWidget ? 'sí' : 'no (sin PUBLIC_TURNSTILE_SITE_KEY; el servidor rechaza los envíos y la página lo advierte)'}`);
     console.log(`\nCompilación: entorno=${c.entorno} indexable=${c.indexable} páginas=${Object.keys(c.rutas).length}`);
   }
   if (errores.length) { console.error(`\nNo se puede desplegar:\n- ${errores.join('\n- ')}`); process.exit(1); }

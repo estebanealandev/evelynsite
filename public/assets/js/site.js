@@ -367,8 +367,8 @@
     const show = (kind, msg) => { status.dataset.kind = kind; status.textContent = msg; };
     const aviso = () => { status.tabIndex = -1; status.focus(); };
 
-    // Turnstile (Cloudflare) solo existe en el formulario y se carga al llegar al último paso:
-    // no retrasa la página ni se descarga si la persona no llega a enviar.
+    // Turnstile (Cloudflare) solo existe en el formulario y se carga cuando la persona marca el consentimiento:
+    // trata la IP y señales del navegador, así que no empieza antes, y no retrasa ninguna página.
     const zona = form.querySelector('[data-turnstile]');
     let widget = null;
     let cargando = null;
@@ -388,15 +388,22 @@
           action: zona.dataset.action,
           size: 'flexible',
           language: 'es',
+          theme: 'light',
           'refresh-expired': 'auto',
-          'error-callback': () => { show('error', errorVerificacion); return true; }
+          'refresh-timeout': 'auto',
+          'error-callback': () => { show('error', errorVerificacion); return true; },
+          // Caducó (300 s) o no se resolvió a tiempo: Turnstile emite uno nuevo solo. Lo escrito se conserva.
+          'expired-callback': () => show('', 'La verificación de seguridad caducó y se está renovando. Lo que escribió se conserva.'),
+          'timeout-callback': () => show('error', 'La verificación de seguridad no se completó a tiempo. Vuelva a intentarlo en el recuadro de verificación.'),
+          'unsupported-callback': () => show('error', 'Este navegador no admite la verificación de seguridad, así que no puede enviar el formulario. Pruebe con un navegador actualizado.')
         });
       }).catch(() => { cargando = null; show('error', errorVerificacion); });
       return cargando;
     };
     const tokenTurnstile = () => (form.elements['cf-turnstile-response'] || {}).value || '';
     const reiniciarTurnstile = () => { if (widget !== null && window.turnstile) window.turnstile.reset(widget); };
-    if (zona) form.addEventListener('focusin', () => { if (!pasosF.length) cargarTurnstile(); });
+    const consentimiento = form.elements['consentimiento'];
+    if (zona && consentimiento) consentimiento.addEventListener('change', () => { if (consentimiento.checked) cargarTurnstile(); });
 
     // Paso a paso, si el formulario lo admite.
     const pasosF = $$('[data-paso]', form);
@@ -408,7 +415,6 @@
       $('[data-atras]', form).hidden = i === 0;
       $('[data-siguiente]', form).hidden = final;
       $('[data-enviar]', form).hidden = !final;
-      if (final) cargarTurnstile();
       $('[data-pasos-texto]', form).textContent = `Paso ${i + 1} de ${pasosF.length}`;
       $('.pasos__barra i', form).style.setProperty('--avance', `${((i + 1) / pasosF.length) * 100}%`);
       if (enfocar) (pasosF[i].querySelector('input:not([type=hidden]):not([tabindex="-1"]), textarea') || pasosF[i]).focus();
@@ -467,8 +473,11 @@
         show('error', 'Espere a que termine la verificación de seguridad y vuelva a enviar.');
         return;
       }
+      // Evita el doble envío y deja claro que la solicitud está en curso.
+      const textoBoton = btn.textContent;
       btn.setAttribute('aria-busy', 'true');
       btn.disabled = true;
+      btn.textContent = 'Enviando…';
       try {
         if (transcurrido) transcurrido.value = String(Math.round(performance.now() - inicio));
         const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
@@ -484,7 +493,9 @@
           // Un 429 del borde (regla de rate limiting) llega como texto plano, sin JSON.
           const porDefecto = res.status === 429
             ? 'Ha enviado varias solicitudes en poco tiempo. Su solicitud no se ha enviado; espere unos segundos e intente de nuevo.'
-            : 'No fue posible procesar su solicitud y no se ha enviado.';
+            : res.status === 403 && !data.verificacion
+              ? 'La solicitud fue bloqueada por una regla de seguridad y no se ha enviado. Recargue la página e intente de nuevo.'
+              : 'No fue posible procesar su solicitud y no se ha enviado.';
           showErrors(data.errores); show('error', data.mensaje || porDefecto); if (!data.errores) aviso();
         }
       } catch {
@@ -494,6 +505,7 @@
       } finally {
         btn.removeAttribute('aria-busy');
         btn.disabled = false;
+        btn.textContent = textoBoton;
       }
     });
   });

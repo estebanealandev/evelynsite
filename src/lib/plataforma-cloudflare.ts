@@ -8,6 +8,11 @@ const texto = (k: string) => (typeof env[k] === 'string' ? (env[k] as string) : 
 // Variables y secretos del Worker. Se leen de los bindings: `process.env` no siempre los refleja (p. ej. --var en wrangler dev).
 export const variable = texto;
 
+// Si el envío puede intentarse: sin esto, el formulario no debe pedir la verificación ni prometer nada.
+export function correoConfigurado(modo: string, para: string) {
+  return modo === 'cloudflare' && Boolean(env.EMAIL) && Boolean(para) && Boolean(texto('MAIL_FROM'));
+}
+
 export async function transportar(modo: string, m: Mensaje & { para: string }) {
   // Email Service de Cloudflare: el envío a una dirección de destino verificada no tiene coste.
   if (modo === 'cloudflare') {

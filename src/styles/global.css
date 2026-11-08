@@ -524,3 +524,4 @@ body:has(> .salida) .site-footer { padding-bottom: 76px; }
 
 /* Turnstile: espacio reservado para que el widget no desplace el formulario al aparecer. */
 .turnstile__widget { min-height: 65px; }
+.notice--cerrado { margin-bottom: 30px; }

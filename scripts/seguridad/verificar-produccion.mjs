@@ -48,6 +48,15 @@ console.log('\nFormulario');
   const meta = pagina.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/)?.[1] ?? '';
   if (widget === meta.includes('https://challenges.cloudflare.com')) ok(`Turnstile ${widget ? 'presente y admitido por la CSP' : 'no configurado (sin recursos de terceros)'}`);
   else mal('el widget Turnstile y la CSP no coinciden');
+  // Estado A: sin widget, la página debe advertir antes de que se llene que no envía.
+  const aviso = pagina.includes('data-formulario-cerrado');
+  if (widget !== aviso) ok(widget ? 'formulario activo, sin aviso de cierre' : 'formulario cerrado y la página lo advierte');
+  else mal(widget ? 'el formulario activo muestra el aviso de cierre' : 'el formulario está cerrado y la página no lo advierte');
+  if (widget && /^[123]x0{20}[A-F]{2}$/.test(pagina.match(/data-sitekey="([^"]+)"/)?.[1] ?? '')) mal('el widget usa una clave pública de prueba');
+  // La política describe lo publicado: Turnstile solo si está, y sin afirmar «sin terceros» si está.
+  const privacidad = await (await pedir('/politica-de-privacidad')).text();
+  if (widget === privacidad.includes('id="seguridad-del-formulario"') && !(widget && /no carga recursos de terceros/.test(privacidad))) ok('la política de privacidad coincide con el uso de Turnstile');
+  else mal('la política de privacidad no coincide con el uso de Turnstile');
   const get = await pedir('/api/consulta');
   if (get.status === 405 && get.headers.get('allow') === 'POST') ok('GET /api/consulta: 405 del Worker');
   else if (get.status === 403 && (await deCloudflare(get))) ok('GET /api/consulta: 403 en el borde (regla WAF 3)');

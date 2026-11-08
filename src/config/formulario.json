@@ -1,0 +1,9 @@
+{
+  "$comentario": "Registro de activación del formulario de consulta. Solo una persona responsable lo modifica, con evidencia verificable. Ver docs/security/turnstile-implementation.md («Activación controlada»). Si una compilación de producción lleva PUBLIC_TURNSTILE_SITE_KEY y algún requisito de compilación no está 'aprobado', la compilación falla. Activar el formulario no retira noindex: la indexación sigue src/config/lanzamiento.json.",
+  "requisitos": {
+    "correoDestino": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": "Falta la dirección real de Evelyn; MAIL_MODE=disabled responde 503" },
+    "widgetProduccion": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null },
+    "politicaPrivacidad": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": "Borrador del 2026-11-08 en src/pages/politica-de-privacidad.astro (secciones condicionadas a Turnstile), pendiente de revisión jurídica" },
+    "envioRealVerificado": { "estado": "pendiente", "responsable": null, "fecha": null, "evidencia": null }
+  }
+}

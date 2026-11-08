@@ -94,8 +94,9 @@ Los registros nunca guardan cuerpos de formularios, correos, IP ni tokens. Hay q
 
 - **Síntomas:** muchos `[formulario] turnstile no_disponible` o `sin_configurar`. El formulario responde 503 «Intente más tarde»: no hay éxito falso ni envío sin verificar.
 - **Diagnóstico:**
-  - `sin_configurar`: falta el secreto o está mal. Revisar `wrangler secret list` y la clave del widget.
-  - `no_disponible`: Siteverify está caído o lento. Consultar cloudflarestatus.com.
+  - `sin_configurar`: falta el secreto o está mal. Revisar `npx wrangler versions secret list --latest-version` y la clave del widget.
+  - `clave_de_prueba`: en el Worker hay una clave secreta de **prueba**. Se rechaza a propósito, porque aprobaría cualquier envío. Sustituirla por la real con `wrangler versions secret put` y desplegar con autorización.
+  - `no_disponible`: Siteverify está caído, lento o dio `internal-error` también en el reintento. Consultar cloudflarestatus.com.
   - `host` o `accion`: el widget no tiene el hostname o la acción configurados.
 - **No desactivar Turnstile en producción** para «arreglarlo»: el código no lo permite. Si la caída se prolonga, informar en la página y esperar.
 

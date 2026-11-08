@@ -99,6 +99,21 @@ Comprobaciones manuales:
 | `/assets/js/site.js` | Incluye el mensaje del 429 |
 | `Permissions-Policy` | Con `browsing-topics=()` |
 
+## Segunda fase del formulario (2026-11-08, local, sin desplegar)
+
+| Suite | Resultado |
+|---|---|
+| `npx playwright test` (Node, escritorio y móvil) | **440 pasadas, 78 omitidas y 0 fallidas** |
+| `npx astro check`, `npm audit --omit=dev`, `scripts/normas/verificar.mjs` | 0 errores, 0 vulnerabilidades y la matriz jurídica sin errores |
+| `npm run build:cf && npm run test:cf` | **427 pasadas, 83 omitidas y 0 fallidas** |
+| `npm run test:turnstile` (widget real con clave de prueba y Siteverify real) | **6 pasadas** (escritorio y móvil): nada de Cloudflare antes del consentimiento; CSP con Turnstile solo en el formulario; sin violaciones; un script ajeno se bloquea; CLS < 0,1; token emitido; envío 200 y un mensaje en el buzón; sin JavaScript, 303 y nada enviado; ninguna cookie de Cloudflare con la clave de prueba |
+| Compilación con clave pública de prueba en producción | Falla: «es una clave de prueba» |
+| Compilación con clave real sin requisitos aprobados | Falla y enumera `correoDestino`, `widgetProduccion` y `politicaPrivacidad` |
+| `npm run formulario:preparar -- --remoto` | Faltan 7 puntos. `TURNSTILE_SECRET_KEY` no existe en el Worker (lectura de nombres) |
+| Navegador del panel, 375 px | Widget a 335 px de ancho y 73 px de alto, en español, sin desplazamiento horizontal |
+
+Las pruebas 1 a 16 de la misión y dónde está cada una: [turnstile-implementation.md](turnstile-implementation.md#pruebas).
+
 ## Validación de reglas contra la API (`--validate-only`)
 
 | Cuerpo | Resultado |

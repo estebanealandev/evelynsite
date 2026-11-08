@@ -5,6 +5,10 @@ import { site } from '../config/site';
 import { fechaLarga } from '../lib/format';
 import { fuentes } from '../lib/sources';
 const p = site.privacy;
+// Lo que se describe depende de la compilación: alojamiento y correo reales (Cloudflare o servidor propio)
+// y Turnstile solo si el widget está publicado. scripts/seo/verificar-lanzamiento.mjs comprueba que coincidan.
+const enCloudflare = site.plataforma === 'cloudflare';
+const conTurnstile = Boolean(site.turnstile);
 const pendiente = 'Dato por completar antes de la publicación.';
 // Impide publicar una política con datos sin definir.
 if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers || !p.retention || !p.transfers)) {
@@ -27,7 +31,8 @@ if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers |
       <ul>
         <li><strong>Formulario de consulta:</strong> tipo de asunto, mensaje de hasta 1200 caracteres, nombre, correo electrónico, teléfono (opcional) y constancia de su consentimiento.</li>
         <li><strong>Campos técnicos del formulario:</strong> un campo trampa y la hora de inicio del llenado, que sirven para detectar envíos automatizados. No se guardan ni se incluyen en el mensaje.</li>
-        <li><strong>Dirección IP:</strong> para limitar envíos repetidos, el servidor calcula una huella cifrada de la dirección IP, con una clave que solo existe en memoria, y la conserva con la hora de los intentos. No se escribe en disco, se borra cuando vence el límite y se pierde al reiniciar el servidor.</li>
+        <li><strong>Dirección IP:</strong> para limitar envíos repetidos, el servidor calcula una huella cifrada de la dirección IP, con una clave que solo existe en memoria, y la conserva con la hora de los intentos. No se escribe en disco, se borra cuando vence el límite y se pierde al reiniciar el servidor.{enCloudflare && ' Además, el limitador de Cloudflare recibe un resumen (hash SHA-256) de la dirección IP para contar los envíos de cada minuto, y la red de Cloudflare limita por dirección IP los envíos al formulario.'}</li>
+        {conTurnstile && <li><strong>Verificación de seguridad:</strong> al enviar, el servidor remite a Cloudflare el código de la verificación Turnstile y su dirección IP para confirmar que el envío no es automatizado. Ese código no se guarda ni se incluye en el mensaje (ver «Seguridad del formulario»).</li>}
       </ul>
       <p>El mensaje es texto libre y un asunto de familia puede revelar información íntima. Basta una descripción general: se solicita no incluir datos sensibles, como información de salud, ni nombres de personas menores de edad, números de cédula o de expediente, o detalles íntimos. El formulario no admite archivos. Según el artículo 9 de la Ley N.º 8968, ninguna persona está obligada a suministrar datos sensibles. El mismo artículo prohíbe tratar datos relativos a la salud, la vida y la orientación sexual, entre otros, salvo excepciones como las necesarias para el reconocimiento, el ejercicio o la defensa de un derecho en un procedimiento judicial.</p>
 
@@ -44,13 +49,29 @@ if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers |
       <p>Puede revocar su consentimiento en cualquier momento mediante el contacto de privacidad. La revocación no tiene efecto retroactivo.</p>
 
       <h2>Destinatarios y proveedores</h2>
-      <p>Las solicitudes se envían por correo electrónico, mediante SMTP con TLS exigido, a la dirección que define el responsable. Pueden consultarlas el responsable y quienes este designe para atender la solicitud. Los proveedores técnicos intervienen en lo necesario para prestar su servicio. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
+      {enCloudflare
+        ? <p>Las solicitudes se envían por correo electrónico mediante el servicio de correo de Cloudflare (Email Service), únicamente a la dirección verificada que define el responsable. Pueden consultarlas el responsable y quienes este designe para atender la solicitud. Cloudflare registra el estado de cada envío y, según la configuración del servicio, puede conservar una vista previa del mensaje durante unos siete días. Otros proveedores: {p.providers ?? <span class="pending">{pendiente}</span>}</p>
+        : <p>Las solicitudes se envían por correo electrónico, mediante SMTP con TLS exigido, a la dirección que define el responsable. Pueden consultarlas el responsable y quienes este designe para atender la solicitud. Los proveedores técnicos intervienen en lo necesario para prestar su servicio. Proveedor de correo y de alojamiento: {p.providers ?? <span class="pending">{pendiente}</span>}</p>}
+      {enCloudflare && <>
+        <h3 id="cloudflare">Alojamiento y seguridad: Cloudflare</h3>
+        <p>El sitio se aloja en Cloudflare, Inc., que lo entrega a través de su red y lo protege contra ataques y abusos (filtrado de peticiones, límites de frecuencia y mitigación de ataques de denegación de servicio). Para eso, Cloudflare trata en cada visita la dirección IP, la página solicitada, el navegador declarado (User-Agent) y la fecha y hora. Las peticiones que bloquean o limitan sus reglas de seguridad quedan en un registro de eventos que el responsable puede consultar durante 31 días.</p>
+        <p>Cloudflare actúa como proveedor de servicios del responsable, según su <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer" target="_blank">acuerdo de tratamiento de datos</a> y su <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener noreferrer" target="_blank">política de privacidad</a>.</p>
+      </>}
       <p>El sitio no envía mensajes automáticos a su correo: un acuse podría revelar la consulta a quien revise ese buzón.</p>
 
       <h2>Qué se guarda en su navegador</h2>
-      <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies propias.</p>
+      {conTurnstile
+        ? <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento. Sus páginas solo cargan recursos del propio sitio, con una excepción: el formulario de consulta carga la verificación Turnstile de Cloudflare cuando usted marca la autorización (ver «Seguridad del formulario»). El sitio no instala cookies propias; Turnstile puede usar cookies o almacenamiento técnicos de Cloudflare, necesarios para la verificación.</p>
+        : <p>Este sitio no utiliza herramientas de analítica, publicidad ni seguimiento, y no carga recursos de terceros para mostrar sus páginas. Tampoco instala cookies propias.</p>}
       <p>Solo guarda una preferencia en el almacenamiento local del navegador (localStorage, clave «movimiento») si elige «Pausar animaciones». Se elimina al reanudarlas y no se envía al servidor. El formulario no guarda borradores y el orientador de áreas no guarda ni envía sus respuestas. Por su parte, el navegador registra las páginas visitadas en su historial y puede ofrecer autocompletar nombre, correo o teléfono según su configuración; el sitio no puede borrar esos datos.</p>
       <p>Los enlaces a fuentes oficiales y el botón «Salir rápido», donde aparece, llevan a sitios de terceros con sus propias condiciones.</p>
+
+      {conTurnstile && <>
+        <h2 id="seguridad-del-formulario">Seguridad del formulario: Cloudflare Turnstile</h2>
+        <p>Para impedir envíos automatizados (spam y abuso), el formulario de consulta usa Turnstile, un servicio de Cloudflare. Solo se carga en la página <a href="/agendar-consulta">Agendar una consulta</a> y solo cuando usted marca la casilla de autorización; ninguna otra página lo carga.</p>
+        <p>Según Cloudflare, Turnstile trata la dirección IP, características técnicas de la conexión y del navegador (como el User-Agent) y señales de su funcionamiento, y no lee lo que usted escribe en el formulario. Cloudflare las usa como proveedor para detectar envíos automatizados y, como responsable, para mejorar el servicio. El detalle está en el <a href="https://www.cloudflare.com/turnstile-privacy-policy/" rel="noopener noreferrer" target="_blank">anexo de privacidad de Turnstile</a>.</p>
+        <p>Turnstile entrega un código de un solo uso que caduca a los cinco minutos. El servidor lo comprueba con Cloudflare junto con su dirección IP y, si la verificación falla, la solicitud no se envía. Sin JavaScript la verificación no puede completarse y el formulario no se envía.</p>
+      </>}
 
       <h2>Conservación</h2>
       <p>El sitio no guarda las solicitudes en un sistema propio: se remiten por correo y permanecen en el buzón del responsable. Según el artículo 6 de la Ley N.º 8968, el responsable debe eliminar los datos que hayan dejado de ser pertinentes o necesarios para la finalidad por la que se recibieron. El plazo de conservación de esos mensajes es: {p.retention ?? <span class="pending">{pendiente}</span>}</p>
@@ -66,7 +87,7 @@ if (site.indexable && (!p.controller || !p.address || !p.email || !p.providers |
       <p>También puede acudir a la Agencia de Protección de Datos de los Habitantes (Prodhab), mediante el procedimiento que prevé el artículo 13 de la Ley N.º 8968.</p>
 
       <h2>Transferencias</h2>
-      <p>El sitio no vende ni cede datos a terceros. Una transferencia requeriría su autorización expresa (artículo 14 de la Ley N.º 8968). Según el artículo 40 del Reglamento, no se considera transferencia el traslado a un encargado, proveedor de servicios o intermediario tecnológico. Almacenamiento fuera de Costa Rica por parte de proveedores: {p.transfers ?? <span class="pending">{pendiente}</span>}</p>
+      <p>El sitio no vende ni cede datos a terceros. Una transferencia requeriría su autorización expresa (artículo 14 de la Ley N.º 8968). Según el artículo 40 del Reglamento, no se considera transferencia el traslado a un encargado, proveedor de servicios o intermediario tecnológico. {enCloudflare && ' Cloudflare trata los datos en su red mundial y los almacena principalmente en Estados Unidos y en el Espacio Económico Europeo, de modo que el tratamiento ocurre también fuera de Costa Rica.'} Almacenamiento fuera de Costa Rica por parte de proveedores: {p.transfers ?? <span class="pending">{pendiente}</span>}</p>
     </div></div>
   </section>
 </Base>
