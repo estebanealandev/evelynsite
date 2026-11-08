@@ -1,6 +1,7 @@
 import type { APIRoute } from 'astro';
 import { esSpam, validarConsulta } from '../../lib/validation';
 import { enviar } from '../../lib/mailer';
+import { limiteBorde } from '#plataforma';
 import { ipCliente, leerCampos, limiteEnvios, limitePeticiones, respuestas } from '../../lib/form-endpoint';
 
 export const prerender = false;
@@ -12,7 +13,7 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
   const quiereJson = (request.headers.get('accept') ?? '').includes('application/json');
   const ip = ipCliente(request, clientAddress);
   // Un tope amplio protege al servidor; los errores de validación no agotan el cupo de envíos.
-  if (limitePeticiones(ip)) return respuestas.limite(quiereJson, destinos);
+  if (limitePeticiones(ip) || (await limiteBorde(ip))) return respuestas.limite(quiereJson, destinos);
   const { campos } = await leerCampos(request);
   if (!campos) return respuestas.invalido(quiereJson, destinos, {});
   // Nunca se responde con éxito si no se envió: una persona real podría caer aquí y creer que su solicitud llegó.

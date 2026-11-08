@@ -2,6 +2,7 @@
 // Astro solo controla las respuestas dinámicas; estas cabeceras cubren todas.
 import http from 'node:http';
 import net from 'node:net';
+import { cabecerasSeguridad, esRecurso, HSTS } from '../src/lib/cabeceras.mjs';
 
 process.env.ASTRO_NODE_AUTOSTART = 'disabled';
 const { handler } = await import('../dist/server/entry.mjs');
@@ -10,17 +11,7 @@ const HOST = process.env.HOST || '127.0.0.1';
 const PORT = Number(process.env.PORT || 4321);
 const esHttps = (process.env.PUBLIC_SITE_URL || '').startsWith('https://') && process.env.PUBLIC_SITE_READY === 'true';
 
-const cabeceras = {
-  // Las directivas `frame-ancestors` y similares no funcionan en la etiqueta meta de cada página.
-  'Content-Security-Policy': "frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self'",
-  'X-Frame-Options': 'DENY',
-  'X-Content-Type-Options': 'nosniff',
-  // `same-origin` conserva la cabecera Origin en el envío del formulario sin JavaScript.
-  'Referrer-Policy': 'same-origin',
-  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()',
-  'Cross-Origin-Opener-Policy': 'same-origin',
-  ...(esHttps ? { 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains' } : {})
-};
+const cabeceras = { ...cabecerasSeguridad, ...(esHttps ? { 'Strict-Transport-Security': HSTS } : {}) };
 
 const confiarEnProxy = process.env.TRUST_PROXY === 'true';
 
@@ -34,10 +25,6 @@ function fijarDireccion(req) {
     delete req.headers['x-forwarded-port'];
   }
 }
-
-// Las páginas no se guardan en la caché del navegador: en un equipo compartido, una página en caché o el botón
-// Atrás no deben mostrar lo que se leyó o escribió. Los recursos con nombre versionado sí se guardan.
-const esRecurso = url => /^\/(_astro|assets)\//.test(url) || /\.[a-z0-9]+(\?|$)/i.test(url);
 
 const servidor = http.createServer({ connectionsCheckingInterval: 5000 }, (req, res) => {
   fijarDireccion(req);

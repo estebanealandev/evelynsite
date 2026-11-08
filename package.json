@@ -10,11 +10,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:cf": "DESTINO=cloudflare PUBLIC_SITE_URL=https://evelynelizondo.com astro build",
+    "deploy": "npm run build:cf && wrangler deploy",
     "start": "NODE_ENV=production node --env-file-if-exists=.env scripts/servidor.mjs",
     "check": "astro check",
     "brand": "node scripts/instalar-marca.mjs",
     "art": "node scripts/generate-art.mjs",
     "test": "playwright test",
+    "test:cf": "SERVIDOR=cloudflare playwright test",
     "test:visual": "node scripts/compare-structure.mjs",
     "capture": "node scripts/capture-phase.mjs",
     "poster": "node scripts/generate-tree-poster.mjs",
@@ -32,6 +35,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
+    "@astrojs/cloudflare": "^14.4.6",
     "@axe-core/playwright": "^4.14.0",
     "@playwright/test": "^1.64.1",
     "@types/node": "^26.6.6",
@@ -43,6 +47,10 @@
     "topojson-client": "^3.1.0",
     "typescript": "^5.9.0",
     "world-atlas": "^2.0.2",
+    "wrangler": "^4.158.0",
     "yaml": "^2.9.1"
+  },
+  "imports": {
+    "#plataforma": "./src/lib/plataforma.ts"
   }
 }

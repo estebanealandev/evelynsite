@@ -5,7 +5,7 @@ import type { Errores } from './validation';
 
 const env = (k: string, d = '') => process.env[k] ?? d;
 
-// scripts/servidor.mjs ya sustituye X-Forwarded-For por la dirección de confianza.
+// scripts/servidor.mjs ya sustituye X-Forwarded-For por la dirección de confianza; en Cloudflare, Astro la toma de CF-Connecting-IP.
 export function ipCliente(_request: Request, clientAddress: string | undefined) {
   const ip = clientAddress ?? 'desconocida';
   // Cada dispositivo IPv6 puede tener muchas direcciones: se agrupan por red (/64).

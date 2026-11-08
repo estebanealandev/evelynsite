@@ -1,0 +1,27 @@
+// Worker del sitio. Se despliega con `npm run deploy`, que compila con DESTINO=cloudflare.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "evelyn-elizondo",
+  "compatibility_date": "2026-11-01",
+  // process.env se llena con vars y secretos: el código del formulario los lee así en Node y en Workers.
+  "compatibility_flags": ["nodejs_compat"],
+  // Solo los registros que escribe el código, que nunca llevan datos de la persona; sin registro automático de cada petición.
+  "observability": { "enabled": true, "logs": { "invocation_logs": false } },
+  // Las páginas estáticas se sirven desde los recursos sin ejecutar el Worker.
+  // Las URL canónicas no llevan barra final: /servicios sirve servicios/index.html y /servicios/ redirige.
+  "assets": { "html_handling": "drop-trailing-slash" },
+  // Dominio propio: Cloudflare crea el registro DNS y el certificado. www redirige aquí con una regla de la zona.
+  "routes": [{ "pattern": "evelynelizondo.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+  "vars": {
+    // `cloudflare` activa el Email Service; con `disabled` el formulario responde que no se envió.
+    "MAIL_MODE": "disabled",
+    "RATE_LIMIT_MAX": "5",
+    "RATE_LIMIT_WINDOW_MINUTES": "10"
+  },
+  // Email Service. Envía a la dirección verificada de MAIL_TO; se activa con MAIL_MODE=cloudflare.
+  "send_email": [{ "name": "EMAIL" }],
+  // Límite compartido en cada ubicación de Cloudflare: 10 envíos por minuto y dirección.
+  "ratelimits": [{ "name": "LIMITE_CONSULTAS", "namespace_id": "4801", "simple": { "limit": 10, "period": 60 } }]
+}

@@ -10,3 +10,5 @@ playwright-report/
 var/
 docs/reference/screenshots/
 .claude/
+.wrangler/
+.dev.vars*

@@ -3,7 +3,8 @@ import { createHmac, randomBytes } from 'node:crypto';
 
 const visitas = new Map<string, number[]>();
 // Clave aleatoria que solo vive en memoria: sin ella, la huella no permite recuperar la dirección IP.
-const CLAVE = randomBytes(32);
+// Se crea en la primera petición: Workers no permite generar valores aleatorios al cargar el módulo.
+let secreto: Buffer | undefined;
 let ultimaLimpieza = 0;
 
 export function permitido(clave: string, max: number, ventanaMs: number, ahora = Date.now()) {
@@ -12,7 +13,7 @@ export function permitido(clave: string, max: number, ventanaMs: number, ahora =
     ultimaLimpieza = ahora;
     for (const [k, v] of visitas) if (!v.some(t => ahora - t < ventanaMs)) visitas.delete(k);
   }
-  const id = createHmac('sha256', CLAVE).update(clave).digest('hex');
+  const id = createHmac('sha256', (secreto ??= randomBytes(32))).update(clave).digest('hex');
   const recientes = (visitas.get(id) ?? []).filter(t => ahora - t < ventanaMs);
   if (recientes.length >= max) {
     visitas.set(id, recientes);

@@ -1,6 +1,6 @@
 # Evelyn Elizondo | Derecho de Familia | Costa Rica
 
-Sitio corporativo en [Astro](https://astro.build) con páginas estáticas, un servidor Node para los formularios y todos los recursos alojados localmente.
+Sitio corporativo en [Astro](https://astro.build) con páginas estáticas, un Worker de Cloudflare para el formulario y todos los recursos alojados localmente.
 
 > **Antes de publicar:** complete la lista de [pendientes de publicación](#pendientes-de-publicación). Hasta entonces, `PUBLIC_SITE_READY=false` mantiene el sitio con `noindex` y `robots.txt` bloqueado.
 
@@ -72,12 +72,41 @@ El límite de solicitudes vive en memoria: si despliega varias instancias, cada 
 
 ## Despliegue
 
-Cualquier alojamiento con Node funciona. Ejemplo: un VPS con `npm start` bajo systemd o PM2, detrás de Nginx o Caddy con HTTPS.
+El sitio está en **Cloudflare Workers**, en `https://evelynelizondo.com`. Las páginas son recursos estáticos y solo `/api/consulta` ejecuta el Worker.
 
-1. Defina `PUBLIC_SITE_URL` antes de compilar y `TRUST_PROXY=true` si usa proxy.
-2. Configure HTTPS. La política de privacidad lo menciona como requisito de producción.
-3. En el proxy, añada `Strict-Transport-Security`, `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY` y, como refuerzo, la CSP incluida en `src/layouts/Base.astro`.
-4. Revise los registros con `journalctl -u <servicio>` o `pm2 logs`.
+```bash
+npm run deploy
+```
+
+Compila con `DESTINO=cloudflare` y publica con Wrangler, con la sesión de `npx wrangler login`. La configuración está en `wrangler.jsonc`.
+
+| Pieza | Dónde |
+|---|---|
+| Cabeceras de seguridad y caché | `src/lib/cabeceras.mjs`. Se escriben en `_headers` al compilar y el middleware las añade a las respuestas del Worker |
+| Código que depende del entorno | `#plataforma`: `src/lib/plataforma.ts` en Node y `plataforma-cloudflare.ts` en Workers |
+| Límite de envíos | El de memoria más el binding `LIMITE_CONSULTAS`, compartido por ubicación |
+| Correo | Binding `EMAIL` del Email Service de Cloudflare, con `MAIL_MODE=cloudflare` |
+| Registros | `npx wrangler tail evelyn-elizondo`. No se registra cada petición; solo los eventos del formulario, sin datos personales |
+
+Para probar la compilación de Workers en local, con el runtime de Cloudflare:
+
+```bash
+npm run build:cf
+```
+
+```bash
+npm run test:cf
+```
+
+### Activar el correo del formulario
+
+1. En el panel de Cloudflare, activar Email Routing en el dominio y verificar la dirección de destino. El envío a una dirección verificada no tiene coste.
+2. En `wrangler.jsonc`, poner `MAIL_MODE` en `cloudflare` y añadir `MAIL_TO` y `MAIL_FROM` (una dirección del dominio) en `vars`.
+3. `npm run deploy` y enviar una consulta de prueba.
+
+### Otro alojamiento
+
+El servidor Node sigue disponible: `npm run build` y `npm start` detrás de un proxy con HTTPS, con `TRUST_PROXY=true`.
 
 ## Actualizar contenido
 
