@@ -24,6 +24,7 @@ const {
   jsonLd = [],
   crumbs = [],
   lectura = false,
+  turnstile = false,
   salidaRapida = Astro.url.pathname !== '/'
 } = Astro.props;
 // La marca se añade solo si cabe: los títulos largos se truncan en los resultados y la marca ya va en og:site_name.
@@ -50,7 +51,9 @@ const datos = grafo({
 // Único script en línea: debe correr antes de pintar. La política lo admite por su huella y bloquea cualquier otro.
 const inicial = "document.documentElement.classList.add('js');try{if(localStorage.getItem('movimiento')==='pausado')document.documentElement.dataset.movimiento='pausado'}catch{}";
 const huella = createHash('sha256').update(inicial).digest('base64');
-const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'`;
+// Turnstile es la única excepción a los recursos propios, y solo en la página del formulario.
+const cf = turnstile && site.turnstile ? ' https://challenges.cloudflare.com' : '';
+const csp = `default-src 'self'; script-src 'self' 'sha256-${huella}'${cf}; frame-src 'self'${cf}; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; form-action 'self'; base-uri 'self'; object-src 'none'`;
 ---
 <!doctype html>
 <html lang="es-CR">

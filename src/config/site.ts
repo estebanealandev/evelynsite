@@ -12,6 +12,8 @@ export const site = {
   // Lo fija astro.config.mjs a partir de src/config/indexacion.mjs: no se activa a mano.
   indexable: env.PUBLIC_SITE_READY === 'true',
   entorno: (env.PUBLIC_SITE_ENV as string) || 'development',
+  // Clave pública del widget Turnstile. Sin ella no se carga nada de Cloudflare y el servidor rechaza los envíos.
+  turnstile: clean(env.PUBLIC_TURNSTILE_SITE_KEY),
   contact: {
     phone: clean(env.PUBLIC_CONTACT_PHONE),
     email: clean(env.PUBLIC_CONTACT_EMAIL),

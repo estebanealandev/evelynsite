@@ -53,13 +53,16 @@ Consulte [.env.example](.env.example).
 | `MAIL_TO`, `MAIL_FROM`, `SMTP_*` | Configuración de correo |
 | `TRUST_PROXY` | Activar solo detrás de un proxy de confianza |
 | `RATE_LIMIT_MAX`, `RATE_LIMIT_WINDOW_MINUTES` | Límite de solicitudes |
+| `PUBLIC_TURNSTILE_SITE_KEY` | Clave pública del widget Turnstile (al compilar). Sin ella no se dibuja el widget |
+| `TURNSTILE_SECRET_KEY` | **Secreto** del servidor para verificar el token (en Workers, `wrangler secret put`). Sin él, el formulario responde 503 |
+| `TURNSTILE_MODE` | Solo `off` para pruebas o desarrollo. Únicamente surte efecto en `localhost` o `127.0.0.1` |
 
 ## Formularios
 
 Hay un endpoint: `/api/consulta`.
 
 - **Proveedor:** cualquiera con SMTP, como el correo del dominio o un servicio transaccional. Las claves se guardan solo en variables del servidor.
-- **Protección:** validación en navegador y servidor, saneamiento, campo trampa, tiempo mínimo, límite por IP (huella hash en memoria) y verificación de origen.
+- **Protección:** validación en navegador y servidor, saneamiento, campo trampa, tiempo mínimo, límite por IP (huella hash en memoria), verificación de origen y **Cloudflare Turnstile** verificado en el servidor (host, acción, antigüedad y un solo uso). Los métodos distintos de POST reciben 405. Ver [docs/security/turnstile-implementation.md](docs/security/turnstile-implementation.md).
 - **Sin configurar:** con `MAIL_MODE=disabled` responde 503 y avisa que la solicitud no se envió.
 - **Registros:** nunca contienen datos de la persona. Solo aparecen eventos como `[formulario] envio_no_disponible` o `error_envio`.
 - **Sin JavaScript:** el envío nativo redirige a `/consulta-recibida` o `/consulta-no-enviada`.
@@ -123,6 +126,15 @@ El servidor Node sigue disponible: `npm run build` y `npm start` detrás de un p
 | `npm run seo:imagenes` | Regenera las imágenes sociales 1200 × 630 de `public/assets/og/` |
 
 `npm run deploy` comprueba que la compilación sea coherente con la política de indexación antes de subirla. Documentación en [docs/seo/](docs/seo/).
+
+### Seguridad
+
+| Comando | Para qué |
+|---|---|
+| `npm run seguridad:produccion` | Revisa el sitio publicado: cabeceras, CSP, métodos del formulario, rutas sensibles, lectura pública sin desafíos, HTTPS y TLS (solo lectura) |
+| `npm run seguridad:produccion -- --esperar-waf` | Además, exige que las reglas WAF estén aplicadas (403 en el borde) |
+
+`npm run deploy` también se detiene si `dist/` contiene archivos sensibles (ocultos, *source maps*, copias, claves) o si la CSP de Turnstile no coincide con el widget. Las reglas de Cloudflare preparadas están en [ops/cloudflare/seguridad/](ops/cloudflare/seguridad/) y la documentación en [docs/security/](docs/security/).
 ## Actualizar contenido
 
 | Contenido | Ubicación |
@@ -174,6 +186,7 @@ La lista completa está en [docs/legal-compliance-audit.md](docs/legal-complianc
 - [Plan de UX y diseño](docs/plan-ux-diseno.md)
 - [Comparación estructural](docs/reference/structure-comparison.md)
 - [Guía de marca](public/assets/brand/brand-guidelines.md)
+- [Seguridad en Cloudflare Free](docs/security/implementation-report.md)
 
 `docs/reference/` contiene capturas del sitio de referencia solo para auditoría interna. No debe publicarse.
 

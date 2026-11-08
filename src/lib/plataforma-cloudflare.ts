@@ -5,6 +5,9 @@ import { CorreoNoDisponible, type Mensaje } from './correo-comun';
 
 const texto = (k: string) => (typeof env[k] === 'string' ? (env[k] as string) : '');
 
+// Variables y secretos del Worker. Se leen de los bindings: `process.env` no siempre los refleja (p. ej. --var en wrangler dev).
+export const variable = texto;
+
 export async function transportar(modo: string, m: Mensaje & { para: string }) {
   // Email Service de Cloudflare: el envío a una dirección de destino verificada no tiene coste.
   if (modo === 'cloudflare') {

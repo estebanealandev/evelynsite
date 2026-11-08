@@ -1,0 +1,93 @@
+{
+  "$comentario": "PREPARADO, NO APLICADO: cambio de DNS que requiere permiso expreso. Limita qué autoridades pueden emitir certificados. Cloudflare añade además, de forma automática, las suyas cuando existe algún CAA con Universal SSL. Sin registro iodef: no hay un correo real autorizado. Ver docs/security/tls-dnssec.md §CAA.",
+  "registros": [
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issue",
+        "value": "letsencrypt.org"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issue",
+        "value": "pki.goog; cansignhttpexchanges=yes"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issue",
+        "value": "ssl.com"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issue",
+        "value": "sectigo.com"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issuewild",
+        "value": "letsencrypt.org"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issuewild",
+        "value": "pki.goog; cansignhttpexchanges=yes"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issuewild",
+        "value": "ssl.com"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    },
+    {
+      "type": "CAA",
+      "name": "evelynelizondo.com",
+      "data": {
+        "flags": 0,
+        "tag": "issuewild",
+        "value": "sectigo.com"
+      },
+      "ttl": 1,
+      "comment": "Autoridades que usa Cloudflare para Universal SSL y el dominio del Worker"
+    }
+  ]
+}

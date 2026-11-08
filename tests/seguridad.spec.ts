@@ -45,6 +45,16 @@ test.describe('cabeceras y política de contenido', () => {
 });
 
 test.describe('API del formulario', () => {
+  test('solo admite POST: el resto de métodos recibe 405 con Allow', async ({ request }) => {
+    for (const metodo of ['GET', 'HEAD', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'] as const) {
+      const res = await request.fetch('/api/consulta', { method: metodo, headers: { origin } });
+      expect(res.status(), metodo).toBe(405);
+      expect(res.headers().allow).toBe('POST');
+      expect(res.headers()['cache-control']).toBe('no-store');
+      expect(res.headers()['x-robots-tag']).toBe('noindex, nofollow');
+    }
+  });
+
   test('rechaza un cuerpo demasiado grande, aunque no declare su tamaño', async ({ request }) => {
     const res = await request.post('/api/consulta', { headers: json, form: { ...valido, mensaje: 'x'.repeat(30000) } });
     expect(res.status()).toBe(422);

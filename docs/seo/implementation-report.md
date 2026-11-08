@@ -87,7 +87,7 @@ No se suprimió ni se debilitó ninguna prueba. Las tres aserciones que cambiaro
 | Crear `llms.txt` | No lo exige Google y no hay evidencia de que aporte algo ([geo-aeo-strategy.md](geo-aeo-strategy.md)) |
 | Analítica | La política de privacidad declara que no hay. Activarla exige cambiar antes esa política y la CSP |
 | Redactar artículos nuevos | Los briefs están en [content-strategy.md](content-strategy.md). La redacción necesita fuentes verificadas y revisión profesional |
-| Leer Bot Fight Mode | La CLI no lo expone. Hay que comprobarlo en el panel antes del lanzamiento |
+| Leer Bot Fight Mode | Resuelto el 2026-11-08 con `cf bot-management get`: desactivado (ver docs/security/) |
 
 ## Pendientes que bloquean el lanzamiento
 

@@ -1,7 +1,9 @@
 // Lógica común de los endpoints de formularios.
 import { permitido } from './rate-limit';
 import { CorreoNoDisponible } from './mailer';
+import { variable } from '#plataforma';
 import type { Errores } from './validation';
+import { CAMPO, esSecretoDePrueba, turnstileActivo, verificarTurnstile, type Motivo } from './turnstile';
 
 const env = (k: string, d = '') => process.env[k] ?? d;
 
@@ -62,6 +64,17 @@ const ir = (destino: string) => new Response(null, { status: 303, headers: { loc
 
 export type Destinos = { exito: string; error: string };
 
+export async function comprobarTurnstile(campos: Record<string, unknown>, url: URL, ip: string | undefined) {
+  if (!turnstileActivo(variable('TURNSTILE_MODE'), url)) return { ok: true } as const;
+  const secreto = variable('TURNSTILE_SECRET_KEY');
+  // Solo las claves de prueba oficiales pueden apuntar a un Siteverify simulado.
+  const destino = esSecretoDePrueba(secreto) ? variable('TURNSTILE_VERIFY_URL') || undefined : undefined;
+  const r = await verificarTurnstile({ token: campos[CAMPO], secreto, hostEsperado: url.hostname, ip, url: destino });
+  // Solo el motivo: nunca el token, la IP ni los datos del formulario.
+  if (!r.ok) console.warn('[formulario] turnstile', r.motivo);
+  return r;
+}
+
 export const respuestas = {
   exito: (quiereJson: boolean, d: Destinos, mensaje: string) => (quiereJson ? json({ ok: true, mensaje }, 200) : ir(d.exito)),
   invalido: (quiereJson: boolean, d: Destinos, errores: Errores) =>
@@ -70,6 +83,18 @@ export const respuestas = {
     quiereJson ? json({ ok: false, mensaje: 'Ha enviado varias solicitudes en poco tiempo. Intente de nuevo más tarde.' }, 429) : ir(d.error),
   descartado: (quiereJson: boolean, d: Destinos) =>
     quiereJson ? json({ ok: false, mensaje: 'La solicitud no se envió. Espere unos segundos e intente de nuevo.' }, 422) : ir(d.error),
+  verificacion: (quiereJson: boolean, d: Destinos, motivo: Motivo) => {
+    const caido = motivo === 'no_disponible' || motivo === 'sin_configurar';
+    const mensaje = caido
+      ? 'No fue posible completar la verificación de seguridad y la solicitud no se ha enviado. Intente de nuevo más tarde.'
+      : 'No se pudo confirmar la verificación de seguridad y la solicitud no se ha enviado. Espere a que termine la verificación e intente de nuevo.';
+    return quiereJson ? json({ ok: false, mensaje, verificacion: true }, caido ? 503 : 403) : ir(d.error);
+  },
+  metodo: () =>
+    new Response(JSON.stringify({ ok: false, mensaje: 'Método no permitido.' }), {
+      status: 405,
+      headers: { allow: 'POST', 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }
+    }),
   fallo: (quiereJson: boolean, d: Destinos, e: unknown) => {
     // Solo se registra el tipo de fallo: nunca datos de la persona.
     console.error('[formulario]', e instanceof CorreoNoDisponible ? 'envio_no_disponible' : 'error_envio');

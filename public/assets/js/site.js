@@ -367,6 +367,37 @@
     const show = (kind, msg) => { status.dataset.kind = kind; status.textContent = msg; };
     const aviso = () => { status.tabIndex = -1; status.focus(); };
 
+    // Turnstile (Cloudflare) solo existe en el formulario y se carga al llegar al último paso:
+    // no retrasa la página ni se descarga si la persona no llega a enviar.
+    const zona = form.querySelector('[data-turnstile]');
+    let widget = null;
+    let cargando = null;
+    const errorVerificacion = 'No fue posible completar la verificación de seguridad. Recargue la página o intente de nuevo más tarde.';
+    const cargarTurnstile = () => {
+      if (!zona || cargando) return cargando;
+      cargando = new Promise((ok, mal) => {
+        const s = document.createElement('script');
+        s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+        s.async = true;
+        s.onload = ok;
+        s.onerror = mal;
+        document.head.appendChild(s);
+      }).then(() => {
+        widget = window.turnstile.render(zona, {
+          sitekey: zona.dataset.sitekey,
+          action: zona.dataset.action,
+          size: 'flexible',
+          language: 'es',
+          'refresh-expired': 'auto',
+          'error-callback': () => { show('error', errorVerificacion); return true; }
+        });
+      }).catch(() => { cargando = null; show('error', errorVerificacion); });
+      return cargando;
+    };
+    const tokenTurnstile = () => (form.elements['cf-turnstile-response'] || {}).value || '';
+    const reiniciarTurnstile = () => { if (widget !== null && window.turnstile) window.turnstile.reset(widget); };
+    if (zona) form.addEventListener('focusin', () => { if (!pasosF.length) cargarTurnstile(); });
+
     // Paso a paso, si el formulario lo admite.
     const pasosF = $$('[data-paso]', form);
     let actual = 0;
@@ -377,6 +408,7 @@
       $('[data-atras]', form).hidden = i === 0;
       $('[data-siguiente]', form).hidden = final;
       $('[data-enviar]', form).hidden = !final;
+      if (final) cargarTurnstile();
       $('[data-pasos-texto]', form).textContent = `Paso ${i + 1} de ${pasosF.length}`;
       $('.pasos__barra i', form).style.setProperty('--avance', `${((i + 1) / pasosF.length) * 100}%`);
       if (enfocar) (pasosF[i].querySelector('input:not([type=hidden]):not([tabindex="-1"]), textarea') || pasosF[i]).focus();
@@ -430,6 +462,11 @@
       show('', '');
       const errors = local();
       if (Object.keys(errors).length) { showErrors(errors); show('error', 'Revise los campos señalados.'); return; }
+      if (zona && !tokenTurnstile()) {
+        cargarTurnstile();
+        show('error', 'Espere a que termine la verificación de seguridad y vuelva a enviar.');
+        return;
+      }
       btn.setAttribute('aria-busy', 'true');
       btn.disabled = true;
       try {
@@ -441,8 +478,13 @@
           form.classList.add('is-enviado');
           show('ok', data.mensaje);
           aviso();
-        } else { showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); if (!data.errores) aviso(); }
+        } else {
+          // El token ya se usó o caducó: hace falta uno nuevo para el siguiente intento.
+          reiniciarTurnstile();
+          showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); if (!data.errores) aviso();
+        }
       } catch {
+        reiniciarTurnstile();
         show('error', 'No hay conexión con el servidor. Su solicitud no se ha enviado; intente de nuevo.');
         aviso();
       } finally {

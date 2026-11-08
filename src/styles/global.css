@@ -521,3 +521,6 @@ body:has(> .salida) .site-footer { padding-bottom: 76px; }
   .fichas a { grid-template-columns: minmax(0, 1fr) auto; }
   .fichas p { grid-row: 2; grid-column: 1 / -1; }
 }
+
+/* Turnstile: espacio reservado para que el widget no desplace el formulario al aparecer. */
+.turnstile__widget { min-height: 65px; }

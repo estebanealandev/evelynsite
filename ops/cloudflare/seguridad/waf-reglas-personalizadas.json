@@ -1,0 +1,28 @@
+{
+  "$comentario": "PREPARADO, NO APLICADO. Reglas WAF personalizadas (fase http_request_firewall_custom). Validado con --validate-only. Ver docs/security/waf-rules.md.",
+  "name": "default",
+  "description": "Reglas WAF personalizadas de evelynelizondo.com",
+  "rules": [
+    {
+      "ref": "evelyn_waf_archivos_sensibles",
+      "description": "1. Bloquear archivos ocultos, copias y configuraciones",
+      "expression": "(http.request.uri.path contains \"/.\" and not starts_with(http.request.uri.path, \"/.well-known/\")) or ends_with(lower(http.request.uri.path), \".env\") or ends_with(lower(http.request.uri.path), \".bak\") or ends_with(lower(http.request.uri.path), \".backup\") or ends_with(lower(http.request.uri.path), \".old\") or ends_with(lower(http.request.uri.path), \".orig\") or ends_with(lower(http.request.uri.path), \".save\") or ends_with(lower(http.request.uri.path), \".swp\") or ends_with(lower(http.request.uri.path), \".sql\") or ends_with(lower(http.request.uri.path), \".sqlite\") or ends_with(lower(http.request.uri.path), \".db\") or ends_with(lower(http.request.uri.path), \".log\") or ends_with(lower(http.request.uri.path), \".ini\") or ends_with(lower(http.request.uri.path), \".conf\") or ends_with(lower(http.request.uri.path), \".cfg\") or ends_with(lower(http.request.uri.path), \".yml\") or ends_with(lower(http.request.uri.path), \".yaml\") or ends_with(lower(http.request.uri.path), \".toml\") or ends_with(lower(http.request.uri.path), \".lock\") or ends_with(lower(http.request.uri.path), \".pem\") or ends_with(lower(http.request.uri.path), \".key\") or ends_with(lower(http.request.uri.path), \".crt\") or ends_with(lower(http.request.uri.path), \".p12\") or ends_with(lower(http.request.uri.path), \".pfx\") or ends_with(lower(http.request.uri.path), \".zip\") or ends_with(lower(http.request.uri.path), \".tar\") or ends_with(lower(http.request.uri.path), \".gz\") or ends_with(lower(http.request.uri.path), \".tgz\") or ends_with(lower(http.request.uri.path), \".7z\") or ends_with(lower(http.request.uri.path), \".rar\")",
+      "action": "block",
+      "enabled": true
+    },
+    {
+      "ref": "evelyn_waf_tecnologias_ajenas",
+      "description": "2. Bloquear sondeos de tecnologías que el sitio no usa",
+      "expression": "ends_with(lower(http.request.uri.path), \".php\") or ends_with(lower(http.request.uri.path), \".php5\") or ends_with(lower(http.request.uri.path), \".phtml\") or ends_with(lower(http.request.uri.path), \".asp\") or ends_with(lower(http.request.uri.path), \".aspx\") or ends_with(lower(http.request.uri.path), \".jsp\") or ends_with(lower(http.request.uri.path), \".cgi\") or ends_with(lower(http.request.uri.path), \".pl\") or lower(http.request.uri.path) contains \".php/\" or starts_with(lower(http.request.uri.path), \"/wp-\") or starts_with(lower(http.request.uri.path), \"/wordpress\") or starts_with(lower(http.request.uri.path), \"/xmlrpc\") or starts_with(lower(http.request.uri.path), \"/phpmyadmin\") or starts_with(lower(http.request.uri.path), \"/pma/\") or starts_with(lower(http.request.uri.path), \"/cgi-bin/\") or starts_with(lower(http.request.uri.path), \"/vendor/\") or starts_with(lower(http.request.uri.path), \"/administrator/\") or starts_with(lower(http.request.uri.path), \"/actuator\") or starts_with(lower(http.request.uri.path), \"/owa/\") or starts_with(lower(http.request.uri.path), \"/autodiscover/\") or starts_with(lower(http.request.uri.path), \"/boaform/\") or starts_with(lower(http.request.uri.path), \"/hnap1\") or lower(http.request.uri.path) contains \"/wp-admin\" or lower(http.request.uri.path) contains \"/wp-content/\" or lower(http.request.uri.path) contains \"/wp-includes/\"",
+      "action": "block",
+      "enabled": true
+    },
+    {
+      "ref": "evelyn_waf_api_metodos",
+      "description": "3. Solo GET y HEAD, salvo POST del mismo origen al formulario",
+      "expression": "(starts_with(lower(http.request.uri.path), \"/api/\") or not http.request.method in {\"GET\" \"HEAD\"}) and not (http.request.uri.path eq \"/api/consulta\" and http.request.method eq \"POST\" and any(http.request.headers[\"origin\"][*] eq \"https://evelynelizondo.com\"))",
+      "action": "block",
+      "enabled": true
+    }
+  ]
+}

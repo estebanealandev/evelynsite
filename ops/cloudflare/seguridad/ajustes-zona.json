@@ -1,0 +1,26 @@
+{
+  "$comentario": "PREPARADO, NO APLICADO. Ajustes de zona recomendados (ver docs/security/cloudflare-free-inventory.md). Aplicar uno a uno con `cf zones settings edit <id> -z <zona> --body {\"value\": <valor>}` y verificar con `npm run seguridad:produccion`.",
+  "ajustes": [
+    {
+      "id": "browser_cache_ttl",
+      "actual": 14400,
+      "recomendado": 0,
+      "motivo": "Respetar las cabeceras del sitio (no-store en HTML, immutable en recursos versionados); evita que un cambio futuro de cabeceras quede pisado por 4 h"
+    }
+  ],
+  "no_cambiar": {
+    "security_level": "medium",
+    "browser_check": "on",
+    "min_tls_version": "1.2",
+    "tls_1_3": "on",
+    "always_use_https": "on",
+    "ssl": "strict",
+    "0rtt": "off",
+    "email_obfuscation": "off",
+    "hotlink_protection": "off",
+    "security_header (HSTS de zona)": "desactivado: lo emite el sitio",
+    "bot_management.fight_mode": "false",
+    "bot_management.crawler_protection (AI Labyrinth)": "disabled",
+    "bot_management.is_robots_txt_managed": "false"
+  }
+}

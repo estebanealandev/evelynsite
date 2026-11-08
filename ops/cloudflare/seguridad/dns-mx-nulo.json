@@ -1,0 +1,13 @@
+{
+  "$comentario": "PREPARADO, NO APLICADO, OPCIONAL: declara que el dominio no recibe correo (RFC 7505, MX nulo). Retirarlo antes de activar Email Routing o un buzón real. Ver docs/security/tls-dnssec.md §Correo.",
+  "registros": [
+    {
+      "type": "MX",
+      "name": "evelynelizondo.com",
+      "content": ".",
+      "priority": 0,
+      "ttl": 1,
+      "comment": "MX nulo: el dominio no recibe correo"
+    }
+  ]
+}

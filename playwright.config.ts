@@ -6,6 +6,8 @@ const chrome = { channel: 'chrome', launchOptions: { args: ['--use-angle=swiftsh
 // SERVIDOR=cloudflare prueba la compilación de Workers (`npm run build:cf`) en el runtime local de Cloudflare.
 // Las pruebas que arrancan el servidor Node o leen el buzón local quedan fuera en ese modo.
 const enCloudflare = process.env.SERVIDOR === 'cloudflare';
+// Turnstile se prueba aparte (tests/turnstile.spec.ts). En el resto, apagarlo solo es posible en 127.0.0.1.
+process.env.TURNSTILE_MODE ??= 'off';
 
 export default defineConfig({
   testDir: './tests',
@@ -26,13 +28,13 @@ export default defineConfig({
   ],
   testIgnore: enCloudflare ? ['**/forms-smtp.spec.ts', '**/forms-disabled.spec.ts', '**/limite.spec.ts'] : [],
   webServer: enCloudflare ? {
-    command: 'npx wrangler dev --ip 127.0.0.1 --port 4325 --var RATE_LIMIT_MAX:500 --var RATE_LIMIT_EDGE:off --var MAIL_MODE:cloudflare --var MAIL_TO:pruebas@example.test --var MAIL_FROM:sitio@example.test --log-level warn',
+    command: 'npx wrangler dev --ip 127.0.0.1 --port 4325 --local-upstream 127.0.0.1:4325 --var RATE_LIMIT_MAX:500 --var RATE_LIMIT_EDGE:off --var TURNSTILE_MODE:off --var MAIL_MODE:cloudflare --var MAIL_TO:pruebas@example.test --var MAIL_FROM:sitio@example.test --log-level warn',
     url: 'http://127.0.0.1:4325/',
     reuseExistingServer: true
   } : {
     command: 'node scripts/servidor.mjs',
     url: 'http://127.0.0.1:4325/',
     reuseExistingServer: false,
-    env: { HOST: '127.0.0.1', PORT: '4325', MAIL_MODE: 'outbox', RATE_LIMIT_MAX: '500', MAIL_TO: 'pruebas@example.test' }
+    env: { HOST: '127.0.0.1', PORT: '4325', TURNSTILE_MODE: 'off', MAIL_MODE: 'outbox', RATE_LIMIT_MAX: '500', MAIL_TO: 'pruebas@example.test' }
   }
 });

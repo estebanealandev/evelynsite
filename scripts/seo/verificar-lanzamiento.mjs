@@ -2,7 +2,8 @@
 //   npm run seo:lanzamiento                  → muestra qué requisitos faltan
 //   node scripts/seo/verificar-lanzamiento.mjs --compilacion → además, comprueba que dist/ sea coherente
 // Lo ejecuta `npm run deploy` antes de subir nada: si la compilación no es coherente, no se despliega.
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { REQUISITOS, requisitosPendientes } from '../../src/config/indexacion.mjs';
 
 const raiz = new URL('../../', import.meta.url);
@@ -32,6 +33,19 @@ if (process.argv.includes('--compilacion')) {
       const indexables = Object.entries(c.rutas).filter(([, v]) => !/noindex/.test(v ?? ''));
       if (indexables.length) errores.push(`páginas sin noindex: ${indexables.map(([r]) => r).join(', ')}`);
     }
+    // Seguridad (docs/security): nada sensible publicado y Turnstile solo donde hay formulario.
+    const cliente = fileURLToPath(f('client/'));
+    const publicados = readdirSync(cliente, { recursive: true }).map(String);
+    const sensibles = publicados.filter(p => /(^|\/)\.(?!assetsignore$|well-known)/.test(p) || /\.(map|env|bak|sql|pem|key|log|ya?ml|toml|ini)$/i.test(p));
+    if (sensibles.length) errores.push(`archivos que no deben publicarse: ${sensibles.join(', ')}`);
+    const leer = r => (existsSync(f(`client/${r}`)) ? readFileSync(f(`client/${r}`), 'utf8') : '');
+    const cspDe = html => html.match(/http-equiv="Content-Security-Policy" content="([^"]+)"/)?.[1] ?? '';
+    const formulario = leer('agendar-consulta/index.html');
+    const conWidget = formulario.includes('data-turnstile');
+    if (cspDe(leer('index.html')).includes('challenges.cloudflare.com')) errores.push('la portada admite Turnstile en la CSP: debe limitarse al formulario');
+    if (conWidget !== cspDe(formulario).includes('https://challenges.cloudflare.com')) errores.push('el widget Turnstile y la CSP del formulario no coinciden');
+    if (c.indexable && !conWidget) errores.push('lanzamiento sin Turnstile en el formulario: falta PUBLIC_TURNSTILE_SITE_KEY');
+    console.log(`Turnstile en el formulario: ${conWidget ? 'sí' : 'no (sin PUBLIC_TURNSTILE_SITE_KEY; el servidor rechaza los envíos)'}`);
     console.log(`\nCompilación: entorno=${c.entorno} indexable=${c.indexable} páginas=${Object.keys(c.rutas).length}`);
   }
   if (errores.length) { console.error(`\nNo se puede desplegar:\n- ${errores.join('\n- ')}`); process.exit(1); }

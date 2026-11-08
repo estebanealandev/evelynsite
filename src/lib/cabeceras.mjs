@@ -6,7 +6,7 @@ export const cabecerasSeguridad = {
   'X-Content-Type-Options': 'nosniff',
   // `same-origin` conserva la cabecera Origin en el envío del formulario sin JavaScript.
   'Referrer-Policy': 'same-origin',
-  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=(), usb=(), browsing-topics=()',
   'Cross-Origin-Opener-Policy': 'same-origin'
 };
 

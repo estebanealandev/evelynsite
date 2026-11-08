@@ -32,7 +32,8 @@
     "seo:lanzamiento": "node scripts/seo/verificar-lanzamiento.mjs",
     "seo:dnssec": "node scripts/seo/verificar-dnssec.mjs",
     "seo:produccion": "node scripts/seo/verificar-produccion.mjs",
-    "seo:verificar": "npm run build && npm run seo:auditar && playwright test tests/seo.spec.ts tests/indexacion.spec.ts"
+    "seo:verificar": "npm run build && npm run seo:auditar && playwright test tests/seo.spec.ts tests/indexacion.spec.ts",
+    "seguridad:produccion": "node scripts/seguridad/verificar-produccion.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^11.1.9",

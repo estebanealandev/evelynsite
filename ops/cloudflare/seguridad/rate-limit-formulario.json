@@ -1,0 +1,23 @@
+{
+  "$comentario": "PREPARADO, NO APLICADO. Regla de rate limiting del plan Free (fase http_ratelimit): solo ruta e IP, ventana y bloqueo de 10 s. Ver docs/security/rate-limiting.md.",
+  "name": "default",
+  "description": "Límite de envíos del formulario",
+  "rules": [
+    {
+      "ref": "evelyn_rl_formulario",
+      "description": "Límite de envíos al formulario por IP",
+      "expression": "(http.request.uri.path eq \"/api/consulta\")",
+      "action": "block",
+      "ratelimit": {
+        "characteristics": [
+          "ip.src",
+          "cf.colo.id"
+        ],
+        "period": 10,
+        "requests_per_period": 5,
+        "mitigation_timeout": 10
+      },
+      "enabled": true
+    }
+  ]
+}

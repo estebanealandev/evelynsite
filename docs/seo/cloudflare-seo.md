@@ -56,11 +56,11 @@ La zona no tiene Cache Rules (`http_request_cache_settings`: sin entrypoint). St
 
 Configuración leída:
 
-- No hay reglas WAF personalizadas ni de límite de peticiones.
+- No hay reglas WAF personalizadas ni de límite de peticiones. Las preparadas, que no tocan la lectura pública, están en [docs/security/waf-rules.md](../security/waf-rules.md).
 - Security Level está en `medium` y Browser Integrity Check activo.
 - Las políticas de crawlers de IA están en «Allow», como eligió el usuario al comprar el dominio.
 - `robots.txt` no lo gestiona Cloudflare.
-- Bot Fight Mode no se pudo leer con la CLI. Hay que comprobarlo en el panel (Security → Bots).
+- Bot Fight Mode está desactivado (`cf bot-management get`, 2026-11-08). La decisión de mantenerlo así está en [docs/security/bot-protection.md](../security/bot-protection.md).
 
 Antes de autorizar la indexación:
 

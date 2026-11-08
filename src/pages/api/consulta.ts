@@ -2,14 +2,14 @@ import type { APIRoute } from 'astro';
 import { esSpam, validarConsulta } from '../../lib/validation';
 import { enviar } from '../../lib/mailer';
 import { limiteBorde } from '#plataforma';
-import { ipCliente, leerCampos, limiteEnvios, limitePeticiones, respuestas } from '../../lib/form-endpoint';
+import { comprobarTurnstile, ipCliente, leerCampos, limiteEnvios, limitePeticiones, respuestas } from '../../lib/form-endpoint';
 
 export const prerender = false;
 
 const destinos = { exito: '/consulta-recibida', error: '/consulta-no-enviada' };
 const OK = 'Solicitud recibida. Enviarla no crea, por sí solo, una relación profesional ni detiene los plazos de un proceso.';
 
-export const POST: APIRoute = async ({ request, clientAddress }) => {
+export const POST: APIRoute = async ({ request, clientAddress, url }) => {
   const quiereJson = (request.headers.get('accept') ?? '').includes('application/json');
   const ip = ipCliente(request, clientAddress);
   // Un tope amplio protege al servidor; los errores de validación no agotan el cupo de envíos.
@@ -22,6 +22,9 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
   const { datos, errores, valido } = validarConsulta(campos);
   if (!valido) return respuestas.invalido(quiereJson, destinos, errores);
   if (limiteEnvios(ip)) return respuestas.limite(quiereJson, destinos);
+  // Después de validar: el token solo sirve una vez y un error de escritura no debe gastarlo.
+  const verificacion = await comprobarTurnstile(campos, url, clientAddress);
+  if (!verificacion.ok) return respuestas.verificacion(quiereJson, destinos, verificacion.motivo);
 
   try {
     await enviar({
@@ -43,3 +46,6 @@ export const POST: APIRoute = async ({ request, clientAddress }) => {
   }
   return respuestas.exito(quiereJson, destinos, OK);
 };
+
+// Cualquier otro método: 405 con Allow, en lugar de la página 404.
+export const ALL: APIRoute = () => respuestas.metodo();

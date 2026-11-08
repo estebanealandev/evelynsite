@@ -9,6 +9,8 @@ import { CorreoNoDisponible, type Mensaje } from './correo-comun';
 // Solo se leen al ejecutar. Un acceso dinámico a import.meta.env dejaría las claves incrustadas en la compilación.
 const env = (k: string) => process.env[k] ?? '';
 
+export const variable = env;
+
 export async function transportar(modo: string, m: Mensaje & { para: string }) {
   if (modo === 'outbox') {
     // Guardar consultas en disco solo se admite en desarrollo y pruebas.

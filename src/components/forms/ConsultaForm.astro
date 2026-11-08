@@ -1,6 +1,6 @@
 ---
 // Con JavaScript se presenta paso a paso; sin él, todos los campos quedan visibles y el envío funciona igual.
-import { consultaTipos } from '../../config/site';
+import { consultaTipos, site } from '../../config/site';
 ---
 <form class="form" action="/api/consulta" method="post" data-ajax data-pasos>
   <div class="pasos"><span data-pasos-texto role="status">Paso 1 de 3</span><span class="pasos__barra" aria-hidden="true"><i></i></span></div>
@@ -60,6 +60,15 @@ import { consultaTipos } from '../../config/site';
       </label>
       <span class="field__error" id="e-consentimiento" data-error="consentimiento"></span>
     </div>
+    {site.turnstile && (
+      <div class="field turnstile">
+        {/* El script se carga al llegar a este paso: no afecta a la carga de la página ni al resto del sitio. */}
+        <div class="turnstile__widget" data-turnstile data-sitekey={site.turnstile} data-action="consulta"></div>
+        <span class="field__hint" id="h-turnstile">Verificación de seguridad de Cloudflare contra envíos automáticos. Normalmente no requiere ninguna acción.</span>
+        <span class="field__error" id="e-turnstile" data-error="cf-turnstile-response"></span>
+        <noscript><p class="field__hint">Para enviar este formulario necesita JavaScript, que se usa para esta verificación.</p></noscript>
+      </div>
+    )}
   </fieldset>
 
   <div class="form__status" role="status" aria-live="polite"></div>
