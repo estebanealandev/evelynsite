@@ -3,7 +3,7 @@
 - **Fecha:** 2026-11-08
 - **Rama:** `security/cloudflare-free-hardening`, creada desde `seo/geo-enterprise-2026` (`54a797e`, la versión desplegada).
 - **Sin push ni merge.** `main` intacta.
-- **Producción sin cambios:** ni despliegue, ni reglas, ni DNS, ni ajustes de zona o de cuenta.
+- **Producción:** el 2026-11-08, con autorización, se aplicaron en la zona las 3 reglas WAF y la de rate limiting, y se verificaron. Sin despliegue ni cambios de DNS, de ajustes de zona o de la cuenta.
 - **`noindex` vigente.** No se envió ningún sitemap.
 - **Coste:** ninguno.
 
@@ -26,7 +26,7 @@
 3. **El formulario, único punto de escritura, tiene ahora defensa en profundidad:**
    - Turnstile con verificación Siteverify estricta en el servidor (host, acción, antigüedad y un solo uso), que no se puede apagar en el dominio real;
    - 405 para otros métodos.
-   - En el borde quedan preparadas una regla WAF de método y origen y una de rate limiting.
+   - En el borde están **activas y verificadas** una regla WAF de método y origen y una de rate limiting.
 4. **El cupo gratuito se usa con criterio:**
    - 3 de las 5 reglas WAF, cada una ligada a una amenaza observada: los sondeos que hoy consumen invocaciones del Worker y el spam directo a la API;
    - la única regla de rate limiting, en el formulario;
@@ -58,7 +58,7 @@
 | `wrangler.jsonc` | Documenta que el secreto va con `wrangler secret put`, nunca en `vars` |
 | `playwright.config.ts` | `TURNSTILE_MODE=off` en los servidores de prueba locales y `--local-upstream` en `wrangler dev` |
 | `tests/turnstile.spec.ts` (nuevo), `tests/seguridad.spec.ts` | 14 pruebas de Turnstile y el 405 con 6 métodos |
-| `ops/cloudflare/seguridad/` (nuevo) | Reglas WAF, rate limiting, CAA, MX nulo y ajustes de zona, **preparados y validados** |
+| `ops/cloudflare/seguridad/` (nuevo) | Reglas WAF y rate limiting **aplicados**. CAA, MX nulo y ajustes de zona **preparados y validados** |
 | `docs/security/` (nuevo) | 16 documentos |
 
 ## Matriz final
@@ -67,9 +67,9 @@
 |---|---|---|---|---|---|---|
 | DDoS L3/L4/L7 | Sí | Activo | **ACTIVO Y VERIFICADO** (ruleset presente, sin anulaciones) | `cf rulesets list` | Ninguno | — |
 | Free Managed Ruleset | Sí | Activo | **ACTIVO Y VERIFICADO** | Log4Shell da 403 | Ninguno | Revisar eventos |
-| Reglas WAF 1 a 3 | Sí (5) | 0 | **PREPARADO PARA ACTIVACIÓN** | `--validate-only` correcto | Ninguno | Autorizar y aplicar |
+| Reglas WAF 1 a 3 | Sí (5) | 0 | **ACTIVO Y VERIFICADO** (2026-11-08, ruleset `a7eac2de…`) | `seguridad:produccion -- --esperar-waf`: sondeos y `GET /api/consulta` con 403 en el borde; POST del mismo origen llega al Worker (422) | Ninguno (`seo:produccion` sin problemas) | Revisar Security Events de 24 a 72 h |
 | Reglas WAF 4 y 5 | Sí | — | Reservadas | — | — | Solo ante un incidente o con evidencia |
-| Rate limiting de zona | Sí (1) | 0 | **PREPARADO PARA ACTIVACIÓN** | `--validate-only` correcto | Ninguno | Autorizar y aplicar |
+| Rate limiting de zona | Sí (1) | 0 | **ACTIVO Y VERIFICADO** (2026-11-08, ruleset `fcdec1f3…`) | 8 POST inválidos: 5 con 422 del Worker y del 6.º en adelante 429 `error code: 1015` del borde; a los 12 s, 422 otra vez | Ninguno | Calibrar con Security Events |
 | Binding de rate limiting y límite en memoria | Sí | Activo | **ACTIVO** (desplegado) | `wrangler deploy --dry-run` | Ninguno | — |
 | Turnstile (servidor y cliente) | Sí | No existía | **IMPLEMENTADO LOCALMENTE** | 14 pruebas e integración con el Siteverify real | Ninguno | Política de privacidad, widget, secreto y despliegue |
 | 405 y control de métodos | — | 404 | **IMPLEMENTADO LOCALMENTE** | `tests/seguridad.spec.ts` | Ninguno | Desplegar |
@@ -107,8 +107,8 @@
 ## Lo que necesita autorización (en este orden)
 
 1. **Propietario, en el panel:** activar 2FA y revisar o revocar los tokens. No depende del código.
-2. **Aplicar las reglas WAF y el rate limiting en la zona.** Son cambios reversibles y no requieren desplegar ([waf-rules.md](waf-rules.md), [rate-limiting.md](rate-limiting.md)).
-3. **Desplegar esta rama** (`npm run deploy`). Trae el 405 y el código de Turnstile; sin widget ni secreto, el formulario sigue en 503, como hoy.
+2. ~~**Aplicar las reglas WAF y el rate limiting en la zona.**~~ **Hecho el 2026-11-08** y verificado ([waf-rules.md](waf-rules.md), [rate-limiting.md](rate-limiting.md)).
+3. **Desplegar esta rama** (`npm run deploy`). Trae el 405, el código de Turnstile y el mensaje del formulario ante el 429 del borde; sin widget ni secreto, el formulario sigue en 503, como hoy.
 4. **CAA** (cambio de DNS).
 5. **Turnstile en producción:**
    - política de privacidad revisada;

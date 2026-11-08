@@ -4,7 +4,7 @@
 
 | Capa | Dónde | Alcance | Estado |
 |---|---|---|---|
-| 1. Regla de rate limiting de zona | Borde, fase `http_ratelimit`, antes del Worker | `/api/consulta`: 5 peticiones cada 10 s por IP y centro de datos, con bloqueo de 10 s | **PREPARADA PARA ACTIVACIÓN** |
+| 1. Regla de rate limiting de zona | Borde, fase `http_ratelimit`, antes del Worker | `/api/consulta`: 5 peticiones cada 10 s por IP y centro de datos, con bloqueo de 10 s | **ACTIVA Y VERIFICADA** (2026-11-08) |
 | 2. Binding `LIMITE_CONSULTAS` de Workers | Worker, en cada ubicación de Cloudflare | 10 peticiones por minuto por huella de IP | **ACTIVO** (desplegado el 2026-11-07) |
 | 3. Límite en memoria | Worker, en cada aislamiento | 30 peticiones y 5 envíos válidos cada 10 min por IP (`RATE_LIMIT_MAX`, `RATE_LIMIT_WINDOW_MINUTES`) | **ACTIVO** |
 | 4. Turnstile | Worker más Siteverify | Un token de un solo uso por envío | **IMPLEMENTADO LOCALMENTE** |
@@ -21,7 +21,7 @@ No se añadió estado compartido (Durable Objects o KV) porque aportaría poco c
 
 ## Regla de zona (plan Free)
 
-La definición está en [`ops/cloudflare/seguridad/rate-limit-formulario.json`](../../ops/cloudflare/seguridad/rate-limit-formulario.json). El 2026-11-08 se validó con `--validate-only` y no se guardó.
+La definición está en [`ops/cloudflare/seguridad/rate-limit-formulario.json`](../../ops/cloudflare/seguridad/rate-limit-formulario.json). El 2026-11-08 se validó con `--validate-only` y, con autorización, se aplicó a las 15:11 UTC (ruleset `fcdec1f34d3b419caee25e071699cd69`, versión 1). La fase no tenía entrypoint antes.
 
 | Parámetro | Valor | Motivo |
 |---|---|---|
@@ -51,6 +51,11 @@ Free no permite filtrar el rate limiting por método. Eso no hace falta, por tre
 
 Así, lo que cuenta la regla son, en la práctica, POST de envío.
 
+### Lo que ve la persona usuaria
+
+- **Con JavaScript:** el 429 del borde llega sin JSON. El formulario muestra «Ha enviado varias solicitudes en poco tiempo. Su solicitud no se ha enviado; espere unos segundos e intente de nuevo.» Este mensaje está en esta rama y llega a producción con el despliegue; hasta entonces se muestra el genérico «No fue posible procesar su solicitud y no se ha enviado.», que también es honesto.
+- **Sin JavaScript:** el navegador muestra la página de error 1015 de Cloudflare durante 10 s. Es poco probable (hacen falta 6 envíos en 10 s) y no simula ningún éxito.
+
 ### Impacto en SEO
 
 Ninguno. La regla solo afecta a `/api/consulta`, que está excluida en `robots.txt` y que ningún buscador necesita. No limita el rastreo de páginas.
@@ -61,7 +66,11 @@ Ninguno. La regla solo afecta a `/api/consulta`, que está excluida en `robots.t
 cf rulesets entrypoint update http_ratelimit -z 3c656474ab87b43af43563a939e20f23 --body "$(jq 'del(."$comentario")' ops/cloudflare/seguridad/rate-limit-formulario.json)"
 ```
 
-- **Prueba:** no se hace una prueba de carga contra producción. Basta comprobar en Security → Events que la regla aparece con la acción «Block» cuando haya tráfico. En local, `tests/limite.spec.ts` prueba el límite del Worker.
+- **Prueba:** no se hace una prueba de carga contra producción. En local, `tests/limite.spec.ts` prueba el límite del Worker y `tests/sitio.spec.ts` el mensaje del formulario ante un 429 del borde.
+- **Verificación del 2026-11-08** (8 POST seguidos del mismo origen con datos vacíos, que el Worker rechaza sin enviar nada):
+  - los 5 primeros: 422 JSON del Worker;
+  - del 6.º al 8.º: **429** `text/plain`, cuerpo `error code: 1015`, `Retry-After: 10`, `server: cloudflare`. Es la respuesta del borde, no la del Worker (que responde en JSON);
+  - 12 s después: 422 otra vez. La portada siguió en 200 durante la prueba.
 - **Reversión:** `cf rulesets entrypoint update http_ratelimit -z 3c656474ab87b43af43563a939e20f23 --body '{"rules":[]}'`, o desactivarla en el panel.
 
 ## Defensa en profundidad del formulario

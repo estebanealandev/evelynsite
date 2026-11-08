@@ -1,5 +1,5 @@
 {
-  "$comentario": "PREPARADO, NO APLICADO. Regla de rate limiting del plan Free (fase http_ratelimit): solo ruta e IP, ventana y bloqueo de 10 s. Ver docs/security/rate-limiting.md.",
+  "$comentario": "APLICADO el 2026-11-08 (ruleset fcdec1f34d3b419caee25e071699cd69). Regla de rate limiting del plan Free (fase http_ratelimit): solo ruta e IP, ventana y bloqueo de 10 s. Ver docs/security/rate-limiting.md.",
   "name": "default",
   "description": "Límite de envíos del formulario",
   "rules": [

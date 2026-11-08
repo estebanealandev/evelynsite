@@ -60,7 +60,7 @@ Ejecutadas el 2026-11-08 sobre la rama `security/cloudflare-free-hardening`.
 |---|---|
 | Cabeceras | HSTS (1 año, `includeSubDomains`, sin `preload`), CSP `frame-ancestors`, `nosniff`, XFO, Referrer, Permissions, `no-store` en HTML. CSP sin `'unsafe-inline'` en scripts. Portada sin terceros: ✔ |
 | Formulario | Turnstile no configurado y CSP sin terceros: ✔. **`GET /api/consulta` da 404: ✖ esperado, el 405 llega con esta rama.** POST de otro origen da 403 (Astro): ✔ |
-| Recursos que no deben existir | `/.env`, `/.git/config`, `/wp-login.php`, `/xmlrpc.php`, `/backup.sql` y `/config.yml` dan 404 del Worker (las reglas WAF no están aplicadas). `/.well-known/` no se bloquea: ✔ |
+| Recursos que no deben existir | `/.env`, `/.git/config`, `/wp-login.php`, `/xmlrpc.php`, `/backup.sql` y `/config.yml` dan 404 del Worker (antes de aplicar las reglas WAF). `/.well-known/` no se bloquea: ✔ |
 | Lectura pública | HEAD `/`, `robots.txt`, sitemap, una página, la imagen OG, el manifest, CSS, JS y la fuente dan 200 sin desafío. El UA de Googlebot no se bloquea: ✔ |
 | HTTPS y TLS | `http → https` con 301. TLS 1.0 y 1.1 rechazados (`ERR_SSL_TLSV1_ALERT_PROTOCOL_VERSION`). TLS 1.2 y 1.3 aceptados. Certificado vigente 90 días: ✔ |
 
@@ -75,6 +75,16 @@ Comprobaciones manuales:
 | `dig CAA` | Sin registros |
 | `npm run seo:dnssec` | DNSKEY 2371 y 34505; **sin DS en `.com`; AD falso** |
 | `www` | 301 a la raíz |
+
+## Producción tras aplicar las reglas WAF y el rate limiting (2026-11-08, 15:10 UTC)
+
+| Prueba | Resultado |
+|---|---|
+| `seguridad:produccion -- --esperar-waf` | **Sin problemas.** Los 6 sondeos, `GET /api/consulta` y el POST de otro origen reciben 403 del borde. `/.well-known/` libre. Toda la lectura pública en 200 sin desafío, incluido el UA de Googlebot. TLS sin cambios |
+| POST del mismo origen con datos vacíos | Pasa el borde: 422 JSON del Worker |
+| 8 POST seguidos del mismo origen con datos vacíos (sin envío de correo) | 5 × 422 del Worker y luego 3 × 429 `error code: 1015` del borde con `Retry-After: 10`. A los 12 s, 422 |
+| `seo:produccion` | **Sin problemas:** redirecciones 301 y `noindex` en las 17 páginas comprobadas |
+| `tests/sitio.spec.ts` (Node y Workers) | 150 pasadas, 4 omitidas y 0 fallidas, con la prueba nueva del 429 en texto plano |
 
 ## Validación de reglas contra la API (`--validate-only`)
 
@@ -96,7 +106,6 @@ Comprobaciones manuales:
 
 | Prueba | Motivo |
 |---|---|
-| Reglas WAF y rate limiting en producción | No están aplicadas: requieren autorización. `seguridad:produccion -- --esperar-waf` lo verificará |
 | Carga, DDoS, fuerza bruta y escaneo intrusivo | Prohibidos contra producción, y sin un entorno de pruebas autorizado equivalente |
 | Turnstile con el widget real | Requiere crear el widget (autorización) |
 | Lighthouse o Core Web Vitals después del cambio | Las páginas públicas no cambian: el único JavaScript nuevo se ejecuta en el formulario y Turnstile se carga tras la interacción. Medir el formulario cuando el widget real esté activo |

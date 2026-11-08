@@ -1,6 +1,6 @@
 # Reglas WAF personalizadas (plan Free)
 
-**Estado: PREPARADAS PARA ACTIVACIÓN.** No se han aplicado.
+**Estado: ACTIVAS Y VERIFICADAS** desde el 2026-11-08, 15:10 UTC (ruleset `a7eac2de4f62405c978e90a8c40d30f9`, versión 1), aplicadas con autorización. Antes de aplicarlas la fase no tenía entrypoint, así que no había estado previo que guardar.
 
 - La definición está en [`ops/cloudflare/seguridad/waf-reglas-personalizadas.json`](../../ops/cloudflare/seguridad/waf-reglas-personalizadas.json).
 - El 2026-11-08 se validó contra la API de la zona con `--validate-only` (`dry_run=true`): la API aceptó el ruleset completo sin guardarlo. Después de validar, la fase seguía sin entrypoint.
@@ -147,3 +147,12 @@ npm run seo:produccion
 ```
 
 Después, revisar Security → Events durante 24 a 72 horas en busca de bloqueos inesperados ([incident-response.md](incident-response.md) §3).
+
+## Verificación tras aplicarlas (2026-11-08)
+
+| Comprobación | Resultado |
+|---|---|
+| `seguridad:produccion -- --esperar-waf` | `/.env`, `/.git/config`, `/wp-login.php`, `/xmlrpc.php`, `/backup.sql` y `/config.yml` reciben 403 del borde. `GET /api/consulta` y el POST de otro origen, 403 del borde. `/.well-known/` no se bloquea. Toda la lectura pública (HEAD `/`, `robots.txt`, sitemap, páginas, imágenes, CSS, JS, fuentes y el UA de Googlebot) da 200 sin desafío. **Sin problemas** |
+| POST a `/api/consulta` con `Origin: https://evelynelizondo.com` | Pasa el borde y llega al Worker: 422 JSON de validación (datos vacíos, sin envío) |
+| `seo:produccion` | Redirecciones 301 y `noindex` en todas las páginas: **sin problemas** |
+| `www` | 301 a la raíz |

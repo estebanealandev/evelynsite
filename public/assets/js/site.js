@@ -481,7 +481,11 @@
         } else {
           // El token ya se usó o caducó: hace falta uno nuevo para el siguiente intento.
           reiniciarTurnstile();
-          showErrors(data.errores); show('error', data.mensaje || 'No fue posible procesar su solicitud y no se ha enviado.'); if (!data.errores) aviso();
+          // Un 429 del borde (regla de rate limiting) llega como texto plano, sin JSON.
+          const porDefecto = res.status === 429
+            ? 'Ha enviado varias solicitudes en poco tiempo. Su solicitud no se ha enviado; espere unos segundos e intente de nuevo.'
+            : 'No fue posible procesar su solicitud y no se ha enviado.';
+          showErrors(data.errores); show('error', data.mensaje || porDefecto); if (!data.errores) aviso();
         }
       } catch {
         reiniciarTurnstile();

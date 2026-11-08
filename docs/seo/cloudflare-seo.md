@@ -56,7 +56,7 @@ La zona no tiene Cache Rules (`http_request_cache_settings`: sin entrypoint). St
 
 Configuración leída:
 
-- No hay reglas WAF personalizadas ni de límite de peticiones. Las preparadas, que no tocan la lectura pública, están en [docs/security/waf-rules.md](../security/waf-rules.md).
+- Desde el 2026-11-08 hay 3 reglas WAF personalizadas y 1 de límite de peticiones (solo en `/api/consulta`). Ninguna toca la lectura pública: `seo:produccion` y `seguridad:produccion -- --esperar-waf` lo comprobaron ([docs/security/waf-rules.md](../security/waf-rules.md)).
 - Security Level está en `medium` y Browser Integrity Check activo.
 - Las políticas de crawlers de IA están en «Allow», como eligió el usuario al comprar el dominio.
 - `robots.txt` no lo gestiona Cloudflare.

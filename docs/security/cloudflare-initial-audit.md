@@ -167,8 +167,8 @@ La CLI no da acceso a Security Events (GraphQL `firewallEventsAdaptive`). Ademá
 | P0 | La cuenta de Cloudflare no tiene 2FA | Acción personal del propietario ([account-security.md](account-security.md)) |
 | P0 | Tokens de API sin caducidad y con escritura de alcance de cuenta, uno sin uso | Revisar y revocar desde el panel ([account-security.md](account-security.md)) |
 | P0 | DNSSEC sin DS en el padre | Esperar o reclamar al registrador ([tls-dnssec.md](tls-dnssec.md)) |
-| P1 | Sin reglas WAF propias: los sondeos consumen el cupo del Worker | 3 reglas preparadas ([waf-rules.md](waf-rules.md)) |
-| P1 | Sin rate limiting de zona en el formulario | 1 regla preparada ([rate-limiting.md](rate-limiting.md)) |
+| P1 | Sin reglas WAF propias: los sondeos consumen el cupo del Worker | 3 reglas, aplicadas y verificadas el 2026-11-08 ([waf-rules.md](waf-rules.md)) |
+| P1 | Sin rate limiting de zona en el formulario | 1 regla, aplicada y verificada el 2026-11-08 ([rate-limiting.md](rate-limiting.md)) |
 | P1 | El formulario no tenía defensa antibots más allá del campo trampa y el tiempo | Turnstile con Siteverify implementado ([turnstile-implementation.md](turnstile-implementation.md)) |
 | P1 | `/api/consulta` respondía 404 a otros métodos | 405 con `Allow: POST` |
 | P2 | Sin CAA | Registros preparados |

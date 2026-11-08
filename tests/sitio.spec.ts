@@ -442,6 +442,17 @@ test.describe('formulario de consulta', () => {
     await expect(page.locator(`${FORM} .form__status`)).toContainText('no se ha enviado');
   });
 
+  test('429 del borde (texto plano): pide esperar y no simula éxito', async ({ page }) => {
+    await page.goto('/agendar-consulta');
+    await llenar(page);
+    await page.route('**/api/consulta', r => r.fulfill({ status: 429, contentType: 'text/plain; charset=UTF-8', headers: { 'retry-after': '10' }, body: 'error code: 1015' }));
+    await page.waitForTimeout(3100);
+    await page.click(`${FORM} button[type=submit]`);
+    const estado = page.locator(`${FORM} .form__status`);
+    await expect(estado).toContainText('no se ha enviado');
+    await expect(estado).toContainText('espere unos segundos');
+  });
+
   test('sin JavaScript se ven todos los campos y envía', async ({ browser, baseURL }) => {
     const ctx = await browser.newContext({ baseURL, javaScriptEnabled: false });
     const page = await ctx.newPage();

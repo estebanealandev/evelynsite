@@ -21,7 +21,9 @@ npm run seo:produccion
 | Comprobaciones previas al despliegue | Revertir el bloque «Seguridad» de `scripts/seo/verificar-lanzamiento.mjs` |
 | `Permissions-Policy` | Revertir `src/lib/cabeceras.mjs` |
 
-## Zona de Cloudflare (preparado, no aplicado)
+## Zona de Cloudflare
+
+Las reglas WAF 1 a 3 y el rate limiting están **aplicados desde el 2026-11-08**. Antes no había entrypoint en ninguna de las dos fases, así que revertir del todo equivale a `--body '{"rules":[]}'`. El resto de la tabla sigue preparado y sin aplicar.
 
 | Cambio | Aplicar | Revertir |
 |---|---|---|

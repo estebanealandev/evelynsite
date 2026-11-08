@@ -1,5 +1,5 @@
 {
-  "$comentario": "PREPARADO, NO APLICADO. Reglas WAF personalizadas (fase http_request_firewall_custom). Validado con --validate-only. Ver docs/security/waf-rules.md.",
+  "$comentario": "APLICADO el 2026-11-08 (ruleset a7eac2de4f62405c978e90a8c40d30f9). Reglas WAF personalizadas (fase http_request_firewall_custom). Validado con --validate-only. Ver docs/security/waf-rules.md.",
   "name": "default",
   "description": "Reglas WAF personalizadas de evelynelizondo.com",
   "rules": [
